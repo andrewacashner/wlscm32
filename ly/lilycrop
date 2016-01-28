@@ -1,0 +1,15 @@
+#! /bin/sh
+set -e
+
+file="${1%.ly}"
+
+lilypond "$file"
+pdftops -eps "$file".pdf
+cat "$file".eps | ps2eps > "$file"_cut.eps
+epstopdf "$file"_cut.eps
+rm "$file".eps "$file"_cut.eps
+mv "$file"_cut.pdf "$file".pdf
+echo "Cropped PDF '$file.pdf' produced from '$1'"
+
+
+
