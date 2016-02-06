@@ -1,0 +1,44 @@
+GNU LilyPond 2.18.2
+Processing `span.ly'
+Parsing...
+(make-music
+  'SequentialMusic
+  'elements
+  (list (make-music
+          'NoteEvent
+          'articulations
+          (list (make-music
+                  'CrescendoEvent
+                  'span-text
+                  "cresc."
+                  'span-type
+                  'text
+                  'span-direction
+                  -1))
+          'duration
+          (ly:make-duration 0 0 1)
+          'pitch
+          (ly:make-pitch 0 0 0))
+        (make-music
+          'NoteEvent
+          'articulations
+          (list (make-music
+                  'CrescendoEvent
+                  'span-direction
+                  1))
+          'duration
+          (ly:make-duration 0 0 1)
+          'pitch
+          (ly:make-pitch 0 0 0))))
+
+
+Interpreting music...
+Preprocessing graphical objects...
+Interpreting music...
+warning: no music found in score
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `span.ps'...
+Converting to `./span.pdf'...
+Success: compilation successfully completed

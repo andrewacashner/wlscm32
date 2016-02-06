@@ -19,11 +19,11 @@ Music = {
     \partial 2
     r8 c'8 f'8 g'8
     a'4 a'4 r8 a'8 gis'8 a'8
-    f'4 \ColorL f'4 r8 f'8 g'8 a'8 \ColorR
-    \Coloratio { bes'4 d''4. } d''8 c''8 bes'8 
+    f'4 f'4 r8 f'8 g'8 a'8 
+    \Color { bes'4 d''4. } d''8 c''8 bes'8 
     a'2 r8 f'8 g'8 a'8
-    bes'4 d''4. d''8 c''8 bes'8
-    \Ligature { a'4 f'4 } r4 f'8 g'8
+    \ColorOne { bes'4 } d''4. d''8 c''8 bes'8
+    \Lig { a'4 f'4 } r4 f'8 g'8
     a'4. bes'8 g'4 g'8 a'8
     f'2
   }
@@ -32,7 +32,7 @@ Music = {
 \score {
   \new Staff
   <<
-    \new Voice = "melody" { \ColorBrackets \Music }
+    \new Voice = "melody" { \Music }
     \new Lyrics \lyricsto "melody" { \Lyrics }
   >>
 }
