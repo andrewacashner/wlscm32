@@ -61,19 +61,11 @@ Color =
 
 %% For single notes: \Color does not work with only one note
 
-ColorBracketBoth =
+ColorOne =
 \markup {
   \halign #-0.5 \raise #1.4
   \concat { \LeftColorBracket " " \RightColorBracket }
 }
-
-%% XX Doesn't work
-ColorOne =
-#(define-music-function
-  (parser location note) (ly:music?)
-  #{
-  $note \ColorBracketBoth
-  #})
 
 
 %%%%% LIGATURE BRACKETS %%%%%

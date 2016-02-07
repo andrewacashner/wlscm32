@@ -22,12 +22,13 @@ Music = {
     f'4 f'4 r8 f'8 g'8 a'8 
     \Color { bes'4 d''4. } d''8 c''8 bes'8 
     a'2 r8 f'8 g'8 a'8
-    \ColorOne { bes'4 } d''4. d''8 c''8 bes'8
+    bes'4^\ColorOne  d''4. d''8 c''8 bes'8
     \Lig { a'4 f'4 } r4 f'8 g'8
     a'4. bes'8 g'4 g'8 a'8
     f'2
   }
 }
+
 
 \score {
   \new Staff

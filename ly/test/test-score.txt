@@ -1,0 +1,13 @@
+GNU LilyPond 2.18.2
+Processing `test-score.ly'
+Parsing...
+test-score.ly:32:1: error: unknown escaped string: `\DisplayMusic'
+
+\DisplayMusic {
+test-score.ly:32:15: error: syntax error, unexpected '{'
+\DisplayMusic 
+              {
+test-score.ly:32:15: error: errors found, ignoring music expression
+\DisplayMusic 
+              {
+fatal error: failed files: "test-score.ly"
