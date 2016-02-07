@@ -1,0 +1,29 @@
+GNU LilyPond 2.18.2
+Processing `markup-arg.ly'
+Parsing...
+(make-music
+  'SequentialMusic
+  'elements
+  (list (make-music
+          'NoteEvent
+          'articulations
+          (list (make-music
+                  'TextScriptEvent
+                  'direction
+                  1
+                  'text
+                  "Word"))
+          'duration
+          (ly:make-duration 2 0 1)
+          'pitch
+          (ly:make-pitch 0 0 0))))
+
+
+Interpreting music...
+Preprocessing graphical objects...
+Finding the ideal number of pages...
+Fitting music on 1 page...
+Drawing systems...
+Layout output to `markup-arg.ps'...
+Converting to `./markup-arg.pdf'...
+Success: compilation successfully completed
