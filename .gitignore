@@ -1,2 +1,14 @@
 \#*
 *.pdf
+*.1
+*.1R
+*.Aend
+*.Bend
+*.Cend
+*.Dend
+*.End
+*.aux
+*.eledsec1
+*.eledsec1R
+*.eledsec2R
+*.log

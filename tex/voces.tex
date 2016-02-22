@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage{ebgaramond}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[spanish,american]{babel}
+\usepackage{csquotes}
+\usepackage{reledmac,reledpar}
+
+\newenvironment{poemtranslation}
+  {\vspace{2em}
+   \begin{pairs}}
+  {\end{pairs}
+   \Columns}
+\newcommand{\setupcolumn}{%
+  \beginnumbering
+  \setstanzaindents{1,0}
+  \setcounter{stanzaindentsrepetition}{1}%
+}
+\newenvironment{original}
+  {\selectlanguage{spanish}
+   \begin{Leftside}
+   \setupcolumn}
+  {\endnumbering
+   \end{Leftside}}
+\newenvironment{translation}
+  {\begin{Rightside}
+   \setupcolumn}
+  {\endnumbering
+   \end{Rightside}}
+   
+\newcommand{\stanzatitlefont}{\scshape}
+\newcommand{\titlestanza}[1]{\stanza[{\stanzatitlefont #1}]}
+
+\newcommand{\fn}[2]{\edtext{#1}{\Afootnote{#2}}}
+
+\begin{document}
+
+\section*{\emph{Voces, las de la capilla} (Puebla, 1657)}
+As set by Juan Gutiérrez de Padilla, MEX-Pc: Leg. 2/1
+
+\begin{poemtranslation}
+\begin{original}
+\titlestanza{Introducción}
+Voces, las de la capilla,&
+\fn{cuenta}{Pay attention to.} con lo que se canta,&
+que es músico el rey,&
+y \fn{nota}{Takes note of.} las más leves disonancias,&
+a lo de Jesús infante&
+y a lo de David monarca.\&
+
+\titlestanza{Respuesta}
+Puntos ponen a sus letras&
+los siglos de sus hazañas.&
+La clave que sobre el hombro&
+para el treinta y tres se aguarda.\&
+\end{original}
+
+\begin{translation}
+\stanza
+Voices, those of the chapel choir&
+keep count with what is sung,&
+for the king is a musician,&
+and notes even the most venial dissonances,&
+in the manner of Jesus \fn{the infant prince}{\emph{Infante} means both infant and prince.},&
+as in the manner of David the monarch.\&
+
+\stanza
+The centuries of his heroic exploits&
+are putting notes to his lyrics.&
+The \fn{key}{Or clef.} that upon his shoulder&
+awaits the thirty-three.\&
+\end{translation}
+\end{poemtranslation}
+
+\end{document}
