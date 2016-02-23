@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{reledmac,reledpar}
+
+\newenvironment{poemtranslation}
+  {\begin{pairs}}
+  {\end{pairs}\Columns}
+
+\newenvironment{original}
+  {\begin{Leftside}
+   \beginnumbering}
+  {\endnumbering
+   \end{Leftside}}
+
+\newenvironment{translation}
+  {\begin{Rightside}
+   \beginnumbering}
+  {\endnumbering
+   \end{Rightside}}
+
+\newcommand{\stanzasection}[1]{%
+  \stanza[\textsc{#1}]
+}
+
+\begin{document}
+
+\begin{poemtranslation}
+\begin{original}
+\setstanzaindents{0,1,0,0}
+\stanzasection{Primero}
+Uno uno uno&
+Dos dos dos&
+Tres tres tres\&
+
+\stanzasection{Segundo}
+Cuatro cuatro cuatro&
+Cinco cinco cinco&
+Seis seis seis\&
+\end{original}
+
+\begin{translation}
+\setstanzaindents{0,1,0,0}
+\stanza
+One one one&
+Two two two&
+Three three three\&
+
+\stanza
+Four four four&
+Five five five&
+Six six six\&
+\end{translation}
+\end{poemtranslation}
+
+\end{document}

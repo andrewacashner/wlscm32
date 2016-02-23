@@ -1,75 +1,214 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{ebgaramond}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage[spanish,american]{babel}
 \usepackage{csquotes}
-\usepackage{reledmac,reledpar}
+\usepackage{geometry}
+\usepackage[series={A},noend,nofamiliar,noeledsec,noledgroup]{reledmac}
+\usepackage{reledpar}
 
 \newenvironment{poemtranslation}
   {\vspace{2em}
    \begin{pairs}}
   {\end{pairs}
    \Columns}
-\newcommand{\setupcolumn}{%
-  \beginnumbering
-  \setstanzaindents{1,0}
-  \setcounter{stanzaindentsrepetition}{1}%
-}
+
 \newenvironment{original}
-  {\selectlanguage{spanish}
-   \begin{Leftside}
-   \setupcolumn}
-  {\endnumbering
-   \end{Leftside}}
+  {%
+    \selectlanguage{spanish}
+    \begin{Leftside}
+      \beginnumbering
+  }
+  {%
+      \endnumbering
+    \end{Leftside}%
+  }
 \newenvironment{translation}
-  {\begin{Rightside}
-   \setupcolumn}
-  {\endnumbering
-   \end{Rightside}}
+  {%
+    \begin{Rightside}
+      \beginnumbering
+  }
+  {%
+      \endnumbering
+     \end{Rightside}%
+  }
+
+% \newcommand{\setupindents}{%
+%   \setstanzaindents{1,0}
+%   \setcounter{stanzaindentsrepetition}{1}%
+% }
    
-\newcommand{\stanzatitlefont}{\scshape}
-\newcommand{\titlestanza}[1]{\stanza[{\stanzatitlefont #1}]}
+\newcommand{\poemsectionfont}{\scshape}
+\newcommand{\stanzasection}[1]{\stanza[{\poemsectionfont #1}]}
+\newcommand{\afterstanza}[1]{\&[\emph{#1}]}
+
+% \newcommand{\doafterstanza}[1]{\&[\emph{#1}\vspace{\afterstanzaskip}]\par}
+
+% \newlength{\afterstanzaskip}
+% \setlength{\afterstanzaskip}{1em}
+% \newcommand{\stanzabreak}[1]{\&[\vspace{\afterstanzaskip}]}
+% \newcommand{\sectionbreak}[1]{\&[\vspace{2\afterstanzaskip}]}
+
+
+\newcommand{\add}[1]{[#1]}
+\newcommand{\othersense}{\add}
+\newcommand{\term}{\emph}
 
 \newcommand{\fn}[2]{\edtext{#1}{\Afootnote{#2}}}
 
 \begin{document}
 
 \section*{\emph{Voces, las de la capilla} (Puebla, 1657)}
-As set by Juan Gutiérrez de Padilla, MEX-Pc: Leg. 2/1
+Poet anonymous; Text from musical setting by Juan Gutiérrez de Padilla, 
+\emph{Navidad del año de 1657}, no. 4 (MEX-Pc: Leg. 3/3)
 
 \begin{poemtranslation}
 \begin{original}
-\titlestanza{Introducción}
-Voces, las de la capilla,&
+\setstanzaindents{1,1,0,0,0,0,0}
+\stanzasection{\add{Introducción} a 6}
+1. Voces, las de la capilla,&
 \fn{cuenta}{Pay attention to.} con lo que se canta,&
-que es músico el rey,&
-y \fn{nota}{Takes note of.} las más leves disonancias,&
+que es músico el rey, y \fn{nota}{Takes note of.}&
+las más leves disonancias&
 a lo de Jesús infante&
 y a lo de David monarca.\&
 
-\titlestanza{Respuesta}
+\setstanzaindents{1,1,0,0,0}
+\stanzasection{Respuesta a 3}
 Puntos ponen a sus letras&
 los siglos de sus hazañas.&
 La clave que sobre el hombro&
 para el treinta y tres se aguarda.\&
+
+\setstanzaindents{1,1,0,0,0,0,0}
+\stanzasection{\add{Introducción} cont.}
+2. Años antes la divisa,&
+la destreza en la esperanza,&
+por sol comienza una gloria,&
+por mi se canta una gracia,&
+y a medio compás la noche&
+remeda quiebros del alba\afterstanza{\add{Respuesta rep.}}
+
+\setstanzaindents{1,1,0,0,0,0,0}
+\stanzasection{\add{Estribillo a 6}}
+Y a trechos las distancias&
+en uno y otro coro,&
+grave, suave y sonoro,&
+hombres y brutos y Dios,&
+tres a tres y dos a dos,&
+uno a uno,\&
+
+\setstanzaindents{1,0,0,0,0,0,0,0,0,0}
+\stanza
+y aguardan tiempo oportuno,&
+quién antes del tiempo fue.&
+Por el signo a la mi re,&
+puestos los ojos en mi,&
+a la voz del padre oí&
+cantar por puntos de llanto.&
+\hphantom{uno a uno,} ¡O qué canto!&
+tan de oír y de admirar,&
+tan de admirar y de oír.\&
+
+\setstanzaindents{1,1,0}
+\stanza
+Todo en el hombre es subir&
+y todo en Dios es bajar.\&
+
+
+\setstanzaindents{1,1,0,0,0}
+\stanzasection{Coplas a 3}
+1. Daba un niño peregrino&
+tono al hombre y subió tanto&
+que en sustenidos de llanto&
+dió octava arriba en un trino.\&
+
+\stanza
+2. Hizo alto en lo divino&
+y de la máxima y breve&
+composición en que pruebe&
+de un hombre y Dios consonancias.\afterstanza{\add{Estribillo rep.}}
+
 \end{original}
 
 \begin{translation}
+\setstanzaindents{1,1,0,0,0,0,0}
 \stanza
-Voices, those of the chapel choir&
+1. Voices, those of the chapel choir&
 keep count with what is sung,&
-for the king is a musician,&
-and notes even the most venial dissonances,&
-in the manner of Jesus \fn{the infant prince}{\emph{Infante} means both infant and prince.},&
+for the king is a musician, and notes&
+even the most venial dissonances,&
+in the manner of Jesus \fn{the infant prince}{\term{Infante} means both infant and prince.},&
 as in the manner of David the monarch.\&
 
+\setstanzaindents{1,1,0,0,0}
 \stanza
 The centuries of his heroic exploits&
 are putting notes to his lyrics.&
 The \fn{key}{Or clef.} that upon his shoulder&
 awaits the thirty-three.\&
+
+\setstanzaindents{1,1,0,0,0,0,0}
+\stanza
+2. Years before the sign,&
+\fn{dexterity in hope}
+  {In Golden Age literature \term{destreza} connotes heroic skill in combat, particularly in \term{esgrima} or sworsdmanship. 
+Musically, the term suggests virtuosity. 
+The whole phrase sounds like a heraldic device (\term{divisa}) or motto, summing up Christ's mission.}&
+\fn{with the sun}
+  {Here begins a series of musical plays on words: \term{sol} and \term{mi} are solmization syllables with double meanings; \term{gloria} and \term{gracia} probably refer to the songs of Christmas in both history and liturgy like the \term{Gloria in excelsis}.}
+  \othersense{on \term{sol}} a \textquote{glory} begins,&
+upon me \othersense{\term{mi}} a \textquote{grace} is sung,&
+and at the half-measure, the night&
+imitates the trills of the dawn.\&
+
+\setstanzaindents{1,1,0,0,0,0}
+\stanza
+And from afar, the \fn{intervals}
+  {Both musical intervals and astronomical distances between planetary spheres.}&
+in one choir and then the other,&
+solemn, mild, and resonant,&
+men, animals, and God,&
+three by three and two by two,&
+one by one,\&
+
+\setstanzaindents{1,0,0,0,0,0,0,0,0,0}
+\stanza
+they all await the opportune time,&
+the one who was before all time.&
+Upon the sign of \term{A (la, mi, re)},&
+with eyes placed on me \othersense{\term{mi}}&
+at the voice of the Father I heard&
+singing in tones of weeping---&
+\hphantom{one by one,} Oh, what a song!&
+as much to hear as to admire,&
+as much to admire as to hear!\&
+
+\setstanzaindents{1,1,0}
+\stanza
+Everything in Man is to ascend&
+and everything in God is to descend.\&
+
+% COPLAS
+\setstanzaindents{1,1,0,0,0}
+\stanza
+1. A baby gave a \fn{wandering song}
+  {Or \textquote{pilgrim song}, or the musical \term{tonus peregrinus}.}&
+to the Man, and ascended so high&
+that in \fn{sustained weeping}
+  {Musically, \textquote{sharps of weeping}}&
+\fn{he went up the eighth \add{day} into the triune.}
+  {Musically, \textquote{he went up the octave in a trill.}}\&
+
+\stanza
+2. From \fn{on high}
+  {\term{Alto} also denotes the musical voice part.} in divinity,&
+\fn{of the greatest and least}
+  {A play on the name of very long and short music notes.},&
+he made a composition in which to \fn{prove}{Or \textquote{test}.}&
+the consonances of a Man and God.\&
 \end{translation}
 \end{poemtranslation}
 
