@@ -20,7 +20,7 @@
 \setlength{\stanzaindentbase}{1em}
 
 % Wrap every dual-column poem in 'poemtranslation' environment
-% This environment must always include 'original' and 'translation' environments
+% This environment must include 'original' and 'translation' environments
 % These set up numbering and appropriate languages
 \NewDocumentEnvironment{poemtranslation}{}
   {\begin{pairs}}
@@ -50,8 +50,10 @@
    }
 
 % Before each call of \stanza we must \setstanzaindents.
-% This code allows this to be done automatically based on the number of lines in the stanza.
-% \indentvalues is defined for a hanging indent, and the optional argument specifies the indent for the first line of the stanza.
+% This code allows this to be done automatically based on the 
+% number of lines in the stanza.
+% \indentvalues is defined for a hanging indent, and the 
+% optional argument specifies the indent for the first line of the stanza.
 % The others are all given 0 indent through a loop.
 \newcounter{stanzalines}
 \NewDocumentCommand{\writestanzaindents}{ o m }{%
@@ -65,7 +67,10 @@
   \repeat
 }
     
-% Our replacement for \stanza sets up automatic indenting of the first line, and no others. This is based on the mandatory argument, which specifies the number of lines in the stanza.
+% Our replacement for \stanza sets up automatic indenting of the 
+% first line, and no others. 
+% This is based on the mandatory argument, which specifies the 
+% number of lines in the stanza.
 \NewDocumentCommand{\Stanza}{ m }{%
   \writestanzaindents[1]{#1}%
   \expandafter\setstanzaindents\expandafter{\indentvalues}
@@ -73,7 +78,8 @@
 }
 % If the stanza begins a section with a header, we use \StanzaSection.
 % This sets up the indents so that the first line is *not* indented.
-% If a header text (the optional second argument) is provided, it is printed in the specified font.
+% If a header text (the optional second argument) is provided, 
+% it is printed in the specified font.
 % Normal usage will be like this:
 %   In the original text:       \StanzaSection{4}[Estribillo]
 %   In the translation of same: \StanzaSection{4}
@@ -86,8 +92,10 @@
     {\stanza[{\StanzaHeaderFont #2}]}
 }
 
-% To provide extra vertical space before section headings, we use \SectionBreak at the end of the preceding stanza instead of \&.
-% The optional argument allows for a text to be inserted after the stanza, before the added space.
+% To provide extra vertical space before section headings, 
+% we use \SectionBreak at the end of the preceding stanza instead of \&.
+% The optional argument allows for a text to be inserted after the 
+% stanza, before the added space.
 % The text is printed in the specified font.
 % For example: last line of poem \SectionBreak[Repeat first section] 
 \newlength{\PreSectionSkip}
@@ -98,7 +106,9 @@
     {\&[{\PostStanzaFont #1}\vspace{\PreSectionSkip}]}
 }
 
-% If we only want to add a note after a stanza (as in, between stanzas rather than StanzaSections), we use \AfterStanza, which sets the text in the specified font and adds a specified amount of space.
+% If we only want to add a note after a stanza (as in, between stanzas 
+% rather than StanzaSections), we use \AfterStanza, which sets the text 
+% in the specified font and adds a specified amount of space.
 \NewDocumentCommand{\PostStanzaFont}{}{\itshape}
 \newlength{\AfterStanzaSkip}
 \setlength{\AfterStanzaSkip}{0.5\PreSectionSkip}
@@ -106,7 +116,8 @@
   \&[{\PostStanzaFont #1}\vspace{\AfterStanzaSkip}]
 }
 
-% This is a shorthand for reledmac's \edtext macro, using just one series of footnotes automatically.
+% This is a shorthand for reledmac's \edtext macro, using just one 
+% series of footnotes automatically.
 \NewDocumentCommand{\fn}{ m m }{%
   \edtext{#1}{\Afootnote{#2}}%
 }
