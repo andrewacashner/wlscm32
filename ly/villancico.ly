@@ -87,47 +87,84 @@ Mensurstriche = {
 
 %*******************
 
-% ITALIC LYRICS
-it = { \override Lyrics.LyricText.font-shape = #'italic }
-bf = { \override Lyrics.LyricText.font-series = #'bold }
-rm = { \revert Lyrics.LyricText.font-shape 
-        \revert Lyrics.LyricText.font-series }
+EdLyrics =
+  #(define-scheme-function
+    (parser location text) (scheme?)
+    #{
+    \override Lyrics.LyricText.font-shape = #'italic
+    $text
+    \revert Lyrics.LyricText.font-shape
+    #})
 
-% COLORATION BRACKETS 
-LeftColorBracket = \markup { \combine \draw-line #'(0 . -1)  \draw-line #'(1.5 . 0) }
-RightColorBracket = \markup { \combine \draw-line #'(0 . -1)  \draw-line #'(-1.5 . 0) }
 
-color = \startTextSpan
-endcolor = \stopTextSpan
-colorOne = \markup { \halign #-0.5 \raise #1.4 \concat { \LeftColorBracket " " \RightColorBracket } }
+%%%%% BRACKETS FOR MENSURAL COLORATION %%%%%
+
+%% Once command to group notes inside a TextSpanner
+%% By David Nalesnik and Thomas Morley, http://lsr.di.unimi.it/LSR/Item?id=857
+#(define (text-spanner-start-stop mus)
+  (let ((elts (ly:music-property mus 'elements)))
+   (make-music 'SequentialMusic 'elements
+    (append
+     (list (make-music 'TextSpanEvent 'span-direction -1))
+     (reverse (cdr (reverse elts)))
+     (list (make-music 'TextSpanEvent 'span-direction 1))
+     (list (last elts))))))
+
+ColorBracketLeft =
+\markup { \combine
+	  \draw-line #'(0 . -1)
+	  \draw-line #'(1.5 . 0)
+	}
+
+ColorBracketRight =
+\markup { \combine
+	  \draw-line #'(0 . -1)
+	  \draw-line #'(-1.5 . 0)
+	}
 
 ColorBrackets = {
-  \override TextSpanner.dash-period = #0
-  \override TextSpanner.bound-details.left.text = \LeftColorBracket
-  \override TextSpanner.bound-details.right.text = \RightColorBracket
-  \override TextSpanner.bound-details.left.attach-dir = #-2
-  \override TextSpanner.bound-details.right.attach-dir = #2
-  \override TextSpanner.staff-padding = #2
-    % don't reprint symbols across line breaks
-  \override TextSpanner.bound-details.left-broken.text = ##f
-  \override TextSpanner.bound-details.right-broken.text = ##f
+  \once \override TextSpanner.dash-period = #0
+  \once \override TextSpanner.bound-details.left.text = \ColorBracketLeft
+  \once \override TextSpanner.bound-details.right.text = \ColorBracketRight
+  \once \override TextSpanner.bound-details.left.attach-dir = #-2
+  \once \override TextSpanner.bound-details.right.attach-dir = #2
+  \once \override TextSpanner.staff-padding = #2
+  \once \override TextSpanner.bound-details.left-broken.text = ##f
+  \once \override TextSpanner.bound-details.right-broken.text = ##f
 }
 
-LeftColorBracketLower = \markup { \combine \draw-line #'(0 . 1) \draw-line #'(1.5 . 0) }
-RightColorBracketLower = \markup { \combine \draw-line #'(0 . 1) \draw-line #'(-1.5 . 0) }
-  % Overriding only some of the overrides in \ColorBrackets
-LowerColorBrackets = {
-  \override TextSpanner.bound-details.left.text = \LeftColorBracketLower
-  \override TextSpanner.bound-details.right.text = \RightColorBracketLower
-  \override TextSpanner.direction = #DOWN
-      }
-colorOneLower = \markup { \concat { \LeftColorBracketLower " " \RightColorBracketLower } }
+%% Usage: \Color { c'2 c'2 c'2 } c'1.
 
-% Preserve commands used in older files
-i = \color
-o = \endcolor
-io = \colorOne
-ioLower = \colorOneLower
+Color =
+#(define-music-function
+  (parser location music) (ly:music?)
+  "Add coloration brackets as text spanner to a group of notes enclosed in braces after the command"
+  #{
+  \ColorBrackets
+  $(text-spanner-start-stop music)
+  #})
+
+%% For single notes: \Color does not work with only one note
+%% Usage: \ColorOne c'1 %% no brackets
+
+ColorBracketLeftRight = 
+\markup {
+  \halign #-0.5 \raise #1.4
+  \concat { \ColorBracketLeft " " \ColorBracketRight }
+}
+
+ColorOne =
+#(define-music-function
+  (parser location note-event)
+  (ly:music?)
+  "Add coloration brackets to a single note"
+  (set! (ly:music-property note-event 'articulations)
+   (cons (make-music 'TextScriptEvent
+	  'direction 1
+	  'text #{ \ColorBracketLeftRight #})
+    (ly:music-property note-event 'articulations)))
+  note-event)
+
 
 %*******************
 % FICTA ACCIDENTALS
@@ -152,39 +189,36 @@ naB = \markup { \teeny "[" \natural "]" }
 
 Solo = \markup \italic "Solo"
 
-%*********************************************************
-% SCHEME FUNCTIONS
-%*********************************************************
-
 %*******************
 % REPEATS
 %*******************
 
 RepeatMsg = 
   #(define-scheme-function
-    (parser location msg) (scheme?)
+    (parser location msg) (markup?)
+    "Print a repeat message like 'D.C. al Fine'"
       #{
         \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
         \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
         \once \override Score.RehearsalMark.padding = #5
-        \mark \markup \bold \fontsize #-1 $msg
+        \mark \markup \fontsize #-1 $msg % was \bold
       #})
 
 Segno =  \mark \markup { \musicglyph #"scripts.segno" }
 
-%******************
-% SECTION HEADINGS 
-%******************
 
-Section = 
-  #(define-scheme-function
-    (parser location section) (scheme?)
-      #{  
-        \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-        \once \override Score.RehearsalMark.padding = #7
-        \once \override Score.RehearsalMark.outside-staff-priority = #2000
-        \mark \markup { \bold $section }
-      #})
+%%%%% SECTION HEADINGS %%%%%%
+
+Section =
+#(define-scheme-function
+  (parser location SectionText) (markup?)
+  "Print a section title"
+  #{
+    \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+    \once \override Score.RehearsalMark.padding = #7
+    \once \override Score.RehearsalMark.outside-staff-priority = #2000
+    \mark \markup $SectionText
+  #})
 
 %**********************
 % SIMULTANEOUS \marks
@@ -378,7 +412,7 @@ IncipitLayout = \layout {
   ragged-right = ##f
   \context {
     \Staff
-      \override InstrumentName.font-series = #'bold  
+%      \override InstrumentName.font-series = #'bold  
       \override VerticalAxisGroup.Y-extent = #'( -4 . 4 )
   }
 }
@@ -400,15 +434,9 @@ MainStyle = {
   % use square breve
   \override NoteHead.style = #'baroque 
 
-  % use coloration brackets
-  \ColorBrackets
-
   % only numeric time signature
   \numericTimeSignature
 }
-
-% For lower voice with \LowerColorBrackets
-MainStyleLower = { \MainStyle \LowerColorBrackets }
 
 LayoutStyle = \layout {
 
@@ -429,13 +457,13 @@ LayoutStyle = \layout {
     }
   \context {
     \ChoirStaff
-    \override InstrumentName.font-series = #'bold
+%    \override InstrumentName.font-series = #'bold
     % left-align chorus names
     \override InstrumentName.self-alignment-X = #LEFT
   }
   \context {
     \Staff
-    \override InstrumentName.font-series = #'bold
+%    \override InstrumentName.font-series = #'bold
     \override InstrumentName.self-alignment-X = #CENTER
     \consists "Mark_engraver"
     \consists "Staff_collecting_engraver"
@@ -463,7 +491,7 @@ LayoutStyle = \layout {
   % GLOBAL STAFF SIZE
   #(define fonts
     (make-pango-font-tree 
-      "fbb" "" "" 
+      "EB Garamond" "" "" 
       (/ staff-height pt 20))) % leave this at 20 regardless of staff size
 
   % DIMENSIONS
@@ -524,7 +552,8 @@ LayoutStyle = \layout {
     \override #'(baseline-skip . 5)
     \column {
       \fill-line {
-        \fontsize #3 \bold \fromproperty #'header:piece
+				%        \fontsize #3 \bold \fromproperty #'header:piece
+	\fontsize #3 \fromproperty #'header:piece
       }
       \fill-line {
         \fontsize #2 \italic \fromproperty #'header:pieceSubtitle
