@@ -1,46 +1,52 @@
-% LILYPOND STYLESHEET FOR CASHNER VILLANCICO SCORES
+%% LILYPOND STYLESHEET FOR CASHNER VILLANCICO SCORES
 
 \version "2.18.2"
 
-%****************************************
-% MACROS AND FUNCTIONS
-%****************************************
+%%****************************************
+%% MACROS AND FUNCTIONS
+%%****************************************
 
-% Turn off point-and-click
+%% Turn off point-and-click
 \pointAndClickOff
 
-%*******************
-% METERS
+%%*******************
+%% BARLINES
 
-% C
+MiddleBar = { \bar "||" }
+FinalBar = { \bar "|." }
+
+%%*******************
+%% METERS
+
+%% C
 Compasillo = { \defaultTimeSignature \time 4/4 } 
 
-% cut C/alla breve
+%% cut C/alla breve
 CompasMayor = { \defaultTimeSignature \time 2/2 } 
 
-%****************************************
-% GRAPHIC METERS 
+%%****************************************
+%% GRAPHIC METERS 
 
-% the symbol itself 
+%% the symbol itself 
 CZ = #(lambda (grob) (grob-interpret-markup grob 
     (markup (#:epsfile #'Y #'5 #'"../ly/img/CZ.eps"))))
 
 Z = #(lambda (grob) (grob-interpret-markup grob
     (markup (#:epsfile #'Y #'5 #'"../ly/img/Z.eps"))))
 
-% on staff (slightly larger)
+%% on staff (slightly larger)
 CZstaff = #(lambda (grob) (grob-interpret-markup grob 
   (markup (#:general-align #'Y #'0.3 #:epsfile #'Y #'6 #'"../ly/img/CZ.eps"))))
 
 Zstaff = #(lambda (grob) (grob-interpret-markup grob 
   (markup (#:general-align #'Y #'0.3 #:epsfile #'Y #'6 #'"../ly/img/Z.eps"))))
 
-% command to put symbol on the incipit staff
+%% command to put symbol on the incipit staff
 MeterCZ = \override Score.TimeSignature.stencil = #CZstaff
 MeterZ = \override Score.TimeSignature.stencil = #Zstaff 
 
-%****************************************
-% ORIGINAL METERS ABOVE THE STAFF
+%%****************************************
+%% ORIGINAL METERS ABOVE THE STAFF
 
 MarkMeterC = \mark \markup { \smaller \musicglyph #"timesig.C44" }
 
@@ -73,19 +79,19 @@ MeterAboveZ = {
   \MeterAboveTimeSignature
   \MarkMeterZ
 }
-%********************
-% CANTUS MOLLIS
+%%********************
+%% CANTUS MOLLIS
 
 CantusMollis = { \key f\major }
 
-%*******************
-% MENSURSTRICHE (within StaffGroup not ChoirStaff)
+%%*******************
+%% MENSURSTRICHE (within StaffGroup not ChoirStaff)
 
 Mensurstriche = {
   \hide Staff.BarLine
 }
 
-%*******************
+%%*******************
 
 EdLyrics =
   #(define-scheme-function
@@ -97,10 +103,10 @@ EdLyrics =
     #})
 
 
-%%%%% BRACKETS FOR MENSURAL COLORATION %%%%%
+%%%%%%%%%% BRACKETS FOR MENSURAL COLORATION %%%%%%%%%%
 
-%% Once command to group notes inside a TextSpanner
-%% By David Nalesnik and Thomas Morley, http://lsr.di.unimi.it/LSR/Item?id=857
+%%%% Once command to group notes inside a TextSpanner
+%%%% By David Nalesnik and Thomas Morley, http://lsr.di.unimi.it/LSR/Item?id=857
 #(define (text-spanner-start-stop mus)
   (let ((elts (ly:music-property mus 'elements)))
    (make-music 'SequentialMusic 'elements
@@ -133,7 +139,9 @@ ColorBrackets = {
   \once \override TextSpanner.bound-details.right-broken.text = ##f
 }
 
-%% Usage: \Color { c'2 c'2 c'2 } c'1.
+
+
+%%%% Usage: \Color { c'2 c'2 c'2 } c'1.
 
 Color =
 #(define-music-function
@@ -144,8 +152,9 @@ Color =
   $(text-spanner-start-stop music)
   #})
 
-%% For single notes: \Color does not work with only one note
-%% Usage: \ColorOne c'1 %% no brackets
+
+%%%% For single notes: \Color does not work with only one note
+%%%% Usage: \ColorOne c'1 %%%% no brackets
 
 ColorBracketLeftRight = 
 \markup {
@@ -166,9 +175,35 @@ ColorOne =
   note-event)
 
 
-%*******************
-% FICTA ACCIDENTALS
-%*******************
+
+%% ALTERNATE VERSION
+
+%% put this in \layout { \context \Score 
+colorbrackets = {
+  \override TextSpanner.dash-period = #0
+  \override TextSpanner.bound-details.left.text = \ColorBracketLeft
+  \override TextSpanner.bound-details.right.text = \ColorBracketRight
+  \override TextSpanner.bound-details.left.attach-dir = #-2
+  \override TextSpanner.bound-details.right.attach-dir = #2
+  \override TextSpanner.staff-padding = #2
+  \override TextSpanner.bound-details.left-broken.text = ##f
+  \override TextSpanner.bound-details.right-broken.text = ##f
+}
+
+color = \startTextSpan
+endcolor = \stopTextSpan
+
+colorOne  =
+#(define-event-function
+  (parser location) ()
+  #{ ^\markup \ColorBracketLeftRight #} )
+
+%% Usage: a2\colorOne b1 c'2\color c'2 c'2\endcolor b1.
+
+
+%%*******************
+%% FICTA ACCIDENTALS
+%%*******************
 
 FictaAlign = { \once \override TextScript.outside-staff-priority = #100 }
 sh = \markup { \teeny \sharp }
@@ -183,15 +218,15 @@ shB = \markup { \teeny "[" \sharp "]" }
 flB = \markup { \teeny "[" \flat "]" }
 naB = \markup { \teeny "[" \natural "]" }
 
-%*******************
-% MARKUPS
-%*******************
+%%*******************
+%% MARKUPS
+%%*******************
 
 Solo = \markup \italic "Solo"
 
-%*******************
-% REPEATS
-%*******************
+%%*******************
+%% REPEATS
+%%*******************
 
 RepeatMsg = 
   #(define-scheme-function
@@ -201,13 +236,13 @@ RepeatMsg =
         \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
         \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
         \once \override Score.RehearsalMark.padding = #5
-        \mark \markup \fontsize #-1 $msg % was \bold
+        \mark \markup \fontsize #-1 $msg %% was \bold
       #})
 
 Segno =  \mark \markup { \musicglyph #"scripts.segno" }
 
 
-%%%%% SECTION HEADINGS %%%%%%
+%%%%%%%%%% SECTION HEADINGS %%%%%%%%%%%%
 
 Section =
 #(define-scheme-function
@@ -220,12 +255,12 @@ Section =
     \mark \markup $SectionText
   #})
 
-%**********************
-% SIMULTANEOUS \marks
-%**********************
+%%**********************
+%% SIMULTANEOUS \marks
+%%**********************
 
-% Puts an extra rehearsal mark at simultaneous moment to the one 
-% that follows. Must be followed by time signature declaration.
+%% Puts an extra rehearsal mark at simultaneous moment to the one 
+%% that follows. Must be followed by time signature declaration.
 
 HiddenBar = {
   \cadenzaOn
@@ -235,11 +270,11 @@ HiddenBar = {
   \cadenzaOff
 }
 
-%**************************************
-% BRACKETS 
-% around editorial additions
-%**************************************
-% from lsr.di.unimi.it/LSR/Snippet?id=377
+%%**************************************
+%% BRACKETS 
+%% around editorial additions
+%%**************************************
+%% from lsr.di.unimi.it/LSR/Snippet?id=377
 
 #(define-markup-command (left-bracket layout props) ()
 "Draw left hand bracket"
@@ -248,13 +283,13 @@ HiddenBar = {
         (ext '(-2.8 . 2.8)))
       (ly:bracket Y ext th width)))
 
-% Editor Bracket Left
+%% Editor Bracket Left
 EdBracL = {
   \once \override BreathingSign.text = #(make-left-bracket-markup)
   \once \override BreathingSign.break-visibility = #end-of-line-invisible
   \once \override BreathingSign.Y-offset = ##f
-  % Trick to print it after barlines and signatures:
-% \once \override BreathingSign.break-align-symbol= #'custos
+  %% Trick to print it after barlines and signatures:
+%% \once \override BreathingSign.break-align-symbol= #'custos
   \breathe
 }
 
@@ -265,51 +300,51 @@ EdBracL = {
           (ext '(-2.8 . 2.8)))
         (ly:bracket Y ext th (- width))))
 
-% Editor Bracket Right
+%% Editor Bracket Right
 EdBracR = {
   \once \override BreathingSign.text = #(make-right-bracket-markup)
   \once \override BreathingSign.Y-offset = ##f
   \breathe
 }
 
-%*******************
-% EDITORIAL NOTE
-%*******************
+%%*******************
+%% EDITORIAL NOTE
+%%*******************
 
-% Point reader to critical notes
+%% Point reader to critical notes
 
 CN = \markup \fontsize #2 \raise #1 { \concat { "*" \super "CN" } }
 
-%*******************
-% ANALYSIS BRACKETS
-%*******************
+%%*******************
+%% ANALYSIS BRACKETS
+%%*******************
 
-% Nota Bene, in and out of bracketed segment
+%% Nota Bene, in and out of bracketed segment
 iNB = \startGroup
 oNB = \stopGroup
-  % above staff
+  %% above staff
 NBup = \once \override HorizontalBracket.direction = #UP
 
-%***********************
-% INCOMPLETE TIE 
-% (as in example clips)
-%***********************
+%%***********************
+%% INCOMPLETE TIE 
+%% (as in example clips)
+%%***********************
 
 HalfTie = \laissezVibrer
 
-%*******************
-% EMPTY STAFF LINES
+%%*******************
+%% EMPTY STAFF LINES
 EmptyStaffLines = {
   \override Staff.TimeSignature.stencil = ##f
   \override Staff.KeySignature.stencil = ##f
   \override Staff.Clef.stencil = ##f
       }
 
-%****************************************
-% MULTI-STANZA LYRICS
-%****************************************
+%%****************************************
+%% MULTI-STANZA LYRICS
+%%****************************************
 
-% Add a new line of lyrics below previous line
+%% Add a new line of lyrics below previous line
 NextLyricsLine = 
   #(define-scheme-function
     (parser location NewLineName PrevLineName Voice Lyrics) (scheme? scheme? scheme? scheme?)
@@ -321,12 +356,12 @@ NextLyricsLine =
       #})
 
 
-%****************************************
-% INCIPITS and INSTRUMENT NAMES
-%****************************************
-% See documentation in ly/usage.ly 
+%%****************************************
+%% INCIPITS and INSTRUMENT NAMES
+%%****************************************
+%% See documentation in ly/usage.ly 
 
-% Produce incipit mini-score with proper markup layout
+%% Produce incipit mini-score with proper markup layout
 #(define-markup-command (IncipitScore layout props music) (ly:music?)
   (let ((score (ly:make-score music))
     (score-layout (ly:output-def-clone IncipitLayout)))
@@ -335,12 +370,12 @@ NextLyricsLine =
       (markup #:fill-line (#:column ("") #:column
         (#:score score))))))
 
-% This should be defined in each score file
+%% This should be defined in each score file
 IncipitGlobal = {}
 
-% Declare long and short instrument names when there is an incipit
-%  so that long name includes mini-score from \IncipitScore 
-%  (inside Staff group << >>)
+%% Declare long and short instrument names when there is an incipit
+%%  so that long name includes mini-score from \IncipitScore 
+%%  (inside Staff group << >>)
 InstrumentIncipit = 
   #(define-scheme-function 
     (parser location longname shortname music) (scheme? scheme? ly:music?)
@@ -353,8 +388,8 @@ InstrumentIncipit =
         \set Staff.shortInstrumentName = $shortname
       #})
 
-% Declare instrument names when there is no incipit
-%  (inside Staff group << >>)
+%% Declare instrument names when there is no incipit
+%%  (inside Staff group << >>)
 Instrument = 
   #(define-music-function 
     (parser location longname shortname) (scheme? scheme?)
@@ -363,8 +398,8 @@ Instrument =
         \set Staff.shortInstrumentName = $shortname
       #})
 
-% Create rotate ChoirStaff name
-%   (inside ChoirStaff group << >>)
+%% Create rotate ChoirStaff name
+%%   (inside ChoirStaff group << >>)
 ChoirStaffName = 
   #(define-scheme-function
     (parser location name) (scheme?)
@@ -373,7 +408,7 @@ ChoirStaffName =
           \markup \concat { \hspace #1 \rotate #90 $name }
       #})
 
-% Allow for two-line instrument names
+%% Allow for two-line instrument names
 TwoLineName = 
   #(define-scheme-function
     (parser location first second) (scheme? scheme?)
@@ -382,9 +417,9 @@ TwoLineName =
             \line { $first } \line { $second } } }
       #})
 
-%****************************************
-% MACROS FOR INCIPIT STYLE & LAYOUT
-%****************************************
+%%****************************************
+%% MACROS FOR INCIPIT STYLE & LAYOUT
+%%****************************************
 
 IncipitStyle = {
   \cadenzaOn
@@ -392,10 +427,10 @@ IncipitStyle = {
   \override Flag.style = #'mensural
   \override NoteHead.font-size = #4
   \override Stem.font-size = #4
-    % Use mensural accidentals in key signature and music
+    %% Use mensural accidentals in key signature and music
   \override Staff.Accidental.glyph-name-alist = #alteration-mensural-glyph-name-alist
   \override Staff.KeySignature.glyph-name-alist = #alteration-mensural-glyph-name-alist
-    % Allow duplicate flats in key signatures (as in cantus-mollis C-2 clef)
+    %% Allow duplicate flats in key signatures (as in cantus-mollis C-2 clef)
   \override Staff.KeySignature.flat-positions = #'((-5 . 5))
 }
 
@@ -412,29 +447,29 @@ IncipitLayout = \layout {
   ragged-right = ##f
   \context {
     \Staff
-%      \override InstrumentName.font-series = #'bold  
+%%      \override InstrumentName.font-series = #'bold  
       \override VerticalAxisGroup.Y-extent = #'( -4 . 4 )
   }
 }
 
-%****************************************
-% MAIN STYLE & LAYOUT 
-%****************************************
+%%****************************************
+%% MAIN STYLE & LAYOUT 
+%%****************************************
 
 MainStyle = {
 
   \cadenzaOff
 
-  % turn off auto-beams
+  %% turn off auto-beams
   \set Staff.autoBeaming = ##f 
 
-  % make cautionary accidentals in parentheses
-% \accidentalStyle neo-modern-cautionary
+  %% make cautionary accidentals in parentheses
+%% \accidentalStyle neo-modern-cautionary
   
-  % use square breve
+  %% use square breve
   \override NoteHead.style = #'baroque 
 
-  % only numeric time signature
+  %% only numeric time signature
   \numericTimeSignature
 }
 
@@ -442,35 +477,35 @@ LayoutStyle = \layout {
 
   \context {
     \Score
-    % put separate \mark on each staff, not just top  
+    %% put separate \mark on each staff, not just top  
     \remove "Mark_engraver"
     \remove "Staff_collecting_engraver"
 
-    % Increase space below bar numbers
+    %% Increase space below bar numbers
     \override BarNumber.Y-offset = #5
     \override BarNumber.X-offset = #0.5
   
-    % Increase size of bar numbers
+    %% Increase size of bar numbers
     \override BarNumber.font-size = #0.25
     
     \override StanzaNumber.font-series = #'roman
     }
   \context {
     \ChoirStaff
-%    \override InstrumentName.font-series = #'bold
-    % left-align chorus names
+%%    \override InstrumentName.font-series = #'bold
+    %% left-align chorus names
     \override InstrumentName.self-alignment-X = #LEFT
   }
   \context {
     \Staff
-%    \override InstrumentName.font-series = #'bold
+%%    \override InstrumentName.font-series = #'bold
     \override InstrumentName.self-alignment-X = #CENTER
     \consists "Mark_engraver"
     \consists "Staff_collecting_engraver"
   
     \RemoveEmptyStaves
   }
-    % Horizontal analysis brackets
+    %% Horizontal analysis brackets
   \context {
     \Voice \consists "Horizontal_bracket_engraver"
   }
@@ -480,31 +515,31 @@ LayoutStyle = \layout {
     }
   }
 }
-%****************************************
-% PAPER FORMAT 
-%****************************************
+%%****************************************
+%% PAPER FORMAT 
+%%****************************************
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 16)
 
 \paper {
-  % GLOBAL STAFF SIZE
+  %% GLOBAL STAFF SIZE
   #(define fonts
     (make-pango-font-tree 
       "EB Garamond" "" "" 
-      (/ staff-height pt 20))) % leave this at 20 regardless of staff size
+      (/ staff-height pt 20))) %% leave this at 20 regardless of staff size
 
-  % DIMENSIONS
-  line-width = 6.5\in % i.e., 1-inch L & R margins
+  %% DIMENSIONS
+  line-width = 6.5\in %% i.e., 1-inch L & R margins
   left-margin = 1\in
-  top-margin = 1\in % to allow for diss. headers
+  top-margin = 1\in %% to allow for diss. headers
   bottom-margin = 1.25\in
-  two-sided = ##f     % single-sided
+  two-sided = ##f     %% single-sided
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  print-page-number = ##f % no page nos. (added in diss.)
+  print-page-number = ##f %% no page nos. (added in diss.)
 
-  % SPACING
+  %% SPACING
 
   markup-system-spacing = #'((basic-distance . 4) (minimum-distance . 2) (padding . 4) (stretchability . 15))
 
@@ -512,14 +547,14 @@ LayoutStyle = \layout {
   
   score-markup-spacing = #'((basic-distance . 8) (minimum-distance . 6) (padding . 1) (stretchability . 5))
   
-% last-bottom-spacing = #'((basic-distance . 3) (minimum-distance . 1) (padding . 3) (stretchability . 30))
+%% last-bottom-spacing = #'((basic-distance . 3) (minimum-distance . 1) (padding . 3) (stretchability . 30))
   
-  % AVOID COLLISION WITH LYRIC TIES
+  %% AVOID COLLISION WITH LYRIC TIES
   #(add-text-replacements! 
     '(("|" . " ")))
-  % U00A0 non-breaking space
+  %% U00A0 non-breaking space
 
-  % HEADERS STYLE & SPACING 
+  %% HEADERS STYLE & SPACING 
   bookTitleMarkup = \markup {
     \override #'(baseline-skip . 8)
     \column {
@@ -552,7 +587,7 @@ LayoutStyle = \layout {
     \override #'(baseline-skip . 5)
     \column {
       \fill-line {
-				%        \fontsize #3 \bold \fromproperty #'header:piece
+				%%        \fontsize #3 \bold \fromproperty #'header:piece
 	\fontsize #3 \fromproperty #'header:piece
       }
       \fill-line {
@@ -562,7 +597,7 @@ LayoutStyle = \layout {
 
   }
 
-  % put copyright notice left-aligned on first page
+  %% put copyright notice left-aligned on first page
 
   oddHeaderMarkup = \markup \null
   oddFooterMarkup = \markup { 
@@ -573,34 +608,34 @@ LayoutStyle = \layout {
         \line { 
           "Source: " \fromproperty #'header:source 
         }
-%       \vspace #0.3
+%%       \vspace #0.3
         \line {
           "Copyright © 2015 Andrew A. Cashner"
         }
-%       % Uncomment to put a license at the bottom of p. 1
-%       \vspace #1
-%       \line {
-%         \fromproperty #'header:license
-%       }
+%%       %% Uncomment to put a license at the bottom of p. 1
+%%       \vspace #1
+%%       \line {
+%%         \fromproperty #'header:license
+%%       }
       }
     }
-%   \on-the-fly #not-first-page {
-%     \vspace #2
-%     \fontsize #2
-%     \fill-line {
-%       \on-the-fly #print-page-number-check-first
-%       \fromproperty #'page:page-number-string
-%     }
-%   }
+%%   \on-the-fly #not-first-page {
+%%     \vspace #2
+%%     \fontsize #2
+%%     \fill-line {
+%%       \on-the-fly #print-page-number-check-first
+%%       \fromproperty #'page:page-number-string
+%%     }
+%%   }
   }
   evenHeaderMarkup = \oddHeaderMarkup
   evenFooterMarkup = \oddFooterMarkup
 
 }
 
-%**************************************
-% CREATIVE COMMONS LICENSE
-%**************************************
+%%**************************************
+%% CREATIVE COMMONS LICENSE
+%%**************************************
 
 CCBY = \markup \with-url #"http://creativecommons.org/licenses/by/4.0/" {
       \general-align #Y #-1 {
