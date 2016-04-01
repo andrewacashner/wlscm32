@@ -9,11 +9,13 @@
 %% Turn off point-and-click
 \pointAndClickOff
 
+
 %%*******************
 %% BARLINES
 
 MiddleBar = { \bar "||" }
 FinalBar = { \bar "|." }
+RepeatBar = { \bar ":|." }
 
 %%*******************
 %% METERS
@@ -102,7 +104,7 @@ EdLyrics =
     \revert Lyrics.LyricText.font-shape
     #})
 
-
+  
 %%%%%%%%%% BRACKETS FOR MENSURAL COLORATION %%%%%%%%%%
 
 %%%% Once command to group notes inside a TextSpanner
@@ -128,19 +130,6 @@ ColorBracketRight =
 	  \draw-line #'(-1.5 . 0)
 	}
 
-ColorBrackets = {
-  \once \override TextSpanner.dash-period = #0
-  \once \override TextSpanner.bound-details.left.text = \ColorBracketLeft
-  \once \override TextSpanner.bound-details.right.text = \ColorBracketRight
-  \once \override TextSpanner.bound-details.left.attach-dir = #-2
-  \once \override TextSpanner.bound-details.right.attach-dir = #2
-  \once \override TextSpanner.staff-padding = #2
-  \once \override TextSpanner.bound-details.left-broken.text = ##f
-  \once \override TextSpanner.bound-details.right-broken.text = ##f
-}
-
-
-
 %%%% Usage: \Color { c'2 c'2 c'2 } c'1.
 
 Color =
@@ -148,7 +137,6 @@ Color =
   (parser location music) (ly:music?)
   "Add coloration brackets as text spanner to a group of notes enclosed in braces after the command"
   #{
-  \ColorBrackets
   $(text-spanner-start-stop music)
   #})
 
@@ -179,7 +167,7 @@ ColorOne =
 %% ALTERNATE VERSION
 
 %% put this in \layout { \context \Score 
-colorbrackets = {
+ColorBrackets = {
   \override TextSpanner.dash-period = #0
   \override TextSpanner.bound-details.left.text = \ColorBracketLeft
   \override TextSpanner.bound-details.right.text = \ColorBracketRight
@@ -456,27 +444,25 @@ IncipitLayout = \layout {
 %% MAIN STYLE & LAYOUT 
 %%****************************************
 
-MainStyle = {
 
-  \cadenzaOff
-
-  %% turn off auto-beams
-  \set Staff.autoBeaming = ##f 
-
-  %% make cautionary accidentals in parentheses
-%% \accidentalStyle neo-modern-cautionary
-  
-  %% use square breve
-  \override NoteHead.style = #'baroque 
-
-  %% only numeric time signature
-  \numericTimeSignature
-}
-
-LayoutStyle = \layout {
+\layout {
 
   \context {
     \Score
+
+    %% end cadenza if turned on by incipit
+    \cadenzaOff
+
+    %% make textspanner be coloration brackets
+    \ColorBrackets
+    
+    %% only numeric time signature
+    \numericTimeSignature
+    %% use square breve
+    \override NoteHead.style = #'baroque
+    %% turn off auto-beams
+    \autoBeamOff
+    
     %% put separate \mark on each staff, not just top  
     \remove "Mark_engraver"
     \remove "Staff_collecting_engraver"
@@ -489,32 +475,29 @@ LayoutStyle = \layout {
     \override BarNumber.font-size = #0.25
     
     \override StanzaNumber.font-series = #'roman
+
+    %% For horizontal analysis brackets
+    \override HorizontalBracket.outside-staff-priority = #1500
+
     }
   \context {
     \ChoirStaff
-%%    \override InstrumentName.font-series = #'bold
     %% left-align chorus names
     \override InstrumentName.self-alignment-X = #LEFT
   }
   \context {
     \Staff
-%%    \override InstrumentName.font-series = #'bold
     \override InstrumentName.self-alignment-X = #CENTER
     \consists "Mark_engraver"
     \consists "Staff_collecting_engraver"
-  
     \RemoveEmptyStaves
   }
-    %% Horizontal analysis brackets
   \context {
+    %% Horizontal analysis brackets
     \Voice \consists "Horizontal_bracket_engraver"
   }
-  \context {
-    \Score {
-      \override HorizontalBracket.outside-staff-priority = #1500
-    }
-  }
 }
+
 %%****************************************
 %% PAPER FORMAT 
 %%****************************************
@@ -523,6 +506,12 @@ LayoutStyle = \layout {
 #(set-global-staff-size 16)
 
 \paper {
+
+  %% AVOID COLLISION WITH LYRIC TIES
+  #(add-text-replacements! 
+    '(("|" . " ")))
+  %% U00A0 non-breaking space
+
   %% GLOBAL STAFF SIZE
   #(define fonts
     (make-pango-font-tree 
@@ -530,75 +519,82 @@ LayoutStyle = \layout {
       (/ staff-height pt 20))) %% leave this at 20 regardless of staff size
 
   %% DIMENSIONS
-  line-width = 6.5\in %% i.e., 1-inch L & R margins
-  left-margin = 1\in
-  top-margin = 1\in %% to allow for diss. headers
+  line-width    = 6.5\in %% i.e., 1-inch L & R margins
+  left-margin   = 1\in
+  top-margin    = 1\in %% to allow for headers
   bottom-margin = 1.25\in
   two-sided = ##f     %% single-sided
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-  print-page-number = ##f %% no page nos. (added in diss.)
+  print-page-number = ##f %% no page nos. (added by LaTeX)
 
   %% SPACING
 
-  markup-system-spacing = #'((basic-distance . 4) (minimum-distance . 2) (padding . 4) (stretchability . 15))
+  markup-system-spacing =
+  #'(
+  (basic-distance . 4)
+  (minimum-distance . 2)
+  (padding . 4)
+  (stretchability . 15))
 
-  markup-markup-spacing = #'((basic-distance . 10) (minimum-distance . 2) (padding . 4) (stretchability . 30))
+  markup-markup-spacing =
+  #'(
+  (basic-distance . 10)
+  (minimum-distance . 2)
+  (padding . 4)
+  (stretchability . 30))
   
-  score-markup-spacing = #'((basic-distance . 8) (minimum-distance . 6) (padding . 1) (stretchability . 5))
+  score-markup-spacing =
+  #'(
+  (basic-distance . 8)
+  (minimum-distance . 6)
+  (padding . 1)
+  (stretchability . 5))
   
-%% last-bottom-spacing = #'((basic-distance . 3) (minimum-distance . 1) (padding . 3) (stretchability . 30))
-  
-  %% AVOID COLLISION WITH LYRIC TIES
-  #(add-text-replacements! 
-    '(("|" . " ")))
-  %% U00A0 non-breaking space
 
+  bookTitleMarkup = {}
+  
   %% HEADERS STYLE & SPACING 
-  bookTitleMarkup = \markup {
-    \override #'(baseline-skip . 8)
-    \column {
-      \override #'(baseline-skip . 4 )
-      \column {
-        \fill-line { 
-          \fontsize #7 \fromproperty #'header:title
-        }
-        \fill-line { 
-          \fontsize #2 \italic \fromproperty #'header:subtitle
-        }
-      }
-      \column {
-      \override #'(baseline-skip . 3 )
-      \fontsize #2
-        \column { 
-          \fill-line { 
-            \fromproperty #'header:poet
-            \fromproperty #'header:composer
-          }
-          \fill-line {
-            \concat { "Edited by Andrew A. Cashner" }
-            \fromproperty #'header:dates 
-          }
-        }
-      }
-    }
-  }
   scoreTitleMarkup = \markup {
     \override #'(baseline-skip . 5)
     \column {
       \fill-line {
-				%%        \fontsize #3 \bold \fromproperty #'header:piece
 	\fontsize #3 \fromproperty #'header:piece
       }
       \fill-line {
         \fontsize #2 \italic \fromproperty #'header:pieceSubtitle
       }
+      
+      \override #'(baseline-skip . 8)
+      \column {
+	\override #'(baseline-skip . 4 )
+	\column {
+	  \fill-line { 
+	    \fontsize #7 \fromproperty #'header:title
+	  }
+	  \fill-line { 
+	    \fontsize #2 \italic \fromproperty #'header:subtitle
+	  }
+	}
+	\column {
+	  \override #'(baseline-skip . 3 )
+	  \fontsize #2
+	  \column { 
+	    \fill-line { 
+	      \fromproperty #'header:poet
+	      \fromproperty #'header:composer
+	    }
+	    \fill-line {
+	      \concat { "Edited by Andrew A. Cashner" }
+	      \fromproperty #'header:dates 
+	    }
+	  }
+	}
+      }
     }
-
   }
 
   %% put copyright notice left-aligned on first page
-
   oddHeaderMarkup = \markup \null
   oddFooterMarkup = \markup { 
     \on-the-fly #first-page {
@@ -608,43 +604,18 @@ LayoutStyle = \layout {
         \line { 
           "Source: " \fromproperty #'header:source 
         }
-%%       \vspace #0.3
         \line {
-          "Copyright © 2015 Andrew A. Cashner"
+          "Copyright © 2016 Andrew A. Cashner"
         }
-%%       %% Uncomment to put a license at the bottom of p. 1
-%%       \vspace #1
-%%       \line {
-%%         \fromproperty #'header:license
-%%       }
       }
     }
-%%   \on-the-fly #not-first-page {
-%%     \vspace #2
-%%     \fontsize #2
-%%     \fill-line {
-%%       \on-the-fly #print-page-number-check-first
-%%       \fromproperty #'page:page-number-string
-%%     }
-%%   }
   }
+
   evenHeaderMarkup = \oddHeaderMarkup
   evenFooterMarkup = \oddFooterMarkup
 
 }
 
-%%**************************************
-%% CREATIVE COMMONS LICENSE
-%%**************************************
-
-CCBY = \markup \with-url #"http://creativecommons.org/licenses/by/4.0/" {
-      \general-align #Y #-1 {
-      \column { \epsfile #X #20 #"../ly/img/cc-by.eps" }
-      \pad-x #1
-      \override #'(line-width . 100)
-      \wordwrap {This edition, based on a musical work in the public domain, is licensed under the Creative Commons Attribution 4.0 International License, http://creativecommons.org/licenses/by/4.0/.}
-    } 
-}
 
 
 
