@@ -15,6 +15,21 @@
   source = "Segovia, Cathedral Archive (E-SE: 28/25)."
 }
 
+IncipitGlobal = {
+  \MeterCZ
+}
+
+IncipitSolo = {
+  \MSclefCii
+  a'2
+}
+
+IncipitAcomp = {
+  \MSclefCiii
+  a1.
+}
+
+
 EstribilloSolo = {
 
   \Section "[ESTRIBILLO]"
@@ -91,6 +106,7 @@ EstribilloSolo = {
   b'2\endcolor a'2 a'1( gis'1)
 
   \time 3/2
+  \TempoSame
   a'1.
   \RepeatMsg "[Fine]"
   \FinalBar 
@@ -104,8 +120,7 @@ CoplasSolo = {
   \HiddenBar
   
   \time 2/2
-  \MeterAboveC
-
+  \MeterChangeCZtoC
   r8 a'8 c''8 c''8 b'8. a'16 b'8 c''8
   d''2 r8 a'8 c''4
 
@@ -120,8 +135,8 @@ CoplasSolo = {
 
   c''4 a'8 d''8 d''4 cis''4
 
-  \MeterAboveCZ
   \time 6/2
+  \MeterChangeCtoCZ
   r2 e'2 a'2
   gis'2 r2 r2
 
@@ -132,6 +147,7 @@ CoplasSolo = {
   b'2\endcolor a'2 a'1( gis'1)
 
   \time 3/2
+  \TempoSame
   a'1.
   \RepeatMsg "[D.C. after last copla]"
   \RepeatBar
@@ -346,14 +362,19 @@ LyricsCoplasSolo = \lyricmode {
   <<
     \new Staff
     <<
-      \new Voice = "Solo" { \EstribilloSolo \CoplasSolo }
+      \IncipitStaff "SOLO" "" { \IncipitSolo }
+      \new Voice = "Solo" {\EstribilloSolo \CoplasSolo }
       \new Lyrics \lyricsto "Solo" { \LyricsEstribilloSolo \LyricsCoplasSolo }
     >>
     \new Staff
     <<
+      \IncipitStaff "ACOMP." "" { \IncipitAcomp }
       \new Voice = "Acomp" { \EstribilloAcomp \CoplasAcomp }
       \new FiguredBass { \EstribilloFiguresAcomp \CoplasFiguresAcomp }
     >>
   >>
- 
+  \layout {
+    short-indent = 0\in
+  }
+  
 }

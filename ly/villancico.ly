@@ -17,6 +17,7 @@ MiddleBar = { \bar "||" }
 FinalBar = { \bar "|." }
 RepeatBar = { \bar ":|." }
 
+
 %%*******************
 %% METERS
 
@@ -30,11 +31,41 @@ CompasMayor = { \defaultTimeSignature \time 2/2 }
 %% GRAPHIC METERS 
 
 %% the symbol itself 
-CZ = #(lambda (grob) (grob-interpret-markup grob 
-    (markup (#:epsfile #'Y #'5 #'"../ly/img/CZ.eps"))))
 
-Z = #(lambda (grob) (grob-interpret-markup grob
-    (markup (#:epsfile #'Y #'5 #'"../ly/img/Z.eps"))))
+CZ =
+#(lambda (grob)
+  (grob-interpret-markup grob 
+   #{ \markup { \epsfile #Y #5 #"../ly/img/CZ.eps" } #}))
+
+
+Z =
+#(lambda (grob)
+  (grob-interpret-markup grob 
+   #{ \markup { \epsfile #Y #5 #"../ly/img/Z.eps" } #}))
+
+%% symbol + tempo relationship
+
+CwithTempo =
+#(lambda (grob)
+  (grob-interpret-markup grob
+   #{ \markup {
+   \smaller { \musicglyph #"timesig.C44" }
+   \TempoCZtoCMarkup } #}))
+
+CZwithTempo =
+#(lambda (grob)
+  (grob-interpret-markup grob 
+   #{ \markup {
+   \epsfile #Y #5 #"../ly/img/CZ.eps"
+   \TempoCtoCZMarkup  } #}))
+
+ZwithTempo =
+#(lambda (grob)
+  (grob-interpret-markup grob
+   #{ \markup {
+   \epsfile #Y #5 #"../ly/img/Z.eps"
+   \TempoCtoCZMarkup  } #}))
+
 
 %% on staff (slightly larger)
 CZstaff = #(lambda (grob) (grob-interpret-markup grob 
@@ -50,7 +81,9 @@ MeterZ = \override Score.TimeSignature.stencil = #Zstaff
 %%****************************************
 %% ORIGINAL METERS ABOVE THE STAFF
 
-MarkMeterC = \mark \markup { \smaller \musicglyph #"timesig.C44" }
+MarkupMeterC = \markup { \smaller \musicglyph #"timesig.C44" }
+
+MarkMeterC = \mark \MarkupMeterC
 
 MarkMeterCZ = {
   \once \override Score.RehearsalMark.stencil = #CZ 
@@ -81,6 +114,47 @@ MeterAboveZ = {
   \MeterAboveTimeSignature
   \MarkMeterZ
 }
+
+
+%%********************
+%% TEMPO RELATIONSHIPS
+
+TempoNotePerfectSemibreve = \markup \fontsize #-4 \note #"1." #1
+TempoNoteMinim = \markup \fontsize #-4 \note #"2" #1
+
+TempoSameMarkup = \markup "[=]"
+TempoCZtoCMarkup = \markup { [ \TempoNotePerfectSemibreve = \TempoNoteMinim ] }
+TempoCtoCZMarkup = \markup { [ \TempoNoteMinim = \TempoNotePerfectSemibreve ] }
+
+TempoSame = \mark \TempoSameMarkup
+TempoCZtoC = \mark \TempoCZtoCMarkup
+TempoCtoCZ = \mark \TempoCtoCZMarkup
+
+TempoAboveTimeSignature = {
+  \once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
+  \once \override Score.TimeSignature.break-align-anchor-alignment = #LEFT
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+  \once \override Score.RehearsalMark.padding = #2
+}
+
+MeterChangeCZtoC = {
+  \TempoAboveTimeSignature
+  \once \override Score.RehearsalMark.stencil = #CwithTempo
+  \mark \default
+}
+
+MeterChangeCtoCZ = {
+  \TempoAboveTimeSignature
+  \once \override Score.RehearsalMark.stencil = #CZwithTempo
+  \mark \default
+}
+MeterChangeCtoZ = {
+  \TempoAboveTimeSignature
+  \once \override Score.RehearsalMark.stencil = #ZwithTempo
+  \mark \default
+}
+
+
 %%********************
 %% CANTUS MOLLIS
 
@@ -238,9 +312,9 @@ Section =
   "Print a section title"
   #{
     \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-    \once \override Score.RehearsalMark.padding = #7
+    \once \override Score.RehearsalMark.padding = #8
     \once \override Score.RehearsalMark.outside-staff-priority = #2000
-    \mark \markup \fontsize #1.5 $SectionText
+    \mark \markup \fontsize #1.5 $SectionText 
   #})
 
 %%**********************
@@ -364,9 +438,9 @@ IncipitGlobal = {}
 %% Declare long and short instrument names when there is an incipit
 %%  so that long name includes mini-score from \IncipitScore 
 %%  (inside Staff group << >>)
-InstrumentIncipit = 
+IncipitStaff = 
   #(define-scheme-function 
-    (parser location longname shortname music) (scheme? scheme? ly:music?)
+    (parser location longname shortname music) (markup? markup? ly:music?)
       #{
         \set Staff.instrumentName = \markup { 
           \IncipitScore ##{ 
@@ -378,9 +452,9 @@ InstrumentIncipit =
 
 %% Declare instrument names when there is no incipit
 %%  (inside Staff group << >>)
-Instrument = 
+InstrumentName = 
   #(define-music-function 
-    (parser location longname shortname) (scheme? scheme?)
+    (parser location longname shortname) (markup? markup?)
       #{ 
         \set Staff.instrumentName = $longname 
         \set Staff.shortInstrumentName = $shortname
@@ -390,7 +464,7 @@ Instrument =
 %%   (inside ChoirStaff group << >>)
 ChoirStaffName = 
   #(define-scheme-function
-    (parser location name) (scheme?)
+    (parser location name) (markup?)
       #{
         \set ChoirStaff.instrumentName = 
           \markup \concat { \hspace #1 \rotate #90 $name }
@@ -399,11 +473,12 @@ ChoirStaffName =
 %% Allow for two-line instrument names
 TwoLineName = 
   #(define-scheme-function
-    (parser location first second) (scheme? scheme?)
+    (parser location first second) (markup? markup?)
       #{
         \markup { \center-column { 
             \line { $first } \line { $second } } }
       #})
+
 
 %%****************************************
 %% MACROS FOR INCIPIT STYLE & LAYOUT
@@ -435,10 +510,16 @@ IncipitLayout = \layout {
   ragged-right = ##f
   \context {
     \Staff
-%%      \override InstrumentName.font-series = #'bold  
       \override VerticalAxisGroup.Y-extent = #'( -4 . 4 )
   }
 }
+
+MSclefCi = \clef "petrucci-c1"
+MSclefCii = \clef "petrucci-c2"
+MSclefCiii = \clef "petrucci-c3"
+MSclefCiv = \clef "petrucci-c4"
+MSclefCv = \clef "petrucci-c5"
+MSclefFiii = \clef "varbaritone"
 
 %%****************************************
 %% MAIN STYLE & LAYOUT 
@@ -447,6 +528,9 @@ IncipitLayout = \layout {
 
 \layout {
 
+  indent = 1.5\in
+  short-indent = 0.5\in
+  
   \context {
     \Score
 
@@ -472,7 +556,7 @@ IncipitLayout = \layout {
     \override BarNumber.X-offset = #0.5
   
     %% Increase size of bar numbers
-    \override BarNumber.font-size = #0.25
+    \override BarNumber.font-size = #1
     
     \override StanzaNumber.font-series = #'roman
 
