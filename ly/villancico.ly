@@ -224,7 +224,7 @@ RepeatMsg =
         \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
         \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
         \once \override Score.RehearsalMark.padding = #5
-        \mark \markup \fontsize #-1 $msg %% was \bold
+        \mark \markup $msg %% was \bold
       #})
 
 Segno =  \mark \markup { \musicglyph #"scripts.segno" }
@@ -240,7 +240,7 @@ Section =
     \once \override Score.RehearsalMark.self-alignment-X = #LEFT
     \once \override Score.RehearsalMark.padding = #7
     \once \override Score.RehearsalMark.outside-staff-priority = #2000
-    \mark \markup $SectionText
+    \mark \markup \fontsize #1.5 $SectionText
   #})
 
 %%**********************
@@ -494,8 +494,14 @@ IncipitLayout = \layout {
   }
   \context {
     %% Horizontal analysis brackets
-    \Voice \consists "Horizontal_bracket_engraver"
+    \Voice
+    \consists "Horizontal_bracket_engraver"
   }
+  \context {
+    \Lyrics
+    \override LyricText.font-size = #2
+  }
+  
 }
 
 %%****************************************
@@ -576,20 +582,22 @@ IncipitLayout = \layout {
 	    \fontsize #2 \italic \fromproperty #'header:subtitle
 	  }
 	}
+	\vspace #1
 	\column {
 	  \override #'(baseline-skip . 3 )
 	  \fontsize #2
 	  \column { 
 	    \fill-line { 
-	      \fromproperty #'header:poet
+	      "Edited by Andrew A. Cashner"
 	      \fromproperty #'header:composer
 	    }
 	    \fill-line {
-	      \concat { "Edited by Andrew A. Cashner" }
+	      \fromproperty #'header:poet
 	      \fromproperty #'header:dates 
 	    }
 	  }
 	}
+	\vspace #1
       }
     }
   }
@@ -599,6 +607,7 @@ IncipitLayout = \layout {
   oddFooterMarkup = \markup { 
     \on-the-fly #first-page {
 
+      \fontsize #1.5
       \column {
         \vspace #1
         \line { 

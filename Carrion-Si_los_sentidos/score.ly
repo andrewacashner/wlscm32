@@ -11,14 +11,14 @@
   subtitle = "Villancico al Santísimo Sacramento. Solo."
   composer = "JERÓNIMO DE CARRIÓN"
   dates = "(1660–1721)"
-  poet = "Vicente Sánchez"
-  source = \markup \concat { "Segovia, Cathedral Archive (E-SE: 28/25). "
-			     "Lyrics: cf. Vicente Sánchez, "
-			     \italic "Lira poética "
-			     "(Zaragoza, 1689), 171–172." }
+  poet = "Vicente Sánchez (Zaragoza, 1689)"
+  source = "Segovia, Cathedral Archive (E-SE: 28/25)."
 }
 
 EstribilloSolo = {
+
+  \Section "[ESTRIBILLO]"
+  
   \clef "treble"
   \time 6/2
 
@@ -103,7 +103,7 @@ CoplasSolo = {
   \Section "COPLAS"
   \HiddenBar
   
-  \time 4/2
+  \time 2/2
   \MeterAboveC
 
   r8 a'8 c''8 c''8 b'8. a'16 b'8 c''8
@@ -118,7 +118,6 @@ CoplasSolo = {
   r2 r4 b'8 d''8
   cis''8. b'16 cis''8 d'' e''4 r8 b'8
 
-  \time 2/2
   c''4 a'8 d''8 d''4 cis''4
 
   \MeterAboveCZ
@@ -227,7 +226,7 @@ EstribilloAcomp = {
 CoplasAcomp = {
   \HiddenBar
   \HiddenBar
-  \time 4/2
+  \time 2/2
 
   a2 e'8 e8 g8 g8
   fis8.[ e16] fis8[ g8] a4 e4
@@ -241,7 +240,6 @@ CoplasAcomp = {
   a2 gis2
   a2 e4 g?4
 
-  \time 2/2
   c4 f4 g4 a4
 
   \time 6/2
@@ -295,20 +293,19 @@ CoplasFiguresAcomp = \figuremode {
   \HiddenBar
   \HiddenBar
   
-  \time 4/2
-  s1
-  s1
-
-  s1
-  s1
-  
-  <_+>2 s2
-  s1
-  
-  s1
-  <_+>2 s2
-
   \time 2/2
+  s1
+  s1
+
+  s1
+  s1
+  
+  <_+>2 s2
+  s1
+  
+  s1
+  <_+>2 s2
+
   s2. <_+>4
 
   \time 6/2
