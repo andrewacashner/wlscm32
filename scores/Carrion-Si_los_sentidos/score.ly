@@ -11,8 +11,8 @@
   subtitle = "Villancico al Santísimo Sacramento. Solo."
   composer = "JERÓNIMO DE CARRIÓN"
   dates = "(1660–1721)"
-  poet = "Vicente Sánchez (Zaragoza, 1689)"
-  source = "Segovia, Cathedral Archive (E-SE: 28/25)."
+  poet = "Vicente Sánchez (Zaragoza, 1688)"
+  source = "Segovia, Cathedral Archive (E-SE: 28/25)"
 }
 
 IncipitGlobal = {

@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{xparse}
+\NewDocumentCommand{\quoted}{ m }{``#1''}
+
+\NewDocumentCommand{\critnote}{ m m }{%
+  #1\footnote{#1 $]$ #2}%
+}
+
+\NewDocumentCommand{\variant}{ s m m o }{%
+  #2: \quoted{#3}%
+  \IfNoValueTF{#4}
+    {}
+    {\ (#4)}%
+  \IfBooleanTF{#1} 
+    {}
+    {{.}}%
+}
+
+\begin{document}
+\variant{Source 1}{pues}
+
+\variant{Source 2}{llegue}[arrive]
+
+\critnote{si en}{\variant{Source 1}{pues}}
+
+\critnote{lleve}{\variant{Source 2}{llegue}[arrive]}
+
+\critnote{yerra}{\variant*{Source 1}{ierra}; \variant{Source 2}{hierra}}
+\end{document}
