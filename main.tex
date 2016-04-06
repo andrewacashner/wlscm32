@@ -1,29 +1,28 @@
 \documentclass{villancico}
-\begin{document}
-\frontmatter
-\title{What Heavenly Music: Villancicos on the Subject of Music from Seventeenth-Century Mexico and Spain}
-\author{Edited by Andrew A. Cashner}
-\date{}
-\maketitle
 
-\vspace*{\fill}
-\begin{center}
-Copyright $\copyright$ 2016 Andrew A. Cashner
-\end{center}
-\vspace*{\fill}
-\clearpage
+\begin{document}
+
+\frontmatter
+
+\begin{maintitle}
+\title{\worktitle{Qué música celestial}}
+\subtitle{Villancicos on the Subject of Music from Seventeenth-Century Mexico and Spain}
+\editor{Andrew A. Cashner}
+\end{maintitle}
+
+\copyrightpage
 
 \tableofcontents
 
 \mainmatter
-\chapter{Introduction}
+\edpart{Introduction}
 
-\chapter{Poetry Editions}
-\input{poems/si_los_sentidos}
+\edpart{Poetry Editions}
+\includepoem{si_los_sentidos}
 
-\chapter{Music Editions}
-\input{scores/Carrion-Si_los_sentidos/edition}
+\edpart{Music Editions}
+\includescore{Carrion-Si_los_sentidos}
 
-\chapter{Critical Notes to Music Editions}
+\edpart{Critical Notes to Music Editions}
 
 \end{document}
