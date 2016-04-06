@@ -312,7 +312,7 @@ Section =
   "Print a section title"
   #{
     \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-    \once \override Score.RehearsalMark.padding = #8
+    \once \override Score.RehearsalMark.padding = #7
     \once \override Score.RehearsalMark.outside-staff-priority = #2000
     \mark \markup \fontsize #1.5 $SectionText 
   #})

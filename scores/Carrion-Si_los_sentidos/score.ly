@@ -16,7 +16,7 @@
 }
 
 IncipitGlobal = {
-  \MeterCZ
+  \MeterZ
 }
 
 IncipitSolo = {
@@ -25,14 +25,14 @@ IncipitSolo = {
 }
 
 IncipitAcomp = {
-  \MSclefCiii
+  \MSclefCiv
   a1.
 }
 
 
 EstribilloSolo = {
 
-  \Section "[ESTRIBILLO]"
+  \Section "ESTRIBILLO"
   
   \clef "treble"
   \time 6/2
@@ -136,7 +136,7 @@ CoplasSolo = {
   c''4 a'8 d''8 d''4 cis''4
 
   \time 6/2
-  \MeterChangeCtoCZ
+  \MeterChangeCtoZ
   r2 e'2 a'2
   gis'2 r2 r2
 
@@ -254,7 +254,7 @@ CoplasAcomp = {
   c'4 f4 d4 e4
 
   a2 gis2
-  a2 e4 g?4
+  a2 e4 g4
 
   c4 f4 g4 a4
 
@@ -263,7 +263,7 @@ CoplasAcomp = {
   e'2 e2 a2
 
   gis2\color a1\endcolor
-  e2 fis2 g?2
+  e2 f2 g?2
 
   c2 e2 a2
   gis2 a2 b2
@@ -281,7 +281,7 @@ EstribilloFiguresAcomp = \figuremode {
   s\breve.
   s1 <6>2 s1.
   s\breve.
-  s2 <6>2 s2 <6>2 s1
+  s1 <6>2 s2 <6>2 s2
   s1. <_+>1.
   <4>1. s1.
   s1. s2 <_+>2 <6>2
