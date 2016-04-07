@@ -1,0 +1,162 @@
+%% SI LOS SENTIDOS QUEJA FORMAN DEL PAN DIVINO
+%% MIGUEL DE IRIZAR (E-SE: 5/32)
+%% EDITED BY ANDREW CASHNER
+
+%% 2016-04-07 -- Revised for published edition
+%% 2015-02-19 -- Lilypond version 2.18.2 for dissertation
+%% 2014-05-06 -- Lilypond version 2.14.2
+
+
+\version "2.18.2"
+\include "../ly/villancico.ly"
+
+\include "music.ly"
+\include "lyrics.ly"
+
+\header {
+  title		= "Si los sentidos queja forman del pan divino"
+  subtitle	= "Al Santísimo [Sacramento]. A 8."
+  composer 	= "MIGUEL DE IRÍZAR"
+  dates		= "(1635–1684)"
+  poet          = "Attr. Vicente Sánchez"
+  source 	= "Segovia, Cathedral Archive (E-SE: 5/32)"
+}
+
+%% VOICING: SSAT, SATB, Ac
+%% FORM: Estr. + 6 coplas
+
+%%****************************************************************************
+%% SCORE: ESTRIBILLO
+%%****************************************************************************
+
+\score {
+  <<
+    \new ChoirStaff = "ChI"
+    <<
+      \ChoirStaffName "CHORUS I"
+      
+      %% SI-1
+      \new Staff = "SIi" 
+      <<
+	\IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
+	\new Voice = "SIi" {
+	  \MusicEstribilloSIi
+	  \MusicCoplasSIi
+	}
+	\new Lyrics \lyricsto "SIi" {
+	  \LyricsEstribilloSIi
+	  \LyricsCoplasSIi
+	}
+      >>
+
+      %% SI-2
+      \new Staff = "SIii" 
+      <<
+	\IncipitStaff "TIPLE I-2" "Ti. I-2" { \IncipitSIii }
+	\new Voice = "SIii" {
+	  \MusicEstribilloSIii
+	  \MusicCoplasSIii
+	}
+	\new Lyrics \lyricsto "SIii" {
+	  \LyricsEstribilloSIii
+	  \LyricsCoplasSIii
+	}
+      >>
+
+      %% AI
+      \new Staff = "AI" 
+      <<
+	\IncipitStaff "ALTO I" "A. I" { \IncipitAI }
+	\new Voice = "AI" {
+	  \MusicEstribilloAI
+	  \MusicCoplasAI
+	}
+	\new Lyrics \lyricsto "AI" {
+	  \LyricsEstribilloAI
+	  \LyricsCoplasAI
+	}
+      >>
+
+      %% TI
+      \new Staff = "TI" 
+      <<
+	\IncipitStaff "TENOR I" "T. I" { \IncipitTI }
+	\new Voice = "TI" {
+	  \MusicEstribilloTI
+	  \MusicCoplasTI
+	}
+	\new Lyrics \lyricsto "TI" {
+	  \LyricsEstribilloTI
+	  \LyricsCoplasTI
+	}
+      >>
+
+    >> %% end of Chorus I staves
+
+    \new ChoirStaff = "ChII"
+    <<
+      \ChoirStaffName "CHORUS II"
+
+      %% SII
+      \new Staff = "SII" 
+      <<
+	\IncipitStaff "TIPLE II" "Ti. II" { \IncipitSII }
+	\new Voice = "SII" {
+	  \MusicEstribilloSII
+	}
+	\new Lyrics \lyricsto "SII" {
+	  \LyricsEstribilloSII
+	}
+      >>
+
+      %% AII
+      \new Staff = "AII" 
+      <<
+	\IncipitStaff "ALTO II" "A. II" { \IncipitAII }
+	\new Voice = "AII" {
+	  \MusicEstribilloAII
+	}
+	\new Lyrics \lyricsto "AII" {
+	  \LyricsEstribilloAII
+	}
+      >>
+
+      %% TII
+      \new Staff = "TII" 
+      <<
+	\IncipitStaff "TENOR II" "T. II" { \IncipitTII } 
+	\new Voice = "TII" {
+	  \MusicEstribilloTII
+	}
+	\new Lyrics \lyricsto "TII" {
+	  \LyricsEstribilloTII
+	}
+      >>
+
+      %% BII
+      \new Staff = "BII" 
+      <<
+	\IncipitStaff "BAJO II" "B. II" { \IncipitBII }
+	\new Voice = "BII" {
+	  \MusicEstribilloBII
+	}
+      >>
+
+    >> %% end of Ch. II staves
+
+    %% Ac
+    \new Staff = "Ac" 
+    <<
+      \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
+      \new Voice = "EstribilloAc" {
+	\MusicEstribilloAc
+	<< 
+	  \MusicCoplasAc
+	  \FiguresCoplasAc
+	>>
+      }
+    >>
+  >>
+  
+}
+

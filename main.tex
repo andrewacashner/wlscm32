@@ -1,11 +1,13 @@
 \documentclass{villancico}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{master.bib}
 
 \begin{document}
 
 \frontmatter
 
 \begin{maintitle}
-\title{\worktitle{Qué música celestial}}
+\title{Listen to the Newest Consonance}
 \subtitle{Villancicos on the Subject of Music from Seventeenth-Century Mexico and Spain}
 \editor{Andrew A. Cashner}
 \end{maintitle}
@@ -16,6 +18,10 @@
 
 \mainmatter
 \edpart{Introduction}
+\include{intro/intro}
+
+\edpart{Critical Notes}
+\includenote{Carrion-Si_los_sentidos}
 
 \edpart{Poetry Editions}
 \includepoem{si_los_sentidos}
@@ -23,6 +29,5 @@
 \edpart{Music Editions}
 \includescore{Carrion-Si_los_sentidos}
 
-\edpart{Critical Notes to Music Editions}
 
 \end{document}

@@ -1,4 +1,8 @@
 \#*
+*.bbl
+*.bcf 
+*.blg
+*.run.xml
 *.pdf
 *.1
 *.1*

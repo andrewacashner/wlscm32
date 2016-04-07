@@ -1,17 +1,17 @@
 %% Carrión, Si los sentidos, E-SE: 28/25
 %% MUSIC
 
-%% 2016/03/31
+%% 2016/03/31 -- New version for published edition
 
 \version "2.18.2"
 \include "../ly/villancico.ly"
 
 \header {
-  title = "Si los sentidos queja forman del Pan divino"
+  title = "Si los sentidos queja forman del Pan Divino"
   subtitle = "Villancico al Santísimo Sacramento. Solo."
   composer = "JERÓNIMO DE CARRIÓN"
   dates = "(1660–1721)"
-  poet = "Vicente Sánchez (Zaragoza, 1688)"
+  poet = "Attr. Vicente Sánchez"
   source = "Segovia, Cathedral Archive (E-SE: 28/25)"
 }
 
@@ -114,13 +114,9 @@ EstribilloSolo = {
 
 CoplasSolo = {
   \break
-  \HiddenBar
+  \DoubleMark { \Section "COPLAS" } { \MeterChangeCZtoC }
 
-  \Section "COPLAS"
-  \HiddenBar
-  
   \time 2/2
-  \MeterChangeCZtoC
   r8 a'8 c''8 c''8 b'8. a'16 b'8 c''8
   d''2 r8 a'8 c''4
 
@@ -240,8 +236,7 @@ EstribilloAcomp = {
 }
 
 CoplasAcomp = {
-  \HiddenBar
-  \HiddenBar
+  \DoubleMark{}{}
   \time 2/2
 
   a2 e'8 e8 g8 g8
@@ -306,9 +301,8 @@ EstribilloFiguresAcomp = \figuremode {
 }
 
 CoplasFiguresAcomp = \figuremode {
-  \HiddenBar
-  \HiddenBar
-  
+  \DoubleMark{}{}
+
   \time 2/2
   s1
   s1
@@ -335,12 +329,12 @@ CoplasFiguresAcomp = \figuremode {
 								   
 				     
 LyricsEstribilloSolo = \lyricmode {
-  Si los sen -- ti -- dos que -- ja for -- man del Pan di -- vi -- no,
+  Si los sen -- ti -- dos que -- ja for -- man del Pan Di -- vi -- no,
   por -- que lo que~e -- llos sien -- ten 
-  no~es de fe con -- sen -- ti -- do,
-  \EdLyrics { no~es de fe con -- sen -- ti -- do, }
-  to -- dos hoy con la fe se -- an o -- í -- dos,
-  to -- dos hoy con la fe se -- an o -- í -- dos.
+  no~es de Fe con -- sen -- ti -- do,
+  \EdLyrics { no~es de Fe con -- sen -- ti -- do, }
+  to -- dos hoy con la Fe se -- an o -- í -- dos,
+  to -- dos hoy con la Fe se -- an o -- í -- dos.
   No se den, no se den por sen -- ti -- dos los sen -- ti -- dos,
   no se den, \EdLyrics { no se den } por sen -- ti -- dos los sen -- ti -- dos.
 }
@@ -374,7 +368,10 @@ LyricsCoplasSolo = \lyricmode {
     >>
   >>
   \layout {
+    indent = 1.5\in
     short-indent = 0\in
   }
-  
 }
+
+
+

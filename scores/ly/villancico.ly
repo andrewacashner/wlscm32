@@ -17,7 +17,6 @@ MiddleBar = { \bar "||" }
 FinalBar = { \bar "|." }
 RepeatBar = { \bar ":|." }
 
-
 %%*******************
 %% METERS
 
@@ -255,10 +254,13 @@ ColorBrackets = {
 color = \startTextSpan
 endcolor = \stopTextSpan
 
-colorOne  =
+%% Apply markup without ^ command (thus could be redefined as _ for lower voice)
+MarkThisUp  =
 #(define-event-function
-  (parser location) ()
-  #{ ^\markup \ColorBracketLeftRight #} )
+  (parser location markup) (markup?)
+  #{ ^\markup $markup #})
+
+colorOne  = \MarkThisUp \ColorBracketLeftRight
 
 %% Usage: a2\colorOne b1 c'2\color c'2 c'2\endcolor b1.
 
@@ -268,24 +270,36 @@ colorOne  =
 %%*******************
 
 FictaAlign = { \once \override TextScript.outside-staff-priority = #100 }
-sh = \markup { \teeny \sharp }
-fl = \markup { \teeny \flat }
-na = \markup { \teeny  \natural }
+shMarkup = \markup { \teeny \sharp }
+flMarkup = \markup { \teeny \flat }
+naMarkup = \markup { \teeny  \natural }
 
-shQ = \markup { \teeny \sharp \raise #-0.5 "?" }
-flQ = \markup { \teeny \flat "?" }
-naQ = \markup { \teeny \natural \raise #-0.5 "?" }
+shQMarkup = \markup { \teeny \sharp \raise #-0.5 "?" }
+flQMarkup = \markup { \teeny \flat "?" }
+naQMarkup = \markup { \teeny \natural \raise #-0.5 "?" }
 
-shB = \markup { \teeny "[" \sharp "]" }
-flB = \markup { \teeny "[" \flat "]" }
-naB = \markup { \teeny "[" \natural "]" }
+shBMarkup = \markup { \teeny "[" \sharp "]" }
+flBMarkup = \markup { \teeny "[" \flat "]" }
+naBMarkup = \markup { \teeny "[" \natural "]" }
+
+sh = \MarkThisUp \shMarkup
+fl = \MarkThisUp \flMarkup
+na = \MarkThisUp \naMarkup
+shQ = \MarkThisUp \shQMarkup
+flQ = \MarkThisUp \flQMarkup
+naQ = \MarkThisUp \naQMarkup
+shB = \MarkThisUp \shBMarkup
+flB = \MarkThisUp \flBMarkup
+naB = \MarkThisUp \naBMarkup
+
 
 %%*******************
 %% MARKUPS
 %%*******************
 
-Solo = \markup \italic "Solo"
+Solo = \MarkThisUp \markup \italic "Solo"
 
+%oMSNote = \MarkThisUp \markup \italic 
 %%*******************
 %% REPEATS
 %%*******************
@@ -331,6 +345,14 @@ HiddenBar = {
   s16 \bar ""
   \cadenzaOff
 }
+
+DoubleMark =
+#(define-scheme-function
+  (parser location mark1 mark2) (ly:music? ly:music?)
+  #{ \HiddenBar  $mark1
+     \HiddenBar  $mark2 #})
+
+
 
 %%**************************************
 %% BRACKETS 
@@ -400,7 +422,7 @@ EmptyStaffLines = {
   \override Staff.TimeSignature.stencil = ##f
   \override Staff.KeySignature.stencil = ##f
   \override Staff.Clef.stencil = ##f
-      }
+}
 
 %%****************************************
 %% MULTI-STANZA LYRICS
@@ -514,6 +536,7 @@ IncipitLayout = \layout {
   }
 }
 
+%% INCIPIT CLEFS
 MSclefCi = \clef "petrucci-c1"
 MSclefCii = \clef "petrucci-c2"
 MSclefCiii = \clef "petrucci-c3"
@@ -525,10 +548,9 @@ MSclefFiii = \clef "varbaritone"
 %% MAIN STYLE & LAYOUT 
 %%****************************************
 
-
 \layout {
 
-  indent = 1.5\in
+  indent = 1.75\in
   short-indent = 0.5\in
   
   \context {
@@ -646,16 +668,8 @@ MSclefFiii = \clef "varbaritone"
   
   %% HEADERS STYLE & SPACING 
   scoreTitleMarkup = \markup {
-    \override #'(baseline-skip . 5)
     \column {
-      \fill-line {
-	\fontsize #3 \fromproperty #'header:piece
-      }
-      \fill-line {
-        \fontsize #2 \italic \fromproperty #'header:pieceSubtitle
-      }
-      
-      \override #'(baseline-skip . 8)
+      \override #'(baseline-skip . 10)
       \column {
 	\override #'(baseline-skip . 4 )
 	\column {
@@ -666,34 +680,32 @@ MSclefFiii = \clef "varbaritone"
 	    \fontsize #2 \italic \fromproperty #'header:subtitle
 	  }
 	}
-	\vspace #1
 	\column {
 	  \override #'(baseline-skip . 3 )
 	  \fontsize #2
 	  \column { 
-	    \fill-line { 
-	      "Edited by Andrew A. Cashner"
-	      \fromproperty #'header:composer
-	    }
 	    \fill-line {
 	      \fromproperty #'header:poet
-	      \fromproperty #'header:dates 
+	      \concat { \fromproperty #'header:composer " " \fromproperty #'header:dates }
+	    }
+	    \fill-line {
+	      \null
+	      "Edited by Andrew A. Cashner" 
 	    }
 	  }
 	}
-	\vspace #1
       }
     }
+    \vspace #1
   }
 
   %% put copyright notice left-aligned on first page
   oddHeaderMarkup = \markup \null
   oddFooterMarkup = \markup { 
     \on-the-fly #first-page {
-
+      \vspace #2
       \fontsize #1.5
       \column {
-        \vspace #1
         \line { 
           "Source: " \fromproperty #'header:source 
         }
