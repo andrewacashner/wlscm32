@@ -14,7 +14,7 @@
 \include "lyrics.ly"
 
 \header {
-  title		= "Si los sentidos queja forman del pan divino"
+  title		= "Si los sentidos queja forman del Pan Divino"
   subtitle	= "Al Santísimo [Sacramento]. A 8."
   composer 	= "MIGUEL DE IRÍZAR"
   dates		= "(1635–1684)"
@@ -136,7 +136,10 @@
       %% BII
       \new Staff = "BII" 
       <<
-	\IncipitStaff "BAJO II" "B. II" { \IncipitBII }
+	\IncipitStaff
+	\TwoLineName "BAJO II" "[inst.]"
+	"B. II"
+	{ \IncipitBII }
 	\new Voice = "BII" {
 	  \MusicEstribilloBII
 	}
