@@ -848,11 +848,9 @@ MusicCoplasSIi =
   \DoubleMark{}{}
   \time 2/2
   %% m. 57
-  %%\set Score.currentBarNumber = 57
   R1*12
 
   %% m. 69 RESPUESTA
-
   \Section "Respuesta a las coplas"
   r4 a'8 a b4 c8 c 
   bes4 bes8 a4 a8 a4 

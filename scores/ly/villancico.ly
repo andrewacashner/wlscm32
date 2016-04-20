@@ -431,7 +431,8 @@ EmptyStaffLines = {
 %% Add a new line of lyrics below previous line
 NextLyricsLine = 
   #(define-scheme-function
-    (parser location NewLineName PrevLineName Voice Lyrics) (scheme? scheme? scheme? scheme?)
+    (parser location NewLineName PrevLineName Voice Lyrics)
+    (markup? markup? markup? ly:music?)
       #{
         \new Lyrics = $NewLineName \with { alignBelowContext = $PrevLineName } {
           \set associatedVoice = $Voice
