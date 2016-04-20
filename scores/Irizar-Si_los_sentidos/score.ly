@@ -19,7 +19,7 @@
   composer 	= "MIGUEL DE IRÍZAR"
   dates		= "(1635–1684)"
   poet          = "Attr. Vicente Sánchez"
-  source 	= "Segovia, Cathedral Archive (E-SE: 5/32)"
+  source 	= "Segovia, Cathedral Archive (E-SE: 5/32, 18/19), Corpus Christi 1674"
 }
 
 %% VOICING: SSAT, SATB, Ac
@@ -147,10 +147,10 @@
 
     >> %% end of Ch. II staves
 
-    %% Ac
-    \new Staff = "Ac" 
+    %% Gn
+    \new Staff = "Gn" 
     <<
-      \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
+      \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
       \new Voice = "EstribilloAc" {
 	\MusicEstribilloAc
 	<< 

@@ -80,19 +80,19 @@ MusicEstribilloSIi = \relative c'' {
   %% m. 5
   a4 f r2 
   R1 
-  r2 r4 r8 cis'8 
+  r2 r4 r8 c'8\sh 
   d2 r4 d 
   cis2 d 
 
   %% m. 10 METER 6/2
   \time 6/2
-  \MeterChangeCtoCZ
+  \MeterChangeCtoZ
   
   d2 c d c1 c2 
   c2 c c1\color c\endcolor 
   a2 d c c(\color bes1)\endcolor 
   a1. r2 a1 \color 
-  a2 cis1\endcolor d2 r2 r 
+  a2 c1\sh\endcolor d2 r2 r 
 
   %% m. 15
   R\breve. 
@@ -105,7 +105,7 @@ MusicEstribilloSIi = \relative c'' {
   %% m. 18 METER 2/2
   \time 2/2
   \MeterChangeCZtoC
-  r4 r8 cis d d d d 
+  r4 r8 c\sh d d d d 
   d4 r8 f,8 a a a a 
 
   %% m. 20
@@ -123,11 +123,11 @@ MusicEstribilloSIi = \relative c'' {
   r2 r4 cis4 
 
   %% m. 30 
-  d2 r4 cis8 cis 
-  d4 e8 e c4 d8 d~ 
+  d2 r4 c8\sh c 
+  d4 e8 e c4\na d8 d~ 
   d c8 b4 c2 
   r2 c4 c8 c  
-  c4 d r2 
+  c4 c4 r2 
 
   %% m. 35
   r2 d4 d8 d 
@@ -368,8 +368,8 @@ MusicEstribilloTI = \relative c' {
 
   %% m. 20
   a2 r4 f4~ 
-  f8 f d'[ d,] g2 
-  d2 g8 g g g 
+  f8 f c'[ c,] g'2 
+  c,2 g'8 g g g 
   g4 g4. g8 d4 
   a'4 a r4 d,8 d 
 
@@ -405,8 +405,8 @@ MusicEstribilloTI = \relative c' {
   g4 f8 f bes4 g8 a~ 
   a8 d, a'4 d,2 
   r4 g2 d4 
-  g2 d 
-  d'4. c8 bes4. a8 
+  a'2 d, 
+  d'4.( c8 bes4.) a8 
 
   %% m. 50
   g2. g4 
@@ -527,7 +527,7 @@ MusicEstribilloAII = \relative c' {
   d1. 
 
   %% m. 18 METER TO 2/2
-  cis2 r4 r8 d 
+  c2\sh r4 r8 d 
   f8 f f f f4 r8 d 
 
   %% m. 20
@@ -562,8 +562,8 @@ MusicEstribilloAII = \relative c' {
   e2 r4 f8 f 
   e2 r4 f8 f 
   e2 r4 d8 d 
-  d4 f8 f d4 e8 cis~ 
-  cis8 d e[ a,] a2 
+  d4 f8 f d4 e8 c\sh~ 
+  c8 d e[ a,] a2 
 
   %% m. 45
   R1
@@ -595,7 +595,7 @@ MusicEstribilloTII = \relative c' {
   r4 d8 d c4 bes8 bes 
   a4 a a a 
   r4 r8 f8 d4 f 
-  a2 fis 
+  a2 f 
 
   %% m. 10 METER 6/2
   R\breve.*3 
@@ -807,7 +807,7 @@ MusicEstribilloAc = \relative c {
 
   %% m. 35 
   c4 g' g2~ 
-  g4 d d2 
+  g4 d d2~ 
   d4 g g, d' 
   a'2 d,4 c 
   f4 d8 e4 a8 e4 
@@ -853,7 +853,8 @@ MusicCoplasSIi =
 
   %% m. 69 RESPUESTA
 
-  r4^\markup \italic "Respuesta a las coplas" a'8 a b4 c8 c 
+  \Section "Respuesta a las coplas"
+  r4 a'8 a b4 c8 c 
   bes4 bes8 a4 a8 a4 
   a1
   \RepeatMsg "[D.C. al Fine after last copla]"
@@ -862,7 +863,7 @@ MusicCoplasSIi =
 
 MusicCoplasSIii = \relative c' {
   \break
-  \DoubleMark { \Section "COPLAS [solo y a 4]" } { \MeterChangeCZtoC }
+  \DoubleMark { \Section "COPLAS" } { \MeterChangeCZtoC }
 
   \time 2/2  
 
