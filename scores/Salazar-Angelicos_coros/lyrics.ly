@@ -109,7 +109,7 @@ LyricsEstribilloSIii = \lyricmode {
 
   %% m. 25
   jad, \EdLyrics {  ba -- 
-  jad, } ba -- jad.
+  jad, } ba -- jad,
   %% 3mm rest
 
   %% m. 30
@@ -189,11 +189,11 @@ LyricsEstribilloAI = \lyricmode {
   glo -- ria lle -- nad, que
   so -- lo~a -- quel lu --
   gar, que 
-  so -- lo~a -- quel lu-- 
+  so -- lo~a -- quel lu -- 
   gar, que 
 
   %% m. 40
-  so -- lo~a -- quel lu--
+  so -- lo~a -- quel lu --
   gar que~el mun -- do des --
   pre -- cia de 
   Dios es ca -- 
@@ -457,7 +457,7 @@ LyricsCoplaThreeSIii = \lyricmode {
   que con ca -- ri -- 
   dad, lo
   de -- rri -- ba -- 
-  do, lo -- 
+  do, lo  
   de -- rri -- ba -- do
   bus -- ca, quién vie --
   ne~a~e -- di -- fi -- 
@@ -494,10 +494,10 @@ LyricsCoplaThreeAI = \lyricmode {
   dad, lo 
   de -- rri -- ba --
   do _ bus -- ca,
-  de -- rri -- ba --
+  \EdLyrics { de -- rri -- ba --
   do bus -- ca,
   vie -- ne~a~e -- di -- fi -- 
-  car.
+  car. }
 }
 
 LyricsCoplasAI = \lyricmode {

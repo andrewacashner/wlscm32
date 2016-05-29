@@ -40,7 +40,7 @@ IncipitAII = {
 }
 
 IncipitTII = {
-  \MSclefCiii
+  \MSclefCiv
   f2
 }
 
@@ -338,8 +338,6 @@ MusicEstribilloSII = \relative c' {
   r4 c4 c2 
 
   %% m. 45
-  %% FIX: Move Footnote to critical notes XX
-  %%	r4 f, f^\markup { \footnote "(1)" "Cn.: G in Ms." }  c'8 bes8 
   r4 f, f  c'8 bes8 
   a1\fermata 
 }
