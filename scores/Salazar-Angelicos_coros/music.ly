@@ -642,6 +642,7 @@ MusicCoplasSIi = \relative c' {
   c1\fermata 
   \MiddleBar
   \break
+
 }
 
 MusicCoplasSIii = \relative c' {
@@ -710,9 +711,10 @@ MusicCoplasSII = \relative c' {
   g8 g c4 c d 
 
   %% m. 65
-  c4. c8 d4 bes4 
-  \RepeatMsg "[D.C. al Fine]"
-  a1\fermata 
+  c4. c8 d4 bes4
+
+  \RepeatMsg "D.S. al Fine" % Doesn't work XXX
+  a1\fermata
   \RepeatBar
 }
 
