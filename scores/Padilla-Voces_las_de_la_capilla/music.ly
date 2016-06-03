@@ -12,32 +12,32 @@ IncipitGlobal = {
 }
 
 IncipitSi = {
-  \clef "treble"
+  \MSclefGii
   d''1. 
 }
 
 IncipitAi = {
-  \clef "petrucci-c2"
+  \MSclefCii
   bes'1.
 }
 
 IncipitTi = {
-  \clef "petrucci-c3"
+  \MSclefCiii
   g'1.
 }
 
 IncipitAii = {
-  \clef "petrucci-c2"
+  \MSclefCii
   a'1.
 }
 
 IncipitTii = {
-  \clef "petrucci-c3"
+  \MSclefCiii
   fis'1.
 }
 
 IncipitBi = {
-  \clef "varbaritone"
+  \MSclefFiii
   c'1.
 }
 

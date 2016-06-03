@@ -45,12 +45,12 @@ IncipitTII = {
 }
 
 IncipitBII = {
-  \clef "bass"
+  \MSclefFiv
   f2
 }
 
 IncipitAc = {
-  \clef "bass"
+  \MSclefFiv
   f2
 }
 
@@ -713,8 +713,11 @@ MusicCoplasSII = \relative c' {
   %% m. 65
   c4. c8 d4 bes4
 
-  \RepeatMsg "D.S. al Fine" % Doesn't work XXX
+  \ArticulationSubmit % put fermata under markup text
   a1\fermata
+  \RepeatMsgLowerStaff "[D.C. al Fine]"
+    % normal \RepeatMsg does not show up on lower staff (Lilypond bug)
+
   \RepeatBar
 }
 

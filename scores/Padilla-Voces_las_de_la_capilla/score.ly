@@ -1,9 +1,11 @@
-%% JUAN GUTIERREZ DE PADILLA
-%% VOCES, LAS DE LA CAPILLA
-%% MEX-Pc: Leg. 3/3
+%% Voces, LAS DE LA CAPILLA
+%% JUAN GUTIERREZ DE PADILLA (MEX-Pc: Leg. 3/3)
+%% EDITED BY ANDREW A. CASHNER
 
-%% Edited by Andrew A. Cashner
-%% Now in lilypond, 2014-10-19
+%% 2016-06-03 -- Revised for published edition
+%% 2015-10    -- Corrections for Stephen Black peformance
+%% 2014-10-19 -- Lilypond version for dissertation
+%% 2011       -- First edition in Sibelius
 
 %% Puebla Cathedral, Christmas 1657, no. 4
 %% SAT B(inst.), AT
@@ -22,37 +24,32 @@
   subtitle        = "[De Navidad.] A 6."
   composer        = "JUAN GUTIÉRREZ DE PADILLA"
   dates           = "(ca. 1590–1664)"
-  source          = "Puebla Cathedral Archive (MEX-Pc: Leg. 3/3), “Navidad del año de 1657,” no. 4"
-  tagline         = ##f
+  source          = "Puebla, Cathedral Archive (MEX-Pc: Leg. 3/3), “Navidad del año de 1657”"
 }
-
-%%*******************
-%% ESTRIBILLO
-%%*******************
 
 \score {
   <<
     \new ChoirStaff  {
       <<
-	\ChoirStaffName #"CHORUS I" 
+	\ChoirStaffName "CHORUS I" 
 	
 	\new Staff = "Si"
 	<<
-	  \InstrumentIncipit #"TIPLE I" #"Ti. I" ##{ \IncipitSi #}
-	  \new Voice = "Si" { \MainStyle \MusicAllSi }
+	  \IncipitStaff "TIPLE I" "Ti. I" { \IncipitSi }
+	  \new Voice = "Si" { \MusicAllSi }
 	  \new Lyrics \lyricsto "Si" { \LyricsAllSi }
 	  \new Lyrics \lyricsto "Si" { \LyricsIntroSiTwo }
 	>>
 	\new Staff = "Ai"
 	<<
-	  \InstrumentIncipit #"ALTUS I" #"A. I" ##{ \IncipitAi #}
-	  \new Voice = "Ai" { \MainStyle \MusicAllAi }
+	  \IncipitStaff "ALTUS I" "A. I" { \IncipitAi }
+	  \new Voice = "Ai" { \MusicAllAi }
 	  \new Lyrics \lyricsto "Ai" { \LyricsAllAi }
 	  \new Lyrics \lyricsto "Ai" { \LyricsIntroAiTwo }
 	>>
 	\new Staff = "Ti"
 	<<
-	  \InstrumentIncipit #"TENOR I" #"T. I" ##{ \IncipitTi #}
+	  \IncipitStaff "TENOR I" "T. I" { \IncipitTi }
 	  \new Voice = "Ti" { \MainStyle \MusicAllTi }
 	  \new Lyrics \lyricsto "Ti" { \LyricsAllTi }
 	  \new Lyrics \lyricsto "Ti" { \LyricsIntroTiTwo }
@@ -61,17 +58,17 @@
     }
     \new ChoirStaff  {
       <<
-	\ChoirStaffName #"CHORUS II" 
+	\ChoirStaffName "CHORUS II" 
 	
 	\new Staff = "Aii"
 	<<
-	  \InstrumentIncipit #"ALTUS II" #"A. II" ##{ \IncipitAii #}
+	  \IncipitStaff "ALTUS II" "A. II" { \IncipitAii }
 	  \new Voice = "Aii" { \MainStyle \MusicAllAii }
 	  \new Lyrics \lyricsto "Aii" { \LyricsAllAii }
 	>>
 	\new Staff = "Tii"
 	<<
-	  \InstrumentIncipit #"TENOR II" #"T. II" ##{ \IncipitTii #}
+	  \IncipitStaff "TENOR II" "T. II" { \IncipitTii }
 	  \new Voice = "Tii" { \MainStyle \MusicAllTii }
 	  \new Lyrics \lyricsto "Tii" { \LyricsAllTii }
 	>>
@@ -79,19 +76,19 @@
     }
     \new Staff = "Bi"
     <<
-      \InstrumentIncipit ##{ \TwoLineName #"BASSUS I" #"[instr.]" #} 
-      #"B. I" ##{ \IncipitBi #}
+      \IncipitStaff
+        \TwoLineName "BASSUS I" "[instr.]" 
+        "B. I"
+        { \IncipitBi }
       \new Voice = "Bi" { \MainStyle \MusicAllBi }
     >>
   >> 
-  \layout {
-    \LayoutStyle
-    indent = 1.75\in
-    short-indent = 0.5\in
-    %% spread spacing out a bit
-    \context { \Score 
-	       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8 )
-	     }
-  }
+%%%  \layout {
+%%%    %% spread spacing out a bit
+%%%    \context {
+%%%      \Score 
+%%%      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8 )
+%%%    }
+%%%  }
 }
 
