@@ -50,7 +50,7 @@
 	\new Staff = "Ti"
 	<<
 	  \IncipitStaff "TENOR I" "T. I" { \IncipitTi }
-	  \new Voice = "Ti" { \MainStyle \MusicAllTi }
+	  \new Voice = "Ti" { \MusicAllTi }
 	  \new Lyrics \lyricsto "Ti" { \LyricsAllTi }
 	  \new Lyrics \lyricsto "Ti" { \LyricsIntroTiTwo }
 	>>
@@ -63,13 +63,13 @@
 	\new Staff = "Aii"
 	<<
 	  \IncipitStaff "ALTUS II" "A. II" { \IncipitAii }
-	  \new Voice = "Aii" { \MainStyle \MusicAllAii }
+	  \new Voice = "Aii" { \MusicAllAii }
 	  \new Lyrics \lyricsto "Aii" { \LyricsAllAii }
 	>>
 	\new Staff = "Tii"
 	<<
 	  \IncipitStaff "TENOR II" "T. II" { \IncipitTii }
-	  \new Voice = "Tii" { \MainStyle \MusicAllTii }
+	  \new Voice = "Tii" { \MusicAllTii }
 	  \new Lyrics \lyricsto "Tii" { \LyricsAllTii }
 	>>
       >>
@@ -80,7 +80,7 @@
         \TwoLineName "BASSUS I" "[instr.]" 
         "B. I"
         { \IncipitBi }
-      \new Voice = "Bi" { \MainStyle \MusicAllBi }
+      \new Voice = "Bi" { \MusicAllBi }
     >>
   >> 
 %%%  \layout {
