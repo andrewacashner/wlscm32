@@ -99,7 +99,7 @@ LyricsEstribilloAi = \lyricmode {
   y|~a tre -- chos las dis -- tan -- cias 
   en u -- no y|~o -- tro co -- ro, y|~o -- tro co -- ro,
   gra -- ve, su -- a -- ve~|y so -- no -- ro,
-  y dos a dos, u -- no~a u -- no~y dos a dos, dos a dos,
+  y dos a dos, u -- no~a u -- no~|y dos a dos, dos a dos,
    tres a tres y dos a dos, dos a dos,
 
   por el sig -- no~a -- la -- mi -- re, 
@@ -121,7 +121,7 @@ LyricsEstribilloTi = \lyricmode {
   y|~a tre -- chos las dis -- tan -- cias 
   en u -- no y|~o -- tro co -- ro, 
   gra -- ve, su -- a -- ve~|y so -- no -- ro,
-  y dos a dos, u -- no~a u -- no~y dos a dos, 
+  y dos a dos, u -- no~a u -- no~|y dos a dos, 
    tres a tres y dos a dos, 
 
   por el sig -- no~a -- la -- mi -- re, 
@@ -146,10 +146,10 @@ LyricsEstribilloAii = \lyricmode {
   
   hom -- bres y bru -- tos y Dios, 
   tres a tres y dos a dos, dos a dos, u -- no~a u -- no,
-  y|~a -- guar -- dan tiem -- po~o -- por -- tu --no,
+  y|~a -- guar -- dan tiem -- po~o -- por -- tu -- no,
   quien an -- tes del tiem -- po fue,
 
-  O, qué can -- to, O, qué can -- to,
+  O, qué can -- to, \EdLyrics { O, qué can -- to, }
   tan de~o -- ír y de~ad -- mi -- rar,
   to -- do~en el hom -- bre~es su -- bir,
   y to -- do~en Dios es ba -- jar, ba -- jar,
@@ -159,8 +159,8 @@ LyricsEstribilloAii = \lyricmode {
 
 LyricsEstribilloTii = \lyricmode {
   y|~a tre -- chos las dis -- tan -- cias 
-  en u -- no y|~o -- tro co -- ro, en u -- no y|~o -- tro co -- ro,
-    en u -- no y|~o -- tro co -- ro, en u -- no y|~o -- tro co -- ro,
+  en u -- no y|~o -- tro co -- ro, \EdLyrics { en u -- no y|~o -- tro co -- ro, }
+  en u -- no y|~o -- tro co -- ro, \EdLyrics { en u -- no y|~o -- tro co -- ro, }
   hom -- bres y bru -- tos y Dios, 
   tres a tres y dos a dos,
     tres a tres, dos a dos, u -- no~a u -- no,
@@ -208,7 +208,7 @@ LyricsCoplasTi = \lyricmode {
 LyricsCoplasAii = \lyricmode {
   \set stanza = #"2. "
   Hi -- zo al -- to~en lo di -- vi -- no
-  y de la má -- xi -- ma~|y bre -- _ ve
+  y de la má -- xi -- ma~|y bre -- ve
   com -- po -- si -- ción en que prue -- be
   de~un hom -- bre~|y Dios con -- so -- nan -- cias, 
     con -- so -- nan -- cias.
