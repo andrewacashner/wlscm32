@@ -942,8 +942,7 @@ MusicCoplasAc = \relative c {
 %%****************************************
 
 FiguresCoplasAc = \figures {
-  \HiddenBar
-  \HiddenBar
+  \DoubleMark{}{}
   %% m. 57
   s1 
   <6>2 s2 
