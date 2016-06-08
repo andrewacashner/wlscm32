@@ -191,35 +191,16 @@ MusicEstribilloSIi = {
       %% m. 80
       d''1\fermata 
       \FinalBar
+      \RepeatMsg "[Fine]"
     }
     %% BBC version ossia
-    \new Staff \with {
-      \remove "Time_signature_engraver"
-      alignAboveContext = "SIi"
-      fontSize = -3
-      \override StaffSymbol.staff-space = #(magstep -3)
-      \override StaffSymbol.thickness = #(magstep -3)
-      firstClef = ##f 
-      \override VerticalAxisGroup.staff-staff-spacing = 
-      #'((basic-distance . 5)
-      (minimum-distance . 2)
-      (padding . 1)
-      (stretchability . 5))
-    }
-    { 
-      \once \override Score.RehearsalMark.self-alignment-X = #LEFT
-      \once \override Score.RehearsalMark.padding = #5
-      \mark \markup "[Bbc]" 
+    \OssiaStaff "SIi" {
+      \Section "[Bbc]"
       r4 g''4 g''4 a''4 
       bes''1 
       a''1~ 
       a''1\fermata 
       \FinalBar
-      \set Staff.fontSize = #1
-      \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
-      \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-      \once \override Score.RehearsalMark.padding = #8
-      \mark \markup \bold \fontsize #-1 "[Fine]"
     }
   >>
   \pageBreak
