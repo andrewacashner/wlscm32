@@ -18,7 +18,7 @@ LyricsEstribilloSIi = \lyricmode {
   nue -- va con -- so -- nan -- _ _ _ cia
   lo~e -- ter -- no~|y lo tem -- po -- ral, 
   \EdLyrics {  lo~e -- ter -- no~|y lo tem -- po -- ral. }
-  Es -- cu -- chad, es -- cu -- chad,
+  Es -- cu -- chad, \EdLyrics { es -- cu -- chad, }
   en so -- no -- ras ar -- mo -- ní -- as,
   en so -- no -- ras ar -- mo -- ní -- _ as
   con -- tra -- pun -- to ce -- les -- tial,
@@ -163,10 +163,10 @@ LyricsEstribilloAII = \lyricmode {
   un ni -- ño so -- be -- ra -- no
   a los án -- ge -- les lle -- va~el can -- to,
   el can -- to lla --  no, 
-  \EdLyrics {  el can -- to lla -- _ no, }
+  el can -- to lla -- _ no,
+  \EdLyrics { el can -- to lla -- no, }
   el can -- to lla -- no, 
-  \EdLyrics {  el can -- to lla -- no, 
-  el can -- to lla -- _ no, __ }
+  \EdLyrics { el can -- to lla -- _ no, __ }
   lla -- _ _ _ no.
 }
 
@@ -265,7 +265,7 @@ LyricsCoplasSIii = \lyricmode {
   que le~o -- ca -- sio -- nó~un en -- ga -- ño,
   be -- lla co -- rrien -- te de~al -- jó -- far, 
   \EdLyrics {  be -- lla co -- rrien -- te de~al -- jó -- far, }
-  co -- rien -- te de~al -- jó -- far,
+  co -- rrien -- te de~al -- jó -- far,
   gri -- llos le pre -- vie -- ne blan -- dos,
   le pre -- vie -- ne blan -- _ dos.
 
