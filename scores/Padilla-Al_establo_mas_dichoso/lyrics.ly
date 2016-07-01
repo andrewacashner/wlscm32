@@ -223,7 +223,7 @@ ArrieroDuoI = \lyricmode {
   ya lo di -- je, y|~es -- to so -- bra
   pa -- ra que~en -- tien -- da que ven -- go
   pues -- to~a lo de~a -- quí fue Tro -- ya,
-  pa -- ra que~en -- tien -- dia que ven -- go
+  pa -- ra que~en -- tien -- da que ven -- go
   pues -- to~a lo de~a -- quí __ fue Tro -- ya.
 }
 

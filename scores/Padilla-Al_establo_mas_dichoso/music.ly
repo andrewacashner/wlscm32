@@ -76,7 +76,8 @@ MusicSi = {
   d''2 d''2 d''1 c''2 c''2
   c''2(\color b'1)\endcolor c''1.\fermata   
   \RepeatBarEnd
-  
+
+  \break
   \DoubleMark { \Section "[NUEVO TROYANO] Solo y a 4" } { \MeterChangeCZtoC }
   \time 2/2
   r4 a'8 b'8 c''4 c''4 
@@ -149,7 +150,7 @@ MusicSi = {
 
   \HideTimeSignature \time 6/2
   e''2 d''2 c''2 b'2 a'2 g'2
-  a'2 b'2 c''2 b'2 b'1
+  a'2 b'2 c''2 b'2 b'1 \noBreak
   e''2 d''2 c''2 b'2 a'2 g'2
   a'2 b'2 c''2 b'2 b'1
 
@@ -570,7 +571,7 @@ MusicTi = {
   %% Estribillo rep.
   g'2 f'2 f'2 
   e'2 c'2 d'2 e'2 d'2 c'2 
-  d'2 e'1 d'2 d'1
+  d'2 e'1 d'2 e'1
   d'2 g'1 g'1.
   r2 g'1 g'1.~
   g'1. r2 g'2 g'2
@@ -767,6 +768,17 @@ RestsNegrillaBeforeGloria = {
   R\breve.*39
 }
 
+RestsNegrillaAfterGloria = {
+  \DoubleMark{}{}
+  \time 6/2
+  R\breve.*7
+  \time 3/2
+  R1.
+  \DoubleMark{}{}
+  \time 6/2
+  R\breve.*19
+}
+
 %%*******************
 
 MusicSii = {
@@ -783,7 +795,7 @@ MusicSii = {
   d''1. d''1.
   \time 3/2
   d''1.\fermata
-  %% Tacet to end
+  \RestsNegrillaAfterGloria
 }
 
 MusicAii = {
@@ -800,7 +812,7 @@ MusicAii = {
   f'2. g'2.  d'1.
   \time 3/2
   g'1.\fermata
-  %% Tacet to end
+  \RestsNegrillaAfterGloria
 }
 
 %%*******************
