@@ -187,8 +187,8 @@ LyricsT = \lyricmode {
   o -- fre -- ce~a __ los vien -- tos,
   o -- fre -- ce~a los vien -- tos, a los __ vien -- tos
   y|~en cláu -- su -- las va -- rias, __ 
-  y|~en cláu -- su -- las va -- rias,
-  y|~en cláu -- su -- las va -- _ rias,
+  \EdLyrics { y|~en cláu -- su -- las va -- rias,
+  y|~en cláu -- su -- las va -- _ rias, }
   sen -- ti -- dos e -- le -- va, __ 
   sen -- ti -- dos e -- le -- va,
   po -- ten -- cias des -- ma -- ya,
@@ -221,7 +221,7 @@ LyricsT = \lyricmode {
   lo que sue -- nan sus vo -- ces so -- be -- ra -- nas,
   por -- que de~es -- te~in -- stru -- men -- to
   cuan -- tas e -- llos per -- ci -- bí -- an se -- rán fal -- sas,
-  cuan -- tas e -- llos per -- ci -- bí -- an se -- rán fal-- sas, se -- rán fal -- sas.
+  cuan -- tas e -- llos per -- ci -- bí -- an se -- rán fal -- sas, se -- rán fal -- sas.
 
   %% COPLA 6
   \set stanza = #"6."
