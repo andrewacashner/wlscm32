@@ -33,6 +33,7 @@ LyricsSi = \lyricmode {
   %% COPLA 2
   \set stanza = #"2."
   De la fe es in -- stru -- men -- to,
+  de la fe es in -- stru -- men -- to,
   y|~al o -- í -- do su mú -- si -- ca re -- ga -- la
   don -- de~hay por gran mi -- ste -- rio 
   en ca -- da pun -- to~en -- te -- ra con -- so -- nan -- cia,
@@ -147,7 +148,8 @@ LyricsA = \lyricmode {
 
   %% COPLA 3
   \set stanza = #"3."
-  De~el la -- zo~a es -- te~in -- stru -- men -- to 
+  De~el la -- zo~a es -- te~in -- stru -- men -- to,
+  de~el la -- zo~a es -- te~in -- stru -- men -- to 
   sir -- ve la~u -- nión que sus ex -- tre -- mos a -- ta,
   tres cla -- vos son cla -- vi -- _ jas
   y puen -- te de ma -- de -- ra fue~u -- na tab -- la,
@@ -217,7 +219,8 @@ LyricsT = \lyricmode {
 
   %% COPLA 5 SOLO
   \set stanza = #"5."
-  No __ _ son a los sen -- ti -- dos
+  No __ _ son a los sen -- ti -- dos,
+  no __ _ son a los sen -- ti -- dos
   lo que sue -- nan sus vo -- ces so -- be -- ra -- nas,
   por -- que de~es -- te~in -- stru -- men -- to
   cuan -- tas e -- llos per -- ci -- bí -- an se -- rán fal -- sas,

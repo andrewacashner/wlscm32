@@ -60,7 +60,7 @@ MusicEstribilloSi = {
   r2 r4 r8 f''8 
   cis''8 bes'8\na cis''8 d''8 cis''8 bes'8\na cis''8 d''8
   d''4 cis''4 r2
-  r2 r4 r8 bes''8\fl
+  r2 r4 r8 bes''8
   %% m. 15
   fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
   a''8 a''8 d''8 d''8  d''8 d''8 d''8 d''8
@@ -84,6 +84,7 @@ MusicEstribilloSi = {
   d''2 g'2 r2 r1.
   r2 g''2 f''4( g''4 f''4 g''4) es''2 f''2
   g''2\color g''2 a''1 g''2 g''2~
+  \noBreak
   \TempoSame
   \time 3/2
   g''2 fis''1\endcolor
@@ -446,8 +447,10 @@ MusicEstribilloB = {
 
 MusicCoplaISi = {
   %% m. 51
+  \RepeatBarStart
   g''4 f''8. f''16 e''4\fl d''4
-  c''4 bes'4 r2 
+  c''4 bes'4 r2
+  \RepeatBarEnd
   bes''4 a''8. a''16 g''4 f''4
   es''8. es''16 d''8 es''8 f''4( es''4)
   %% m. 55
@@ -469,6 +472,8 @@ MusicCoplaISi = {
 MusicCoplaIISi = {
   %% COPLA 2
   r2 r4 g''8. f''16
+  es''4 d''4 c''4 bes'4
+  a'4 g'4 r4 g''8. f''16
   es''4 d''4 c''4 bes'4
   a'4 g'4 r4 bes''8. a''16 
   g''4 f''8. f''16 es''8. es''16 d''8. d''16
@@ -507,9 +512,11 @@ MusicCoplaISii = {
   bes'1\fermata
 }
 
+%% For copla a 4, copla 4 & 6
+%% Text underlay demands that slur in copla 1 setting be removed 
 MusicCoplaIVSii = {
   d''4 d''8. d''16 bes'4 bes'4
-  g'4 g'4 r2 
+  g'4 g'4 r2
   f''4 f''8. f''16
   d''4 d''4 
   bes'8. bes'16 bes'8 bes'8 c''2
@@ -552,6 +559,8 @@ MusicCoplaIA = {
 MusicCoplaIIIA = {
   r2 r4 d''4
   c''4 bes'4 a'4 c''8 bes'8
+  a'4 g'4 r4 d''4
+  c''4 bes'4 a'4 c''8 bes'8
   a'4 g'4 a'4 bes'8. a'16
   g'8. g'16 f'8 f'8 g'4 bes'4
   bes'4( a'4) bes'2
@@ -590,6 +599,8 @@ MusicCoplaIT = {
 MusicCoplaVT = {
   r2 r4 g'8. f'16
   es'4 d'4 c'4 bes4
+  a4 g4 r4 g'8. f'16
+  es'4 d'4 c'4 bes4
   a4 g4 \EdBracL r4 bes'8. a'16 
   g'4 f'8. f'16 es'8. es'16 \EdBracR d'8 d'8
   c'2 bes2
@@ -608,8 +619,10 @@ MusicCoplaVT = {
 %%*************************
 
 MusicCoplaIB = {
+  \RepeatBarStart
   g4 d8. d16 es4 bes,4
   c4 g4 c'4 g4
+  \RepeatBarEnd
   bes4 f4 g4 d4
   es4 bes,4 f2
   bes,4 d4 g2
@@ -635,7 +648,12 @@ MusicCoplaIIB = {
     { c'4 g4 a4 e4 }
     \figures { < 3- >4 < _ >2. }
   >>
-  fis4 g4 d4 g4 
+  fis4 g4 d4 g4
+  <<
+    { c'4 g4 a4 e4 }
+    \figures { < 3- >4 < _ >2. }
+  >>
+  fis4 g4 d4 g4
   es4 bes4 es4 bes,4
   f2 bes,4 d4
   g2 r4 g4 
@@ -668,7 +686,7 @@ MusicCoplasSi = {
 
   %% COPLA 3
   \Section "SOLO"
-  R1*13
+  R1*15
   \MiddleBar
 
   %% COPLA 4
@@ -678,7 +696,7 @@ MusicCoplasSi = {
 
   %% COPLA 5
   \Section "SOLO"
-  R1*13
+  R1*15
   \MiddleBar
 
   %% COPLA 6
@@ -692,15 +710,15 @@ MusicCoplasSii = {
   \DoubleMark{}{}
   \MusicCoplaISii
   %% COPLA 2
-  R1*13
+  R1*15
   %% COPLA 3
-  R1*13
+  R1*15
 
   %% COPLA 4
   \MusicCoplaIVSii
   
   %% COPLA 5
-  R1*13
+  R1*15
 
   %% COPLA 6
   \MusicCoplaIVSii
@@ -710,7 +728,7 @@ MusicCoplasA = {
   \DoubleMark{}{}
   \MusicCoplaIA
   %% COPLA 2
-  R1*13
+  R1*15
   
   %% COPLA 3
   \MusicCoplaIIIA
@@ -719,7 +737,7 @@ MusicCoplasA = {
   \MusicCoplaIA
 
   %% COPLA 5
-  R1*13
+  R1*15
 
   %% COPLA 6
   \MusicCoplaIA
@@ -729,9 +747,9 @@ MusicCoplasT = {
   \DoubleMark{}{}
   \MusicCoplaIT
   %% COPLA 2
-  R1*13
+  R1*15
   %% COPLA 3
-  R1*13
+  R1*15
   %% COPLA 4
   \MusicCoplaIT
 

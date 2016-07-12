@@ -20,6 +20,7 @@
   title=    "Qué música divina"
   subtitle= "[Al Santísimo Sacramento.] A 4."
   composer= "JOSÉ DE CÁSEDA"
+  poet=     "Coplas attrib. Vicente Sánchez"
   dates=    "(fl. 1691–1716)"
   source=   "Mexico City (MEX-Mcen: CSG.256); orig. Puebla, Convento de la Santísima Trinidad"
 }
