@@ -193,7 +193,7 @@ MusicEstribilloSii = {
   r2 d''1\colorOne r1.
   r1. r2 d''2 d''2
   r2 c''2 c''2 r2 bes'1\colorOne
-  r2 a'2. a'4 bes'2\naQ\CN bes'2 bes'2
+  r2 a'2. a'4 bes'2\na\CN bes'2 bes'2
   %% m. 45
   bes'1.\na c''1.
   r1. r2 c''2 c''2
