@@ -222,7 +222,7 @@ EstribilloAcomp = {
   e'2 e2 a2
 
   gis2\color a1\endcolor
-  e2 f2 g?2
+  e2 f2 g2
 
   c2 e2 a2
   gis2 a2 b2
@@ -258,7 +258,7 @@ CoplasAcomp = {
   e'2 e2 a2
 
   gis2\color a1\endcolor
-  e2 f2 g?2
+  e2 f2 g2
 
   c2 e2 a2
   gis2 a2 b2

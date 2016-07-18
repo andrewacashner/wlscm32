@@ -197,9 +197,9 @@ MusicSi = {
   r2 e''2 d''2 e''2. e''4 f''2~\color
   f''2 e''1\endcolor d''1 d''2 
   e''2. d''4 e''2 f''2\color d''1\endcolor 
-  e''2 cis''1 r2 c''?2 b'2 
+  e''2 cis''1 r2 c''2 b'2 
   c''2. b'4 c''1\color d''1
-  e''2 cis''1\endcolor c''?2 c''2 c''2 
+  e''2 cis''1\endcolor c''2 c''2 c''2 
   b'1\color c''1 a'1\endcolor
   b'1. r1.
   R\breve.*8

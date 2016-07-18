@@ -77,7 +77,7 @@ IncipitAc = {
 %% ChI
 
 MusicEstribilloSIi = {
-  \Section "[ESTRIBILLO] a 8"
+  \Section "[ESTRIBILLO] A 8"
   \clef "treble"
   \time 6/2
   r2 fis''2 fis''2 fis''2\color g''1~ 
@@ -101,7 +101,7 @@ MusicEstribilloSIi = {
   g''2 r2 
   R1 
   %% m. 15
-  r2 r4 a''8 a''8 
+  r2 r4 a''8 a''8
   a''2 r4 r8 e''8\Eco 
   e''4 r8\Eco e''8 e''4 r8 e''8\Eco 
   e''4 f''8 f''8 a''2 
@@ -113,10 +113,10 @@ MusicEstribilloSIi = {
   %% m. 20
   \time 6/2
   \TempoSame
-  r2 d''2. e''4 f''2\color e''1\endcolor \noPageBreak
+  r2 d''2. e''4 f''2\color e''1\endcolor
   r2 d''2. e''4 f''2\color e''1\endcolor 
-  r2 a''2. c'''4 bes''2\color a''1 
-  g''2 f''1 e''2 d''1\endcolor 
+  r2 a''2. c'''4 bes''2\color a''1
+  g''2 f''1 e''2 d''1\endcolor
   cis''1. r1. 
   %% m. 25
   R\breve.*2 
@@ -130,16 +130,17 @@ MusicEstribilloSIi = {
   r2 d''2. e''4 f''2\color e''1\endcolor 
   %% m. 35
   r2 d''2. e''4 f''2\color e''1\endcolor 
-  r2 a''2. c'''4 bes''2\color a''1 
-  g''2 f''1 e''2 d''1\endcolor \pageBreak
+  r2 a''2. c'''4 bes''2\color a''1
+  g''2 f''1 e''2 d''1\endcolor
 
   %% m. 38 METER TO C -- Contrapunto celestial
   \time 2/2
   \MeterChangeCZtoC
-  cis''2 r4 d''8 e''8 
-  f''8 g''8 a''2 g''4\sh 
+  cis''2 r4 d''8 e''8
+  \break
+  f''8 g''8 a''2 g''4\sh
   %% m. 40
-  a''2 r2 
+  a''2 r2
   r2 a''8 g''8 f''8 f''8  
   e''4 e''4 e''2 
   r2 r4 a''8 g''8 
@@ -195,7 +196,7 @@ MusicEstribilloSIi = {
     }
     %% BBC version ossia
     \OssiaStaff "SIi" {
-      \Section "[Bbc]"
+      \Section "[Ti. I-1 ending in Bbc]"
       r4 g''4 g''4 a''4 
       bes''1 
       a''1~ 
@@ -744,7 +745,7 @@ MusicEstribilloTII = {
   r2 r8 g'8 f'8\sh e'8 
   f'8\sh g'8 a'4 r8 fis'!8 fis'4~ 
   %% m. 15
-  fis'4 g'8 g'8 f'?4 d'8 d'8 
+  fis'4 g'8 g'8 f'4 d'8 d'8 
   e'2 r8 e'8\Eco e'4 
   r8 e'8 e'4 r8 g'8 g'4~ 
   g'4 f'8 f'8 e'2 
@@ -1066,7 +1067,7 @@ MusicCoplasSIi = {
   %% m. 81 COPLA 1 
   r2 d''2 f''1 g''2. g''4
   g''2\color fis''1\endcolor g''1. 
-  fis''1 r4 d''4 e''2 e''2. f''?4
+  fis''1 r4 d''4 e''2 e''2. f''4
   g''2\color g''2 \[ g''1 fis''1\endcolor \] 
   %% m. 85
   g''2 d''2 d''2 e''2 e''2 e''2 
@@ -1083,7 +1084,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   %% m. 93
-  \DoubleMark { \Section "[COPLA 2] a Duo" } { \TempoSame }
+  \DoubleMark { \Section "[COPLA 2] A Duo" } { \TempoSame }
   \time 6/2
   r1. r2 e''2\color g''2~ 
   g''2 f''1\endcolor r1. 
@@ -1092,10 +1093,10 @@ MusicCoplasSIi = {
   g''2 d''2 f''2 e''4( d''4 c''4 d''4 e''4 f''4) 
   g''1. r2 r2 f''4 f''4 
   f''2\color e''1 fis''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''?2 
+  g''2 fis''1\endcolor d''2 e''2 f''2 
   %% m. 100
   e''2 f''2 g''2 f''2 e''2 d''2~ 
-  d''2 cis''2 cis''2 d''2 d''4( c''?4) b'4( a'4) 
+  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
   gis'2\color \[ a'1. gis'1\endcolor \] 
   a'1. r2 e''2 e''2 
   c''2\sh\color d''2 d''1 b'2 b'2~ 
@@ -1105,7 +1106,7 @@ MusicCoplasSIi = {
   e''2 f''2\na g''2 fis''1.\fermata 
   \MiddleBar
 
-  \Section "[COPLA 3] a 4"
+  \Section "[COPLA 3] A 4"
   %% m. 108
   r2 d''2 e''2 f''2\color g''2 g''2~ 
   g''2 f''1\sh\endcolor g''1. 
@@ -1126,7 +1127,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   %% m. 120
-  \DoubleMark { \Section "[COPLA 4] a Duo" } { \TempoSame }
+  \DoubleMark { \Section "[COPLA 4] A Duo" } { \TempoSame }
   \time 6/2
   r1. r2 e''2\color g''2~ 
   g''2 f''1\endcolor r1. 
@@ -1135,9 +1136,9 @@ MusicCoplasSIi = {
   g''1. r2 r2 f''4 f''4 
   %% m. 125
   f''2 e''1\color f''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''?2 
+  g''2 fis''1\endcolor d''2 e''2 f''2 
   e''2 f''2 g''2 f''2 e''2 d''2~ 
-  d''2 cis''2 cis''2 d''2 d''4( c''?4) b'4( a'4) 
+  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
   gis'2\color \[ a'1. gis'1\endcolor \] 
   %% m. 130
   a'1. r2 e''2 e''2 
@@ -1148,7 +1149,7 @@ MusicCoplasSIi = {
   e''2 f''2\na g''2 fis''1.\fermata  
   \MiddleBar
 
-  \Section "[COPLA 5] a 4"
+  \Section "[COPLA 5] A 4"
   %% m. 135
   r2 d''2 e''2 f''2 g''2 g''2~ 
   g''2 fis''1 g''1. 
@@ -1178,10 +1179,10 @@ MusicCoplasSIi = {
   g''2 d''2 f''2 e''4( d''4 c''4 d''4 e''4 f''4) 
   g''1. r2 r2 f''4 f''4 
   f''2\color e''1 fis''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''?2 
+  g''2 fis''1\endcolor d''2 e''2 f''2 
   e''2 f''2 g''2 f''2 e''2 d''2~ 
   %% m. 155
-  d''2 cis''2 cis''2 d''2 d''4( c''?4) b'4( a'4) 
+  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
   gis'2\color \[ a'1. gis'1\endcolor \] 
   a'1. r2 e''4( f''4 e''4 d''4) 
   c''2\sh d''2 d''1 b'2 b'2 
@@ -1441,7 +1442,7 @@ MusicCoplasTI = {
   %% m. 135 COPLA 5
   r2 d'2 d'2 d'2\color cis'2 cis'2~ 
   cis'2 d'1\endcolor g1. 
-  d1 d'4 d'4 c'1 c'2  %% mistake in Sib version \X?
+  d1 d'4 d'4 c'1 c'2  
   b2\color b1\endcolor a1. 
   g1. r2 e'1\colorOne 
   %% m. 140

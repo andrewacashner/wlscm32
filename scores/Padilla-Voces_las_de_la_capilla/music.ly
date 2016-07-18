@@ -56,10 +56,10 @@ MusicIntroSi = {
   \time 6/2
   \Section "[INTRODUCCIÓN] a 6"
 
-  r2 d''1.\color  e''!1\endcolor
+  r2 d''1.\color  e''1\endcolor
   c''2. c''4 c''1\color d''1 \endcolor 
   c''1 c''2 r2 f''1~\color
-  f''2\endcolor d''2 d''2 e''!2 d''2 d''2 
+  f''2\endcolor d''2 d''2 e''2 d''2 d''2 
     %% m. 5
   d''2( cis''1) d''2 a'1 
   a'2 a'2 a'2 a'1 a'2 
@@ -136,7 +136,7 @@ MusicEstribilloSi = {
     %% m. 55
   R\breve. 
   r1. f''2\na f''2. e''4 
-  d''2 e''!2. d''4 c''1.\sh 
+  d''2 e''2. d''4 c''1.\sh 
   d''2\color  d''1\endcolor d''1. 
   r2 d''2\color  d''1 d''1 
     %% m. 60
@@ -226,7 +226,7 @@ MusicEstribilloAi = {
   R\breve.*2 
   r2 f'2 g'2 a'2 a'4( g'4 f'4 e'4) 
   f'2 e'1 fis'2\color  fis'1~ 
-  fis'2\endcolor g'2 f'?2 e'2 d'2 d'2
+  fis'2\endcolor g'2 f'2 e'2 d'2 d'2
     %% m. 45
   e'2 f'2 f'2 bes'2\color  bes'1 
   bes'\breve a'1 
@@ -429,7 +429,7 @@ MusicEstribilloAii = {
     \time 6/2
   bes'2 bes'2 bes'2 bes'2 a'2 g'2 
     %% m. 40
-  fis'2 g'2 g'2 f'?2 f'2 f'2 
+  fis'2 g'2 g'2 f'2 f'2 f'2 
   g'2\color  a'1\endcolor bes'1. 
   R\breve.*3 
     %% m. 45
@@ -672,8 +672,8 @@ MusicCoplasAi = {
   \DoubleMark{}{}
     \time 6/2
     %% m. 73
-  g'2 g'1 f'!2 f'1 
-  g'2 bes'1 a'2. g'4 f'!2~\color
+  g'2 g'1 f'2\CN f'1 
+  g'2 bes'1 a'2. g'4 f'2~\color\CN
     %% m. 75
   f'2 g'1\endcolor a'2 bes'1 
   g'2 a'1 b'!2 c''1 
