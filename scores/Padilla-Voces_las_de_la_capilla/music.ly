@@ -178,7 +178,7 @@ MusicIntroAi = {
     %% m. 5
   e'1. fis'2 fis'1 
   fis'2 fis'2 fis'2 fis'1 fis'2 
-  g'2\color  g'2 \FictaAlign f'1\na bes'1 
+  g'2\color  g'2 f'1 bes'1 
   g'1 a'1 f'1~ 
   f'2 d'2 \[ g'1 fis'1\endcolor \]  
     %% m. 10
@@ -652,7 +652,7 @@ MusicCoplasSi = {
   bes'2 bes'1 a'2 bes'1 
   c''2 d''1 c''2. c''4 f''2~\color
   f''2 e''1\endcolor d''2 d''1 
-  c''2 c''1 d''2 e''!1 
+  c''2 c''1 d''2 e''1 
   c''2 c''2 c''2 c''2 c''2 c''2 
   c''1. d''1. 
   r2 a'1\colorOne r1. 

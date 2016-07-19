@@ -1067,7 +1067,7 @@ MusicCoplasSIi = {
   %% m. 81 COPLA 1 
   r2 d''2 f''1 g''2. g''4
   g''2\color fis''1\endcolor g''1. 
-  fis''1 r4 d''4 e''2 e''2. f''4
+  fis''1 r4 d''4 e''2 e''2. fis''4\na
   g''2\color g''2 \[ g''1 fis''1\endcolor \] 
   %% m. 85
   g''2 d''2 d''2 e''2 e''2 e''2 
@@ -1162,7 +1162,7 @@ MusicCoplasSIi = {
   R\breve.*2 
   r2 r2 a''4 a''4 d''2\color g''2 g''2~ 
   %% m. 145
-  g''2 f''1\endcolor e''2 f''2 g''2 
+  g''2 f''1\endcolor e''2 f''2\na g''2 
   %% m. 146
   \time 3/2
   \TempoSame
@@ -1189,7 +1189,7 @@ MusicCoplasSIi = {
   b'2\color c''1\endcolor r2 a''4( b''4\fl a''4 g''4) 
   %% m. 160
   f''2\sh g''2 g''1 f''2\na f''2 
-  e''2 f''2 g''2 f''1.\fermata\sh 
+  e''2 f''2\na g''2 f''1.\fermata\sh 
   \MiddleBar
   \RepeatMsg "[D.C. al Fine]"
 }

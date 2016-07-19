@@ -245,7 +245,7 @@ MusicEstribilloA = {
   r2 e''2\fl d''4( e''4\fl d''4 e''4\fl) c''4( e''4\fl) d''4( c''4)
   %% m. 25
   bes'2\na c''2 r2 r1.
-  r2 c''2 bes'4(\fl c''4 bes'4 c''4) a'4(\fl c''4) bes'4( a'4)
+  r2 c''2 bes'4(\fl c''4 bes'4 c''4) a'4(\fl c''4) bes'4( a'4)\fl
   g'2 c'2 r2 r2 g'2\color f'2~
   f'2 es'2 d'1 d'2 bes'2 
   \time 3/2
