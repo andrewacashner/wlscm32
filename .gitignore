@@ -5,6 +5,7 @@ aux
 *.blg
 *.run.xml
 *.pdf
+*.out
 *.1
 *.1*
 *.2*
@@ -15,7 +16,7 @@ aux
 *.Bend
 *.Cend
 *.Dend
-*.End
+*.Eend
 *.aux
 *.eledsec1
 *.eledsec1R
