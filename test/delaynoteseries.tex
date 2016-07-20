@@ -1,0 +1,21 @@
+\input eplain
+\let\footnote=\numberedfootnote
+
+\def\setfootnote#1#2{\expandafter\def\csname fn#1\endcsname{#2}}
+\def\placefootnote#1{\footnote{\csname fn#1\endcsname}}
+
+\setfootnote{a}{First thing I forgot.}
+\setfootnote{b}{Second thing I forgot.}
+
+I am trying to remember my notes.\placefootnote{a}
+This one I remember.\footnote{It's easy.}
+This one I forgot.\placefootnote{b}
+
+% simpler way
+\def\turtles{Footnote about turtles.}
+
+There are many animals.\footnote{From Latin \it animalia.}
+Some are turtles.\footnote{\turtles}
+Others are frogs.
+
+\bye
