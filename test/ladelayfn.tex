@@ -1,10 +1,8 @@
 \documentclass{article}
 
-\newcommand{\fntext}{}
-\newcommand{\delayfootnote}{\footnote{\fntext}}
-\usepackage{environ}
-\newtoks\waitpar
-\NewEnviron{waitnote}{\waitpar={\expandafter\BODY}\the\waitpar}
+\newcounter{delayedfn}
+\newcommand{\delayfootnote}[1]{%
+  \expandafter\newcommand
 
 \begin{document}
 
