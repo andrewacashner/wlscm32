@@ -3,6 +3,8 @@ aux
 *.bbl
 *.bcf 
 *.blg
+*.fls
+*.fdb_latexmk
 *.run.xml
 *.pdf
 *.out
