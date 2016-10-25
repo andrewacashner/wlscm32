@@ -30,7 +30,7 @@
 
 \score {
   <<
-    \new ChoirStaff  = "ChI" {
+    \new StaffGroup  = "ChI" {
       <<
 	\ChoirStaffName "CHORUS I"
 
@@ -39,11 +39,11 @@
 	  \IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
 	  \new Voice = "SIi" {	
 	    \MusicEstribilloSIi 			
-	    \MusicCoplasSIi 
+%%	    \MusicCoplasSIi 
 	  }
 	  \new Lyrics \lyricsto "SIi" { 
 	    \LyricsEstribilloSIi 
-	    \LyricsCoplasSIi
+%%	    \LyricsCoplasSIi
 	  }
 	>>
 
@@ -52,11 +52,11 @@
 	  \IncipitStaff "TIPLE I-2" "Ti. I-2" { \IncipitSIii }
 	  \new Voice = "SIii" { 
 	    \MusicEstribilloSIii 
-	    \MusicCoplasSIii 
+%%	    \MusicCoplasSIii 
 	  }
 	  \new Lyrics \lyricsto "SIii" { 
 	    \LyricsEstribilloSIii 
-	    \LyricsCoplasSIii
+%%	    \LyricsCoplasSIii
 	  }
 	>>
 
@@ -65,11 +65,11 @@
 	  \IncipitStaff "ALTO I" "A. I" { \IncipitAI }
 	  \new Voice = "AI" { 
 	    \MusicEstribilloAI 
-	    \MusicCoplasAI
+%%	    \MusicCoplasAI
 	  }
 	  \new Lyrics \lyricsto "AI" { 
 	    \LyricsEstribilloAI 
-	    \LyricsCoplasAI
+%%	    \LyricsCoplasAI
 	  }
 	>>
 
@@ -78,17 +78,17 @@
 	  \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
 	  \new Voice = "TI" { 
 	    \MusicEstribilloTI 
-	    \MusicCoplasTI
+%%	    \MusicCoplasTI
 	  }
 	  \new Lyrics \lyricsto "TI" { 
 	    \LyricsEstribilloTI 
-	    \LyricsCoplasTI
+%%	    \LyricsCoplasTI
 	  }
 	>>
       >>
     }
 
-    \new ChoirStaff = "ChII" {
+    \new StaffGroup = "ChII" {
       <<
 	\ChoirStaffName "CHORUS II"
 
@@ -128,7 +128,7 @@
       \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
       \new Voice = "Ac" { 
 	\MusicEstribilloAc
-	\MusicCoplasAc
+%%	\MusicCoplasAc
       }
     >>
   >>
