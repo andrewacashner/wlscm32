@@ -3,11 +3,13 @@
 %% Critical edition based on E-CAN:AU/0116 and E-Bbc:M/765/25
 %% EDITED BY ANDREW A. CASHNER
 
+%% 2016-10-26  -- Revised for lilypond v2.19.24, after peer review
 %% 2016-06-08  -- Revised for published edition
 %% 2014-12     -- Lilypond version for dissertation
 %% 2012--2013  -- First edition in Sibelius
 
 \version "2.19.48"
+
 \include "../ly/villancico.ly"
 \include "music.ly"
 \include "lyrics.ly"
@@ -39,11 +41,11 @@
 	  \IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
 	  \new Voice = "SIi" {	
 	    \MusicEstribilloSIi 			
-%%	    \MusicCoplasSIi 
+	    \MusicCoplasSIi 
 	  }
 	  \new Lyrics \lyricsto "SIi" { 
 	    \LyricsEstribilloSIi 
-%%	    \LyricsCoplasSIi
+	    \LyricsCoplasSIi
 	  }
 	>>
 
@@ -52,11 +54,11 @@
 	  \IncipitStaff "TIPLE I-2" "Ti. I-2" { \IncipitSIii }
 	  \new Voice = "SIii" { 
 	    \MusicEstribilloSIii 
-%%	    \MusicCoplasSIii 
+	    \MusicCoplasSIii 
 	  }
 	  \new Lyrics \lyricsto "SIii" { 
 	    \LyricsEstribilloSIii 
-%%	    \LyricsCoplasSIii
+	    \LyricsCoplasSIii
 	  }
 	>>
 
@@ -65,11 +67,11 @@
 	  \IncipitStaff "ALTO I" "A. I" { \IncipitAI }
 	  \new Voice = "AI" { 
 	    \MusicEstribilloAI 
-%%	    \MusicCoplasAI
+	    \MusicCoplasAI
 	  }
 	  \new Lyrics \lyricsto "AI" { 
 	    \LyricsEstribilloAI 
-%%	    \LyricsCoplasAI
+	    \LyricsCoplasAI
 	  }
 	>>
 
@@ -78,11 +80,11 @@
 	  \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
 	  \new Voice = "TI" { 
 	    \MusicEstribilloTI 
-%%	    \MusicCoplasTI
+	    \MusicCoplasTI
 	  }
 	  \new Lyrics \lyricsto "TI" { 
 	    \LyricsEstribilloTI 
-%%	    \LyricsCoplasTI
+	    \LyricsCoplasTI
 	  }
 	>>
       >>
@@ -128,7 +130,7 @@
       \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
       \new Voice = "Ac" { 
 	\MusicEstribilloAc
-%%	\MusicCoplasAc
+	\MusicCoplasAc
       }
     >>
   >>

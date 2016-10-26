@@ -10,8 +10,6 @@ Falsete = \MarkThisUp \markup \italic "(falsete)"
 
 Global = { \Mensurstriche }
 
-
-
 %%****************************************
 %% INCIPITS
 %%****************************************
@@ -92,7 +90,7 @@ MusicEstribilloSIi = {
   | fis''2\color g''1. fis''1\endcolor r1.
   
   | r1.
-  | r2 f''2.\na g''4 
+  | r2 f''2.\na g''4 \break
   | e''2\color f''1\endcolor
 
   | e''\breve.
@@ -101,7 +99,7 @@ MusicEstribilloSIi = {
   | r1.
   | r2 e''2 f''2 
 
-  | g''2\color fis''1. g''1\endcolor 
+  | g''2\color fis''1. g''1\endcolor \break
 
   | r1.
   | r1.
@@ -123,7 +121,6 @@ MusicEstribilloSIi = {
 
   %% m. 19 METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  \MeterAboveCZ
   | r1. 
   | r2 d''2. e''4
   | f''2\color e''1\endcolor
@@ -161,7 +158,7 @@ MusicEstribilloSIi = {
   | g''2 f''1
   | e''2 d''1\endcolor
 
-  %% m. 38 METER TO C -- Contrapunto celestial
+  %% METER TO C -- Contrapunto celestial
   \MeterChangeDuple
   | cis''2 r4 d''8 e''8
   | f''8 g''8 a''2 g''4\sh
@@ -172,7 +169,9 @@ MusicEstribilloSIi = {
   | f''8 e''8 d''2 c''4
   | c''4 b'8 b'8 a'4 f''8 g''8
   | a''4 a''4 a''4 a''4
-  | a''2 r2 
+  | a''2 r2
+
+  %% Y con sollozos
   | r2 r4 g''4 
   | g''4 g''4 fis''4 fis''4 
   | g''1 
@@ -182,7 +181,7 @@ MusicEstribilloSIi = {
   | g''4 g''4 f''4 f''4 
   | e''2 e''2 
   | r1
-  | r1
+  | r1 \break
 
   | r4 e''4 f''4 g''8 e''4 g''8 fis''4 g''2 
 
@@ -1272,475 +1271,680 @@ MusicEstribilloAc = {
   \MensurFinalBar
 }
 
-%%************************************************************************
+%%**********************************************************************
 %% COPLAS
-%%************************************************************************
+%%**********************************************************************
 
 MusicCoplasSIi = {
-  \DoubleMark
-  { \Section "COPLAS a 4 y a duo" }
-  { \MeterChangeCtoCZ }
-  \time 6/2
+  \SectionBreak
 
-  %% m. 81 COPLA 1 
-  r2 d''2 f''1 g''2. g''4
-  g''2\color fis''1\endcolor g''1. 
-  fis''1 r4 d''4 e''2 e''2. fis''4\na
-  g''2\color g''2 \[ g''1 fis''1\endcolor \] 
-  %% m. 85
-  g''2 d''2 d''2 e''2 e''2 e''2 
-  c''1 c''2 d''2\color d''1\endcolor 
-  b'1. c''1 r2 
-  R\breve.*2 
-  %% m. 90
-  r2 r2 a''4 a''4 d''2\color g''2 g''2~ 
-  g''2 f''1\endcolor e''2 f''2 g''2 
-  %% m. 92
-  \time 3/2
-  \TempoSame
-  fis''1.\fermata 
-  \MiddleBar
+  \Section "COPLAS a 4 y a duo" 
+  \MeterTriple
 
-  %% m. 93
-  \DoubleMark { \Section "[COPLA 2] A Duo" } { \TempoSame }
-  \time 6/2
-  r1. r2 e''2\color g''2~ 
-  g''2 f''1\endcolor r1. 
-  %% m. 95
-  r2 g''2\color g''1 f''1\sh\endcolor 
-  g''2 d''2 f''2 e''4( d''4 c''4 d''4 e''4 f''4) 
-  g''1. r2 r2 f''4 f''4 
-  f''2\color e''1 fis''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''2 
-  %% m. 100
-  e''2 f''2 g''2 f''2 e''2 d''2~ 
-  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
-  gis'2\color \[ a'1. gis'1\endcolor \] 
-  a'1. r2 e''2 e''2 
-  c''2\sh\color d''2 d''1 b'2 b'2~ 
-  %% m. 105
-  b'2 c''1\endcolor r2 a''2 a''2 
-  f''2\sh\color g''2 g''1 f''1\na\endcolor 
-  e''2 f''2\na g''2 fis''1.\fermata 
-  \MiddleBar
+  %% COPLA 1 
+  | r2 d''2 f''1 g''2. g''4
+
+  | g''2\color fis''1\endcolor
+  | g''1. 
+  | fis''1 r4 d''4
+  | e''2 e''2. fis''4\na
+  | g''2\color g''2 \[ g''1 fis''1\endcolor \] 
+  | g''2 d''2 d''2
+  | e''2 e''2 e''2 
+  | c''1 c''2
+  | d''2\color d''1\endcolor 
+  | b'1.
+  | c''1 r2 
+  | r1.
+  | r1.
+  | r1.
+  | r1.
+  | r2 r2 a''4 a''4
+  
+  | d''2\color g''2 g''1 f''1\endcolor
+  | e''2 f''2 g''2 
+  | fis''1.\fermata 
+  \MensurMiddleBar
+  
+  \Section "[COPLA 2] A Duo"
+  | r1.
+
+  | r2 e''2\color g''1 f''1\endcolor
+
+  | r1.
+  
+  | r2 g''2\color g''1 f''1\sh\endcolor 
+
+  | g''2 d''2 f''2
+  | e''4( d''4 c''4 d''4 e''4 f''4) 
+  | g''1.
+  | r2 r2 f''4 f''4 
+  | f''2\color e''1
+  
+  | fis''2 d''2 g''1 fis''1\endcolor
+
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+
+  | f''2 e''2 d''1 cis''2 cis''2
+
+  | d''2 d''4( c''4) b'4( a'4) 
+
+  | gis'2\color \[ a'1. gis'1\endcolor \] 
+
+  | a'1.
+  | r2 e''2 e''2 
+
+  | c''2\sh\color d''2 d''1 b'2 b'1 c''1\endcolor
+
+  | r2 a''2 a''2 
+
+  | f''2\sh\color g''2 g''1 f''1\na\endcolor 
+
+  | e''2 f''2\na g''2
+  | fis''1.\fermata 
+  \MensurMiddleBar
 
   \Section "[COPLA 3] A 4"
-  %% m. 108
-  r2 d''2 e''2 f''2\color g''2 g''2~ 
-  g''2 f''1\sh\endcolor g''1. 
-  %% m. 110
-  fis''1\Breath d''4 d''4 e''2 e''4( d''4 e''4 fis''4)\sh 
-  g''2\color g''2 \[ g''1 fis''1\endcolor \] 
-  g''2 d''2 d''2 e''1. 
-  c''2 c''2 c''2 \[ d''1. 
-  b'1. \] c''1.\na 
-  %% m. 115
-  R\breve.*2
-  r2 r2 a''2 d''2 g''2 g''2~ 
-  g''2 f''2 f''2 e''2 f''2 g''2 
-  %% m. 119
-  \time 3/2
-  \TempoSame
-  fis''1.\fermata 
-  \MiddleBar
+  | r2 d''2 e''2
+  
+  | f''2\color g''2 g''1 f''1\sh\endcolor
+  | g''1. 
+  | fis''1\Breath d''4 d''4
+  | e''2 e''4( d''4 e''4 fis''4)\sh 
+  | g''2\color g''2 \[ g''1 fis''1\endcolor \] 
+  | g''2 d''2 d''2
+  | e''1. 
+  | c''2 c''2 c''2
+  | \[ d''1. 
+       | b'1. \]
+  | c''1.\na 
+  | r1.
+  | r1.
+  | r1.
+  | r1.
+  | r2 r2 a''2
+  
+  | d''2 g''2 g''1 f''2 f''2
+  | e''2 f''2 g''2 
+  | fis''1.\fermata 
+  \MensurMiddleBar
 
-  %% m. 120
-  \DoubleMark { \Section "[COPLA 4] A Duo" } { \TempoSame }
-  \time 6/2
-  r1. r2 e''2\color g''2~ 
-  g''2 f''1\endcolor r1. 
-  r2 g''2\color g''1 f''1\sh\endcolor 
-  g''2 d''2 f''2 e''4( d''4 c''4 d''4 e''4 f''4) 
-  g''1. r2 r2 f''4 f''4 
-  %% m. 125
-  f''2 e''1\color f''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''2 
-  e''2 f''2 g''2 f''2 e''2 d''2~ 
-  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
-  gis'2\color \[ a'1. gis'1\endcolor \] 
-  %% m. 130
-  a'1. r2 e''2 e''2 
-  cis''2\color d''1 d''2 b'2 b'2~ 
-  b'2 c''1\endcolor r2 a''2 a''2 
-  f''2\sh\color g''1 g''2 f''1\na\endcolor 
-  %% m. 134
-  e''2 f''2\na g''2 fis''1.\fermata  
-  \MiddleBar
+  \Section "[COPLA 4] A Duo"
+  | r1.
+  
+  | r2 e''2\color g''1 f''1\endcolor
+
+  | r1.
+  
+  | r2 g''2\color g''1 f''1\sh\endcolor 
+
+  | g''2 d''2 f''2
+  | e''4( d''4 c''4 d''4 e''4 f''4) 
+  | g''1.
+  | r2 r2 f''4 f''4 
+
+  | f''2 e''1\color
+  
+  | f''2 d''2 g''1 fis''1\endcolor
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+  
+  | f''2 e''2 d''1 cis''2 cis''2
+
+  | d''2 d''4( c''4) b'4( a'4) 
+
+  | gis'2\color \[ a'1. gis'1\endcolor \] 
+
+  | a'1.
+  | r2 e''2 e''2 
+  | cis''2\color d''1
+
+  | d''2 b'2 b'1 c''1\endcolor
+  | r2 a''2 a''2 
+  | f''2\sh\color g''1
+  | g''2 f''1\na\endcolor 
+  | e''2 f''2\na g''2
+  | fis''1.\fermata  
+  \MensurMiddleBar
 
   \Section "[COPLA 5] A 4"
-  %% m. 135
-  r2 d''2 e''2 f''2 g''2 g''2~ 
-  g''2 fis''1 g''1. 
-  f''1\sh \Breath d''4 d''4 e''2 e''4( d''4 e''4 f''4) 
-  g''2\color g''2 \[ g''1 fis''1 \] 
-  g''2 d''1\endcolor e''1 e''2 
-  %% m. 140
-  c''2 c''2 c''2 \[ d''1. 
-  b'1. \] c''1.\na 
-  R\breve.*2 
-  r2 r2 a''4 a''4 d''2\color g''2 g''2~ 
-  %% m. 145
-  g''2 f''1\endcolor e''2 f''2\na g''2 
-  %% m. 146
-  \time 3/2
-  \TempoSame
-  fis''1.\fermata 
-  \MiddleBar
+  | r2 d''2 e''2
+  
+  | f''2 g''2 g''1 fis''1
 
-  %% m. 147 
-  \DoubleMark { \Section "[COPLA 6] a Duo" } { \TempoSame }
-  \time 6/2
-  r1. r2 e''2\color g''2~ 
-  g''2 f''1\endcolor r1. 
-  r2 g''2\color g''1 fis''1\endcolor 
-  %% m. 150
-  g''2 d''2 f''2 e''4( d''4 c''4 d''4 e''4 f''4) 
-  g''1. r2 r2 f''4 f''4 
-  f''2\color e''1 fis''2 d''2 g''2~ 
-  g''2 fis''1\endcolor d''2 e''2 f''2 
-  e''2 f''2 g''2 f''2 e''2 d''2~ 
-  %% m. 155
-  d''2 cis''2 cis''2 d''2 d''4( c''4) b'4( a'4) 
-  gis'2\color \[ a'1. gis'1\endcolor \] 
-  a'1. r2 e''4( f''4 e''4 d''4) 
-  c''2\sh d''2 d''1 b'2 b'2 
-  b'2\color c''1\endcolor r2 a''4( b''4\fl a''4 g''4) 
-  %% m. 160
-  f''2\sh g''2 g''1 f''2\na f''2 
-  e''2 f''2\na g''2 f''1.\fermata\sh 
-  \MiddleBar
+  | g''1. 
+
+  | f''1\sh \Breath d''4 d''4
+  | e''2 e''4( d''4 e''4 f''4) 
+
+  | g''2\color g''2 \[ g''1 fis''1 \] 
+  | g''2 d''1\endcolor
+  | e''1 e''2 
+  | c''2 c''2 c''2
+  | \[ d''1. 
+       | b'1. \]
+  | c''1.\na 
+  | r1.
+  | r1.
+  | r1.
+  | r1.
+  | r2 r2 a''4 a''4
+  
+  | d''2\color g''2 g''1 f''1\endcolor
+  | e''2 f''2\na g''2 
+  | fis''1.\fermata 
+  \MensurMiddleBar
+
+  \Section "[COPLA 6] a Duo"
+  | r1.
+
+  | r2 e''2\color g''1 f''1\endcolor
+  | r1. 
+  | r2 g''2\color g''1 fis''1\endcolor 
+  | g''2 d''2 f''2
+  | e''4( d''4 c''4 d''4 e''4 f''4) 
+  | g''1.
+  | r2 r2 f''4 f''4 
+  | f''2\color e''1 fis''2 d''2 g''2~ 
+  | g''2 fis''1\endcolor
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+
+  | f''2 e''2 d''1 cis''2 cis''2
+
+  | d''2 d''4( c''4) b'4( a'4) 
+
+  | gis'2\color \[ a'1. gis'1\endcolor \] 
+
+  | a'1.
+  | r2 e''4( f''4 e''4 d''4) 
+
+  | c''2\sh d''2 d''1 b'2 b'2 
+
+  | b'2\color c''1\endcolor
+  | r2 a''4( b''4\fl a''4 g''4) 
+
+  | f''2\sh g''2 g''1 f''2\na f''2 
+
+  | e''2 f''2\na g''2
+  | f''1.\fermata\sh 
+  \MensurMiddleBar
   \RepeatMsg "[D.C. al Fine]"
 }
 
 MusicCoplasSIii = {
-  \DoubleMark{}{}
-  \time 6/2
-  %% m. 81 COPLA 1
-  r2 a'2 d''1 e''2. d''4 
-  e''2\color d''1\endcolor d''1. 
-  d''1 r4 a'4 c''2 c''2. c''4 
-  d''2\color d''1\endcolor c''1. 
-  %% m. 85
-  b'2 b'2 b'2 c''1.  
-  r2 f''1\color f''2 f''1\endcolor 
-  e''1. e''1 a''4 a''4 
-  d''2\color g''2 g''1 f''1\endcolor 
-  e''1. d''1 d''4 d''4 
-  %% m. 90
-  c''1 c''2 b'2\color b'1 
-  cis''2 \[ d''1. cis''1\endcolor \] 
-  %% m. 92
-  \time 3/2
-  d''1.\fermata 
+  \SectionBreak
+  
+  \MeterTriple
+  %% COPLA 1
+  | r2 a'2 d''1 e''2. d''4 
 
-  %% m. 93 COPLA 2
-  \DoubleMark{}{}
-  \time 6/2
-  r2 d''2\color d''1 cis''1\endcolor 
-  r1. d''2 a'2 c''2 
-  %% m. 95
-  b'4( a'4 g'4 a'4 b'4 c''4) d''1. 
-  r1. r2 r2 c''4 c''4 
-  c''2\color b'1 cis''2 a'2 d''2~ 
-  d''2 cis''1\endcolor r1.
-  a'2 b'2 c''2 b'2 c''2 d''2 
-  %% m. 100
-  c''1\sh c''2 d''2 e''2 f''2 
-  e''2 f''2 g''2 f''2 f''4 e''4 d''2~ 
-  d''2 c''2 c''2 b'2( c''2 d''2) 
-  cis''1. r1. 
-  r2 a''2 a''2 f''2\sh\color g''2 g''2~ 
-  %% m. 105
-  g''2 e''2 e''1 f''1\endcolor  
-  r2 e''2 e''2 cis''2\color d''2 \[ d''2~ 
-  d''2 cis''1\endcolor \] d''1.\fermata
+  | e''2\color d''1\endcolor
+  | d''1. 
+  | d''1 r4 a'4
+  | c''2 c''2. c''4 
+  | d''2\color d''1\endcolor
+  | c''1. 
+  | b'2 b'2 b'2
+  | c''1.  
+  | r2 f''1\color
+  | f''2 f''1\endcolor 
+  | e''1.
+  | e''1 a''4 a''4 
 
-  %% m. 108 COPLA 3
-  r2 a'2 a'2 d''2\color e''2 e''2~ 
-  e''2 d''1\endcolor d''1. 
-  %% m. 110
-  d''1 a'4 b'4 c''2\color c''1 
-  d''2 d''1\endcolor c''1. 
-  b'2 b'2 b'2 c''1. 
-  r2 f''1. f''2 f''2 
-  e''1. e''1 a''2 
-  %% m. 115
-  d''2 g''2 g''1 f''2 f''2 
-  e''1. d''1. 
-  c''2 c''2 c''2 b'2 b'2 b'2 
-  c''2\sh \[ d''1.\color cis''1\endcolor \] 
-  %% m. 119
-  \time 3/2
-  d''1.\fermata
+  | d''2\color g''2 g''1 f''1\endcolor 
+  | e''1.
+  | d''1 d''4 d''4 
+  | c''1 c''2
+  | b'2\color b'1 
 
-  %% m. 120 COPLA 4
-  \DoubleMark{}{}
-  \time 6/2
-  r2 d''2\color d''1 cis''1\endcolor 
-  r1. d''2 a'2 c''2 
-  b'4( a'4 g'4 a'4 b'4 c''4) d''1. 
-  r1. r2 r2 c''4 c''4 
-  c''2\color b'1 cis''2 a'2 d''2~ 
-  %% m. 125
-  d''2 cis''1\endcolor r1. 
-  a'2 b'2 c''2 b'2 c''2 d''2 
-  cis''1 cis''2 d''2 e''2 f''2 
-  e''2 f''2 g''2 f''2 f''4 e''4 d''2~\color 
-  d''2 c''1\endcolor b'2( c''2 d''2) 
-  %% m. 130
-  c''1. r1. 
-  r2 a''2 a''2 fis''2\color g''1 
-  g''2 e''2 e''1 f''1\endcolor 
-  r2 e''1\color cis''2 \[ d''1~ 
-  d''2 cis''1\endcolor \] d''1.\fermata 
+  | cis''2 \[ d''1. cis''1\endcolor \] 
 
-  %% m. 135 COPLA 5
-  r2 a'2 a'2 d''2\color e''2 e''2~ 
-  e''2 d''1\endcolor d''1. 
-  d''1 a'4 b'4 c''1 c''2 
-  d''2\color d''1\endcolor c''1. 
-  b'2\color b'1\endcolor c''1. 
-  %% m. 140
-  r2 f''1\colorOne f''2 f''2 f''2 
-  e''1. e''1 a''4 a''4 
-  d''2\color g''2 g''1 f''1\endcolor 
-  e''1. d''2 d''2 d''2 
-  c''1 c''2 b'2\color b'1 
-  %% m. 145
-  cis''2 \[ d''1. cis''1\endcolor \] 
-  %% m. 146
-  \time 3/2
-  d''1.\fermata 
+  | d''1.\fermata 
+  \MensurMiddleBar
+  
+  %% COPLA 2
+  | r2 d''2\color d''1 cis''1\endcolor 
 
-  %% m. 147 COPLA 6
-  \DoubleMark{}{}
-  \time 6/2
-  r2 d''2\color d''1 cis''1\endcolor 
-  r1. d''2 a'2 c''2 
-  b'4( a'4 g'4 a'4 b'4 c''4) d''1. 
-  %% m. 150
-  r1. r2 r2 c''4 c''4 
-  c''2\color b'1 cis''2 a'2 d''2~ 
-  d''2 cis''1\endcolor r1.
-  a'2 b'2 c''2 b'2 c''2 d''2  
-  cis''1 cis''2 d''2 e''2 f''2 
-  %% m. 155
-  e''2 f''2 g''2 f''2 f''4( e''4) d''2~ 
-  d''2 c''2 c''2 b'2( c''2 d''2) 
-  cis''1. r1. 
-  r2 a''4( b''4\fl a''4 g''4) fis''2 g''2 g''2~ 
-  g''2 e''2 e''2 e''2\color f''1\endcolor 
-  %% m. 160
-  r2 e''4( f''4) e''4( d''4) cis''2\color \[ d''1~ 
-  d''2 cis''1\endcolor \] d''1.\fermata
+  | r1.
+  | d''2 a'2 c''2 
+  | b'4( a'4 g'4 a'4 b'4 c''4)
+  | d''1. 
+  | r1.
+  | r2 r2 c''4 c''4 
+  | c''2\color b'1
+
+  | cis''2 a'2 d''1 cis''1\endcolor
+
+  | r1.
+  | a'2 b'2 c''2
+  | b'2 c''2 d''2 
+  | c''1\sh c''2
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+  
+  | f''2 f''4 e''4 d''1 c''2 c''2
+
+  | b'2( c''2 d''2) 
+  | cis''1.
+  | r1. 
+  | r2 a''2 a''2
+  
+  | f''2\sh\color g''2 g''1 e''2 e''1 f''1\endcolor  
+
+  | r2 e''2 e''2
+
+  | cis''2\color d''2 \[ d''1 cis''1\endcolor \]
+
+  | d''1.\fermata
+  \MensurMiddleBar
+  
+  %% COPLA 3
+  | r2 a'2 a'2
+
+  | d''2\color e''2 e''1 d''1\endcolor
+
+  | d''1.
+
+  | d''1 a'4 b'4 c''2\color c''1 
+
+  | d''2 d''1\endcolor
+  | c''1. 
+  | b'2 b'2 b'2
+  | c''1. 
+
+  | r2 f''1. f''2 f''2 
+
+  | e''1.
+  | e''1 a''2 
+
+  | d''2 g''2 g''1 f''2 f''2 
+
+  | e''1.
+  | d''1. 
+  | c''2 c''2 c''2
+  | b'2 b'2 b'2 
+
+  | c''2\sh \[ d''1.\color cis''1\endcolor \] 
+
+  | d''1.\fermata
+  \MensurMiddleBar
+
+  %% COPLA 4
+  | r2 d''2\color d''1 cis''1\endcolor 
+
+  | r1.
+  | d''2 a'2 c''2 
+  | b'4( a'4 g'4 a'4 b'4 c''4)
+  | d''1. 
+  | r1.
+  | r2 r2 c''4 c''4 
+  | c''2\color b'1
+
+  | cis''2 a'2 d''1 cis''1\endcolor
+  | r1. 
+  | a'2 b'2 c''2
+  | b'2 c''2 d''2 
+  | cis''1 cis''2
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+
+  | f''2 f''4 e''4 d''1\color c''1\endcolor
+
+  | b'2( c''2 d''2) 
+  | c''1.
+  | r1. 
+  | r2 a''2 a''2
+  | fis''2\color g''1 
+
+  | g''2 e''2 e''1 f''1\endcolor 
+  | r2 e''1\color
+
+  | cis''2 \[ d''1. cis''1\endcolor \]
+  | d''1.\fermata 
+  \MensurMiddleBar
+  
+  %% COPLA 5
+  | r2 a'2 a'2 
+
+  | d''2\color e''2 e''1 d''1\endcolor
+  | d''1. 
+  | d''1 a'4 b'4
+  | c''1 c''2 
+  | d''2\color d''1\endcolor
+  | c''1. 
+  | b'2\color b'1\endcolor
+  | c''1. 
+  | r2 f''1\colorOne
+  | f''2 f''2 f''2 
+  | e''1.
+  | e''1 a''4 a''4 
+  | d''2\color g''2 g''1 f''1\endcolor 
+  | e''1.
+  | d''2 d''2 d''2 
+  | c''1 c''2
+  | b'2\color b'1 
+
+  | cis''2 \[ d''1. cis''1\endcolor \] 
+
+  | d''1.\fermata 
+  \MensurMiddleBar
+  
+  %% COPLA 6
+  | r2 d''2\color d''1 cis''1\endcolor 
+
+  | r1.
+  | d''2 a'2 c''2 
+  | b'4( a'4 g'4 a'4 b'4 c''4)
+  | d''1. 
+  | r1.
+  | r2 r2 c''4 c''4 
+  | c''2\color b'1
+
+  | cis''2 a'2 d''1 cis''1\endcolor
+
+  | r1.
+  | a'2 b'2 c''2
+  | b'2 c''2 d''2  
+  | cis''1 cis''2
+  | d''2 e''2 f''2 
+  | e''2 f''2 g''2
+  
+  | f''2 f''4( e''4) d''1 c''2 c''2
+  | b'2( c''2 d''2) 
+  | cis''1.
+  | r1. 
+  | r2 a''4( b''4\fl a''4 g''4)
+
+  | fis''2 g''2 g''1 e''2 e''2
+
+  | e''2\color f''1\endcolor 
+  | r2 e''4( f''4) e''4( d''4)
+
+  | cis''2\color \[ d''1. cis''1\endcolor \]
+
+  | d''1.\fermata
+  \MensurMiddleBar
 }
 
 MusicCoplasAI = {
-  \DoubleMark{}{}
-  \time 6/2
-  %% m. 81 COPLA 1
-  r2 f'2 a'1 a'2. a'4 
-  a'2\color a'1\endcolor bes'1. 
-  a'1 r4 f'4 g'2 g'2. a'4 
-  b'2\color g'1\endcolor a'1. 
-  %% m. 85
-  d'1. r2 g'2 g'2 
-  a'1 a'2 b'2\fl\color a'2 \[ a'2~ 
-  a'2 gis'1\endcolor \] a'1 r2
-  R\breve. 
-  r2 r2 a'4 a'4 d'2\color g'2 g'2~ 
-  %% m. 90
-  g'2 fis'1 g'2 d'1 
-  a'2 a'1\endcolor a'1. 
-  %% m. 92
-  \time 3/2
-  a'1.\fermata
+  \SectionBreak
+  \MeterTriple
+  %% COPLA 1
+  | r2 f'2 a'1 a'2. a'4 
 
-  %% m. 93 COPLA 2 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
+  | a'2\color a'1\endcolor
+  | bes'1. 
+  | a'1 r4 f'4
+  | g'2 g'2. a'4 
+  | b'2\color g'1\endcolor
+  | a'1. 
+  | d'1.
+  | r2 g'2 g'2 
+  | a'1 a'2
 
-  %% m. 108 COPLA 3
-  r2 f'2 g'2 a'2\color a'2 a'2~ 
-  a'2 a'1\endcolor bes'1. 
-  %% m. 110
-  a'1 f'4 f'4 g'2\color g'1 
-  g'2 g'1\endcolor a'1. 
-  d'1. r2 g'2 g'2 
-  a'1. b'2\fl a'2 a'2 
-  a'2\color gis'1\endcolor a'1. 
-  %% m. 115
-  R\breve. 
-  r2 r2 a'2 d'2 g'2 g'2~ 
-  g'2 fis'2 fis'2 g'2 d'2 d'2 
-  a'\breve. 
-  %% m. 119
-  \time 3/2
-  a'1.\fermata 
+  | b'2\fl\color a'2 \[ a'1 gis'1\endcolor \]
 
-  %% m. 120 COPLA 4 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
+  | a'1 r2
+  | r1.
+  | r1.
+  | r2 r2 a'4 a'4
+  
+  | d'2\color g'2 g'1 fis'1
+  | g'2 d'1 
+  | a'2 a'1\endcolor
+  | a'1. 
+  | a'1.\fermata
+  \MensurMiddleBar
+  
+  %% COPLA 2 TACET
+  R1.*30
+  \MensurMiddleBar
+  
+  %% COPLA 3
+  | r2 f'2 g'2
+  
+  | a'2\color a'2 a'1 a'1\endcolor
+  | bes'1. 
+  | a'1 f'4 f'4
+  | g'2\color g'1 
+  | g'2 g'1\endcolor
+  | a'1. 
+  | d'1.
+  | r2 g'2 g'2 
+  | a'1.
+  | b'2\fl a'2 a'2 
+  | a'2\color gis'1\endcolor
+  | a'1. 
+  | r1.
+  | r1. 
+  | r2 r2 a'2
 
-  %% m.135 COPLA 5
-  r2 f'2 g'2 a'2\color a'2 a'2~ 
-  a'2 a'1\endcolor bes'1. 
-  a'1 f'4 f'4 g'1 g'2 
-  g'2\color g'1\endcolor a'1. 
-  d'1. r2 g'1\colorOne 
-  %% m. 140
-  a'1 a'2 b'2\fl a'2 a'2 
-  a'2\color gis'1\endcolor a'1. 
-  R\breve.
-  r2 r2 a'4 a'4 d'2\color g'2 g'2~ 	
-  g'2 fis'1\endcolor g'2 d'2 d'2 
-  %% m. 145
-  a'\breve. 
-  %% m. 146
-  \time 3/2
-  a'1.\fermata 
+  | d'2 g'2 g'1 fis'2 fis'2
+  | g'2 d'2 d'2 
+  | a'\breve. 
+  | a'1.\fermata 
+  \MensurMiddleBar
+  
+  %% COPLA 4 TACET
+  | R1.*30
+
+  %% COPLA 5
+  | r2 f'2 g'2
+
+  | a'2\color a'2 a'1 a'1\endcolor
+
+  | bes'1. 
+  | a'1 f'4 f'4
+  | g'1 g'2 
+  | g'2\color g'1\endcolor
+  | a'1. 
+  | d'1.
+  | r2 g'1\colorOne 
+  | a'1 a'2
+  | b'2\fl a'2 a'2 
+  | a'2\color gis'1\endcolor
+  | a'1. 
+  | r1.
+  | r1.
+  | r2 r2 a'4 a'4
+  
+  | d'2\color g'2 g'1 fis'1\endcolor
+  | g'2 d'2 d'2 
+
+  | a'\breve. 
+
+  | a'1.\fermata 
+  \MensurMiddleBar
 
   %% m. 147 COPLA 6 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
+  R1.*30
+  \MensurMiddleBar
 }
 
 MusicCoplasTI = {
-  \DoubleMark{}{}
-  \time 6/2
-  %% m. 81 COPLA 1
-  r2 d'2 d'1 cis'2. b4 
-  cis'2\color d'1\endcolor g1. 
-  d1 r4 d'4 c'2 c'2. c'4 
-  b2\color b1\endcolor a1. 
-  %% m. 85
-  g1. r2 e'2 e'2 
-  f'1 f'2 d'2\color d'1\endcolor 
-  e'1. a1 r2 
-  r2 r2 e'4 e'4 a2\color d'2 d'2~ 
-  d'2 c'1\endcolor b1. 
-  %% m. 90
-  a1. g2\color g1\endcolor 
-  a\breve.
-  %% m. 92
-  \time 3/2
-  d'1.\fermata
+  \SectionBreak
+  \MeterTriple
+  %% COPLA 1
+  | r2 d'2 d'1 cis'2. b4 
 
-  %% m. 93 COPLA 2 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
+  | cis'2\color d'1\endcolor
+  | g1. 
+  | d1 r4 d'4
+  | c'2 c'2. c'4 
+  | b2\color b1\endcolor
+  | a1. 
+  | g1.
+  | r2 e'2 e'2 
+  | f'1 f'2
+  | d'2\color d'1\endcolor 
+  | e'1.
+  | a1 r2 
+  | r2 r2 e'4 e'4
 
-  %% m. 108 COPLA 3
-  r2 d'2 d'2 d'2\color cis'2 cis'2~ 
-  cis'2 d'1\endcolor g1. 
-  %% m. 110
-  d1 d'4 d'4 c'2\color c'1 
-  b2 b1\endcolor a1. 
-  g1. r2 e'2 e'2 
-  f'1. d'2 d'2 d'2 
-  e'1. a1. 
-  %% m. 115
-  r2 r2 e'2 a2 d'2 d'2~ 
-  d'2 c'2 c'2 b1. 
-  a1. g1. 
-  a\breve. 
-  %% m. 119
-  \time 3/2
-  d'1.\fermata 
+  | a2\color d'2 d'1 c'1\endcolor
+  | b1. 
+  | a1.
+  | g2\color g1\endcolor 
 
-  %% m. 120 COPLA 4 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
+  | a\breve.
 
-  %% m. 135 COPLA 5
-  r2 d'2 d'2 d'2\color cis'2 cis'2~ 
-  cis'2 d'1\endcolor g1. 
-  d1 d'4 d'4 c'1 c'2  
-  b2\color b1\endcolor a1. 
-  g1. r2 e'1\colorOne 
-  %% m. 140
-  f'1 f'2 d'2 d'2 d'2 
-  e'1. a1. 
-  r2 r2 e'4 e'4 a2\color d'2 d'2~ 
-  d'2 c'1\endcolor b1. 
-  a1 a2 g2\color g1\endcolor 
-  %% m. 145
-  a\breve. 
-  %% m. 146
-  \time 3/2
-  d'1.\fermata 
+  | d'1.\fermata
+  \MensurMiddleBar
+  
+  %% COPLA 2 TACET
+  | R1.*30
 
+  %% COPLA 3
+  | r2 d'2 d'2
+
+  | d'2\color cis'2 cis'1 d'1\endcolor
+  | g1. 
+  | d1 d'4 d'4
+  | c'2\color c'1 
+  | b2 b1\endcolor
+  | a1. 
+  | g1.
+  | r2 e'2 e'2 
+  | f'1.
+  | d'2 d'2 d'2 
+  | e'1.
+  | a1. 
+  | r2 r2 e'2
+
+  | a2 d'2 d'1 c'2 c'2
+  | b1. 
+  | a1.
+  | g1. 
+
+  | a\breve. 
+
+  | d'1.\fermata 
+  \MensurMiddleBar
+
+  %% COPLA 4 TACET
+  | R1.*30
+
+  %% COPLA 5
+  | r2 d'2 d'2
+
+  | d'2\color cis'2 cis'1 d'1\endcolor
+  | g1. 
+  | d1 d'4 d'4
+  | c'1 c'2  
+  | b2\color b1\endcolor
+  | a1. 
+  | g1.
+  | r2 e'1\colorOne 
+  | f'1 f'2
+  | d'2 d'2 d'2 
+  | e'1.
+  | a1. 
+  | r2 r2 e'4 e'4
+  | a2\color d'2 d'1 c'1\endcolor
+  | b1. 
+  | a1 a2
+  | g2\color g1\endcolor 
+
+  | a\breve. 
+
+  | d'1.\fermata 
+  \MensurMiddleBar
+  
   %% m. 147 COPLA 6 TACET
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*15 
-
+  R1.*30
+  \MensurMiddleBar
 }
 
 %% COPLAS ACOMP.
 
 MusicCoplasAcOdd = {
-  %%	\time 6/2
-  %% m. 81 COPLA 1
-  r2 d'2 d'1 cis'2. b4 
-  c'2\sh\color d'1\endcolor g1. 
-  d1 d'2 c'2 c'2. c'4 
-  b2\color b1\endcolor a1. 
-  %%m .85
-  g1. c'1 c'2 
-  f'1 f'2 d'2\color d'1\endcolor 
-  e'1. a1 a2 
-  b2 c'2 c2 d1 d'2 
-  g2\color a1\endcolor g1. 
-  %% m. 90
-  a1. g1. 
-  a\breve.
-  %% m. 92
-  \time 3/2
-  d'1.\fermata
+  %% COPLA 1
+  %% \MeterTriple
+  | r2 d'2 d'1 cis'2. b4 
+
+  | c'2\sh\color d'1\endcolor
+  | g1. 
+  | d1 d'2
+  | c'2 c'2. c'4 
+  | b2\color b1\endcolor
+  | a1. 
+  | g1.
+  | c'1 c'2 
+  | f'1 f'2
+  | d'2\color d'1\endcolor 
+  | e'1.
+  | a1 a2 
+  | b2 c'2 c2
+  | d1 d'2 
+  | g2\color a1\endcolor
+  | g1. 
+  | a1.
+  | g1. 
+
+  | a\breve.
+
+  | d'1.\fermata
+  \MensurMiddleBar
 }
 
 MusicCoplasAcEven = {
   %% m. 93 COPLA 2
-  \time 6/2
-  d'2 g1 a2 a1 
-  d'2 d'1 d1. 
-  g1. d1 d2 
-  g2 b2 b2 c'1 c'2 
-  c'2\color g1 a2 f2 d2~ 
-  d2 a1\endcolor d'2 b2. c'4 
-  d'1. g2 g2 d2 
-  a1 a2 d1 d2 
-  a1. d2 d2 d2 
-  e\breve. 
-  a1. r2 e2 e2 
-  a2 d2 d'1 g2 g2~ 
-  g2 c'2 a1 f2. e4 
-  d2\color g1\endcolor a1.~ 
-  a1. d1.\fermata 
+  %% \MeterTriple
+  | d'2 g1
+  | a2 a1 
+  | d'2 d'1
+  | d1. 
+  | g1.
+  | d1 d2 
+  | g2 b2 b2
+  | c'1 c'2 
+  | c'2\color g1
+
+  | a2 f2 d1 a1\endcolor
+
+  | d'2 b2. c'4 
+  | d'1.
+  | g2 g2 d2 
+  | a1 a2
+  | d1 d2 
+  | a1.
+  | d2 d2 d2 
+
+  | e\breve.
+
+  | a1.
+  | r2 e2 e2
+  
+  | a2 d2 d'1 g2 g1 c'2 a1 f2. e4
+  
+  | d2\color g1\endcolor
+
+  | a\breve.
+
+  | d1.\fermata
+  \MensurMiddleBar
 }
 
 MusicCoplasAc = {
-  \DoubleMark{}{}
-  %% m. 81 COPLA 1
+  \SectionBreak
+  %% COPLA 1
   \MusicCoplasAcOdd
-  %% m. 93 COPLA 2
-  \DoubleMark{}{}
+
+  %% COPLA 2
   \MusicCoplasAcEven
-  %% m. 108 COPLA 3
+
+  %% COPLA 3
   \MusicCoplasAcOdd
-  %% m. 120 COPLA 4
-  \DoubleMark{}{}
+
+  %% COPLA 4
   \MusicCoplasAcEven
-  %% m. 135 COPLA 5
+
+  %% COPLA 5
   \MusicCoplasAcOdd
-  %% m. 147 COPLA 6
-  \DoubleMark{}{}
+
+  %% COPLA 6
   \MusicCoplasAcEven
 }
 
