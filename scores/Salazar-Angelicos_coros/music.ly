@@ -142,142 +142,147 @@ MusicEstribilloSIi = {
   \FinalBar
 }
 
-MusicEstribilloSIii = \relative c' {
+MusicEstribilloSIii = {
   \CantusMollis
   \clef "treble"
-  %% METER 6/2
-  R\breve. 
-  r2 r f c'2. c4 bes2 
-  a2. g4 f2 g2. a4 bes2 
-  a1 a2 g1 c2 
+  %% METER CZ
+  r1. | r1.
+  | r2 r2 f'2
+  | c''2. c''4 bes'2 
+  | a'2. g'4 f'2
+  | g'2. a'4 bes'2 
+  | a'1 a'2
+  | g'1 c''2 
+  | c''2 r2 r2
+  | r1. | r1.
+  | r1.
+  | r2 r2 c''2
+  | c''1 c''2 
+  | c''1 a'2
+  | g'1 g'2 
+  | a'2\color c''1\endcolor
+  | c''1 c''2 
+  | c''2 c''2 c''2
 
-  %% m. 5
-  c2 r r r1. 
-  R\breve. 
-  r2 r c2 c1 c2 
-  c1 a2 g1 g2 
-  a2\color c1\endcolor c1 c2 
+  | c''2.\color d''4 es''1 c''2 c''2\endcolor
+  | d''1. 
+  | r1.
+  
+  | r2 d''2\color bes'1 a'2 a'2\endcolor
 
-  %% m. 10
-  c2 c c c2.\color d4 es2~ 
-  es2 c c\endcolor d1. 
-  r1. r2 d2\color bes2~ 
-  bes2 a a\endcolor bes1. 
-  R\breve. 
+  | bes1.
+  | r1. | r1.
+  | r2 r2 c''2
+  | f'2. g'4 a'2 
+  | bes'2. bes'4 a'2
+  | g'2. a'4 bes'2 
+  | bes'2(\color a'1)\endcolor
+  | bes'1. 
+  | r1. | r1.
+  | r1. | r1.
+  | r1.
+  | r2 r2 d''2 
+  | c''2. c''4 bes'2
+  | a'1 a'2 
+  | r2 f'2 a'2
+  | c''1 a'2 
 
-  %% m. 15
-  r2 r c f,2. g4 a2 
-  bes2. bes4 a2 g2. a4 bes2 
-  bes2(\color a1)\endcolor bes1. 
-  R\breve.*2 
-
-  %% m. 20
-  r1. r2 r d 
-  c2. c4 bes2 a1 a2 
-  r2 f a c1 a2 
-
-  %% m. 23 METER 2/2
-  r4 f'4 e4. e8 
-  d4 bes c f 
-
-  %% m. 25
-  d2. bes4 
-  c4 g g2 
-  R1*3 
-
-  %% m. 30
-  R1 
-  r4 r8 c8 c c c c 
-  c4 d8 d es4 c8 c 
-  bes2 r2 
-  r2 r4 r8 b8 
-
-  %% m. 35
-  c4 d8 d c4. e8 
-  f4 f es c 
-  bes4 r r cis 
-  d4 d c a 
-  b4 r r d 
-
-  %% m. 40
-  c4 c d c 
-  c4 c c d8 d 
-  c2 bes4 d 
-  d2 c4 c 
-  c2 r4 c4 
-  bes2 a4 g 
-
-  %% m. 45
-  a1\fermata 
+  %% METER TO C
+  | r4 f''4 e''4. e''8 
+  | d''4 bes'4 c''4 f''4 
+  | d''2. bes''4 
+  | c''4 g'4 g'2 
+  | r1 | r1
+  | r1 | r1
+  | r4 r8 c''8 c''8 c''8 c''8 c''8 
+  | c''4 d''8 d''8 es''4 c''8 c''8 
+  | bes'2 r2 
+  | r2 r4 r8 b'8 
+  | c''4 d''8 d''8 c''4. e''8 
+  | f''4 f''4 es''4 c''4 
+  | bes'4 r4 r4 cis''4 
+  | d''4 d''4 c''4 a'4 
+  | b'4 r4 r4 d''4 
+  | c''4 c''4 d''4 c''4 
+  | c''4 c''4 c''4 d''8 d''8 
+  | c''2 bes'4 d'4 
+  | d''2 c''4 c''4 
+  | c''2 r4 c''4 
+  | bes'2 a'4 g'4 
+  | a'1\fermata 
 }
 
 MusicEstribilloAI = \relative c' {
   \CantusMollis
   \clef "treble"
-  %% METER 6/2	
-  R\breve. 
-  r2 r f e2. d4 e2 
-  f2. c4 d2 e2. f4 g2 
-  f1 f2 g1 g2 
+  %% METER TRIPLE
+  r1. | r1.
+  | r2 r2 f'2
+  | e'2. d'4 e'2 
+  | f'2. c'4 d'2
+  | e'2. f'4 g'2 
+  | f'1 f'2
+  | g'1 g'2 
+  | f'2 r2 r2
+  | r1. | r1.
+  | r1.
+  | r2 r2 f'2
+  | g'1 g'2 
+  | f'1 c'2
+  | e'1 d'2 
+  | c'1 f'2
+  | e'1 e'2 
+  | f'2 g'2 g'2
+  
+  | f'2.\color f'4 g'1 f'2 f'2\endcolor
+  | f'1. 
+  | r1.
+  | r2
 
-  %% m. 5
-  f2 r r r1. 
-  R\breve. 
-  r2 r f g1 g2 
-  f1 c2 e1 d2 
-  c1 f2 e1 e2 
+  | fis'2\color g'1
+  | g'2 fis'2 fis'2\endcolor
+  | g'1. 
+  | r2 r2 g'2
+  | c'2. d'4 e'2 
+  | f'2. f'4 e'2
+  | d'2. e'4 f'2 
+  | g'1 f'2
+  | f'2\color e'1\endcolor 
 
-  %% m. 10
-  f2 g g f2.\color f4 g2~ 
-  g2 f f\endcolor f1. 
-  r1. r2 fis2\color g~ 
-  g2 fis fis\endcolor g1. 
-  r2 r g c,2. d4 e2 
+  | f\breve. 
 
-  %% m. 15
-  f2. f4 e2 d2. e4 f2 
-  g1 f2 f2\color e1\endcolor 
-  f\breve. 
-  R\breve.*2 
+  | r1. | r1.
+  | r1. | r1.
+  | r1.
+  | r2 r2 g'2 
+  | e'2. f'4 g'2
+  | f'2. f'4 f'2 
+  | f'2. f'4 f'2
+  | e'1 f'2
 
-  %% m. 20
-  r1. r2 r g2 
-  e2. f4 g2 f2. f4 f2 
-  f2. f4 f2 e1 f2
-
-  %% m. 23 METER 2/2 
-  R1
-  r2 r4 a4 
-
-  %% m. 25
-  g4. g8 f4. f8 
-  e4. e8 d2 
-  R1*3
-
-  %% m. 30
-  R1
-  r4 r8 e8 f f f f 
-  f4 f8 f g4 f8 f 
-  d2 r2 
-  r2 r4 r8 g8 
-
-  %% m. 35
-  e4 g8 g e4. g8 
-  a4 a g f 
-  d4 r r e 
-  f4 f es d 
-  d4 r r g 
-
-  %% m. 40
-  e4 f f e 
-  f4 f f f8 f 
-  f2 f4 f 
-  g2 e4 f 
-  e2 r4 f 
-
-  %% m. 45
-  f2 f4 e 
-  f1\fermata 
+  %% METER CHANGE TO DUPLE
+  | r1
+  | r2 r4 a'4 
+  | g'4. g'8 f'4. f'8 
+  | e'4. e'8 d'2 
+  | r1 | r1
+  | r1 | r1
+  | r4 r8 e'8 f'8 f'8 f'8 f'8 
+  | f'4 f'8 f'8 g'4 f'8 f'8 
+  | d'2 r2 
+  | r2 r4 r8 g'8 
+  | e'4 g'8 g'8 e'4. g'8 
+  | a'4 a'4 g'4 f'4 
+  | d'4 r4 r4 e'4 
+  | f'4 f'4 es'4 d'4 
+  | d'4 r4 r4 g'4 
+  | e'4 f'4 f'4 e'4 
+  | f'4 f'4 f'4 f'8 f'8 
+  | f'2 f'4 f'4 
+  | g'2 e'4 f'4 
+  | e'2 r4 f'4 
+  | f'2 f'4 e'4 
+  | f'1\fermata 
 }
 
 %% CHORUS II
@@ -285,69 +290,72 @@ MusicEstribilloAI = \relative c' {
 MusicEstribilloSII = \relative c' {
   \CantusMollis
   \clef "treble"
-  %% METER 6/2
-  R\breve.*4 
+  %% METER TRIPLE
+  r1. | r1.
+  | r1. | r1.
+  | r1. | r1.
+  | r1. | r1.
+  | r2 r2 f'2
+  | c''2. c''4 bes'2 
+  | a'2. g'4 f'2
+  | g'2. a'4 bes'2 
+  | a'1 c''2
+  | c''1 c''2 
 
-  %% m. 5
-  r2 r f c'2. c4 bes2 
-  a2. g4 f2 g2. a4 bes2 
-  a1 c2 c1 c2 
-  c\breve\color c1\endcolor 
-  c1 c2 c1. 
+  | c''\breve\color c''1\endcolor 
 
-  %% m. 10
-  R\breve.
-  r1. r2 r bes 
-  a2 g g fis\color a bes~ 
-  bes d2. c4\endcolor bes1. 
-  R\breve. 
+  | c''1 c''2
+  | c''1. 
+  | r1. | r1.
+  | r1.
+  | r2 r2 bes'2 
+  | a'2 g'2 g'2
 
-  %% m. 15
-  R\breve.*3 
-  r1. r2 r c 
-  f,2. g4 a2 bes2. bes4 a2 
+  | fis'2\color a'2 bes1 d2. c4\endcolor
 
-  %% m. 20
-  g2 g g g1. 
-  g1 g2 a2. bes4 c2 
-  bes2. bes4 a2 g1 a2 
+  | bes1. 
+  | r1. | r1.
+  | r1. | r1.
+  | r1. | r1.
+  | r1. | r1. 
+  | r1.
+  | r2 r2 c''2 
+  | f'2. g'4 a'2
+  | bes'2. bes'4 a'2 
+  | g'2 g'2 g'2
+  | g'1. 
+  | g'1 g'2
+  | a'2. bes'4 c'2 
+  | bes'2. bes'4 a'2
+  | g'1 a'2 
 
-  %% m. 23 METER 2/2
-  R1*2 
-
-  %% m. 25
-  r2 r4 d4 
-  c4. c8 bes4. bes8 
-  a4 f c'4. c8 
-  d4 a c4. c8 
-  bes4. bes8 a4. a8 
-
-  %% m. 30
-  g2. f4 
-  e2 r2 
-  r2 r4 r8 a8 
-  bes8 bes bes bes bes4 a8 a 
-  g4 fis8 fis g4. g8 
-
-  %% m. 35
-  g4 g8 g g2 
-  r2 r4 a 
-  bes4 a g e 
-  d4 r r d' 
-  bes4\na c4 c b 
-
-  %% m. 40
-  c4 r4 r2 
-  r4 c a d8 bes 
-  c2 d 
-  R1 
-  r4 c4 c2 
-
-  %% m. 45
-  r4 f, f  c'8 bes8 
-  a1\fermata 
+  %% METER TO DUPLE
+  | r1 | r1
+  | r2 r4 d''4 
+  | c''4. c''8 bes'4. bes'8 
+  | a'4 f'4 c''4. c''8 
+  | d''4 a'4 c''4. c''8 
+  | bes'4. bes'8 a'4. a'8 
+  | g'2. f'4 
+  | e'2 r2 
+  | r2 r4 r8 a'8 
+  | bes'8 bes'8 bes'8 bes'8 bes'4 a'8 a'8 
+  | g'4 fis'8 fis'8 g'4. g'8 
+  | g'4 g'8 g'8 g'2 
+  | r2 r4 a'4 
+  | bes'4 a'4 g'4 e'4 
+  | d'4 r4 r4 d''4 
+  | bes'4\na c''4 c''4 b'4 
+  | c''4 r4 r2 
+  | r4 c''4 a'4 d''8 bes'8 
+  | c''2 d''2 
+  | r1
+  | r4 c''4 c''2 
+  | r4 f'4 f'4 c''8 bes'8 
+  | a'1\fermata 
 }
 
+% START
 MusicEstribilloAII = \relative c' {
   \CantusMollis
   \clef "treble"

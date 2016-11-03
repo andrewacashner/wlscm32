@@ -34,7 +34,7 @@
   <<
     \new StaffGroup  = "ChI" {
       <<
-	\ChoirStaffName "CHORUS I"
+	\StaffGroupName "CHORUS I"
 
 	\new Staff = "SIi"
 	<<
@@ -92,7 +92,7 @@
 
     \new StaffGroup = "ChII" {
       <<
-	\ChoirStaffName "CHORUS II"
+	\StaffGroupName "CHORUS II"
 
 	\new Staff = "SII"
 	<<
@@ -123,7 +123,7 @@
 	  \new Voice = "BII" {  \MusicEstribilloBII }
 	>>
       >> 
-    } %% end ChoirStaff Chorus II
+    } %% end  Chorus II
 
     \new Staff = "Ac"
     <<
