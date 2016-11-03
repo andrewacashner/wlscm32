@@ -60,78 +60,84 @@ IncipitAc = {
 
 %% CHORUS I
 
-MusicEstribilloSIi = \relative c' {
+MusicEstribilloSIi = {
   \clef "treble"
   \Section "ESTRIBILLO a 8"
   
   \CantusMollis
-  \time 6/2
+  \MeterDuple
 
-  r2 r f c'2. c4 bes2 
-  a2. g4 f2 g g c 
-  c1 c2 c1.~\color 
-  c2 c1\endcolor c2 r2 r 
+  r2 r2 f'2
+  | c''2. c''4 bes'2 
+  | a'2. g'4 f'2
+  | g'2 g'2 c''2 
+  | c''1 c''2
 
-  %% m. 5
-  R\breve. 
-  R\breve. 
-  r2 r a c1 bes2 
-  a1 a2 c1 c2 
-  c1 a2 g1 g2 
+  | c''\breve\color c''1\endcolor
 
-  %% m. 10
-  a2 g bes a2.\color bes4 bes2~ 
-  bes2 a a\endcolor bes1. 
-  r1. r2 d2\color d~ 
-  d2 d d\endcolor d1 d2 
-  g,2. a4 bes2 c2. c4 bes2 
+  | c''2 r2 r2 
 
-  %% m. 15
-  a2. bes4 c2 bes\color f1\endcolor 
-  r2 d'1\colorOne c1.~ 
-  c1. d1. 
-  R\breve. 
-  R\breve. 
+  | r1. | r1.
+  | r1. | r1.
+  | r2 r2 a'2
+  | c''1 bes'2 
+  | a'1 a'2
+  | c''1 c''2 
+  | c''1 a'2
+  | g'1 g'2 
+  | a'2 g'2 bes'2
 
-  %% m. 20
-  r1. r2 r2 b 
-  g2. g4 c2 c2. c4 c2 
-  d2. d4 c2 c1 c2 
+  | a'2.\color bes'4 bes'1 a'2 a'2\endcolor
 
-  %% m. 23 METER CHANGE
-  \time 2/2
-  \MeterChangeCZtoC
-  R1 
-  r4 d4 c4. c8 
+  | bes'1. 
+  | r1.
 
-  %% m. 25
-  bes4. bes8 a4 bes4 
-  g4. g8 g2 
-  R1*3 
+  | r2 d''2\color d''1 d''2 d''2\endcolor
 
-  %% m. 30
-  R1 
-  r4 r8 g8 a a a a 
-  a4 bes8 bes bes4 a8 a 
-  f2 r2 
-  r2 r4 r8 d'8 
+  | d''1 d''2 
+  | g'2. a'4 bes'2
+  | c''2. c''4 bes'2 
+  | a'2. bes'4 c''2
+  | bes'2\color f'1\endcolor 
+  | r2 d''1\colorOne
+  | c''\breve.
+  | d1. 
 
-  %% m. 35
-  c4 b8 b c4. c8 
-  c4 d bes a 
-  f4 r r a 
-  a4 bes g fis 
-  g4 r r bes 
+  | r1.
+  | r1.
+  | r1.
+  | r1.
+  | r1.
+  | r2 r2 b'2 
+  | g'2. g'4 c''2
+  | c''2. c''4 c''2 
+  | d''2. d''4 c''2
+  | c''1 c''2 
 
-  %% m. 40
-  g4 a g g  
-  a4 a a bes8 bes 
-  bes4 a4( bes) bes 
-  bes2 a4 a  
-  g2 r4 a4 
-
-  %% m. 45
-  d2 c4 c c1\fermata
+  %% Meter change to C
+  \MeterChangeDuple
+  | r1
+  | r4 d''4 c''4. c''8 
+  | bes'4. bes'8 a'4 bes'4 
+  | g'4. g'8 g'2 
+  | r1 | r1
+  | r1 | r1
+  | r4 r8 g'8 a'8 a'8 a'8 a'8 
+  | a'4 bes'8 bes'8 bes'4 a'8 a'8 
+  | f'2 r2 
+  | r2 r4 r8 d''8 
+  | c''4 b'8 b'8 c''4. c''8 
+  | c''4 d''4 bes'4 a'4 
+  | f'4 r4 r4 a'4 
+  | a'4 bes'4 g'4 fis'4 
+  | g'4 r4 r4 bes'4 
+  | g'4 a'4 g'4 g'4  
+  | a'4 a'4 a'4 bes'8 bes'8 
+  | bes'4 a'4( bes'4) bes'4 
+  | bes'2 a'4 a'4  
+  | g'2 r4 a'4 
+  | d'2 c''4 c''4
+  | c''1\fermata
   \RepeatMsg "[Fine]"
   \FinalBar
 }

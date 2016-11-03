@@ -8,8 +8,6 @@
 Eco =     \MarkThisUp \markup \italic "(eco)"
 Falsete = \MarkThisUp \markup \italic "(falsete)"
 
-Global = { \Mensurstriche }
-
 %%****************************************
 %% INCIPITS
 %%****************************************
@@ -81,7 +79,6 @@ IncipitAc = {
 %% ChI
 
 MusicEstribilloSIi = {
-  \Global
   \Section "[ESTRIBILLO] A 8"
   \clef "treble"
   \MeterTriple
@@ -215,7 +212,6 @@ MusicEstribilloSIi = {
     }
     %% BBC version ossia
     \OssiaStaff "SIi" {
-      \Global
       \Section "[Ti. I-1 ending in Bbc]"
       | r4 g''4 g''4 a''4 
       | bes''1 
@@ -227,7 +223,6 @@ MusicEstribilloSIi = {
 }	
 
 MusicEstribilloSIii = {
-  \Global
   \clef "treble"
   \MeterTriple
   | r2 d''2 d''2
@@ -356,7 +351,6 @@ MusicEstribilloSIii = {
 }
 
 MusicEstribilloAI = {
-  \Global
   \clef "treble"
   \MeterTriple
   | r2 a'2 b'2
@@ -481,7 +475,6 @@ MusicEstribilloAI = {
 }
 
 MusicEstribilloTI = {
-  \Global
   \clef "treble_8"
   \MeterTriple
   | r2 d'2 d'2
@@ -616,7 +609,6 @@ MusicEstribilloTI = {
 %% ChII
 
 MusicEstribilloSII = {
-  \Global
   \clef "treble"
   \MeterTriple
   | r1.
@@ -742,7 +734,6 @@ MusicEstribilloSII = {
 }
 
 MusicEstribilloAII = {
-  \Global
   \clef "treble"
   \MeterTriple
   | r1.
@@ -869,7 +860,6 @@ MusicEstribilloAII = {
 }
 
 MusicEstribilloTII = {
-  \Global
   \clef "treble_8"
   \MeterTriple
   | r1.
@@ -994,7 +984,6 @@ MusicEstribilloTII = {
 }
 
 MusicEstribilloBII = {
-  \Global
   \clef "bass"
   \MeterTriple
   | r1.
@@ -1128,7 +1117,6 @@ MusicEstribilloBII = {
 %% Ac
 
 MusicEstribilloAc = {
-  \Global
   \clef "bass"
   \MeterTriple
   | r2 d'2 d'2
@@ -1268,7 +1256,7 @@ MusicEstribilloAc = {
   | g\breve
 
   | d\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 %%**********************************************************************
@@ -1304,7 +1292,7 @@ MusicCoplasSIi = {
   | d''2\color g''2 g''1 f''1\endcolor
   | e''2 f''2 g''2 
   | fis''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   \Section "[COPLA 2] A Duo"
   | r1.
@@ -1343,7 +1331,7 @@ MusicCoplasSIi = {
 
   | e''2 f''2\na g''2
   | fis''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
 
   \Section "[COPLA 3] A 4"
   | r2 d''2 e''2
@@ -1368,7 +1356,7 @@ MusicCoplasSIi = {
   | d''2 g''2 g''1 f''2 f''2
   | e''2 f''2 g''2 
   | fis''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
 
   \Section "[COPLA 4] A Duo"
   | r1.
@@ -1406,7 +1394,7 @@ MusicCoplasSIi = {
   | g''2 f''1\na\endcolor 
   | e''2 f''2\na g''2
   | fis''1.\fermata  
-  \MensurMiddleBar
+  \MiddleBar
 
   \Section "[COPLA 5] A 4"
   | r2 d''2 e''2
@@ -1434,7 +1422,7 @@ MusicCoplasSIi = {
   | d''2\color g''2 g''1 f''1\endcolor
   | e''2 f''2\na g''2 
   | fis''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
 
   \Section "[COPLA 6] a Duo"
   | r1.
@@ -1469,7 +1457,7 @@ MusicCoplasSIi = {
 
   | e''2 f''2\na g''2
   | f''1.\fermata\sh 
-  \MensurMiddleBar
+  \MiddleBar
   \RepeatMsg "[D.C. al Fine]"
 }
 
@@ -1502,7 +1490,7 @@ MusicCoplasSIii = {
   | cis''2 \[ d''1. cis''1\endcolor \] 
 
   | d''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 2
   | r2 d''2\color d''1 cis''1\endcolor 
@@ -1538,7 +1526,7 @@ MusicCoplasSIii = {
   | cis''2\color d''2 \[ d''1 cis''1\endcolor \]
 
   | d''1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 3
   | r2 a'2 a'2
@@ -1569,7 +1557,7 @@ MusicCoplasSIii = {
   | c''2\sh \[ d''1.\color cis''1\endcolor \] 
 
   | d''1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
 
   %% COPLA 4
   | r2 d''2\color d''1 cis''1\endcolor 
@@ -1603,7 +1591,7 @@ MusicCoplasSIii = {
 
   | cis''2 \[ d''1. cis''1\endcolor \]
   | d''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 5
   | r2 a'2 a'2 
@@ -1629,7 +1617,7 @@ MusicCoplasSIii = {
   | cis''2 \[ d''1. cis''1\endcolor \] 
 
   | d''1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 6
   | r2 d''2\color d''1 cis''1\endcolor 
@@ -1665,7 +1653,7 @@ MusicCoplasSIii = {
   | cis''2\color \[ d''1. cis''1\endcolor \]
 
   | d''1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
 }
 
 MusicCoplasAI = {
@@ -1696,11 +1684,11 @@ MusicCoplasAI = {
   | a'2 a'1\endcolor
   | a'1. 
   | a'1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 2 TACET
   R1.*30
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 3
   | r2 f'2 g'2
@@ -1725,7 +1713,7 @@ MusicCoplasAI = {
   | g'2 d'2 d'2 
   | a'\breve. 
   | a'1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 4 TACET
   | R1.*30
@@ -1756,11 +1744,11 @@ MusicCoplasAI = {
   | a'\breve. 
 
   | a'1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
 
   %% m. 147 COPLA 6 TACET
   R1.*30
-  \MensurMiddleBar
+  \MiddleBar
 }
 
 MusicCoplasTI = {
@@ -1791,7 +1779,7 @@ MusicCoplasTI = {
   | a\breve.
 
   | d'1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
   
   %% COPLA 2 TACET
   | R1.*30
@@ -1821,7 +1809,7 @@ MusicCoplasTI = {
   | a\breve. 
 
   | d'1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
 
   %% COPLA 4 TACET
   | R1.*30
@@ -1850,11 +1838,11 @@ MusicCoplasTI = {
   | a\breve. 
 
   | d'1.\fermata 
-  \MensurMiddleBar
+  \MiddleBar
   
   %% m. 147 COPLA 6 TACET
   R1.*30
-  \MensurMiddleBar
+  \MiddleBar
 }
 
 %% COPLAS ACOMP.
@@ -1886,7 +1874,7 @@ MusicCoplasAcOdd = {
   | a\breve.
 
   | d'1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
 }
 
 MusicCoplasAcEven = {
@@ -1924,7 +1912,7 @@ MusicCoplasAcEven = {
   | a\breve.
 
   | d1.\fermata
-  \MensurMiddleBar
+  \MiddleBar
 }
 
 MusicCoplasAc = {

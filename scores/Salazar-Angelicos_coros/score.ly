@@ -2,12 +2,13 @@
 %% ANTONIO DE SALAZAR (MEX-Mcen: CSG.256)
 %% EDITED BY ANDREW CASHNER
 
+%% 2016-11-02 -- Revised after peer review with mensurstriche
 %% 2016-04-20 -- Revised for published edition
 %% 2015-02-20 -- Dissertation version
 %% 2014-07    -- Lilypond version 2.18.2
 %% 2014-05    -- Lilypond version 2.14.2 (earliest choral Lilypond score)
 
-\version "2.18.2"
+\version "2.19.49"
 \include "../ly/villancico.ly"
 
 \include "music.ly"
@@ -23,9 +24,9 @@
 
 \score {
   <<
-    \new ChoirStaff = "ChI"
+    \new StaffGroup = "ChI"
     <<
-      \ChoirStaffName "CHORUS I"
+      \StaffGroupName "CHORUS I"
 
       \new Staff = "SIi"
       <<
@@ -65,11 +66,11 @@
 	  \LyricsCoplasAI
 	}
       >>
-    >> %% end of Chorus I ChoirStaff
+    >> %% end of Chorus I StaffGroup
 
-    \new ChoirStaff = "ChII"
+    \new StaffGroup = "ChII"
     <<
-      \ChoirStaffName "CHORUS II"
+      \StaffGroupName "CHORUS II"
 
       \new Staff = "SII"
       <<
@@ -121,7 +122,7 @@
 	  \MusicCoplasBII
 	}
       >>
-    >> % end of Chorus II ChoirStaff
+    >> % end of Chorus II StaffGroup
 
     \new Staff = "Ac"
     <<
