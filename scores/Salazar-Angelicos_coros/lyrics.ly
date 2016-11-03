@@ -10,7 +10,7 @@
 LyricsEstribilloSIi = \lyricmode {
   An -- gé -- li -- cos 
   co -- ros con go -- zo can -- 
-  tad, can -- tad, __ 
+  tad, can -- tad, 
   can -- tad, 
 
   %% m. 5
@@ -63,7 +63,7 @@ LyricsEstribilloSIi = \lyricmode {
   %% m. 40
   \EdLyrics {  so -- lo~a -- quel lu --
   gar } que~el mun -- do des --
-  pre -- cia __ de 
+  pre -- cia de 
   Dios es ca --
   paz, de
 
