@@ -65,7 +65,7 @@ MusicEstribilloSIi = {
   \Section "ESTRIBILLO a 8"
   
   \CantusMollis
-  \MeterDuple
+  \MeterTriple
 
   r2 r2 f'2
   | c''2. c''4 bes'2 
@@ -101,7 +101,7 @@ MusicEstribilloSIi = {
   | bes'2\color f'1\endcolor 
   | r2 d''1\colorOne
   | c''\breve.
-  | d1. 
+  | d''1. 
 
   | r1.
   | r1.
@@ -114,7 +114,6 @@ MusicEstribilloSIi = {
   | d''2. d''4 c''2
   | c''1 c''2 
 
-  %% Meter change to C
   \MeterChangeDuple
   | r1
   | r4 d''4 c''4. c''8 
@@ -136,16 +135,17 @@ MusicEstribilloSIi = {
   | bes'4 a'4( bes'4) bes'4 
   | bes'2 a'4 a'4  
   | g'2 r4 a'4 
-  | d'2 c''4 c''4
+  | d''2 c''4 c''4
   | c''1\fermata
-  \RepeatMsg "[Fine]"
+  \Fine
   \FinalBar
+  \SectionBreak
 }
 
 MusicEstribilloSIii = {
   \CantusMollis
   \clef "treble"
-  %% METER CZ
+  \MeterTriple
   r1. | r1.
   | r2 r2 f'2
   | c''2. c''4 bes'2 
@@ -187,7 +187,7 @@ MusicEstribilloSIii = {
   | r2 f'2 a'2
   | c''1 a'2 
 
-  %% METER TO C
+  \MeterChangeDuple
   | r4 f''4 e''4. e''8 
   | d''4 bes'4 c''4 f''4 
   | d''2. bes''4 
@@ -209,13 +209,15 @@ MusicEstribilloSIii = {
   | d''2 c''4 c''4 
   | c''2 r4 c''4 
   | bes'2 a'4 g'4 
-  | a'1\fermata 
+  | a'1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
-MusicEstribilloAI = \relative c' {
+MusicEstribilloAI = {
   \CantusMollis
   \clef "treble"
-  %% METER TRIPLE
+  \MeterTriple
   r1. | r1.
   | r2 r2 f'2
   | e'2. d'4 e'2 
@@ -235,12 +237,12 @@ MusicEstribilloAI = \relative c' {
   | f'2 g'2 g'2
   
   | f'2.\color f'4 g'1 f'2 f'2\endcolor
+
   | f'1. 
   | r1.
-  | r2
+  
+  | r2 fis'2\color g'1 fis'2 fis'2\endcolor
 
-  | fis'2\color g'1
-  | g'2 fis'2 fis'2\endcolor
   | g'1. 
   | r2 r2 g'2
   | c'2. d'4 e'2 
@@ -260,7 +262,7 @@ MusicEstribilloAI = \relative c' {
   | f'2. f'4 f'2
   | e'1 f'2
 
-  %% METER CHANGE TO DUPLE
+  \MeterChangeDuple
   | r1
   | r2 r4 a'4 
   | g'4. g'8 f'4. f'8 
@@ -282,15 +284,17 @@ MusicEstribilloAI = \relative c' {
   | g'2 e'4 f'4 
   | e'2 r4 f'4 
   | f'2 f'4 e'4 
-  | f'1\fermata 
+  | f'1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 %% CHORUS II
 
-MusicEstribilloSII = \relative c' {
+MusicEstribilloSII = {
   \CantusMollis
   \clef "treble"
-  %% METER TRIPLE
+  \MeterTriple
   r1. | r1.
   | r1. | r1.
   | r1. | r1.
@@ -329,7 +333,7 @@ MusicEstribilloSII = \relative c' {
   | bes'2. bes'4 a'2
   | g'1 a'2 
 
-  %% METER TO DUPLE
+  \MeterChangeDuple
   | r1 | r1
   | r2 r4 d''4 
   | c''4. c''8 bes'4. bes'8 
@@ -352,13 +356,15 @@ MusicEstribilloSII = \relative c' {
   | r1
   | r4 c''4 c''2 
   | r4 f'4 f'4 c''8 bes'8 
-  | a'1\fermata 
+  | a'1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 MusicEstribilloAII = {
   \CantusMollis
   \clef "treble"
-  %% METER TRIPLE
+  \MeterTriple
   r1. | r1.
   | r1. | r1.
   | r1. | r1.
@@ -397,7 +403,7 @@ MusicEstribilloAII = {
   | d'2. bes'4 c'2
   | c'1 c'2 
 
-  %% METER TO C
+  \MeterChangeDuple
   | r1 | r1
   | r1 | r1
   | r4 a'4 g'4. g'8 
@@ -408,10 +414,8 @@ MusicEstribilloAII = {
   | c'2 r2 
   | r2 r4 r8 f'8 
   | f'8 f'8 f'8 f'8 f'4 f'8 f'8 
-  | d'4 d'8 d'8
-  | d'4. d'8 
-  | e'4 d'8 d'8
-  | e'2 
+  | d'4 d'8 d'8 d'4. d'8 
+  | e'4 d'8 d'8 e'2 
   | r2 r4 f'4 
   | f'4 f'4 d'4 cis'4 
   | a4 r4 r4 a'4 
@@ -422,13 +426,15 @@ MusicEstribilloAII = {
   | r1
   | r4 e'4 f'2 
   | r4 bes4 c'4 c'8 c'8 
-  | c'1\fermata 
+  | c'1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 MusicEstribilloTII = {
   \CantusMollis
   \clef "treble_8"
-  %% METER CZ
+  \MeterTriple
   r1. | r1.
   | r1. | r1.
   | r1. | r1.
@@ -470,7 +476,7 @@ MusicEstribilloTII = {
   | f2. f4 f2
   | g1 f2 
 
-  %% METER TO C
+  \MeterChangeDuple
   | r1 | r1
   | r1 | r1
   | r1
@@ -492,13 +498,15 @@ MusicEstribilloTII = {
   | r1
   | r4 g4 a2 
   | r4 f4 f4 g8 g8 
-  | f1\fermata 
+  | f1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 MusicEstribilloBII = {
   \CantusMollis
   \clef "bass"
-  %% METER CZ
+  \MeterTriple
   r1. | r1.
   | r1. | r1.
   | r1. | r1.
@@ -535,7 +543,7 @@ MusicEstribilloBII = {
   | bes,2. bes,4 f,2
   | c1 f,2 
 
-  %% METER TO C
+  \MeterChangeDuple
   | r1 | r1
   | r1
   | r2 r4 g'4 
@@ -558,13 +566,15 @@ MusicEstribilloBII = {
   | r1
   | r4 c4 f2 
   | r4 bes,4 f,4 c8 c8 
-  | f,1\fermata 
+  | f,1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 MusicEstribilloAc = {
   \CantusMollis
   \clef "bass"
-  %% METER CZ
+  \MeterTriple
   r2 r2 f2
   | e2. d4 e2 
   | f2. e4 d2
@@ -590,7 +600,7 @@ MusicEstribilloAc = {
   | bes,1 bes'2 
   | f2 g2 g2
 
-  | d2\color d2 g,1~ d2 d2\endcolor
+  | d2\color d2 g1 d2 d2\endcolor
 
   | g1. 
   | g,1.
@@ -612,8 +622,8 @@ MusicEstribilloAc = {
   | bes,2. bes,4 f,2
   | c1 f,2 
 
-  %% METER TO C
-  | r4 f,2 c4. c8 
+  \MeterChangeDuple
+  | r4 f,4 c4. c8 
   | bes,4. bes,8 a,4 f,4 
   | g,4 g4 d4 bes,4 
   | c4. c8 g,4 g4 
@@ -636,7 +646,9 @@ MusicEstribilloAc = {
   | g,2 a,4 f,4 
   | c2 r4 f,4 
   | bes,2 f4 c4 
-  | f1\fermata 
+  | f1\fermata
+  \FinalBar
+  \SectionBreak
 }
 
 %%*******************
@@ -646,7 +658,6 @@ MusicEstribilloAc = {
 %% CHORUS I
 
 MusicCoplasSIi = {
-  \break
   \Section "COPLAS"
   \MeterDuple
 
@@ -667,7 +678,7 @@ MusicCoplasSIi = {
 }
 
 MusicCoplasSIii = {
-  %% METER DUPLE
+  \MeterDuple
   | r8 c''8 c''8 c''8 d''4 es''4 
   | c''8[ d''8] es''4 d''4 d''4 
   | c''4 d''4 bes'4 c'4 
@@ -680,10 +691,11 @@ MusicCoplasSIii = {
   | g'4 d''4 c''4 bes'2 a'4 g'4. bes'8 
 
   | a'1\fermata
+  \MiddleBar
 }
 
 MusicCoplasAI = {
-  %% METER DUPLE
+  \MeterDuple
   | r8 f'8 f'8 f'8 f'4 g'4 
   | f'2 f'4 f'4 
   | f'4 f'4 es'4 es'4 
@@ -694,19 +706,21 @@ MusicCoplasAI = {
   | r4 f'4 f'4 e'4 
   | d'4 g'4 f'2 
   | e'8 d'8 f'2 e'4 
-  | f'1\fermata 
+  | f'1\fermata
+  \MiddleBar
 }
 
 %% CHORUS II COPLAS 2, 4
 
 MusicCoplasSII = {
-  %% MeterDuple
+  \MeterDuple
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
-  | r1 
+  | r1
+  \MiddleBar
 
   %% COPLAS 2, 4
   | r4 a'4 bes'4. bes'8 
@@ -718,22 +732,21 @@ MusicCoplasSII = {
   | g'8 g'8 c''4 c''4 d''4 
   | c''4. c''8 d''4 bes'4
 
-  \ArticulationSubmit %% XXX put fermata under markup text
   | a'1\fermata
-  \RepeatMsgLowerStaff "[D.C. al Fine]"
-  %% normal \RepeatMsg does not show up on lower staff (Lilypond bug)
+  \DCalFineAfterLastCopla
 
   \RepeatBar
 }
 
 MusicCoplasAII = {
-  %% METER C
+  \MeterDuple
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1
+  \MiddleBar
 
   %% COPLAS 2, 4
   | r4 f'4 f'4. g'8 
@@ -744,17 +757,19 @@ MusicCoplasAII = {
   | d'4 d'4 d'2 
   | es'2 r4 f'4 
   | f'4. f'8 f'4 f'4 
-  | f'1\fermata 
+  | f'1\fermata
+  \RepeatBar
 }
 
 MusicCoplasTII = {
-  %% METER C
+  \MeterDuple
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1
+  \MiddleBar
 
   %% COPLAS 2, 4
   | r4 c'4 d'4. d'8 
@@ -765,17 +780,19 @@ MusicCoplasTII = {
   | bes4. bes8 a4 a4 
   | g2 a4 bes4 
   | a4. bes8 c'4 d'4 
-  | c'1\fermata 
+  | c'1\fermata
+  \RepeatBar
 }
 
 MusicCoplasBII = {
-  %% Meter C
+  \MeterDuple
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1 | r1
   | r1
+  \MiddleBar
 
   %% COPLAS 2, 4
   | r4 f4 bes4. bes8 
@@ -786,11 +803,12 @@ MusicCoplasBII = {
   | r4 g4 f4. f8 
   | es4 c4 f,4 bes,4 
   | f,4. g,8 a,4 bes,4 
-  | f1\fermata 
+  | f1\fermata
+  \RepeatBar
 }
 
 MusicCoplasAc = {
-  %% METER C
+  \MeterDuple
   | r8 f8 f8 f8 bes4 g4 
   | a2 bes4 bes,4 
   | f'4 d4 es4 c4 
@@ -801,7 +819,8 @@ MusicCoplasAc = {
   | d2 c2 
   | g,2 a,4 bes,4 
   | c4 f4 c'4. c'8
-  | f1\fermata 
+  | f1\fermata
+  \MiddleBar
 
   %% COPLAS B
   | r4 f4 bes4. bes8 
@@ -812,6 +831,7 @@ MusicCoplasAc = {
   | r4 g4 f4. f8 
   | es4 c4 f,4 bes,4 
   | f,4. g,8 a,4 bes,4 
-  | f1\fermata 
+  | f1\fermata
+  \RepeatBar
 }
 
