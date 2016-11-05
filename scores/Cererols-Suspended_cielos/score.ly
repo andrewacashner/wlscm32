@@ -3,7 +3,9 @@
 %% Critical edition based on E-CAN:AU/0116 and E-Bbc:M/765/25
 %% EDITED BY ANDREW A. CASHNER
 
-%% 2016-10-26  -- Revised for lilypond v2.19.24, after peer review
+%% 2016-11-05  -- Revised after peer review, in C3 = 3/2,
+%%                  regular barlines
+%% 2016-10-26  -- Revised for lilypond v2.19.24, with mensurstriche
 %% 2016-06-08  -- Revised for published edition
 %% 2014-12     -- Lilypond version for dissertation
 %% 2012--2013  -- First edition in Sibelius
@@ -32,9 +34,9 @@
 
 \score {
   <<
-    \new StaffGroup  = "ChI" {
+    \new ChoirStaff  = "ChI" {
       <<
-	\StaffGroupName "CHORUS I"
+	\ChoirStaffName "CHORUS I"
 
 	\new Staff = "SIi"
 	<<
@@ -90,9 +92,9 @@
       >>
     }
 
-    \new StaffGroup = "ChII" {
+    \new ChoirStaff = "ChII" {
       <<
-	\StaffGroupName "CHORUS II"
+	\ChoirStaffName "CHORUS II"
 
 	\new Staff = "SII"
 	<<

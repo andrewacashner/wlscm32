@@ -207,7 +207,7 @@ MusicEstribilloSIi = {
       | r4 g''4 g''4 d''4 
       | d''1 
       | d''\breve\fermata
-      \MensurFinalBar
+      \FinalBar
       \RepeatMsg "[Fine]  " %% XXX extra space to avoid barline collision
     }
     %% BBC version ossia
@@ -216,7 +216,7 @@ MusicEstribilloSIi = {
       | r4 g''4 g''4 a''4 
       | bes''1 
       | a''\breve\fermata
-      \MensurFinalBar
+      \FinalBar
     }
   >>
   \pageBreak
@@ -347,7 +347,7 @@ MusicEstribilloSIii = {
 
   | d''2 g''1 f''4 e''4 
   | fis''1\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 MusicEstribilloAI = {
@@ -471,7 +471,7 @@ MusicEstribilloAI = {
   | r4 bes'4 bes'4 a'4 
   | g'1 
   | a'\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 MusicEstribilloTI = {
@@ -602,7 +602,7 @@ MusicEstribilloTI = {
   | r4 g4 g4 g4 
   | g1 
   | d'\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 %%*******************
@@ -730,7 +730,7 @@ MusicEstribilloSII = {
   | r4 d''4 d''4 d''4 
   | d''\breve
   | d''\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 MusicEstribilloAII = {
@@ -856,7 +856,7 @@ MusicEstribilloAII = {
   
   | bes'4. a'8 g'1 d'2. e'4 f'4 g'4 
   | fis'1\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 MusicEstribilloTII = {
@@ -980,7 +980,7 @@ MusicEstribilloTII = {
   | g'2 d'2 
   | d'1 
   | d'\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 MusicEstribilloBII = {
@@ -1110,7 +1110,7 @@ MusicEstribilloBII = {
   | r4 g4 g4 d4 
   | g\breve
   | d\breve\fermata
-  \MensurFinalBar
+  \FinalBar
 }
 
 %%*******************
