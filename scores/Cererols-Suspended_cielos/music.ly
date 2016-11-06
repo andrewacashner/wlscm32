@@ -84,41 +84,41 @@ MusicEstribilloSIi = {
   \MeterTriple
   r2 fis''2 fis''2
 
-  | fis''2\color g''1. fis''1\endcolor r1.
-  
-  | r1.
+  | fis''2\color g''1. fis''1\endcolor
+
+  | R1.
+  | R1.
   | r2 f''2.\na g''4 \break
   | e''2\color f''1\endcolor
 
   | e''\breve.
 
   | e''1 r2 
-  | r1.
+  | R1.
   | r2 e''2 f''2 
 
   | g''2\color fis''1. g''1\endcolor \break
 
-  | r1.
-  | r1.
+  | R1. | R1.
   | r2 a''2. a''4
   | a''2\color a''1\endcolor 
   | a''1.
   | a''1. 
 
-  %% m. 11 METER TO C -- Tened parad
+  %% METER TO C -- Tened parad
   \MeterChangeDuple
   | r8 fis''8 g''4 r8 g''8 g''4 
   | r8 g''8 g''2 g''8 g''8 
   | g''2 r2 
-  | r1 
+  | R1
   | r2 r4 a''8 a''8
   | a''2 r4 r8 e''8\Eco 
   | e''4 r8\Eco e''8 e''4 r8 e''8\Eco 
   | e''4 f''8 f''8 a''2 
 
-  %% m. 19 METER TO CZ -- La mas nueva consonancia
+  %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1. 
+  | R1.
   | r2 d''2. e''4
   | f''2\color e''1\endcolor
   | r2 d''2. e''4
@@ -128,26 +128,24 @@ MusicEstribilloSIi = {
   | g''2 f''1
   | e''2 d''1\endcolor
   | cis''1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
+
   | r2 a''2 a''1 g''2 g''2
+
   | g''2\color f''1
   | e''2 d''1\endcolor 
   | e''2 f''2 g''2
-  | a''1 a''2 
+  | a''1 a''2
   | a''2 d''2.\Eco d''4
   | d''2 g''2. g''4 
   | g''1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 d''2. e''4
-  | f''2\color e''1\endcolor 
+  | f''2\color e''1\endcolor
   | r2 d''2. e''4
   | f''2\color e''1\endcolor 
   | r2 a''2. c'''4
@@ -161,7 +159,7 @@ MusicEstribilloSIi = {
   | f''8 g''8 a''2 g''4\sh
   | a''2 r2
   | r2 a''8 g''8 f''8 f''8
-  | e''4 e''4 e''2 
+  | e''4 e''4 e''2
   | r2 r4 a''8 g''8 
   | f''8 e''8 d''2 c''4
   | c''4 b'8 b'8 a'4 f''8 g''8
@@ -172,30 +170,29 @@ MusicEstribilloSIi = {
   | r2 r4 g''4 
   | g''4 g''4 fis''4 fis''4 
   | g''1 
-  | a''1 
-  | r1
+  | a''1
+  | R1
   | r2 r4 g''4 
   | g''4 g''4 f''4 f''4 
   | e''2 e''2 
-  | r1
-  | r1 \break
+  | R1
+  | R1 \break
 
   | r4 e''4 f''4 g''8 e''4 g''8 fis''4 g''2 
 
-  | r1
+  | R1
 
   | r2 a''1 g''1 f''2
-  
+
   | e''1 
   | d''2 r2 
-  | r1
-  | r1
-  | r1
+  | R1 | R1
+  | R1
   | r4 a''8 g''8 f''4\sh f''8 f''8 
   | g''4 g''4 e''4 e''4 
-  | d''2 b'2 
-  | r4 e''4 f''4 f''4 
-  | a''1 
+  | d''2 b'2
+  | r4 e''4 f''4 f''4
+  | a''1
   | a''2 r2 
   | r4 d''4 d''4 d''4 
   | d''4 d''4 r2 
@@ -227,22 +224,21 @@ MusicEstribilloSIii = {
   \MeterTriple
   | r2 d''2 d''2
 
-  | d''2\color d''1. d''1\endcolor r1. 
+  | d''2\color d''1. d''1\endcolor
 
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 d''2. d''4
   | d''2\color c''1\endcolor 
   | b'1.
   | c''1\sh r2 
-  | r1.
+  | R1.
   | r2 cis''2 cis''2
   
   | cis''2\color d''1. d''1\endcolor 
 
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | e''2\color f''1\endcolor 
   | e''1.
   | f''1. 
@@ -252,7 +248,7 @@ MusicEstribilloSIii = {
   | r8 d''8 d''8 d''8 d''8 e''8 f''4\na 
   | r8 f''8 f''2 e''8 e''8  
   | d''2 r2 
-  | r1 
+  | R1 
   | r2 r4 f''8 f''8 
   | e''2 r4 r8 cis''8\Falsete 
   | cis''4 r8 cis''8 cis''4 r8 cis''8 
@@ -270,13 +266,10 @@ MusicEstribilloSIii = {
   | \[ d''1.
   |    bes'1. \] 
   | a'1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
 
   | r2 a''2 a''1 g''2 g''2 
 
@@ -285,10 +278,8 @@ MusicEstribilloSIii = {
   | f''2 f''2.\sh f''4
   | g''2 d''2. d''4 
   | e''1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 e''2. f''4 
   | g''2\color f''1\endcolor
   | r2 g''2. g''4 
@@ -320,20 +311,17 @@ MusicEstribilloSIii = {
 
   | e''4 e''4 e''1 d''2 
 
-  | r1
-  | r1
-  | r1
-
+  | R1 | R1
+  | R1
+  
   | r4 c''4 d''4 d''8 c''4 d''8 d''4 d''2 
 
-  | r1 
+  | R1 
   | r4 e''8 d''8 c''4\sh c''8 c''8 
   | d''4 d''4 b'4 b'4 
   | c''2 a'2 
-  | r1 
-  | r1
-  | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
 
   | r2 e''1 d''1 c''2
   
@@ -346,6 +334,7 @@ MusicEstribilloSIii = {
   | r4 d''4 d''4 d''4 
 
   | d''2 g''1 f''4 e''4 
+
   | fis''1\fermata
   \FinalBar
 }
@@ -357,21 +346,19 @@ MusicEstribilloAI = {
   
   | c''2 b'1.\color a'1\endcolor
 
-  | r1. 
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 a'2. b'4
 
   | gis'2\color a'2 \[ a'1 gis'1\endcolor \] a'1 r2 
 
-  | r1.
+  | R1.
   | r2 a'2 a'2
   
   | a'2\color a'1. b'1\endcolor 
 
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | a'2\color a'1\endcolor 
   | a'1.
   | f'1. 
@@ -381,7 +368,7 @@ MusicEstribilloAI = {
   | r8 a'8 b'8 b'8 b'8 c''8 d''4 
   | r8 c''8 b'2 c''8 c''8 
   | b'2 r2 
-  | r1 
+  | R1 
   | r2 r4 a'8 a'8 
   | a'2 r4 r8 a'8\Falsete 
   | a'4 r8 a'8 a'4 r8 a'8 
@@ -389,40 +376,34 @@ MusicEstribilloAI = {
 
   %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1.
+  | R1.
   | r2 a'2. a'4
   | a'2\color a'1\endcolor 
   | r2 a'2. a'4
   | a'2\color a'1\endcolor 
-  | r1.
+  | R1.
   | r2 a'2. c''4 
   | bes'2\color a'1
   | g'2 f'1\endcolor 
   | e'1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 a'2 a'2
   | a'1 a'2 
   | a'2 a'2. c''4
   | b'2 g'2. g'4 
   | g'1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 a'2. a'4
   | a'2\color a'1\endcolor 
   | r2 a'2. a'4
   | a'2\color a'1\endcolor 
-  | r1.
+  | R1.
   | r2 a'2. c''4 
   | bes'2\color a'1
   | g'2 f'1\endcolor 
@@ -430,7 +411,7 @@ MusicEstribilloAI = {
   %% METER TO C -- Contrapunto celestial
   \MeterChangeDuple
   | e'4 r4 r2 
-  | r1 
+  | R1 
   | r2 r4 d'8 e'8 
 
   | f'8 g'8 a'8 a'8 a'8 a'8 a'4~ % XXX tie to accommodate page break
@@ -444,25 +425,25 @@ MusicEstribilloAI = {
   | a'4 a'4 a'4 a'4 
   | a'1 
   | g'1 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 a'4 a'4 a'4 
   | a'4 a'4 a'1 gis'2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 a'4 a'4 b'8 g'4 b'8 a'4 b'2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 a'8 a'8 d''4 d''8 d''8 
   | g'4 g'4 c''4 c''4 
   | bes'2 a'2 
-  | r1 
+  | R1 
   | r4 c''8 b'8\fl a'4 a'8 a'8 
   | g'4 g'4 e'4 e'4 
   | f'8[ g'8] a'2 gis'4 
   | a'2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 a'4 a'4 a'4 
   | a'1 
   | f'2 r2 
@@ -480,21 +461,21 @@ MusicEstribilloTI = {
   | r2 d'2 d'2
   
   | d'2\color g'1. d'1\endcolor
-  | r1. 
-  | r1.
+  | R1. 
+  | R1.
   | r2 d'2. e'4 
   | cis'2\color d'1\endcolor
 
   | e'\breve. 
 
   | a1. 
-  | r1.
+  | R1.
   | r2 a2 a2
   
   | a2\color d'1. g1\endcolor 
 
-  | r1.
-  | r1.
+  | R1.
+  | R1.
 
   | r2 a2. a4
   | a2\color a1\endcolor 
@@ -506,7 +487,7 @@ MusicEstribilloTI = {
   | r8 d'8 g'4 r8 g'8 g'4 
   | r8 g'8 g'2 c'8 c'8 
   | g2 r2 
-  | r1 
+  | R1 
   | r2 r4 d'8 d'8 
   | a2 r4 r8 a8 
   | a4 r8 a8 a4 r8 a8 
@@ -514,7 +495,7 @@ MusicEstribilloTI = {
 
   %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1. 
+  | R1. 
   | r2 d'2. d'4
   | d'2\color cis'1\endcolor 
   | r2 d'2. d'4
@@ -525,13 +506,13 @@ MusicEstribilloTI = {
   | g\breve. 
 
   | a1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   | r2 a2 a1 b2 b2
   
@@ -540,11 +521,11 @@ MusicEstribilloTI = {
   | d'2 d'2. d'4
   | g'2 g2. g4 
   | c'1.
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
   | r2 d'2. d'4
   | d'2\color cis'1\endcolor 
   | r2 d'2. d'4
@@ -559,7 +540,7 @@ MusicEstribilloTI = {
   | a4 a'8 g'8 f'8 e'8 d'2 cis'4 d'4 b8 b8
   
   | a1 
-  | r1 
+  | R1 
 
   | r4 e'8 d'8 c'8 b8 a2 gis4 a2
   
@@ -570,30 +551,30 @@ MusicEstribilloTI = {
   
   | d'4 d'4 cis'1 d'2 
 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 d'4 d'4 d'4 
 
   | d'4 d'4 cis'1 d'2 
 
   | e'2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
 
   | r4 a4 d'4 b8 c'4 g8 d'4 g2 
 
-  | r1 
+  | R1 
   | r2 r4 a8 a8 
   | d'4 d'8 d'8 g4 g4 
   | c'2 f2 
   | g2 a2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 e'8 d'8 c'4\sh c'8 c'8 
   | d'2 e'4 e'8 d'8 
   | cis'4 cis'8 cis'8 d'4 d'4 
   | b4 b4 c'4 c'4 
-  | r1 
+  | R1 
   | r4 a4 d'4 d'4 
   | a1 
   | d'2 r2 
@@ -611,22 +592,22 @@ MusicEstribilloTI = {
 MusicEstribilloSII = {
   \clef "treble"
   \MeterTriple
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 d''2 d''2
   
-  | d''2\color d''1. d''1\endcolor r1.
+  | d''2\color d''1. d''1\endcolor R1.
   
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
   | r2 cis''2 cis''2 
 
   | cis''2\color d''1. cis''1\endcolor 
 
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
   | r2 d''2. e''4 
   | cis''2\color d''1
   
@@ -634,8 +615,8 @@ MusicEstribilloSII = {
 
   %% m. 11 METER TO C
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r8 d''8 d''4 
 
   | r8 d''8 d''4 r8 d''8 d''2 d''8 d''8 d''4 d''8 d''8
@@ -645,15 +626,15 @@ MusicEstribilloSII = {
 
   %% m. 19 METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   | r2 cis''2 cis''1 d''2. cis''4\na 
 
@@ -665,7 +646,7 @@ MusicEstribilloSII = {
   | e''2\color d''1
   | cis''2 d''1 
   | e''2 d''1\endcolor
-  | r1.
+  | R1.
   | r2 d''2 d''2
   | d''2\color c''1\sh\endcolor 
   | d''2 r2 r2
@@ -676,31 +657,31 @@ MusicEstribilloSII = {
 
   | d''2\color d''1\endcolor
   | cis''2 r2 r2 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   %% m. 38 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
-  | r1
-  | r1
-  | r1
+  | R1
+  | R1
+  | R1
   | r4 a''8 g''8 f''8 e''8 d''8 c''8 
   | b'4 b'8 b'8 c''2 
-  | r1
+  | R1
 
   | d''8 e''8 f''8 g''8 a''2. g''4 f''4 a'8 b'8 
 
   | cis''4 d''4 d''4 cis''4 
   | d''2 r2 
-  | r1
-  | r1
-  | r1
+  | R1
+  | R1
+  | R1
   | r2 r4 c''4 
   | c''4 c''4 bes'4 bes'4 
   | a'2 a'2 
@@ -713,15 +694,15 @@ MusicEstribilloSII = {
   | r2 r4 d''4 
   | e''4 d''8 c''4 d''8 b'4 
   | c''2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
 
   | r2 a''1 g''1 f''2
   
   | e''1 
   | d''4. c''8 b'2 
   | a'2 r2 
-  | r1 
+  | R1 
   | r2 r4 e''8 d''8 
   | c''4\sh c''8 c''8 d''4 d''4 
   | e''4 f''4 e''2 
@@ -736,21 +717,21 @@ MusicEstribilloSII = {
 MusicEstribilloAII = {
   \clef "treble"
   \MeterTriple
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 a'2 b'2
   
-  | c''2\color b'1. a'1\endcolor r1. 
+  | c''2\color b'1. a'1\endcolor R1. 
 
-  | r1.
-  | r1. 
-  | r1.
+  | R1.
+  | R1. 
+  | R1.
   | r2 a'2 a'2
 
   | a'2\color a'1. a'1\endcolor 
 
-  | r1.
-  | r1. 
+  | R1.
+  | R1. 
   | r2 b'2. c''4
   | a'2\color b'1\endcolor 
 
@@ -761,8 +742,8 @@ MusicEstribilloAII = {
 
   %% METER TO C -- Tened parad
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r8 b'8 a'8 g'8 
   | a'8 b'8 c''4 r8 c''8 c''2 b'8 b'8 a'4 f'8 f'8 
   | a'2 r8 a'8\Eco a'4 
@@ -770,22 +751,22 @@ MusicEstribilloAII = {
 
   %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   | r2 a'2 a'1 a'2. a'4 
 
   | g'2\color a'2 \[ a'1 g'1\endcolor \] 
 
   | a'1.
-  | r1.
+  | R1.
   
   | r2 a'2 a'1 b'2 b'2 
 
@@ -803,34 +784,34 @@ MusicEstribilloAII = {
   | r2 a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'2 r2 r2 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   %% m. 38 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 a'8 g'8 f'8 e'8 
   | d'4 e'4 f'2 
   | r2 a8 b8 c'8 d'8 
   | e'4 e'4 e'2 
-  | r1 
+  | R1 
   | r4 g'8 g'8 a'4 a'4 
   | a'2. a'4 
   | f'2 r2 
-  | r1 
+  | R1 
   | r4 a'4 b'4 c''4 
   | bes'4 bes'4 bes'2 
   | a'1 
-  | r1
-  | r1
-  | r1
+  | R1
+  | R1
+  | R1
   | r2 r4 gis'4 
   | a'4 a'4 a'4 a'4 
   | a'2( gis'2) 
@@ -838,14 +819,14 @@ MusicEstribilloAII = {
   | r2 r4 b'4 
   | c''4 b'8 a'4 a'8 gis'4 
   | a'2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r4 e'8 e'8 
   | a'4 a'8 a'8 d'4 d'4 
   | g'2 c'4 c''4 
   | bes'4 bes'4 a'2 
   | a'2 r2 
-  | r1 
+  | R1 
   | r2 r4 e'4 
   | f'8 g'8 a'2 gis'4 
   | a'2 r4 a'4 
@@ -862,22 +843,22 @@ MusicEstribilloAII = {
 MusicEstribilloTII = {
   \clef "treble_8"
   \MeterTriple
-  | r1.
-  | r1. 
+  | R1.
+  | R1. 
   | r2 fis'2 fis'2
 
-  | fis'2\color g'1. fis'1\endcolor r1. 
+  | fis'2\color g'1. fis'1\endcolor R1. 
 
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
   | r2 e'2 f'2 
 
   | g'2\color f'1. e'1\endcolor 
 
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
   | r2 g'2. g'4 
   | g'2\color f'1
   | e'2 d'1\endcolor 
@@ -886,8 +867,8 @@ MusicEstribilloTII = {
 
   %% METER TO C -- Tened parad
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r8 g'8 f'8\sh e'8 
 
   | f'8\sh g'8 a'4 r8 fis'!8 fis'2 g'8 g'8 f'4 d'8 d'8 
@@ -898,15 +879,15 @@ MusicEstribilloTII = {
 
   %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   | r2 e'2 e'1 f'2. e'4 
 
@@ -927,18 +908,18 @@ MusicEstribilloTII = {
   | r2 f'2\color e'2 
   | f'2 d'1\endcolor
   | e'2 r2 r2 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   %% m. 38 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
-  | r1 
+  | R1 
 
   | r4 a'8 g'8 f'8 e'8 d'2 cis'4 d'2 
 
@@ -949,13 +930,13 @@ MusicEstribilloTII = {
   | c'8 d'8 e'2 d'4 
   | cis'4 a2 cis'4 
   | a2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r4 d'4 
   | d'4 d'4 d'4 d'4 
   | d'2 d'2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 e'4 e'4 e'4 
   | f'2 f'2 
   | e'1 
@@ -968,8 +949,8 @@ MusicEstribilloTII = {
   | r4 e'8 d'8 c'4\sh c'8 c'8 
   | d'4 d'4 b4 b4 
   | c'2 c'2 
-  | r1
-  | r1
+  | R1
+  | R1
   | a'1 
   | g'1 
   | f'2 e'1 d'4 f'4 
@@ -986,21 +967,21 @@ MusicEstribilloTII = {
 MusicEstribilloBII = {
   \clef "bass"
   \MeterTriple
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 d2 d2
 
   | d2\color g1. d1\endcolor
-  | r1. 
-  | r1.
-  | r1.
-  | r1.
+  | R1. 
+  | R1.
+  | R1.
+  | R1.
   | r2 a2 a2
   
   | a2\color d'1. a1\endcolor 
 
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 g2. a4
   | fis2\color g1\endcolor 
 
@@ -1011,8 +992,8 @@ MusicEstribilloBII = {
 
   %% COMPAS TO C -- Tened parad
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r8 g8 d'4
   
   | r8 d'8 d'4 r8 d'8 d'2 g8 g8 d4 d8 d8 
@@ -1022,15 +1003,15 @@ MusicEstribilloBII = {
 
   %% METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   | r2 a2 a1 d2. d4 
 
@@ -1054,37 +1035,37 @@ MusicEstribilloBII = {
   | r2 d'2 cis'2 
   | d'2\color b1\endcolor
   | a2 r2 r2 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
   %% m. 38 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
-  | r1
-  | r1
+  | R1
+  | R1
 
   | r4 a8 g8 f8 e8 d2 cis4 d2 
 
   | e4 e4 a2 
-  | r1
+  | R1
   
   | r4 d8 e8 f8 g8 a2 e4 f4 d4  
 
   | a2. a4 
   | d2 r2 
-  | r1
-  | r1
+  | R1
+  | R1
   | r4 g4 g4 g4 
 
   | g4 g4 fis1 g2 
 
   | a1 
-  | r1 
+  | R1 
   | r4 e4 e4 e4 
   | d2 d2  
   | e1 
@@ -1093,8 +1074,8 @@ MusicEstribilloBII = {
   | c'4 g8 a4 d8 e4 
   | a2 r2 
 
-  | r1
-  | r1
+  | R1
+  | R1
   | r2 r4 a8 g8 
   | fis4 fis8 fis8 g4 g4 
   | e4 e4 f2 
@@ -1283,10 +1264,10 @@ MusicCoplasSIi = {
   | d''2\color d''1\endcolor 
   | b'1.
   | c''1 r2 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
   | r2 r2 a''4 a''4
   
   | d''2\color g''2 g''1 f''1\endcolor
@@ -1295,11 +1276,11 @@ MusicCoplasSIi = {
   \MiddleBar
   
   \Section "[COPLA 2] A Duo"
-  | r1.
+  | R1.
 
   | r2 e''2\color g''1 f''1\endcolor
 
-  | r1.
+  | R1.
   
   | r2 g''2\color g''1 f''1\sh\endcolor 
 
@@ -1347,10 +1328,10 @@ MusicCoplasSIi = {
   | \[ d''1. 
        | b'1. \]
   | c''1.\na 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
   | r2 r2 a''2
   
   | d''2 g''2 g''1 f''2 f''2
@@ -1359,11 +1340,11 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \Section "[COPLA 4] A Duo"
-  | r1.
+  | R1.
   
   | r2 e''2\color g''1 f''1\endcolor
 
-  | r1.
+  | R1.
   
   | r2 g''2\color g''1 f''1\sh\endcolor 
 
@@ -1413,10 +1394,10 @@ MusicCoplasSIi = {
   | \[ d''1. 
        | b'1. \]
   | c''1.\na 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
   | r2 r2 a''4 a''4
   
   | d''2\color g''2 g''1 f''1\endcolor
@@ -1425,10 +1406,10 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \Section "[COPLA 6] a Duo"
-  | r1.
+  | R1.
 
   | r2 e''2\color g''1 f''1\endcolor
-  | r1. 
+  | R1. 
   | r2 g''2\color g''1 fis''1\endcolor 
   | g''2 d''2 f''2
   | e''4( d''4 c''4 d''4 e''4 f''4) 
@@ -1495,17 +1476,17 @@ MusicCoplasSIii = {
   %% COPLA 2
   | r2 d''2\color d''1 cis''1\endcolor 
 
-  | r1.
+  | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
   | d''1. 
-  | r1.
+  | R1.
   | r2 r2 c''4 c''4 
   | c''2\color b'1
 
   | cis''2 a'2 d''1 cis''1\endcolor
 
-  | r1.
+  | R1.
   | a'2 b'2 c''2
   | b'2 c''2 d''2 
   | c''1\sh c''2
@@ -1516,7 +1497,7 @@ MusicCoplasSIii = {
 
   | b'2( c''2 d''2) 
   | cis''1.
-  | r1. 
+  | R1. 
   | r2 a''2 a''2
   
   | f''2\sh\color g''2 g''1 e''2 e''1 f''1\endcolor  
@@ -1562,16 +1543,16 @@ MusicCoplasSIii = {
   %% COPLA 4
   | r2 d''2\color d''1 cis''1\endcolor 
 
-  | r1.
+  | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
   | d''1. 
-  | r1.
+  | R1.
   | r2 r2 c''4 c''4 
   | c''2\color b'1
 
   | cis''2 a'2 d''1 cis''1\endcolor
-  | r1. 
+  | R1. 
   | a'2 b'2 c''2
   | b'2 c''2 d''2 
   | cis''1 cis''2
@@ -1582,7 +1563,7 @@ MusicCoplasSIii = {
 
   | b'2( c''2 d''2) 
   | c''1.
-  | r1. 
+  | R1. 
   | r2 a''2 a''2
   | fis''2\color g''1 
 
@@ -1622,17 +1603,17 @@ MusicCoplasSIii = {
   %% COPLA 6
   | r2 d''2\color d''1 cis''1\endcolor 
 
-  | r1.
+  | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
   | d''1. 
-  | r1.
+  | R1.
   | r2 r2 c''4 c''4 
   | c''2\color b'1
 
   | cis''2 a'2 d''1 cis''1\endcolor
 
-  | r1.
+  | R1.
   | a'2 b'2 c''2
   | b'2 c''2 d''2  
   | cis''1 cis''2
@@ -1642,7 +1623,7 @@ MusicCoplasSIii = {
   | f''2 f''4( e''4) d''1 c''2 c''2
   | b'2( c''2 d''2) 
   | cis''1.
-  | r1. 
+  | R1. 
   | r2 a''4( b''4\fl a''4 g''4)
 
   | fis''2 g''2 g''1 e''2 e''2
@@ -1675,8 +1656,8 @@ MusicCoplasAI = {
   | b'2\fl\color a'2 \[ a'1 gis'1\endcolor \]
 
   | a'1 r2
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 r2 a'4 a'4
   
   | d'2\color g'2 g'1 fis'1
@@ -1705,8 +1686,8 @@ MusicCoplasAI = {
   | b'2\fl a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
-  | r1.
-  | r1. 
+  | R1.
+  | R1. 
   | r2 r2 a'2
 
   | d'2 g'2 g'1 fis'2 fis'2
@@ -1734,8 +1715,8 @@ MusicCoplasAI = {
   | b'2\fl a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
-  | r1.
-  | r1.
+  | R1.
+  | R1.
   | r2 r2 a'4 a'4
   
   | d'2\color g'2 g'1 fis'1\endcolor
