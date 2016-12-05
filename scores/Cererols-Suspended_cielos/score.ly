@@ -10,7 +10,7 @@
 %% 2014-12     -- Lilypond version for dissertation
 %% 2012--2013  -- First edition in Sibelius
 
-\version "2.19.48"
+\version "2.19"
 
 \include "../ly/villancico.ly"
 \include "music.ly"

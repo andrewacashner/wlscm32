@@ -1,4 +1,3 @@
-\version "2.19.48"
 %% Cererols, SUSPENDED CIELOS
 %% MUSIC
 
@@ -88,7 +87,7 @@ MusicEstribilloSIi = {
 
   | R1.
   | R1.
-  | r2 f''2.\na g''4 \break
+  | r2 f''2.\na g''4 
   | e''2\color f''1\endcolor
 
   | e''\breve.
@@ -97,7 +96,7 @@ MusicEstribilloSIi = {
   | R1.
   | r2 e''2 f''2 
 
-  | g''2\color fis''1. g''1\endcolor \break
+  | g''2\color fis''1. g''1\endcolor 
 
   | R1. | R1.
   | r2 a''2. a''4
@@ -176,7 +175,7 @@ MusicEstribilloSIi = {
   | g''4 g''4 f''4 f''4 
   | e''2 e''2 
   | R1
-  | R1 \break
+  | R1 
 
   | r4 e''4 f''4 g''8 e''4 g''8 fis''4 g''2 
 
@@ -205,7 +204,7 @@ MusicEstribilloSIi = {
       | d''1 
       | d''\breve\fermata
       \FinalBar
-      \RepeatMsg "[Fine]  " %% XXX extra space to avoid barline collision
+      \RepeatMsg "[Fine]"
     }
     %% BBC version ossia
     \OssiaStaff "SIi" {
@@ -414,8 +413,7 @@ MusicEstribilloAI = {
   | R1 
   | r2 r4 d'8 e'8 
 
-  | f'8 g'8 a'8 a'8 a'8 a'8 a'4~ % XXX tie to accommodate page break
-  | a'4 gis'4 a'2 
+  | f'8 g'8 a'8 a'8 a'8 a'8 a'2 gis'4 a'2 
 
   | r4 b'8 b'8 a'4 a'4 
   | a'4 a'4 a'2 

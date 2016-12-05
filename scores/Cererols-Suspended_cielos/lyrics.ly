@@ -1,4 +1,3 @@
-\version "2.19.48"
 %% Cererols-Suspended_cielos/lyrics.ly
 %% CEREROLS, SUSPENDED CIELOS
 %% LYRICS
