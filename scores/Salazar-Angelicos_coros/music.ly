@@ -139,7 +139,7 @@ MusicEstribilloSIi = {
   | c''1\fermata
   \Fine
   \FinalBar
-  \SectionBreak
+  \pageBreak
 }
 
 MusicEstribilloSIii = {
@@ -211,7 +211,6 @@ MusicEstribilloSIii = {
   | bes'2 a'4 g'4 
   | a'1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 MusicEstribilloAI = {
@@ -286,7 +285,6 @@ MusicEstribilloAI = {
   | f'2 f'4 e'4 
   | f'1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 %% CHORUS II
@@ -358,7 +356,6 @@ MusicEstribilloSII = {
   | r4 f'4 f'4 c''8 bes'8 
   | a'1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 MusicEstribilloAII = {
@@ -428,7 +425,6 @@ MusicEstribilloAII = {
   | r4 bes4 c'4 c'8 c'8 
   | c'1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 MusicEstribilloTII = {
@@ -500,7 +496,6 @@ MusicEstribilloTII = {
   | r4 f4 f4 g8 g8 
   | f1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 MusicEstribilloBII = {
@@ -568,7 +563,6 @@ MusicEstribilloBII = {
   | r4 bes,4 f,4 c8 c8 
   | f,1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 MusicEstribilloAc = {
@@ -648,7 +642,6 @@ MusicEstribilloAc = {
   | bes,2 f4 c4 
   | f1\fermata
   \FinalBar
-  \SectionBreak
 }
 
 %%*******************
@@ -658,6 +651,7 @@ MusicEstribilloAc = {
 %% CHORUS I
 
 MusicCoplasSIi = {
+  \SectionBreak
   \Section "COPLAS"
   \MeterDuple
 
@@ -678,6 +672,7 @@ MusicCoplasSIi = {
 }
 
 MusicCoplasSIii = {
+  \SectionBreak
   \MeterDuple
   | r8 c''8 c''8 c''8 d''4 es''4 
   | c''8[ d''8] es''4 d''4 d''4 
@@ -695,6 +690,7 @@ MusicCoplasSIii = {
 }
 
 MusicCoplasAI = {
+  \SectionBreak
   \MeterDuple
   | r8 f'8 f'8 f'8 f'4 g'4 
   | f'2 f'4 f'4 
@@ -713,6 +709,7 @@ MusicCoplasAI = {
 %% CHORUS II COPLAS 2, 4
 
 MusicCoplasSII = {
+  \SectionBreak
   \MeterDuple
   | r1 | r1
   | r1 | r1
@@ -739,6 +736,7 @@ MusicCoplasSII = {
 }
 
 MusicCoplasAII = {
+  \SectionBreak
   \MeterDuple
   | r1 | r1
   | r1 | r1
@@ -762,6 +760,7 @@ MusicCoplasAII = {
 }
 
 MusicCoplasTII = {
+  \SectionBreak
   \MeterDuple
   | r1 | r1
   | r1 | r1
@@ -785,6 +784,7 @@ MusicCoplasTII = {
 }
 
 MusicCoplasBII = {
+  \SectionBreak
   \MeterDuple
   | r1 | r1
   | r1 | r1
@@ -808,6 +808,7 @@ MusicCoplasBII = {
 }
 
 MusicCoplasAc = {
+  \SectionBreak
   \MeterDuple
   | r8 f8 f8 f8 bes4 g4 
   | a2 bes4 bes,4 
