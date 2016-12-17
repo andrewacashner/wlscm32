@@ -1,3 +1,0 @@
-\SectionBreak makes staff lines go past double bar
-\StaffGroup creates staff group bracket around solo & accomp which shouldn't be there
-

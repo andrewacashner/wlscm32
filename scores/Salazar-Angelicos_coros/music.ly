@@ -77,8 +77,8 @@ MusicEstribilloSIi = {
 
   | c''2 r2 r2 
 
-  | r1. | r1.
-  | r1. | r1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 a'2
   | c''1 bes'2 
   | a'1 a'2
@@ -90,7 +90,7 @@ MusicEstribilloSIi = {
   | a'2.\color bes'4 bes'1 a'2 a'2\endcolor
 
   | bes'1. 
-  | r1.
+  | R1.
 
   | r2 d''2\color d''1 d''2 d''2\endcolor
 
@@ -103,11 +103,11 @@ MusicEstribilloSIi = {
   | c''\breve.
   | d''1. 
 
-  | r1.
-  | r1.
-  | r1.
-  | r1.
-  | r1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
   | r2 r2 b'2 
   | g'2. g'4 c''2
   | c''2. c''4 c''2 
@@ -115,12 +115,12 @@ MusicEstribilloSIi = {
   | c''1 c''2 
 
   \MeterChangeDuple
-  | r1
+  | R1
   | r4 d''4 c''4. c''8 
   | bes'4. bes'8 a'4 bes'4 
   | g'4. g'8 g'2 
-  | r1 | r1
-  | r1 | r1
+  | R1 | R1
+  | R1 | R1
   | r4 r8 g'8 a'8 a'8 a'8 a'8 
   | a'4 bes'8 bes'8 bes'4 a'8 a'8 
   | f'2 r2 
@@ -146,7 +146,7 @@ MusicEstribilloSIii = {
   \CantusMollis
   \clef "treble"
   \MeterTriple
-  r1. | r1.
+  R1. | R1.
   | r2 r2 f'2
   | c''2. c''4 bes'2 
   | a'2. g'4 f'2
@@ -154,8 +154,8 @@ MusicEstribilloSIii = {
   | a'1 a'2
   | g'1 c''2 
   | c''2 r2 r2
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 r2 c''2
   | c''1 c''2 
   | c''1 a'2
@@ -166,21 +166,21 @@ MusicEstribilloSIii = {
 
   | c''2.\color d''4 es''1 c''2 c''2\endcolor
   | d''1. 
-  | r1.
+  | R1.
   
   | r2 d''2\color bes'1 a'2 a'2\endcolor
 
   | bes'1.
-  | r1. | r1.
+  | R1. | R1.
   | r2 r2 c''2
   | f'2. g'4 a'2 
   | bes'2. bes'4 a'2
   | g'2. a'4 bes'2 
   | bes'2(\color a'1)\endcolor
   | bes'1. 
-  | r1. | r1.
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 r2 d''2 
   | c''2. c''4 bes'2
   | a'1 a'2 
@@ -192,8 +192,8 @@ MusicEstribilloSIii = {
   | d''4 bes'4 c''4 f''4 
   | d''2. bes'4 
   | c''4 g'4 g'2 
-  | r1 | r1
-  | r1 | r1
+  | R1 | R1
+  | R1 | R1
   | r4 r8 c''8 c''8 c''8 c''8 c''8 
   | c''4 d''8 d''8 es''4 c''8 c''8 
   | bes'2 r2 
@@ -217,7 +217,7 @@ MusicEstribilloAI = {
   \CantusMollis
   \clef "treble"
   \MeterTriple
-  r1. | r1.
+  R1. | R1.
   | r2 r2 f'2
   | e'2. d'4 e'2 
   | f'2. c'4 d'2
@@ -225,8 +225,8 @@ MusicEstribilloAI = {
   | f'1 f'2
   | g'1 g'2 
   | f'2 r2 r2
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 r2 f'2
   | g'1 g'2 
   | f'1 c'2
@@ -238,7 +238,7 @@ MusicEstribilloAI = {
   | f'2.\color f'4 g'1 f'2 f'2\endcolor
 
   | f'1. 
-  | r1.
+  | R1.
   
   | r2 fis'2\color g'1 fis'2 fis'2\endcolor
 
@@ -252,9 +252,9 @@ MusicEstribilloAI = {
 
   | f'\breve. 
 
-  | r1. | r1.
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 r2 g'2 
   | e'2. f'4 g'2
   | f'2. f'4 f'2 
@@ -262,12 +262,12 @@ MusicEstribilloAI = {
   | e'1 f'2
 
   \MeterChangeDuple
-  | r1
+  | R1
   | r2 r4 a'4 
   | g'4. g'8 f'4. f'8 
   | e'4. e'8 d'2 
-  | r1 | r1
-  | r1 | r1
+  | R1 | R1
+  | R1 | R1
   | r4 r8 e'8 f'8 f'8 f'8 f'8 
   | f'4 f'8 f'8 g'4 f'8 f'8 
   | d'2 r2 
@@ -293,10 +293,10 @@ MusicEstribilloSII = {
   \CantusMollis
   \clef "treble"
   \MeterTriple
-  r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
+  R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 f'2
   | c''2. c''4 bes'2 
   | a'2. g'4 f'2
@@ -308,19 +308,19 @@ MusicEstribilloSII = {
 
   | c''1 c''2
   | c''1. 
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 r2 bes'2 
   | a'2 g'2 g'2
 
   | fis'2\color a'2 bes'1 d''2. c''4\endcolor
 
   | bes'1. 
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1. 
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1. 
+  | R1.
   | r2 r2 c''2 
   | f'2. g'4 a'2
   | bes'2. bes'4 a'2 
@@ -332,7 +332,7 @@ MusicEstribilloSII = {
   | g'1 a'2 
 
   \MeterChangeDuple
-  | r1 | r1
+  | R1 | R1
   | r2 r4 d''4 
   | c''4. c''8 bes'4. bes'8 
   | a'4 f'4 c''4. c''8 
@@ -351,7 +351,7 @@ MusicEstribilloSII = {
   | c''4 r4 r2 
   | r4 c''4 a'4 d''8 bes'8 
   | c''2 d''2 
-  | r1
+  | R1
   | r4 c''4 c''2 
   | r4 f'4 f'4 c''8 bes'8 
   | a'1\fermata
@@ -362,10 +362,10 @@ MusicEstribilloAII = {
   \CantusMollis
   \clef "treble"
   \MeterTriple
-  r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
+  R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 f'2
   | e'2. d'4 e'2 
   | f'2. c'4 d'2
@@ -376,17 +376,17 @@ MusicEstribilloAII = {
   | g'1 g'2
   | f'1 c'2
   | e'1. 
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 r2 f'2 
   | f'2 d'2 d'2
 
   | d'2\color d'2 d'1 d'2 d'2\endcolor
 
   | d'1. 
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 a'2
   | d'2. e'4 f'2 
   | g'2. g'4 f'2
@@ -401,8 +401,8 @@ MusicEstribilloAII = {
   | c'1 c'2 
 
   \MeterChangeDuple
-  | r1 | r1
-  | r1 | r1
+  | R1 | R1
+  | R1 | R1
   | r4 a'4 g'4. g'8 
 
   | f'4 d'4 g'2. g'4 e'4 f'4 
@@ -420,7 +420,7 @@ MusicEstribilloAII = {
   | g'4 r4 r2 
   | r4 f'4 f'4 d'8 d'8 
   | f'2 d'2 
-  | r1
+  | R1
   | r4 e'4 f'2 
   | r4 bes4 c'4 c'8 c'8 
   | c'1\fermata
@@ -431,9 +431,9 @@ MusicEstribilloTII = {
   \CantusMollis
   \clef "treble_8"
   \MeterTriple
-  r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
+  R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 f2
   | c'2. c'4 bes2 
   | a2. g4 f2
@@ -447,18 +447,18 @@ MusicEstribilloTII = {
   | c'1 bes2 
   | a1 f2
   | g1. 
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1.
   | r2 r2 d'2 
   | c'2 bes2 bes2
 
   | a2\color a2 g1 a2 a2\endcolor
 
   | g1. 
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
-  | r1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
+  | R1.
   | r2 r2 d'2 
   | g2. a4 bes2
   | c'2. c'4 bes2 
@@ -473,9 +473,9 @@ MusicEstribilloTII = {
   | g1 f2 
 
   \MeterChangeDuple
-  | r1 | r1
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
+  | R1
   | r4 f'4 e'4. e'8 
   | d'4. d'8 c'4. c'8 
   | bes2. a4 
@@ -491,7 +491,7 @@ MusicEstribilloTII = {
   | f'4 r4 r2 
   | r4 a4 a4 a8 a8 
   | f2 f2 
-  | r1
+  | R1
   | r4 g4 a2 
   | r4 f4 f4 g8 g8 
   | f1\fermata
@@ -502,9 +502,9 @@ MusicEstribilloBII = {
   \CantusMollis
   \clef "bass"
   \MeterTriple
-  r1. | r1.
-  | r1. | r1.
-  | r1. | r1.
+  R1. | R1.
+  | R1. | R1.
+  | R1. | R1.
   | r2 r2 f2
   | e2. d4 e2 
   | f2. e4 d2
@@ -517,16 +517,16 @@ MusicEstribilloBII = {
   | e1 e2 
   | f1 f,2
   | c1. 
-  | r1. | r1. 
-  | r1.
+  | R1. | R1. 
+  | R1.
   | r2 r bes2 
   | f2 g2 g2
   | d2\color d2 g,1 d2 d2\endcolor
   | g,1. 
-  | r1. | r1. 
-  | r1. | r1.
-  | r1. | r1.
-  | r1. | r1. 
+  | R1. | R1. 
+  | R1. | R1.
+  | R1. | R1.
+  | R1. | R1. 
   | r2 r2 g2
   | c2. d4 e2 
   | f2. f4 e2
@@ -539,8 +539,8 @@ MusicEstribilloBII = {
   | c1 f,2 
 
   \MeterChangeDuple
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1
   | r2 r4 g4 
   | f4. f8 e4. e8 
   | d4. d8 c4. c8 
@@ -558,7 +558,7 @@ MusicEstribilloBII = {
   | c4 r4 r2 
   | r4 f,4 f,4 bes,8 bes,8 
   | f,2 bes,2 
-  | r1
+  | R1
   | r4 c4 f2 
   | r4 bes,4 f,4 c8 c8 
   | f,1\fermata
@@ -660,7 +660,7 @@ MusicCoplasSIi = {
   | c''2 bes'4. bes'8 
   | a'4 a'4 g'4 g'4 
   | fis'2 r2 
-  | r1
+  | R1
   | r2 r4 bes'4 
   | bes'4 a'4 g'4 g'4 
   | f'2 c''2 
@@ -711,12 +711,12 @@ MusicCoplasAI = {
 MusicCoplasSII = {
   \SectionBreak
   \MeterDuple
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1
   \MiddleBar
 
   %% COPLAS 2, 4
@@ -738,12 +738,12 @@ MusicCoplasSII = {
 MusicCoplasAII = {
   \SectionBreak
   \MeterDuple
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1
   \MiddleBar
 
   %% COPLAS 2, 4
@@ -762,12 +762,12 @@ MusicCoplasAII = {
 MusicCoplasTII = {
   \SectionBreak
   \MeterDuple
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1
   \MiddleBar
 
   %% COPLAS 2, 4
@@ -786,12 +786,12 @@ MusicCoplasTII = {
 MusicCoplasBII = {
   \SectionBreak
   \MeterDuple
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1 | r1
-  | r1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1 | R1
+  | R1
   \MiddleBar
 
   %% COPLAS 2, 4

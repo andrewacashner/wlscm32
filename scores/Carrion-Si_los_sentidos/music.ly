@@ -30,7 +30,7 @@ EstribilloSolo = {
   
   | cis''2. cis''4 d''1\color e''1\endcolor
 
-  | r1.
+  | R1.
   | r2 c''2 g'2
   | a'2 f'2 g'2
 
@@ -43,35 +43,38 @@ EstribilloSolo = {
   | r2 a'2 c''2
   | b'2. c''4 d''2
   | d''2\color cis''1\endcolor
-  | r1.
+  | R1.
   | r2 e''2 b'2
   | c''2 a'2 b'2
   | gis'1.
   | e''2 c''2 d''4( c''4)
   | b'2\color c''1\endcolor
-  | r1.
+  | R1.
   | r2 c''2 g'2
   | a'2 f'2 g'2
   | e'1 r2
   | c''2 a'2 b'4( a'4)
   | gis'2\color a'1\endcolor
-  | r1.
+  | R1.
   | r2 a'2 d''2
   | cis''2 r2 r2
   | r2 a'2 d''2
   | cis''2 d''2 e''2
   | f''1.
 
-  | e''2\color e''1.\endcolor d''2 d''1\color cis''1\endcolor
-
-  | r1.
+  | e''2\color e''1~
+  | e''2\endcolor d''2 d''1\color cis''1\endcolor
+				% manual tie for color bracket
+  | R1.
   | r2 e'2 a'2
   | gis'2 r2 r2
   | r2 e'2 a'2
   | gis'2 a'2 b'2
   | c''1.
   
-  | b'2\color b'1.\endcolor a'2 a'1( gis'1)
+  | b'2\color b'1~
+  | b'2\endcolor a'2 a'1( gis'1)
+				% manual tie for color bracket
 
   | a'1.
   \Fine
@@ -99,7 +102,9 @@ CoplasSolo = {
   | gis'2 a'2 b'2
   | c''1.
   
-  | b'2\color b'1.\endcolor a'2 a'1( gis'1)
+  | b'2\color b'1~
+  | b'2\endcolor a'2 a'1( gis'1)
+  				% manual tie for color bracket
 
   | a'1.
   \DCalFineAfterLastCopla
@@ -117,7 +122,9 @@ EstribilloAcomp = {
   | e1. 
   | gis1.
 
-  | a1\color d'1\endcolor c'2 g2 
+  | a1\color d'2~
+  | d'2\endcolor c'2 g2
+				% XXX manual tie to get correct coloration bracket placement
 
   | a2 f2 g2
   | e2 a2 e2
