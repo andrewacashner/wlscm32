@@ -1100,8 +1100,9 @@ MusicEstribilloAc = {
   \MeterTriple
   | r2 d'2 d'2
 
-  | d'2\color g1.\endcolor d2 d2
-
+  | d'2\color g1~ g2\endcolor d2 d2 
+    % XXX tie added for coloration across barline
+  | d'2\color g1.\endcolor d2 d2 
   | d2\color g1. d1\endcolor
 
   | r2 d'2. g4 
@@ -1111,7 +1112,8 @@ MusicEstribilloAc = {
 
   | a2 a2 a2
   
-  | a2\color d'1.\endcolor a2 a2
+  | a2\color d'1~ d'2\endcolor a2 a2
+    % XXX tie added for coloration across barline
   
   | a2\color d'1. g1\endcolor 
 
@@ -1151,7 +1153,9 @@ MusicEstribilloAc = {
 
   | g\breve. 
 
-  | a2 a2 a1\colorOne d2. d4 
+  | a2 a2 a2\color a2\endcolor d2. d4 
+    % XXX tie added for coloration across barline; thus \color...\endcolor
+    % instead of \colorOne
 
   | g2\color f1\endcolor
   | bes1.
