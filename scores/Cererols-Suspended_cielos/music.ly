@@ -223,10 +223,10 @@ MusicEstribilloSIi = {
     {
       | r4 g''4 g''4 d''4 
       | d''1 
-      | d''1.~
+      | d''1~
 
       % m. 108
-      | d''1.\fermata
+      | d''1\fermata
       \FinalBar
       \RepeatMsg "[Fine]"
     }
@@ -235,10 +235,10 @@ MusicEstribilloSIi = {
       \Section "[Ti. I-1 ending in Bbc]"
       | r4 g''4 g''4 a''4 
       | bes''1 
-      | a''1.~
+      | a''1~
 
       % m. 108
-      | a''1.\fermata 
+      | a''1\fermata 
       \FinalBar 
     }
   >>
@@ -528,10 +528,10 @@ MusicEstribilloAI = {
   | g'4 g'4 r2 
   | r4 bes'4 bes'4 a'4 
   | g'1 
-  | a'1.~
+  | a'1~
   
   % m. 108
-  | a'1.\fermata
+  | a'1\fermata
   \FinalBar
 }
 
@@ -673,10 +673,10 @@ MusicEstribilloTI = {
   | g4 g4 r2 
   | r4 g4 g4 g4 
   | g1 
-  | d'1.~
+  | d'1~
 
   % m. 108
-  | d'1.\fermata
+  | d'1\fermata
   \FinalBar
 }
 
@@ -794,8 +794,8 @@ MusicEstribilloSII = {
   | a'2 a'2 
   | r2 r4 d''4 
   | b'4 b'4 b'4 b'4 
-  | b'1.~
-  | b'1.
+  | b'1~
+  | b'1
   | c''2 r2 
   | r2 r4 d''4 
   | e''4 d''8 c''4 d''8 b'4 
@@ -819,12 +819,12 @@ MusicEstribilloSII = {
   | f''4 d''4\Falsete d''4 d''4 
   | d''4 d''4 r2 
   | r4 d''4 d''4 d''4 
-  | d''1.~
-  | d''1.
-  | d''1.~
+  | d''1~
+  | d''1
+  | d''1~
   
   % m. 108
-  | d''1.\fermata 
+  | d''1\fermata 
   \FinalBar
 }
 
@@ -851,7 +851,7 @@ MusicEstribilloAII = {
   | a'2\color b'1\endcolor 
   | a'1.~
   | a'1.~
-  | a'1.~
+  | a'1.
 
   % m. 20
   | a'1.
@@ -1252,12 +1252,12 @@ MusicEstribilloBII = {
   | d4 d'4\Falsete d'4 d'4 
   | g4 g4 r2 
   | r4 g4 g4 d4 
-  | g1.~
-  | g1.
-  | d1.~
+  | g1~
+  | g1
+  | d1~
 
   % m. 108
-  | d1.\fermata
+  | d1\fermata
   \FinalBar
 }
 
@@ -1410,12 +1410,12 @@ MusicEstribilloAc = {
   | d2 d2 
   | g2 g4 d4 
   | g2 g4 d4 
-  | g1.~
-  | g1.
-  | d1.~
+  | g1~
+  | g1
+  | d1~
 
   % m. 108
-  | d1.\fermata
+  | d1\fermata
   \FinalBar
 }
 
