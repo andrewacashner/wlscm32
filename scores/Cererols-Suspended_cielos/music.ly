@@ -130,7 +130,7 @@ MusicEstribilloSIi = {
   | bes''2\color a''1
   | g''2 f''1
   | e''2 d''1\endcolor
-  | cis''1.
+  | cis''1. 
   | R1. 
   
   % m. 40
@@ -140,10 +140,10 @@ MusicEstribilloSIi = {
   | R1.
   | r2 a''2 a''2~
   | a''2 g''2 g''2
-  | g''2\color f''1
+  | g''2\color f''1 
   | e''2 d''1\endcolor 
-  | e''2 f''2 g''2
-  | a''1 a''2
+  | e''2 f''2 g''2 
+  | a''1 a''2 \break
   
   % m. 50
   | a''2 d''2.\Eco d''4
@@ -168,7 +168,7 @@ MusicEstribilloSIi = {
   %% m. 66 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
   | cis''2 r4 d''8 e''8
-  | f''8 g''8 a''2 g''4\sh
+  | f''8 g''8 a''2 gis''?4
   | a''2 r2
   | r2 a''8 g''8 f''8 f''8
 
@@ -206,7 +206,7 @@ MusicEstribilloSIi = {
   | R1 
   | R1
   | R1
-  | r4 a''8 g''8 f''4\sh f''8 f''8 
+  | r4 a''8 g''8 fis''?4 fis''8 fis''8 
   | g''4 g''4 e''4 e''4 
   | d''2 b'2
 
@@ -275,7 +275,7 @@ MusicEstribilloSIii = {
 
   %% m. 21 METER TO C -- Tened parad
   \MeterChangeDuple
-  | r8 d''8 d''8 d''8 d''8 e''8 f''4\na 
+  | r8 d''8 d''8 d''8 d''8 e''8 f''4
   | r8 f''8 f''2 e''8 e''8  
   | d''2 r2 
   | R1 
@@ -286,10 +286,10 @@ MusicEstribilloSIii = {
 
   %% m. 29 METER TO CZ -- La mas nueva consonancia
   \MeterChangeTriple
-  | r2 e''2. f''4 
+  | r2 e''2. f''4\sh
 
   % m. 30
-  | g''2\color f''1\endcolor
+  | g''2\color f''1\na\endcolor
   | r2 g''2. g''4 
   | g''2\color f''1\endcolor
   | r2 g''2. g''4 
@@ -313,15 +313,15 @@ MusicEstribilloSIii = {
   | e''2 e''2 e''2 
 
   % m. 50
-  | f''2 f''2.\sh f''4
+  | f''2\na f''2.\sh f''4\sh
   | g''2 d''2. d''4 
   | e''1.
   | R1. 
   | R1.
   | R1. 
   | R1.
-  | r2 e''2. f''4 
-  | g''2\color f''1\endcolor
+  | r2 e''2. f''4\sh 
+  | g''2\color f''1\na\endcolor
   | r2 g''2. g''4 
 
   % m. 60
@@ -361,7 +361,7 @@ MusicEstribilloSIii = {
   | r4 c''4 d''4 d''8 c''8~
   | c''8 d''8 d''4 d''2 
   | R1 
-  | r4 e''8 d''8 c''4\sh c''8 c''8 
+  | r4 e''8 d''8 cis''?4 cis''8 cis''8 
 
   % m. 90
   | d''4 d''4 b'4 b'4 
@@ -383,7 +383,7 @@ MusicEstribilloSIii = {
   | g''4 g''4 r2 
   | r4 d''4 d''4 d''4 
   | d''2 g''2~
-  | g''2 f''4 e''4 
+  | g''2 f''4\na e''4 
 
   % m. 108
   | fis''1\fermata 
@@ -513,7 +513,7 @@ MusicEstribilloAI = {
   | g'4 g'4 c''4 c''4 
   | bes'2 a'2 
   | R1 
-  | r4 c''8 b'8\fl a'4 a'8 a'8 
+  | r4 c''8 bes'?8 a'4 a'8 a'8 
   | g'4 g'4 e'4 e'4 
   | f'8[ g'8] a'2 gis'4 
   | a'2 r2 
@@ -659,7 +659,7 @@ MusicEstribilloTI = {
   | g2 a2 
   | R1
   | R1
-  | r4 e'8 d'8 c'4\sh c'8 c'8 
+  | r4 e'8 d'8 cis'?4 cis'8 cis'8 
   | d'2 e'4 e'8 d'8 
   | cis'4 cis'8 cis'8 d'4 d'4 
   | b4 b4 c'4 c'4 
@@ -736,7 +736,7 @@ MusicEstribilloSII = {
   | R1.
   | R1.
   | r2 cis''2 cis''2~
-  | cis''2 d''2. cis''4\na 
+  | cis''2 d''2. c''?4
 
   % m. 40
   | b'2\color c''1\endcolor
@@ -748,7 +748,7 @@ MusicEstribilloSII = {
   | e''2 d''1\endcolor
   | R1.
   | r2 d''2 d''2
-  | d''2\color c''1\sh\endcolor 
+  | d''2\color cis''?1\endcolor 
 
   % m. 50
   | d''2 r2 r2
@@ -814,7 +814,7 @@ MusicEstribilloSII = {
   | r2 r4 e''8 d''8 
 
   % m. 100
-  | c''4\sh c''8 c''8 d''4 d''4 
+  | cis''?4 cis''8 cis''8 d''4 d''4 
   | e''4 f''4 e''2 
   | f''4 d''4\Falsete d''4 d''4 
   | d''4 d''4 r2 
@@ -966,7 +966,7 @@ MusicEstribilloAII = {
   | r4 bes'4\Falsete bes'4 a'4
   | bes'4. a'8 g'2~
   | g'2 d'2~
-  | d'4 e'4 f'4 g'4 
+  | d'4 e'4 f'4\na g'4 
 
   % m. 108
   | fis'1\fermata
@@ -1006,8 +1006,8 @@ MusicEstribilloTII = {
   | R1
   | R1
   | r2 r8 g'8 f'8\sh e'8 
-  | f'8\sh g'8 a'4 r8 fis'!8 fis'4~
-  | fis'4 g'8 g'8 f'4 d'8 d'8 
+  | f'8\sh g'8 a'4 r8 fis'8 fis'4~
+  | fis'4 g'8 g'8 f'?4 d'8 d'8 
   | e'2 r8 e'8\Eco e'4
   | r8 e'8 e'4 r8 g'8 g'4~
   | g'4 f'8 f'8 e'2 
@@ -1093,7 +1093,7 @@ MusicEstribilloTII = {
   % m. 90
   | fis'4 fis'8 fis'8 g'4 g'4 
   | e'4 e'4 f'4 c'4 
-  | r4 e'8 d'8 c'4\sh c'8 c'8 
+  | r4 e'8 d'8 cis'?4 cis'8 cis'8 
   | d'4 d'4 b4 b4 
   | c'2 c'2 
   | R1
@@ -1173,7 +1173,7 @@ MusicEstribilloBII = {
 
   % m. 40
   | g2\color f1\endcolor
-  | b1.\fl
+  | bes?1.
   | a2 a2 a2~
   | a2 b2 b2 
   | cis'2\color d'1
@@ -1305,12 +1305,10 @@ MusicEstribilloAc = {
 
   %% m. 29 METER TO CZ -- la mas nueva consonancia
   \MeterChangeTriple
-  | r2 
-  <<
-    { a2. }
-    \figures { <[_!]>2. }
-  >>
-  a4 
+  | << 
+             {  r2      a2.       a4 }
+    \figures { <_>2 <[_!]>2. <[6+]>4 }
+    >>
 
   % m. 30
   | g2 d'2. d'4
@@ -1329,7 +1327,7 @@ MusicEstribilloAc = {
   | bes1.
   | a2 a2 a2~
   | a2 b2 b2 
-  | c'2\sh\color d'1
+  | cis'?2\color d'1
   | a1.~
   | a2 d1 
   | a1.~
@@ -1354,14 +1352,14 @@ MusicEstribilloAc = {
   | a2 d'2. d'4 
   | <<
       { g2 fis1  | g2 g1\endcolor }
-      \figures { < 3- >1. < 3- >2 <_>1 }
+      \figures { < 3- >1. | < 3- >2 <_>1 }
     >> 
   | g1. 
 
   %% m. 66 METER TO C -- contrapunto celestial
   \MeterChangeDuple
   | a2 d'4 d'4~
-  | d'4 c'4\sh d'4 b!4 
+  | d'4 cis'?4 d'4 b4 
   | a4 a8[ g8 f8 e8] d4~
   | d4 cis4 d2 
 
@@ -1430,16 +1428,22 @@ MusicCoplasSIi = {
   \MeterTriple
 
   %% COPLA 1 
-  | r2 d''2 f''1 g''2. g''4
+  % m. 109
+  | r2 d''2 f''2~
 
+  % m. 110
+  | f''2 g''2. g''4
   | g''2\color fis''1\endcolor
   | g''1. 
   | fis''1 r4 d''4
-  | e''2 e''2. fis''4\na
-  | g''2\color g''2 \[ g''1 fis''1\endcolor \] 
+  | e''2 e''2. f''4
+  | g''2\color g''2 \[ g''2~
+  | g''2 fis''1\endcolor \] 
   | g''2 d''2 d''2
   | e''2 e''2 e''2 
   | c''1 c''2
+
+  % m. 120
   | d''2\color d''1\endcolor 
   | b'1.
   | c''1 r2 
@@ -1448,177 +1452,198 @@ MusicCoplasSIi = {
   | R1.
   | R1.
   | r2 r2 a''4 a''4
-  
-  | d''2\color g''2 g''1 f''1\endcolor
-  | e''2 f''2 g''2 
+  | d''2\color g''2 g''2~
+  | g''2 f''1\endcolor
+
+  % m. 130
+  | e''2 f''2\na g''2 
   | fis''1.\fermata 
   \MiddleBar
   
   \Section "[COPLA 2] A Duo"
+  % m. 132
   | R1.
-
-  | r2 e''2\color g''1 f''1\endcolor
-
+  | r2 e''2\color g''2~
+  | g''2 f''1\sh\endcolor
   | R1.
-  
-  | r2 g''2\color g''1 f''1\sh\endcolor 
-
+  | r2 g''2\color g''2~
+  | g''2 fis''?1\endcolor 
   | g''2 d''2 f''2
   | e''4( d''4 c''4 d''4 e''4 f''4) 
+
+  % m. 140
   | g''1.
   | r2 r2 f''4 f''4 
   | f''2\color e''1
-  
-  | fis''2 d''2 g''1 fis''1\endcolor
-
+  | fis''2 d''2 g''2~
+  | g''2 fis''1\endcolor
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-
-  | f''2 e''2 d''1 cis''2 cis''2
-
+  | f''2 e''2 d''2~
+  | d''2 cis''2 cis''2
   | d''2 d''4( c''4) b'4( a'4) 
 
-  | gis'2\color \[ a'1. gis'1\endcolor \] 
-
+  % m. 150
+  | gis'2\color \[ a'1~
+  | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''2 e''2 
-
-  | c''2\sh\color d''2 d''1 b'2 b'1 c''1\endcolor
-
+  | cis''?2\color d''2 d''2~
+  | d''2 b'2 b'2~
+  | b'2 c''1\endcolor
   | r2 a''2 a''2 
+  | fis''?2\color g''2 g''2~
+  | g''2 f''1\endcolor 
 
-  | f''2\sh\color g''2 g''1 f''1\na\endcolor 
-
+  % m. 160
   | e''2 f''2\na g''2
   | fis''1.\fermata 
   \MiddleBar
 
   \Section "[COPLA 3] A 4"
+  % m. 162
   | r2 d''2 e''2
-  
-  | f''2\color g''2 g''1 f''1\sh\endcolor
+  | f''2\color g''2 g''2~
+  | g''2 fis''?1\endcolor
   | g''1. 
   | fis''1\Breath d''4 d''4
-  | e''2 e''4( d''4 e''4 fis''4)\sh 
-  | g''2\color g''2 \[ g''1 fis''1\endcolor \] 
+  | e''2 e''4( d''4 e''4 fis''4)
+  | g''2\color g''2 \[ g''2~
+  | g''2 fis''1\endcolor \] 
+
+  % m. 170
   | g''2 d''2 d''2
   | e''1. 
   | c''2 c''2 c''2
   | \[ d''1. 
-       | b'1. \]
+  | b'1. \]
   | c''1.\na 
   | R1.
   | R1.
   | R1.
   | R1.
+
+  % m. 180
   | r2 r2 a''2
-  
-  | d''2 g''2 g''1 f''2 f''2
-  | e''2 f''2 g''2 
+  | d''2 g''2 g''2~
+  | g''2 f''2 f''2
+  | e''2 f''2\na g''2 
   | fis''1.\fermata 
   \MiddleBar
 
   \Section "[COPLA 4] A Duo"
+  % m. 185
   | R1.
-  
-  | r2 e''2\color g''1 f''1\endcolor
-
+  | r2 e''2\color g''2~
+  | g''2 f''1\endcolor
   | R1.
-  
-  | r2 g''2\color g''1 f''1\sh\endcolor 
+  | r2 g''2\color g''2~
 
+  % m. 190
+  | g''2 fis''?1\endcolor 
   | g''2 d''2 f''2
   | e''4( d''4 c''4 d''4 e''4 f''4) 
   | g''1.
   | r2 r2 f''4 f''4 
-
   | f''2 e''1\color
-  
-  | f''2 d''2 g''1 fis''1\endcolor
+  | fis''2 d''2 g''2~
+  | g''2 fis''1\endcolor
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-  
-  | f''2 e''2 d''1 cis''2 cis''2
 
+  % m. 200
+  | f''2 e''2 d''2~
+  | d''2 cis''2 cis''2
   | d''2 d''4( c''4) b'4( a'4) 
-
-  | gis'2\color \[ a'1. gis'1\endcolor \] 
-
+  | gis'2\color \[ a'1~
+  | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''2 e''2 
   | cis''2\color d''1
+  | d''2 b'2 b'2~
+  | b'2 c''1\endcolor
 
-  | d''2 b'2 b'1 c''1\endcolor
+  % m. 210
   | r2 a''2 a''2 
-  | f''2\sh\color g''1
-  | g''2 f''1\na\endcolor 
+  | fis''?2\color g''1
+  | g''2 f''1\endcolor 
   | e''2 f''2\na g''2
   | fis''1.\fermata  
   \MiddleBar
 
   \Section "[COPLA 5] A 4"
+  % m. 215
   | r2 d''2 e''2
-  
-  | f''2 g''2 g''1 fis''1
-
+  | f''2 g''2 g''2~
+  | g''2 f''1\sh
   | g''1. 
+  | fis''?1 \Breath d''4 d''4
 
-  | f''1\sh \Breath d''4 d''4
+  % m. 220
   | e''2 e''4( d''4 e''4 f''4) 
-
-  | g''2\color g''2 \[ g''1 fis''1 \] 
+  | g''2\color g''2 \[ g''2~
+  | g''2 fis''1 \] 
   | g''2 d''1\endcolor
   | e''1 e''2 
   | c''2 c''2 c''2
   | \[ d''1. 
-       | b'1. \]
+  | b'1. \]
   | c''1.\na 
   | R1.
+
+  % m. 230
   | R1.
   | R1.
   | R1.
   | r2 r2 a''4 a''4
-  
-  | d''2\color g''2 g''1 f''1\endcolor
+  | d''2\color g''2 g''2~
+  | g''2 f''1\endcolor
   | e''2 f''2\na g''2 
   | fis''1.\fermata 
   \MiddleBar
 
   \Section "[COPLA 6] a Duo"
+  % m. 238
   | R1.
+  | r2 e''2\color g''2~
 
-  | r2 e''2\color g''1 f''1\endcolor
+  % m. 240
+  | g''2 f''1\endcolor
   | R1. 
-  | r2 g''2\color g''1 fis''1\endcolor 
+  | r2 g''2\color g''2~
+  | g''2 fis''1\endcolor 
   | g''2 d''2 f''2
   | e''4( d''4 c''4 d''4 e''4 f''4) 
   | g''1.
   | r2 r2 f''4 f''4 
-  | f''2\color e''1 fis''2 d''2 g''2~ 
+  | f''2\color e''1 
+  | fis''2 d''2 g''2~ 
+  
+  % m. 250
   | g''2 fis''1\endcolor
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-
-  | f''2 e''2 d''1 cis''2 cis''2
-
+  | f''2 e''2 d''2~
+  | d''2 cis''2 cis''2
   | d''2 d''4( c''4) b'4( a'4) 
-
-  | gis'2\color \[ a'1. gis'1\endcolor \] 
-
+  | gis'2\color \[ a'1~
+  | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''4( f''4 e''4 d''4) 
 
-  | c''2\sh d''2 d''1 b'2 b'2 
-
+  % m. 260
+  | cis''?2 d''2 d''2~
+  | d''2 b'2 b'2 
   | b'2\color c''1\endcolor
-  | r2 a''4( b''4\fl a''4 g''4) 
-
-  | f''2\sh g''2 g''1 f''2\na f''2 
-
+  | r2 a''4( bes''?4 a''4 g''4) 
+  | fis''?2 g''2 g''2~
+  | g''2 f''2 f''2 
   | e''2 f''2\na g''2
-  | f''1.\fermata\sh 
+
+  % m. 267
+  | f''1.\na\fermata
   \MiddleBar
-  \RepeatMsg "[D.C. al Fine]"
+  \DCalFine
 }
 
 MusicCoplasSIii = {
@@ -1626,8 +1651,11 @@ MusicCoplasSIii = {
   
   \MeterTriple
   %% COPLA 1
-  | r2 a'2 d''1 e''2. d''4 
+  % m. 109
+  | r2 a'2 d''2~
 
+  % m. 110
+  | d''2 e''2. d''4 
   | e''2\color d''1\endcolor
   | d''1. 
   | d''1 r4 a'4
@@ -1637,128 +1665,144 @@ MusicCoplasSIii = {
   | b'2 b'2 b'2
   | c''1.  
   | r2 f''1\color
+
+  % m. 120
   | f''2 f''1\endcolor 
   | e''1.
   | e''1 a''4 a''4 
-
-  | d''2\color g''2 g''1 f''1\endcolor 
+  | d''2\color g''2 g''2~
+  | g''2 f''1\endcolor 
   | e''1.
   | d''1 d''4 d''4 
   | c''1 c''2
   | b'2\color b'1 
+  | cis''2 \[ d''1~
 
-  | cis''2 \[ d''1. cis''1\endcolor \] 
-
+  % m. 130
+  | d''2 cis''1\endcolor \] 
   | d''1.\fermata 
   \MiddleBar
   
   %% COPLA 2
-  | r2 d''2\color d''1 cis''1\endcolor 
-
+  % m. 132
+  | r2 d''2\color d''2~
+  | d''2 cis''1\endcolor 
   | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
   | d''1. 
   | R1.
   | r2 r2 c''4 c''4 
+
+  % m. 140
   | c''2\color b'1
-
-  | cis''2 a'2 d''1 cis''1\endcolor
-
+  | cis''2 a'2 d''2~
+  | d''2 cis''1\endcolor
   | R1.
   | a'2 b'2 c''2
   | b'2 c''2 d''2 
-  | c''1\sh c''2
+  | cis''?1 cis''2
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-  
-  | f''2 f''4 e''4 d''1 c''2 c''2
+  | f''2 f''4 e''4 d''2~
 
-  | b'2( c''2 d''2) 
+  % m. 150
+  | d''2 c''2 c''2
+  | b'2( c''2\na d''2) 
   | cis''1.
   | R1. 
   | r2 a''2 a''2
-  
-  | f''2\sh\color g''2 g''1 e''2 e''1 f''1\endcolor  
-
+  | fis''?2\color g''2 g''2~
+  | g''2 e''2 e''2~
+  | e''2 f''1\endcolor  
   | r2 e''2 e''2
+  | cis''2\color d''2 \[ d''2~
 
-  | cis''2\color d''2 \[ d''1 cis''1\endcolor \]
-
+  % m. 160
+  | d''2 cis''1\endcolor \]
   | d''1.\fermata
   \MiddleBar
   
   %% COPLA 3
+  % m. 162
   | r2 a'2 a'2
-
-  | d''2\color e''2 e''1 d''1\endcolor
-
+  | d''2\color e''2 e''2~
+  | e''2 d''1\endcolor
   | d''1.
-
-  | d''1 a'4 b'4 c''2\color c''1 
-
+  | d''1 a'4 b'4 
+  | c''2\color c''1 
   | d''2 d''1\endcolor
   | c''1. 
+
+  % m. 170
   | b'2 b'2 b'2
   | c''1. 
-
-  | r2 f''1. f''2 f''2 
-
+  | r2 f''1~
+  | f''2 f''2 f''2 
   | e''1.
   | e''1 a''2 
-
-  | d''2 g''2 g''1 f''2 f''2 
-
+  | d''2 g''2 g''2~
+  | g''2 f''2 f''2 
   | e''1.
   | d''1. 
+
+  % m. 180
   | c''2 c''2 c''2
   | b'2 b'2 b'2 
-
-  | c''2\sh \[ d''1.\color cis''1\endcolor \] 
-
+  | cis''?2 \[ d''1~
+  | d''2 \color cis''1\endcolor \] 
   | d''1.\fermata
   \MiddleBar
 
   %% COPLA 4
-  | r2 d''2\color d''1 cis''1\endcolor 
-
+  % m. 185
+  | r2 d''2\color d''2~
+  | d''2 cis''1\endcolor 
   | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
+
+  % m. 190
   | d''1. 
   | R1.
   | r2 r2 c''4 c''4 
   | c''2\color b'1
-
-  | cis''2 a'2 d''1 cis''1\endcolor
+  | cis''2 a'2 d''2~
+  | d''2 cis''1\endcolor
   | R1. 
   | a'2 b'2 c''2
   | b'2 c''2 d''2 
   | cis''1 cis''2
+
+  % m. 200
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-
-  | f''2 f''4 e''4 d''1\color c''1\endcolor
-
+  | f''2 f''4 e''4 d''2~\color 
+  | d''2 c''1\endcolor
   | b'2( c''2 d''2) 
-  | c''1.
+  | cis''?1.
   | R1. 
   | r2 a''2 a''2
   | fis''2\color g''1 
+  | g''2 e''2 e''2~
 
-  | g''2 e''2 e''1 f''1\endcolor 
+  % m. 210
+  | e''2 f''1\endcolor 
   | r2 e''1\color
-
-  | cis''2 \[ d''1. cis''1\endcolor \]
+  | cis''2 \[ d''1~
+  | d''2 cis''1\endcolor \]
   | d''1.\fermata 
   \MiddleBar
   
   %% COPLA 5
+  % m. 215
   | r2 a'2 a'2 
-
-  | d''2\color e''2 e''1 d''1\endcolor
+  | d''2\color e''2 e''2~
+  | e''2 d''1\endcolor
   | d''1. 
   | d''1 a'4 b'4
+
+  % m. 220
   | c''1 c''2 
   | d''2\color d''1\endcolor
   | c''1. 
@@ -1768,20 +1812,25 @@ MusicCoplasSIii = {
   | f''2 f''2 f''2 
   | e''1.
   | e''1 a''4 a''4 
-  | d''2\color g''2 g''1 f''1\endcolor 
+  | d''2\color g''2 g''2~
+
+  % m. 230
+  | g''2 f''1\endcolor 
   | e''1.
   | d''2 d''2 d''2 
   | c''1 c''2
   | b'2\color b'1 
-
-  | cis''2 \[ d''1. cis''1\endcolor \] 
-
+  | cis''2 \[ d''1~
+  | d''2 cis''1\endcolor \] 
   | d''1.\fermata 
   \MiddleBar
   
   %% COPLA 6
-  | r2 d''2\color d''1 cis''1\endcolor 
+  % m. 238
+  | r2 d''2\color d''2~
+  | d''2 cis''1\endcolor 
 
+  % m. 240
   | R1.
   | d''2 a'2 c''2 
   | b'4( a'4 g'4 a'4 b'4 c''4)
@@ -1789,29 +1838,32 @@ MusicCoplasSIii = {
   | R1.
   | r2 r2 c''4 c''4 
   | c''2\color b'1
-
-  | cis''2 a'2 d''1 cis''1\endcolor
-
+  | cis''2 a'2 d''2~
+  | d''2 cis''1\endcolor
   | R1.
+
+  % m. 250
   | a'2 b'2 c''2
   | b'2 c''2 d''2  
   | cis''1 cis''2
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
-  
-  | f''2 f''4( e''4) d''1 c''2 c''2
+  | f''2 f''4( e''4) d''2~
+  | d''2 c''2 c''2
   | b'2( c''2 d''2) 
   | cis''1.
   | R1. 
-  | r2 a''4( b''4\fl a''4 g''4)
 
-  | fis''2 g''2 g''1 e''2 e''2
-
+  % m. 260
+  | r2 a''4( bes''?4 a''4 g''4)
+  | fis''2 g''2 g''2~
+  | g''2 e''2 e''2
   | e''2\color f''1\endcolor 
   | r2 e''4( f''4) e''4( d''4)
+  | cis''2\color \[ d''1~
+  | d''2 cis''1\endcolor \]
 
-  | cis''2\color \[ d''1. cis''1\endcolor \]
-
+  % m. 267
   | d''1.\fermata
   \MiddleBar
 }
@@ -1820,11 +1872,14 @@ MusicCoplasAI = {
   \SectionBreak
   \MeterTriple
   %% COPLA 1
-  | r2 f'2 a'1 a'2. a'4 
+  % m. 109
+  | r2 f'2 a'2~
 
+  % m. 110
+  | a'2 a'2. a'4 
   | a'2\color a'1\endcolor
   | bes'1. 
-  | a'1 r4 f'4
+  | a'1 r4 f'4\sh
   | g'2 g'2. a'4 
   | b'2\color g'1\endcolor
   | a'1. 
@@ -1832,81 +1887,96 @@ MusicCoplasAI = {
   | r2 g'2 g'2 
   | a'1 a'2
 
-  | b'2\fl\color a'2 \[ a'1 gis'1\endcolor \]
-
+  % m. 120
+  | bes'?2\color a'2 \[ a'2~
+  | a'2 gis'1\endcolor \]
   | a'1 r2
   | R1.
   | R1.
   | r2 r2 a'4 a'4
-  
-  | d'2\color g'2 g'1 fis'1
+  | d'2\color g'2 g'2~
+  | g'2 fis'1
   | g'2 d'1 
   | a'2 a'1\endcolor
+
+  % m. 130
   | a'1. 
   | a'1.\fermata
   \MiddleBar
   
   %% COPLA 2 TACET
+  % m. 132
   R1.*30
   \MiddleBar
   
   %% COPLA 3
+  % m. 162
   | r2 f'2 g'2
-  
-  | a'2\color a'2 a'1 a'1\endcolor
+  | a'2\color a'2 a'2~
+  | a'2 a'1\endcolor
   | bes'1. 
-  | a'1 f'4 f'4
+  | a'1 fis'?4 fis'4
   | g'2\color g'1 
   | g'2 g'1\endcolor
   | a'1. 
+
+  % m. 170
   | d'1.
   | r2 g'2 g'2 
   | a'1.
-  | b'2\fl a'2 a'2 
+  | bes'?2 a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
   | R1.
   | R1. 
   | r2 r2 a'2
+  | d'2 g'2 g'2~
 
-  | d'2 g'2 g'1 fis'2 fis'2
+  % m. 180
+  | g'2 fis'2 fis'2
   | g'2 d'2 d'2 
-  | a'\breve. 
+  | a'1.~
+  | a'1.
   | a'1.\fermata 
   \MiddleBar
   
   %% COPLA 4 TACET
+  % m. 185
   | R1.*30
 
   %% COPLA 5
+  % m. 215
   | r2 f'2 g'2
-
-  | a'2\color a'2 a'1 a'1\endcolor
-
+  | a'2\color a'2 a'2~
+  | a'2 a'1\endcolor
   | bes'1. 
   | a'1 f'4 f'4
+
+  % m. 220
   | g'1 g'2 
   | g'2\color g'1\endcolor
   | a'1. 
   | d'1.
   | r2 g'1\colorOne 
   | a'1 a'2
-  | b'2\fl a'2 a'2 
+  | bes'?2 a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
   | R1.
+
+  % m. 230
   | R1.
   | r2 r2 a'4 a'4
-  
-  | d'2\color g'2 g'1 fis'1\endcolor
+  | d'2\color g'2 g'2~
+  | g'2 fis'1\endcolor
   | g'2 d'2 d'2 
-
-  | a'\breve. 
-
+  | a'1.~
+  | a'1.
   | a'1.\fermata 
   \MiddleBar
 
   %% m. 147 COPLA 6 TACET
+  % m. 238
   R1.*30
   \MiddleBar
 }
@@ -1915,8 +1985,11 @@ MusicCoplasTI = {
   \SectionBreak
   \MeterTriple
   %% COPLA 1
-  | r2 d'2 d'1 cis'2. b4 
+  % m. 109
+  | r2 d'2 d'2~
 
+  % m. 110
+  | d'2 cis'2. b4 
   | cis'2\color d'1\endcolor
   | g1. 
   | d1 r4 d'4
@@ -1926,33 +1999,40 @@ MusicCoplasTI = {
   | g1.
   | r2 e'2 e'2 
   | f'1 f'2
+
+  % m. 120
   | d'2\color d'1\endcolor 
   | e'1.
   | a1 r2 
   | r2 r2 e'4 e'4
-
-  | a2\color d'2 d'1 c'1\endcolor
+  | a2\color d'2 d'2~
+  | d'2 c'1\endcolor
   | b1. 
   | a1.
   | g2\color g1\endcolor 
+  | a1.~
 
-  | a\breve.
-
+  % m. 130
+  | a1.
   | d'1.\fermata
   \MiddleBar
   
   %% COPLA 2 TACET
+  % m. 132
   | R1.*30
 
   %% COPLA 3
+  % m. 162
   | r2 d'2 d'2
-
-  | d'2\color cis'2 cis'1 d'1\endcolor
+  | d'2\color cis'2 cis'2~
+  | cis'2 d'1\endcolor
   | g1. 
   | d1 d'4 d'4
   | c'2\color c'1 
   | b2 b1\endcolor
   | a1. 
+
+  % m. 170
   | g1.
   | r2 e'2 e'2 
   | f'1.
@@ -1960,26 +2040,31 @@ MusicCoplasTI = {
   | e'1.
   | a1. 
   | r2 r2 e'2
-
-  | a2 d'2 d'1 c'2 c'2
+  | a2 d'2 d'2~
+  | d'2 c'2 c'2
   | b1. 
+
+  % m. 180
   | a1.
   | g1. 
-
-  | a\breve. 
-
+  | a1.~
+  | a1.
   | d'1.\fermata 
   \MiddleBar
 
   %% COPLA 4 TACET
+  % m. 185
   | R1.*30
 
   %% COPLA 5
+  % m. 215
   | r2 d'2 d'2
-
-  | d'2\color cis'2 cis'1 d'1\endcolor
+  | d'2\color cis'2 cis'2~
+  | cis'2 d'1\endcolor
   | g1. 
   | d1 d'4 d'4
+
+  % m. 220
   | c'1 c'2  
   | b2\color b1\endcolor
   | a1. 
@@ -1990,17 +2075,20 @@ MusicCoplasTI = {
   | e'1.
   | a1. 
   | r2 r2 e'4 e'4
-  | a2\color d'2 d'1 c'1\endcolor
+
+  % m. 230
+  | a2\color d'2 d'2~
+  | d'2 c'1\endcolor
   | b1. 
   | a1 a2
   | g2\color g1\endcolor 
-
-  | a\breve. 
-
+  | a1.~
+  | a1.
   | d'1.\fermata 
   \MiddleBar
   
   %% m. 147 COPLA 6 TACET
+  % m. 238
   R1.*30
   \MiddleBar
 }
@@ -2008,11 +2096,14 @@ MusicCoplasTI = {
 %% COPLAS ACOMP.
 
 MusicCoplasAcOdd = {
-  %% COPLA 1
+  %% COPLA 1, 3, 5
   %% \MeterTriple
-  | r2 d'2 d'1 cis'2. b4 
+  % m. 109, 162, 215
+  | r2 d'2 d'2~
 
-  | c'2\sh\color d'1\endcolor
+  % m. 110
+  | d'2 cis'2. b4 
+  | cis'?2\color d'1\endcolor
   | g1. 
   | d1 d'2
   | c'2 c'2. c'4 
@@ -2021,6 +2112,8 @@ MusicCoplasAcOdd = {
   | g1.
   | c'1 c'2 
   | f'1 f'2
+
+  % m. 120
   | d'2\color d'1\endcolor 
   | e'1.
   | a1 a2 
@@ -2030,16 +2123,18 @@ MusicCoplasAcOdd = {
   | g1. 
   | a1.
   | g1. 
+  | a1.~
 
-  | a\breve.
-
+  % m. 130
+  | a1. 
   | d'1.\fermata
   \MiddleBar
 }
 
 MusicCoplasAcEven = {
-  %% m. 93 COPLA 2
+  %% COPLA 2, 4, 6
   %% \MeterTriple
+  % m. 132, 185, 238
   | d'2 g1
   | a2 a1 
   | d'2 d'1
@@ -2048,10 +2143,11 @@ MusicCoplasAcEven = {
   | d1 d2 
   | g2 b2 b2
   | c'1 c'2 
+
+  % m. 140
   | c'2\color g1
-
-  | a2 f2 d1 a1\endcolor
-
+  | a2 f2 d2~
+  | d2 a1\endcolor
   | d'2 b2. c'4 
   | d'1.
   | g2 g2 d2 
@@ -2060,17 +2156,20 @@ MusicCoplasAcEven = {
   | a1.
   | d2 d2 d2 
 
-  | e\breve.
-
+  % m. 150
+  | e1.~
+  | e1.
   | a1.
   | r2 e2 e2
-  
-  | a2 d2 d'1 g2 g1 c'2 a1 f2. e4
-  
+  | a2 d2 d'2~
+  | d'2 g2 g2~
+  | g2 c'2 a2~
+  | a2 f2. e4
   | d2\color g1\endcolor
+  | a1.~
 
-  | a\breve.
-
+  % m. 160
+  | a1.
   | d1.\fermata
   \MiddleBar
 }
