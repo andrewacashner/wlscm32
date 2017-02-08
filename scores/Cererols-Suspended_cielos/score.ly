@@ -15,8 +15,7 @@
 \include "../ly/villancico.ly"
 \include "music.ly"
 \include "lyrics.ly"
-
-%%*******************
+%*******************
 %% HEADER 
 %%*******************
 
@@ -25,7 +24,7 @@
   subtitle 	= "[De Navidad.] A 8."
   composer	= "JOAN CEREROLS"
   dates		= "(1618–1680)"
-  source	= "Canet de Mar (E-CAN: AU/0116); Barcelona (E-Bbc: M/765/25), Estribillo only, missing T. I, Acomp."
+  source	= "Canet de Mar (E-CAN: AU/0116), complete; Barcelona (E-Bbc: M/765/25), incomplete variant"
 }
 
 %%*******************
@@ -131,8 +130,8 @@
     <<
       \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
       \new Voice = "Ac" { 
-	\MusicEstribilloAc
-	\MusicCoplasAc
+        \MusicEstribilloAc
+        \MusicCoplasAc
       }
     >>
   >>
