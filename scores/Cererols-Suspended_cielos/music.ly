@@ -394,8 +394,8 @@ MusicEstribilloAI = {
   \clef "treble"
   \MeterTriple
   | r2 a'2 b'2
-  | c''2 b'1~
-  | b'2\color a'1\endcolor
+  | c''2\color b'1~
+  | b'2 a'1\endcolor
   | R1. 
   | R1.
   | R1.
@@ -1048,8 +1048,8 @@ MusicEstribilloTII = {
   | g1.
   | r2 g'2\color a'2~
   | a'2 g'1\endcolor
-  | r2 f'2\color e'2 
-  | f'2 d'1\endcolor
+  | r2 f'2 e'2 
+  | f'2\color d'1\endcolor
   | e'2 r2 r2 
   | R1.
   | R1.
@@ -1488,7 +1488,7 @@ MusicCoplasSIi = {
   | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''2 e''2 
-  | cis''2\color d''2 d''2~
+  | c''2\sh\color d''2 d''2~
   | d''2 b'2 b'2~
   | b'2 c''1\endcolor
   | r2 a''2 a''2 
@@ -1546,7 +1546,7 @@ MusicCoplasSIi = {
   | g''1.
   | r2 r2 f''4 f''4 
   | f''2 e''1\color
-  | fis''2 d''2 g''2~
+  | f''2\sh d''2 g''2~
   | g''2 fis''1\endcolor
   | d''2 e''2 f''2 
   | e''2 f''2 g''2
@@ -1712,7 +1712,7 @@ MusicCoplasSIii = {
   | cis''1.
   | R1. 
   | r2 a''2 a''2
-  | fis''2\color g''2 g''2~
+  | f''2\sh\color g''2 g''2~
   | g''2 e''2 e''2~
   | e''2 f''1\endcolor  
   | r2 e''2 e''2
