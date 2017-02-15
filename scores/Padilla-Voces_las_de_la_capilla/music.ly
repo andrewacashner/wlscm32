@@ -87,7 +87,8 @@ MusicIntroSi = {
   %% m. 14
   \ a'1.
   \MiddleBar
-% START XXX
+
+  % START XXX
   %% m. 15 RESPUESTA
   \DoubleMark{ \TempoSame } { \Section "RESPUESTA a 3" }
   \time 6/2
