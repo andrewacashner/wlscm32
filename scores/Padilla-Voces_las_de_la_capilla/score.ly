@@ -86,12 +86,5 @@
       \new Voice = "Bi" { \MusicAllBi }
     >>
   >> 
-  \layout {
-    %% spread spacing out a bit
-    \context {
-      \Score 
-      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/8 )
-    }
-  }
 }
 

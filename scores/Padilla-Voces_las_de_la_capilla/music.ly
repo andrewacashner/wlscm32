@@ -110,6 +110,7 @@ MusicIntroSi = {
 }
 
 MusicEstribilloSi = {
+  \break
   \Section \markup { \SegnoSign "  ESTRIBILLO a 6" }
   \MeterDuple
   % m. 45

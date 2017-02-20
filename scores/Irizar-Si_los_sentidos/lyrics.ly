@@ -42,7 +42,7 @@ LyricsEstribilloSIi = \lyricmode {
   í -- dos, no se
 
   %% m. 25
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -50,7 +50,7 @@ LyricsEstribilloSIi = \lyricmode {
 
   %% m. 30
   no, no se
-  den por sen -- ti -- dos los  __
+  den por sen -- ti -- dos los  
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -70,11 +70,11 @@ LyricsEstribilloSIi = \lyricmode {
   los sen -- ti -- dos, no se
 
   %% m. 45
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   los sen --
   ti -- dos,
-  los __ _ _ 
+  los  _ _ 
 
   %% m. 50
   sen -- ti -- dos, 
@@ -118,13 +118,13 @@ LyricsEstribilloSIii = \lyricmode {
 
   %% m. 20
   Fe } se -- 
-  an \EdLyrics { o -- í -- dos, __
+  an \EdLyrics { o -- í -- dos, 
   hoy } to -- dos con la 
   Fe se -- an o -- 
   í -- dos, no se 
 
   %% m. 25
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -132,7 +132,7 @@ LyricsEstribilloSIii = \lyricmode {
 
   %% m. 30
   no, no se
-  den por sen -- ti -- dos los  __
+  den por sen -- ti -- dos los  
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -152,14 +152,14 @@ LyricsEstribilloSIii = \lyricmode {
   los sen -- ti dos, no se
 
   %%m. 45
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   los sen -- 
   ti -- dos,
   %% 1m rest
 
   %% m. 50
-  los __ _ 
+  los  _ 
   _ \EdLyrics { sen -- ti -- _ 
   dos, } por sen --
   ti -- dos,
@@ -206,7 +206,7 @@ LyricsEstribilloAI = \lyricmode {
   í -- dos, no se 
 
   %% m. 25
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -214,7 +214,7 @@ LyricsEstribilloAI = \lyricmode {
 
   %% m. 30
   no, no se
-  den por sen -- ti -- dos los  __
+  den por sen -- ti -- dos los  
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -234,14 +234,14 @@ LyricsEstribilloAI = \lyricmode {
   los sen -- ti dos, no se
 
   %%m. 45
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   los sen -- 
   ti -- dos,
   los sen -- ti -- dos,
 
   %% m. 50
-  los __ _ _ _
+  los  _ _ _
   _ sen -- ti -- _
   dos, por sen --
   ti -- dos,
@@ -289,7 +289,7 @@ LyricsEstribilloTI = \lyricmode {
   í -- dos, no se 
 
   %% m. 25
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -297,7 +297,7 @@ LyricsEstribilloTI = \lyricmode {
 
   %% m. 30
   no, no se
-  den por sen -- ti -- dos los  __
+  den por sen -- ti -- dos los  
   sen -- ti -- dos,
   se -- an o -- 
   í -- dos,
@@ -317,11 +317,11 @@ LyricsEstribilloTI = \lyricmode {
   los sen -- ti dos, no se
 
   %%m. 45
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen -- ti -- dos,
   los sen -- 
   ti -- dos,
-  los __  sen -- 
+  los   sen -- 
 
   %% m. 50
   ti -- dos, 
@@ -354,7 +354,7 @@ LyricsEstribilloSII = \lyricmode {
   por -- que lo
 
   %% m. 15
-  que~e -- los sien -- ten no~es __
+  que~e -- los sien -- ten no~es 
   de Fe con -- sen -- 
 
   %% m. 17 METER 3/2
@@ -396,7 +396,7 @@ LyricsEstribilloSII = \lyricmode {
   dos, no se 
   den, \EdLyrics { no se 
   den, } no se
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen ti -- dos,
 
   %% m. 45
@@ -408,9 +408,9 @@ LyricsEstribilloSII = \lyricmode {
 
   %% m. 50
   %% 2m rest
-  los __ _ 
+  los  _ 
   _ sen -- ti -- dos,
-  \EdLyrics { los __ _
+  \EdLyrics { los  _
 
   %% m. 55
   _ sen -- ti -- _ 
@@ -435,7 +435,7 @@ LyricsEstribilloAII = \lyricmode {
   por -- que lo
 
   %% m. 15
-  que~e -- los sien -- ten no~es __
+  que~e -- los sien -- ten no~es 
   de Fe con -- sen -- 
 
   %% m. 17 METER 3/2
@@ -477,7 +477,7 @@ LyricsEstribilloAII = \lyricmode {
   dos, no se 
   den, \EdLyrics { no se 
   den, } no se
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen ti -- dos,
 
   %% m. 45
@@ -489,10 +489,10 @@ LyricsEstribilloAII = \lyricmode {
 
   %% m. 50
   %% 1m rest
-  los __ _
+  los  _
   _ sen -- ti -- dos,
   %% 1m rest
-  los __ _ _ sen -- 
+  los  _ _ sen -- 
 
   %% m. 55
   ti -- _ _ _
@@ -516,7 +516,7 @@ LyricsEstribilloTII = \lyricmode {
   por -- que lo
 
   %% m. 15
-  que~e -- los sien -- ten no~es __
+  que~e -- los sien -- ten no~es 
   de Fe con -- sen -- 
 
   %% m. 17 METER 3/2
@@ -558,7 +558,7 @@ LyricsEstribilloTII = \lyricmode {
   dos, no se 
   den, \EdLyrics { no se 
   den, } no se
-  den por sen -- ti -- dos los __
+  den por sen -- ti -- dos los 
   sen ti -- dos,
 
   %% m. 45
@@ -570,8 +570,8 @@ LyricsEstribilloTII = \lyricmode {
 
   %% m. 50
   %% 2m rest
-  los __ _ _ sen -- 
-  ti -- dos, los __ _
+  los  _ _ sen -- 
+  ti -- dos, los  _
   _ _ _ sen -- 
 
   %% m. 55
