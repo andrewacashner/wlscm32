@@ -55,7 +55,6 @@ MusicIntroSi = {
   \MeterTriple 
 
   \Section "[INTRODUCCIÓN] a 6"
-
   | r2 d''1~\color 
   | d''2 e''1\endcolor
   | c''2. c''4 c''2~\color 
