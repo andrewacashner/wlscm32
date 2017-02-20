@@ -17,33 +17,33 @@ IncipitAcomp = {
 
 
 EstribilloSolo = {
-  \Section "ESTRIBILLO"
   \clef "treble"
   \MeterTriple
 
-  a'2 b'2 c''2
+  \Section "ESTRIBILLO"
+  | a'2 b'2 c''2
   | f'2\color e'1
-
-  | a'\breve gis'1\endcolor
-
+  | a'1.~
+  | a'2 gis'1\endcolor
   | b'2 c''2 d''2
-  
-  | cis''2. cis''4 d''1\color e''1\endcolor
-
+  | cis''2. cis''4 d''2~\color 
+  | d''2 e''1\endcolor
   | R1.
   | r2 c''2 g'2
+
+  % m. 10
   | a'2 f'2 g'2
-
-  | e'\breve\color d'1\endcolor
-
+  | e'1.~\color
+  | e'2 d'1\endcolor
   | r2 e'2 g'2
   | fis'2. g'4 a'2
-
   | a'2\color gis'1\endcolor
   | r2 a'2 c''2
   | b'2. c''4 d''2
   | d''2\color cis''1\endcolor
   | R1.
+
+  % m. 20
   | r2 e''2 b'2
   | c''2 a'2 b'2
   | gis'1.
@@ -54,6 +54,8 @@ EstribilloSolo = {
   | a'2 f'2 g'2
   | e'1 r2
   | c''2 a'2 b'4( a'4)
+
+  % m. 30
   | gis'2\color a'1\endcolor
   | R1.
   | r2 a'2 d''2
@@ -61,21 +63,22 @@ EstribilloSolo = {
   | r2 a'2 d''2
   | cis''2 d''2 e''2
   | f''1.
-
   | e''2\color e''1~
-  | e''2\endcolor d''2 d''1\color cis''1\endcolor
-				% manual tie for color bracket
+  | e''2\endcolor d''2 d''2~\color
+  | d''2 cis''1\endcolor
+
+  % m. 40
   | R1.
   | r2 e'2 a'2
   | gis'2 r2 r2
   | r2 e'2 a'2
   | gis'2 a'2 b'2
   | c''1.
-  
   | b'2\color b'1~
-  | b'2\endcolor a'2 a'1( gis'1)
-				% manual tie for color bracket
+  | b'2\endcolor a'2 a'2~( 
+  | a'2 gis'1)
 
+  % m. 49
   | a'1.
   \Fine
   \FinalBar
@@ -85,6 +88,7 @@ CoplasSolo = {
   \SectionBreak
   \Section "COPLAS"
   \MeterDuple
+  % m. 50
   | r8 a'8 c''8 c''8 b'8. a'16 b'8 c''8
   | d''2 r8 a'8 c''4
   | a'8. b'16 c''8 c''8 c''4( b'4)
@@ -96,18 +100,23 @@ CoplasSolo = {
   | c''4 a'8 d''8 d''4 cis''4
 
   \MeterChangeTriple
+
+  % m. 59
   | r2 e'2 a'2
+
+  % m. 60
   | gis'2 r2 r2
   | r2 e'2 a'2
   | gis'2 a'2 b'2
   | c''1.
-  
   | b'2\color b'1~
-  | b'2\endcolor a'2 a'1( gis'1)
-  				% manual tie for color bracket
+  | b'2\endcolor a'2 a'2~(
+  | a'2 gis'1)
 
-  | a'1.
-  \DCalFineAfterLastCopla
+  % m. 67
+  | a'1.\RepeatMsg \markup { \column { 
+      \line { "[Coplas 2–5 on next page;" }
+      \line { "  D.C. al Fine after last copla]" } } }
   \RepeatBar
 }
 
@@ -116,18 +125,17 @@ CoplasSolo = {
 EstribilloAcomp = {
   \clef "bass"
   \MeterTriple
-  a1.
+  | a1.
   | d'2\color c'1\endcolor
   | f1.
   | e1. 
   | gis1.
-
   | a1\color d'2~
   | d'2\endcolor c'2 g2
-				% XXX manual tie to get correct coloration bracket placement
-
   | a2 f2 g2
   | e2 a2 e2
+
+  % m. 10
   | f2 d2 e2
   | c2 c'2 g2 
   | a2 f2 g2
@@ -138,6 +146,8 @@ EstribilloAcomp = {
   | gis1.
   | r2 a2 e2 
   | f2 d2 e2
+
+  % m. 20
   | c2\color e1
   | a2 f1\endcolor
   | e2 e'2 b2
@@ -148,6 +158,8 @@ EstribilloAcomp = {
   | f2 d1\endcolor
   | c2 c'2 g2
   | a2 f2 g2
+
+  % m. 30
   | e2 f2 c2
   | d2 b,2 c2
   | a,2\color d1\endcolor
@@ -158,6 +170,8 @@ EstribilloAcomp = {
   | cis2 d2 e2
   | f1. 
   | g2\color a1\endcolor
+
+  % m. 40
   | e'2 e2 a2
   | gis2\color a1\endcolor
   | e'2 e2 a2
@@ -167,6 +181,8 @@ EstribilloAcomp = {
   | gis2 a2 b2
   | c'1.
   | d'2\color e'1\endcolor
+
+  % m. 49
   | a1.
   \FinalBar
 }
@@ -174,6 +190,7 @@ EstribilloAcomp = {
 CoplasAcomp = {
   \SectionBreak
   \MeterDuple
+  % m. 50
   | a2 e'8 e8 g8 g8
   | fis8.[ e16] fis8[ g8] a4 e4
   | f4 c4 g2
@@ -185,7 +202,11 @@ CoplasAcomp = {
   | c4 f4 g4 a4
 
   \MeterChangeTriple
+
+  % m. 59
   | e2\color a1\endcolor
+  
+  % m. 60
   | e'2 e2 a2
   | gis2\color a1\endcolor
   | e2 f2 g2
@@ -193,24 +214,26 @@ CoplasAcomp = {
   | gis2 a2 b2
   | c'1.
   | d'2\color e'1\endcolor
+
+  % m. 67
   | a1.
   \RepeatBar
 }
 
 EstribilloFiguresAcomp = \figuremode {
   \MeterTriple
-  | s\breve.
-
+  | s1.
+  | s1.
   | s1.
   | <4>1.
-
-  | s\breve.
-
+  | s1.
+  | s1. 
   | s1 <6>2
   | s1.
+  | s1.
 
-  | s\breve.
-
+  % m. 10
+  | s1. 
   | s1 <6>2
   | s2 <6>2 s2
   | s1.
@@ -219,45 +242,51 @@ EstribilloFiguresAcomp = \figuremode {
   | s1.
   | s1.
   | s2 <_+>2 <6>2
+  | s1. 
 
-  | s\breve.
-
+  % m. 20
+  | s1. 
   | s1.
   | <_+>2 s1
   | s1.
   | s1 <6>2
   | s1.
   | s2 <6>1
+  | s1. 
+  | s1. 
+  | s1. 
 
-  | s\breve.
-
-  | s\breve.
-
-  | s\breve.
-
+  % m. 30
+  | s1. 
+  | s1. 
+  | s1. 
   | <_+>2 s1
   | s1.
   | <_+>2 s1
   | s2 <6>2 s2
   | s1.
   | <7>1.
+  | s1. 
 
-  | s\breve.
-
-  | s\breve.
-
+  % m. 40
+  | s1. 
+  | s1. 
+  | s1. 
   | s1.
   | <_+>2 s1
   | s2 <6>2 s2
   | s1.
   | <7>1.
   | s1.
+
+  % m. 49
   | s1.
 }
 
 CoplasFiguresAcomp = \figuremode {
   \SectionBreak
   \MeterDuple
+  % m. 50
   | s1
   | s1
   | s1
@@ -269,14 +298,19 @@ CoplasFiguresAcomp = \figuremode {
   | s2. <_+>4
 
   \MeterTriple
-  | s\breve.
+  % m. 59
+  | s1. 
 
+  % m. 60
+  | s1.
   | s1.
   | <_+>2 s1
   | s2 <6>2 s2
   | s1.
   | <7>1.
   | s1.
+  
+  % m. 67
   | s1.
 }
 								   

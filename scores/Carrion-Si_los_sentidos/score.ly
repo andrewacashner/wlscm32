@@ -1,6 +1,6 @@
 %% Carrión, Si los sentidos, E-SE: 28/25
-%% MUSIC
 
+%% 2017-02-20 -- Revised after peer review
 %% 2016-12-16 -- C3 with regular barlines
 %% 2016-11-4  -- Mensurstriche
 %% 2016-03-31 -- New version for published edition

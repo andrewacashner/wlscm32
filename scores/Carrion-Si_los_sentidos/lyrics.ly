@@ -18,9 +18,9 @@ LyricsCoplasSolo = \lyricmode {
   \StanzaI
   Si~en e -- llos va el no ver bien
   los o -- jos de que se~ad -- mi -- ran,
-  que mal ve -- rán __ lo que mi -- ran,
+  que mal ve -- rán lo que mi -- ran,
   si no mi -- ran lo que ven,
   si su ce -- gue -- dad es quién
   los tie -- ne~im -- pe -- di -- dos,
-  no se den, no se den por sen -- ti -- dos los __ sen -- ti -- dos.
+  no se den, no se den por sen -- ti -- dos los sen -- ti -- dos.
 }
