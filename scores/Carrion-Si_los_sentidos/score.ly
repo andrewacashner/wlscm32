@@ -27,7 +27,7 @@
       \IncipitStaff "SOLO" "" { \IncipitSolo }
       \new Voice = "Solo" {\EstribilloSolo \CoplasSolo }
       \new Lyrics \lyricsto "Solo" {
-	\LyricsEstribilloSolo \LyricsCoplasSolo
+        \LyricsEstribilloSolo \LyricsCoplasSolo
       }
     >>
     \new Staff
