@@ -15,11 +15,11 @@
 \include "lyrics.ly"
 
 \header {
-  title		= "Si los sentidos queja forman del Pan Divino"
+  title 	= "Si los sentidos queja forman del Pan Divino"
   subtitle	= "Al Santísimo [Sacramento]. A 8."
   composer 	= "MIGUEL DE IRÍZAR"
   dates		= "(1635–1684)"
-  poet      = "Attr. Vicente Sánchez"
+  poet          = "Attr. Vicente Sánchez"
   source 	= "Segovia, Cathedral Archive (E-SE: 5/32, 18/19), Corpus Christi 1674"
 }
 
@@ -42,11 +42,11 @@
         \IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
         \new Voice = "SIi" {
           \MusicEstribilloSIi
-          \MusicCoplasSIi
+%          \MusicCoplasSIi
         }
         \new Lyrics \lyricsto "SIi" {
           \LyricsEstribilloSIi
-          \LyricsCoplasSIi
+%          \LyricsCoplasSIi
         }
       >>
 
@@ -56,11 +56,11 @@
         \IncipitStaff "TIPLE I-2" "Ti. I-2" { \IncipitSIii }
         \new Voice = "SIii" {
           \MusicEstribilloSIii
-          \MusicCoplasSIii
+%          \MusicCoplasSIii
         }
         \new Lyrics \lyricsto "SIii" {
           \LyricsEstribilloSIii
-          \LyricsCoplasSIii
+%          \LyricsCoplasSIii
         }
       >>
 
@@ -70,95 +70,95 @@
         \IncipitStaff "ALTO I" "A. I" { \IncipitAI }
         \new Voice = "AI" {
           \MusicEstribilloAI
-          \MusicCoplasAI
+%          \MusicCoplasAI
         }
         \new Lyrics \lyricsto "AI" {
           \LyricsEstribilloAI
-          \LyricsCoplasAI
+%          \LyricsCoplasAI
         }
       >>
 
-      %% TI
-      \new Staff = "TI" 
-      <<
-        \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
-        \new Voice = "TI" {
-          \MusicEstribilloTI
-          \MusicCoplasTI
-        }
-        \new Lyrics \lyricsto "TI" {
-          \LyricsEstribilloTI
-          \LyricsCoplasTI
-        }
-      >>
-
-    >> %% end of Chorus I staves
-
-    \new ChoirStaff = "ChII"
-    <<
-      \ChoirStaffName "CHORUS II"
-
-      %% SII
-      \new Staff = "SII" 
-      <<
-        \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSII }
-        \new Voice = "SII" {
-          \MusicEstribilloSII
-        }
-        \new Lyrics \lyricsto "SII" {
-          \LyricsEstribilloSII
-        }
-      >>
-
-      %% AII
-      \new Staff = "AII" 
-      <<
-        \IncipitStaff "ALTO II" "A. II" { \IncipitAII }
-        \new Voice = "AII" {
-          \MusicEstribilloAII
-        }
-        \new Lyrics \lyricsto "AII" {
-          \LyricsEstribilloAII
-        }
-      >>
-
-      %% TII
-      \new Staff = "TII" 
-      <<
-        \IncipitStaff "TENOR II" "T. II" { \IncipitTII } 
-        \new Voice = "TII" {
-          \MusicEstribilloTII
-        }
-        \new Lyrics \lyricsto "TII" {
-          \LyricsEstribilloTII
-        }
-      >>
-
-      %% BII
-      \new Staff = "BII" 
-      <<
-        \IncipitStaff
-        \TwoLineName "BAJO II" "[inst.]"
-        "B. II"
-        { \IncipitBII }
-        \new Voice = "BII" {
-          \MusicEstribilloBII
-        }
-      >>
-
-    >> %% end of Ch. II staves
-
-    %% Gn
-    \new Staff = "Gn" 
-    <<
-      \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
-      \new Voice = "EstribilloAc" {
-        \MusicEstribilloAc
-        << 
-          \MusicCoplasAc
-          \FiguresCoplasAc
-        >>
-      }
+       %% TI
+       \new Staff = "TI" 
+       <<
+         \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
+         \new Voice = "TI" {
+           \MusicEstribilloTI
+%           \MusicCoplasTI
+         }
+         \new Lyrics \lyricsto "TI" {
+           \LyricsEstribilloTI
+%           \LyricsCoplasTI
+         }
+       >>
+% 
+%     >> %% end of Chorus I staves
+% 
+%     \new ChoirStaff = "ChII"
+%     <<
+%       \ChoirStaffName "CHORUS II"
+% 
+%       %% SII
+%       \new Staff = "SII" 
+%       <<
+%         \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSII }
+%         \new Voice = "SII" {
+%           \MusicEstribilloSII
+%         }
+%         \new Lyrics \lyricsto "SII" {
+%           \LyricsEstribilloSII
+%         }
+%       >>
+% 
+%       %% AII
+%       \new Staff = "AII" 
+%       <<
+%         \IncipitStaff "ALTO II" "A. II" { \IncipitAII }
+%         \new Voice = "AII" {
+%           \MusicEstribilloAII
+%         }
+%         \new Lyrics \lyricsto "AII" {
+%           \LyricsEstribilloAII
+%         }
+%       >>
+% 
+%       %% TII
+%       \new Staff = "TII" 
+%       <<
+%         \IncipitStaff "TENOR II" "T. II" { \IncipitTII } 
+%         \new Voice = "TII" {
+%           \MusicEstribilloTII
+%         }
+%         \new Lyrics \lyricsto "TII" {
+%           \LyricsEstribilloTII
+%         }
+%       >>
+% 
+%       %% BII
+%       \new Staff = "BII" 
+%       <<
+%         \IncipitStaff
+%         \TwoLineName "BAJO II" "[inst.]"
+%         "B. II"
+%         { \IncipitBII }
+%         \new Voice = "BII" {
+%           \MusicEstribilloBII
+%         }
+%       >>
+% 
+%     >> %% end of Ch. II staves
+% 
+%     %% Gn
+%     \new Staff = "Gn" 
+%     <<
+%       \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
+%       \new Voice = "EstribilloAc" {
+%         \MusicEstribilloAc
+%         << 
+%           \MusicCoplasAc
+%           \FiguresCoplasAc
+%         >>
+%       }
     >>
   >>
 

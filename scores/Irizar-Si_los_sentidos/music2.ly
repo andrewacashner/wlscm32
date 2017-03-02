@@ -1,5 +1,6 @@
 %% IRIZAR, SI LOS SENTIDOS
 %% MUSIC
+%% Revised 2017/03
 
 %%*************************
 %% ESTRIBILLO
@@ -71,7 +72,7 @@ IncipitAc = {
 
 MusicEstribilloSIi = {
   \clef "treble"
-  \time 2/2
+  \MeterDuple
 
   \Section "[ESTRIBILLO] a 8"
   | r8 d''8 d''8 d''8 d''4 a'4
@@ -84,8 +85,8 @@ MusicEstribilloSIi = {
   | d''2 r4 d''4
   | cis''2 d''2
 
-  % m. 10
   \MeterTriple
+  % m. 10
   | d''2 c''2 d''2 
   | c''1 c''2
   | c''2 c''2 c''2~\color
@@ -125,7 +126,7 @@ MusicEstribilloSIi = {
   | d''8 c''8 b'4 c''2
 
   % m. 40
-  | r2 c''4 c''8 c'8
+  | r2 c''4 c''8 c''8
   | c''4 c''4 r2
   | r2 d''4 d''8 d''8
   | d''4 d''4 r2
@@ -153,7 +154,7 @@ MusicEstribilloSIi = {
   | R1
   | r4 d''8 d''8 d''4 cis''4
 
-  % m. 64
+  % m. 63
   | d''1
   \FinalBar
   \Fine
@@ -241,19 +242,181 @@ MusicEstribilloSIii = {
   | R1
   | a'4 a'4 a'4. e'8
 
-  % m. 64
+  % m. 63
   | fis'1
 }
 
 MusicEstribilloAI = {
   \clef "treble" 
   \MeterDuple
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r4 f'8 f'8 f'4 d'8 e'8
+  | cis'4 d'4 d'4 cis'4
+  | d'2 r8 f'8 f'8 f'8
+  | f'4 d'4 r2
+  | R1
+  | r2 r4 r8 e'8
+  | f'2 r4 d'4
+  | e'2 d'2
 
+  \MeterTriple
+  % m. 10
+  | f'2 e'2 d'2
+  | e'1 e'2
+  | f'2 f'2 f'2~\color
+  | f'2 e'1\endcolor
+  | d'2 f'2 e'2
+  | d'1.
+  | cis'1.
+  | r2 d'1\color
+  | cis'2 e'1\endcolor
+  | f'2 r2 r2
+
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+
+  \MeterDuple
+  % m. 25
+  | r4 r8 e'8 f'8 f'8 f'8 f'8
+  | f'4 r8 d'8 f'8 f'8 f'8 f'8
+  | e'2 r4 f'4~
+  | f'8 f'8 e'4 d'2
+  | c'4 g4 b8 b8 b8 b8
+
+  % m. 30
+  | b4 b4. b8 b4
+  | cis'4 cis'4 r4 d'8 d'8
+  | d'4 f'8 f'8 d'4 e'8 cis'8~
+  | cis'8 d'8 cis'4 d'2
+  | r2 e'4 e'8 e'8
+  | e'4 f'4 r2
+  | r2 r4 e'4
+  | f'2 r4 e'8 e'8
+  | f'4 g'8 g'8 f'4 f'8 e'8~
+  | e'8 e'8 e'4 e'2
+
+  % m. 40
+  | r2 f'4 f'8 f'8
+  | f'4 e'4 r2
+  | g'4 g'8 g'8 g'4 d'8 g'8
+  | g'4 f'4 r2
+  | r2 r4 f'8 f'8
+  | e'2 r2
+  | R1
+  | r4 e'4 f'2
+  | r4 e'4 f'2
+  | r4 e'8 e'8 f'2
+
+  % m. 50
+  | R1
+  | r4 e'8 e'8 f'8 f'8 d'8 d'8
+  | d'4 f'8 f'8 d'4 e'8 cis'8~
+  | cis'8 d'8 e'4 d'2
+  | r4 g'2 f'4
+  | e'2 f'2
+  | f'4. e'8 d'4 d'4
+  | g'4. f'8 e'4. d'8
+  | cis'4 d'4 cis'8[ d'8] e'4
+  | d'2 d'4 f'4
+
+  % m. 60
+  | f'4 f'4 r2
+  | R1
+  | e'4 d'4 e'2
+
+  % m. 63
+  | d'1
 }
+
 
 MusicEstribilloTI = {
   \clef "treble_8" 
   \MeterDuple
+  | r8 d'8 d'8 d'8 d'4 d4
+  | r4 bes8 bes8 f4 g8 g8
+  | a4 d4 a2
+  | d2 r8 d'8 d'8 d'8
+  | d'4 d4 r2
+  | R1
+  | r2 r4 r8 a8
+  | d'2 r4 d4
+  | a2 d2
+
+  \MeterTriple
+  % m. 10
+  | d'2 a2 b2 
+  | c'1 c'2
+  | f2 f2 f2~\color
+  | f2 c1\endcolor
+  | d2 d2 e2
+  | fis2(\color g1)\endcolor
+  | a1. 
+  | r2 d1\color
+  | a2 a1\endcolor
+  | d'2 r2 r2
+
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+
+  \MeterDuple
+  % m. 25
+  | r4 r8 a8 d'8 d'8 d'8 d'8
+  | d'4 r8 d8 d'8 d'8 d'8 d'8
+  | a2 r4 f4~
+  | f8 f8 c'8[ c8] g2
+  | c2 g8 g8 g8 g8
+
+  % m. 30
+  | g4 g4. g8 d4
+  | a4 a4 r4 d8 d8
+  | g4 f8 f8 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | r2 a4 a8 a8
+  | a4 d4 r2
+  | r2 r4 a4
+  | d2 r4 a8 a8
+  | d4 c8 c8 f4 d8 e8~
+  | e8 a8 e4 a2
+
+  % m. 40
+  | r2 f4 f8 f8
+  | f4 c4 r2
+  | r2 g4 g8 g8
+  | g4 d4 r2
+  | r2 r4 d8 d8
+  | a2 r2
+  | R1
+  | r4 a4 d'2
+  | r4 a4 d'2
+  | r4 a8 a8 d'2
+
+  % m. 50
+  | R1
+  | r4 a8 a8 d8 d8 d8 d8
+  | g4 f8 f8 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | r4 g2 d4
+  | a2 d2
+  | d'4.( c'8 bes4.) a8
+  | g2. g4
+  | a4 d4 a2
+  | d2 d4 d4
+
+  % m. 60
+  | d4 d4 r2
+  | R1
+  | a4 d4 a2
+
+  % m. 63
+  | d1
 }
 
 %% CHORUS II
@@ -261,27 +424,68 @@ MusicEstribilloTI = {
 MusicEstribilloSII = {
   \clef "treble"
   \MeterDuple
+
+  \MeterTriple
+  % m. 10
+
+  \MeterDuple
+  % m. 25
+
+  % m. 63
 }
 
 MusicEstribilloAII = {
   \clef "treble"
   \MeterDuple
+
+  \MeterTriple
+  % m. 10
+
+  \MeterDuple
+  % m. 25
+
+  % m. 63
+
 }
 
 MusicEstribilloTII = {
   \clef "treble_8"
   \MeterDuple
+
+  \MeterTriple
+  % m. 10
+
+  \MeterDuple
+  % m. 25
+
+  % m. 63
 }
 
 MusicEstribilloBII = {
   \clef "bass"
   \MeterDuple
+  \MeterTriple
+  % m. 10
+
+  \MeterDuple
+  % m. 25
+
+  % m. 63
 }
 
 %% Ac
 
 MusicEstribilloAc = {
   \clef "bass"
+  \MeterDuple
+
+  \MeterTriple
+  % m. 10
+
+  \MeterDuple
+  % m. 25
+
+  % m. 63
 }
 
 %%**********************************
@@ -292,23 +496,28 @@ MusicEstribilloAc = {
 
 MusicCoplasSIi = {
   \SectionBreak
+  % m. 64
 
 }
 
 MusicCoplasSIii = {
   \SectionBreak
+  % m. 64
 }
 
 MusicCoplasAI = {
   \SectionBreak
+  % m. 64
 }
 
 MusicCoplasTI = {
   \SectionBreak
+  % m. 64
 }
 
 MusicCoplasAc = {
   \SectionBreak
+  % m. 64
 }
 
 %%************************************
@@ -317,5 +526,6 @@ MusicCoplasAc = {
 
 FiguresCoplasAc = \figuremode {
   \SectionBreak
+  % m. 64
 }
 
