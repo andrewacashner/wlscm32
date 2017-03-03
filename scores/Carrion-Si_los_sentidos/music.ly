@@ -114,13 +114,12 @@ CoplasSolo = {
   | a'2 gis'1)
 
   % m. 67
-  | a'1.\RepeatMsg \markup { \column { 
-      \line { "[Coplas 2–5 on next page;" }
-      \line { "  D.C. al Fine after last copla]" } } }
+  | a'1.
+  \DCalFineAfterCoplasOnNextPage
   \RepeatBar
 }
 
-  
+ 
 
 EstribilloAcomp = {
   \clef "bass"

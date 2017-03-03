@@ -135,7 +135,7 @@ MusicEstribilloSIi = {
   | R1
   | r4 cis''4 d''2
   | r4 cis''4 d''2
-  | r4 cis''8 cis''8 d'2
+  | r4 cis''8 cis''8 d''2
 
   % m. 50
   | R1
@@ -605,8 +605,8 @@ MusicEstribilloTII = {
   | r8 d'8 d'8 d'8 d'4 a4
   | r4 d'8 d'8 c'4 bes8 bes8
   | a4 a4 a4 a4
-  | r4 r8 f'8 d'4 f'4
-  | a'2 f'2
+  | r4 r8 f8 d4 f4
+  | a2 f2
 
   \MeterTriple
   % m. 10
@@ -690,7 +690,7 @@ MusicEstribilloBII = {
   | r8 d8 d8 d8 d4 d,4
   | r8 d8 d8 d8 d4 d,4
   | r4 bes8 bes8 f4 g8 g8
-  | a4 d4 a4 a4
+  | a4 d4 a,4 a,4
   | r4 r8 d8 g,4 d4
   | a,2 d2
 
@@ -729,7 +729,7 @@ MusicEstribilloBII = {
   | r2 d4 d8 d8
   | d4 a,4 r2
   | r4 d8 d8 g4 f8 f8
-  | bes4 g8 a4 d8 a4
+  | bes4 g8 a4 d8 a,4
   | d4 d4 a,2
   | R1
   | r2 a4 a8 a8
@@ -748,9 +748,9 @@ MusicEstribilloBII = {
 
   % m. 50
   | g4 f8 f8 bes4 g8 a8~
-  | a8 d8 a4 d2
+  | a8 d8 a,4 d2
   | R1
-  | r4 a8 a8 d4 d4
+  | r4 a,8 a,8 d4 d4
   | r4 g,2 d4
   | a,2 d2
   | R1
@@ -761,7 +761,7 @@ MusicEstribilloBII = {
   % m. 60
   | d4. c8 bes,4. a,8
   | g,2. g,4
-  | a,4 d,4 a,2
+  | a,4 d4 a,2
 
   % m. 63
   | d1
@@ -774,7 +774,7 @@ MusicEstribilloAc = {
   \MeterDuple
   | d2. d4
   | bes,2 f4 g4
-  | a4 d4 a2
+  | a4 d4 a,2
   | d2. d4
   | d2 d2
   | bes,2 f4 g4
@@ -814,9 +814,9 @@ MusicEstribilloAc = {
   | g4 g2 d4
   | a,2 d2
   | g4 f4 bes4 g8 a8~
-  | a8 d8 a4 d2
-  | d4 a'4 a'2~
-  | a'4 d4 g4 f4
+  | a8 d8 a,4 d2
+  | d4 a4 a2~
+  | a4 d4 g4 f4
   | bes4 g8 a4 d8 a4
   | d2 a2
   | d4 c4 f4 d8 e8~
@@ -839,17 +839,17 @@ MusicEstribilloAc = {
   | a8 d8 a4 d2
   | g4 f4 bes4 g8 a8~
   | a8 d8 a4 d2
-  | g,4 g2 d4
+  | g,4 g,2 d4
   | a,2 d2
-  | d4. c8 bes,4. a,8
-  | g,2. g,4
-  | a,4 d,4 a,2
-  | d,2 d,2
+  | d'4. c'8 bes4. a8
+  | g2. g4
+  | a4 d4 a2
+  | d2 d2
 
   % m. 60
-  | d4. c8 bes,4. a,8
-  | g,2. g,4
-  | a,4 d4 a,2
+  | d'4. c'8 bes4. a8
+  | g2. g4
+  | a4 d4 a,2
   
   % m. 63
   | d1
@@ -874,7 +874,7 @@ MusicCoplasSIi = {
 
   % m. 78
   | a'1
-  \DCalFineAfterLastCopla
+  \DCalFineAfterCoplasOnNextPage
   \RepeatBar
 }
 
@@ -931,7 +931,7 @@ MusicCoplasTI = {
   | bes4 g8 a4 d8 a4
 
   % m. 78
-  | d1
+  | d'1
 }
 
 MusicCoplasAc = {

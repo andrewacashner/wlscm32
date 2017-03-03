@@ -11,7 +11,7 @@
 \version "2.19"
 \include "../ly/villancico.ly"
 
-\include "music2.ly"
+\include "music.ly"
 \include "lyrics.ly"
 
 \header {
