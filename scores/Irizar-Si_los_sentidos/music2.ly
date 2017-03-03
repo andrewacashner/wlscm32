@@ -424,29 +424,176 @@ MusicEstribilloTI = {
 MusicEstribilloSII = {
   \clef "treble"
   \MeterDuple
+  | R1
+  | R1
+  | R1
+  | r8 a'8 a'8 a'8 a'4 f'4
+  | r8 a'8 a'8 a'8 a'4 f'4
+  | r4 bes'8 bes'8 a'4 g'8 g'8
+  | g'4 f'4 e'4 e'4
+  | r4 r8 a'8 bes'4 a'4
+  | a'2 a'2
 
   \MeterTriple
   % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 a'1\colorOne
+  | a'1. 
+  | R1.
+  | a'2 a'2 g'2
+
+  % m. 20
+  | g'1 g'2
+  | a'2 a'2 a'2~\color
+  | a'2 g'1\endcolor
+  | f'2 a'2 g'2
+  | a'2\color g'1\endcolor
 
   \MeterDuple
   % m. 25
+  | e'2 r4 r8 f'8
+  | a'8 a'8 a'8 a'8 a'4 r8 f'8
+  | a'8 a'8 a'8 a'8 a'4 a'4~
+  | a'8 b'8 c''4 c''4 b'4
+  | c''2 b'8 b'8 b'8 b'8
 
+  % m. 30 
+  | b'4 b'4. b'8 a'4
+  | cis''4 cis''4 r2
+  | R1
+  | r2 a'4 a'8 a'8
+  | a'4 a'4 r2
+  | r4 f'8 f'8 g'4 a'8 a'8
+  | bes'4 bes'8 a'4 a'8 a'4
+  | f'4 f'4 e'2
+  | R1
+  | r2 a'4 a'8 a'8
+
+  % m. 40
+  | a'4 a'8 a'8 a'4 a'4 
+  | r2 c''4 c''8 c''8
+  | c''4 b'4 r2
+  | r2 a'4 a'8 a'8
+  | a'4 a'8 a'8 a'4 f'4
+  | r4 e'8 e'8 f'4 g'8 g'8
+  | a'4 b'8 gis'4 a'8 gis'4
+  | a'2 r4 a'8 a'8
+  | a'2 r4 a'8 a'8
+  | a'2 r4 f'8 f'8
+
+  % m. 50
+  | g'4 a'8 a'8 f'4 g'8 g'8~
+  | g'8 f'8 e'4 d'2
+  | R1
+  | r4 cis''8 cis''8 d''4 d''4
+  | r4 d'4. e'8[ f'8 g'8]
+  | a'4 e'4 d'2
+  | R1
+  | R1
+  | R1
+  | r2 a'4. g'8
+
+  % m. 60
+  | f'4. e'8 d'2
+  | d'2 g'4. f'8
+  | e'4 f'4 e'4 a'4
+  
   % m. 63
+  | a'1
 }
 
 MusicEstribilloAII = {
   \clef "treble"
   \MeterDuple
-
+  | R1
+  | R1 
+  | R1
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r4 f'8 f'8 f'4 d'8 e'8
+  | cis'4 d'4 d'4 cis'4
+  | r4 r8 d'8 d'4. a8
+  | cis'2 a2
+  
   \MeterTriple
   % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 e'1\colorOne
+  | f'1.
+  | R1.
+  | f'2 e'2 d'2
+
+  % m. 20
+  | e'1 e'2
+  | f'2 f'2 f'2~\color
+  | f'2 e'1\endcolor
+  | d'2 f'2 e'2
+  | d'1.
 
   \MeterDuple
   % m. 25
+  | c'2\sh r4 r8 d'8
+  | f'8 f'8 f'8 f'8 f'4 r8 d'8
+  | e'8 e'8 e'8 e'8 e'4 f'4
+  | c'4 e'4 g'2
+  | e'4 c'4 d'8 d'8 d'8 d'8
 
+  % m. 30
+  | d'4 d'4. e'8 f'4
+  | e'4 e'4 r2
+  | R1
+  | r2 f'4 f'8 f'8
+  | f'4 e'4 r2
+  | r4 d'8 d'8 d'4 f'8 f'8
+  | f'4 g'8 g'4 f'8 e'4
+  | d'4 d'4 cis'2
+  | R1
+  | r2 e'4 e'8 e'8
+
+  % m. 40
+  | e'4 f'8 f'8 f'4 f'4
+  | r2 g'4 g'8 g'8
+  | g'4 g'4 r2
+  | r2 f'4 f'8 f'8
+  | f'4 e'8 e'8 e'4 d'4
+  | r4 cis'8 cis'8 d'4 e'8 e'8
+  | f'4 f'8 e'4 e'8 e'4
+  | e'2 r4 f'8 f'8
+  | e'2 r4 f'8 f'8
+  | e'2 r4 d'8 d'8
+
+  % m. 50
+  | d'4 f'8 f'8 d'4 e'8 c'8\sh~
+  | c'8 d'8 e'8[ a8] a2
+  | R1
+  | r4 a8 a8 a4 a
+  | r4 bes4. g8[ a8 bes8]\na
+  | cis'4. b8 a2
+  | R1
+  | R1
+  | r2 a'4. g'8
+  | f'4. e'8 d'4 d'4
+
+  % m. 60
+  | R1
+  | g'4. f'8 e'4. d'8
+  | cis'4 a4. b8 cis'4
+  
   % m. 63
-
+  | a1
 }
+
+
 
 MusicEstribilloTII = {
   \clef "treble_8"

@@ -91,37 +91,37 @@
 %           \LyricsCoplasTI
          }
        >>
-% 
-%     >> %% end of Chorus I staves
-% 
-%     \new ChoirStaff = "ChII"
-%     <<
-%       \ChoirStaffName "CHORUS II"
-% 
-%       %% SII
-%       \new Staff = "SII" 
-%       <<
-%         \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSII }
-%         \new Voice = "SII" {
-%           \MusicEstribilloSII
-%         }
-%         \new Lyrics \lyricsto "SII" {
-%           \LyricsEstribilloSII
-%         }
-%       >>
-% 
-%       %% AII
-%       \new Staff = "AII" 
-%       <<
-%         \IncipitStaff "ALTO II" "A. II" { \IncipitAII }
-%         \new Voice = "AII" {
-%           \MusicEstribilloAII
-%         }
-%         \new Lyrics \lyricsto "AII" {
-%           \LyricsEstribilloAII
-%         }
-%       >>
-% 
+ 
+     >> %% end of Chorus I staves
+ 
+     \new ChoirStaff = "ChII"
+     <<
+       \ChoirStaffName "CHORUS II"
+ 
+       %% SII
+       \new Staff = "SII" 
+       <<
+         \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSII }
+         \new Voice = "SII" {
+           \MusicEstribilloSII
+         }
+         \new Lyrics \lyricsto "SII" {
+           \LyricsEstribilloSII
+         }
+       >>
+ 
+       %% AII
+       \new Staff = "AII" 
+       <<
+         \IncipitStaff "ALTO II" "A. II" { \IncipitAII }
+         \new Voice = "AII" {
+           \MusicEstribilloAII
+         }
+         \new Lyrics \lyricsto "AII" {
+           \LyricsEstribilloAII
+         }
+       >>
+ 
 %       %% TII
 %       \new Staff = "TII" 
 %       <<
@@ -145,9 +145,9 @@
 %           \MusicEstribilloBII
 %         }
 %       >>
-% 
-%     >> %% end of Ch. II staves
-% 
+ 
+     >> %% end of Ch. II staves
+ 
 %     %% Gn
 %     \new Staff = "Gn" 
 %     <<
@@ -159,7 +159,7 @@
 %           \FiguresCoplasAc
 %         >>
 %       }
-    >>
+%    >>
   >>
 
 }
