@@ -42,11 +42,11 @@
         \IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
         \new Voice = "SIi" {
           \MusicEstribilloSIi
-%          \MusicCoplasSIi
+          \MusicCoplasSIi
         }
         \new Lyrics \lyricsto "SIi" {
           \LyricsEstribilloSIi
-%          \LyricsCoplasSIi
+          \LyricsCoplasSIi
         }
       >>
 
@@ -56,11 +56,11 @@
         \IncipitStaff "TIPLE I-2" "Ti. I-2" { \IncipitSIii }
         \new Voice = "SIii" {
           \MusicEstribilloSIii
-%          \MusicCoplasSIii
+          \MusicCoplasSIii
         }
         \new Lyrics \lyricsto "SIii" {
           \LyricsEstribilloSIii
-%          \LyricsCoplasSIii
+          \LyricsCoplasSIii
         }
       >>
 
@@ -70,11 +70,11 @@
         \IncipitStaff "ALTO I" "A. I" { \IncipitAI }
         \new Voice = "AI" {
           \MusicEstribilloAI
-%          \MusicCoplasAI
+          \MusicCoplasAI
         }
         \new Lyrics \lyricsto "AI" {
           \LyricsEstribilloAI
-%          \LyricsCoplasAI
+          \LyricsCoplasAI
         }
       >>
 
@@ -84,11 +84,11 @@
          \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
          \new Voice = "TI" {
            \MusicEstribilloTI
-%           \MusicCoplasTI
+           \MusicCoplasTI
          }
          \new Lyrics \lyricsto "TI" {
            \LyricsEstribilloTI
-%           \LyricsCoplasTI
+           \LyricsCoplasTI
          }
        >>
  
@@ -122,44 +122,44 @@
          }
        >>
  
-%       %% TII
-%       \new Staff = "TII" 
-%       <<
-%         \IncipitStaff "TENOR II" "T. II" { \IncipitTII } 
-%         \new Voice = "TII" {
-%           \MusicEstribilloTII
-%         }
-%         \new Lyrics \lyricsto "TII" {
-%           \LyricsEstribilloTII
-%         }
-%       >>
-% 
-%       %% BII
-%       \new Staff = "BII" 
-%       <<
-%         \IncipitStaff
-%         \TwoLineName "BAJO II" "[inst.]"
-%         "B. II"
-%         { \IncipitBII }
-%         \new Voice = "BII" {
-%           \MusicEstribilloBII
-%         }
-%       >>
+       %% TII
+       \new Staff = "TII" 
+       <<
+         \IncipitStaff "TENOR II" "T. II" { \IncipitTII } 
+         \new Voice = "TII" {
+           \MusicEstribilloTII
+         }
+         \new Lyrics \lyricsto "TII" {
+           \LyricsEstribilloTII
+         }
+       >>
+ 
+       %% BII
+       \new Staff = "BII" 
+       <<
+         \IncipitStaff
+         \TwoLineName "BAJO II" "[inst.]"
+         "B. II"
+         { \IncipitBII }
+         \new Voice = "BII" {
+           \MusicEstribilloBII
+         }
+       >>
  
      >> %% end of Ch. II staves
  
-%     %% Gn
-%     \new Staff = "Gn" 
-%     <<
-%       \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
-%       \new Voice = "EstribilloAc" {
-%         \MusicEstribilloAc
-%         << 
-%           \MusicCoplasAc
-%           \FiguresCoplasAc
-%         >>
-%       }
-%    >>
+     %% Gn
+     \new Staff = "Gn" 
+     <<
+       \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
+       \new Voice = "EstribilloAc" {
+         \MusicEstribilloAc
+         << 
+           \MusicCoplasAc
+           \new FiguredBass { \FiguresCoplasAc }
+         >>
+       }
+    >>
   >>
 
 }
