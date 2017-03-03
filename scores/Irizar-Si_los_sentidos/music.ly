@@ -1,960 +1,986 @@
 %% IRIZAR, SI LOS SENTIDOS
+%% MUSIC
+%% Revised 2017/03
 
-%%****************************************
-%% MUSIC: ESTRIBILLO
-%%****************************************
+%%*************************
+%% ESTRIBILLO
+%%************************
 
-%%*******************
+%%****************
 %% INCIPITS
-%%*******************
+%%****************
 
 IncipitGlobal = {
-  \Compasillo
+  \MeterC
 }
 
 %% CHORUS I
 
 IncipitSIi = {
   \MSclefCi
-  d''8 s4
+  d''8 s8 s2.
 }
 
 IncipitSIii = {
   \MSclefCi
-  a'8 s4
+  a'8 s8 s2.
 }
 
 IncipitAI = {
   \MSclefCiii
-  f'8 s4
+  f'8 s8 s2.
 }
 
 IncipitTI = {
   \MSclefCiv
-  d'8 s4
+  d'8 s8 s2.
 }
 
 %% CHORUS II
 
 IncipitSII = {
   \MSclefCi
-  a'8 s4
+  a'8 s8 s2.
 }
 
-IncipitAII = { 
+IncipitAII = {
   \MSclefCiii
-  f'8 s4
+  f'8 s8 s2.
 }
 
 IncipitTII = {
   \MSclefCiv
-  d'8 s4
+  d'8 s8 s2.
 }
 
 IncipitBII = {
-  \clef "bass"
-  d8 s4
+  \MSclefFiv
+  d8 s8 s2.
 }
 
 %% Ac
 IncipitAc = {
-  \clef "bass"
-  d2.
+  \MSclefFiv
+  d2. s4
 }
 
-%%**************************************
+%%***********************************
 %% MAIN MUSIC: ESTRIBILLO
-%%**************************************
+%%***********************************
 
 %% CHORUS I
 
-MusicEstribilloSIi = \relative c'' {
+MusicEstribilloSIi = {
   \clef "treble"
+  \MeterDuple
+
   \Section "[ESTRIBILLO] a 8"
-  \time 2/2
-  r8 d d d d4 a  
-  r4 d8 d c4 bes8 bes 
-  a4 a a2  
-  a2 r8 a a a 
+  | r8 d''8 d''8 d''8 d''4 a'4
+  | r4 d''8 d''8 c''4 bes'8 bes'8
+  | a'4 a'4 a'2
+  | a'2 r8 a'8 a'8 a'8
+  | a'4 f'4 r2
+  | R1
+  | r2 r4 r8 c''8\sh
+  | d''2 r4 d''4
+  | cis''2 d''2
 
-  %% m. 5
-  a4 f r2 
-  R1 
-  r2 r4 r8 c'8\sh 
-  d2 r4 d 
-  cis2 d 
+  \MeterTriple
+  % m. 10
+  | d''2 c''2 d''2 
+  | c''1 c''2
+  | c''2 c''2 c''2~\color
+  | c''2 c''1\endcolor
+  | a'2 d''2 c''2
+  | c''2(\color bes'1)\endcolor
+  | a'1.
+  | r2 a'1\color
+  | a'2 c''1\sh\endcolor
+  | d''2 r2 r2
 
-  %% m. 10 METER 6/2
-  \time 6/2
-  \MeterChangeCtoZ
-  
-  d2 c d c1 c2 
-  c2 c c1\color c\endcolor 
-  a2 d c c(\color bes1)\endcolor 
-  a1. r2 a1 \color 
-  a2 c1\sh\endcolor d2 r2 r 
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+ 
+  \MeterDuple
+  % m. 25
+  | r4 r8 c''8\sh d''8 d''8 d''8 d''8
+  | d''4 r8 f'8 a'8 a'8 a'8 a'8 
+  | a'2 r4 c''4~
+  | c''8 c''8 c''4 d''2
+  | e''2 d''8 d''8 d''8 d''8
 
-  %% m. 15
-  R\breve. 
-  R\breve. 
+  % m. 30
+  | d''4 d''4. d''8 d''4
+  | e''4 e''4 r4 a'8 a'8
+  | b'4 c''8 c''8 bes'4 bes'8 a'8~
+  | a'8 a'8 a'4 a'2
+  | r2 cis''4 cis''8 cis''8
+  | cis''4 d''4 r2
+  | r2 r4 cis''4
+  | d''2 r4 c''8\sh c''8\sh
+  | d''4 e''8 e''8 c''4 d''8 d''8~
+  | d''8 c''8 b'4 c''2
 
-  \time 3/2
-  \TempoSame
-  R1.
+  % m. 40
+  | r2 c''4 c''8 c''8
+  | c''4 c''4 r2
+  | r2 d''4 d''8 d''8
+  | d''4 d''4 r2
+  | r2 r4 a'8 a'8
+  | a'2 r2
+  | R1
+  | r4 cis''4 d''2
+  | r4 cis''4 d''2
+  | r4 cis''8 cis''8 d'2
 
-  %% m. 18 METER 2/2
-  \time 2/2
-  \MeterChangeCZtoC
-  r4 r8 c\sh d d d d 
-  d4 r8 f,8 a a a a 
+  % m. 50
+  | R1
+  | r4 a'8 a'8 a'8 a'8 a'8 a'8
+  | b'4 c''8 c''8 bes'4 bes'8 a'8~
+  | a'8 a'8 a'4 a'2
+  | r4 d''2 d''4
+  | cis''2 d''2
+  | r2 d''4. c''8
+  | bes'4. a'8 bes'4 bes'4
+  | a'2 a'4 cis''4
+  | d''2 d''4 c''4
 
-  %% m. 20
-  a2 r4 c4~ 
-  c8 c c4 d2 
-  e2 d8 d d d 
-  d4 d4. d8 d4 
-  e4 e r4 a,8 a
+  % m. 60
+  | d''4 d''4 r2
+  | R1
+  | r4 d''8 d''8 d''4 cis''4
 
-  %% m. 25
-  b4 c8 c bes4 bes8 a8~ 
-  a8 a8 a4 a2 
-  r2 cis4 cis8 cis 
-  cis4 d4 r2 
-  r2 r4 cis4 
-
-  %% m. 30 
-  d2 r4 c8\sh c 
-  d4 e8 e c4\na d8 d~ 
-  d c8 b4 c2 
-  r2 c4 c8 c  
-  c4 c4 r2 
-
-  %% m. 35
-  r2 d4 d8 d 
-  d4 d r2 
-  r2 r4 a8 a 
-  a2 r2 
-  R1 
-
-  %% m. 40
-  r4 cis4 d2 
-  r4 cis4 d2 
-  r4 cis8 cis d2 
-  R1 
-  r4 a8 a a a a a 
-
-  %% m. 45
-  b4 c8 c bes4 bes8 a~ 
-  a8 a a4 a2 
-  r4 d2 d4 
-  cis2 d 
-  r2 d4. c8 
-
-  %% m. 50
-  bes4. a8 bes4 bes 
-  a2 a4 cis4 
-  d2 d4 d 
-  d4 d r2 
-  R1
-
-  %% m. 55
-  r4 d8 d d4 cis4 
-  d1
-  \RepeatMsg "[Fine]"
+  % m. 63
+  | d''1
   \FinalBar
+  \Fine
 }
 
-MusicEstribilloSIii = \relative c' {
-  \clef "treble"
-  r8 a'8 a a a4 f 
-  r4 bes8 bes a4 g8 g 
-  g4 f e8[ f] g4 
-  f2 r8 d'8 d d 
+MusicEstribilloSIii = {
+  \clef "treble" 
+  \MeterDuple
+  | r8 a'8 a'8 a'8 a'4 f'4
+  | r4 bes'8 bes'8 a'4 g'8 g'8
+  | g'4 f'4 e'8[ f'8] g'4
+  | f'2 r8 d''8 d''8 d''8
+  | d''4 a'4 r2
+  | R1
+  | r2 r4 r8 a'8
+  | a'2 r4 f'4 
+  | e'2 f'2
 
-  %% m. 5
-  d4 a r2 
-  R1 
-  r2 r4 r8 a 
-  a2 r4 f4 e2 f 
+  % m. 10
+  \MeterTriple
+  | a'2 a'2 g'2 
+  | g'1 g'2
+  | a'2 a'2 a'2~\color
+  | a'2 g'1\endcolor
+  | f'2 a'2 g'2 
+  | a'2( g'2 f'2)
+  | e'1.
+  | r2 f'1\color
+  | e'2 a'1\endcolor
+  | a'2 r2 r2
 
-  %% m. 10 METER 6/2
-  a2 a g g1 g2 
-  a2 a a1\color g1\endcolor 
-  f2 a g a( g f) 
-  e1. r2 f1\color 
-  e2 a1\endcolor a2 r2 r 
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
-  %% m. 15
-  R\breve.*2
+  % m. 25
+  \MeterDuple
+  | r4 r8 a'8 a'8 a'8 a'8 a'8
+  | a'4 r8 a'8 d''8 d''8 d''8 d''8
+  | c''2 r4 a'4~
+  | a'8 a'8 g'8[ a'8] bes'8[ a'8] g'4~
+  | g'4 g'4 g'8 g'8 g'8 g'8
 
-  %% m. 17 %% METER 3/2
-  R1.
+  % m. 30
+  | g'4 g'4. g'8 f'4
+  | a'4 a'4 r4 f'8 f'8
+  | g'4 a'8 a'8 f'4 g'8 g'8~
+  | g'8 f'8 e'4 f'2
+  | r2 a'4 a'8 a'8
+  | a'4 a'4 r2
+  | r2 r4 a'4
+  | a'2 r4 a'8 a'8
+  | a'4 c''8 c''8 a'4 b'8 gis'8~
+  | gis'8 a'8 gis'4 a'2
 
-  %% m. 18 METER 2/2
-  r4 r8 a8 a a a a 
-  a4 r8 a8 d d d d 
+  % m. 40
+  | r2 a'4 a'8 a'8
+  | a'4 g'4 r2
+  | r2 b'4 b'8 b'8
+  | b'4 a'4 r2
+  | r2 r4 d''8 d''8
+  | cis''2 r2
+  | R1
+  | r4 a'4 a'2
+  | r4 a'4 a'2
+  | r4 a'8 a'8 a'2
 
-  %% m. 20
-  c2 r4 a4~ 
-  a8 a g[ a] bes[ a] g4~ 
-  g4 g g8 g g g 
-  g4 g4. g8 f4 
-  a4 a r4 f8 f 
+  % m. 50
+  | R1
+  | r4 cis''8 cis''8 d''8 d''8 fis'8 fis'8
+  | g'4 a'8 a'8 f'4 g'8 g'8~
+  | g'8 f'8 e'4 f'2
+  | r4 bes'2 a'4
+  | a'2 a'2
+  | R1
+  | r2 g'4. f'8
+  | e'4 f'4 e'4 a'4
+  | a'2 a'4 a'4
 
-  %% m. 25
-  g4 a8 a f4 g8 g~ 
-  g8 f e4 f2 
-  r2 a4 a8 a 
-  a4 a r2 
-  r2 r4 a4 
+  % m. 60
+  | a'4 a'4 r2
+  | R1
+  | a'4 a'4 a'4. e'8
 
-  %% m. 30
-  a2 r4 a8 a 
-  a4 c8 c a4 b8 gis8~ 
-  gis8 a gis4 a2 
-  r2 a4 a8 a  
-  a4 g r2 
-
-  %% m. 35
-  r2 b4 b8 b 
-  b4 a r2 
-  r2 r4 d8 d 
-  cis2 r2 
-  R1 
-
-  %% m. 40
-  r4 a a2 
-  r4 a4 a2 
-  r4 a8 a a2 
-  R1 
-  r4 cis8 cis d d fis, fis 
-
-  %% m. 45
-  g4 a8 a f4 g8 g~ 
-  g8 f e4 f2 
-  r4 bes2 a4 
-  a2 a 
-  R1
-
-  %% m. 50
-  r2 g4. f8 
-  e4 f e a 
-  a2 a4 a 
-  a4 a r2 
-  R1 
-
-  %% m. 55
-  a4 a a4. e8 
-  fis1 
+  % m. 63
+  | fis'1
 }
 
-MusicEstribilloAI = \relative c' {
-  \clef "treble"
-  %% METER 2/2
-  r8 f f f f4 d 
-  r4 f8 f f4 d8 e 
-  cis4 d d cis 
-  d2 r8 f f f 
+MusicEstribilloAI = {
+  \clef "treble" 
+  \MeterDuple
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r4 f'8 f'8 f'4 d'8 e'8
+  | cis'4 d'4 d'4 cis'4
+  | d'2 r8 f'8 f'8 f'8
+  | f'4 d'4 r2
+  | R1
+  | r2 r4 r8 e'8
+  | f'2 r4 d'4
+  | e'2 d'2
 
-  %% m. 5
-  f4 d r2 
-  R1 
-  r2 r4 r8 e8 
-  f2 r4 d4 
-  e2 d 
+  \MeterTriple
+  % m. 10
+  | f'2 e'2 d'2
+  | e'1 e'2
+  | f'2 f'2 f'2~\color
+  | f'2 e'1\endcolor
+  | d'2 f'2 e'2
+  | d'1.
+  | cis'1.
+  | r2 d'1\color
+  | cis'2 e'1\endcolor
+  | f'2 r2 r2
 
-  %% m. 10 METER 6/2
-  f2 e d e1 e2 
-  f2 f f1\color e1\endcolor 
-  d2 f e d1. 
-  cis1. r2 d1\color 
-  cis2 e1\endcolor f2 r2 r 
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
-  %% m. 15 
-  R\breve.*2 
+  \MeterDuple
+  % m. 25
+  | r4 r8 e'8 f'8 f'8 f'8 f'8
+  | f'4 r8 d'8 f'8 f'8 f'8 f'8
+  | e'2 r4 f'4~
+  | f'8 f'8 e'4 d'2
+  | c'4 g4 b8 b8 b8 b8
 
-  %% m. 17 METER 3/2
-  R1. 
+  % m. 30
+  | b4 b4. b8 b4
+  | cis'4 cis'4 r4 d'8 d'8
+  | d'4 f'8 f'8 d'4 e'8 cis'8~
+  | cis'8 d'8 cis'4 d'2
+  | r2 e'4 e'8 e'8
+  | e'4 f'4 r2
+  | r2 r4 e'4
+  | f'2 r4 e'8 e'8
+  | f'4 g'8 g'8 f'4 f'8 e'8~
+  | e'8 e'8 e'4 e'2
 
-  %% m. 18 METER 2/2
-  r4 r8 e f f f f 
-  f4 r8 d f f f f 
+  % m. 40
+  | r2 f'4 f'8 f'8
+  | f'4 e'4 r2
+  | g'4 g'8 g'8 g'4 d'8 g'8
+  | g'4 f'4 r2
+  | r2 r4 f'8 f'8
+  | e'2 r2
+  | R1
+  | r4 e'4 f'2
+  | r4 e'4 f'2
+  | r4 e'8 e'8 f'2
 
-  %% m. 20
-  e2 r4 f~ 
-  f8 f e4 d2 
-  c4 g b8 b b b 
-  b4 b4. b8 d4 
-  cis4 cis r4 d8 d 
+  % m. 50
+  | R1
+  | r4 e'8 e'8 f'8 f'8 d'8 d'8
+  | d'4 f'8 f'8 d'4 e'8 cis'8~
+  | cis'8 d'8 e'4 d'2
+  | r4 g'2 f'4
+  | e'2 f'2
+  | f'4. e'8 d'4 d'4
+  | g'4. f'8 e'4. d'8
+  | cis'4 d'4 cis'8[ d'8] e'4
+  | d'2 d'4 f'4
 
-  %% m. 25
-  d4 f8 f d4 e8 cis~ 
-  cis8 d cis4 d2 
-  r2 e4 e8 e 
-  e4 f r2 
-  r2 r4 e 
+  % m. 60
+  | f'4 f'4 r2
+  | R1
+  | e'4 d'4 e'2
 
-  %% m. 30
-  f2 r4 e8 e 
-  f4 g8 g f4 f8 e~ 
-  e8 e e4 e2 
-  r2 f4 f8 f 
-  f4 e r2 
-
-  %% m. 35
-  g4 g8 g g4 d8 g 
-  g4 f r2 
-  r2 r4 f8 f 
-  e2 r2
-  R1
-
-  %% m. 40
-  r4 e f2 
-  r4 e f2 
-  r4 e8 e f2 
-  R1
-  r4 e8 e f f d d 
-
-  %% m. 45
-  d4 f8 f d4 e8 cis~ 
-  cis8 d e4 d2 
-  r4 g2 f4 
-  e2 f 
-  f4. e8 d4 d 
-
-  %% m. 50
-  g4. f8 e4. d8 
-  cis4 d cis8[ d] e4 
-  d2 d4 f 
-  f4 f r2 
-  R1 
-
-  %% m. 55
-  e4 d4 e2 
-  d1 
+  % m. 63
+  | d'1
 }
 
-MusicEstribilloTI = \relative c' {
-  \clef "treble_8"
-  %% METER 2/2
-  r8 d d d d4 d, 
-  r4 bes'8 bes f4 g8 g 
-  a4 d, a'2 
-  d,2 r8 d'8 d d 
 
-  %% m. 5
-  d4 d, r2 
-  R1 
-  r2 r4 r8 a'8 
-  d2 r4 d,4 
-  a'2 d,
+MusicEstribilloTI = {
+  \clef "treble_8" 
+  \MeterDuple
+  | r8 d'8 d'8 d'8 d'4 d4
+  | r4 bes8 bes8 f4 g8 g8
+  | a4 d4 a2
+  | d2 r8 d'8 d'8 d'8
+  | d'4 d4 r2
+  | R1
+  | r2 r4 r8 a8
+  | d'2 r4 d4
+  | a2 d2
 
-  %% m. 10 METER 6/2
-  d'2 a b c1 c2 
-  f,2 f f1\color c\endcolor 
-  d2 d e fis(\color g1)\endcolor 
-  a1. r2 d,1\color 
-  a'2 a1\endcolor d2 r2 r 
+  \MeterTriple
+  % m. 10
+  | d'2 a2 b2 
+  | c'1 c'2
+  | f2 f2 f2~\color
+  | f2 c1\endcolor
+  | d2 d2 e2
+  | fis2(\color g1)\endcolor
+  | a1. 
+  | r2 d1\color
+  | a2 a1\endcolor
+  | d'2 r2 r2
 
-  %% m. 15
-  R\breve.*2 
+  % m. 20
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
-  %% m. 17 METER 3/2
-  R1. 
+  \MeterDuple
+  % m. 25
+  | r4 r8 a8 d'8 d'8 d'8 d'8
+  | d'4 r8 d8 d'8 d'8 d'8 d'8
+  | a2 r4 f4~
+  | f8 f8 c'8[ c8] g2
+  | c2 g8 g8 g8 g8
 
-  %% m. 18 METER 2/2
-  r4 r8 a8 d d d d 
-  d4 r8 d,8 d' d d d 
+  % m. 30
+  | g4 g4. g8 d4
+  | a4 a4 r4 d8 d8
+  | g4 f8 f8 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | r2 a4 a8 a8
+  | a4 d4 r2
+  | r2 r4 a4
+  | d2 r4 a8 a8
+  | d4 c8 c8 f4 d8 e8~
+  | e8 a8 e4 a2
 
-  %% m. 20
-  a2 r4 f4~ 
-  f8 f c'[ c,] g'2 
-  c,2 g'8 g g g 
-  g4 g4. g8 d4 
-  a'4 a r4 d,8 d 
+  % m. 40
+  | r2 f4 f8 f8
+  | f4 c4 r2
+  | r2 g4 g8 g8
+  | g4 d4 r2
+  | r2 r4 d8 d8
+  | a2 r2
+  | R1
+  | r4 a4 d'2
+  | r4 a4 d'2
+  | r4 a8 a8 d'2
 
-  %% m. 25
-  g4 f8 f bes4 g8 a~ 
-  a8 d, a'4 d,2 
-  r2 a'4 a8 a 
-  a4 d, r2 
-  r2 r4 a'4 
+  % m. 50
+  | R1
+  | r4 a8 a8 d8 d8 d8 d8
+  | g4 f8 f8 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | r4 g2 d4
+  | a2 d2
+  | d'4.( c'8 bes4.) a8
+  | g2. g4
+  | a4 d4 a2
+  | d2 d4 d4
 
-  %% m. 30
-  d,2 r4 a'8 a 
-  d,4 c8 c f4 d8 e~ 
-  e8 a e4 a2 
-  r2 f4 f8 f  
-  f4 c r2 
+  % m. 60
+  | d4 d4 r2
+  | R1
+  | a4 d4 a2
 
-  %% m. 35
-  r2 g'4 g8 g 
-  g4 d r2 
-  r2 r4 d8 d 
-  a'2 r2 
-  R1
-
-  %% m. 40
-  r4 a d2 
-  r4 a d2 
-  r4 a8 a d2 
-  R1
-  r4 a8 a d, d d d 
-
-  %% m. 45
-  g4 f8 f bes4 g8 a~ 
-  a8 d, a'4 d,2 
-  r4 g2 d4 
-  a'2 d, 
-  d'4.( c8 bes4.) a8 
-
-  %% m. 50
-  g2. g4 
-  a4 d, a'2 
-  d,2 d4 d 
-  d4 d r2 
-  R1
-
-  %% m. 55
-  a'4 d, a'2 
-  d,1 
+  % m. 63
+  | d1
 }
 
 %% CHORUS II
 
-MusicEstribilloSII = \relative c' {
-  %% METER 2/2
-  R1*3 
-  r8 a'8 a a a4 f 
-
-  %% m. 5
-  r8 a8 a a a4 f 
-  r4 bes8 bes a4 g8 g  
-  g4 f e e 
-  r4 r8 a8 bes4 a 
-  a2 a 
-
-  %% m. 10 METER 6/2
-  R\breve.*3 
-  r2 a1\colorOne a1. 
-  r1. a2 a g 
-
-  %% m. 15
-  g1 g2 a a a~\color 
-  a2 g1\endcolor f2 a g 
-
-  %% m. 17 METER 3/2
-  a2\color g1\endcolor 
-
-  %% m. 18 METER 2/2
-  e2 r4 r8 f8 
-  a8 a a a a4 r8 f8 
-
-  %% m. 20
-  a8 a a a a4 a~ 
-  a8 b c4 c b 
-  c2 b8 b b b 
-  b4 b4. b8 a4 
-  cis4 cis r2 
-
-  %% m. 25
-  R1
-  r2 a4 a8 a 
-  a4 a r2 
-  r4 f8 f g4 a8 a 
-  bes4 bes8 a4 a8 a4 
-
-  %% m. 30
-  f4 f e2 
-  R1 
-  r2 a4 a8 a 
-  a4 a8 a a4 a 
-  r2 c4 c8 c 
-
-  %% m. 35
-  c4 b r2 
-  r2 a4 a8 a 
-  a4 a8 a a4 f 
-  r4 e8 e f4 g8 g 
-  a4 b8 gis4 a8 gis4 
-
-  %% m. 40
-  a2 r4 a8 a 
-  a2 r4 a8 a 
-  a2 r4 f8 f 
-  g4 a8 a f4 g8 g8~ 
-  g8 f e4 d2 
-
-  %% m. 45
-  R1 
-  r4 cis'8 cis d4 d 
-  r4 d,4. e8[ f g] 
-  a4 e d2 
-  R1
-
-  %% m. 50
-  R1*2
-  r2 a'4. g8 
-  f4. e8 d2 
-  d2 g4. f8 
-
-  %% m. 55
-  e4 f e a 
-  a1 
-}
-
-MusicEstribilloAII = \relative c' {
+MusicEstribilloSII = {
   \clef "treble"
-  %% METER 2/2
-  R1*3 
-  r8 f f f f4 d 
+  \MeterDuple
+  | R1
+  | R1
+  | R1
+  | r8 a'8 a'8 a'8 a'4 f'4
+  | r8 a'8 a'8 a'8 a'4 f'4
+  | r4 bes'8 bes'8 a'4 g'8 g'8
+  | g'4 f'4 e'4 e'4
+  | r4 r8 a'8 bes'4 a'4
+  | a'2 a'2
 
-  %% m. 5
-  r8 f f f f4 d 
-  r4 f8 f f4 d8 e 
-  cis4 d d cis 
-  r4 r8 d8 d4. a8 
-  cis2 a 
+  \MeterTriple
+  % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 a'1\colorOne
+  | a'1. 
+  | R1.
+  | a'2 a'2 g'2
 
-  %% m. 10 METER 6/2
-  R\breve.*3
-  r2 e'1\colorOne f1. 
-  r1. f2 e d  %% XX CHECK
-  e1 e2 f f f2~\color 
-  f2 e1\endcolor d2 f e 
+  % m. 20
+  | g'1 g'2
+  | a'2 a'2 a'2~\color
+  | a'2 g'1\endcolor
+  | f'2 a'2 g'2
+  | a'2\color g'1\endcolor
 
-  %% m. 17 METER 3/2
-  d1. 
+  \MeterDuple
+  % m. 25
+  | e'2 r4 r8 f'8
+  | a'8 a'8 a'8 a'8 a'4 r8 f'8
+  | a'8 a'8 a'8 a'8 a'4 a'4~
+  | a'8 b'8 c''4 c''4 b'4
+  | c''2 b'8 b'8 b'8 b'8
 
-  %% m. 18 METER TO 2/2
-  c2\sh r4 r8 d 
-  f8 f f f f4 r8 d 
+  % m. 30 
+  | b'4 b'4. b'8 a'4
+  | cis''4 cis''4 r2
+  | R1
+  | r2 a'4 a'8 a'8
+  | a'4 a'4 r2
+  | r4 f'8 f'8 g'4 a'8 a'8
+  | bes'4 bes'8 a'4 a'8 a'4
+  | f'4 f'4 e'2
+  | R1
+  | r2 a'4 a'8 a'8
 
-  %% m. 20
-  e8 e e e e4 f 
-  c4 e g2 
-  e4 c d8 d d d 
-  d4 d4. e8 f4 
-  e4 e r2
+  % m. 40
+  | a'4 a'8 a'8 a'4 a'4 
+  | r2 c''4 c''8 c''8
+  | c''4 b'4 r2
+  | r2 a'4 a'8 a'8
+  | a'4 a'8 a'8 a'4 f'4
+  | r4 e'8 e'8 f'4 g'8 g'8
+  | a'4 b'8 gis'4 a'8 gis'4
+  | a'2 r4 a'8 a'8
+  | a'2 r4 a'8 a'8
+  | a'2 r4 f'8 f'8
 
-  %% m. 25
-  R1 
-  r2 f4 f8 f 
-  f4 e r2 
-  r4 d8 d d4 f8 f 
-  f4 g8 g4 f8 e4 
+  % m. 50
+  | g'4 a'8 a'8 f'4 g'8 g'8~
+  | g'8 f'8 e'4 d'2
+  | R1
+  | r4 cis''8 cis''8 d''4 d''4
+  | r4 d'4. e'8[ f'8 g'8]
+  | a'4 e'4 d'2
+  | R1
+  | R1
+  | R1
+  | r2 a'4. g'8
 
-  %% m. 30
-  d4 d cis2 
-  R1 
-  r2 e4 e8 e 
-  e4 f8 f f4 f 
-  r2 g4 g8 g  
-
-  %% m. 35
-  g4 g r2 
-  r2 f4 f8 f 
-  f4 e8 e e4 d 
-  r4 cis8 cis d4 e8 e 
-  f4 f8 e4 e8 e4 
-
-  %% m. 40
-  e2 r4 f8 f 
-  e2 r4 f8 f 
-  e2 r4 d8 d 
-  d4 f8 f d4 e8 c\sh~ 
-  c8 d e[ a,] a2 
-
-  %% m. 45
-  R1
-  r4 a8 a a4 a 
-  r4 bes4. g8[ a bes]\na 
-  cis4. b8 a2 
-  R1
-
-  %% m. 50
-  R1
-  r2 a'4. g8 
-  f4. e8 d4 d 
-  R1
-  g4. f8 e4. d8 
-
-  %% m. 55
-  cis4 a4. b8 cis4 
-  a1 
+  % m. 60
+  | f'4. e'8 d'2
+  | d'2 g'4. f'8
+  | e'4 f'4 e'4 a'4
+  
+  % m. 63
+  | a'1
 }
 
-MusicEstribilloTII = \relative c' {
+MusicEstribilloAII = {
+  \clef "treble"
+  \MeterDuple
+  | R1
+  | R1 
+  | R1
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r8 f'8 f'8 f'8 f'4 d'4
+  | r4 f'8 f'8 f'4 d'8 e'8
+  | cis'4 d'4 d'4 cis'4
+  | r4 r8 d'8 d'4. a8
+  | cis'2 a2
+  
+  \MeterTriple
+  % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 e'1\colorOne
+  | f'1.
+  | R1.
+  | f'2 e'2 d'2
+
+  % m. 20
+  | e'1 e'2
+  | f'2 f'2 f'2~\color
+  | f'2 e'1\endcolor
+  | d'2 f'2 e'2
+  | d'1.
+
+  \MeterDuple
+  % m. 25
+  | c'2\sh r4 r8 d'8
+  | f'8 f'8 f'8 f'8 f'4 r8 d'8
+  | e'8 e'8 e'8 e'8 e'4 f'4
+  | c'4 e'4 g'2
+  | e'4 c'4 d'8 d'8 d'8 d'8
+
+  % m. 30
+  | d'4 d'4. e'8 f'4
+  | e'4 e'4 r2
+  | R1
+  | r2 f'4 f'8 f'8
+  | f'4 e'4 r2
+  | r4 d'8 d'8 d'4 f'8 f'8
+  | f'4 g'8 g'4 f'8 e'4
+  | d'4 d'4 cis'2
+  | R1
+  | r2 e'4 e'8 e'8
+
+  % m. 40
+  | e'4 f'8 f'8 f'4 f'4
+  | r2 g'4 g'8 g'8
+  | g'4 g'4 r2
+  | r2 f'4 f'8 f'8
+  | f'4 e'8 e'8 e'4 d'4
+  | r4 cis'8 cis'8 d'4 e'8 e'8
+  | f'4 f'8 e'4 e'8 e'4
+  | e'2 r4 f'8 f'8
+  | e'2 r4 f'8 f'8
+  | e'2 r4 d'8 d'8
+
+  % m. 50
+  | d'4 f'8 f'8 d'4 e'8 c'8\sh~
+  | c'8 d'8 e'8[ a8] a2
+  | R1
+  | r4 a8 a8 a4 a
+  | r4 bes4. g8[ a8 bes8]\na
+  | cis'4. b8 a2
+  | R1
+  | R1
+  | r2 a'4. g'8
+  | f'4. e'8 d'4 d'4
+
+  % m. 60
+  | R1
+  | g'4. f'8 e'4. d'8
+  | cis'4 a4. b8 cis'4
+  
+  % m. 63
+  | a1
+}
+
+
+
+MusicEstribilloTII = {
   \clef "treble_8"
-  %% METER 2/2	
-  R1*3 
-  r8 d d d d4 a 
+  \MeterDuple
+  | R1
+  | R1
+  | R1
+  | r8 d'8 d'8 d'8 d'4 a4
+  | r8 d'8 d'8 d'8 d'4 a4
+  | r4 d'8 d'8 c'4 bes8 bes8
+  | a4 a4 a4 a4
+  | r4 r8 f'8 d'4 f'4
+  | a'2 f'2
 
-  %% m. 5
-  r8 d d d d4 a 
-  r4 d8 d c4 bes8 bes 
-  a4 a a a 
-  r4 r8 f8 d4 f 
-  a2 f 
+  \MeterTriple
+  % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 cis'1\colorOne
+  | d'1.
+  | R1.
+  | d'2 c'2 d'2
 
-  %% m. 10 METER 6/2
-  R\breve.*3 
-  r2 cis'1\colorOne d1. 
+  % m. 20
+  | c'1 c'2
+  | c'2 c'2 c'2~\color
+  | c'2 c'1\endcolor
+  | a2 d'2 d'2
+  | c'2\color bes1\endcolor
 
-  %% m. 15
-  r1. d2 c d  %% CHECK XX 
-  c1 c2 c c c~\color 
-  c2 c1\endcolor a2 d d 
+  \MeterDuple
+  % m. 25
+  | a2 r4 r8 a8
+  | d'8 d'8 d'8 d'8 d'4 r8 a8
+  | c'8 c'8 c'8 c'8 c'4 a4~
+  | a8 f8 g4 g2
+  | g2 g8 g8 g8 g8 
 
-  %% m. 17 METER 3/2
-  c2\color bes1\endcolor 
+  % m. 30
+  | g4 g4. g8 a4
+  | a4 a4 r2
+  | R1
+  | r2 d'4 d'8 d'8
+  | d'4 cis'4 r2
+  | r4 a8 a8 b4 b8 c'8
+  | d'4 d'8 cis'4 d'8 cis'4
+  | a4 a4 a2
+  | R1
+  | r2 c'4 c'8 c'8
 
-  %% m. 18 METER 2/2 
-  a2 r4 r8 a8 
-  d8 d d d d4 r8 a8 
+  % m. 40
+  | c'4 c'8 c'8 c'4 c'4
+  | r2 e'4 e'8 e'8
+  | e'4 d'4 r2
+  | r2 d'4 d'8 d'8
+  | d'4 cis'8 cis'8 cis'4 d'4
+  | r4 a8 a8 a4 c'8 c'8
+  | c'4 d'8 d'4 c'8 b4
+  | cis'2 r4 d'8 d'8
+  | cis'2 r4 d'8 d'8
+  | cis'2 r4 a8 a8
 
-  %% m. 20
-  c8 c c c c4 a~ 
-  a8 f g4 g2 
-  g2 g8 g g g 
-  g4 g4. g8 a4 
-  a4 a r2
+  % m. 50
+  | bes4 c'8 c'8 bes4 bes8 a8~
+  | a8 a8 a4 fis2
+  | R1
+  | r4 a8 a8 f4 f4
+  | r4 g4 d2
+  | e4 a4 f2
+  | R1
+  | R1
+  | R1
+  | a4. g8 f4. e8
 
-  %% m. 25
-  R1 
-  r2 d4 d8 d 
-  d4 cis r2 
-  r4 a8 a b4 c8 c 
-  d4 d8 cis4 d8 cis4 
-
-  %% m. 30
-  a4 a a2 
-  R1
-  r2 c4 c8 c 
-  c4 c8 c c4 c 
-  r2 e4 e8 e 
-
-  %% m. 35
-  e4 d r2 
-  r2 d4 d8 d 
-  d4 cis8 cis cis4 d 
-  r4 a8 a a4 c8 c 
-  c4 d8 d4 c8 b4 
-
-  %% m. 40
-  cis2 r4 d8 d 
-  cis2 r4 d8 d 
-  cis2 r4 a8 a 
-  bes4 c8 c bes4 bes8 a8~ 
-  a8 a a4 fis2 
-
-  %% m. 45
-  R1
-  r4 a8 a f4 f 
-  r4 g4 d2 
-  e4 a f2 
-  R1
-
-  %% m. 50
-  R1*2
-  a4. g8 f4. e8 
-  d4 d d'4. c8 
-  bes4. a8 bes4 bes 
-
-  %% m. 55
-  a4 f a2 
-  fis1 
+  % m. 60
+  | d4 d4 d'4. c'8
+  | bes4. a8 bes4 bes4
+  | a4 f4 a2
+  
+  % m. 63
+  | fis1
 }
 
-
-MusicEstribilloBII = \relative c {
+MusicEstribilloBII = {
   \clef "bass"
-  %% METER 2/2
-  R1*3 
-  r8 d d d d4 d, 
+  \MeterDuple
+  | R1
+  | R1
+  | R1
+  | r8 d8 d8 d8 d4 d,4
+  | r8 d8 d8 d8 d4 d,4
+  | r4 bes8 bes8 f4 g8 g8
+  | a4 d4 a4 a4
+  | r4 r8 d8 g,4 d4
+  | a,2 d2
 
-  %% m. 5
-  r8 d' d d d4 d, 
-  r4 bes''8 bes f4 g8 g  
-  a4 d, a a 
-  r4 r8 d8 g,4 d'4 
-  a2 d 
+  \MeterTriple
+  % m. 10
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 g,1\colorOne
+  | d1.
+  | R1.
+  | d2 a,2 b,2
 
-  %% m. 10 METER  6/2
-  R\breve.*3
-  r2 g,1\colorOne d'1. 
-  r1. d2 a b 
+  % m. 20
+  | c1 c2
+  | f2 f2 f2~\color
+  | f2 c1\endcolor
+  | d1 e2
+  | f2\sh\color g1\endcolor 
 
-  %% m. 15
-  c1 c2 f f f~\color 
-  f2 c1\endcolor d1 e2 
+  \MeterDuple
+  % m. 25
+  | a2 r4 r8 d,8
+  | d8 d8 d8 d8 d4 r8 d8
+  | a8 a8 a8 a8 a4 f4~
+  | f8 f8 c4 g,2
+  | c2 g,8 g,8 g,8 g,8
 
-  %% m. 17 METER 3/2
-  f2\sh\color g1\endcolor
+  % m. 30
+  | g,4 g,4. g,8 d4
+  | a,4 a,4 r2
+  | R1
+  | r2 d4 d8 d8
+  | d4 a,4 r2
+  | r4 d8 d8 g4 f8 f8
+  | bes4 g8 a4 d8 a4
+  | d4 d4 a,2
+  | R1
+  | r2 a4 a8 a8
 
-  %% m. 18 METER 2/2
-  a2 r4 r8 d,,8 
-  d'8 d d d d4 r8 d8 
+  % m. 40
+  | a4 f8 f8 f4 f4
+  | r2 c'4 c'8 c'8
+  | c'4 g4 r2
+  | r2 d4 d8 d8
+  | d4 a,8 a,8 a,4 d,4
+  | r4 a8 a8 d4 c8 c8
+  | f4 d8 e4 a8 e4
+  | a2 r4 d8 d8
+  | a2 r4 d8 d8
+  | a2 r4 d8 d8
 
-  %% m. 20
-  a'8 a a a a4 f4~ 
-  f8 f c4 g2 
-  c2 g8 g g g 
-  g4 g4. g8 d'4 
-  a4 a r2 
+  % m. 50
+  | g4 f8 f8 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | R1
+  | r4 a8 a8 d4 d4
+  | r4 g,2 d4
+  | a,2 d2
+  | R1
+  | R1
+  | R1
+  | R1
 
-  %% m. 25
-  R1 
-  r2 d4 d8 d 
-  d4 a r2 
-  r4 d8 d g4 f8 f 
-  bes4 g8 a4 d,8 a4 
+  % m. 60
+  | d4. c8 bes,4. a,8
+  | g,2. g,4
+  | a,4 d,4 a,2
 
-  %% m. 30
-  d4 d a2 
-  R1
-  r2 a'4 a8 a 
-  a4 f8 f f4 f 
-  r2 c'4 c8 c 
-
-  %% m. 35
-  c4 g r2 
-  r2 d4 d8 d 
-  d4 a8 a a4 d, 
-  r4 a''8 a d,4 c8 c 
-  f4 d8 e4 a8 e4 
-
-  %% m. 40
-  a2 r4 d,8 d 
-  a'2 r4 d,8 d 
-  a'2 r4 d,8 d 
-  g4 f8 f bes4 g8 a~ 
-  a8 d,8 a4 d2 
-
-  %% m. 45
-  R1 
-  r4 a8 a d4 d 
-  r4 g,2 d'4 
-  a2 d 
-  R1 
-
-  %% m. 50
-  R1*3 
-  d4. c8 bes4. a8 
-  g2. g4 
-
-  %% m. 55
-  a4 d a2 
-  d1 
+  % m. 63
+  | d1
 }
-
 
 %% Ac
 
-MusicEstribilloAc = \relative c {
+MusicEstribilloAc = {
   \clef "bass"
-  %% METER 2/2
-  d2. d4 
-  bes2 f'4 g 
-  a4 d,4 a2 
-  d2. d4 
+  \MeterDuple
+  | d2. d4
+  | bes,2 f4 g4
+  | a4 d4 a2
+  | d2. d4
+  | d2 d2
+  | bes,2 f4 g4
+  | a4 d4 a2
+  | d2 g4 d4
+  | a,2 d2
 
-  %% m. 5
-  d2 d 
-  bes2 f'4 g 
-  a4 d, a'2 
-  d,2 g4 d 
-  a2 d 
+  \MeterTriple
+  % m. 10
+  | d2 a,2 b,2
+  | c2\color c1
+  | f1 f2~
+  | f2 c1\endcolor
+  | d1 e2 
+  | fis2\color g1\endcolor
+  | a1. 
+  | d1.
+  | a1. 
+  | d2 a,2 b,2
 
-  %% m. 10 METER 6/2
-  d2 a b c\color c1 
-  f1 f c\endcolor 
-  d1 e2 fis2\color g1\endcolor 
-  a1. d,1. 
-  a'1. d,2 a b 
+  % m. 20
+  | c1 c2 
+  | f1\color f2~
+  | f2 c1\endcolor
+  | d1 e2
+  | f2\sh\color g1\endcolor
 
-  %% m. 15
-  c1 c2 f1\color f2~ 
-  f2 c1\endcolor d1 e2 
+  \MeterDuple
+  % m. 25
+  | a2 d2
+  | d2. d4
+  | a2 a4 f4~
+  | f4 c4 g2
+  | c2 g2
 
-  %% m. 17 METER 3/2
-  f2\sh\color g1\endcolor 
+  % m. 30
+  | g4 g2 d4
+  | a,2 d2
+  | g4 f4 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | d4 a'4 a'2~
+  | a'4 d4 g4 f4
+  | bes4 g8 a4 d8 a4
+  | d2 a2
+  | d4 c4 f4 d8 e8~
+  | e8 a8 e4 a2
 
-  %% m. 18 METER 2/2
-  a2 d,2 
-  d2. d4 
+  % m. 40
+  | a4 f4 f2
+  | f4 c4 c2~
+  | c4 g4 g2~
+  | g4 d4 d2~
+  | d4 g4 g,4 d4
+  | a2 d4 c4
+  | f4 d8 e4 a8 e4
+  | a2 d2
+  | a,2 d2
+  | a2 d2
 
-  %% m. 20
-  a'2 a4 f~ 
-  f4 c g'2 
-  c,2 g'2 
-  g4 g2 d4 
-  a2 d2 
+  % m. 50
+  | g4 f4 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | g4 f4 bes4 g8 a8~
+  | a8 d8 a4 d2
+  | g,4 g2 d4
+  | a,2 d2
+  | d4. c8 bes,4. a,8
+  | g,2. g,4
+  | a,4 d,4 a,2
+  | d,2 d,2
 
-  %% m. 25
-  g4 f bes g8 a8~ 
-  a8 d,8 a4 d2 
-  d4 a'4 a2~ 
-  a4 d, g f 
-  bes4 g8 a4 d,8 a'4 
-
-  %% m. 30
-  d,2 a'2 
-  d,4 c f d8 e~ 
-  e8 a8 e4 a2 
-  a4 f f2 
-  f4 c c2~ 
-
-  %% m. 35 
-  c4 g' g2~ 
-  g4 d d2~ 
-  d4 g g, d' 
-  a'2 d,4 c 
-  f4 d8 e4 a8 e4 
-
-  %% m. 40
-  a2 d, 
-  a2 d2 
-  a'2 d,2 
-  g4 f bes g8 a~ 
-  a8 d, a'4 d,2 
-
-  %% m. 45
-  g4 f bes g8 a~ 
-  a8 d, a'4 d,2 
-  g,4 g2 d'4 
-  a2 d2 
-  d'4. c8 bes4. a8 
-
-  %% m. 50
-  g2. g4 
-  a4 d, a'2 
-  d,2 d 
-  d'4. c8 bes4. a8 
-  g2. g4 
-
-  %% m. 55
-  a4 d, a2 
-  d1  
+  % m. 60
+  | d4. c8 bes,4. a,8
+  | g,2. g,4
+  | a,4 d4 a,2
+  
+  % m. 63
+  | d1
 }
 
-%%**************************************
-%% MUSIC: COPLAS
-%%**************************************
+%%**********************************
+%% MUSIC: COPLAS 
+%***********************************
 
 %% N.B. -- Coplas begin with SIii part
-MusicCoplasSIi =
-\relative c' {
-  \DoubleMark{}{}
-  \time 2/2
-  %% m. 57
-  R1*12
 
-  %% m. 69 RESPUESTA
+MusicCoplasSIi = {
+  \SectionBreak
+  % m. 64
+  \MeterDuple
+  | R1*12
+
+  %% m. 76 RESPUESTA
   \Section "Respuesta a las coplas"
-  r4 a'8 a b4 c8 c 
-  bes4 bes8 a4 a8 a4 
-  a1
-  \RepeatMsg "[D.C. al Fine after last copla]"
+  | r4 a'8 a'8 b'4 c''8 c''8
+  | bes'4 bes'8 a'4 a'8 a'4
+
+  % m. 78
+  | a'1
+  \DCalFineAfterLastCopla
   \RepeatBar
 }
 
-MusicCoplasSIii = \relative c' {
-  \break
-  \DoubleMark { \Section "COPLAS" } { \MeterChangeCZtoC }
+MusicCoplasSIii = {
+  \SectionBreak
+  % m. 64
+  \Section "COPLAS"
+  \MeterDuple
+  | r4 a'4 f'4 f'4
+  | g'2 a'4 bes'4
+  | a'4 a'4 g'4 g'8 g'8
+  | g'4 fis'4 g'4 g'4
+  | r4 b'4 c''4. b'8
+  | a'4 gis'8 gis'8 a'4 a'4
 
-  \time 2/2  
+  % m. 70
+  | r4 e'8 e'8 f'4. e'8
+  | d'4 cis'4 d'2
+  | r4 f'8 g'8 a'4. a'8
+  | bes'4 g'4 f'4 f'4
+  | g'2 a'4 a'4
+  | a'4 g'4 a'2
 
-  %% m. 57
-  r4 a'4 f f 
-  g2 a4 bes4 
-  a4 a g4 g8 g 
+  %% m. 76 RESPUESTA
+  | r4 f'8 f'8 g'4 a'8 a'8
+  | f'4 g'8 g'4 f'8 e'4
 
-  %% m. 60
-  g4 fis g g 
-  r4 b4 c4. b8 
-  a4 gis8 gis a4 a 
-  r4 e8 e f4. e8 
-  d4 cis d2 
-
-  %% m. 65
-  r4 f8 g a4. a8 
-  bes4 g f f 
-  g2 a4 a 
-  a4 g a2 
-
-  %% m. 69 RESPUESTA
-  r4 f8 f g4 a8 a 
-  f4 g8 g4 f8 e4 	
-  fis1 
+  % m. 78
+  | fis'1
 }
 
-MusicCoplasAI = \relative c' {
-  \DoubleMark{}{}
-  %% m. 57
-  R1*12 
+MusicCoplasAI = {
+  \SectionBreak
+  % m. 64
+  \MeterDuple
+  | R1*12
 
-  %% m. 69 RESPUESTA
-  r4 d8 d d4 f8 f 
-  d4 e8 cis4 d8 cis4 
-  d1 
+  %% m. 76 RESPUESTA
+  | r4 d'8 d'8 d'4 f'8 f'8
+  | d'4 e'8 cis'4 d'8 cis'4
+
+  % m. 78
+  | d'1
 }
 
-MusicCoplasTI = \relative c {
-  \DoubleMark{}{}
-  %% m. 57
-  R1*12 
+MusicCoplasTI = {
+  \SectionBreak
+  % m. 64
+  \MeterDuple
+  | R1*12
+  
+  %% m. 76 RESPUESTA
+  | r4 d8 d8 g4 f8 f8
+  | bes4 g8 a4 d8 a4
 
-  %% m. 69 RESPUESTA
-  r4 d8 d g4 f8 f 
-  bes4 g8 a4 d,8 a'4 
-  d1 
+  % m. 78
+  | d1
 }
 
-MusicCoplasAc = \relative c {
-  \DoubleMark{}{}
-  %% m. 57
-  d2 d'4. c8 
-  bes2 a4 g 
-  a4 a, b2 
+MusicCoplasAc = {
+  \SectionBreak
+  % m. 64
+  \MeterDuple
+  | d2 d'4. c'8
+  | bes2 a4 g4
+  | a4 a,4 b,2
+  | cis4 d4 g,2
+  | g,4 g4 a4. g8
+  | f4 e8 e8 f4. e8
 
-  %% m. 60
-  cis4 d g,2 
-  g4 g' a4. g8 
-  f4 e8 e f4. e8 
-  d4 cis8 cis d2 
-  g4 a d,2 
+  % m. 70
+  | d4 cis8 cis8 d2
+  | g4 a4 d2
+  | d4 d8 e8 f4. f8
+  | bes,4 c4 f,4 f4
+  | e4. d8 cis4 d4
+  | bes,2 a,2
 
-  %% m. 65
-  d4 d8 e f4. f8 
-  bes,4 c f, f' 
-  e4. d8 cis4 d 
-  bes2 a 
+  %% m. 76 RESPUESTA
+  | r8 d8 d4 g4 f8 f8
+  | bes4 g8 a4 d8 a4
 
-  %% m. 69 RESPUESTA
-  r8 d d4 g f8 f 
-  bes4 g8 a4 d,8 a'4 
-  d,1 
+  % m. 78
+  | d1
 }
 
-%%****************************************
-%% FIGURED BASS: BC COPLAS
-%%****************************************
+%%************************************
+%% FIGURES: COPLAS
+%%************************************
 
-FiguresCoplasAc = \figures {
-  \DoubleMark{}{}
-  %% m. 57
-  s1 
-  <6>2 s2 
-  s2 <6>2 
+FiguresCoplasAc = \figuremode {
+  \SectionBreak
+  % m. 64
+  \MeterDuple
+  | s1
+  | <6>2 s2
+  | s2 <6>2
+  | s1
+  | s1
+  | s1
 
-  %% m. 60
-  s1*7 
-  s2 <6>4 s4 
-
-  %% m. 69 RESPUESTA
-  <6>2 s2 
-  s1*3 
+  % m. 70
+  | s1
+  | s1
+  | s1
+  | s1
+  | s2 <6>4 s4
+  | <6>2 s2
 }
-
-
