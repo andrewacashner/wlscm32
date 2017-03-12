@@ -169,21 +169,42 @@
 \pageBreak
 \score {
   \header {
-    instrument = \markup \fontsize #4 { \column { 
-      \line { "Chorus II, Instrumental Bass" }
-      \line { "(bajón, bassoon, violoncello, etc.)" }
-      \vspace #2
-    } }
+    instrument = \markup \fontsize #4 { 
+      \column { 
+        \line { "Chorus II, Instrumental Bass" }
+        \line { "Bajón (bassoon), vihuela (violoncello), etc." }
+        \vspace #2
+      } 
+    }
   }
   <<
     \new Staff = "BII" 
     <<
-      \InstrumentName
-      \TwoLineName "BAJO II" "[inst.]"
-      ""
       \new Voice = "BII" {
         \compressMMRests { \combineMMRests { \MusicEstribilloBII } }
       }
+    >>
+  >>
+  \layout {
+    indent = 0.5\in
+    short-indent = 0\in
+  }
+}
+\pageBreak
+\score {
+  \header {
+    instrument = \markup \fontsize #4 { 
+      \column { 
+        \line { "Basso Continuo" } 
+        \line { "Organ, harp, bajón (bassoon), vihuela (violoncello), etc." }
+        \vspace #2 
+      } 
+    }
+  }
+  <<
+    \new Staff 
+    <<
+      \new Voice = "BII" { \MusicEstribilloAc }
     >>
   >>
   \layout {

@@ -244,6 +244,7 @@ MusicEstribilloSIii = {
 
   % m. 63
   | fis'1
+  \FinalBar
 }
 
 MusicEstribilloAI = {
@@ -330,6 +331,7 @@ MusicEstribilloAI = {
 
   % m. 63
   | d'1
+  \FinalBar
 }
 
 
@@ -417,6 +419,7 @@ MusicEstribilloTI = {
 
   % m. 63
   | d1
+  \FinalBar
 }
 
 %% CHORUS II
@@ -505,6 +508,7 @@ MusicEstribilloSII = {
   
   % m. 63
   | a'1
+  \FinalBar
 }
 
 MusicEstribilloAII = {
@@ -591,6 +595,7 @@ MusicEstribilloAII = {
   
   % m. 63
   | a1
+  \FinalBar
 }
 
 
@@ -679,6 +684,7 @@ MusicEstribilloTII = {
   
   % m. 63
   | fis1
+  \FinalBar
 }
 
 MusicEstribilloBII = {
@@ -854,6 +860,7 @@ MusicEstribilloAc = {
   
   % m. 63
   | d1
+  \FinalBar
 }
 
 %%**********************************
