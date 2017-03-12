@@ -765,6 +765,7 @@ MusicEstribilloBII = {
 
   % m. 63
   | d1
+  \FinalBar
 }
 
 %% Ac
