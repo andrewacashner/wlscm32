@@ -147,7 +147,7 @@ MusicEstribilloSIi = {
   | r2 d''4. c''8
   | bes'4. a'8 bes'4 bes'4
   | a'2 a'4 cis''4
-  | d''2 d''4 c''4
+  | d''2 d''4 d''4
 
   % m. 60
   | d''4 d''4 r2
@@ -708,7 +708,7 @@ MusicEstribilloBII = {
   | R1.
   | R1.
   | R1.
-  | r2 g,1\colorOne
+  | r2 a,1\colorOne
   | d1.
   | R1.
   | d2 a,2 b,2
