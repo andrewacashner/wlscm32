@@ -6,7 +6,7 @@
 %%*************************
 
 IncipitGlobal = {
-  \Compasillo
+  \MeterDuple
   \CantusMollis
 }
 
@@ -41,168 +41,221 @@ IncipitB = {
 
 MusicEstribilloSi = {
   \clef "treble"
-  \time 2/2
+  \MeterDuple
   \CantusMollis
   \Section "[ESTRIBILLO] a 4"
 
-  r4 d''4 g''8. a''16 g''4
-  r4 fis''4 bes''2~
-  bes''4 a''4 r4 f''4\CN
-  g''4 f''4 r8 f''8 f''8 f''8
-  %% m. 5
-  f''4( es''4) d''2
-  r4 f''8\sh f''8 g''2
-  fis''2 r4 fis''4
-  g''4. g''8 c''4 c''4
-  c''2 c''2
-  %% m. 10
-  R1
-  r2 r4 r8 f''8 
-  cis''8 bes'8\na cis''8 d''8 cis''8 bes'8\na cis''8 d''8
-  d''4 cis''4 r2
-  r2 r4 r8 bes''8
-  %% m. 15
-  fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
-  a''8 a''8 d''8 d''8  d''8 d''8 d''8 d''8
-  d''4 d''8 es''4 d''8 d''4
-  \MeterChangeCtoCZ
-  \time 3/2
-  d''1 r2
+  | r4 d''4 g''8. a''16 g''4
+  | r4 fis''4 bes''2~
+  | bes''4 a''4 r4 f''4\CN
+  | g''4 f''4 r8 f''8 f''8 f''8
+  | f''4( es''4) d''2
+  | r4 f''8\sh f''8 g''2
+  | fis''2 r4 fis''4
+  | g''4. g''8 c''4 c''4
+  | c''2 c''2
+  
+  % m. 10
+  | R1
+  | r2 r4 r8 f''8 
+  | cis''8 bes'8\na cis''8 d''8 cis''8 bes'8\na cis''8 d''8
+  | d''4 cis''4 r2
+  | r2 r4 r8 bes''8
+  | fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
+  | a''8 a''8 d''8 d''8  d''8 d''8 d''8 d''8
+  | d''4 d''8 es''4 d''8 d''4
+ 
+  % m. 18
+  \MeterTriple
+  | d''1 r2
+  | r2 bes''2 a''4( bes''4 
 
-  %% m. 19
-  \TempoSame
-  \time 6/2
-  r2 bes''2 a''4( bes''4 a''4 bes''4) g''4( bes''4) a''4( g''4)
-  %% m. 20
-  fis''2 g''2 r2 r1.
-  r2 bes''2 a''4( bes''4 a''4 bes''4) g''4( bes''4) a''4( g''4)
-  fis''2 g''2 r2 r1.
-  r2 g''2 f''4( g''4 f''4 g''4) es''4( g''4) f''4( es''4)
-  d''2 g'2 r2 r1.
-  %% m. 25
-  r2 g''2 f''4( g''4 f''4 g''4) es''4( g''4) f''4( es''4)
-  d''2 g'2 r2 r1.
-  r2 g''2 f''4( g''4 f''4 g''4) es''2 f''2
-  g''2\color g''2 a''1 g''2 g''2~
-  \noBreak
-  \TempoSame
-  \time 3/2
-  g''2 fis''1\endcolor
+  % m. 20
+  | a''4 bes''4) g''4( bes''4) a''4( g''4)
+  | fis''2 g''2 r2 
+  | r1.
+  | r2 bes''2 a''4( bes''4 
+  | a''4 bes''4) g''4( bes''4) a''4( g''4)
+  | fis''2 g''2 r2 
+  | r1.
+  | r2 g''2 f''4( g''4 
+  | f''4 g''4) es''4( g''4) f''4( es''4)
+  | d''2 g'2 r2 
 
-  %% m. 30
-  \TempoSame
-  \time 6/2
-  r2 r2 d''2 f''2 e''2\fl d''2 
-  es''1. d''1.~\color
-  d''2 c''1 bes'2 g''2 g''2~
-  g''2 fis''2 e''2\endcolor fis''1.\sh
-  g''1. r2 f''2\color f''2~
-  %% m. 35
-  f''2 e''2 f''2 g''2 d''1
-  r2 g''2 g''1 fis''2 e''2 
-  fis''2 g''1. fis''1\sh\endcolor
+  % m. 30
+  | R1.
+  | r2 g''2 f''4( g''4 
+  | f''4 g''4) es''4( g''4) f''4( es''4)
+  | d''2 g'2 r2 
+  | R1.
+  | r2 g''2 f''4( g''4 
+  | f''4 g''4) es''2 f''2
+  | g''2\color g''2 a''2~
+  | a''2 g''2 g''2~
+  | g''2 fis''1\endcolor
 
-  %% m. 38
+  % m. 40
+  | r2 r2 d''2 
+  | f''2 e''2\fl d''2 
+  | es''1. 
+  | d''1.~\color
+  | d''2 c''1 
+  | bes'2 g''2 g''2~
+  | g''2 fis''2 e''2\endcolor 
+  | fis''1.\sh
+  | g''1. 
+  | r2 f''2\color f''2~
+
+  % m. 50
+  | f''2 e''2 f''2 
+  | g''2 d''1
+  | r2 g''2 g''2~
+  | g''2 fis''2 e''2 
+  | fis''2 g''1~
+  | g''2 fis''1\sh\endcolor
+ 
+  % m. 56 
   \tempo "a espacio [more slowly]"
-  R\breve.*2
+  | R1.
+  | R1.
+  | R1.
+  | R1.
 
-  %% m 40
-  r1. r2 r2 a''2 
-  f''2 f''2 f''2 fis''1.
-  g''2 g''2 g''2 r2 f''2 f''2
-  r2 es''1\colorOne r2 d''1\colorOne
-  R\breve.
-%  \noBreak 	%% because EdBrac doesn't work right first thing on page
-  %% m. 45
-  r1. r2 r2 a''2
-  f''2 f''2 f''2 fis''1.
-  g''1. r2 c''2 c''2
-  r2 bes'2 bes'2 r2 a'1\colorOne
-  r2 d''2 d''2 r2 c''1\colorOne
-  %% m. 50
-  \TempoSame
-  \time 3/2
-  r2 bes'1\colorOne\fermata
-  \RepeatMsg "[Fine]"
+  % m. 60
+  | R1. 
+  | r2 r2 a''2 
+  | f''2 f''2 f''2 
+  | fis''1.
+  | g''2 g''2 g''2 
+  | r2 f''2 f''2
+  | r2 es''1\colorOne 
+  | r2 d''1\colorOne
+  | R1.
+  | R1.
+
+  % m. 70
+  | R1. 
+  | r2 r2 a''2
+  | f''2 f''2 f''2 
+  | fis''1.
+  | g''1. 
+  | r2 c''2 c''2
+  | r2 bes'2 bes'2 
+  | r2 a'1\colorOne
+  | r2 d''2 d''2 
+  | r2 c''1\colorOne
+
+  % m. 80
+  | r2 bes'1\colorOne\fermata
+  \Fine
   \FinalBar
-  \break
 }
 %%***************************************
 MusicEstribilloSii = {
   \clef "treble"
-  \time 2/2
+  \MeterDuple
   \CantusMollis
 
-  r2 r4 d''4
-  d''8. c''16 d''4 r4 f''4\na
-  f''4 f''4 r4 d''4
-  c''4 c''4 d''4 d''4
-  %% m. 5
-  c''8[ d''8 c''8 bes'8] a'2
-  r4 d''8 d''8 d''4( c''4)
-  d''2 r2
-  d''4 g''4 r8 g''8 f''8 f''8 
-  f''4( e''4) f''2
-  %% m. 10
-  r2 r4 r8 a''8
-  a''8 g''8 g''8 f''8 e''8 g''8 g''8 f''8
-  e''4 a'4 a'4. a'8 
-  a'4 a'4 r4 r8 d''8 
-  d''8 c''8 c''8 bes'8 a'8 c''8 c''8 bes'8
-  %% m. 15
-  a'4 d''4 r4 r8 bes''8 
-  fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
-  fis''4 g''8 g''4 g''8 fis''4
-  \time 3/2
-  g''1 r2
+  | r2 r4 d''4
+  | d''8. c''16 d''4 r4 f''4\na
+  | f''4 f''4 r4 d''4
+  | c''4 c''4 d''4 d''4
+  | c''8[ d''8 c''8 bes'8] a'2
+  | r4 d''8 d''8 d''4( c''4)
+  | d''2 r2
+  | d''4 g''4 r8 g''8 f''8 f''8 
+  | f''4( e''4) f''2
+  
+  % m. 10
+  | r2 r4 r8 a''8
+  | a''8 g''8 g''8 f''8 e''8 g''8 g''8 f''8
+  | e''4 a'4 a'4. a'8 
+  | a'4 a'4 r4 r8 d''8 
+  | d''8 c''8 c''8 bes'8 a'8 c''8 c''8 bes'8
+  | a'4 d''4 r4 r8 bes''8 
+  | fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
+  | fis''4 g''8 g''4 g''8 fis''4
+ 
+  % m. 18
+  \MeterTriple
+  | g''1 r2
+  | R1.
 
-  %% m. 19
-  \time 6/2
-  R\breve.
-  %% m. 20
-  r2 d''2 c''4( d''4 c''4 d''4) bes'4( d''4) c''4( bes'4)
-  a'2 bes'2 r2 r1.
-  r2 d''2 c''4( d''4 c''4 d''4) bes'4( d''4) c''4( bes'4)
-  a'2 bes'2 r2 r1.
-  r2 g''2 f''4( g''4 f''4 g''4) es''4( g''4) f''4( es''4)
-  %% m. 25
-  d''2 g'2 r2 r1. 
-  r2 es''2 d''4( es''4 d''4 es''4) c''4( es''4) d''4( c''4)
-  b'2 c''2 r2 r2 e''2\fl d''4( e''4
-  d''4 e''4\fl) c''2\color c''1\endcolor bes'4( c''4) d''4( e''4\fl)
-  \time 3/2
-  d''2\color d''1\endcolor
+  % m. 20
+  | R1. 
+  | r2 d''2 c''4( d''4 
+  | c''4 d''4) bes'4( d''4) c''4( bes'4)
+  | a'2 bes'2 r2 
+  | r1.
+  | r2 d''2 c''4( d''4 
+  | c''4 d''4) bes'4( d''4) c''4( bes'4)
+  | a'2 bes'2 r2 
+  | r1.
+  | r2 g''2 f''4( g''4 
 
-  %% m. 30
-  \time 6/2
-  R\breve.
-  r2 g''2\color g''1 fis''2 e''2\endcolor
-  f''1.\sh g''2 r2 r2 
-  r1. r2 r2 c''2
-  es''2 d''2 c''2 d''1.
-  %% m. 35
-  g''1. r2 f''2\color f''2~
-  f''2 e''2 d''2\endcolor e''1.
-  d''\breve.
+  % m. 30
+  | f''4 g''4) es''4( g''4) f''4( es''4)
+  | d''2 g'2 r2 
+  | R1. 
+  | r2 es''2 d''4( es''4 
+  | d''4 es''4) c''4( es''4) d''4( c''4)
+  | b'2 c''2 r2 
+  | r2 e''2\fl d''4( e''4
+  | d''4 e''4\fl) c''2\color c''2~
+  | c''2\endcolor bes'4( c''4) d''4( e''4\fl)
+  | d''2\color d''1\endcolor
 
-  %% m. 38
-  R\breve.
-  r1. r2 g''2 g''2
-  %% m. 40
-  r2 f''2 f''2 r2 es''1\colorOne
-  r2 d''1\colorOne r1.
-  r1. r2 d''2 d''2
-  r2 c''2 c''2 r2 bes'1\colorOne
-  r2 a'2. a'4 bes'2\na\CN bes'2 bes'2
-  %% m. 45
-  bes'1.\na c''1.
-  r1. r2 c''2 c''2
-  r2 bes'2 bes'2 r2 a'1\colorOne
-  r2 d''1\colorOne r2 c''2 c''2
-  r2 bes'2 bes'2 r2 a'1\colorOne
-  %% m. 50
-  \time 3/2
-  r2 g'1\colorOne\fermata
+  % m. 40
+  | R1.
+  | R1.
+  | r2 g''2\color g''2~
+  | g''2 fis''2 e''2\endcolor
+  | f''1.\sh 
+  | g''2 r2 r2 
+  | r1. 
+  | r2 r2 c''2
+  | es''2 d''2 c''2 
+  | d''1.
+
+  % m. 50
+  | g''1. 
+  | r2 f''2\color f''2~
+  | f''2 e''2 d''2\endcolor 
+  | e''1.
+  | d''1.~
+  | d''1. 
+  | R1. 
+  | R1. 
+  | R1. 
+  | r2 g''2 g''2
+
+  % m. 60
+  | r2 f''2 f''2 
+  | r2 es''1\colorOne
+  | r2 d''1\colorOne 
+  | R1.
+  | R1. 
+  | r2 d''2 d''2
+  | r2 c''2 c''2 
+  | r2 bes'1\colorOne
+  | r2 a'2. a'4 
+  | bes'2\na\CN bes'2 bes'2
+
+  % m. 70
+  | bes'1.\na 
+  | c''1.
+  | R1. 
+  | r2 c''2 c''2
+  | r2 bes'2 bes'2 
+  | r2 a'1\colorOne
+  | r2 d''1\colorOne 
+  | r2 c''2 c''2
+  | r2 bes'2 bes'2 
+  | r2 a'1\colorOne
+
+  % m. 80
+  | r2 g'1\colorOne\fermata
+  \FinalBar
 }
 
 %%***************************************
@@ -673,7 +726,8 @@ MusicCoplaIIB = {
 %%***************************************
 
 MusicCoplasSi = {
-  \DoubleMark { \Section "COPLAS A 4" } { \MeterChangeCZtoC }
+  \SectionBreak
+  \Section "COPLAS a 4"
   \time 2/2
 
   \MusicCoplaISi
@@ -773,30 +827,4 @@ MusicCoplasB = {
   %% COPLA 6
   \MusicCoplaIB
 }
-
-%%***************************************************************************
-%% ALL TOGETHER
-%%***************************************************************************
-
-MusicSi = {
-  \MusicEstribilloSi
-  \MusicCoplasSi
-}
-MusicSii = {
-  \MusicEstribilloSii
-  \MusicCoplasSii
-}
-MusicA = {
-  \MusicEstribilloA
-  \MusicCoplasA
-}
-MusicT = {
-  \MusicEstribilloT
-  \MusicCoplasT
-}
-MusicB = {
-  \MusicEstribilloB
-  \MusicCoplasB
-}
-
 

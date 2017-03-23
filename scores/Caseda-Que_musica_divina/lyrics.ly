@@ -1,7 +1,7 @@
 %% CasedaJ, Que musica divina
 %% lyrics.ly
 
-LyricsSi = \lyricmode {
+LyricsEstribilloSi = \lyricmode {
   Qué mú -- si -- ca di -- vi -- na,
   a -- cor -- de y so -- be -- ra -- na, so -- be -- ra -- na,
   a -- fren -- ta de las a -- ves
@@ -21,7 +21,33 @@ LyricsSi = \lyricmode {
   po -- ten -- cias des -- ma -- ya,
   sen -- ti -- dos e -- le -- va,
   po -- ten -- cias des -- ma -- ya, des -- ma -- ya.
+}
 
+%%*************************
+LyricsEstribilloSii = \lyricmode {
+  Qué mú -- si -- ca di -- vi -- na,
+  a -- cor -- de~|y so -- be -- ra -- na, so -- be -- ra -- na,
+  a -- fren -- ta de las a -- ves
+  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, con -- so -- nan -- cias,
+  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, 
+  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, con -- so -- nan -- cias,
+  en quie -- bros __ su -- a -- ves,
+  so -- no -- ros __ y __ gra -- ves,
+  a -- cor -- des __ a -- cen -- tos 
+  o -- fre -- ce~a __ los __ vien -- tos,
+  o -- fre -- ce,~o -- fre -- ce~a __ los __ vien -- tos
+  y|~en cláu -- su -- las va -- rias,
+  y|~en cláu -- su -- las va -- rias,
+  y|~en cláu -- su -- las va -- rias,
+  po -- ten -- cias des -- ma -- ya,
+  po -- ten -- cias des -- ma -- ya,
+  po -- ten -- cias des -- ma -- ya,
+  po -- ten -- cias des -- ma -- ya,
+  po -- ten -- cias des -- ma -- ya.
+}
+
+
+LyricsCoplasSi = \lyricmode {
   %% COPLA 1
   \set stanza = #"1."
   Sue -- nen las dul -- ces cuer -- das,
@@ -62,28 +88,7 @@ LyricsSi = \lyricmode {
   de __ el al -- ma.
 }
 
-%%*************************
-LyricsSii = \lyricmode {
-  Qué mú -- si -- ca di -- vi -- na,
-  a -- cor -- de~|y so -- be -- ra -- na, so -- be -- ra -- na,
-  a -- fren -- ta de las a -- ves
-  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, con -- so -- nan -- cias,
-  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, 
-  con tier -- nas, ar -- mo -- nio -- sas con -- so -- nan -- cias, con -- so -- nan -- cias,
-  en quie -- bros __ su -- a -- ves,
-  so -- no -- ros __ y __ gra -- ves,
-  a -- cor -- des __ a -- cen -- tos 
-  o -- fre -- ce~a __ los __ vien -- tos,
-  o -- fre -- ce,~o -- fre -- ce~a __ los __ vien -- tos
-  y|~en cláu -- su -- las va -- rias,
-  y|~en cláu -- su -- las va -- rias,
-  y|~en cláu -- su -- las va -- rias,
-  po -- ten -- cias des -- ma -- ya,
-  po -- ten -- cias des -- ma -- ya,
-  po -- ten -- cias des -- ma -- ya,
-  po -- ten -- cias des -- ma -- ya,
-  po -- ten -- cias des -- ma -- ya.
-
+LyricsCoplasSii = \lyricmode {
   %% COPLA 1
   \set stanza = #"1."
   Sue -- nen las dul -- ces cuer -- das,
