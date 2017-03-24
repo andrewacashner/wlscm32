@@ -4,6 +4,8 @@
 
 %% EDITED BY ANDREW A. CASHNER
 
+%% TRANSPOSED EDITION
+
 %% 2017-03-23 Revised after peer review for WLSCM
 %% 2016-06-01 Revised for published edition
 %% 2015-03-24 Lilypond version for diss
@@ -37,11 +39,11 @@
       \new Staff = "Si"
       <<
 	\IncipitStaff "TIPLE 1" "Ti. 1" { \IncipitSi }
-	\new Voice = "Si" { 
+	\new Voice = "Si" { \transpose f c {
           \MusicEstribilloSi 
           \MusicCoplasSi
         }
-        \new Lyrics \lyricsto "Si" { 
+        } \new Lyrics \lyricsto "Si" { 
           \LyricsEstribilloSi 
           \LyricsCoplasSi
         }
@@ -49,10 +51,10 @@
       \new Staff = "Sii"
       <<
 	\IncipitStaff "TIPLE 2" "Ti. 2" { \IncipitSii }
-	\new Voice = "Sii" { 
+	\new Voice = "Sii" { \transpose f c {
           \MusicEstribilloSii 
           \MusicCoplasSii
-        }
+        } }
 	\new Lyrics \lyricsto "Sii" { 
           \LyricsEstribilloSii 
           \LyricsCoplasSii
@@ -61,10 +63,11 @@
       \new Staff = "A"
       <<
 	\IncipitStaff "ALTO" "A." { \IncipitA }
-	\new Voice = "A" { 
+	\new Voice = "A" { \transpose f c {
+          \clef "treble_8"
           \MusicEstribilloA 
           \MusicCoplasA
-        }
+        } }
 	\new Lyrics \lyricsto "A" { 
           \LyricsEstribilloA 
           \LyricsCoplasA
@@ -73,10 +76,11 @@
       \new Staff = "T"
       <<
 	\IncipitStaff "TENOR" "T." { \IncipitT }
-	\new Voice = "T" { 
+	\new Voice = "T" { \transpose f c {
+          \clef "bass"
           \MusicEstribilloT 
           \MusicCoplasT
-        }
+        } }
 	\new Lyrics \lyricsto "T" { 
           \LyricsEstribilloT 
           \LyricsCoplasT
@@ -87,10 +91,10 @@
     <<
       \IncipitStaff \TwoLineName "BAJO" "[instr.]"
       "B." { \IncipitB }
-      \new Voice = "B" { 
+      \new Voice = "B" { \transpose f c { 
         \MusicEstribilloB 
         \MusicCoplasB
-      }
+      } }
     >>
   >>
 }
