@@ -16,4 +16,5 @@
 
 ## Even more optional
 - Write keyboard reductions
+- Setup source to allow for performing parts
 - Create performing parts
