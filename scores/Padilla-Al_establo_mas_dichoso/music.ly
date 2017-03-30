@@ -5,8 +5,6 @@
 %% INCIPITS
 %%*******************
 
-IncipitGlobal = {}
-
 IncipitSi = {
   \MSclefGii
   \MeterCZ
@@ -33,13 +31,13 @@ IncipitBi = {
 
 IncipitSii = {
   \MSclefGii
-  \Compasillo
+  \MeterC
   c''1
 }
 
 IncipitAii = {
   \MSclefCii
-  \Compasillo
+  \MeterC
   c'2
 }
 
@@ -58,220 +56,387 @@ IncipitBii = {
 %%**************************************
 
 RestsArriero = {
-  R\breve.*11
+  R1.*22
 }
 
 %%*******************
 
 MusicSi = {
   \clef "treble"
-  \time 6/2
+  \MeterTriple
+
   \Section "[PROLOGUE] a 4"
-  c''2 c''1 c''2 c''1 
-  c''2\color c''1\endcolor c''1 c''2
-  b'2 b'1 c''2. c''4 c''2~\color 
-  c''2 c''1\endcolor c''1 c''2
-  r2 c''1 c''2 c''2 c''2~
-  c''2 b'2 b'2 a'2 a'2 c''2 
-  d''2 d''2 d''1 c''2 c''2
-  c''2(\color b'1)\endcolor c''1.\fermata   
+  | c''2 c''1 
+  | c''2 c''1 
+  | c''2\color c''1\endcolor 
+  | c''1 c''2
+  | b'2 b'1 
+  | c''2. c''4 c''2~\color 
+  | c''2 c''1\endcolor 
+  | c''1 c''2
+  | r2 c''1 
+
+  % m. 10
+  | c''2 c''2 c''2~
+  | c''2 b'2 b'2 
+  | a'2 a'2 c''2 
+  | d''2 d''2 d''2~
+  | d''2 c''2 c''2
+  | c''2(\color b'1)\endcolor 
+
+  % m. 16
+  | c''1.\fermata   
   \RepeatBarEnd
 
-  \break
-  \DoubleMark { \Section "[NUEVO TROYANO] Solo y a 4" } { \MeterChangeCZtoC }
-  \time 2/2
-  r4 a'8 b'8 c''4 c''4 
-  c''4 b'4 cis''2
-  r4 a'8 b'8 c''4 c''4
-  c''4 b'4 cis''2
-  r4 c''8 d''8 e''4 e''4 
-  e''4 d''4 e''4 e''4 
-  r4 b'8 c''8 d''4 d''4 
-  d''4. c''8 b'4 b'4
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4 
-  r4 b'8 c''8 d''4 d''4
-  d''4 d''4 d''4. d''8
-  d''4 e''4 f''4 e''4 
-  d''4 b'4 cis''4 cis''4
+  % m. 17
+  \Section "[NUEVO TROYANO] Solo y a 4"
+  \MeterDuple
+  | r4 a'8 b'8 c''4 c''4 
+  | c''4 b'4 cis''2
+  | r4 a'8 b'8 c''4 c''4
 
-  %% copla 2
-  R1*2
-  r4 a'8 b'8 c''4 c''4 
-  c''4 b'4 cis''4 cis''4
-  R1*6
-  r4 b'8 c''8 d''4 d''4 
-  d''4 d''4 d''4. d''8 
-  d''4 e''4 f''4 e''4 
-  d''4 b'4 cis''4 cis''4
+  % m. 20
+  | c''4 b'4 cis''2
+  | r4 c''8 d''8 e''4 e''4 
+  | e''4 d''4 e''4 e''4 
+  | r4 b'8 c''8 d''4 d''4 
+  | d''4. c''8 b'4 b'4
+  | b'4 b'4 c''8 b'8 a'4~
+  | a'4 gis'4 a'4 a'4 
+  | r4 b'8 c''8 d''4 d''4
+  | d''4 d''4 d''4. d''8
+  | d''4 e''4 f''4 e''4 
+  
+  % m. 30
+  | d''4 b'4 cis''4 cis''4
 
-  %% copla 3
-  r4 a'8 b'8 c''4 c''4
-  c''4 b'4 cis''4 cis''4
-  r4 a'8 b'8 c''4 c''4 
-  c''4 b'4 cis''4 cis''4 
-  r4 c''8 d''8 e''4 e''4 
-  e''4 d''4 e''4 e''4
-  r4 b'8 c''8 d''4 d''4 
-  d''4. c''8 b'4 b'4 
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4
-  r4 b'8 c''8 d''4 d''4
-  d''4 d''4 d''4. d''8
-  d''4 e''4 f''4 e''4 
-  d''4 b'4 cis''4 cis''4 
+  %% m. 31 Copla 2
+  | R1
+  | R1
+  | r4 a'8 b'8 c''4 c''4 
+  | c''4 b'4 cis''4 cis''4
+  | R1
+  | R1
+  | R1
+  | R1
+  | R1
 
+  % m. 40
+  | R1
+  | r4 b'8 c''8 d''4 d''4 
+  | d''4 d''4 d''4. d''8 
+  | d''4 e''4 f''4 e''4 
+  | d''4 b'4 cis''4 cis''4
 
-  \break
-  %% EL ARRIERO
+  %% m. 45 Copla 3
+  | r4 a'8 b'8 c''4 c''4
+  | c''4 b'4 cis''4 cis''4
+  | r4 a'8 b'8 c''4 c''4 
+  | c''4 b'4 cis''4 cis''4 
+  | r4 c''8 d''8 e''4 e''4 
+
+  % m. 50
+  | e''4 d''4 e''4 e''4
+  | r4 b'8 c''8 d''4 d''4 
+  | d''4. c''8 b'4 b'4 
+  | b'4 b'4 c''8 b'8 a'4~
+  | a'4 gis'4 a'4 a'4
+  | r4 b'8 c''8 d''4 d''4
+  | d''4 d''4 d''4. d''8
+  | d''4 e''4 f''4 e''4 
+  | d''4 b'4 cis''4 cis''4 
+
+  %% m. 59 EL ARRIERO
   \RepeatBarStart
-  \DoubleMark { \Section "[PROLOGUE a 4]" } { \MeterChangeCtoCZ }
-  \time 6/2
-  c''2 c''1 c''2 c''1 
-  c''2\color c''1\endcolor c''1 c''2 
-  b'2 b'1 c''2. c''4 c''2~\color
-  c''2 c''1\endcolor c''1 c''2 
-  r2 c''2 c''2 c''2\color c''2 c''2~
-  c''2 b'1\endcolor a'2 a'2 c''2 
-  d''2 d''2 d''1 c''2 c''2 
-  c''2\color b'1\endcolor c''1.\fermata 
+  \Section "[PROLOGUE a 4]" 
+  \MeterTriple
+  | c''2 c''1 
+
+  % m. 60
+  | c''2 c''1 
+  | c''2\color c''1\endcolor 
+  | c''1 c''2 
+  | b'2 b'1 
+  | c''2. c''4 c''2~\color
+  | c''2 c''1\endcolor 
+  | c''1 c''2 
+  | r2 c''2 c''2 
+  | c''2\color c''2 c''2~
+  | c''2 b'1\endcolor 
+
+  % m. 70
+  | a'2 a'2 c''2 
+  | d''2 d''2 d''2~
+  | d''2 c''2 c''2 
+  | c''2\color b'1\endcolor 
+
+  % m. 74
+  | c''1.\fermata 
 
   \RepeatBarEndStart
 
-  %% ARRIERO
+  %% m. 75 ARRIERO
   \Section "EL ARRIERO: RESPONSIÓN Dúo"
-  \RestsArriero
+  R1.*5
+
+  % m. 80
+  R1.*10
+
+  % m. 90
+  R1.*7
   \RepeatBarEnd
   
-  %% PAPALOTILLO
+  %% m. 97 PAPALOTILLO
   \DoubleMark
   { \IncludeGraphicsAbove "arriero-blocklyrics.eps"  }
   { \Section "PAPALOTILLO: SOLO" }
 
-  \HideTimeSignature \time 6/2
-  e''2 d''2 c''2 b'2 a'2 g'2
-  a'2 b'2 c''2 b'2 b'1 \noBreak
-  e''2 d''2 c''2 b'2 a'2 g'2
-  a'2 b'2 c''2 b'2 b'1
+  \HideTimeSignature \time 3/2
+  %\MeterTriple % XXX one or the other
+  | e''2 d''2 c''2 
+  | b'2 a'2 g'2
+  | a'2 b'2 c''2 
 
-  %% Responsion
+  % m. 100
+  | b'2 b'1 
+  | e''2 d''2 c''2 
+  | b'2 a'2 g'2
+  | a'2 b'2 c''2 
+  | b'2 b'1
+
+  %% m. 105 Responsion
   \Section "RESPONSIÓN a 4"
-  c''2 d''2 e''2 d''2 d''2. e''4 
-  f''2 f''2. e''4 d''2 d''1 
-  c''2 d''2 e''2 d''2 d''2. e''4 
-  f''2 f''2. e''4 d''2 d''1
+  | c''2 d''2 e''2 
+  | d''2 d''2. e''4 
+  | f''2 f''2. e''4 
+  | d''2 d''1 
+  | c''2 d''2 e''2 
 
-  %% Coplas
+  % m. 110
+  | d''2 d''2. e''4 
+  | f''2 f''2. e''4 
+  | d''2 d''1
+
+  %%  m. 113 Coplas
   \Section "COPLAS"
   \RepeatBarStart
   %% Si coplas 1, 3, 5
-  e''2 d''2 c''2 b'2 a'2 g'2
-  a'2 b'2 c''2 b'2\color b'1\endcolor
-  e''2 d''2 c''2 b'2 a'2 g'2
-  a'2 b'2 c''2 b'2\color b'1\endcolor
-  %% Ti coplas 2, 4, 6
-  R\breve.*4
+  | e''2 d''2 c''2 
+  | b'2 a'2 g'2
+  | a'2 b'2 c''2 
+  | b'2\color b'1\endcolor
+  | e''2 d''2 c''2 
+  | b'2 a'2 g'2
+  | a'2 b'2 c''2 
 
-  %% Responsion
+  % m. 120
+  | b'2\color b'1\endcolor
+  
+  %% m. 121 Ti coplas 2, 4, 6
+  | R1.*8
+
+  %% m. 129 Responsion
   \Section "RESPONSIÓN [reprise]"
-  c''2 d''2 e''2 d''2 d''2. e''4 
-  f''2 f''2. e''4 d''2 d''1 
-  c''2 d''2 e''2 d''2 d''2. e''4 
-  f''2 f''2. e''4 d''2 d''1
+  | c''2 d''2 e''2 
+
+  % m. 130
+  | d''2 d''2. e''4 
+  | f''2 f''2. e''4 
+  | d''2 d''1 
+  | c''2 d''2 e''2 
+  | d''2 d''2. e''4 
+  | f''2 f''2. e''4 
+  | d''2 d''1
 
   \RepeatBarEndStart
 
-  %% NEGRILLA
+  %% m. 137 NEGRILLA
   \Section "[PROLOGUE a 4]"
-  c''2 c''1 c''2 c''1 
-  c''2\color c''1\endcolor c''1 c''2
-  b'2 b'2 b'2 c''1\color c''2~
-  c''2 c''1\endcolor c''1 c''2
-  r2 c''1 c''2 c''2 c''2~
-  c''2 b'2 b'2 a'2 a'2 c''2 
-  d''2 d''2 d''1 c''2 c''2 
-  c''2\color b'1\endcolor c''1.\fermata 
+  | c''2 c''1 
+  | c''2 c''1 
+  | c''2\color c''1\endcolor 
+
+  % m. 140
+  | c''1 c''2
+  | b'2 b'2 b'2 
+  | c''1\color c''2~
+  | c''2 c''1\endcolor 
+  | c''1 c''2
+  | r2 c''1 
+  | c''2 c''2 c''2~
+  | c''2 b'2 b'2 
+  | a'2 a'2 c''2 
+  | d''2 d''2 d''2~
+
+  % m. 150
+  | d''2 c''2 c''2 
+  | c''2\color b'1\endcolor 
+  | c''1.\fermata 
   \RepeatBarEnd
 
+  % m. 153
   \Section "NEGRILLA: [INTRODUCCIÓN] Dúo y a 6"
-  r2 e''2 d''2 e''2. e''4 f''2~\color
-  f''2 e''1\endcolor d''1 d''2 
-  e''2. d''4 e''2 f''2\color d''1\endcolor 
-  e''2 cis''1 r2 c''2 b'2 
-  c''2. b'4 c''1\color d''1
-  e''2 cis''1\endcolor c''2 c''2 c''2 
-  b'1\color c''1 a'1\endcolor
-  b'1. r1.
-  R\breve.*8
-  r1. 
-  %% choral entrance turuturuyega
-  r2 e''2 f''2 
-  g''2 f''2 d''2 e''1.
-  R\breve.
-  r1. r2 d''2 d''2 
-  g''2 f''2 e''2 d''2 e''1 
-  d''2\color e''1\endcolor d''1.\fermata\CN % editorial
-  %% caya
-  r2 e''2 e''2 r2 f''2 f''2
-  r2 d''2 d''2 e''2\color f''1\endcolor
-  d''1 d''2 e''2 c''2 c''2 
-  d''2\color e''1\endcolor f''1.
-  e''2 r2 r2 r1.
-  R\breve.*4
-  %% Gloria 
+  | r2 e''2 d''2 
+  | e''2. e''4 f''2~\color
+  | f''2 e''1\endcolor 
+  | d''1 d''2 
+  | e''2. d''4 e''2 
+  | f''2\color d''1\endcolor 
+  | e''2 cis''1 
+
+  % m. 160
+  | r2 c''2 b'2 
+  | c''2. b'4 c''2~\color 
+  | c''2 d''1
+  | e''2 cis''1\endcolor 
+  | c''2 c''2 c''2 
+  | b'1\color c''2~
+  | c''2 a'1\endcolor
+  | b'1. 
+  | R1.
+  | R1.
+ 
+  % m. 170
+  | R1.*10
+
+  % m. 180
+  | R1.*6
+
+  %% m. 186 Choral entrance turuturuyega
+  | r2 e''2 f''2 
+  | g''2 f''2 d''2 
+  | e''1.
+  | R1.
+
+  % m. 190
+  | R1. 
+  | R1. 
+  | r2 d''2 d''2 
+  | g''2 f''2 e''2 
+  | d''2 e''1 
+  | d''2\color e''1\endcolor 
+  | d''1.\fermata\CN % editorial
+
+  %% m. 197 Caya
+  | r2 e''2 e''2 
+  | r2 f''2 f''2
+  | r2 d''2 d''2 
+
+  % m. 200
+  | e''2\color f''1\endcolor
+  | d''1 d''2 
+  | e''2 c''2 c''2 
+  | d''2\color e''1\endcolor 
+  | f''1.
+  | e''2 r2 r2 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+
+  % m. 210
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+
+  
+  %% m. 215 Gloria 
   \noBreak
   \Section "A 3"
-  e''2\color\CN e''1\endcolor a'2. b'4 \[ c''2~\color
-  c''2 b'1\endcolor \] a'2 c''2 c''2 
-  c''2\color b'1\endcolor c''2 c''2. b'4
-  a'2(\color b'1\endcolor a'1.)
-  \TempoSame
-  \time 3/2
+  e''2\color\CN e''1\endcolor 
+  a'2. b'4 \[ c''2~\color
+  c''2 b'1\endcolor \] 
+  a'2 c''2 c''2 
+  c''2\color b'1\endcolor 
+
+  % m. 220
+  c''2 c''2. b'4
+  a'2(\color b'1\endcolor 
+  a'1.)
   b'1.\fermata
 
-  \break
-  \DoubleMark { \Section "[ESTRIBILLO a 6]" } { \TempoSame }
-  \time 6/2
-  R\breve.*2
-  r1. r2 d''2 d''2 
-  g''2 f''2 e''2 d''2 e''1
-  d''2 e''1 d''2 g''2 f''2
-  e''2 d''2 e''2 f''2 f''1
-  e''2 d''1 d''2\color d''1\endcolor
-  \TempoSame
-  \time 3/2
-  e''1.\fermata
+  % m. 224 Estribillo
+  \Section "[ESTRIBILLO a 6]"
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1. 
+  | r2 d''2 d''2 
 
+  % m. 230
+  | g''2 f''2 e''2 
+  | d''2 e''1
+  | d''2 e''1 
+  | d''2 g''2 f''2
+  | e''2 d''2 e''2 
+  | f''2 f''1
+  | e''2 d''1 
+  | d''2\color d''1\endcolor
+  | e''1.\fermata
+
+  % m. 239
   \RepeatBarStart
-  \DoubleMark { \Section "COPLAS a 6" } { \TempoSame }
-  \time 6/2
-  R\breve.
-  r1.  r2 d''1 
-  e''2 r2 r2 r1.
-  r1. r2 d''1 
-  e''2 r2 r2 r1.
-  r1.	r2 d''1 
-  e''2 r2 r2 r1.
-  r1. r2 d''1 
-  e''2 r2 r2 r1.
-  r1. r2 d''1 
-  e''2 r2 r2 r1. 
-  r1. 
+  \Section "COPLAS a 6"
+  | R1.
 
+  % m. 240
+  | R1.
+  | R1.  
+  | r2 d''1 
+  | e''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 d''1 
+  | e''2 r2 r2 
+  | R1.
+  | R1.	
+
+  % m. 250
+  | r2 d''1 
+  | e''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 d''1 
+  | e''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 d''1 
+  | e''2 r2 r2 
+
+  % m. 260
+  | R1. 
+  | R1. 
+
+  % m. 262
   \Section "[ESTRIBILLO reprise]"
-  r1.
-  R\breve.*2
-  r2 d''2 d''2 g''2 f''2 e''2 
-  d''2 e''1 d''2 e''1 
-  d''2 g''2 f''2 e''2 d''2 e''2 
-  f''2 f''1 e''2 d''1 
-  d''2\color d''1\endcolor e''1.\fermata 
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | R1.
+  | r2 d''2 d''2 
+  | g''2 f''2 e''2 
+  | d''2 e''1 
+
+  % m. 270
+  | d''2 e''1 
+  | d''2 g''2 f''2 
+  | e''2 d''2 e''2 
+  | f''2 f''1 
+  | e''2 d''1 
+  | d''2\color d''1\endcolor 
+
+  % m. 276
+  | e''1.\fermata 
   \RepeatBarEnd
 }
 
 MusicAi = {
   \clef "treble"
-  \time 6/2
+  \MeterTriple
   %% Gk chorus
   g'2 g'1 g'2 g'1 
   a'2\color a'1\endcolor g'1 g'2
@@ -333,7 +498,7 @@ MusicAi = {
   g'1. g'1.\fermata 
   
   %% ARRIERO
-  \RestsArriero
+  R1.*22
 
   %% PAPALOTILLO
   \DoubleMark{}{}
@@ -478,7 +643,7 @@ MusicTi = {
   d'1. e'1.\fermata
 
   %% ARRIERO
-  \RestsArriero
+  R1.*22
 
   %% PAPALOTILLO
   \DoubleMark{}{}
@@ -636,7 +801,7 @@ MusicBi = {
 
 
   %% ARRIERO
-  \RestsArriero
+  R1.*22
 
   %% PAPALOTILLO
   \DoubleMark{}{}
@@ -784,7 +949,7 @@ RestsNegrillaAfterGloria = {
 MusicSii = {
   \clef "treble"
   \RestsBeforeArriero
-  \RestsArriero
+  R1.*22
   \RestsPapalotillo
   \RestsNegrillaBeforeGloria
 
@@ -801,7 +966,7 @@ MusicSii = {
 MusicAii = {
   \clef "treble"
   \RestsBeforeArriero
-  \RestsArriero
+  R1.*22
   \RestsPapalotillo
   \RestsNegrillaBeforeGloria
 
