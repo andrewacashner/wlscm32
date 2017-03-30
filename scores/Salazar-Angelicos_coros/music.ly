@@ -62,23 +62,24 @@ IncipitAc = {
 
 MusicEstribilloSIi = {
   \clef "treble"
-  \Section "ESTRIBILLO a 8"
-  
-  \CantusMollis
   \MeterTriple
+  \CantusMollis
 
-  r2 r2 f'2
+  \Section "ESTRIBILLO a 8"
+  | r2 r2 f'2
   | c''2. c''4 bes'2 
   | a'2. g'4 f'2
   | g'2 g'2 c''2 
   | c''1 c''2
-
-  | c''\breve\color c''1\endcolor
-
+  | c''1.~\color
+  | c''2 c''1\endcolor
   | c''2 r2 r2 
+  | R1. 
 
-  | R1. | R1.
-  | R1. | R1.
+  % m. 10
+  | R1.
+  | R1. 
+  | R1.
   | r2 r2 a'2
   | c''1 bes'2 
   | a'1 a'2
@@ -87,40 +88,48 @@ MusicEstribilloSIi = {
   | g'1 g'2 
   | a'2 g'2 bes'2
 
-  | a'2.\color bes'4 bes'1 a'2 a'2\endcolor
-
+  % m. 20
+  | a'2.\color bes'4 bes'2~
+  | bes'2 a'2 a'2\endcolor
   | bes'1. 
   | R1.
-
-  | r2 d''2\color d''1 d''2 d''2\endcolor
-
+  | r2 d''2\color d''2~
+  | d''2 d''2 d''2\endcolor
   | d''1 d''2 
   | g'2. a'4 bes'2
   | c''2. c''4 bes'2 
   | a'2. bes'4 c''2
+
+  % m. 30
   | bes'2\color f'1\endcolor 
   | r2 d''1\colorOne
   | c''\breve.
   | d''1. 
-
   | R1.
   | R1.
   | R1.
   | R1.
   | R1.
   | r2 r2 b'2 
+
+  % m. 40
   | g'2. g'4 c''2
   | c''2. c''4 c''2 
   | d''2. d''4 c''2
   | c''1 c''2 
 
-  \MeterChangeDuple
+  % m. 44
+  \MeterDuple
   | R1
   | r4 d''4 c''4. c''8 
   | bes'4. bes'8 a'4 bes'4 
   | g'4. g'8 g'2 
-  | R1 | R1
-  | R1 | R1
+  | R1 
+  | R1
+
+  % m. 50
+  | R1 
+  | R1
   | r4 r8 g'8 a'8 a'8 a'8 a'8 
   | a'4 bes'8 bes'8 bes'4 a'8 a'8 
   | f'2 r2 
@@ -129,6 +138,8 @@ MusicEstribilloSIi = {
   | c''4 d''4 bes'4 a'4 
   | f'4 r4 r4 a'4 
   | a'4 bes'4 g'4 fis'4 
+
+  % m. 60
   | g'4 r4 r4 bes'4 
   | g'4 a'4 g'4 g'4  
   | a'4 a'4 a'4 bes'8 bes'8 
@@ -136,9 +147,11 @@ MusicEstribilloSIi = {
   | bes'2 a'4 a'4  
   | g'2 r4 a'4 
   | d''2 c''4 c''4
+
+  % m. 67
   | c''1\fermata
-  \Fine
   \FinalBar
+  \Fine
   \pageBreak
 }
 
