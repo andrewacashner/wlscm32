@@ -1,7 +1,6 @@
 # To Do, 2017/03/30
 
-- Update source code (C3 meter, bar nums, etc.) for Salazar
-- Do same for Padilla, *Al establo*
+- Update source code (C3 meter, bar nums, etc.) for Padilla *Al establo*
 - Add lyric word extensions in all pieces
 - Check Cáseda notes & accidentals
 - Revise Cáseda critical notes with new bar numbers, etc.
