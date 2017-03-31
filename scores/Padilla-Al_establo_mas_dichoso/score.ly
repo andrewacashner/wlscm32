@@ -76,20 +76,20 @@
         \new Voice = "Aii" { \MusicAii }
         \new Lyrics = "Aii" \lyricsto "Aii" { \LyricsAllAii }
       >>
-%       \new Staff = "Tii"
-%       <<
-% 	\IncipitStaff "TENOR II" "T. II" { \IncipitTii }
-% 	\new Voice = "Tii" { \MusicTii }
-% 	\new Lyrics = "LineITii" \lyricsto "Tii" { \LyricsAllTii }
-%       >>
-%       \new Staff = "Bii"
-%       <<
-% 	\IncipitStaff
-% 	\TwoLineName "BASSUS II" "[instr.]" 
-% 	"B. II"
-% 	{ \IncipitBii }
-% 	\new Voice = "Bii" { \MusicBii }
-%       >>
+       \new Staff = "Tii"
+       <<
+ 	\IncipitStaff "TENOR II" "T. II" { \IncipitTii }
+ 	\new Voice = "Tii" { \MusicTii }
+ 	\new Lyrics = "LineITii" \lyricsto "Tii" { \LyricsAllTii }
+       >>
+       \new Staff = "Bii"
+       <<
+ 	\IncipitStaff
+ 	\TwoLineName "BASSUS II" "[instr.]" 
+ 	"B. II"
+ 	{ \IncipitBii }
+ 	\new Voice = "Bii" { \MusicBii }
+       >>
      >>
   >>
 }
