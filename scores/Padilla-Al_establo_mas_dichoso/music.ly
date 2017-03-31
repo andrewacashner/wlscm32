@@ -53,12 +53,6 @@ IncipitBii = {
   g1
 }
 
-%%**************************************
-
-RestsArriero = {
-  R1.*22
-}
-
 %%*******************
 
 MusicSi = {
@@ -83,8 +77,6 @@ MusicSi = {
   | d''2 d''2 d''2~
   | d''2 c''2 c''2
   | c''2(\color b'1)\endcolor 
-
-  % m. 16
   | c''1.\fermata   
   \RepeatBarEnd
 
@@ -169,8 +161,6 @@ MusicSi = {
   | d''2 d''2 d''2~
   | d''2 c''2 c''2 
   | c''2\color b'1\endcolor 
-
-  % m. 74
   | c''1.\fermata 
 
   \RepeatBarEndStart
@@ -437,312 +427,575 @@ MusicSi = {
 MusicAi = {
   \clef "treble"
   \MeterTriple
-  %% Gk chorus
-  g'2 g'1 g'2 g'1 
-  a'2\color a'1\endcolor g'1 g'2
-  g'2 g'1 g'2. g'4 a'2~\color
-  a'2 g'1\endcolor a'1 a'2
-  r2 a'1 g'2 g'2 a'2~
-  a'2 g'2. f'4 e'2 e'2 a'2
-  a'2 bes'1 g'2 g'2 g'2 
-  g'1. g'1.\fermata 
+  %% Prologue
+  | g'2 g'1 
+  | g'2 g'1 
+  | a'2\color a'1\endcolor 
+  | g'1 g'2
+  | g'2 g'1 
+  | g'2. g'4 a'2~\color
+  | a'2 g'1\endcolor 
+  | a'1 a'2
+  | r2 a'1 
+
+  % m. 10
+  | g'2 g'2 a'2~
+  | a'2 g'2. f'4 
+  | e'2 e'2 a'2
+  | a'2 bes'1 
+  | g'2 g'2 g'2 
+  | g'1. 
+  | g'1.\fermata 
   
-  %% COPLAS: SHEPHERDS
-  \DoubleMark{}{}
-  \time 2/2
-  R1*2
-  r4 a'8 a'8 a'4 a'4
-  a'4 gis'4 a'2
-  R1*6
-  r4 g'8 a'8 b'4 b'4 
-  b'4 a'4 b'4. b'8
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4 
+  %% m. 17 COPLAS: SHEPHERDS
+  \MeterDuple
+  | R1
+  | R1
+  | r4 a'8 a'8 a'4 a'4
 
-  %% copla 2
-  r4 a'8 a'8 e'4 a'4
-  a'4 gis'4 a'4 a'4
-  r4 a'8 a'8 e'4 a'4 
-  a'4 gis'4 a'4 a'4
-  r4 g'8 g'8 g'4 g'4 
-  g'4. f'8 e'4 e'4
-  r4 g'8 a'8 b'4 b'4 
-  b'4 a'4 b'4. b'8
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4
-  r4 g'8 a'8 b'4 b'4
-  b'4 a'4 b'4. b'8 
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4 
+  % m. 20
+  | a'4 gis'4 a'2
+  | R1
+  | R1
+  | R1
+  | R1
+  | R1
+  | R1
+  | r4 g'8 a'8 b'4 b'4 
+  | b'4 a'4 b'4. b'8
+  | b'4 b'4 c''8 b'8 a'4~
 
-  %% copla 3
-  R1*2
-  r4 a'8 a'8 a'4 a'4
-  a'4 gis'4 a'4 a'4 
-  R1*6
-  r4 g'8 a'8 b'4 b'4 
-  b'4 a'4 b'4. b'8
-  b'4 b'4 c''8 b'8 a'4~
-  a'4 gis'4 a'4 a'4 
+  % m. 30
+  | a'4 gis'4 a'4 a'4 
 
-  %% EL ARRIERO (Gk chorus)
-  \DoubleMark{}{}
-  \time 6/2
-  g'2 g'1 g'2 g'1 
-  a'2\color a'1\endcolor g'1 g'2
-  g'2 g'1 g'2. g'4 a'2~\color
-  a'2 g'1\endcolor a'1 a'2
-  r2 a'2 a'2 g'2\color g'2 a'2~
-  a'2 g'1\endcolor e'2 e'2 a'2
-  a'2 bes'1 g'2 g'2 g'2
-  g'1. g'1.\fermata 
+  %% m. 31 Copla 2
+  | r4 a'8 a'8 e'4 a'4
+  | a'4 gis'4 a'4 a'4
+  | r4 a'8 a'8 e'4 a'4 
+  | a'4 gis'4 a'4 a'4
+  | r4 g'8 g'8 g'4 g'4 
+  | g'4. f'8 e'4 e'4
+  | r4 g'8 a'8 b'4 b'4 
+  | b'4 a'4 b'4. b'8
+  | b'4 b'4 c''8 b'8 a'4~
+
+  % m. 40
+  | a'4 gis'4 a'4 a'4
+  | r4 g'8 a'8 b'4 b'4
+  | b'4 a'4 b'4. b'8 
+  | b'4 b'4 c''8 b'8 a'4~
+  | a'4 gis'4 a'4 a'4 
+
+  %% m. 45 Copla 3
+  | R1
+  | R1
+  | r4 a'8 a'8 a'4 a'4
+  | a'4 gis'4 a'4 a'4 
+  | R1
+
+  % m. 50
+  | R1
+  | R1
+  | R1
+  | R1
+  | R1
+  | r4 g'8 a'8 b'4 b'4 
+  | b'4 a'4 b'4. b'8
+  | b'4 b'4 c''8 b'8 a'4~
+  | a'4 gis'4 a'4 a'4 
+
+  %% m. 59 EL ARRIERO  Prologue
+  \MeterTriple
+  | g'2 g'1 
+
+  % m. 60
+  | g'2 g'1 
+  | a'2\color a'1\endcolor 
+  | g'1 g'2
+  | g'2 g'1 
+  | g'2. g'4 a'2~\color
+  | a'2 g'1\endcolor 
+  | a'1 a'2
+  | r2 a'2 a'2 
+  | g'2\color g'2 a'2~
+  | a'2 g'1\endcolor 
+
+  % m. 70
+  | e'2 e'2 a'2
+  | a'2 bes'1 
+  | g'2 g'2 g'2
+  | g'1. 
+  | g'1.\fermata 
   
-  %% ARRIERO
-  R1.*22
+  %% m. 75 ARRIERO
+  | R1.*5
 
-  %% PAPALOTILLO
+  % m. 80
+  | R1.*10
+
+  % m. 90
+  | R1.*7
+
+  %% m. 97 PAPALOTILLO
   \DoubleMark{}{}
-  \time 2/2
-  R\breve.*4
+  | R1.*3
 
-  %% Responsion
-  g'2 g'2 g'2 g'2 g'2 g'2 
-  a'2 b'2 c''2 b'2\color b'1\endcolor
-  g'2 g'2 g'2 g'2 g'2 g'2 
-  a'2 b'2 c''2 b'2\color b'1\endcolor
+  % m. 100
+  | R1.*5
 
-  %% Coplas
-  R\breve.*8
+  %% m. 105 Responsion
+  | g'2 g'2 g'2 
+  | g'2 g'2 g'2 
+  | a'2 b'2 c''2 
+  | b'2\color b'1\endcolor
+  | g'2 g'2 g'2 
+
+  % m. 110
+  | g'2 g'2 g'2 
+  | a'2 b'2 c''2 
+  | b'2\color b'1\endcolor
+
+  %% m. 113 Coplas
+  | R1.*7
+
+  % m. 120
+  | R1.*9
   
-  %% Responsion rep.
-  g'2 g'2 g'2 g'2 g'2 g'2 
-  a'2 b'2 c''2 b'2\color b'1\endcolor
-  g'2 g'2 g'2 g'2 g'2 g'2 
-  a'2 b'2 c''2 b'2\color b'1\endcolor
+  %% m. 129 Responsion rep.
+  | g'2 g'2 g'2 
 
-  %% NEGRILLA Gk chorus
-  g'2 g'1 g'2 g'1 
-  a'2\color a'1\endcolor g'1 g'2
-  g'2 g'2 g'2 g'1\color a'2~
-  a'2 g'1\endcolor a'1 a'2
-  r2 a'1 g'2 g'2 a'2~
-  a'2 g'2. f'4 e'2 e'2 a'2
-  a'2 bes'1 g'2 g'2 g'2 
-  g'1. g'1.\fermata
+  % m. 130
+  | g'2 g'2 g'2 
+  | a'2 b'2 c''2 
+  | b'2\color b'1\endcolor
+  | g'2 g'2 g'2 
+  | g'2 g'2 g'2 
+  | a'2 b'2 c''2 
+  | b'2\color b'1\endcolor
 
-  %% NEGRILLA duo
-  R\breve.*16
-  r1.
-  %% choral entrance turuturu
-  r2 c''2 c''2 
-  b'2 a'2 b'2 c''1.
-  R\breve.
-  r1. r2 b'2 b'2 
-  b'2 b'2 c''2 b'2 c''1
-  b'2\color c''1\endcolor b'1.\fermata
-  %% caya
-  R\breve.*9
-  %% Gloria
-  c'1 c'2 f'2\color a'1\endcolor
-  g'1. f'2 f'2. e'4
-  d'2 d'1 c'2 c'2 c'2 
-  f'2\color g'1\endcolor d'1.
-  \time 3/2
-  g'1.\fermata
+  %% m. 137 NEGRILLA Prologue
+  | g'2 g'1 
+  | g'2 g'1 
+  | a'2\color a'1\endcolor 
 
-  %% Estribillo
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*2
-  r1. r2 b'2 b'2
-  b'2 b'2 c''2 b'2 c''1
-  b'2 c''1 b'2 b'2 b'2
-  c''2 c''2 b'2 a'2 c''1
-  c''2 b'1 a'2\color b'1\endcolor
-  \time 3/2
-  g'1.\fermata
+  % m. 140
+  | g'1 g'2
+  | g'2 g'2 g'2 
+  | g'1\color a'2~
+  | a'2 g'1\endcolor 
+  | a'1 a'2
+  | r2 a'1 
+  | g'2 g'2 a'2~
+  | a'2 g'2. f'4 
+  | e'2 e'2 a'2
+  | a'2 bes'1 
 
-  %% Coplas
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.
-  r1. r2 b'1 
-  c''2 r2 r2 r1.
-  r1. r2 b'1 
-  c''2 r2 r2 r1.
-  r1. r2 b'1 
-  c''2 r2 r2 r1.
-  r1. r2 b'1
-  c''2 r2 r2 r1.
-  r1. r2 b'1 
-  c''2 r2 r2 r1.
-  r1.
+  % m. 150
+  | g'2 g'2 g'2 
+  | g'1. 
+  | g'1.\fermata
 
-  %% Estribillo
-  r1.
-  R\breve.*2
-  r2 b'2 b'2 b'2 b'2 c''2
-  b'2 c''1 b'2 c''1 
-  b'2 b'2 b'2 c''2 c''2 b'2
-  a'2 c''1 c''2 b'1
-  a'2\color b'1\endcolor g'1.\fermata
+  %% m. 153 NEGRILLA duo
+  | R1.*7
+
+  % m. 160
+  | R1.*10
+
+  % m. 170
+  | R1.*10
+
+  % m. 180
+  | R1.*6
+
+  %% m. 186 Choral entrance turuturu
+  | r2 c''2 c''2 
+  | b'2 a'2 b'2 
+  | c''1.
+  | R1.
+
+  % m. 190
+  | R1.
+  | R1. 
+  | r2 b'2 b'2 
+  | b'2 b'2 c''2 
+  | b'2 c''1
+  | b'2\color c''1\endcolor 
+  | b'1.\fermata
+ 
+  %% m. 197 Caya
+  | R1.*3
+
+  % m. 200
+  | R1.*10
+
+  % m. 210
+  | R1.*5
+
+  %% m. 215 Gloria
+  | c'1 c'2 
+  | f'2\color a'1\endcolor
+  | g'1. 
+  | f'2 f'2. e'4
+  | d'2 d'1 
+  | c'2 c'2 c'2 
+  | f'2\color g'1\endcolor 
+  | d'1.
+  | g'1.\fermata
+
+  %% m. 224 Estribillo
+  | R1.*5
+  | r2 b'2 b'2
+
+  % m. 230
+  | b'2 b'2 c''2 
+  | b'2 c''1
+  | b'2 c''1 
+  | b'2 b'2 b'2
+  | c''2 c''2 b'2 
+  | a'2 c''1
+  | c''2 b'1 
+  | a'2\color b'1\endcolor
+  | g'1.\fermata
+
+  %% m. 239 Coplas
+  | R1.
+
+  % m. 240
+  | R1.
+  | R1. 
+  | r2 b'1 
+  | c''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 b'1 
+  | c''2 r2 r2 
+  | R1.
+  | R1. 
+
+  % m. 250
+  | r2 b'1 
+  | c''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 b'1
+  | c''2 r2 r2 
+  | R1.
+  | R1. 
+  | r2 b'1 
+  | c''2 r2 r2 
+
+  % m. 260
+  | R1.
+  | R1.
+
+  %% m. 262 Estribillo
+  | R1.*5
+  | r2 b'2 b'2 
+  | b'2 b'2 c''2
+  | b'2 c''1 
+
+  % m. 270
+  | b'2 c''1 
+  | b'2 b'2 b'2 
+  | c''2 c''2 b'2
+  | a'2 c''1 
+  | c''2 b'1
+  | a'2\color b'1\endcolor 
+  | g'1.\fermata
 }
 
 MusicTi = {
   \clef "treble_8"
-  \time 6/2
-  e'2 e'1 e'2 e'1 
-  f'2\color f'1\endcolor e'1 e'2
-  d'2 d'1 e'2. e'4 f'2~\color
-  f'2 e'1\endcolor f'1 f'2
-  r2 f'1 e'2 e'2 f'2~ 
-  f'2 d'2 d'2 cis'2 cis'2 e'2
-  f'2 f'2 f'1 e'2 e'2
-  e'2 d'1 e'1.\fermata 
+  \MeterTriple
+  | e'2 e'1 
+  | e'2 e'1 
+  | f'2\color f'1\endcolor 
+  | e'1 e'2
+  | d'2 d'1 
+  | e'2. e'4 f'2~\color
+  | f'2 e'1\endcolor 
+  | f'1 f'2
+  | r2 f'1 
 
-  %% COPLAS: SHEPHERDS
+  % m. 10
+  | e'2 e'2 f'2~ 
+  | f'2 d'2 d'2 
+  | cis'2 cis'2 e'2
+  | f'2 f'2 f'2~
+  | f'2 e'2 e'2
+  | e'2 d'1 
+  | e'1.\fermata 
+
+  %% m. 17 COPLAS: SHEPHERDS
+  \MeterDuple
+  | R1
+  | R1
+  | r4 e'8 e'8 e'4 e'4 
+
+  % m. 20
+  | e'4 e'4 e'2
+  | R1*6
+  | r4 d'8 d'8 g'4 g'4 
+  | g'4 fis'4 g'4. g'8
+  | g'4 g'4 a'4. g'8 
+
+  % m. 30
+  | f'4 e'4 e'4 e'4
+
+  %% m. 31 Copla 2
+  | R1*2
+  | r4 e'8 e'8 e'4 e'4
+  | e'4 e'4 e'4 e'4
+  | R1*5
+
+  % m. 40
+  | R1
+  | r4 d'8 d'8 g'4 g'4 
+  | g'4 fis'4 g'4. g'8
+  | g'4 g'4 a'4. g'8 
+  | f'4 e'4 e'4 e'4
+  | R1
+  | R1
+  | r4 e'8 e'8 e'4 e'4
+  | e'4 e'4 e'4 e'4
+  | R1
+
+  % m. 50
+  | R1*5
+  | r4 d'8 d'8 g'4 g'4 
+  | g'4 fis'4 g'4. g'8
+  | g'4 g'4 a'4. g'8 
+  | f'4 e'4 e'4 e'4
+
+  %% m. 59 EL ARRIERO Prologue
+  \MeterTriple
+  | e'2 e'1 
+
+  % m. 60
+  | e'2 e'1
+  | f'2\color f'1\endcolor 
+  | e'1 e'2
+  | d'2 d'1 
+  | e'2. e'4 f'2~\color
+  | f'2 e'1\endcolor 
+  | f'1 f'2
+  | r2 f'2 f'2 
+  | e'2\color e'2 f'2~
+  | f'2 d'1\endcolor 
+
+  % m. 70
+  | cis'2 cis'2 e'2 
+  | f'2 f'2 f'2~
+  | f'2 e'2 e'2
+  | d'1. 
+  | e'1.\fermata
+
+  %% m. 75 ARRIERO
+  | R1.*5
+
+  % m. 80
+  | R1.*10
+
+  % m. 90
+  | R1.*7
+
+  %% m. 97 PAPALOTILLO
   \DoubleMark{}{}
-  \time 2/2
-  R1*2
-  r4 e'8 e'8 e'4 e'4 
-  e'4 e'4 e'2
-  R1*6
-  r4 d'8 d'8 g'4 g'4 
-  g'4 fis'4 g'4. g'8
-  g'4 g'4 a'4. g'8 
-  f'4 e'4 e'4 e'4
+  | R1.*3
 
-  %% copla 2
-  R1*2
-  r4 e'8 e'8 e'4 e'4
-  e'4 e'4 e'4 e'4
-  R1*6
-  r4 d'8 d'8 g'4 g'4 
-  g'4 fis'4 g'4. g'8
-  g'4 g'4 a'4. g'8 
-  f'4 e'4 e'4 e'4
-  R1*2
-  r4 e'8 e'8 e'4 e'4
-  e'4 e'4 e'4 e'4
-  R1*6
-  r4 d'8 d'8 g'4 g'4 
-  g'4 fis'4 g'4. g'8
-  g'4 g'4 a'4. g'8 
-  f'4 e'4 e'4 e'4
+  % m. 100
+  | R1.*5
 
-  %% EL ARRIERO (Gk chorus)
-  \DoubleMark{}{}
-  \time 6/2
-  e'2 e'1 e'2 e'1
-  f'2\color f'1\endcolor e'1 e'2
-  d'2 d'1 e'2. e'4 f'2~\color
-  f'2 e'1\endcolor f'1 f'2
-  r2 f'2 f'2 e'2\color e'2 f'2~
-  f'2 d'1\endcolor cis'2 cis'2 e'2 
-  f'2 f'2 f'1 e'2 e'2
-  d'1. e'1.\fermata
+  %% m. 105 Responsion
+  | e'2 d'2 c'2 
+  | b2 b2 b2 
+  | c'2 c'2 c'2 
+  | g'1 g'2
+  | e'2 d'2 c'2 
 
-  %% ARRIERO
-  R1.*22
+  % m. 110
+  | b2 b2 b2
+  | c'2 c'2 c'2 
+  | g'1 g'2
 
-  %% PAPALOTILLO
-  \DoubleMark{}{}
-  R\breve.*4
+  %% m. 113 Coplas 1, 3, 5
+  | R1.*7
 
-  %% Responsion
-  e'2 d'2 c'2 b2 b2 b2 
-  c'2 c'2 c'2 g'1 g'2
-  e'2 d'2 c'2 b2 b2 b2
-  c'2 c'2 c'2 g'1 g'2
+  % m. 120
+  | R1.
 
-  %% Coplas 1, 3, 5
-  R\breve.*4
-  %% Coplas 2, 4, 6
-  e'2 d'2 c'2 d'2 d'2 e'2 
-  f'2 f'2. e'4 d'1 d'2
-  e'2 d'2 c'2 d'2 d'2 e'2 
-  f'2 f'2. e'4 d'1 d'2
+  %% m. 121 Coplas 2, 4, 6
+  | e'2 d'2 c'2 
+  | d'2 d'2 e'2 
+  | f'2 f'2. e'4 
+  | d'1 d'2
+  | e'2 d'2 c'2 
+  | d'2 d'2 e'2 
+  | f'2 f'2. e'4 
+  | d'1 d'2
 
-  %% Responsion rep.
-  e'2 d'2 c'2 b2 b2 b2 
-  c'2 c'2 c'2 g'2 g'1
-  e'2 d'2 c'2 b2 b2 b2
-  c'2 c'2 c'2 g'2 g'1
+  %% m. 129 Responsion rep.
+  | e'2 d'2 c'2 
 
-  %% NEGRILLA Gk chorus
-  e'2 e'1 e'2 e'1 
-  f'2\color f'1\endcolor e'1 e'2
-  d'2 d'2 d'2 e'1\color f'2~
-  f'2 e'1\endcolor f'1 f'2
-  r2 f'1 e'2 e'2 f'2~
-  f'2 d'2 d'2 cis'2 cis'2 e'2
-  f'2 f'2 f'2 f'2\color e'1\endcolor
-  d'1. e'1.\fermata
+  % m. 130
+  | b2 b2 b2 
+  | c'2 c'2 c'2 
+  | g'2 g'1
+  | e'2 d'2 c'2 
+  | b2 b2 b2
+  | c'2 c'2 c'2 
+  | g'2 g'1
 
-  %% NEGRILLA Duo
-  R\breve.*7
-  r1. r2 g'1 
-  e'2 a'1 f'2 f'1 
-  e'2. d'4 c'2 d'2 e'1 
-  f'2 f'2 a'2 g'2 f'2 e'2 
-  d'2\color c'1\endcolor g'1 g'2 
-  r2 g'2 f'2 e'1 g'2 
-  f'2 f'1 e'2 d'1 
-  r2 d'2 d'2 e'1 d'2 
-  e'2 f'1 d'2 r2 r2 
-  r1.
-  %% choral entrance turuturuyega
-  r2 e'2 e'2 
-  e'2 a2 d'2 c'1. 
-  R\breve.
-  r1.  r2 d'1\colorOne 
-  e'1.  r2 c'1\color 
-  d'2 c'1\endcolor d'1.\fermata
-  %% caya
-  R\breve.*9
-  %% gloria
-  R\breve.*4
-  \time 3/2
-  R1.
+  %% m. 137 NEGRILLA Prologue
+  | e'2 e'1 
+  | e'2 e'1 
+  | f'2\color f'1\endcolor 
 
-  %% Estribillo
-  \DoubleMark{}{}
-  \time 6/2
-  g'2 f'2 f'2 e'2 c'2 d'2 
-  e'2 d'2 c'2 d'2 e'1
-  d'2 e'1 d'2 g'1
-  g'1. r2 g'1
-  g'\breve. 
-  r2 g'2 g'2 f'2 a'2 a'2 
-  g'1. r2 d'1\colorOne 
-  \time 3/2
-  c'1.\fermata
+  % m. 140
+  | e'1 e'2
+  | d'2 d'2 d'2 
+  | e'1\color f'2~
+  | f'2 e'1\endcolor 
+  | f'1 f'2
+  | r2 f'1 
+  | e'2 e'2 f'2~
+  | f'2 d'2 d'2 
+  | cis'2 cis'2 e'2
+  | f'2 f'2 f'2 
 
-  %% Coplas
-  \DoubleMark{}{}
-  \time 6/2
-  r2 e'2 f'2 g'2 f'2 f'2 
-  e'2\color d'1\endcolor r2 d'1\colorOne 
-  c'2 r2 r2 r1.
-  r1.  r2 g'1 
-  e'2 e'2 f'2 g'2 f'2 f'2 
-  e'2\color d'1\endcolor r2 d'1\colorOne
-  c'2 r2 r2 r1. 
-  r1.  r2 g'1 
-  e'2 e'2 f'2 g'2 f'2 f'2 
-  e'2 d'1 r2 d'1\colorOne 
-  c'2 r2 r2 r1.
-  r1. 
-  %% Estribillo rep.
-  g'2 f'2 f'2 
-  e'2 c'2 d'2 e'2 d'2 c'2 
-  d'2 e'1 d'2 e'1
-  d'2 g'1 g'1.
-  r2 g'1 g'1.~
-  g'1. r2 g'2 g'2
-  f'2 a'2 a'2 g'1.
-  r2 d'1\colorOne
-  c'1.\fermata
+  % m. 150
+  | f'2\color e'1\endcolor
+  | d'1. 
+  | e'1.\fermata
+
+  %% m. 153 NEGRILLA Duo
+  | R1.*7
+
+  % m. 160
+  | R1.*8
+  | r2 g'1 
+  | e'2 a'1 
+
+  % m. 170
+  | f'2 f'1 
+  | e'2. d'4 c'2 
+  | d'2 e'1 
+  | f'2 f'2 a'2 
+  | g'2 f'2 e'2 
+  | d'2\color c'1\endcolor 
+  | g'1 g'2 
+  | r2 g'2 f'2 
+  | e'1 g'2 
+  | f'2 f'1 
+
+  % m. 180
+  | e'2 d'1 
+  | r2 d'2 d'2 
+  | e'1 d'2 
+  | e'2 f'1 
+  | d'2 r2 r2 
+  | R1.
+  
+  %% m. 186 Choral entrance turuturuyega
+  | r2 e'2 e'2 
+  | e'2 a2 d'2 
+  | c'1. 
+  | R1.
+
+  % m. 190
+  | R1.
+  | R1.  
+  | r2 d'1\colorOne 
+  | e'1.  
+  | r2 c'1\color 
+  | d'2 c'1\endcolor 
+  | d'1.\fermata
+ 
+  %% m. 197 Caya
+  | R1.*3
+
+  % m. 200
+  | R1.*10
+
+  % m. 210
+  | R1.*5
+  
+  %% m. 215 Gloria
+  | R1.*5
+
+  % m. 220
+  | R1.*4
+
+  %% m. 224 Estribillo
+  | g'2 f'2 f'2 
+  | e'2 c'2 d'2 
+  | e'2 d'2 c'2 
+  | d'2 e'1
+  | d'2 e'1 
+  | d'2 g'1
+
+  % m. 230
+  | g'1. 
+  | r2 g'1
+  | g'1.~
+  | g'1.
+  | r2 g'2 g'2 
+  | f'2 a'2 a'2 
+  | g'1. 
+  | r2 d'1\colorOne 
+  | c'1.\fermata
+
+  %% m. 239 Coplas
+  | r2 e'2 f'2 
+
+  % m. 240
+  | g'2 f'2 f'2 
+  | e'2\color d'1\endcolor 
+  | r2 d'1\colorOne 
+  | c'2 r2 r2 
+  | R1.
+  | R1.  
+  | r2 g'1 
+  | e'2 e'2 f'2 
+  | g'2 f'2 f'2 
+  | e'2\color d'1\endcolor 
+
+  % m. 250
+  | r2 d'1\colorOne
+  | c'2 r2 r2 
+  | R1. 
+  | R1.  
+  | r2 g'1 
+  | e'2 e'2 f'2 
+  | g'2 f'2 f'2 
+  | e'2 d'1 
+  | r2 d'1\colorOne 
+  | c'2 r2 r2 
+
+  % m. 260
+  | R1.
+  | R1. 
+
+  %% m. 262 Estribillo rep.
+  | g'2 f'2 f'2 
+  | e'2 c'2 d'2 
+  | e'2 d'2 c'2 
+  | d'2 e'1 
+  | d'2 e'1
+  | d'2 g'1 
+  | g'1.
+  | r2 g'1 
+
+  % m. 270
+  | g'1.~
+  | g'1. 
+  | r2 g'2 g'2
+  | f'2 a'2 a'2 
+  | g'1.
+  | r2 d'1\colorOne
+
+  % m. 276
+  | c'1.\fermata
 }
 
 MusicIntroCoplasShepherdsBi = {
@@ -908,40 +1161,34 @@ MusicBi = {
 %%*******************
 
 RestsBeforeArriero = {
-  \time 6/2
-  %% GK CHORUS
-  R\breve.*8
+  \MeterTriple
+  %% Prologue
+  | R1.*16
   
   %% SHEPHERDS
-  \DoubleMark{}{}
-  \time 2/2
-  R1*42
+  \MeterDuple
+  | R1*42
 
-  %% GK CHORUS
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*8
+  %% Arriero prologue
+  \MeterTriple
+  | R1.*16
+}
+
+RestsArriero = {
+  | R1.*22
 }
 
 RestsPapalotillo = {
   \DoubleMark{}{}
-  \HideTimeSignature \time 6/2
-  R\breve.*20
+  | R1.*40
 }
 
 RestsNegrillaBeforeGloria = {
-  R\breve.*39
+  | R1.*78
 }
 
 RestsNegrillaAfterGloria = {
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*7
-  \time 3/2
-  R1.
-  \DoubleMark{}{}
-  \time 6/2
-  R\breve.*19
+  R1.*53
 }
 
 %%*******************
@@ -949,34 +1196,48 @@ RestsNegrillaAfterGloria = {
 MusicSii = {
   \clef "treble"
   \RestsBeforeArriero
-  R1.*22
+  \RestsArriero
   \RestsPapalotillo
   \RestsNegrillaBeforeGloria
 
-  %% GLORIA
-  c''1.	c''1.
-  d''1. f''2. f''2.
-  f''1. e''2. e''4. e''4.
-  d''1. d''1.
-  \time 3/2
-  d''1.\fermata
+  %% m. 215 GLORIA
+  | c''1.	
+  | c''1.
+  | d''1. 
+  | f''2. f''2.
+  | f''1. 
+
+  % m. 220
+  | e''2. e''4. e''4.
+  | d''1. 
+  | d''1.
+  | d''1.\fermata
+
   \RestsNegrillaAfterGloria
 }
 
 MusicAii = {
   \clef "treble"
   \RestsBeforeArriero
-  R1.*22
+  \RestsArriero
   \RestsPapalotillo
   \RestsNegrillaBeforeGloria
 
-  %% GLORIA
-  c'2. c'2. f'2. a'2.
-  g'1. f'2.~ f'4. e'4.
-  d'1. c'2. c'4. c'4.
-  f'2. g'2.  d'1.
-  \time 3/2
+  %% m. 215 GLORIA
+  c'2. 
+  c'2. 
+  f'2. 
+  a'2.
+  g'1. 
+
+  % m. 220
+  f'2.~ f'4. e'4.
+  d'1. 
+  c'2. c'4. c'4.
+  f'2. g'2.  
+  d'1.
   g'1.\fermata
+  
   \RestsNegrillaAfterGloria
 }
 
