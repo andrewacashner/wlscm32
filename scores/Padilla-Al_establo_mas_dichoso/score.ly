@@ -52,21 +52,15 @@
  	\new Voice = "Ti" { \MusicTi }
  	\new Lyrics = "LineITi" \lyricsto "Ti" { \LyricsAllTi }
        >>
+      \new Staff = "Bi"
+       <<
+ 	\IncipitStaff
+ 	\TwoLineName "BASSUS I" "[instr.]" 
+ 	"B. I"
+ 	{ \IncipitBi }
+ 	\new Voice = "Bi" { \MusicBi }
+       >>
      >>
-%       \new Staff = "Tii"
-%       <<
-% 	\IncipitStaff "TENOR II" "T. II" { \IncipitTii }
-% 	\new Voice = "Tii" { \MusicTii }
-% 	\new Lyrics = "LineITii" \lyricsto "Tii" { \LyricsAllTii }
-%       >>
-%       \new Staff = "Bi"
-%       <<
-% 	\IncipitStaff
-% 	\TwoLineName "BASSUS I" "[instr.]" 
-% 	"B. I"
-% 	{ \IncipitBi }
-% 	\new Voice = "Bi" { \MusicBi }
-%       >>
     \new ChoirStaff
     <<
       \ChoirStaffName "CHORUS II"
@@ -82,6 +76,12 @@
         \new Voice = "Aii" { \MusicAii }
         \new Lyrics = "Aii" \lyricsto "Aii" { \LyricsAllAii }
       >>
+%       \new Staff = "Tii"
+%       <<
+% 	\IncipitStaff "TENOR II" "T. II" { \IncipitTii }
+% 	\new Voice = "Tii" { \MusicTii }
+% 	\new Lyrics = "LineITii" \lyricsto "Tii" { \LyricsAllTii }
+%       >>
 %       \new Staff = "Bii"
 %       <<
 % 	\IncipitStaff
