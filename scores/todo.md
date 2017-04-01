@@ -2,6 +2,7 @@
 
 - Update source code (C3 meter, bar nums, etc.) for Padilla *Al establo*
 - Add lyric word extensions in all pieces
+- Check page turns for all pieces
 - Check Cáseda notes & accidentals
 - Revise Cáseda critical notes with new bar numbers, etc.
 - Correct & expand editor's introduction
