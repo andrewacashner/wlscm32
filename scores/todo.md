@@ -25,3 +25,6 @@
 
 - Cáseda m. 19ff: should we just do C3?
 - Cáseda m. 69 Sii: B\na or B\fl? vs. T
+- Padilla m. 77 lyrics: no em dash for  "voto a san"
+- Padilla papalotillo: optional bass for solo lines?
+- \CN or no (generally)?

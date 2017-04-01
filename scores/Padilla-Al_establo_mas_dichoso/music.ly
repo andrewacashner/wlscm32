@@ -376,7 +376,7 @@ MusicSi = {
   \noBreak
 %  \Section "A 3" % XXX omit, see critical notes
   \MeterTriple
-  e''2\color\CN e''1\endcolor 
+  e''2\color e''1\endcolor 
   a'2. b'4 \[ c''2~\color
   c''2 b'1\endcolor \] 
   a'2 c''2 c''2 
@@ -1302,7 +1302,8 @@ MusicSii = {
 
   %% m. 215 GLORIA
   \PolyMeterDupleVsTriple {
-    | c''1
+    \Section "A 3" % XXX
+    | c''1\CN
     | c''1
     | d''1 
     | f''2 f''2
