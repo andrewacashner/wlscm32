@@ -47,7 +47,7 @@ MusicEstribilloSi = {
 
   | r4 d''4 g''8. a''16 g''4
   | r4 fis''4 bes''2~
-  | bes''4 a''4 r4 f''4\CN
+  | bes''4 a''4 r4 f''4
   | g''4 f''4 r8 f''8 f''8 f''8
   | f''4( es''4) d''2
   | r4 f''8\sh f''8 g''2
@@ -102,7 +102,7 @@ MusicEstribilloSi = {
   | d''2 c''1 
   | bes'2 g''2 g''2~
   | g''2 fis''2 e''2\endcolor 
-  | fis''1.\sh
+  | f''1.\sh
   | g''1. 
   | r2 f''2\color f''2~
 
@@ -112,7 +112,7 @@ MusicEstribilloSi = {
   | r2 g''2 g''2~
   | g''2 fis''2 e''2 
   | fis''2 g''1~
-  | g''2 fis''1\sh\endcolor
+  | g''2 f''1\sh\endcolor
  
   % m. 56 
   \tempo "a espacio [more slowly]"
@@ -157,7 +157,7 @@ MusicEstribilloSii = {
   \CantusMollis
 
   | r2 r4 d''4
-  | d''8. c''16 d''4 r4 f''4\na
+  | d''8. c''16 d''4 r4 f''4
   | f''4 f''4 r4 d''4
   | c''4 c''4 d''4 d''4
   | c''8[ d''8 c''8 bes'8] a'2
@@ -239,7 +239,7 @@ MusicEstribilloSii = {
   | r2 c''2 c''2 
   | r2 bes'1\colorOne
   | r2 a'2. a'4 
-  | bes'2\na\CN bes'2 bes'2
+  | bes'2\fl bes'2\CN bes'2
 
   % m. 70
   | bes'1.\na 
@@ -323,7 +323,7 @@ MusicEstribilloA = {
   | r1. 
   | r2 c''2\color c''2~
   | c''2 b'2 a'2\endcolor 
-  | b'1.\na
+  | bes'1.\na
 
   % m. 50
   | c''1. 
@@ -568,7 +568,7 @@ MusicEstribilloB = {
   | g1. 
 
   % m. 70
-  | \EdBracL g1.\CN 
+  | \EdBracL g1.
   | c'1. \EdBracR
   | bes1. 
   | a1. 
@@ -588,8 +588,6 @@ MusicEstribilloB = {
 %%***************************************
 
 MusicCoplaISi = {
-  \MeterDuple
-
   % m. 81
   \RepeatBarStart
   | g''4 f''8. f''16 e''4\fl d''4
@@ -735,7 +733,7 @@ MusicCoplaIIIA = {
   | d'4 d''4 c''8 d''8 bes'8 c''8
   | a'8 bes'8 c''8 d''8 fis'2
   | g'2 r4 g'4 
-  | f'8 g'8 \EdBracL es'8\CN f'8 \EdBracR d'8 es'8 f'8 g'8
+  | f'8 g'8 \EdBracL es'8 f'8 \EdBracR d'8 es'8 f'8 g'8
   | e'4\na f'8 g'4 a'8 f'4\sh 
   | g'1\fermata
 }
@@ -858,6 +856,7 @@ MusicCoplaIIB = {
 MusicCoplasSi = {
   \SectionBreak
   \Section "COPLAS a 4"
+  \MeterDuple
 
   \MusicCoplaISi
   \MiddleBar
