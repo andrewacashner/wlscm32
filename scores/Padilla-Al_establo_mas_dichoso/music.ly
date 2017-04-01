@@ -1,6 +1,17 @@
 %% PADILLA, AL ESTABLO MAS DICHOSO, 1652 ENSALADILLA
 %% MUSIC.LY
 
+% Put C meter Gloria against CZ Gloria see m. 215
+PolyMeterDupleVsTriple = 
+#(define-scheme-function
+   (music) (ly:music?)
+   #{
+   \override Staff.TimeSignature.stencil = #Cmeter
+   \set Staff.timeSignatureFraction = 4/4
+   \scaleDurations 3/2 { $music }
+   #})
+
+
 %%*******************
 %% INCIPITS
 %%*******************
@@ -95,7 +106,6 @@ MusicSi = {
   \clef "treble"
   \MeterTriple
 
-  \Section "[PROLOGUE] a 4"
   | c''2 c''1 
   | c''2 c''1 
   | c''2\color c''1\endcolor 
@@ -364,7 +374,8 @@ MusicSi = {
   
   %% m. 215 Gloria 
   \noBreak
-  \Section "A 3"
+%  \Section "A 3" % XXX omit, see critical notes
+  \MeterTriple
   e''2\color\CN e''1\endcolor 
   a'2. b'4 \[ c''2~\color
   c''2 b'1\endcolor \] 
@@ -376,6 +387,7 @@ MusicSi = {
   a'2(\color b'1\endcolor 
   a'1.)
   b'1.\fermata
+  \break
 
   % m. 224 Estribillo
   \Section "[ESTRIBILLO a 6]"
@@ -1282,24 +1294,26 @@ MusicBi = {
 
 MusicSii = {
   \clef "treble"
+  \Section "[PROLOGUE] a 4"
   \RestsBeforeArriero
   \RestsArriero
   \RestsPapalotillo
   \RestsNegrillaBeforeGloria
 
   %% m. 215 GLORIA
-  | c''1.	
-  | c''1.
-  | d''1. 
-  | f''2. f''2.
-  | f''1. 
+  \PolyMeterDupleVsTriple {
+    | c''1
+    | c''1
+    | d''1 
+    | f''2 f''2
+    | f''1 
 
-  % m. 220
-  | e''2. e''4. e''4.
-  | d''1. 
-  | d''1.
-  | d''1.\fermata
-
+    % m. 220
+    | e''2 e''4 e''4
+    | d''1 
+    | d''1
+    | d''1\fermata
+  }
   \RestsNegrillaAfterGloria
 }
 
@@ -1311,20 +1325,20 @@ MusicAii = {
   \RestsNegrillaBeforeGloria
 
   %% m. 215 GLORIA
-  c'2. 
-  c'2. 
-  f'2. 
-  a'2.
-  g'1. 
+  \PolyMeterDupleVsTriple {
+    | c'2 c'2 
+    | f'2 a'2
+    | g'1
 
-  % m. 220
-  f'2.~ f'4. e'4.
-  d'1. 
-  c'2. c'4. c'4.
-  f'2. g'2.  
-  d'1.
-  g'1.\fermata
-  
+    % m. 220
+    | f'2. e'4
+    | d'1 
+    | c'2 c'4 c'4
+    | f'2 g'2  
+    | d'1
+    | g'1\fermata
+  } 
+
   \RestsNegrillaAfterGloria
 }
 
