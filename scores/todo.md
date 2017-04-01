@@ -1,11 +1,11 @@
 # To Do, 2017/03/30
 
+- Check notes & accidentals for Cáseda, Salazar, Padilla Establo
 - Add lyric word extensions in all pieces
 - Check page turns for all pieces
-- Check notes & accidentals for Cáseda, Salazar, Padilla Establo
 - Revise critical notes with new bar numbers, etc. for Cáseda, Salazar, Padilla
   Establo
-- Make lyric hyphens consisten
+- Make lyric hyphens consistent
 
 - Correct & expand editor's introduction
 - Add performance notes
