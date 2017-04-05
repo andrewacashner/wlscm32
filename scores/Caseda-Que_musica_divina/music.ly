@@ -47,7 +47,7 @@ MusicEstribilloSi = {
 
   | r4 d''4 g''8. a''16 g''4
   | r4 fis''4 bes''2~
-  | bes''4 a''4 r4 f''4
+  | bes''4 a''4 r4 f''4\CN
   | g''4 f''4 r8 f''8 f''8 f''8
   | f''4( es''4) d''2
   | r4 f''8\sh f''8 g''2
@@ -60,7 +60,7 @@ MusicEstribilloSi = {
   | r2 r4 r8 f''8 
   | cis''8 bes'8\na cis''8 d''8 cis''8 bes'8\na cis''8 d''8
   | d''4 cis''4 r2
-  | r2 r4 r8 bes''8
+  | r2 r4 r8 bes''?8
   | fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
   | a''8 a''8 d''8 d''8  d''8 d''8 d''8 d''8
   | d''4 d''8 es''4 d''8 d''4
@@ -157,7 +157,7 @@ MusicEstribilloSii = {
   \CantusMollis
 
   | r2 r4 d''4
-  | d''8. c''16 d''4 r4 f''4
+  | d''8. c''16 d''4 r4 f''?4
   | f''4 f''4 r4 d''4
   | c''4 c''4 d''4 d''4
   | c''8[ d''8 c''8 bes'8] a'2
@@ -239,7 +239,7 @@ MusicEstribilloSii = {
   | r2 c''2 c''2 
   | r2 bes'1\colorOne
   | r2 a'2. a'4 
-  | bes'2\fl bes'2\CN bes'2
+  | bes'2\na\CN bes'2\na bes'2\na
 
   % m. 70
   | bes'1.\na 
@@ -396,7 +396,7 @@ MusicEstribilloT = {
   | r2 g'2 f'4( g'4 
 
   % m. 20
-  | f'4 g'4) es'4( g'4) f'4( es'4) %% MS has slur last eb to d next bar
+  | f'4 g'4) es'4( g'4) f'4( es'4) 
   | d'2 g2 r2 
   | R1.
   | r2 g'2 f'4( g'4 
@@ -514,7 +514,7 @@ MusicEstribilloB = {
   | fis2 g2 c2 
   | d2 es2 bes,2~\color 
   | bes,2 c2 d2
-  | g,2 c2 bes,2~\na
+  | g,2 c2 \FictaAlign bes,2~\na
 
   % m. 30
   | bes,2 c2 f2 
@@ -568,8 +568,8 @@ MusicEstribilloB = {
   | g1. 
 
   % m. 70
-  | \EdBracL g1.
-  | c'1. \EdBracR
+  | g1.
+  | c'1.
   | bes1. 
   | a1. 
   | g1. 
