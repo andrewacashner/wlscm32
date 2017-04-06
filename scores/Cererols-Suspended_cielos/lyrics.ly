@@ -32,7 +32,7 @@ LyricsEstribilloSIi = \lyricmode {
   a los án -- ge -- les lle -- va~el can -- to lla -- no,
   el can -- to lla -- no,
   \EdLyrics {  el can -- to lla -- no, 
-  el can -- to lla -- no. }
+  el can -- to lla -- no. __ }
 }
 
 LyricsEstribilloSIii = \lyricmode {
@@ -59,8 +59,7 @@ LyricsEstribilloSIii = \lyricmode {
   a los án -- ge -- les lle -- va~el can -- to lla -- no,
   el can -- to lla -- no, \EdLyrics {  el can -- to lla -- _ _ no,
   el can -- to lla -- no, } 
-  el can -- to lla -- _ _ _ no.
-
+  el can -- to lla -- _ _ _ no. 
 }
 
 LyricsEstribilloAI = \lyricmode {
@@ -87,7 +86,7 @@ LyricsEstribilloAI = \lyricmode {
   a los án -- ge -- les lle -- va~el can -- to lla --  no,
   \EdLyrics {  a los án -- ge -- les lle -- va~el can -- to lla -- _ _ no, }
   el can -- to lla -- no, \EdLyrics {  el can -- to lla -- no, }
-  el can -- to lla -- no. 
+  el can -- to lla -- no. __
 }
 
 LyricsEstribilloTI = \lyricmode {
@@ -115,7 +114,7 @@ LyricsEstribilloTI = \lyricmode {
   a los án -- ge -- les lle -- va, 
   \EdLyrics {  a los án -- ge -- les lle -- va~el } can -- to lla -- no,
   el can -- to lla -- no,
-  \EdLyrics {  el can -- to lla -- no, el can -- to lla -- no. }
+  \EdLyrics {  el can -- to lla -- no, el can -- to lla -- no. __ }
 }
 
 %%*******************
@@ -139,7 +138,7 @@ LyricsEstribilloSII = \lyricmode {
   un ni -- ño so -- be -- ra -- no
   el can -- to lla -- _ _ _ no,
   a los án -- ge -- les lle -- va~el can -- to lla -- no,
-  el can -- to lla -- no, el can -- to lla -- no.
+  el can -- to lla -- no, el can -- to lla -- no. __
 }
 
 LyricsEstribilloAII = \lyricmode {
@@ -150,7 +149,7 @@ LyricsEstribilloAII = \lyricmode {
   pa -- rad,  es -- cu -- chad,
   es -- cu -- chad,
   te -- ned, pa -- rad, pa -- rad,  es -- cu -- chad
-  que for -- man en su dis -- tan _ cia 
+  que for -- man en su dis -- tan -- _ cia 
   lo~e -- ter -- no~|y lo tem -- po -- ral,
   lo temp -- po -- ral.
   Es -- cu -- chad, que~en -- to -- nan las je -- rar -- quí -- as
@@ -166,7 +165,7 @@ LyricsEstribilloAII = \lyricmode {
   \EdLyrics { el can -- to lla -- no, }
   el can -- to lla -- no, 
   \EdLyrics { el can -- to lla -- _ no,  }
-  lla -- _ _ _ no.
+  lla -- _ _ _ no. 
 }
 
 LyricsEstribilloTII = \lyricmode {
@@ -196,7 +195,7 @@ LyricsEstribilloTII = \lyricmode {
   el can -- to lla -- no, 
   \EdLyrics {  el can -- to lla -- no, 
   el can -- to lla -- no, }
-  el can -- to lla -- no, lla -- no. _
+  el can -- to lla -- no, lla -- no. __
 }
 
 
@@ -231,7 +230,7 @@ LyricsCoplasSIi = \lyricmode {
   tan so -- be -- ra -- no
   só -- lo pu -- do ser re -- pa -- ro,
   con u -- na voz tan hu -- mil -- de,
-  con  u -- na voz tan  hu -- mil -- _ _ de
+  con  u -- na voz tan __ hu -- mil -- _ _ de
   de~un \EdLyrics {  des -- en -- to -- no tan va --  no,	%% amended lyrics (desatento tan grande => desentono tan vano)
   de~un des -- en -- to -- no tan va -- _ _ no. }
 
@@ -247,8 +246,8 @@ LyricsCoplasSIi = \lyricmode {
   des -- te~e -- ter -- no can -- to lla -- no
   que for -- ma~en su mo -- vi -- mien -- to,
   \EdLyrics {  que for -- ma~en su mo -- vi -- mien -- _ _ to }
-  de  ca -- da pun -- to~un mi -- la -- gro,
-  \EdLyrics {  de  ca -- da pun -- to~un mi -- la -- _ _ gro. }  %% unique text
+  de __ ca -- da pun -- to~un mi -- la -- gro,
+  \EdLyrics {  de __ ca -- da pun -- to~un mi -- la -- _ _ gro. }  %% unique text
 
 }
 
@@ -279,7 +278,7 @@ LyricsCoplasSIii = \lyricmode {
   Con -- cier -- to tan so -- be -- ra -- no
   só -- lo pu -- do ser re -- pa -- ro
   con u -- na voz tan hu -- mil -- de, 
-  \EdLyrics {  con u -- na voz tan hu -- mil -- de,  _ tan  } hu -- mil -- de
+  \EdLyrics {  con u -- na voz tan hu -- mil -- de, _ __ tan __ } hu -- mil -- de
   de~un des -- en -- to -- no tan \EdLyrics {  va -- no, } tan \EdLyrics {  va -- _ _ no. }
 
   \set stanza = #"5."
@@ -294,8 +293,8 @@ LyricsCoplasSIii = \lyricmode {
   des -- te~e -- ter -- no can -- to lla -- no
   que for -- ma~en su mo -- vi -- mien -- to, 
   \EdLyrics {  que for -- ma~en su mo -- vi -- mien -- to~en  } su mo -- vi -- mien -- to
-  de  ca -- da pun -- to~un mi -- la -- gro, 
-  un  mi  la -- _ _ gro.
+  de __  ca -- da pun -- to~un mi -- la -- gro, 
+  un __ mi -- la -- _ _ gro.
 }
 
 LyricsCoplasAI = \lyricmode {

@@ -870,11 +870,11 @@ MusicTi = {
   % m. 130
   | b2 b2 b2 
   | c'2 c'2 c'2 
-  | g'2 g'1
+  | g'1 g'2
   | e'2 d'2 c'2 
   | b2 b2 b2
   | c'2 c'2 c'2 
-  | g'2 g'1
+  | g'1 g'2
 
   %% m. 137 NEGRILLA Prologue
   | e'2 e'1 

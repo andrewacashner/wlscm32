@@ -11,10 +11,10 @@
 
 LyricsIntroSiOne = \lyricmode {
   \set stanza = #"1. "
-  Vo -- ces, las de la ca -- pi -- lla, 
+  Vo -- ces, las de la __ ca -- pi -- lla, 
   cuen -- ta con lo que se can -- ta,
   que~es mú -- si -- co~el Rey, 
-  y no -- ta las más le -- ves di -- so -- nan -- cias,
+  y no -- ta las __ más le -- ves __ di -- so -- nan -- cias,
   a lo de Je -- sús in -- fan -- te, 
   y|~a lo de Da -- vid mo -- nar -- ca.
 }
@@ -22,10 +22,10 @@ LyricsIntroSiOne = \lyricmode {
 
 LyricsIntroSiTwo = \lyricmode {
   \set stanza = #"2. "
-  A -- ños an -- tes la di -- vi -- sa, 
-  la des -- tre -- za~en la~e -- spe -- ran -- za,
+  A -- ños an -- tes la __ di -- vi -- sa, 
+  la __ des -- tre -- za~en la~e -- spe -- ran -- za,
   por sol co -- mien -- za~u -- na glo -- ria,
-  por mi se can -- ta~u -- na gra -- cia,
+  por __ mi se can -- ta~u -- na gra -- cia,
   y|~a me -- dio com -- pás la no -- che,
   re -- me -- da quie -- bros del al -- ba.
 }
@@ -36,20 +36,20 @@ LyricsIntroSiTwo = \lyricmode {
 
 LyricsIntroAiOne = \lyricmode {
   \set stanza = #"1. "
-  Vo -- ces, las de la ca -- pi -- lla, 
+  Vo -- ces, las de la __ ca -- pi -- lla, 
   cuen -- ta con lo que se can -- ta,
   que~es mú -- si -- co~el Rey, 
-  y no -- ta las más le -- ves di -- so -- nan -- _ cias,
+  y no -- ta las __ más le -- ves __ di -- so -- nan -- _ cias,
   a lo de Je -- sús in -- fan -- te, 
   y|~a lo de Da -- vid mo -- nar -- ca.
 
 }
 LyricsIntroAiTwo = \lyricmode {
   \set stanza = #"2. "
-  A -- ños an -- tes la di -- vi -- sa, 
-  la des -- tre -- za~en la~e -- spe -- ran -- za,
+  A -- ños an -- tes la __ di -- vi -- sa, 
+  la __ des -- tre -- za~en la~e -- spe -- ran -- za,
   por sol co -- mien -- za~u -- na glo -- ria,
-  por mi se can -- ta~u -- na gra -- _ cia,
+  por __ mi se can -- ta~u -- na gra -- _ cia,
   y|~a me -- dio com -- pás la no -- che,
   re -- me -- da quie -- bros del al -- ba.
 }
@@ -58,14 +58,14 @@ LyricsIntroTiOne = \LyricsIntroSiOne
 LyricsIntroTiTwo = \LyricsIntroSiTwo
 
 LyricsIntroAii = \lyricmode {
-  Pun -- tos po -- nen a sus le -- tras,
+  Pun -- tos po -- nen a __ sus le -- tras,
   los sig -- los de sus ha -- za -- ñas, 
   la cla -- ve que so -- bre~el hom -- bro
   pa -- ra~el trein -- ta~|y tres se~a -- guar -- _ da.
 }
 
 LyricsIntroTii = \lyricmode {
-  Pun -- tos po -- nen a sus le -- tras,
+  Pun -- tos po -- nen a __ sus le -- tras,
   los sig -- los de sus ha -- za -- _ ñas, 
   la cla -- ve que so -- bre~el hom -- bro
   pa -- ra~el trein -- ta~|y tres se~a -- guar -- da.
@@ -85,13 +85,13 @@ LyricsEstribilloSi = \lyricmode {
   pues -- tos los o -- jos en mi,
   a la voz del pa -- dre~o -- í
   can -- tar por pun -- tos de llan -- _ to,
-  O, qué can -- to, 
+  O, __ qué can -- to, 
 
   tan de~ad -- mi -- rar y de~o -- ír, y de~o -- ír,
 
   y to -- do~en Dios es ba -- jar, es ba -- jar,
   y to -- do~en Dios es ba -- jar,
-  y to -- do~en Dios es ba -- jar, 
+  y to -- do~en Dios es __ ba -- jar, __
   y to -- do~en Dios es ba -- jar.
 }
 
@@ -106,14 +106,14 @@ LyricsEstribilloAi = \lyricmode {
   pues -- tos los o -- jos en mi,
   a la voz del pa -- dre~o -- í, o -- í
   can -- tar por pun -- tos de llan -- to, de llan -- _ to,
-  O, qué can -- to, 
+  O, __ qué can -- to, 
 
   tan de~ad -- mi -- rar y de~o -- ír,
   to -- do~en el hom -- bre~es su -- bir,   
   y to -- do~en Dios es ba -- jar, es ba -- jar, es ba -- jar,
   to -- do~en el hom -- bre~es su -- bir,   
-  y to -- do~en Dios, 
-  y to -- do~en Dios es ba -- jar,
+  y to -- do~en Dios, __ 
+  y to -- do~en Dios es __ ba -- jar,
   to -- do~en Dios es ba -- jar.
 }
 
@@ -128,14 +128,14 @@ LyricsEstribilloTi = \lyricmode {
   pues -- tos los o -- jos en mi,
   a la voz del pa -- dre o -- í, o -- í
   can -- tar por pun -- tos de llan -- _ to, 
-  O, qué can -- to, 
+  O, __ qué can -- to, 
 
   tan de~ad -- mi -- rar y de~o -- ír,
   to -- do~en el hom -- bre~es su -- bir,   
   y to -- do~en Dios es ba -- jar, es ba -- jar, 
   y to -- do~en Dios es ba -- jar, 
   to -- do~es ba -- jar, 
-  y to -- do~en Dios es ba -- jar, es ba -- jar,
+  y to -- do~en Dios es __ ba -- jar, es __ ba -- jar,
   y to -- do~en Dios es ba -- jar.
 }
 
@@ -149,7 +149,7 @@ LyricsEstribilloAii = \lyricmode {
   y|~a -- guar -- dan tiem -- po~o -- por -- tu -- no,
   quien an -- tes del tiem -- po fue,
 
-  O, qué can -- to, \EdLyrics { O, qué can -- to, }
+  O, __ qué can -- to, \EdLyrics { O, __ qué can -- to, }
   tan de~o -- ír y de~ad -- mi -- rar,
   to -- do~en el hom -- bre~es su -- bir,
   y to -- do~en Dios es ba -- jar, ba -- jar,
@@ -167,7 +167,7 @@ LyricsEstribilloTii = \lyricmode {
   y|~a -- guar -- dan tiem -- po~o -- por -- tu -- no,
   quien an -- tes del tiem -- po fue,
 
-  O, qué can -- to, qué can -- to, 
+  O, __ qué can -- to, qué can -- to, 
   tan de~o -- ír y de~ad -- mi -- rar,
   to -- do~en el hom -- bre~es su -- bir, 
   y to -- do~en Dios es ba -- jar, es ba -- jar,
