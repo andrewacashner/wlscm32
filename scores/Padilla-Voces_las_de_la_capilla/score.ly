@@ -77,13 +77,17 @@
         >>
       >>
     }
-    \new Staff = "Bi"
+    \new ChoirStaff
     <<
-      \IncipitStaff
-      \TwoLineName "BASSUS I" "[instr.]" 
-      "B. I"
-      { \IncipitBi }
-      \new Voice = "Bi" { \MusicAllBi }
+      \ShowChoirStaffBracket
+      \new Staff = "Bi"
+      <<
+        \IncipitStaff
+        \TwoLineName "BASSUS I" "[instr.]" 
+        "B. I"
+        { \IncipitBi }
+        \new Voice = "Bi" { \MusicAllBi }
+      >>
     >>
   >> 
 }

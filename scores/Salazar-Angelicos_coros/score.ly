@@ -125,15 +125,18 @@
  	}
        >>
      >> % end of Chorus II ChoirStaff
- 
-     \new Staff = "Ac"
-     <<
-       \IncipitStaff "GUIÓN" "Gn." { \IncipitAc }
-       \new Voice = "Ac" {
- 	\MusicEstribilloAc
- 	\MusicCoplasAc
-       }
-     >>
+    \new ChoirStaff
+    <<
+      \ShowChoirStaffBracket
+      \new Staff = "Ac"
+      <<
+        \IncipitStaff "GUIÓN" "Gn." { \IncipitAc }
+        \new Voice = "Ac" {
+          \MusicEstribilloAc
+          \MusicCoplasAc
+        }
+      >>
+    >>
   >> % end of score staves
 
 }

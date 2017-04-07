@@ -83,14 +83,18 @@
         }
       >>
     >> % end choirstaff
-    \new Staff = "B"
+    \new ChoirStaff 
     <<
-      \IncipitStaff \TwoLineName "BAJO" "[instr.]"
-      "B." { \IncipitB }
-      \new Voice = "B" { 
-        \MusicEstribilloB 
-        \MusicCoplasB
-      }
+      \ShowChoirStaffBracket
+      \new Staff = "B"
+      <<
+        \IncipitStaff \TwoLineName "BAJO" "[instr.]"
+        "B." { \IncipitB }
+        \new Voice = "B" { 
+          \MusicEstribilloB 
+          \MusicCoplasB
+        }
+      >>
     >>
   >>
 }

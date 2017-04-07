@@ -147,18 +147,22 @@
        >>
  
      >> %% end of Ch. II staves
- 
-     %% Gn
-     \new Staff = "Gn" 
+
+     \new ChoirStaff
      <<
-       \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
-       \new Voice = "EstribilloAc" {
-         \MusicEstribilloAc
-         << 
-           \MusicCoplasAc
-           \new FiguredBass { \FiguresCoplasAc }
-         >>
-       }
+      \ShowChoirStaffBracket
+       %% Gn
+       \new Staff = "Gn" 
+       <<
+         \IncipitStaff "GENERAL" "Gn." { \IncipitAc }
+         \new Voice = "EstribilloAc" {
+           \MusicEstribilloAc
+           << 
+             \MusicCoplasAc
+             \new FiguredBass { \FiguresCoplasAc }
+           >>
+         }
+      >>
     >>
   >>
 

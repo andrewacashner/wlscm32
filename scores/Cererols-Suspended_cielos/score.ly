@@ -125,14 +125,17 @@
 	>>
       >> 
     } %% end  Chorus II
-
-    \new Staff = "Ac"
+    \new ChoirStaff 
     <<
-      \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
-      \new Voice = "Ac" { 
-        \MusicEstribilloAc
-        \MusicCoplasAc
-      }
+      \ShowChoirStaffBracket
+      \new Staff = "Ac"
+      <<
+        \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
+        \new Voice = "Ac" { 
+          \MusicEstribilloAc
+          \MusicCoplasAc
+        }
+      >>
     >>
   >>
 }

@@ -30,11 +30,15 @@
         \LyricsEstribilloSolo \LyricsCoplasSolo
       }
     >>
-    \new Staff
+    \new ChoirStaff 
     <<
-      \IncipitStaff "ACOMP." "" { \IncipitAcomp }
-      \new Voice = "Acomp" { \EstribilloAcomp \CoplasAcomp }
-      \new FiguredBass { \EstribilloFiguresAcomp \CoplasFiguresAcomp }
+      \ShowChoirStaffBracket
+      \new Staff
+      <<
+        \IncipitStaff "ACOMP." "" { \IncipitAcomp }
+        \new Voice = "Acomp" { \EstribilloAcomp \CoplasAcomp }
+        \new FiguredBass { \EstribilloFiguresAcomp \CoplasFiguresAcomp }
+      >>
     >>
   >>
   \layout {
