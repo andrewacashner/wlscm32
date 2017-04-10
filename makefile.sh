@@ -4,8 +4,8 @@ while getopts "f" option
 do
     case "$option" in
         f ) # Full make, include typesetting scores
-            rm aux/*/*.*
-            ./scores/typesetscores.sh
+            sh cleanup.sh -f
+            sh scores/typesetscores.sh 
             ;;
         * )
             ;;
