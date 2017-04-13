@@ -9,7 +9,7 @@
 
 LyricsEstribilloSIi = \lyricmode {
   An -- gé -- li -- cos  co -- ros con go -- zo can --  tad,
-  can -- tad, can -- tad, can -- tad,
+  can -- tad, __ can -- tad, can -- tad,
   \EdLyrics {  can -- tad, can --  tad, }
   can -- tad, \EdLyrics {  can -- tad }
   la glo -- ria~a Be -- lén,
@@ -64,7 +64,7 @@ LyricsEstribilloAI = \lyricmode {
   que~es ca -- sa de pan,
   que~es ca -- sa de pan.
   Ce -- les -- tes es -- fe -- ras,
-  es -- tre -- llas y lu -- ces, y lu -- ces,
+  es -- tre -- llas y lu -- ces, y lu -- ces, __
   es -- tre -- llas y lu -- ces,
   \EdLyrics {  es -- tre -- llas y lu -- ces, }
   ba -- jad, ba -- jad,
@@ -83,7 +83,7 @@ LyricsEstribilloAI = \lyricmode {
 
 LyricsEstribilloSII = \lyricmode {
   An -- gé -- li -- cos co -- ros con go -- zo can -- tad,
-  can -- tad, \EdLyrics {  can -- tad, can -- tad, can -- tad. }
+  can -- tad, __ \EdLyrics {  can -- tad, __ can -- tad, can -- tad. }
   la glo -- ria~a Be -- lén,
   que~es ca -- sa de pan. 
   Ce -- les -- tes es -- fe -- ras,
@@ -122,7 +122,7 @@ LyricsEstribilloAII = \lyricmode {
 }
 
 LyricsEstribilloTII = \lyricmode {
-  An -- gé -- li -- cos co -- ros con go -- zo can -- tad,
+  An -- gé -- li -- cos co -- ros con go -- zo can -- tad, __
   can -- tad, can -- tad,
   \EdLyrics {  can -- tad, can -- tad, can -- tad, can -- tad, }
   la glo -- ria~a Be -- lén,

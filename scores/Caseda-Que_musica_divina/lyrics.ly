@@ -39,7 +39,7 @@ LyricsEstribilloSii = \lyricmode {
   o -- fre -- ce,~o -- fre -- ce~a __ los __ vien -- tos
   y|~en cláu -- su -- las va -- rias,
   y|~en cláu -- su -- las va -- rias,
-  y|~en cláu -- su -- las va -- rias,
+  y|~en cláu -- su -- las va -- rias, __
   po -- ten -- cias des -- ma -- ya,
   po -- ten -- cias des -- ma -- ya,
   po -- ten -- cias des -- ma -- ya,
