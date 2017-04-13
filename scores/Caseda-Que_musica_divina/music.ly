@@ -50,7 +50,7 @@ MusicEstribilloSi = {
   | bes''4 a''4 r4 f''4\CN
   | g''4 f''4 r8 f''8 f''8 f''8
   | f''4( es''4) d''2
-  | r4 f''8\sh f''8 g''2
+  | r4 f''8 f''8 g''2
   | fis''2 r4 fis''4
   | g''4. g''8 c''4 c''4
   | c''2 c''2

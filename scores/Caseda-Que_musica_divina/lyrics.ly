@@ -90,8 +90,8 @@ LyricsEstribilloT = \lyricmode {
   sen -- ti -- dos e -- le -- va, __ 
   sen -- ti -- dos e -- le -- va,
   po -- ten -- cias des -- ma -- ya,
-  po -- ten -- icas des -- ma -- ya, 
-  po -- ten -- icas des -- ma -- ya, des -- ma -- ya.
+  po -- ten -- cias des -- ma -- ya, 
+  po -- ten -- cias des -- ma -- ya, des -- ma -- ya.
 }
 
 

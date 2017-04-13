@@ -462,7 +462,7 @@ MusicEstribilloSII = {
   | e'2 r4 r8 f'8
   | a'8 a'8 a'8 a'8 a'4 r8 f'8
   | a'8 a'8 a'8 a'8 a'4 a'4~
-  | a'8 b'8 c''4 c''4 b'4
+  | a'8 b'8 c''4 c''4 b'4\na
   | c''2 b'8 b'8 b'8 b'8
 
   % m. 30 
@@ -833,7 +833,7 @@ MusicEstribilloAc = {
   | a4 f4 f2
   | f4 c4 c2~
   | c4 g4 g2~
-  | g4 d4 d2~
+  | g4 a,4 d2~
   | d4 g4 g,4 d4
   | a2 d4 c4
   | f4 d8 e4 a8 e4
