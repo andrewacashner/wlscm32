@@ -1,9 +1,10 @@
 MAIN = singing_about_singingI
 
-all:
+scores:
 	sh scores/typesetscores.sh
-	latexmk -outdir=aux -bibtex -pdf $(MAIN)
-	cp aux/$(MAIN).pdf ./
+
+text:
+	latexmk -outdir=aux -bibtex -pdf $(MAIN) && cp aux/$(MAIN).pdf ./
 
 clean:
 	rm $(find aux -name "*.*")
