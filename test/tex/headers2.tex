@@ -1,0 +1,119 @@
+\documentclass[12pt,oneside]{book}
+
+% Generate dummy text for example
+\usepackage{lipsum}
+
+% Font setup
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ebgaramond}
+\usepackage{url}
+
+% Page layout
+\usepackage[margin=1in]{geometry}
+
+% Set title page information
+\title{Villancicos about Music from 
+Seventeenth-Century Spain and New Spain}
+
+\author{Edited by Andrew A. Cashner}
+
+\date{Web Library of Seventeenth-Century Music\\
+\url{http://www.sscm-wlscm.org}\\
+WLSCM no.~32\\
+\number\year}
+
+% Page headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\newcommand{\headtitle}{Villancicos about Music}
+\newcommand{\headauthor}{ed. A. Cashner}
+\newcommand{\headdate}{\number\year}
+\newcommand{\headsize}{\small}
+
+\lhead{\headsize\emph{\headtitle}, \headauthor, \headdate}
+\chead{}
+\rhead{\headsize CHAPTER, \thepage}
+
+\lfoot{}
+\cfoot{\headsize WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
+(\url{www.sscm-wlscm.org}), WLSCM no.~32}
+\rfoot{}
+
+% Section heading format
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+    [block]
+    {\Large\scshape\centering}
+    {}{0pt}{}
+
+\titleformat*{\section}    
+    {\large\normalfont}
+
+\titleformat*{\subsection} 
+    {\normalsize\itshape}
+
+% Turn off section numbering
+\setcounter{secnumdepth}{0}
+
+%*****************************************
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introduction}
+\lipsum[1]
+
+\section{Interpretive Notes}
+\lipsum[1]
+
+\section{Performance Suggestions}
+\lipsum[1]
+
+%****
+\chapter{Editorial Report}
+
+\section{Abbreviations}
+\lipsum[1]
+
+\section{Editorial Policies}
+\lipsum[1]
+
+\subsection{Sources}
+\lipsum[1]
+
+\subsection{Rhythm and Meter}
+\lipsum[1]
+
+%****
+\chapter{Critical Notes}
+
+\section{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
+\lipsum
+
+\section{Juan Gutiérrez de Padilla, \emph{Al establo más dichoso}}
+\lipsum
+
+%****
+\chapter{Texts and Translations}
+
+\section{\emph{Suspended, cielos, vuestro dulce canto} (Montserrat, ca.~1660)}
+\lipsum
+
+\section{\emph{Al establo más dichoso} (Puebla, 1653)}
+\lipsum
+
+%*** SCORES
+
+\chapter{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
+\lipsum
+
+\chapter{Juan Gutiérrez de Padilla, \emph{Al establo más dichoso}}
+\lipsum
+
+
+\end{document}
