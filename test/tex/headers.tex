@@ -1,0 +1,95 @@
+\documentclass[oneside]{memoir}
+
+\usepackage{xparse}
+\usepackage{url}
+
+\newcommand{\monthname}{%
+    \ifcase\month=0\or Jan.\or Feb.\or Mar.\or Apr.\or 
+    May\or June\or July\or Aug.\or
+    Sept.\or Oct.\or Nov.\or Dec.\fi
+}
+%***********
+
+\title{Villancicos about Music from Seventeenth-Century Spain and New Spain}
+\author{Edited by Andrew A. Cashner}
+
+\newcommand{\headtitle}{Villancicos about Music}
+\newcommand{\headauthor}{ed. Cashner}
+\newcommand{\headdate}{\monthname\ \number\year}
+
+%**********
+
+\setlrmarginsandblock{1in}{1in}{*}
+\setulmarginsandblock{1in}{1in}{*}
+\checkandfixthelayout
+
+%***************************
+\NewDocumentCommand{\headchapter}{}{}
+\NewDocumentCommand{\edchapter}{ o m }{%
+    \IfValueTF{#1}{%
+        \renewcommand{\headchapter}{#1}%
+        \chapter{#2}%
+    }{%
+        \renewcommand{\headchapter}{#1}%
+        \chapter{#1}%
+    }%
+}
+
+%**************************
+\makepagestyle{wlscm}
+
+\makeatletter
+\makeoddhead{wlscm}
+{\headtitle, \headauthor, \headdate}
+{}
+{\headchapter, \thepage}
+\makeatother
+
+\makeoddfoot{wlscm}
+{}
+{WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC (\url{www.sscm-wlscm.org}), 
+WLSCM no.~32}
+{}
+
+\makeheadrule{wlscm}{\textwidth}{\normalrulethickness}
+\makefootrule{wlscm}{\textwidth}{\normalrulethickness}{0pt}
+
+\pagestyle{wlscm}
+%*****************************
+
+
+
+
+\usepackage{lipsum}
+
+
+\begin{document}
+\maketitle
+
+\tableofcontents*
+
+\chapter{Introduction}
+
+\lipsum
+
+\section{Apples}
+
+\lipsum
+
+\section{Bananas}
+
+\chapter{Editorial Report}
+
+\lipsum
+
+\section{Cherries}
+
+\lipsum
+
+\chapter
+[Cererols, \emph{Suspended, cielos}]
+{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
+
+\lipsum
+
+\end{document}
