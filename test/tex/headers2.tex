@@ -1,13 +1,19 @@
 \documentclass[12pt,oneside]{book}
 
+% TODO remove chapter numbers from toc
+
 % Generate dummy text for example
 \usepackage{lipsum}
+
+% For more efficient programming
+\usepackage{xparse}
 
 % Font setup
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{ebgaramond}
 \usepackage{url}
+\urlstyle{same}
 
 % Page layout
 \usepackage[margin=1in]{geometry}
@@ -19,53 +25,82 @@ Seventeenth-Century Spain and New Spain}
 \author{Edited by Andrew A. Cashner}
 
 \date{Web Library of Seventeenth-Century Music\\
-\url{http://www.sscm-wlscm.org}\\
-WLSCM no.~32\\
+\url{www.sscm-wlscm.org}\\
+WLSCM no.~32\\[2ex]
 \number\year}
 
+%************************************
 % Page headers and footers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
+% Leave a full line space between the header and the body text
+\addtolength{\headheight}{\baselineskip}
+
+% Use these values for the left side of header
 \newcommand{\headtitle}{Villancicos about Music}
-\newcommand{\headauthor}{ed. A. Cashner}
+\newcommand{\headauthor}{ed.\ Cashner}
 \newcommand{\headdate}{\number\year}
 \newcommand{\headsize}{\small}
 
-\lhead{\headsize\emph{\headtitle}, \headauthor, \headdate}
-\chead{}
-\rhead{\headsize CHAPTER, \thepage}
+% Save only the chapter name to display in the right side of header
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
-\lfoot{}
-\cfoot{\headsize WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
-(\url{www.sscm-wlscm.org}), WLSCM no.~32}
-\rfoot{}
+% Custom chapter command takes optional argument which is used in the header,
+% e.g., if full chapter name is too long for the header
+% Keep the fancy headers and footers even on chapter opening pages
+\NewDocumentCommand{\edchapter}{ o m }{%
+    \IfValueTF{#1}
+    {\chapter{#2}\chaptermark{#1}}
+    {\chapter{#2}}%
+    \thispagestyle{fancy}%
+}
 
+% Set up left and right sides of header, with necessary formatting
+% Left:  Main title, author, year
+% Right: Chapter name (stored in \leftmark as modified by \chaptermark!),
+%        page no.
+\fancyhead[L]{\headsize\emph{\headtitle}, \headauthor, \headdate}
+\fancyhead[R]{\headsize\nouppercase{\leftmark}, p.\ \thepage}
+
+% Setup the footer, centered
+\fancyfoot[C]{\headsize WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
+(\url{www.sscm-wlscm.org}), WLSCM no.\ 32}
+
+% \renewcommand{\footrulewidth}{0.4pt}  XXX check if footrule needed
+
+%********************************
 % Section heading format
 \usepackage{titlesec}
 
+% Turn off section numbering
+\setcounter{secnumdepth}{0}
+
+% Chapter headings very large, small caps, centered
 \titleformat{\chapter}
     [block]
     {\Large\scshape\centering}
     {}{0pt}{}
 
+% Sections just a bit larger 
 \titleformat*{\section}    
     {\large\normalfont}
 
+% Subsections in italics
 \titleformat*{\subsection} 
     {\normalsize\itshape}
 
-% Turn off section numbering
-\setcounter{secnumdepth}{0}
 
 %*****************************************
 \begin{document}
+
+\frontmatter
 
 \maketitle
 
 \tableofcontents
 
-\chapter{Introduction}
+\edchapter{Introduction}
 \lipsum[1]
 
 \section{Interpretive Notes}
@@ -75,7 +110,7 @@ WLSCM no.~32\\
 \lipsum[1]
 
 %****
-\chapter{Editorial Report}
+\edchapter{Editorial Report}
 
 \section{Abbreviations}
 \lipsum[1]
@@ -90,7 +125,7 @@ WLSCM no.~32\\
 \lipsum[1]
 
 %****
-\chapter{Critical Notes}
+\edchapter{Critical Notes}
 
 \section{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
 \lipsum
@@ -99,7 +134,7 @@ WLSCM no.~32\\
 \lipsum
 
 %****
-\chapter{Texts and Translations}
+\edchapter{Texts and Translations}
 
 \section{\emph{Suspended, cielos, vuestro dulce canto} (Montserrat, ca.~1660)}
 \lipsum
@@ -109,10 +144,18 @@ WLSCM no.~32\\
 
 %*** SCORES
 
-\chapter{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
+\mainmatter
+
+\edchapter
+[Cererols, \emph{Suspended, cielos}]
+{Joan Cererols, \emph{Suspended, cielos, vuestro dulce canto}}
+
 \lipsum
 
-\chapter{Juan Gutiérrez de Padilla, \emph{Al establo más dichoso}}
+\edchapter
+[Gutiérrez de Padilla, \emph{Al establo}]
+{Juan Gutiérrez de Padilla, \emph{Al establo más dichoso}}
+
 \lipsum
 
 
