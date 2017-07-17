@@ -1,0 +1,88 @@
+\documentclass{vcscores}
+
+% Title-page text
+\title  {Villancicos about Music from Seventeenth-Century Spain and New Spain}
+\author {Edited by Andrew A. Cashner}
+\date   {\WLSCMimprint{32}}
+
+% Shorter text used in header
+\headtitle  {Villancicos about Music}
+\headauthor {ed. Andrew Cashner}
+
+% PDF metadate
+\hypersetup{%
+    pdftitle={%
+        Villancicos about Music from Seventeenth-Century Spain and New Spain
+    }, 
+    pdfauthor={%
+        Edited by Andrew A. Cashner
+    }, 
+    pdfkeywords={%
+        villancico, Spain, New Spain, 17th-century, religious music, devotional
+        music, liturgical music, Christmas, Corpus Christi, Eucharist, Juan
+        Gutiérrez de Padilla, Joan Cererols, Miguel de Irízar, Jerónimo de
+        Carrión, José de Cáseda, Antonio de Salazar, Manuel de León Marchante,
+        Madrid, Montserrat, Segovia, Puebla, Mexico City
+    }, 
+    pdfsubject={%
+        Villancicos; Part-songs, Spanish, 1600-1700; Lyric poetry, Spanish,
+        1600-1700; Spanish music; Latin American music
+    }%
+}
+% XXX check Library of Congress subject headings
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+\copyrightpage % XXX check with editor
+\tableofcontents
+
+% Each of these is a chapter
+\include{intro/preface}
+\include{intro/intro}
+\include{intro/report}
+
+% These all go in one chapter (command is in Cererols file)
+\include{notes/Cererols-Suspended_cielos}
+\include{notes/Padilla-Voces_las_de_la_capilla}
+\include{notes/Irizar-Si_los_sentidos}
+\include{notes/Carrion-Si_los_sentidos}
+\include{notes/Caseda-Que_musica_divina}
+\include{notes/Padilla-Al_establo_mas_dichoso}
+\include{notes/Salazar-Angelicos_coros}
+
+% These all go in one chapter (command in Cererols file)
+\include{poems/Suspended_cielos-Cererols}
+\include{poems/Voces_las_de_la_capilla-Padilla}
+\include{poems/Si_los_sentidos-Sanchez}
+\include{poems/Que_musica_divina-Caseda}
+\include{poems/Al_establo_mas_dichoso-Padilla}
+\include{poems/Angelicos_coros-Salazar}
+ 
+\mainmatter
+
+% Each of the scores is a chapter
+\includescore{Cererols-Suspended_cielos}
+{Joan Cererols, \worktitle{Suspended, cielos, vuestro dulce canto}}
+
+\includescore{Padilla-Voces_las_de_la_capilla}
+{Juan Gutíerrez de Padilla, \worktitle{Voces, las de la capilla}}
+
+\includescore{Irizar-Si_los_sentidos}
+{Miguel de Irízar, \worktitle{Si los sentidos queja forman del Pan divino}}
+
+\includescore{Carrion-Si_los_sentidos}
+{Jerónimo de Carrión, \worktitle{Si los sentidos queja forman del Pan divino}}
+
+\includescore{Caseda-Que_musica_divina}
+{José de Cáseda, \worktitle{Qué música divina}}
+
+\includescore{Padilla-Al_establo_mas_dichoso}
+{Juan Gutiérrez de Padilla, \worktitle{Al establo más dichoso}}
+
+\includescore{Salazar-Angelicos_coros}
+{Antonio de Salazar, \worktitle{Angélicos coros con gozo cantad}}
+
+\end{document}
