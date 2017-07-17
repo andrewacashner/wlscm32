@@ -1,7 +1,5 @@
 \documentclass[12pt,oneside]{book}
 
-% TODO remove chapter numbers from toc
-
 % Generate dummy text for example
 \usepackage{lipsum}
 
@@ -14,6 +12,7 @@
 \usepackage{ebgaramond}
 \usepackage{url}
 \urlstyle{same}
+\usepackage[svgnames]{xcolor}
 
 % Page layout
 \usepackage[margin=1in]{geometry}
@@ -24,10 +23,13 @@ Seventeenth-Century Spain and New Spain}
 
 \author{Edited by Andrew A. Cashner}
 
-\date{Web Library of Seventeenth-Century Music\\
-\url{www.sscm-wlscm.org}\\
-WLSCM no.~32\\[2ex]
-\number\year}
+\date{%
+    \number\year\\[2ex]
+    {\footcolor
+    WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC\\ 
+    \url{www.sscm-wlscm.org}\\ 
+    WLSCM no.~32}
+}
 
 %************************************
 % Page headers and footers
@@ -42,6 +44,8 @@ WLSCM no.~32\\[2ex]
 \newcommand{\headauthor}{ed.\ Andrew Cashner}
 \newcommand{\headdate}{\number\year}
 \newcommand{\headsize}{\small}
+\newcommand{\footsize}{\headsize}
+\newcommand{\footcolor}{\color{Maroon}}
 
 % Save only the chapter name to display in the right side of header
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
@@ -64,17 +68,15 @@ WLSCM no.~32\\[2ex]
 \fancyhead[R]{\headsize\nouppercase{\leftmark}, \thepage}
 
 % Setup the footer, centered
-\fancyfoot[C]{\headsize WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
+\fancyfoot[C]{\headsize\footcolor WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
 (\url{www.sscm-wlscm.org}), WLSCM no.\ 32}
-
-% \renewcommand{\footrulewidth}{0.4pt}  XXX check if footrule needed
 
 %********************************
 % Section heading format
 \usepackage{titlesec}
 
-% Turn off section numbering
-\setcounter{secnumdepth}{0}
+% Turn off section numbering in text
+\setcounter{secnumdepth}{-1}
 
 % Chapter headings very large, small caps, centered
 \titleformat{\chapter}
