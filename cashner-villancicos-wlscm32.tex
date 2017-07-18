@@ -5,10 +5,6 @@
 \author {Edited by Andrew A. Cashner}
 \date   {\WLSCMimprint{32}}
 
-% Shorter text used in header
-\headtitle  {Villancicos about Music}
-\headauthor {ed. Andrew Cashner}
-
 % PDF metadate
 \hypersetup{%
     pdftitle={%
@@ -36,9 +32,10 @@
 \frontmatter
 
 \maketitle
-\copyrightpage % XXX check with editor
+\copyrightpage{Andrew A. Cashner} % XXX check with editor
 \tableofcontents
 
+\mainmatter % XXX check editor
 % Each of these is a chapter
 \include{intro/preface}
 \include{intro/intro}
@@ -61,28 +58,33 @@
 \include{poems/Al_establo_mas_dichoso-Padilla}
 \include{poems/Angelicos_coros-Salazar}
  
-\mainmatter
-
 % Each of the scores is a chapter
 \includescore{Cererols-Suspended_cielos}
+[Cererols, \worktitle{Suspended, cielos}]
 {Joan Cererols, \worktitle{Suspended, cielos, vuestro dulce canto}}
 
 \includescore{Padilla-Voces_las_de_la_capilla}
+[Gutiérrez de Padilla, \worktitle{Voces, las de la capilla}]
 {Juan Gutíerrez de Padilla, \worktitle{Voces, las de la capilla}}
 
 \includescore{Irizar-Si_los_sentidos}
+[Irízar, \worktitle{Si los sentidos}]
 {Miguel de Irízar, \worktitle{Si los sentidos queja forman del Pan divino}}
 
 \includescore{Carrion-Si_los_sentidos}
+[Carrión, \worktitle{Si los sentidos}]
 {Jerónimo de Carrión, \worktitle{Si los sentidos queja forman del Pan divino}}
 
 \includescore{Caseda-Que_musica_divina}
+[Cáseda, \worktitle{Qué música divina}]
 {José de Cáseda, \worktitle{Qué música divina}}
 
 \includescore{Padilla-Al_establo_mas_dichoso}
+[Gutiérrez de Padilla, \worktitle{Al establo más dichoso}]
 {Juan Gutiérrez de Padilla, \worktitle{Al establo más dichoso}}
 
 \includescore{Salazar-Angelicos_coros}
+[Salazar, \worktitle{Angélicos coros}]
 {Antonio de Salazar, \worktitle{Angélicos coros con gozo cantad}}
 
 \end{document}
