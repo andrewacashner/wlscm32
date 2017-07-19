@@ -4,5 +4,5 @@ for scorename in "${scoredirectories[@]}";
 do
   echo -e "\nCompiling $scorename ..."
   cd "$HOME/Documents/vcscores/scores/$scorename"
-  lilypond score
+  lilypond -I ~/ly score
 done
