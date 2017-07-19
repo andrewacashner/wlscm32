@@ -1,101 +1,38 @@
 \documentclass{vcscores}
 
-% Title-page text
-\title  {Villancicos about Music from Seventeenth-Century Spain and New Spain}
-\author {Edited by Andrew A. Cashner}
-\date   {\WLSCMimprint{32}}
-
-\renewcommand{\copyrightNotice}{%
-    Copyright © \the\year\ Andrew A. Cashner
-}
-
-\renewcommand{\licenseNotice}{%
-    Users may download editions, print them for personal use, and perform them
-    in non-profit settings, provided proper acknowledgement is given to both the
-    editor and to the Society for Seventeenth-Century Music. 
-    Permission for performance in professional (for profit) settings must be
-    negotiated directly between the performers or their agents and the editor.
-
-    The editor remains the owner of all rights to the edition.
-
-    \includegraphics{img/CC-by-nc-nd}
-
-    This work is licensed under a Creative Commons
-    Attribution-NonCommercial-NoDerivs 3.0 Unported License
-    (\url{https://creativecommons.org/licenses/by-nc-nd/3.0/}).
-}
-
-\renewcommand{\headvolumeinfo}{%
-    \worktitle{Villancicos about Music}, ed. Cashner, 2017
-} 
-\renewcommand{\WLSCMbyline}{%
-    WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC 
-    (\url{www.sscm-wlscm.org}), WLSCM no.\ 32%
-}
-\pagestyle{fancy}
-
-% PDF metadate
-\hypersetup{%
-    pdftitle={%
-        Villancicos about Music from Seventeenth-Century Spain and New Spain
-    }, 
-    pdfauthor={%
-        Edited by Andrew A. Cashner
-    }, 
-    pdfkeywords={%
-        villancico, Spain, New Spain, 17th century, religious music, devotional
-        music, liturgical music, Christmas, Corpus Christi, Eucharist, Juan
-        Gutiérrez de Padilla, Joan Cererols, Miguel de Irízar, Jerónimo de
-        Carrión, José de Cáseda, Antonio de Salazar, Manuel de León Marchante,
-        Madrid, Montserrat, Segovia, Puebla, Mexico City
-    }, 
-    pdfsubject={%
-        Villancicos; Part-songs, Spanish, 1600-1700; Lyric poetry, Spanish,
-        1600-1700; Spanish music; Latin American music
-    }%
-}
-% XXX check Library of Congress subject headings
-
-\hyphenation{
-   Mont-se-rrat
-   Na-cio-nal
-   In-ves-ti-ga-ción
-   Do-cu-men-ta-ción
-   Chá-vez
-   Gu-ti-érr-ez
-   Pa-di-lla
-}
+\input{vcscores-config}
 
 \begin{document}
 
-\maketitle
-
 \frontmatter
+
+\mymaketitle
 \copyrightpage % XXX check with editor
-\tableofcontents
+\mytableofcontents
+
+% Each of these is a chapter
+\includeintro{preface}
 
 \mainmatter % XXX check editor
-% Each of these is a chapter
-\include{intro/preface}
-\include{intro/intro}
-\include{intro/report}
+\includeintro{intro}
+\includeintro{report}
 
 % These all go in one chapter (command is in Cererols file)
-\include{notes/Cererols-Suspended_cielos}
-\include{notes/Padilla-Voces_las_de_la_capilla}
-\include{notes/Irizar-Si_los_sentidos}
-\include{notes/Carrion-Si_los_sentidos}
-\include{notes/Caseda-Que_musica_divina}
-\include{notes/Padilla-Al_establo_mas_dichoso}
-\include{notes/Salazar-Angelicos_coros}
+\includenote{Cererols-Suspended_cielos}
+\includenote{Padilla-Voces_las_de_la_capilla}
+\includenote{Irizar-Si_los_sentidos}
+\includenote{Carrion-Si_los_sentidos}
+\includenote{Caseda-Que_musica_divina}
+\includenote{Padilla-Al_establo_mas_dichoso}
+\includenote{Salazar-Angelicos_coros}
 
 % These all go in one chapter (command in Cererols file)
-\include{poems/Suspended_cielos-Cererols}
-\include{poems/Voces_las_de_la_capilla-Padilla}
-\include{poems/Si_los_sentidos-Sanchez}
-\include{poems/Que_musica_divina-Caseda}
-\include{poems/Al_establo_mas_dichoso-Padilla}
-\include{poems/Angelicos_coros-Salazar}
+\includepoem{Suspended_cielos-Cererols}
+\includepoem{Voces_las_de_la_capilla-Padilla}
+\includepoem{Si_los_sentidos-Sanchez}
+\includepoem{Que_musica_divina-Caseda}
+\includepoem{Al_establo_mas_dichoso-Padilla}
+\includepoem{Angelicos_coros-Salazar}
  
 % Each of the scores is a chapter
 \includescore{Cererols-Suspended_cielos}
