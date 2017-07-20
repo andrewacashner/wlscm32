@@ -160,26 +160,49 @@ Critical edition of villancico poetry and music for WLSCM]
 }
 
 %****************************************
-% TITLING, FRONTMATTER
+% TITLE PAGE, FRONTMATTER
 
-% Use standard \title, \author
-% For \date, put \date{\WLSCMimprint{##}} with the volume number as argument
-% Then use \mymaketitle
-% We disable PDF page anchors for the title page to avoid the "duplicate
-% number" warning from hyperref
+% Provide \maintitle, \editor, and \publisher info in main document;
+% For \publisher, use \WLSCMimprint{##} with the volume number
+% Then use \mymaketitle at start of document.
+% We turn off hyperref page anchors for the first page to avoid the "duplicate
+% number" warning
+
+\NewDocumentCommand{\maintitle} { m }{\gdef\@maintitle{#1}}
+\NewDocumentCommand{\editor}    { m }{\gdef\@editor{#1}}
+\NewDocumentCommand{\publisher} { m }{\gdef\@publisher{#1}}
 
 \NewDocumentCommand{\mymaketitle}{}{%
     \hypersetup{pageanchor=false}%
-    \maketitle
-    \hypersetup{pageanchor=true}%
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1in}
+            {\Large
+            \begin{tabular}{c}
+                \@maintitle
+            \end{tabular}}\par
+
+            \vspace{1.5in}
+            {\large
+            \begin{tabular}{c}
+                Edited by\\
+                \@editor\\
+            \end{tabular}}\par
+
+            \vspace{\fill}
+            {\large
+            \begin{tabular}{c}
+                \@publisher
+            \end{tabular}}\par
+        \end{center}
+    \end{titlepage}
+    \hypersetup{pageanchor=true}
 }
 
 % WLSCM imprint on title page
-% Give as argument to \date{}
-% (thus assuming tabular environment)
+% Give as argument to \publisher
 % #1 volume number
 \NewDocumentCommand{\WLSCMimprint}{ m }{%
-    \the\year\\[3ex]
     WEB LIBRARY OF SEVENTEENTH-CENTURY MUSIC\\
     \url{www.sscm-wlscm.org}\\
     WLSCM no.~#1\\
@@ -215,7 +238,12 @@ Critical edition of villancico poetry and music for WLSCM]
   \vspace*{\fill}
   \begin{center}
       \setlength{\parskip}{2em}
+      \begin{tabular}{c}
+      \@publisher
+      \end{tabular}\par
+
       \copyrightNotice\par
+
       \licenseNotice
       \end{center}
   \vspace*{\fill}
