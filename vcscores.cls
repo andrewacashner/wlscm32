@@ -102,6 +102,9 @@ Critical edition of villancico poetry and music for WLSCM]
 \RequirePackage[shortlabels]{enumitem}
 \setlist{noitemsep}
 
+% Put a period after the label of floats (e.g., "Figure 1. Caption")
+\RequirePackage[labelsep=period]{caption}
+
 % To allow including images
 \RequirePackage{graphicx}
 
@@ -158,6 +161,16 @@ Critical edition of villancico poetry and music for WLSCM]
         }%
     ]{scores/#1/score}%
 }
+
+% Include source image from 'source' directory
+\NewDocumentCommand{\includeSource}{ m }{%
+    \includegraphics
+    [width=\linewidth,height=0.9\textheight,keepaspectratio]
+    {sources/#1}\centering
+}
+% Turn of pdfTeX warning about PDFs of same 'group' being included on a single
+% page (this results from a bug in how some PDFs are created)
+\pdfsuppresswarningpagegroup=1
 
 %****************************************
 % TITLE PAGE, FRONTMATTER
