@@ -340,3 +340,31 @@ LyricsCoplasTI = \lyricmode {
   lo~in -- men -- \EdLyrics {  so~a~es -- } pa -- cio.
 
 }
+
+%% ALL TOGETHER
+
+LyricsSIi = { 
+  \LyricsEstribilloSIi 
+  \LyricsCoplasSIi 
+} 
+
+LyricsSIii = {
+  \LyricsEstribilloSIii
+  \LyricsCoplasSIii
+}
+
+LyricsAI = {
+  \LyricsEstribilloAI
+  \LyricsCoplasAI
+}
+
+LyricsTI = {
+  \LyricsEstribilloTI
+  \LyricsCoplasTI
+}
+
+LyricsSII = \LyricsEstribilloSII
+LyricsAII = \LyricsEstribilloAII
+LyricsTII = \LyricsEstribilloTII
+
+

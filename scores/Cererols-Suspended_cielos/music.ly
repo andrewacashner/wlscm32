@@ -2195,4 +2195,34 @@ MusicCoplasAc = {
   \MusicCoplasAcEven
 }
 
+%%********************************
+%% ALL TOGETHER
+
+MusicSIi = { 
+  \MusicEstribilloSIi 
+  \MusicCoplasSIi 
+} 
+
+MusicSIii = {
+  \MusicEstribilloSIii
+  \MusicCoplasSIii
+}
+
+MusicAI = {
+  \MusicEstribilloAI
+  \MusicCoplasAI
+}
+
+MusicTI = {
+  \MusicEstribilloTI
+  \MusicCoplasTI
+}
+
+MusicSII = \MusicEstribilloSII
+MusicAII = \MusicEstribilloAII
+MusicTII = \MusicEstribilloTII
+MusicBII = \MusicEstribilloBII
+MusicAc  = \MusicEstribilloAc
+
+
 
