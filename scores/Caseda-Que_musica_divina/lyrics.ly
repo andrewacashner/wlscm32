@@ -250,3 +250,23 @@ LyricsCoplasT = \lyricmode {
   por -- que~es pas -- to su mú -- si -- ca del al -- _ ma, 
   del al -- ma, de __ el al -- ma.
 }
+
+%**************************
+% ALL TOGETHER
+
+LyricsSi = {
+  \LyricsEstribilloSi
+  \LyricsCoplasSi
+}
+LyricsSii = {
+  \LyricsEstribilloSii
+  \LyricsCoplasSii
+}
+LyricsA = {
+  \LyricsEstribilloA
+  \LyricsCoplasA
+}
+LyricsT = {
+  \LyricsEstribilloT
+  \LyricsCoplasT
+}

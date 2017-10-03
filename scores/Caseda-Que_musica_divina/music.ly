@@ -58,7 +58,7 @@ MusicEstribilloSi = {
   % m. 10
   | R1
   | r2 r4 r8 f''8 
-  | cis''8 bes'8\na cis''8 d''8 cis''8 bes'8\na cis''8 d''8
+  | cis''8 \ficta b'!8 cis''8 d''8 cis''8 \ficta b'!8 cis''8 d''8
   | d''4 cis''4 r2
   | r2 r4 r8 bes''?8
   | fis''8 e''8 fis''8 g''8 fis''8 e''8 fis''8 g''8
@@ -96,13 +96,13 @@ MusicEstribilloSi = {
 
   % m. 40
   | r2 r2 d''2 
-  | f''2 e''2\fl d''2 
+  | f''2 \ficta es''!2 d''2 
   | es''1. 
   | d''1.~\color
   | d''2 c''1 
   | bes'2 g''2 g''2~
   | g''2 fis''2 e''2\endcolor 
-  | f''1.\sh
+  | \ficta fis''!1.
   | g''1. 
   | r2 f''2\color f''2~
 
@@ -112,7 +112,7 @@ MusicEstribilloSi = {
   | r2 g''2 g''2~
   | g''2 fis''2 e''2 
   | fis''2 g''1~
-  | g''2 f''1\sh\endcolor
+  | g''2 \ficta fis''!1\endcolor
  
   % m. 56 
   \tempo "a espacio [more slowly]"
@@ -200,9 +200,9 @@ MusicEstribilloSii = {
   | r2 es''2 d''4( es''4 
   | d''4 es''4) c''4( es''4) d''4( c''4)
   | b'2 c''2 r2 
-  | r2 e''2\fl d''4( e''4
-  | d''4 e''4\fl) c''2\color c''2~
-  | c''2\endcolor bes'4( c''4) d''4( e''4\fl)
+  | r2 \ficta es''!2 d''4( e''4
+  | d''4 \ficta es''!4) c''2\color c''2~
+  | c''2\endcolor bes'4( c''4) d''4( \ficta es''!4)
   | d''2\color d''1\endcolor
 
   % m. 40
@@ -210,7 +210,7 @@ MusicEstribilloSii = {
   | R1.
   | r2 g''2\color g''2~
   | g''2 fis''2 e''2\endcolor
-  | f''1.\sh 
+  | \ficta fis''!1. 
   | g''2 r2 r2 
   | r1. 
   | r2 r2 c''2
@@ -239,10 +239,10 @@ MusicEstribilloSii = {
   | r2 c''2 c''2 
   | r2 bes'1\colorOne
   | r2 a'2. a'4 
-  | bes'2\na\CN bes'2\na bes'2\na
+  | \ficta b'!2\CN \ficta b'!2 \ficta b'!2
 
   % m. 70
-  | bes'1.\na 
+  | \ficta b'!1. 
   | c''1.
   | R1. 
   | r2 c''2 c''2
@@ -299,14 +299,14 @@ MusicEstribilloA = {
   | a'4 bes'4) g'4( bes'4) a'4( g'4)
   | fis'2 g'2 r2 
   | r1.
-  | r2 e''2\fl d''4( e''4\fl 
+  | r2 \ficta es''!2 d''4( \ficta es''!4 
 
   % m. 30
-  | d''4 e''4\fl) c''4( e''4\fl) d''4( c''4)
-  | bes'2\na c''2 r2 
+  | d''4 \ficta es''!4) c''4( \ficta es''!4) d''4( c''4)
+  | \ficta b'!2 c''2 r2 
   | r1.
-  | r2 c''2 bes'4(\fl c''4 
-  | bes'4 c''4) a'4(\fl c''4) bes'4( a'4)\fl
+  | r2 c''2 \ficta bes'!4( c''4 
+  | bes'4 c''4) \ficta as'!4( c''4) bes'4( \ficta as'!4)
   | g'2 c'2 r2 
   | r2 g'2\color f'2~
   | f'2 es'2 d'2~
@@ -323,7 +323,7 @@ MusicEstribilloA = {
   | r1. 
   | r2 c''2\color c''2~
   | c''2 b'2 a'2\endcolor 
-  | bes'1.\na
+  | \ficta b'!1.
 
   % m. 50
   | c''1. 
@@ -357,7 +357,7 @@ MusicEstribilloA = {
   | bes'2 g'2 a'2 
   | fis'2\color d'1\endcolor
   | r1. 
-  | r2 f'2\sh f'2 
+  | r2 \ficta fis'!2 \ficta fis'!2 
   | r2 g'2 g'2 
   | r2 d'1\colorOne 
 
@@ -415,8 +415,8 @@ MusicEstribilloT = {
   | R1.
   | r2 es'2 d'4( es'4 
   | d'4 es'4) c'2 d'2
-  | bes2\na\color c'2 f2~\sh
-  | f2\endcolor g4( a4 bes4 c'4)
+  | \ficta b!2\color c'2 \ficta fis!2~
+  | fis2\endcolor g4( a4 bes4 c'4)
   | d'2\color d'1\endcolor
 
   % m. 40
@@ -434,7 +434,7 @@ MusicEstribilloT = {
   % m. 50
   | r2 c'2\color c'2~
   | c'2 b2 a2\endcolor
-  | bes1.\na 
+  | \ficta b!1. 
   | c'1. 
   | d'1.~
   | d'1.
@@ -465,7 +465,7 @@ MusicEstribilloT = {
   | r2 g'2 g'2 
   | r2 d'1\colorOne
   | r2 g2 g2 
-  | r2 f1\sh\colorOne
+  | r2 \ficta fis!1\colorOne
 
   % m. 80
   | r2 g1\colorOne\fermata
@@ -476,7 +476,7 @@ MusicEstribilloB = {
   \MeterDuple
   \CantusMollis
 
-  | r4 g4 g8. f16\sh g4
+  | r4 g4 g8. \ficta fis!16 g4
   | d4 d4 bes2
   | f2 f4 bes4
   | c'4 f4 bes4 bes4 
@@ -506,22 +506,19 @@ MusicEstribilloB = {
   | d2 g2 fis2~
   | fis2 g2 c2
   | d2 g2 d2~
-  | <<
-    { d2 g2 c2 }
-    \figures { s2 < 6 >1 }
-  >>
+  | d2 g2 c2 
   | d2 g2 fis2~
   | fis2 g2 c2 
   | d2 es2 bes,2~\color 
   | bes,2 c2 d2
-  | g,2 c2 \FictaAlign bes,2~\na
+  | g,2 c2  \ficta b,!2~
 
   % m. 30
-  | bes,2 c2 f2 
+  | b,2 c2 f2 
   | g2 c'2 b2~
   | b2 c'2 f2\endcolor
   | g2 c'2 g2~\color
-  | g2\endcolor a2\fl f2
+  | g2\endcolor \ficta as!2 f2
   | g2 c'2 b2~\color
   | b2\endcolor c'2 d'2
   | g2 c'2 fis2~\color
@@ -554,10 +551,7 @@ MusicEstribilloB = {
 
   % m. 60
   | g1.
-  | <<
-    { c'1. } 
-    \figures { < 3- >1. }
-  >>
+  | c'1.
   | bes2 bes2 c'2 
   | d'1.
   | g1. 
@@ -590,7 +584,7 @@ MusicEstribilloB = {
 MusicCoplaISi = {
   % m. 81
   \RepeatBarStart
-  | g''4 f''8. f''16 e''4\fl d''4
+  | g''4 f''8. f''16 \ficta es''!4 d''4
   | c''4 bes'4 r2
   \RepeatBarEnd
 
@@ -600,14 +594,14 @@ MusicCoplaISi = {
   | c''2 r8 bes'8 c''8 d''8
   | es''2 d''2
   | r4 c''4 g''2
-  | r8 g''8 g''8 g''8 g''4 f''4\sh
+  | r8 g''8 g''8 g''8 g''4 \ficta fis''!4
 
   % m. 90
   | R1
   | R1
   | d''4 f''4 es''4 d''8 c''8
   | b'8 c''8 d''8 e''8 f''2
-  | e''2\fl r4 d''4~
+  | \ficta es''!2 r4 d''4~
   | d''4 d''4 d''2
 
   % m. 96
@@ -632,10 +626,10 @@ MusicCoplaIISi = {
   | d''4. d''8 c''8 d''8 bes'8 c''8
   | a'8 bes'8 c''8 d''8 fis'2
   | g'2 r4 r8 g''8 
-  | f''8 g''8 e''8\fl f''8 d''8 e''8\fl f''8 g''8
+  | f''8 g''8 \ficta es''!8 f''8 d''8 \ficta es''!8 f''8 g''8
 
   % m. 110
-  | e''4\na f''8 g''4 a''8 fis''4
+  | \ficta e''!4 f''8 g''4 a''8 fis''4
 
   % m. 111
   | g''1\fermata
@@ -710,11 +704,11 @@ MusicCoplaIA = {
 
   % m. 90
   | a'4 c''4 bes'4 a'8 g'8
-  | f'8\sh g'8 a'8 bes'8 c''2~
+  | \ficta fis'!8 g'8 a'8 bes'8 c''2~
   | c''4 bes'4 r4 bes'8 a'8
   | g'1
   | g'2 r4 a'4~
-  | a'8 g'8 g'2( f'4\sh)
+  | a'8 g'8 g'2( \ficta fis'!4)
 
   % m. 96
   | g'1\fermata
@@ -734,7 +728,7 @@ MusicCoplaIIIA = {
   | a'8 bes'8 c''8 d''8 fis'2
   | g'2 r4 g'4 
   | f'8 g'8 \EdBracL es'8 f'8 \EdBracR d'8 es'8 f'8 g'8
-  | e'4\na f'8 g'4 a'8 f'4\sh 
+  | \ficta e'!4 f'8 g'4 a'8 \ficta fis'!4 
   | g'1\fermata
 }
 
@@ -779,8 +773,8 @@ MusicCoplaVT = {
   | d'4. d'8 c'8 d'8 bes8 c'8
   | a8 bes8 c'8 d'8 fis2
   | g2 r4 g'8 g'8 
-  | f'8 g'8 e'8\fl f'8 d'8 e'8\fl f'8 g'8
-  | e'4\na f'8 g'4 a'8 fis'4
+  | f'8 g'8 \ficta es'!8 f'8 d'8 \ficta es'!8 f'8 g'8
+  | \ficta e'!4 f'8 g'4 a'8 fis'4
   | g'1\fermata
 }
 
@@ -798,18 +792,15 @@ MusicCoplaIB = {
   | bes4 f4 g4 d4
   | es4 bes,4 f2
   | bes,4 d4 g2
-  | c8[ d8 e8\fl f8] g2
+  | c8[ d8 \ficta es!8 f8] g2
   | c'2 g2 
-  | c8[ d8 e8\fl f8] g2
+  | c8[ d8 \ficta es!8 f8] g2
   | es2 d2 
 
   % m. 90
   | d2 g2 
   | d1
-  | <<
-    { g2 c4 g4 }
-    \figures { s2. < 3- >4 }
-  >>
+  | g2 c4 g4
   | g1 
   | c2 r4 d4~
   | d4 g4 d2
@@ -821,17 +812,11 @@ MusicCoplaIB = {
 MusicCoplaIIB = {
   % m. 97
   | r2 r4 g4 
-  | <<
-    { c'4 g4 a4 e4 }
-    \figures { < 3- >4 < _ >2. }
-  >>
+  | c'4 g4 a4 e4
   | fis4 g4 d4 g4
 
   % m. 100
-  | <<
-    { c'4 g4 a4 e4 }
-    \figures { < 3- >4 < _ >2. }
-  >>
+  | c'4 g4 a4 e4
   | fis4 g4 d4 g4
   | es4 bes4 es4 bes,4
   | f2 bes,4 d4
@@ -848,6 +833,38 @@ MusicCoplaIIB = {
   % m. 111
   | g1\fermata
 }
+
+%%*********************
+%%  FIGURED BASS
+
+FiguresEstribillo = \figuremode {
+  % \MeterDuple
+  s1*17
+  % \MeterTriple
+  s1.*6
+  % m. 23
+  s2 < 6 >1 
+  s1.*36
+  % m. 61
+  < 3- >1.
+  s1.*19
+}  
+
+FiguresCoplaIB = \figuremode {
+  % \MeterDuple
+  s1*11
+  s2. < 3- >4
+  s1*4
+}
+
+FiguresCoplaIIB = \figuremode {
+  s1
+  < 3- >4 < _ >2.
+  s1
+  < 3- >4 < _ >2.
+  s1*11
+}
+
 
 %%***************************************
 %% ALL COPLAS 
@@ -956,3 +973,37 @@ MusicCoplasB = {
   \MusicCoplaIB
 }
 
+
+%************************
+% ALL TOGETHER
+
+MusicSi = {
+  \MusicEstribilloSi
+  \MusicCoplasSi
+}
+MusicSii = {
+  \MusicEstribilloSii
+  \MusicCoplasSii
+}
+MusicA = {
+  \MusicEstribilloA
+  \MusicCoplasA
+}
+MusicT = {
+  \MusicEstribilloT
+  \MusicCoplasT
+}
+MusicB = {
+  \MusicEstribilloB
+  \MusicCoplasB
+}
+FiguresB = \figuremode {
+  \FiguresEstribillo
+  \SectionBreak
+  \FiguresCoplaIB
+  \FiguresCoplaIIB
+  \FiguresCoplaIIB
+  \FiguresCoplaIB
+  \FiguresCoplaIIB
+  \FiguresCoplaIB
+}

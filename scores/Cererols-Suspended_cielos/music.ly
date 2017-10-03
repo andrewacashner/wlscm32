@@ -1412,7 +1412,7 @@ MusicEstribilloAc = {
   \FinalBar
 }
 
-FiguredBassAc = \figuremode {
+FiguresAc = \figuremode {
   \MeterTriple
   s1.*20
   \MeterDuple

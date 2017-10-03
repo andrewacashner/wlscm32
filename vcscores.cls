@@ -142,7 +142,7 @@ Critical edition of villancico poetry and music for WLSCM]
 % These are PDFs produced by Lilypond with page size and layout
 % optimized for inclusion here (e.g., without page numbers).
 % Including a score creates a new chapter with the score title.
-% #1 Score directory name
+% #1 Score path
 % #2 Optional short score title (goes into header)
 % #3 Score title (goes into table of contents only)
 \NewDocumentCommand{\includescore}{ m o m }{%
@@ -152,14 +152,14 @@ Critical edition of villancico poetry and music for WLSCM]
             \chapter[#3]{}% 
             \IfValueTF{#2}{\chaptermark{#2}}{}% 
         }%
-    ]{scores/#1/score}% 
+    ]{scores/#1}% 
     %
     \includepdf[
         pages=2-, 
         pagecommand={%
             \thispagestyle{fancy}%
         }%
-    ]{scores/#1/score}%
+    ]{scores/#1}%
 }
 
 % Include source image from 'source' directory

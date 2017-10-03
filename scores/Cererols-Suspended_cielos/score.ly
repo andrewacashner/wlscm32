@@ -100,7 +100,7 @@
     <<
       \IncipitStaff "ACOMP." "Ac." { \IncipitAc }
       \new Voice = "Ac" { \MusicAc }
-      \new FiguredBass { \FiguredBassAc }
+      \new FiguredBass { \FiguresAc }
     >>
   >>
 }
