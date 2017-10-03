@@ -515,7 +515,7 @@ MusicEstribilloAI = {
   | g'4 g'4 c''4 c''4 
   | bes'2 a'2 
   | R1 
-  | r4 c''8 \ficta bes'!8 a'4 a'8 a'8 
+  | r4 c''8 b'8\fl a'4 a'8 a'8 
   | g'4 g'4 e'4 e'4 
   | f'8[ g'8] a'2 gis'4 
   | a'2 r2 
@@ -1635,7 +1635,7 @@ MusicCoplasSIi = {
   | c''2\sh d''2 d''2~
   | d''2 b'2 b'2 
   | b'2\color c''1\endcolor
-  | r2 a''4( \ficta bes''!4 a''4 g''4) 
+  | r2 a''4( b''4\fl a''4 g''4) 
   | f''2\sh g''2 g''2~
   | g''2 f''2 f''2 
   | e''2 f''2\sh g''2
@@ -1780,7 +1780,7 @@ MusicCoplasSIii = {
   | f''2 f''4 e''4 d''2~\color 
   | d''2 c''1\endcolor
   | b'2( c''2 d''2) 
-  | \ficta cis''!1.
+  | c''1.\sh
   | R1. 
   | r2 a''2 a''2
   | fis''2\color g''1 
@@ -1855,7 +1855,7 @@ MusicCoplasSIii = {
   | R1. 
 
   % m. 260
-  | r2 a''4( \ficta bes''!4 a''4 g''4)
+  | r2 a''4( b''4\fl a''4 g''4)
   | fis''2 g''2 g''2~
   | g''2 e''2 e''2
   | e''2\color f''1\endcolor 
@@ -1888,7 +1888,7 @@ MusicCoplasAI = {
   | a'1 a'2
 
   % m. 120
-  | \ficta bes'!2\color a'2 \[ a'2~
+  | b'2\fl\color a'2 \[ a'2~
   | a'2 gis'1\endcolor \]
   | a'1 r2
   | R1.
@@ -1924,7 +1924,7 @@ MusicCoplasAI = {
   | d'1.
   | r2 g'2 g'2 
   | a'1.
-  | \ficta bes'!2 a'2 a'2 
+  | b'2\fl a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
   | R1.
@@ -1959,7 +1959,7 @@ MusicCoplasAI = {
   | d'1.
   | r2 g'1\colorOne 
   | a'1 a'2
-  | \ficta bes'!2 a'2 a'2 
+  | b'2\fl a'2 a'2 
   | a'2\color gis'1\endcolor
   | a'1. 
   | R1.
