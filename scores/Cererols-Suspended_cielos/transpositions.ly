@@ -22,3 +22,23 @@ MusicTII    = \MyTranspose { \MusicTII }
 MusicBII    = \MyTranspose { \MusicBII } 
 MusicAc     = \MyTranspose { \MusicAc } 
 
+% We have to manually transpose figures
+% 3- -> 3_ (flat to natural)
+FiguredBassAc = \figuremode {
+  \MeterTriple
+  s1.*20
+  \MeterDuple
+  s1*8
+  \MeterTriple
+  s1.*34
+  % m. 63
+  < _! >1. 
+  < _! >2 <_>1
+  s1.
+  \MeterDuple
+  s1*18
+  % m. 83
+  < 6 5 >1
+  % tacet
+}
+

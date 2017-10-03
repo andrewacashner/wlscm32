@@ -1350,10 +1350,8 @@ MusicEstribilloAc = {
   | a2 d'1
   | d2 a1 
   | a2 d'2. d'4 
-  | <<
-      { g2 fis1  | g2 g1\endcolor }
-      \figures { < 3- >1. | < 3- >2 <_>1 }
-    >> 
+  | g2 fis1  
+  | g2 g1\endcolor
   | g1. 
 
   %% m. 66 METER TO C -- contrapunto celestial
@@ -1380,10 +1378,7 @@ MusicEstribilloAc = {
   | a1 
   | a2 d'2 
   | e'2 e2 
-  | <<
-      { d1 }
-      \figures { < 6 5 >1 }
-    >> 
+  | d1 
   | e1 
   | a2 d'4 b8 c'8~
   | c'8 g8 d'4 g2 
@@ -1415,6 +1410,24 @@ MusicEstribilloAc = {
   % m. 108
   | d1\fermata
   \FinalBar
+}
+
+FiguredBassAc = \figuremode {
+  \MeterTriple
+  s1.*20
+  \MeterDuple
+  s1*8
+  \MeterTriple
+  s1.*34
+  % m. 63
+  < 3- >1. 
+  < 3- >2 <_>1
+  s1.
+  \MeterDuple
+  s1*18
+  % m. 83
+  < 6 5 >1
+  % tacet
 }
 
 %%**********************************************************************
