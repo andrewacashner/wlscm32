@@ -24,3 +24,9 @@ LyricsCoplasSolo = \lyricmode {
   los tie -- ne~im -- pe -- di -- dos,
   no se den, no se den por sen -- ti -- dos los sen -- ti -- dos.
 }
+
+%% ALL TOGETHER
+LyricsSolo = \lyricmode {
+  \LyricsEstribilloSolo
+  \LyricsCoplasSolo
+}

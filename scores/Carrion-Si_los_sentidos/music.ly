@@ -10,7 +10,7 @@ IncipitSolo = {
   a'2
 }
 
-IncipitAcomp = {
+IncipitAc = {
   \MSclefCiv
   a1.
 }
@@ -121,7 +121,7 @@ CoplasSolo = {
 
  
 
-EstribilloAcomp = {
+EstribilloAc = {
   \clef "bass"
   \MeterTriple
   | a1.
@@ -186,7 +186,7 @@ EstribilloAcomp = {
   \FinalBar
 }
 
-CoplasAcomp = {
+CoplasAc = {
   \SectionBreak
   \MeterDuple
   % m. 50
@@ -219,7 +219,7 @@ CoplasAcomp = {
   \RepeatBar
 }
 
-EstribilloFiguresAcomp = \figuremode {
+FiguresEstribilloAc = \figuremode {
   \MeterTriple
   | s1.
   | s1.
@@ -282,7 +282,7 @@ EstribilloFiguresAcomp = \figuremode {
   | s1.
 }
 
-CoplasFiguresAcomp = \figuremode {
+FiguresCoplasAc = \figuremode {
   \SectionBreak
   \MeterDuple
   % m. 50
@@ -311,5 +311,21 @@ CoplasFiguresAcomp = \figuremode {
   
   % m. 67
   | s1.
+}
+
+%************************
+% ALL TOGETHER
+
+MusicSolo = { 
+  \EstribilloSolo
+  \CoplasSolo
+}
+MusicAc = {
+  \EstribilloAc
+  \CoplasAc
+}
+FiguresAc = {
+  \FiguresEstribilloAc
+  \FiguresCoplasAc
 }
 								   
