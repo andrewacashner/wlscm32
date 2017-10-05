@@ -95,7 +95,7 @@ MusicEstribilloSIi = {
   | c''2(\color bes'1)\endcolor
   | a'1.
   | r2 a'1\color
-  | a'2 c''1\sh\endcolor
+  | a'2 \ficta cis''!1\endcolor
   | d''2 r2 r2
 
   % m. 20
@@ -107,7 +107,7 @@ MusicEstribilloSIi = {
  
   \MeterDuple
   % m. 25
-  | r4 r8 c''8\sh d''8 d''8 d''8 d''8
+  | r4 r8 \ficta cis''!8 d''8 d''8 d''8 d''8
   | d''4 r8 f'8 a'8 a'8 a'8 a'8 
   | a'2 r4 c''4~
   | c''8 c''8 c''4 d''2
@@ -121,7 +121,7 @@ MusicEstribilloSIi = {
   | r2 cis''4 cis''8 cis''8
   | cis''4 d''4 r2
   | r2 r4 cis''4
-  | d''2 r4 c''8\sh c''8\sh
+  | d''2 r4 \ficta cis''!8 \ficta cis''!8
   | d''4 e''8 e''8 c''4 d''8 d''8~
   | d''8 c''8 b'4 c''2
 
@@ -314,7 +314,7 @@ MusicEstribilloAI = {
 
   % m. 50
   | R1
-  | r4 e'8 e'8 f'8\sh f'8\sh d'8 d'8
+  | r4 e'8 e'8 \ficta fis'!8 \ficta fis'!8 d'8 d'8
   | d'4 f'8 f'8 d'4 e'8 cis'8~
   | cis'8 d'8 e'4 d'2
   | r4 g'2 f'4
@@ -462,7 +462,7 @@ MusicEstribilloSII = {
   | e'2 r4 r8 f'8
   | a'8 a'8 a'8 a'8 a'4 r8 f'8
   | a'8 a'8 a'8 a'8 a'4 a'4~
-  | a'8 b'8 c''4 c''4 b'4\na
+  | a'8 b'8 c''4 c''4 \ficta b'!4
   | c''2 b'8 b'8 b'8 b'8
 
   % m. 30 
@@ -546,7 +546,7 @@ MusicEstribilloAII = {
 
   \MeterDuple
   % m. 25
-  | c'2\sh r4 r8 d'8
+  | \ficta cis'!2 r4 r8 d'8
   | f'8 f'8 f'8 f'8 f'4 r8 d'8
   | e'8 e'8 e'8 e'8 e'4 f'4
   | c'4 e'4 g'2
@@ -577,11 +577,11 @@ MusicEstribilloAII = {
   | e'2 r4 d'8 d'8
 
   % m. 50
-  | d'4 f'8 f'8 d'4 e'8 c'8\sh~
-  | c'8 d'8 e'8[ a8] a2
+  | d'4 f'8 f'8 d'4 e'8 \ficta cis'!8~
+  | cis'8 d'8 e'8[ a8] a2
   | R1
   | r4 a8 a8 a4 a
-  | r4 bes4. g8[ a8 bes8]\na
+  | r4 bes4. g8[ a8 \ficta b!8]
   | cis'4. b8 a2
   | R1
   | R1
@@ -718,7 +718,7 @@ MusicEstribilloBII = {
   | f2 f2 f2~\color
   | f2 c1\endcolor
   | d1 e2
-  | f2\sh\color g1\endcolor 
+  | \ficta fis!2\color g1\endcolor 
 
   \MeterDuple
   % m. 25
@@ -807,7 +807,7 @@ MusicEstribilloAc = {
   | f1\color f2~
   | f2 c1\endcolor
   | d1 e2
-  | f2\sh\color g1\endcolor
+  | \ficta fis!2\color g1\endcolor
 
   \MeterDuple
   % m. 25
@@ -970,9 +970,15 @@ MusicCoplasAc = {
 }
 
 %%************************************
-%% FIGURES: COPLAS
+%% FIGURES
 %%************************************
 
+FiguresEstribilloAc = \figuremode {
+  s1*9
+  s1.*15
+  s1*39
+}
+  
 FiguresCoplasAc = \figuremode {
   \SectionBreak
   % m. 64
@@ -991,4 +997,40 @@ FiguresCoplasAc = \figuremode {
   | s1
   | s2 <6>4 s4
   | <6>2 s2
+}
+
+%%**************************************
+%% ALL TOGETHER
+%%**************************************
+
+MusicSIi = {
+  \MusicEstribilloSIi
+  \MusicCoplasSIi
+}
+MusicSIii = {
+  \MusicEstribilloSIii
+  \MusicCoplasSIii
+}
+MusicAI = {
+  \MusicEstribilloAI
+  \MusicCoplasAI
+}
+MusicTI = {
+  \MusicEstribilloTI
+  \MusicCoplasTI
+}
+
+MusicSII = \MusicEstribilloSII
+MusicAII = \MusicEstribilloAII
+MusicTII = \MusicEstribilloTII
+MusicBII = \MusicEstribilloBII
+
+MusicAc = {
+  \MusicEstribilloAc
+  \MusicCoplasAc
+}
+
+FiguresAc = \figuremode {
+  \FiguresEstribilloAc
+  \FiguresCoplasAc
 }
