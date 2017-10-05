@@ -222,7 +222,6 @@ MusicSi = {
   { \Section "PAPALOTILLO: SOLO" }
 
   \HideTimeSignature \time 3/2
-  %\MeterTriple % XXX one or the other
   | e''2 d''2 c''2 
   | b'2 a'2 g'2
   | a'2 b'2 c''2 
@@ -374,7 +373,6 @@ MusicSi = {
   
   %% m. 215 Gloria 
   \noBreak
-%  \Section "A 3" % XXX omit, see critical notes
   \MeterTriple
   e''2\color e''1\endcolor 
   a'2. b'4 \[ c''2~\color
@@ -1302,7 +1300,7 @@ MusicSii = {
 
   %% m. 215 GLORIA
   \PolyMeterDupleVsTriple {
-    \Section "A 3" % XXX
+    \Section "A 3" 
     | c''1\CN
     | c''1
     | d''1 
@@ -1655,7 +1653,7 @@ MusicBii = {
   | c'2 b2 a2 
   | g2 c'1 
   | g2\color c'1\endcolor
-  | R1.*2 % xxx was g1.*2 ?
+  | R1.*2 
   | r2 g2 a2 
 
   % m. 270

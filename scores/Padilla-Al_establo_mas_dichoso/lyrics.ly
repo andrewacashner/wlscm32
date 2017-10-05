@@ -6,7 +6,7 @@
 %% lyric blocks
 
 TroyanoPrologueI = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Al es -- tab -- lo más di -- cho -- so,
   don -- de triun -- fa la __ vic -- to -- ria,
   prin -- ci -- pio~a sig -- los de gra -- cia,
@@ -14,7 +14,7 @@ TroyanoPrologueI = \lyricmode {
 }
 
 TroyanoPrologueII = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   Bue -- na no -- che~|y la más bue -- na,
   pues a pe -- sar de __ las som -- bras
   en su mi -- tad __ a -- ma -- ne -- ce
@@ -22,7 +22,7 @@ TroyanoPrologueII = \lyricmode {
 }
 
 TroyanoPrologueIII = \lyricmode {
-  \set stanza = #"3."
+  \StanzaIII
   Un za -- gal de~a -- quel con -- tor -- no,
   en su tem -- pla -- da __ zam -- po -- ña 
   to -- can -- do~el Nue -- vo Tro -- ya -- no,
@@ -32,21 +32,21 @@ TroyanoPrologueIII = \lyricmode {
 %% Ai lyrics = Si 
 
 TroyanoPrologueITi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Al es -- tab -- lo más di -- cho -- so,
   don -- de triun -- fa la __ vic -- to -- ria,
   prin -- ci -- pio~a sig -- los de gra -- cia,
   la no -- che más ven -- tu -- ro -- _ sa,
 }
 TroyanoPrologueIITi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   Bue -- na no -- che~|y la más bue -- na,
   pues a pe -- sar de __ las som -- bras
   en su mi -- tad __ a -- ma -- ne -- ce
   quién con tan -- ta luz en -- tol -- _ da.
 }
 TroyanoPrologueIIITi = \lyricmode {
-  \set stanza = #"3."
+  \StanzaIII
   Un za -- gal de~a -- quel con -- tor -- no,
   en su tem -- pla -- da __ zam -- po -- ña 
   to -- can -- do~el Nue -- vo Tro -- ya -- no,
@@ -141,7 +141,7 @@ TroyanoTi = \lyricmode {
 %% ARRIERO Lyric blocks
 
 ArrieroPrologueISi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Des -- pués Bar -- tho -- lo,~él de ma -- rras,
   a -- rrie -- ro de ca -- la~|y go -- rra,
   que fue~es -- pa -- da -- chín de~an -- ta -- ño,
@@ -149,7 +149,7 @@ ArrieroPrologueISi = \lyricmode {
 }
 
 ArrieroPrologueIISi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   En bus -- ca de~u -- na mu -- li -- lla
   que se le fue por __ tra -- mo -- ya,
   a dar -- se~u -- na bue -- na no -- che
@@ -157,7 +157,7 @@ ArrieroPrologueIISi = \lyricmode {
 }
 
 ArrieroPrologueIIISi = \lyricmode {
-  \set stanza = #"3."
+  \StanzaIII
   Al por -- tal con los pas -- to -- res
   se~en -- tró~a -- rro -- jan -- do __ bra -- mo -- nas,
   y|~a quién o -- cu -- pa~el pe -- se -- bre
@@ -165,7 +165,7 @@ ArrieroPrologueIIISi = \lyricmode {
 }
 %% Ai lyrics = Ti
 ArrieroPrologueI = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Des -- pués Bar -- tho -- lo,~él de ma -- rras,
   a -- rrie -- ro de ca -- la~|y go -- rra,
   que fue~es -- pa -- da -- chín de~an -- ta -- ño,
@@ -173,7 +173,7 @@ ArrieroPrologueI = \lyricmode {
 }
 
 ArrieroPrologueII = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   En bus -- ca de~u -- na mu -- li -- lla
   que se le fue por __ tra -- mo -- ya,
   a dar -- se~u -- na bue -- na no -- che
@@ -181,7 +181,7 @@ ArrieroPrologueII = \lyricmode {
 }
 
 ArrieroPrologueIII = \lyricmode {
-  \set stanza = #"3."
+  \StanzaIII
   Al por -- tal con los pas -- to -- res
   se~en -- tró~a -- rro -- jan -- do __ bra -- mo -- nas,
   y|~a quién o -- cu -- pa~el pe -- se -- bre
@@ -218,7 +218,7 @@ ArrieroPrologueTi = \lyricmode {
 %% Tii
 
 ArrieroDuoI = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Se -- ñor Ni -- ño, vo -- to~a San—
   ya lo di -- je, y|~es -- to so -- bra
   pa -- ra que~en -- tien -- da que ven -- go
@@ -249,37 +249,37 @@ PapalotilloRefrain = \lyricmode {
 }
 
 PapalotilloCoplaI = \lyricmode { 
-  \set stanza = #"1."
+  \StanzaI
   Mí -- ra -- lo bien, có -- mo llo -- ra~|y sus -- pi -- ra,
   sien -- do del pa -- dre la mis -- ma~a -- le -- grí -- a.
 }
 
 PapalotilloCoplaII = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   Mí -- ra -- lo bien en -- tre po -- bres a -- la -- jas,
   gra -- no fe -- cun -- do~es -- con -- di -- do~en -- tre pa -- jas.
 }
 
 PapalotilloCoplaIII = \lyricmode {
-  \set stanza = #"3."
+  \StanzaIII
   Mí -- ra -- lo bien que~aun -- que~a -- go -- ra se~es -- tre -- cha,
   nos ha de dar u -- na fér -- til co -- se -- cha.
 }
 
 PapalotilloCoplaIV = \lyricmode {
-  \set stanza = #"4."
+  \StanzaIV
   Mí -- ra -- lo bien con ter -- ne -- za~|y cui -- da -- do,
   que~ha de ser pas -- to~|y pas -- tor des -- ve -- la -- do.
 }
 
 PapalotilloCoplaV = \lyricmode {
-  \set stanza = #"5."
+  \StanzaV
   Mí -- ra -- lo bien, cor -- de -- ri -- to~a -- mo -- ro -- so,
   que~ha de hu -- ir de las ga -- rras del lo -- bo.
 }
 
 PapalotilloCoplaVI = \lyricmode {
-  \set stanza = #"6."
+  \StanzaVI
   Mí -- ra -- lo bien, pe -- que -- ñi -- to pas -- tor, __ _
   pues cuan -- do gran -- de se -- rá la -- bra -- dor. __ 
 }
@@ -318,7 +318,7 @@ PapalotilloTi = \lyricmode {
 %% lyric blocks
 
 NegrillaPrologueISi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   El An -- go -- la Min -- gue -- li -- llo,
   a -- cau -- di -- llan -- do __ su tro -- pa,
   no quie -- re ser __ el pos -- tre -- ro
@@ -326,7 +326,7 @@ NegrillaPrologueISi = \lyricmode {
 }
 
 NegrillaPrologueIISi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   De -- jan -- do~el tum -- ba ca -- tum -- ba~|y
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
@@ -334,7 +334,7 @@ NegrillaPrologueIISi = \lyricmode {
 }
 
 NegrillaPrologueIAi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   El An -- go -- la Min -- gue -- li -- llo,
   a -- cau -- di -- llan -- do __ su tro -- pa,
   no quie -- re ser __ el pos -- tre -- ro
@@ -342,7 +342,7 @@ NegrillaPrologueIAi = \lyricmode {
 }
 
 NegrillaPrologueIIAi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   De -- jan -- do~el tum -- ba ca -- tum -- ba~|y
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
@@ -350,7 +350,7 @@ NegrillaPrologueIIAi = \lyricmode {
 }
 
 NegrillaPrologueITi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   El An -- go -- la Min -- gue -- li -- llo,
   a -- cau -- di -- llan -- do __ su tro -- pa,
   no quie -- re ser __ el pos -- tre -- ro
@@ -358,7 +358,7 @@ NegrillaPrologueITi = \lyricmode {
 }
 
 NegrillaPrologueIITi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   De -- jan -- do~el tum -- ba ca -- tum -- ba
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
@@ -481,28 +481,28 @@ NegrillaCoplasUpperVV = \lyricmode {
 }
 
 NegrillaCoplaITi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Ca -- ya, ca -- ya, chi -- qui -- to, ay -- ta,
   ay -- ta, pa -- la que te ca -- yen -- te, ay -- ta,
   ay -- ta, y|~u -- no pa -- pa -- ga -- yi -- to, ay -- ta.
 }
 
 NegrillaCoplaITii = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Ay -- ta, que tla -- e -- mo ple -- cen -- te, ay -- ta,
   ay -- ta, man -- ti -- ya pa -- ña -- li -- to, ay -- ta,
   ay -- ta, que sa -- ve -- mo ha -- bra.
 }
 
 NegrillaCoplaIITi = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   Mi si -- ñol Ma -- nu -- e -- le, ay -- ta,
   ay -- ta, plu -- que sa lin -- da co -- sa, ay -- ta,
   ay -- ta, Se -- su, le, le, le, le, le, ay -- ta.
 }
 
 NegrillaCoplaIITii = \lyricmode {
-  \set stanza = #"2."
+  \StanzaII
   Ay -- ta, e -- se pa -- pa~he sa -- blo -- sa, ay -- ta,
   ay -- ta, man -- te -- qui -- ya con me -- le, ay -- ta,
   ay -- ta, ro, ro, ro, ro, ca -- ya.

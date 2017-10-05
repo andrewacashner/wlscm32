@@ -7,13 +7,13 @@
 \frontmatter
 
 \mymaketitle
-\copyrightpage % XXX check with editor
+\copyrightpage
 \mytableofcontents
 
 % Each of these is a chapter
 \includeintro{preface}
 
-\mainmatter % XXX check editor
+\mainmatter 
 \includeintro{intro}
 \includeintro{report}
 
@@ -35,16 +35,11 @@
 \includepoem{Que_musica_divina-Caseda}
 \includepoem{Al_establo_mas_dichoso-Padilla}
 \includepoem{Angelicos_coros-Salazar}
- 
+
 % Each of the scores is a chapter
 \includescore{Cererols-Suspended_cielos/score}
 [Cererols, \worktitle{Suspended, cielos}]
 {Joan Cererols, \worktitle{Suspended, cielos, vuestro dulce canto}}
-
-\includescore{Cererols-Suspended_cielos/score-transposed}
-[Cererols, \worktitle{Suspended, cielos}, transposed]
-{Joan Cererols, \worktitle{Suspended, cielos, vuestro dulce canto} (transposed
-edition)}
 
 \includescore{Padilla-Voces_las_de_la_capilla/score}
 [Gutiérrez de Padilla, \worktitle{Voces, las de la capilla}]
@@ -62,10 +57,6 @@ edition)}
 [Cáseda, \worktitle{Qué música divina}]
 {José de Cáseda, \worktitle{Qué música divina}}
 
-\includescore{Caseda-Que_musica_divina/score-transposed}
-[Cáseda, \worktitle{Qué música divina}, transposed]
-{José de Cáseda, \worktitle{Qué música divina} (transposed edition)}
-
 \includescore{Padilla-Al_establo_mas_dichoso/score}
 [Gutiérrez de Padilla, \worktitle{Al establo más dichoso}]
 {Juan Gutiérrez de Padilla, \worktitle{Al establo más dichoso}}
@@ -73,5 +64,18 @@ edition)}
 \includescore{Salazar-Angelicos_coros/score}
 [Salazar, \worktitle{Angélicos coros}]
 {Antonio de Salazar, \worktitle{Angélicos coros con gozo cantad}}
+
+\appendix
+\chapter{Appendix: Transposed Editions}
+
+\includescore{Cererols-Suspended_cielos/score-transposed}
+[Cererols, \worktitle{Suspended, cielos}, transposed]
+{Joan Cererols, \worktitle{Suspended, cielos, vuestro dulce canto} (transposed
+edition)}
+
+\includescore{Caseda-Que_musica_divina/score-transposed}
+[Cáseda, \worktitle{Qué música divina}, transposed]
+{José de Cáseda, \worktitle{Qué música divina} (transposed edition)}
+
 
 \end{document}

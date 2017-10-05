@@ -12,13 +12,13 @@
 %   are in separate file vcscores-config.tex.
 %
 % - Requires several of my own packages:
-%    + ebgaramond-complete
 %    + semantic-markup
-%    + poemtranslation
 %    + octave
 %    + musicography
+%    + poemtranslation
 
 % CHANGELOG
+% 2017-10-05    Minor cleanup
 % 2017-07-19    Adapted to WLSCM house style
 
 %***************************************************
@@ -41,9 +41,8 @@ Critical edition of villancico poetry and music for WLSCM]
 % FONTS AND TYPOGRAPHY
 
 \RequirePackage[T1]{fontenc}
-
-% My package for complete character coverage with EB Garamond
-\RequirePackage{ebgaramond-complete}
+\RequirePackage[libertine]{newtxmath}
+\RequirePackage{ebgaramond-maths}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{microtype}
 
@@ -430,7 +429,7 @@ Critical edition of villancico poetry and music for WLSCM]
 
 % Use image of my tracing of CZ (C3 or C3/2) meter signature in text
 \NewDocumentCommand{\meterCZorig}{}{%
-  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{scores/ly/img/CZ}}%
+  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{ly/img/CZ}}%
 }
 
 % Numeric range commands (the simple way)
@@ -448,9 +447,6 @@ Critical edition of villancico poetry and music for WLSCM]
 
 % Elision symbol or undertie from amssymb
 \RequirePackage{amssymb}
-\NewDocumentCommand{\undertie}{}{%
-    \raisebox{-1ex}{$\smallsmile$}%
-}
 
 % *//* lyric-text repeat sign from manuscripts, from package amssymb
 \NewDocumentCommand{\MSrepeat}{}{%

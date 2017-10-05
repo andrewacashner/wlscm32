@@ -124,7 +124,7 @@ MusicEstribilloSi = {
   | g'4 a'4 r2 
   | R1 | R1
   | R1 | R1
-  | r4 d''8 c''8\sh d''2 
+  | r4 d''8 \ficta cis''!8 d''2 
   | r4 bes'8 bes'8 c''4 d''8 d''8 
   | c''4 a'4 r2 
 
@@ -167,7 +167,7 @@ MusicEstribilloSi = {
   | R1. 
   | f''?2 f''2. e''4 
   | d''2 e''2. d''4 
-  | c''1.\sh 
+  | \ficta cis''!1. 
   | d''2\color d''1\endcolor 
   | d''1. 
 
@@ -335,7 +335,7 @@ MusicEstribilloAi = {
   | g'1 bes'2~
   | bes'2 a'1 
   | g'1 g'2~
-  | g'2 f'1\sh 
+  | g'2 \ficta fis'!1 
   | g'2 bes'1\endcolor 
   | a'1. 
   | g'1. 
@@ -428,7 +428,7 @@ MusicEstribilloTi = {
   % m. 45
   | R1 | R1
   | R1
-  | r4 a4 d'8 c'8\sh d'8 e'8 
+  | r4 a4 d'8 \ficta cis'!8 d'8 e'8 
   | f'4 c'4 r4 c'4 
 
   % m. 50
@@ -436,10 +436,10 @@ MusicEstribilloTi = {
   | g'4 c'8 c'8 f'4 bes8 bes8 
   | c'4 f4 r2 
   | R1 
-  | r8 g8 g8 f8\sh g4 r4 
+  | r8 g8 g8 \ficta fis!8 g4 r4 
   | r2 r4 d'8 d'8 
   | e'4 f'4 d'4 e'4 
-  | f'4 d'8 a8 d'8 g'8 g'8 f'8\sh 
+  | f'4 d'8 a8 d'8 g'8 g'8 \ficta fis'!8 
   | g'2 r2 
   | R1 
   
@@ -664,8 +664,8 @@ MusicEstribilloAii = {
   | r2 g'1\colorOne
   | bes'2 bes'2. a'4 
   | g'1 g'2 
-  | f'1\sh\color g'2~
-  | g'2 f'1\sh\endcolor
+  | \ficta fis'!1\color g'2~
+  | g'2 \ficta fis'!1\endcolor
 
   % m. 126
   | g'1.\fermata  
@@ -737,8 +737,8 @@ MusicEstribilloTii = {
   | a8 a8 a8 a8 a4 a4 
   | R1 
   | r2 c'4 d'8 d'8 
-  | bes4 c'8 c'8 d'4 g'8 f'8\sh 
-  | g'4 r4 r8 g'8 g'8 f'8\sh 
+  | bes4 c'8 c'8 d'4 g'8 \ficta fis'!8 
+  | g'4 r4 r8 g'8 g'8 \ficta fis'!8 
   | g'2 r2 
   | R1 | R1 
   | r4 g8 g8 a4 bes8 bes8 
@@ -848,15 +848,15 @@ MusicIntroBi = {
   | d'2 g1\endcolor
 
   % m. 30
-  | c'2. bes4\na c'2~\color
+  | c'2. \ficta b!4 c'2~\color
   | c'2 f1\endcolor
   | bes2 bes2 bes2 
   | a2 bes2. a4 
   | g2\color d1\endcolor 
   | a1. 
   | d2 d'1 
-  | b!2 c'2. b4\fl 
-  | a2 f4( g4 a4 bes4)\na 
+  | b!2 c'2. \ficta bes!4 
+  | a2 f4( g4 a4 \ficta b!4) 
   | c'2\color f1\endcolor
 
   % m. 40
@@ -872,7 +872,7 @@ MusicIntroBi = {
 MusicEstribilloBi = {
   \MeterDuple
   % m. 45
-  | r4 d4 g8[ f8\sh g8 a8] 
+  | r4 d4 g8[ \ficta fis!8 g8 a8] 
   | bes4 f8 f8 bes,8 c8 d8 e8 
   | f4 d8 d8 g8 g8 g8 g8 
   | f4 d4 r4 bes,4 
@@ -952,7 +952,7 @@ MusicEstribilloBi = {
   | g1 d2~
   | d2 es1\endcolor % ed. Eb to match 121, ficta una nota super la
   | bes,1. 
-  | e1.\fl 
+  | \ficta es!1. 
   | d1.~
   | d1.
 
@@ -1228,7 +1228,7 @@ MusicCoplasTii = {
 
   % m. 160
   | es'2 c'1 
-  | d'2 f'2\sh g'2 
+  | d'2 \ficta fis'!2 g'2 
   | fis'1 fis'2 
   | r2 d'2 g2 
   | d'1 d'2 
@@ -1297,11 +1297,11 @@ MusicCoplasBi = {
 %% ALL
 %%***********************************************************
 
-MusicAllSi  = { \MusicIntroSi  \MusicEstribilloSi   \MusicCoplasSi  }
-MusicAllAi  = { \MusicIntroAi  \MusicEstribilloAi   \MusicCoplasAi  }
-MusicAllTi  = { \MusicIntroTi  \MusicEstribilloTi   \MusicCoplasTi  }
-MusicAllAii = { \MusicIntroAii \MusicEstribilloAii  \MusicCoplasAii }
-MusicAllTii = { \MusicIntroTii \MusicEstribilloTii  \MusicCoplasTii }
-MusicAllBi  = { \MusicIntroBi  \MusicEstribilloBi   \MusicCoplasBi  }
+MusicSi  = { \MusicIntroSi  \MusicEstribilloSi   \MusicCoplasSi  }
+MusicAi  = { \MusicIntroAi  \MusicEstribilloAi   \MusicCoplasAi  }
+MusicTi  = { \MusicIntroTi  \MusicEstribilloTi   \MusicCoplasTi  }
+MusicAii = { \MusicIntroAii \MusicEstribilloAii  \MusicCoplasAii }
+MusicTii = { \MusicIntroTii \MusicEstribilloTii  \MusicCoplasTii }
+MusicBi  = { \MusicIntroBi  \MusicEstribilloBi   \MusicCoplasBi  }
 
 

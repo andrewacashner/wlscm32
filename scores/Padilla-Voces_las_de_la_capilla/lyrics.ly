@@ -10,7 +10,7 @@
 %*******************
 
 LyricsIntroSiOne = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Vo -- ces, las de la __ ca -- pi -- lla, 
   cuen -- ta con lo que se can -- ta,
   que~es mú -- si -- co~el Rey, 
@@ -21,7 +21,7 @@ LyricsIntroSiOne = \lyricmode {
 
 
 LyricsIntroSiTwo = \lyricmode {
-  \set stanza = #"2. "
+  \StanzaII
   A -- ños an -- tes la __ di -- vi -- sa, 
   la __ des -- tre -- za~en la~e -- spe -- ran -- za,
   por sol co -- mien -- za~u -- na glo -- ria,
@@ -35,7 +35,7 @@ LyricsIntroSiTwo = \lyricmode {
 %*******************
 
 LyricsIntroAiOne = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Vo -- ces, las de la __ ca -- pi -- lla, 
   cuen -- ta con lo que se can -- ta,
   que~es mú -- si -- co~el Rey, 
@@ -45,7 +45,7 @@ LyricsIntroAiOne = \lyricmode {
 
 }
 LyricsIntroAiTwo = \lyricmode {
-  \set stanza = #"2. "
+  \StanzaII
   A -- ños an -- tes la __ di -- vi -- sa, 
   la __ des -- tre -- za~en la~e -- spe -- ran -- za,
   por sol co -- mien -- za~u -- na glo -- ria,
@@ -181,7 +181,7 @@ LyricsEstribilloTii = \lyricmode {
 
 % COPLA 1 (CORO I)
 LyricsCoplasSi = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Da -- ba~un ni -- ño pe -- re -- gri -- no 
   to -- no~al hom -- bre~|y su -- bió tan -- to
   que~en sus -- te -- ni -- dos de llan -- to,
@@ -189,7 +189,7 @@ LyricsCoplasSi = \lyricmode {
 }
 
 LyricsCoplasAi = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Da -- ba~un ni -- ño pe -- re -- gri -- no 
   to -- no~al hom -- bre~|y su -- bió tan -- to
   que~en sus -- te -- ni -- dos de llan -- to,
@@ -197,7 +197,7 @@ LyricsCoplasAi = \lyricmode {
 }
 
 LyricsCoplasTi = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Da -- ba~un ni -- ño pe -- re -- gri -- no 
   to -- no~al hom -- bre~|y su -- bió tan -- to
   que~en sus -- te -- ni -- dos de llan -- to,
@@ -206,7 +206,7 @@ LyricsCoplasTi = \lyricmode {
 
 % COPLA 2 (CORO II)
 LyricsCoplasAii = \lyricmode {
-  \set stanza = #"2. "
+  \StanzaII
   Hi -- zo al -- to~en lo di -- vi -- no
   y de la má -- xi -- ma~|y bre -- ve
   com -- po -- si -- ción en que prue -- be
@@ -215,7 +215,7 @@ LyricsCoplasAii = \lyricmode {
 }
 
 LyricsCoplasTii = \lyricmode {
-  \set stanza = #"2. "
+  \StanzaII
   Hi -- zo al -- to~en lo di -- vi -- _ no
   y de la má -- xi -- ma~|y bre -- ve
   com -- po -- si -- ción en que prue -- be
@@ -230,8 +230,8 @@ LyricsCoplasTii = \lyricmode {
 % All lyrics combined for line 1
 % Line two for Introduccion is separate: \LyricsIntroXTwo
 
-LyricsAllSi = { \LyricsIntroSiOne \LyricsEstribilloSi \LyricsCoplasSi }
-LyricsAllAi = { \LyricsIntroAiOne \LyricsEstribilloAi \LyricsCoplasAi }
-LyricsAllTi = { \LyricsIntroTiOne \LyricsEstribilloTi \LyricsCoplasTi }
-LyricsAllAii = { \LyricsIntroAii \LyricsEstribilloAii \LyricsCoplasAii }
-LyricsAllTii = { \LyricsIntroTii \LyricsEstribilloTii \LyricsCoplasTii }
+LyricsSi = { \LyricsIntroSiOne \LyricsEstribilloSi \LyricsCoplasSi }
+LyricsAi = { \LyricsIntroAiOne \LyricsEstribilloAi \LyricsCoplasAi }
+LyricsTi = { \LyricsIntroTiOne \LyricsEstribilloTi \LyricsCoplasTi }
+LyricsAii = { \LyricsIntroAii \LyricsEstribilloAii \LyricsCoplasAii }
+LyricsTii = { \LyricsIntroTii \LyricsEstribilloTii \LyricsCoplasTii }

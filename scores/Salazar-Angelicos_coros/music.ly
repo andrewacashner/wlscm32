@@ -418,7 +418,7 @@ MusicEstribilloSII = {
   
   % m. 60
   | d'4 r4 r4 d''4 
-  | bes'4\na c''4 c''4 b'4 
+  | \ficta b'!4 c''4 c''4 b'4 
   | c''4 r4 r2 
   | r4 c''4 a'4 d''8 bes'8 
   | c''2 d''2 
@@ -730,7 +730,7 @@ MusicEstribilloAc = {
   | f2 e2 e2
  
   % m. 20 
-  | f2. bes,4 e2~\fl\color
+  | f2. bes,4 \ficta e2~\color
   | e2 f2 f2\endcolor
   | bes,1 bes2 
   | f2 g2 g2
@@ -773,7 +773,7 @@ MusicEstribilloAc = {
   | g,4. g,8 a,4 f,4 
   | g,4 g4 e4 f4 
   | c4. c8 f8[ f8 f8 f8] 
-  | f4 bes,8 bes,8 e4\fl f8 f8 
+  | f4 bes,8 bes,8 \ficta es!4 f8 f8 
   | bes,8 bes,8 bes,8 bes,8 bes,4 f8 f8 
   | g4 d8 d8 g,4. g,8 
   | c4 g,8 g,8 c4. c8 
@@ -782,7 +782,7 @@ MusicEstribilloAc = {
  
   % m. 60
   | d4 bes,4 c4 d4 
-  | g4 e4 f4\sh g4 
+  | g4 e4 \ficta fis!4 g4 
   | c4 a,4 bes,4 c4 
   | f,4 f4 f4 bes,8 bes,8 
   | f2 bes,4 bes,4 
@@ -1042,3 +1042,39 @@ MusicCoplasAc = {
   | f1\fermata
 }
 
+%%*********************************
+%% ALL TOGETHER
+%%*********************************
+
+MusicSIi = {
+  \MusicEstribilloSIi
+  \MusicCoplasSIi
+}
+MusicSIii = {
+  \MusicEstribilloSIii
+  \MusicCoplasSIii
+}
+MusicAI = {
+  \MusicEstribilloAI
+  \MusicCoplasAI
+}
+MusicSII = {
+  \MusicEstribilloSII
+  \MusicCoplasSII
+}
+MusicAII = {
+  \MusicEstribilloAII
+  \MusicCoplasAII
+}
+MusicTII = {
+  \MusicEstribilloTII
+  \MusicCoplasTII
+}
+MusicBII = {
+  \MusicEstribilloBII
+  \MusicCoplasBII
+}
+MusicAc = {
+  \MusicEstribilloAc
+  \MusicCoplasAc
+}

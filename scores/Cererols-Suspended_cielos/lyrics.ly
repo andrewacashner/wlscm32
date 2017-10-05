@@ -204,13 +204,13 @@ LyricsEstribilloTII = \lyricmode {
 %%****************************************
 
 LyricsCoplasSIi = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Las fu -- gas \EdLyrics {  que~el } pri -- mer hom -- bre	 %% amended lyrics (del => que~el)
   for -- mó~en des -- a -- ten -- tos pa -- _ sos
   al com -- pás, al com -- pás a -- jus -- ta~un ni -- ño
   de las per -- las de  su llan -- _ _ to.
 
-  \set stanza = #"2."
+  \StanzaII
   Qué mu -- cho, \EdLyrics {  qué mu -- cho }
   \EdLyrics {  si~a } los des -- pe -- ños 	%% amended lyrics (que => si)
   que le~o -- ca -- sio -- nó~un en -- ga -- ño,
@@ -219,13 +219,13 @@ LyricsCoplasSIi = \lyricmode {
   gri -- llos le pre -- vie -- ne blan -- dos,
   gri -- llos  le pre -- vie -- ne blan -- _ _ dos.
 
-  \set stanza = #"3."
+  \StanzaIII
   U -- na voz que~ha da -- do~el cie -- lo
   de me -- tal más  so -- be -- ra -- _ no
   a~or -- de -- nar en -- tra so -- no -- _ ra
   la di -- so -- nan -- cia del ba -- _ _ rro.
 
-  \set stanza = #"4."
+  \StanzaIV
   Con -- cier -- to, \EdLyrics {  con -- cier -- to, }
   tan so -- be -- ra -- no
   só -- lo pu -- do ser re -- pa -- ro,
@@ -234,13 +234,13 @@ LyricsCoplasSIi = \lyricmode {
   de~un \EdLyrics {  des -- en -- to -- no tan va --  no,	%% amended lyrics (desatento tan grande => desentono tan vano)
   de~un des -- en -- to -- no tan va -- _ _ no. }
 
-  \set stanza = #"5."
+  \StanzaV
   En las pa -- jas \EdLyrics {  sus -- te -- ni -- do }  	%% amended (susteniendo => sustenido)
   dul -- ce -- men -- te  se~ha~es -- cu -- cha -- _ do
   li -- gar en pa -- jas lo~e -- ter -- _ no,
   re -- du -- cir lo~in -- men -- \EdLyrics {  so~a~es -- } pa -- _ _ cio. 	%% amended (inmenso spacio => inmenso a espacio)
 
-  \set stanza = #"6."
+  \StanzaVI
   Di -- vi -- na, \EdLyrics {  di -- vi -- na }
   cláu -- su -- la se -- a
   des -- te~e -- ter -- no can -- to lla -- no
@@ -252,13 +252,13 @@ LyricsCoplasSIi = \lyricmode {
 }
 
 LyricsCoplasSIii = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Las fu -- gas \EdLyrics {  que~el } pri -- mer hom -- bre 
   for -- mó~en des -- a -- ten -- tos pa -- sos
   al com -- pás a -- jus -- ta~un ni -- ño
   de las per -- las de su llan -- to, de las per -- las de su llan -- _ _ to.
 
-  \set stanza = #"2."
+  \StanzaII
   Qué mu -- cho \EdLyrics {  si~a } los des -- pe -- ños
   que le~o -- ca -- sio -- nó~un en -- ga -- ño,
   be -- lla co -- rrien -- te de~al -- jó -- far, 
@@ -267,28 +267,28 @@ LyricsCoplasSIii = \lyricmode {
   gri -- llos le pre -- vie -- ne blan -- dos,
   le pre -- vie -- ne blan -- _ dos.
 
-  \set stanza = #"3."
+  \StanzaIII
   U -- na voz que~ha da -- do~el cie -- lo
   de me -- tal más so -- be -- ra -- no
   a~or -- de -- nar en -- tra so -- no -- ra
   la di -- so -- nan -- cia del ba -- rro,
   la di -- so -- nan -- cia del ba -- _ _ rro.
 
-  \set stanza = #"4."
+  \StanzaIV
   Con -- cier -- to tan so -- be -- ra -- no
   só -- lo pu -- do ser re -- pa -- ro
   con u -- na voz tan hu -- mil -- de, 
   \EdLyrics {  con u -- na voz tan hu -- mil -- de, _ __ tan __ } hu -- mil -- de
   de~un des -- en -- to -- no tan \EdLyrics {  va -- no, } tan \EdLyrics {  va -- _ _ no. }
 
-  \set stanza = #"5."
+  \StanzaV
   En las pa -- jas \EdLyrics {  sus -- te -- ni -- do } 
   dul -- ce -- men -- te se~ha~es -- cu -- cha -- do
   li -- gar en pa -- jas lo~e -- ter -- no,
   re -- du -- cir lo~in -- men -- \EdLyrics {  so~a~es -- } pa -- cio,
   re -- du -- cir lo~in -- men -- \EdLyrics {  so~a~es -- } pa -- _ _ cio.
 
-  \set stanza = #"6."
+  \StanzaVI
   Di -- vi -- na cláu -- su -- la se -- a
   des -- te~e -- ter -- no can -- to lla -- no
   que for -- ma~en su mo -- vi -- mien -- to, 
@@ -298,20 +298,20 @@ LyricsCoplasSIii = \lyricmode {
 }
 
 LyricsCoplasAI = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Las fu -- gas \EdLyrics {  que~el } pri -- mer hom -- bre
   for -- mó~en des -- a -- ten -- tos pa -- sos
   al com -- pás a -- jus -- ta~un ni -- _ ño
   de las per -- las de  su llan -- to, 
   de su llan -- to.
 
-  \set stanza = #"3."
+  \StanzaIII
   U -- na voz que~ha da -- do~el cie -- lo
   de me -- tal más so -- be -- ra -- no
   a~or -- de -- nar en -- tra so -- no -- _ ra
   \EdLyrics {  la di -- so -- nan -- cia } del ba -- rro, del ba -- rro.
 
-  \set stanza = #"5."
+  \StanzaV
   En las pa -- jas sus -- te -- ni -- do
   dul -- ce -- men -- te se~ha~es -- cu -- cha -- do
   li -- gar en pa -- jas lo~e -- ter -- _ no,
@@ -319,20 +319,20 @@ LyricsCoplasAI = \lyricmode {
 }
 
 LyricsCoplasTI = \lyricmode {
-  \set stanza = #"1."
+  \StanzaI
   Las fu -- gas \EdLyrics {  que~el } pri -- mer hom -- bre
   for -- mó~en des -- a -- ten -- tos pa -- sos
   al com -- pás a -- jus -- ta~un ni -- ño
   de las per -- las de su llan -- to,
   de su llan -- to.
 
-  \set stanza = #"3."
+  \StanzaIII
   U -- na voz que~ha da -- do~el cie -- lo
   de me -- tal más so -- be -- ra -- no
   a~or -- de -- nar en -- tra so -- no -- ra
   la di -- so -- nan -- cia del ba -- rro, del ba -- rro.
 
-  \set stanza = #"5."
+  \StanzaV
   En las pa -- jas sus -- te -- ni -- do
   dul -- ce -- men -- te se~ha~es -- cu -- cha -- do
   li -- gar en pa -- jas lo~e -- ter -- no,

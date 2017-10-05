@@ -296,3 +296,31 @@ LyricsCoplasTII = \lyricmode {
   >>
 }
 
+%%*********************************
+%% ALL TOGETHER
+%%*********************************
+
+LyricsSIi = {
+  \LyricsEstribilloSIi
+  \LyricsCoplasSIi
+}
+LyricsSIii = {
+  \LyricsEstribilloSIii
+  \LyricsCoplasSIii
+}
+LyricsAI = {
+  \LyricsEstribilloAI
+  \LyricsCoplasAI
+}
+LyricsSII = {
+  \LyricsEstribilloSII
+  \LyricsCoplasSII
+}
+LyricsAII = {
+  \LyricsEstribilloAII
+  \LyricsCoplasAII
+}
+LyricsTII = {
+  \LyricsEstribilloTII
+  \LyricsCoplasTII
+}

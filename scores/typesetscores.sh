@@ -4,7 +4,7 @@ for scorename in "${scoredirectories[@]}";
 do
   echo -e "\nCompiling $scorename ..."
   cd "$HOME/Documents/vcscores/scores/$scorename"
-  lilypond -I ~/ly score
+  lilypond -I ../../ly score
 done
 
 mapfile -t scoredirectories < \
@@ -13,5 +13,5 @@ for scorename in "${scoredirectories[@]}";
 do
   echo -e "\nCompiling transposed $scorename ..."
   cd "$HOME/Documents/vcscores/scores/$scorename"
-  lilypond -I ~/ly -dtranspose -o score-transposed score
+  lilypond -I ../../ly -dtranspose -o score-transposed score
 done

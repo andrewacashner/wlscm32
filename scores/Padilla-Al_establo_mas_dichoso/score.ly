@@ -5,25 +5,15 @@
 
 %% EDITED BY ANDREW A. CASHNER
 
+%% 2017-10-05   Refactored for consistency
 %% 2017-03-30   Revised for WLSCM edition
 %% 2014-11-05
 
-\version "2.18.2"
-\include "../ly/villancico.ly"
+\version "2.19"
+\include "villancico.ly"
 \include "lyrics.ly"
 \include "music.ly"
-
-%%*******************
-%% HEADER
-%%*******************
-
-\header {
-  title 	= "Al establo más dichoso"
-  subtitle	= "Ensaladilla. [De Navidad. A 8.]"
-  composer 	= "JUAN GUTIÉRREZ DE PADILLA"
-  dates		= "(ca. 1590–1664)"
-  source	= \markup { Puebla Cathedral Archive (MEX-Pc: Leg. 1/3), \italic {Navidad del año de 1652}}
-}
+\include "header.ly"
 
 %%*******************
 %% SCORE

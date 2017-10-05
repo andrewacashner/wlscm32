@@ -183,7 +183,7 @@ LyricsCoplasTI = \LyricsCoplasSIi
 
 %% Solo part
 LyricsCoplasSIii = \lyricmode {
-  \set stanza = #"1. "
+  \StanzaI
   Si~en e -- llos va~el no ver bien 
   los o -- jos de que se~ad -- mi -- ran,
   pues mal ve -- rán lo que mi -- ran
