@@ -429,7 +429,7 @@ Critical edition of villancico poetry and music for WLSCM]
 
 % Use image of my tracing of CZ (C3 or C3/2) meter signature in text
 \NewDocumentCommand{\meterCZorig}{}{%
-  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{ly/img/CZ}}%
+  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{scores/ly/img/CZ}}%
 }
 
 % Numeric range commands (the simple way)

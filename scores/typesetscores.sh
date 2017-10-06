@@ -1,17 +1,15 @@
 #! /bin/bash
-mapfile -t scoredirectories < "$HOME/Documents/vcscores/scores/scorelist.txt"
+mapfile -t scoredirectories < "scorelist.txt"
 for scorename in "${scoredirectories[@]}";
 do
   echo -e "\nCompiling $scorename ..."
-  cd "$HOME/Documents/vcscores/scores/$scorename"
-  lilypond -I ../../ly score
+  lilypond -I ../ly -o "$scorename"/score "$scorename"/score
 done
 
-mapfile -t scoredirectories < \
-"$HOME/Documents/vcscores/scores/scorelist-transposed.txt"
+mapfile -t scoredirectories < "scorelist-transposed.txt"
 for scorename in "${scoredirectories[@]}";
 do
   echo -e "\nCompiling transposed $scorename ..."
-  cd "$HOME/Documents/vcscores/scores/$scorename"
-  lilypond -I ../../ly -dtranspose -o score-transposed score
+  lilypond -I ../ly -dtranspose -o \
+      "$scorename"/score-transposed "$scorename"/score
 done
