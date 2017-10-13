@@ -27,6 +27,9 @@
 %% Lyrics commands for multiple stanzas
 \include "lyrics-stanzas.ly"
 
+%% Show lyric hyphens at start of lines
+\include "lyric-hyphens.ly"
+
 %% Control display of empty staves
 \include "show-empty-staves.ly"
 

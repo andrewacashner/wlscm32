@@ -1568,7 +1568,8 @@ MusicCoplasSIi = {
   | f''2 e''2 d''2~
   | d''2 cis''2 cis''2
   | d''2 d''4( c''4) b'4( a'4) 
-  | gis'2\color \[ a'1~
+  | gis'2\color \[ a'1~ 
+  \noBreak
   | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''2 e''2 

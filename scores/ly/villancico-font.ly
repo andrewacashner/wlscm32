@@ -48,9 +48,6 @@
   \context {
     \Lyrics
     \override LyricText.font-size = #2
-    % Ensure enough distance between hyphens to ensure that hyphens do not
-    % disappear
-    \override LyricHyphen.minimum-distance = #1
   }
 }
 

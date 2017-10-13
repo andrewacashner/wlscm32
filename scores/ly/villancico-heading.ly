@@ -64,20 +64,7 @@ CopyrightYear = \markup "2017"
         \line {
           "Copyright ©" \CopyrightYear \MyName
         }
-        \vspace #1
-        \line {
-          \lower #4 { \epsfile #Y #6 #"img/CC-by-nc-nd.eps" }
-          \column {
-            \line {
-              "This work is licensed under a Creative Commons"
-            }
-            \line {
-              "Attribution-NonCommercial-NoDerivs 3.0 Unported License."
-            }
-          }
-        }
       }
-      % NB - This is why people do not like Lilypond!
     }
   }
 

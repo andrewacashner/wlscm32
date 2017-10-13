@@ -130,7 +130,7 @@ Critical edition of villancico poetry and music for WLSCM]
     \include{intro/#1}%
 }
 \NewDocumentCommand{\includenote}{ m }{%
-    \include{notes/#1}%
+    \input{notes/#1}%
 }
 \NewDocumentCommand{\includepoem}{ m }{%
     \include{poems/#1}%
@@ -320,6 +320,10 @@ Critical edition of villancico poetry and music for WLSCM]
 \titleformat{\chapter}[block]   
 {\Large\scshape\centering}{}{0pt}{}
 
+% Reduce spacing before and after chapter headings
+% No extra spacing before, small space after
+\titlespacing*{\chapter}{0pt}{0pt}{*4}
+
 % Sections just a bit larger 
 \titleformat*{\section}         
 {\large\normalfont}
@@ -426,10 +430,11 @@ Critical edition of villancico poetry and music for WLSCM]
 \RenewDocumentCommand{\fl}{}{\musFlat}
 \RenewDocumentCommand{\sh}{}{\musSharp}
 \RenewDocumentCommand{\na}{}{\musNatural}
+\RenewDocumentCommand{\meter}{}{\musMeter}
 
 % Use image of my tracing of CZ (C3 or C3/2) meter signature in text
 \NewDocumentCommand{\meterCZorig}{}{%
-  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{scores/ly/img/CZ}}%
+  \raisebox{-0.5ex}{\includegraphics[height=.9\baselineskip]{img/CZ}}%
 }
 
 % Numeric range commands (the simple way)
