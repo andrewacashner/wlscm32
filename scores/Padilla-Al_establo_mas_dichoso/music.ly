@@ -127,6 +127,7 @@ MusicSi = {
   \RepeatBarEnd
 
   % m. 17
+  \break
   \Section "[NUEVO TROYANO] Solo y a 4"
   \MeterDuple
   | r4 a'8 b'8 c''4 c''4 
@@ -185,6 +186,7 @@ MusicSi = {
   | d''4 b'4 cis''4 cis''4 
 
   %% m. 59 EL ARRIERO
+  \break
   \RepeatBarStart
   \Section "[PROLOGUE a 4]" 
   \MeterTriple
@@ -208,13 +210,14 @@ MusicSi = {
   | d''2 c''2 c''2 
   | c''2\color b'1\endcolor 
   | c''1.\fermata 
-
   \RepeatBarEndStart
 
   %% m. 75 ARRIERO
+  \break
   \Section "EL ARRIERO: RESPONSIÓN Dúo"
   \RestsArriero
   \RepeatBarEnd
+  \break
   
   %% m. 97 PAPALOTILLO
   \DoubleMark
@@ -234,6 +237,7 @@ MusicSi = {
   | b'2 b'1
 
   %% m. 105 Responsion
+  \break
   \Section "RESPONSIÓN a 4"
   | c''2 d''2 e''2 
   | d''2 d''2. e''4 
@@ -247,6 +251,7 @@ MusicSi = {
   | d''2 d''1
 
   %%  m. 113 Coplas
+  \break
   \Section "COPLAS"
   \RepeatBarStart
   %% Si coplas 1, 3, 5
@@ -262,9 +267,11 @@ MusicSi = {
   | b'2\color b'1\endcolor
   
   %% m. 121 Ti coplas 2, 4, 6
+  \noBreak
   | R1.*8
 
   %% m. 129 Responsion
+  \break
   \Section "RESPONSIÓN [reprise]"
   | c''2 d''2 e''2 
 
@@ -276,10 +283,10 @@ MusicSi = {
   | d''2 d''2. e''4 
   | f''2 f''2. e''4 
   | d''2 d''1
-
   \RepeatBarEndStart
 
   %% m. 137 NEGRILLA
+  \break
   \Section "[PROLOGUE a 4]"
   | c''2 c''1 
   | c''2 c''1 
@@ -304,6 +311,7 @@ MusicSi = {
   \RepeatBarEnd
 
   % m. 153
+  \break
   \Section "NEGRILLA: [INTRODUCCIÓN] Dúo y a 6"
   | r2 e''2 d''2 
   | e''2. e''4 f''2~\color
@@ -372,7 +380,7 @@ MusicSi = {
 
   
   %% m. 215 Gloria 
-  \noBreak
+  \break
   \MeterTriple
   e''2\color e''1\endcolor 
   a'2. b'4 \[ c''2~\color
@@ -385,9 +393,9 @@ MusicSi = {
   a'2(\color b'1\endcolor 
   a'1.)
   b'1.\fermata
-  \break
 
   % m. 224 Estribillo
+  \break
   \Section "[ESTRIBILLO a 6]"
   | R1.
   | R1.
@@ -409,6 +417,7 @@ MusicSi = {
 
   % m. 239
   \RepeatBarStart
+  \break
   \Section "COPLAS a 6"
   | R1.
 
@@ -441,6 +450,7 @@ MusicSi = {
   | R1. 
 
   % m. 262
+  \break
   \Section "[ESTRIBILLO reprise]"
   | R1.
   | R1.

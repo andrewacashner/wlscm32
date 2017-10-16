@@ -879,26 +879,31 @@ MusicCoplasSi = {
   \MiddleBar
 
   %% COPLA 2
+  \break
   \Section "SOLO"
   \MusicCoplaIISi
   \MiddleBar
 
   %% COPLA 3
+  \break
   \Section "SOLO"
   R1*15
   \MiddleBar
 
   %% COPLA 4
+  \break
   \Section "A 4"
   \MusicCoplaISi
   \MiddleBar
 
   %% COPLA 5
+  \break
   \Section "SOLO"
   R1*15
   \MiddleBar
 
   %% COPLA 6
+  \break
   \Section "A 4"
   \MusicCoplaISi
   \MiddleBar

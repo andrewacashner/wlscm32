@@ -887,6 +887,7 @@ MusicEstribilloAII = {
 
   % m. 40
   | g'2\color a'2 \[ a'2~
+  \noBreak
   | a'2 g'1\endcolor \] 
   | a'1.
   | R1.
@@ -1472,7 +1473,8 @@ MusicCoplasSIi = {
   | e''2 f''2\sh g''2 
   | fis''1.\fermata 
   \MiddleBar
-  
+ 
+  \break
   \Section "[COPLA 2] A Duo"
   % m. 132
   | R1.
@@ -1513,6 +1515,7 @@ MusicCoplasSIi = {
   | fis''1.\fermata 
   \MiddleBar
 
+  \break
   \Section "[COPLA 3] A 4"
   % m. 162
   | r2 d''2 e''2
@@ -1522,6 +1525,7 @@ MusicCoplasSIi = {
   | fis''1\Breath d''4 d''4
   | e''2 e''4( d''4 e''4 fis''4)
   | g''2\color g''2 \[ g''2~
+  \noBreak
   | g''2 fis''1\endcolor \] 
 
   % m. 170
@@ -1544,6 +1548,7 @@ MusicCoplasSIi = {
   | fis''1.\fermata 
   \MiddleBar
 
+  \break
   \Section "[COPLA 4] A Duo"
   % m. 185
   | R1.
@@ -1585,6 +1590,7 @@ MusicCoplasSIi = {
   | fis''1.\fermata  
   \MiddleBar
 
+  \break
   \Section "[COPLA 5] A 4"
   % m. 215
   | r2 d''2 e''2
@@ -1616,6 +1622,7 @@ MusicCoplasSIi = {
   | fis''1.\fermata 
   \MiddleBar
 
+  \break
   \Section "[COPLA 6] a Duo"
   % m. 238
   | R1.
@@ -1831,6 +1838,7 @@ MusicCoplasSIii = {
   % m. 230
   | g''2 f''1\endcolor 
   | e''1.
+  \break
   | d''2 d''2 d''2 
   | c''1 c''2
   | b'2\color b'1 

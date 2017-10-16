@@ -89,6 +89,7 @@ MusicIntroSi = {
   \MiddleBar
 
   %% m. 28 RESPUESTA
+  \break
   \Section "RESPUESTA a 3"
   | R1. | R1.
 
@@ -405,7 +406,6 @@ MusicIntroTi = {
   | d'1. 
 
   %% m. 28 RESPUESTA
-  \MeterTriple
   | R1. | R1. 
 
   % m. 30
@@ -979,6 +979,7 @@ MusicCoplasSi = {
   | c''2. c''4 f''2~\color
   | f''2 e''1\endcolor 
   | d''2 d''1 
+  \noPageBreak
   | c''2 c''1 
   | d''2 e''1 
   | c''2 c''2 c''2 
@@ -986,6 +987,7 @@ MusicCoplasSi = {
   | c''1. 
   | d''1. 
   | r2 a'1\colorOne 
+  \noPageBreak
 
   % m. 140
   | R1. 
@@ -1000,6 +1002,7 @@ MusicCoplasSi = {
   \MiddleBar
 
   %% COPLA 2
+  \break
   % m. 147
   | R1. | R1. 
   | R1.
