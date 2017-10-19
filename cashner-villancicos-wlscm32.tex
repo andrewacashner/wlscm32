@@ -1,4 +1,8 @@
 \documentclass{vcscores}
+\includeonly{intro/preface}
+\RenewDocumentCommand{\includescore}{ m o m }{}
+\RenewDocumentCommand{\includenote}{ m }{}
+\RenewDocumentCommand{\includepoem}{ m }{}
 
 \input{vcscores-config}
 
@@ -12,6 +16,7 @@
 
 % Each of these is a chapter
 \includeintro{preface} 
+
 \mainmatter 
 \includeintro{intro}
 \includeintro{report}
