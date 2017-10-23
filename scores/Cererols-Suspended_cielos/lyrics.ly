@@ -151,7 +151,7 @@ LyricsEstribilloAII = \lyricmode {
   te -- ned, pa -- rad, pa -- rad,  es -- cu -- chad
   que for -- man en su dis -- tan -- _ cia 
   lo~e -- ter -- no~|y lo tem -- po -- ral,
-  lo temp -- po -- ral.
+  lo tem -- po -- ral.
   Es -- cu -- chad, que~en -- to -- nan las je -- rar -- quí -- as
   con -- tra -- pun -- to ce -- les -- tial,
   \EdLyrics {  con -- tra -- pun -- to ce -- les -- tial,

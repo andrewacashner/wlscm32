@@ -86,7 +86,7 @@ MusicEstribilloSIi = {
   | g''2 fis''1\endcolor
   | R1.
   | R1.
-  | r2 f''2. g''4 
+  | r2 f''?2. g''4 
   | e''2\color f''1\endcolor
   | e''1.~
   | e''1.

@@ -3,7 +3,7 @@
 %% Put lyric hyphen at beginning of line when word is broken across line break
 %% From https://code.google.com/archive/p/lilypond/issues/1722 
 \version "2.19"
-#(define lyric-hyphen-callback-test-1 
+#(define lyric-hyphen-callback
    (lambda (hyphengrob) 
      (let* 
        ((thick (ly:grob-property hyphengrob 'thickness)) 
@@ -33,15 +33,15 @@
                                  (ln " " (markup->string text)))) 
                        add X))) 
        (if (and 
-             (>= (length siblings) 2) 
+             (>= (length siblings) 2)
              (eq? (car (last-pair siblings)) hyphengrob)) 
          (ly:grob-set-property! bound 'stencil fake-hyphen)))))
 
 \layout {
   \context {
     \Lyrics
-    \override LyricHyphen.minimum-distance = #1 %% was #3
-    \override LyricHyphen.after-line-breaking = #lyric-hyphen-callback-test-1
+    \override LyricHyphen.minimum-distance = #2 %% was #3
+    \override LyricHyphen.after-line-breaking = #lyric-hyphen-callback
   }
 }
 
