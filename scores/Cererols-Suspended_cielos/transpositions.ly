@@ -24,7 +24,7 @@ MusicAc     = \MyTranspose { \MusicAc }
 
 % We have to manually transpose figures
 % 3- -> 3_ (flat to natural)
-FiguredBassAc = \figuremode {
+FiguresAc = \figuremode {
   \MeterTriple
   s1.*20
   \MeterDuple
@@ -33,7 +33,7 @@ FiguredBassAc = \figuremode {
   s1.*34
   % m. 63
   < _! >1. 
-  < _! >2 <_>1
+  < _! >1.
   s1.
   \MeterDuple
   s1*18

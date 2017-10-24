@@ -78,7 +78,7 @@ IncipitAc = {
 %% ChI
 
 MusicEstribilloSIi = {
-  \Section "[ESTRIBILLO] A 8"
+  \Section "[ESTRIBILLO] a 8"
   \clef "treble"
   \MeterTriple
   | r2 fis''2 fis''2
@@ -113,8 +113,8 @@ MusicEstribilloSIi = {
   | g''2 r2 
   | R1
   | r2 r4 a''8 a''8
-  | a''2 r4 r8 e''8\Eco 
-  | e''4 r8\Eco e''8 e''4 r8 e''8\Eco 
+  | a''2 r4 r8\Eco e''8
+  | e''4 r8\Eco e''8 e''4 r8\Eco e''8
   | e''4 f''8 f''8 a''2 
 
   %% m. 29 METER TO CZ -- La mas nueva consonancia
@@ -280,7 +280,7 @@ MusicEstribilloSIii = {
   | d''2 r2 
   | R1 
   | r2 r4 f''8 f''8 
-  | e''2 r4 r8 cis''8\Falsete 
+  | e''2 r4 r8\Falsete cis''8
   | cis''4 r8 cis''8 cis''4 r8 cis''8 
   | cis''4 d''8 d''8 e''2 
 
@@ -425,7 +425,7 @@ MusicEstribilloAI = {
   | b'2 r2 
   | R1 
   | r2 r4 a'8 a'8 
-  | a'2 r4 r8 a'8\Falsete 
+  | a'2 r4 r8\Falsete a'8
   | a'4 r8 a'8 a'4 r8 a'8 
   | a'4 a'8 a'8 a'2 
 
@@ -526,7 +526,7 @@ MusicEstribilloAI = {
   | r4 a'4 a'4 a'4 
   | a'1 
   | f'2 r2 
-  | r4 bes'4\Falsete bes'4 a'4  
+  | r4\Falsete bes'4 bes'4 a'4  
   | g'4 g'4 r2 
   | r4 bes'4 bes'4 a'4 
   | g'1 
@@ -720,7 +720,7 @@ MusicEstribilloSII = {
   | r2 r8 d''8 d''4 
   | r8 d''8 d''4 r8 d''8 d''4~
   | d''4 d''8 d''8 d''4 d''8 d''8
-  | cis''2 r8 cis''8\Falsete cis''4 
+  | cis''2 r8\Falsete cis''8 cis''4 
   | r8 cis''8 cis''4 r8 cis''8 cis''4~
   | cis''4 a'8 a'8 cis''2 
 
@@ -865,7 +865,7 @@ MusicEstribilloAII = {
   | r2 r8 b'8 a'8 g'8 
   | a'8 b'8 c''4 r8 c''8 c''4~
   | c''4 b'8 b'8 a'4 f'8 f'8 
-  | a'2 r8 a'8\Eco a'4 
+  | a'2 r8\Eco a'8 a'4 
   | r8 a'8 a'4 r8 a'8 a'4~
   | a'4 a'8 a'8 a'2 
 
@@ -966,7 +966,7 @@ MusicEstribilloAII = {
   | a'4 f'4 a'2 
   | a'4 a'4 bes'4 c''4 
   | bes'4 g'4 r2 
-  | r4 bes'4\Falsete bes'4 a'4
+  | r4\Falsete bes'4 bes'4 a'4
   | bes'4. a'8 g'2~
   | g'2 d'2~
   | d'4 e'4 f'4\sh g'4 
@@ -1011,7 +1011,7 @@ MusicEstribilloTII = {
   | r2 r8 g'8 f'8\sh e'8 
   | f'8\sh g'8 a'4 r8 fis'8 fis'4~
   | fis'4 g'8 g'8 f'?4 d'8 d'8 
-  | e'2 r8 e'8\Eco e'4
+  | e'2 r8\Eco e'8 e'4
   | r8 e'8 e'4 r8 g'8 g'4~
   | g'4 f'8 f'8 e'2 
 
@@ -1111,7 +1111,7 @@ MusicEstribilloTII = {
   | e'4 d'4 e'2 
   | d'4 fis'4 fis'4 fis'4 
   | g'4 g'4 r2 
-  | r4 g'4\Falsete g'4 fis'4 
+  | r4\Falsete g'4 g'4 fis'4 
   | g'2 d'2 
   | d'1 
   | d'1~
@@ -1422,7 +1422,7 @@ FiguresAc = \figuremode {
   s1.*34
   % m. 63
   < 3- >1. 
-  < 3- >2 <_>1
+  < 3- >1.
   s1.
   \MeterDuple
   s1*18
@@ -1438,7 +1438,7 @@ FiguresAc = \figuremode {
 MusicCoplasSIi = {
   \SectionBreak
 
-  \Section "COPLAS a 4 y a duo" 
+  \Section "COPLAS a 4 y a Dúo" 
   \MeterTriple
 
   %% COPLA 1 
@@ -1475,7 +1475,7 @@ MusicCoplasSIi = {
   \MiddleBar
  
   \break
-  \Section "[COPLA 2] A Duo"
+  \Section "[COPLA 2] a Dúo"
   % m. 132
   | R1.
   | r2 e''2\color g''2~
@@ -1516,7 +1516,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \break
-  \Section "[COPLA 3] A 4"
+  \Section "[COPLA 3] a 4"
   % m. 162
   | r2 d''2 e''2
   | f''2\color g''2 g''2~
@@ -1549,7 +1549,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \break
-  \Section "[COPLA 4] A Duo"
+  \Section "[COPLA 4] a Dúo"
   % m. 185
   | R1.
   | r2 e''2\color g''2~
@@ -1591,7 +1591,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \break
-  \Section "[COPLA 5] A 4"
+  \Section "[COPLA 5] a 4"
   % m. 215
   | r2 d''2 e''2
   | f''2 g''2 g''2~
@@ -1623,7 +1623,7 @@ MusicCoplasSIi = {
   \MiddleBar
 
   \break
-  \Section "[COPLA 6] a Duo"
+  \Section "[COPLA 6] a Dúo"
   % m. 238
   | R1.
   | r2 e''2\color g''2~
@@ -1663,7 +1663,7 @@ MusicCoplasSIi = {
 
   % m. 267
   | f''1.\sh\fermata
-  \MiddleBar
+  \FinalBar
   \DCalFine
 }
 
@@ -1887,7 +1887,7 @@ MusicCoplasSIii = {
 
   % m. 267
   | d''1.\fermata
-  \MiddleBar
+  \FinalBar
 }
 
 MusicCoplasAI = {
@@ -2000,7 +2000,7 @@ MusicCoplasAI = {
   %% m. 147 COPLA 6 TACET
   % m. 238
   R1.*30
-  \MiddleBar
+  \FinalBar
 }
 
 MusicCoplasTI = {
@@ -2112,7 +2112,7 @@ MusicCoplasTI = {
   %% m. 147 COPLA 6 TACET
   % m. 238
   R1.*30
-  \MiddleBar
+  \FinalBar
 }
 
 %% COPLAS ACOMP.
@@ -2150,7 +2150,6 @@ MusicCoplasAcOdd = {
   % m. 130
   | a1. 
   | d'1.\fermata
-  \MiddleBar
 }
 
 MusicCoplasAcEven = {
@@ -2193,7 +2192,6 @@ MusicCoplasAcEven = {
   % m. 160
   | a1.
   | d1.\fermata
-  \MiddleBar
 }
 
 MusicCoplasAc = {
@@ -2215,6 +2213,7 @@ MusicCoplasAc = {
 
   %% COPLA 6
   \MusicCoplasAcEven
+  \FinalBar
 }
 
 %%********************************

@@ -7,6 +7,9 @@
 
 #(define lyric-hyphen-callback
    (lambda (hyphengrob) 
+     "If a LyricHyphen is broken into more than one part (by a line break), 
+     copy Lilypond's hyphen and add this in front of the next lyric
+     text (which is the right bound of the hyphen grob)."
        (let* 
          ((thick (ly:grob-property hyphengrob 'thickness)) 
           (lngth (ly:grob-property hyphengrob 'length)) 
@@ -17,7 +20,7 @@
               (ly:spanner-broken-into orig) 
               '() )) 
           (bound (ly:spanner-bound hyphengrob RIGHT))
-          (text (ly:grob-property bound 'text))
+          (next-text (ly:grob-property bound 'stencil)) ; was 'text
           (ln (markup 
                 #:translate `(0 .  ,hgth) 
                 #:override `(thickness .  ,thick) 
@@ -28,26 +31,33 @@
                            bound 
                            (markup #:concat (ln " "))) 
                          X))))
-          (fake-hyphen (ly:stencil-translate-axis 
+          (fake-hyphen-line (ly:stencil-translate-axis 
                          (grob-interpret-markup 
                            bound 
-                           (markup #:concat 
-                                   (ln " " (markup->string text)))) 
-                         add X))) 
+                           (markup ln))
+                         add X))
+         (fake-hyphen (ly:stencil-combine-at-edge 
+                        fake-hyphen-line  
+                        0 1
+                        next-text
+                        0.5)))
          (if (and 
                (>= (length siblings) 2)
                (eq? (car (last-pair siblings)) hyphengrob))
-           (begin
-             (ly:grob-set-property! bound 'color red)
-             (ly:grob-set-property! bound 'stencil fake-hyphen))
-           (ly:grob-set-property! bound 'color blue))
-         )))
+             (ly:grob-set-property! bound 'stencil fake-hyphen)))))
+             
+%% to hide Lilypond's hyphen on new line 
+%% (ly:grob-set-property! hyphengrob 'stencil '()) 
+
+%% to debug 
+%% (ly:grob-set-property! bound 'color red)
 
 
 \layout {
   \context {
     \Lyrics
-    \override LyricHyphen.minimum-distance = #2 %% was #3
+    \override LyricHyphen.minimum-distance = #2.25 % default 0.1
+    \override LyricHyphen.dash-period = #16 % default 10
     \override LyricHyphen.after-line-breaking = #lyric-hyphen-callback
   }
 }

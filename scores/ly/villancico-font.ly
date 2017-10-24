@@ -25,6 +25,10 @@
   \context {
     \Score
 
+    %% Increase overall spacing
+    \override SpacingSpanner.base-shortest-duration =
+    #(ly:make-moment 1/9)
+
     %% Increase size of bar numbers
     \override BarNumber.font-size = #1
    
