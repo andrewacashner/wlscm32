@@ -89,7 +89,7 @@ LyricsEstribilloSi = \lyricmode {
 
   tan de~ad -- mi -- rar y de~o -- ír, y de~o -- ír,
 
-  y to -- do~en Dios es ba -- jar, es ba -- jar,
+  y to -- do~en Dios es __ ba -- jar, es __ ba -- jar,
   y to -- do~en Dios es ba -- jar,
   y to -- do~en Dios es __ ba -- jar, __
   y to -- do~en Dios es ba -- jar.
@@ -110,7 +110,7 @@ LyricsEstribilloAi = \lyricmode {
 
   tan de~ad -- mi -- rar y de~o -- ír,
   to -- do~en el hom -- bre~es su -- bir,   
-  y to -- do~en Dios es ba -- jar, es ba -- jar, es ba -- jar,
+  y to -- do~en Dios es __ ba -- jar, es __ ba -- jar, es ba -- jar,
   to -- do~en el hom -- bre~es su -- bir,   
   y to -- do~en Dios, __ 
   y to -- do~en Dios es __ ba -- jar,
@@ -132,8 +132,8 @@ LyricsEstribilloTi = \lyricmode {
 
   tan de~ad -- mi -- rar y de~o -- ír,
   to -- do~en el hom -- bre~es su -- bir,   
-  y to -- do~en Dios es ba -- jar, es ba -- jar, 
-  y to -- do~en Dios es ba -- jar, 
+  y to -- do~en Dios es __ ba -- jar, es __ ba -- jar, 
+  y to -- do~en Dios es __ ba -- jar, 
   to -- do~es ba -- jar, 
   y to -- do~en Dios es __ ba -- jar, es __ ba -- jar,
   y to -- do~en Dios es ba -- jar.
@@ -152,9 +152,9 @@ LyricsEstribilloAii = \lyricmode {
   O, __ qué can -- to, \EdLyrics { O, __ qué can -- to, }
   tan de~o -- ír y de~ad -- mi -- rar,
   to -- do~en el hom -- bre~es su -- bir,
-  y to -- do~en Dios es ba -- jar, ba -- jar,
-  y to -- do~en Dios es ba -- jar, ba -- jar, ba -- jar,
-  to -- do~en Dios es ba -- jar, ba -- jar.
+  y to -- do~en Dios es __ ba -- jar, ba -- jar,
+  y to -- do~en Dios es __ ba -- jar, ba -- jar, ba -- jar,
+  to -- do~en Dios es ba -- jar, __ ba -- jar.
 }
 
 LyricsEstribilloTii = \lyricmode {
@@ -170,7 +170,7 @@ LyricsEstribilloTii = \lyricmode {
   O, __ qué can -- to, qué can -- to, 
   tan de~o -- ír y de~ad -- mi -- rar,
   to -- do~en el hom -- bre~es su -- bir, 
-  y to -- do~en Dios es ba -- jar, es ba -- jar,
+  y to -- do~en Dios es __ ba -- jar, es __ ba -- jar,
   to -- do~en Dios es ba -- jar,
   y to -- do~en Dios es ba -- jar.
 }

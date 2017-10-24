@@ -88,9 +88,8 @@ MusicIntroSi = {
   | a'1.
   \MiddleBar
 
-  %% m. 28 RESPUESTA
+  %% m. 28 RESPUESTA -- heading in AII
   \break
-  \Section "RESPUESTA a 3"
   | R1. | R1.
 
   % m. 30
@@ -114,7 +113,8 @@ MusicEstribilloSi = {
   \Section \markup { \SegnoSign "  ESTRIBILLO a 6" }
   \MeterDuple
   % m. 45
-  | R1 | R1
+  | R1 
+  | \ShowThisEmptyStaff R1
   | R1
   | r2 r4 d''4 
   | c''8 c''8 c''8 d''8 e''4 f''8 f''8 
@@ -130,7 +130,7 @@ MusicEstribilloSi = {
   | c''4 a'4 r2 
 
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | R1. | R1.
   | R1. | R1. 
   | R1. | R1. 
@@ -153,6 +153,7 @@ MusicEstribilloSi = {
 
   % m. 80
   | d''2 d''2 d''2 
+  \break
   | \[ es''1. 
   | c''1. \] 
   | d''1\colorOne r2 
@@ -169,6 +170,7 @@ MusicEstribilloSi = {
   | f''?2 f''2. e''4 
   | d''2 e''2. d''4 
   | \ficta cis''!1. 
+  \break
   | d''2\color d''1\endcolor 
   | d''1. 
 
@@ -270,7 +272,8 @@ MusicIntroAi = {
 MusicEstribilloAi = {
   \MeterDuple
   % m.45
-  | R1 | R1 
+  | R1 
+  | \ShowThisEmptyStaff R1 
   | R1
   | r4 a'4 f'8 e'8 f'8 g'8 
   | a'4 a'8 a'8 g'8 g'8 f'8 f'8 
@@ -288,7 +291,7 @@ MusicEstribilloAi = {
   | R1 
   
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | R1. | R1. 
   | R1. | R1. 
   | R1. | R1. 
@@ -426,7 +429,8 @@ MusicIntroTi = {
 MusicEstribilloTi = {
   \MeterDuple
   % m. 45
-  | R1 | R1
+  | R1 
+  | \ShowThisEmptyStaff R1
   | R1
   | r4 a4 d'8 \ficta cis'!8 d'8 e'8 
   | f'4 c'4 r4 c'4 
@@ -444,7 +448,7 @@ MusicEstribilloTi = {
   | R1 
   
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | R1. | R1.
   | R1. | R1.
   | R1. | R1.
@@ -554,6 +558,7 @@ MusicIntroAii = {
   | R1. | R1. 
 
   %% m. 28 RESPUESTA
+  \Section "RESPUESTA a 3"
   | r2 a'1~\color 
   | a'2 bes'1\endcolor
 
@@ -600,7 +605,7 @@ MusicEstribilloAii = {
   | e'4 f'8 f'8 g'4 a'4 
 
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | bes'2 bes'2 bes'2 
   | bes'2 a'2 g'2 
   | fis'2 g'2 g'2 
@@ -745,7 +750,7 @@ MusicEstribilloTii = {
   | c'4 d'8 d'8 c'4 c'4 
 
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | d'2 d'2 d'2 
   | d'2 c'2 bes2 
   | a2 b!2 b2 
@@ -884,12 +889,14 @@ MusicEstribilloBi = {
   | r2 f4 d8 d8 
   | g4 a8 a8 bes4 g8 d8 
   | g4 r4 r2 
-  | R1 | R1
-  | R1 | R1
+  | R1 
+  | R1
+  | R1 
+  | R1
   | r4 d8 d8 e4 f4 
  
   % m. 60
-  \MeterTriple
+  \MeterChangeTriple
   | bes,2 bes,2 bes,2 
   | bes,2 c2 c2 
   | d2 g2 g2 
@@ -1003,6 +1010,7 @@ MusicCoplasSi = {
 
   %% COPLA 2
   \break
+  \HideThisEmptyStaff
   % m. 147
   | R1. | R1. 
   | R1.
@@ -1022,6 +1030,7 @@ MusicCoplasSi = {
 
   % m. 167
   | R1.
+  \FinalBar
 }
 
 MusicCoplasAi = {
@@ -1057,6 +1066,7 @@ MusicCoplasAi = {
 
   %% COPLA 2
   % m. 147
+  \HideThisEmptyStaff
   | R1. | R1. 
   | R1. 
 
@@ -1075,6 +1085,7 @@ MusicCoplasAi = {
 
   % m. 167
   | R1. 
+  \FinalBar
 }
 
 MusicCoplasTi = {
@@ -1111,6 +1122,7 @@ MusicCoplasTi = {
 
   %% COPLA 2
   % m. 147
+  \HideThisEmptyStaff
   | R1. | R1.
   | R1.
 
@@ -1129,6 +1141,7 @@ MusicCoplasTi = {
 
   % m. 167
   | R1. 
+  \FinalBar
 }
 
 %%*******************
@@ -1186,7 +1199,7 @@ MusicCoplasAii = {
 
   % m. 167
   | g'1. 
-  \MiddleBar
+  \FinalBar
   \DSalFine
 }
 
@@ -1240,6 +1253,7 @@ MusicCoplasTii = {
 
   % m. 167
   | b!1. 
+  \FinalBar
 }
 
 MusicCoplasBi = {
@@ -1294,6 +1308,7 @@ MusicCoplasBi = {
 
   % m. 167
   | g1. 
+  \FinalBar
 }
 
 %%***********************************************************

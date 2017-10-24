@@ -104,11 +104,13 @@ MusicEstribilloSIi = {
   | R1.
   | R1.
   | R1.
+  \MiddleBar
  
   \MeterDuple
   % m. 25
   | r4 r8 \ficta cis''!8 d''8 d''8 d''8 d''8
   | d''4 r8 f'8 a'8 a'8 a'8 a'8 
+  \break
   | a'2 r4 c''4~
   | c''8 c''8 c''4 d''2
   | e''2 d''8 d''8 d''8 d''8
@@ -143,6 +145,7 @@ MusicEstribilloSIi = {
   | b'4 c''8 c''8 bes'4 bes'8 a'8~
   | a'8 a'8 a'4 a'2
   | r4 d''2 d''4
+  \break
   | cis''2 d''2
   | r2 d''4. c''8
   | bes'4. a'8 bes'4 bes'4
@@ -172,6 +175,7 @@ MusicEstribilloSIii = {
   | r2 r4 r8 a'8
   | a'2 r4 f'4 
   | e'2 f'2
+  \MiddleBar
 
   % m. 10
   \MeterTriple
@@ -192,6 +196,7 @@ MusicEstribilloSIii = {
   | R1.
   | R1.
   | R1.
+  \MiddleBar
 
   % m. 25
   \MeterDuple
@@ -259,8 +264,8 @@ MusicEstribilloAI = {
   | r2 r4 r8 e'8
   | f'2 r4 d'4
   | e'2 d'2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | f'2 e'2 d'2
   | e'1 e'2
@@ -279,8 +284,8 @@ MusicEstribilloAI = {
   | R1.
   | R1.
   | R1.
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | r4 r8 e'8 f'8 f'8 f'8 f'8
   | f'4 r8 d'8 f'8 f'8 f'8 f'8
@@ -347,8 +352,8 @@ MusicEstribilloTI = {
   | r2 r4 r8 a8
   | d'2 r4 d4
   | a2 d2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | d'2 a2 b2 
   | c'1 c'2
@@ -367,8 +372,8 @@ MusicEstribilloTI = {
   | R1.
   | R1.
   | R1.
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | r4 r8 a8 d'8 d'8 d'8 d'8
   | d'4 r8 d8 d'8 d'8 d'8 d'8
@@ -436,8 +441,8 @@ MusicEstribilloSII = {
   | g'4 f'4 e'4 e'4
   | r4 r8 a'8 bes'4 a'4
   | a'2 a'2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | R1.
   | R1.
@@ -456,8 +461,8 @@ MusicEstribilloSII = {
   | a'2 g'1\endcolor
   | f'2 a'2 g'2
   | a'2\color g'1\endcolor
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | e'2 r4 r8 f'8
   | a'8 a'8 a'8 a'8 a'4 r8 f'8
@@ -523,6 +528,7 @@ MusicEstribilloAII = {
   | cis'4 d'4 d'4 cis'4
   | r4 r8 d'8 d'4. a8
   | cis'2 a2
+  \MiddleBar
   
   \MeterTriple
   % m. 10
@@ -543,8 +549,8 @@ MusicEstribilloAII = {
   | f'2 e'1\endcolor
   | d'2 f'2 e'2
   | d'1.
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | \ficta cis'!2 r4 r8 d'8
   | f'8 f'8 f'8 f'8 f'4 r8 d'8
@@ -612,8 +618,8 @@ MusicEstribilloTII = {
   | a4 a4 a4 a4
   | r4 r8 f8 d4 f4
   | a2 f2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | R1.
   | R1.
@@ -632,8 +638,8 @@ MusicEstribilloTII = {
   | c'2 c'1\endcolor
   | a2 d'2 d'2
   | c'2\color bes1\endcolor
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | a2 r4 r8 a8
   | d'8 d'8 d'8 d'8 d'4 r8 a8
@@ -699,8 +705,8 @@ MusicEstribilloBII = {
   | a4 d4 a,4 a,4
   | r4 r8 d8 g,4 d4
   | a,2 d2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | R1.
   | R1.
@@ -719,8 +725,8 @@ MusicEstribilloBII = {
   | f2 c1\endcolor
   | d1 e2
   | \ficta fis!2\color g1\endcolor 
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | a2 r4 r8 d,8
   | d8 d8 d8 d8 d4 r8 d8
@@ -788,8 +794,8 @@ MusicEstribilloAc = {
   | a4 d4 a2
   | d2 g4 d4
   | a,2 d2
-
-  \MeterTriple
+  
+  \MeterChangeTriple
   % m. 10
   | d2 a,2 b,2
   | c2\color c1
@@ -808,8 +814,8 @@ MusicEstribilloAc = {
   | f2 c1\endcolor
   | d1 e2
   | \ficta fis!2\color g1\endcolor
-
-  \MeterDuple
+  
+  \MeterChangeDuple
   % m. 25
   | a2 d2
   | d2. d4
@@ -870,6 +876,7 @@ MusicEstribilloAc = {
 %% N.B. -- Coplas begin with SIii part
 
 MusicCoplasSIi = {
+  \pageBreak
   \SectionBreak
   % m. 64
   \MeterDuple

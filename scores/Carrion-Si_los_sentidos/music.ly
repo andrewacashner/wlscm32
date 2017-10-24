@@ -85,6 +85,7 @@ EstribilloSolo = {
 }
 
 CoplasSolo = {
+  \pageBreak
   \SectionBreak
   \Section "COPLAS"
   \MeterDuple
@@ -99,8 +100,8 @@ CoplasSolo = {
   | cis''8. b'16 cis''8 d'' e''4 r8 b'8
   | c''4 a'8 d''8 d''4 cis''4
 
+  \break
   \MeterChangeTriple
-
   % m. 59
   | r2 e'2 a'2
 

@@ -17,13 +17,13 @@ LyricsEstribilloSIi = \lyricmode {
   \EdLyrics { hoy to -- dos con la Fe } 
   se -- an o -- í -- dos, 
   to -- dos con la Fe se -- an o -- í -- dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos,
-  no, no, no se den por sen -- ti -- dos los  sen -- ti -- dos,
+  no, no, no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos, \EdLyrics { se -- an o -- í -- dos, }
   no se den, no, no, \EdLyrics { no, no, } no se den,
-  los sen -- ti -- dos, no se den por sen -- ti -- dos los 
-  sen -- ti -- dos, los sen -- ti -- dos, 
+  los sen -- ti -- dos, no se den por sen -- ti -- dos 
+  los __ sen -- ti -- dos, los sen -- ti -- dos, 
   los __ _ _ sen -- ti -- dos, 
   \EdLyrics { sen -- ti -- _ dos, } por sen -- ti -- dos
   los sen -- ti -- _ dos.
@@ -39,13 +39,13 @@ LyricsEstribilloSIii = \lyricmode {
   hoy to -- dos con la Fe, \EdLyrics { hoy to -- dos con la Fe } 
   se -- an \EdLyrics { o -- í -- dos, __ hoy } 
   to -- dos con la Fe se -- an o -- í -- dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos, no, no, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos, \EdLyrics { se -- an o -- í -- dos, }
   no se den, no, no, \EdLyrics { no, no, } no se den,
   los sen -- ti dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   los sen -- ti -- dos,
   los __ _ _ \EdLyrics { sen -- ti -- _ dos, } 
   por sen -- ti -- dos, los sen -- ti -- _ dos.
@@ -62,14 +62,14 @@ LyricsEstribilloAI = \lyricmode {
   hoy to -- dos con la Fe, 
   \EdLyrics { hoy to -- dos con la Fe } se -- an o -- í -- dos, 
   hoy to -- dos con la Fe se -- an o -- í -- dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos,
-  no, no, no se den por sen -- ti -- dos los  sen -- ti -- dos,
+  no, no, no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos,
   \EdLyrics { se -- an o -- í -- dos, } o -- í -- dos,
   no se den, no, no, \EdLyrics { no, no, } no se den,
   los sen -- ti dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   los sen -- ti -- dos, los sen -- ti -- dos,
   los __ _ _ _ _ sen -- ti -- _ dos, 
   por sen -- ti -- dos, los sen -- ti -- dos.
@@ -85,14 +85,14 @@ LyricsEstribilloTI = \lyricmode {
   hoy to -- dos con la Fe, 
   \EdLyrics { hoy to -- dos con la Fe } se -- an o -- í -- dos, 
   to -- dos con la Fe se -- an o -- í -- dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos, no, no, 
-  no se den por sen -- ti -- dos los  sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   se -- an o -- í -- dos,
   \EdLyrics { se -- an o -- í -- dos, } no se den,
   no, no, \EdLyrics { no, no, } no se den,
   los sen -- ti dos, 
-  no se den por sen -- ti -- dos los sen -- ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   los sen -- ti -- dos, los __ sen -- ti -- dos, 
   los sen -- ti -- dos, por sen -- ti -- dos,
   los sen -- ti -- dos.
@@ -105,7 +105,7 @@ LyricsEstribilloSII = \lyricmode {
   \EdLyrics { si los sen -- ti -- dos } 
   que -- ja for -- man del Pan Di -- vi -- no,
   del Pan Di -- vi -- no, no, no, 
-  por -- que lo que~e -- llos sien -- ten no~es 
+  por -- que lo que~e -- llos sien -- ten no~es __
   de Fe con -- sen -- ti -- _ do, 
   hoy to -- dos con la Fe, 
   \EdLyrics { hoy to -- dos con la Fe } se -- an o -- í -- _ dos,
@@ -116,7 +116,7 @@ LyricsEstribilloSII = \lyricmode {
   se -- an o -- í -- dos, o -- í -- dos,
   no se den por sen -- ti -- dos los sen -- ti -- dos, 
   no se den, \EdLyrics { no se den, } 
-  no se den por sen -- ti -- dos los sen ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   por sen -- ti -- dos los sen -- ti -- _ dos, 
   los __ _ _ sen -- ti -- dos, 
   \EdLyrics { los __ _ _ sen -- ti -- _ dos. }
@@ -129,7 +129,7 @@ LyricsEstribilloAII = \lyricmode {
   del Pan Di -- vi -- no, 
   no, no, 
   por -- que lo que~e -- llos sien -- ten 
-  no~es de Fe con -- sen -- ti -- do, 
+  no~es __ de Fe con -- sen -- ti -- do, 
   hoy to -- dos con la Fe, 
   \EdLyrics { hoy to -- dos con la Fe } se -- an o -- í -- dos,
   hoy to -- dos con la Fe se -- an o -- í -- dos,
@@ -139,7 +139,7 @@ LyricsEstribilloAII = \lyricmode {
   se -- an o -- í -- dos, o -- í -- dos,
   no se den por sen -- ti -- dos los sen -- ti -- dos, 
   no se den, \EdLyrics { no se den, } 
-  no se den por sen -- ti -- dos los sen ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   por sen -- ti -- dos los sen -- ti -- _ dos, 
   los __ _ _ sen -- ti -- dos, 
   los __ _ _ sen -- ti -- _ _ _ dos.
@@ -151,7 +151,7 @@ LyricsEstribilloTII = \lyricmode {
   que -- ja for -- man del Pan Di -- vi -- no,
   del Pan Di -- vi -- no,
   no, no, por -- que lo que~e -- llos sien -- ten 
-  no~es de Fe con -- sen -- ti -- _ do, 
+  no~es __ de Fe con -- sen -- ti -- _ do, 
   hoy to -- dos con la Fe, 
   \EdLyrics { hoy to -- dos con la Fe } se -- an o -- í -- dos, 
   to -- dos con la Fe se -- an o -- í -- dos,
@@ -161,7 +161,7 @@ LyricsEstribilloTII = \lyricmode {
   se -- an o -- í -- dos, o -- í -- dos,
   no se den por sen -- ti -- dos los sen -- ti -- dos, 
   no se den, \EdLyrics { no se den, } 
-  no se den por sen -- ti -- dos los sen ti -- dos,
+  no se den por sen -- ti -- dos los __ sen -- ti -- dos,
   por sen -- ti -- dos los sen -- ti -- _ dos, 
   los __ _ _ sen -- ti -- dos, 
   los __ _ _ _ _ sen -- ti -- _ _ dos.

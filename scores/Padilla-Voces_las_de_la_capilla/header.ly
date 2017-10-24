@@ -12,10 +12,10 @@
   subtitle        = "[De Navidad.] A 6."
   composer        = "JUAN GUTIÉRREZ DE PADILLA"
   dates           = "(ca. 1590–1664)"
+  poet            = "Anonymous"
   source          =
   \markup { 
-    "Puebla, Cathedral Archive," 
+    "Puebla, Cathedral Archive (MEX-Pc: Leg. 3/3)," 
     \italic "Navidad del año de 1657" 
-    " (MEX-Pc: Leg. 3/3)" 
   }
 }
