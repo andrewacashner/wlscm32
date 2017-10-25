@@ -13,6 +13,7 @@
   subtitle  = "De Navidad. A 8."
   composer  = "ANTONIO DE SALAZAR"
   dates     = "(ca. 1650–1715)"
+  poet      = "Anonymous"
   source    = 
   \markup {
     "Mexico City (MEX-Mcen: CSG.256),"

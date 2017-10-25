@@ -24,10 +24,10 @@ LyricsEstribilloSIi = \lyricmode {
   \EdLyrics {  ba -- jad, }
   y|~el cie -- lo de la tie -- rra de glo -- ria lle -- nad,
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  que so -- lo~a -- quel lu -- gar,
-  que \EdLyrics {  so -- lo~a -- quel lu -- gar }
-  que~el mun -- do des -- pre -- cia
+  que só -- lo~a -- quel lu -- gar,
+  que só -- lo~a -- quel lu -- gar,
+  que \EdLyrics {  só -- lo~a -- quel lu -- gar }
+  que~el mun -- do des -- pre -- cia __
   de Dios es ca -- paz, de Dios es ca -- paz.
 }
 
@@ -47,9 +47,9 @@ LyricsEstribilloSIii = \lyricmode {
   \EdLyrics {  ba -- jad, } ba -- jad,
   y|~el cie -- lo de la tie -- rra de glo -- ria lle -- nad, 
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  que so -- lo~a -- quel lu -- gar,
-  que \EdLyrics {  so -- lo~a -- quel lu --  gar }
+  que só -- lo~a -- quel lu -- gar,
+  que só -- lo~a -- quel lu -- gar,
+  que \EdLyrics {  só -- lo~a -- quel lu --  gar }
   que~el mun -- do des -- pre -- cia
   de Dios es ca -- paz,
   de Dios es ca -- paz.
@@ -71,9 +71,9 @@ LyricsEstribilloAI = \lyricmode {
   \EdLyrics {  ba -- jad, ba -- jad, }
   y|~el cie -- lo de la  tie -- rra de glo -- ria lle -- nad, 
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  que so -- lo~a -- quel lu -- gar,
-  que so -- lo~a -- quel lu -- gar
+  que só -- lo~a -- quel lu -- gar,
+  que só -- lo~a -- quel lu -- gar,
+  que só -- lo~a -- quel lu -- gar
   que~el mun -- do des -- pre -- cia
   de Dios es ca -- paz,
   de Dios es ca -- paz.
@@ -94,8 +94,8 @@ LyricsEstribilloSII = \lyricmode {
   ba -- jad, \EdLyrics {  ba -- jad, ba -- jad, }
   y|~el cie -- lo de la tie -- ra de glo -- ria lle -- nad,
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  \EdLyrics {  que so -- lo~a -- quel lu -- gar }
+  que só -- lo~a -- quel lu -- gar,
+  \EdLyrics {  que só -- lo~a -- quel lu -- gar }
   que~el mun -- do des -- pres -- cia
   de Dios, de Dios es ca -- paz.
 }
@@ -115,8 +115,8 @@ LyricsEstribilloAII = \lyricmode {
   ba -- jad, 
   y|~el cie -- lo de la tie -- rra de glo -- ria lle -- nad,
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  \EdLyrics {  que so -- lo~a -- quel lu -- gar }
+  que só -- lo~a -- quel lu -- gar,
+  \EdLyrics {  que só -- lo~a -- quel lu -- gar }
   que~el mun -- do des -- pre -- cia
   de Dios, de Dios es ca -- paz.
 }
@@ -134,8 +134,8 @@ LyricsEstribilloTII = \lyricmode {
   \EdLyrics {  ba -- jad, ba -- jad, ba -- jad, }
   y|~el cie -- lo de la tie -- rra de glo -- ria lle -- nad,
   de glo -- ria lle -- nad,
-  que so -- lo~a -- quel lu -- gar,
-  \EdLyrics {  que so -- lo~a -- quel lu -- gar }
+  que só -- lo~a -- quel lu -- gar,
+  \EdLyrics {  que só -- lo~a -- quel lu -- gar }
   que~el mun -- do des -- pre -- cia
   de Dios, de Dios es ca -- paz.
 }
@@ -149,7 +149,7 @@ LyricsCoplaOneSIi = \lyricmode {
   \StanzaI
   Pa -- ra na -- cer Dios hom -- bre,
   es -- co -- ge~es -- te por -- tal, 
-  que~él só -- lo~es dig -- no~al -- cá -- zar
+  que~él so -- lo~es dig -- no~al -- cá -- zar
   de tan -- ta ma -- jes -- tad.
 }
 
@@ -173,8 +173,8 @@ LyricsCoplaOneSIii = \lyricmode {
   \StanzaI
   Pa -- ra na -- cer Dios hom -- _ bre,
   es -- co -- ge~es -- te por -- tal,
-  que~él só -- lo~es dig -- no,
-  que~él só -- lo~es dig -- no~al -- cá -- zar
+  que~él so -- lo~es dig -- no,
+  que~él so -- lo~es dig -- no~al -- cá -- zar
   de tan -- ta ma -- jes -- tad.
 }
 
@@ -198,7 +198,7 @@ LyricsCoplaOneAI = \lyricmode {
   \StanzaI
   Pa -- ra na -- cer Dios hom -- bre,
   es -- co -- ge~es -- te por -- tal,
-  que~él só -- lo~es dig -- no al -- cá -- zar,
+  que~él so -- lo~es dig -- no al -- cá -- zar,
   es dig -- no~al -- cá -- zar
   de tan -- ta ma -- jes -- tad.
 }

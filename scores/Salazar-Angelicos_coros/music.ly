@@ -120,7 +120,7 @@ MusicEstribilloSIi = {
   | c''1 c''2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | r4 d''4 c''4. c''8 
   | bes'4. bes'8 a'4 bes'4 
@@ -144,6 +144,7 @@ MusicEstribilloSIi = {
   | g'4 r4 r4 bes'4 
   | g'4 a'4 g'4 g'4  
   | a'4 a'4 a'4 bes'8 bes'8 
+  \break
   | bes'4 a'4( bes'4) bes'4 
   | bes'2 a'4 a'4  
   | g'2 r4 a'4 
@@ -213,7 +214,7 @@ MusicEstribilloSIii = {
   | c''1 a'2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | r4 f''4 e''4. e''8 
   | d''4 bes'4 c''4 f''4 
   | d''2. bes'4 
@@ -304,7 +305,7 @@ MusicEstribilloAI = {
   | e'1 f'2
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | r2 r4 a'4 
   | g'4. g'8 f'4. f'8 
@@ -397,7 +398,7 @@ MusicEstribilloSII = {
   | g'1 a'2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | R1
   | r2 r4 d''4 
@@ -418,7 +419,7 @@ MusicEstribilloSII = {
   
   % m. 60
   | d'4 r4 r4 d''4 
-  | \ficta b'!4 c''4 c''4 b'4 
+  | b'!4 c''4 c''4 b'4 
   | c''4 r4 r2 
   | r4 c''4 a'4 d''8 bes'8 
   | c''2 d''2 
@@ -488,7 +489,7 @@ MusicEstribilloAII = {
   | c'1 c'2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | R1
   | R1
@@ -579,7 +580,7 @@ MusicEstribilloTII = {
   | g1 f2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | R1
   | R1
@@ -670,7 +671,7 @@ MusicEstribilloBII = {
   | c1 f,2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | R1
   | R1
   | R1
@@ -761,7 +762,7 @@ MusicEstribilloAc = {
   | c1 f,2 
 
   % m. 45
-  \MeterDuple
+  \MeterChangeDuple
   | r4 f,4 c4. c8 
   | bes,4. bes,8 a,4 f,4 
   | g,4 g4 d4 bes,4 
@@ -773,7 +774,7 @@ MusicEstribilloAc = {
   | g,4. g,8 a,4 f,4 
   | g,4 g4 e4 f4 
   | c4. c8 f8[ f8 f8 f8] 
-  | f4 bes,8 bes,8 \ficta es!4 f8 f8 
+  | f4 bes,8 bes,8 es!4 f8 f8 
   | bes,8 bes,8 bes,8 bes,8 bes,4 f8 f8 
   | g4 d8 d8 g,4. g,8 
   | c4 g,8 g,8 c4. c8 
@@ -782,7 +783,7 @@ MusicEstribilloAc = {
  
   % m. 60
   | d4 bes,4 c4 d4 
-  | g4 e4 \ficta fis!4 g4 
+  | g4 e4 fis!4 g4 
   | c4 a,4 bes,4 c4 
   | f,4 f4 f4 bes,8 bes,8 
   | f2 bes,4 bes,4 
@@ -840,7 +841,8 @@ MusicCoplasSIii = {
   | f''4 es''4 d''2 
   | c''2 r4 c''4 
   | c''4 bes'4 a'4 g'4 
-  | g'4 d''4 c''4 bes'2 a'4 g'4. bes'8 
+  | g'4 d''4 c''4 bes'4~
+  | bes'4 a'4 g'4. bes'8 
 
   % m. 79
   | a'1\fermata
@@ -856,11 +858,11 @@ MusicCoplasAI = {
   % m. 70
   | f'2 f'4 f'4 
   | f'4 f'4 es'4 es'4 
-  | d'2 r4 f'4 
-  | f'4 e'4 d'2 
+  | d'2 r4 f'?4 
+  | f'4 \ficta es'4 d'2 
   | c'4 f'4 f'2 
   | f'2 r2 
-  | r4 f'4 f'4 e'4 
+  | r4 f'4 f'4 \ficta es'4 
   | d'4 g'4 f'2 
   | e'8 d'8 f'2 e'4 
 
@@ -898,7 +900,7 @@ MusicCoplasSII = {
   | a'4 a'4 g'2 
   | g'4 g'4 a'4 f'4 
   | g'8 g'8 c''4 c''4 d''4 
-  | c''4. c''8 d''4 bes'4
+  | c''4. c''8 c''4 bes'4
 
   % m. 88
   | a'1\fermata
@@ -1019,7 +1021,7 @@ MusicCoplasAc = {
   | d2 r4 d4 
   | d4 c4 bes,2 
   | a,2 bes,2 
-  | f,4 f4 f4 e4 
+  | f,4 f4 f4 \ficta es4 
   | d2 c2 
   | g,2 a,4 bes,4 
   | c4 f4 c'4. c'8
