@@ -5,23 +5,23 @@
 %% TROYANO PROLOGUE
 %% lyric blocks
 
-TroyanoPrologueI = \lyricmode {
+TroyanoPrologueISi = \lyricmode {
   \StanzaI
   Al es -- tab -- lo más di -- cho -- so,
   don -- de triun -- fa la __ vic -- to -- ria,
   prin -- ci -- pio~a sig -- los de gra -- cia,
-  la no -- che más ven -- tu -- ro -- sa,
+  la no -- che más __ ven -- tu -- ro -- sa,
 }
 
-TroyanoPrologueII = \lyricmode {
+TroyanoPrologueIISi = \lyricmode {
   \StanzaII
   Bue -- na no -- che~|y la más bue -- na,
   pues a pe -- sar de __ las som -- bras
   en su mi -- tad __ a -- ma -- ne -- ce
-  quién con tan -- ta luz en -- tol -- da.
+  quién con tan -- ta __ luz en -- tol -- da.
 }
 
-TroyanoPrologueIII = \lyricmode {
+TroyanoPrologueIIISi = \lyricmode {
   \StanzaIII
   Un za -- gal de~a -- quel con -- tor -- no,
   en su tem -- pla -- da __ zam -- po -- ña 
@@ -29,8 +29,32 @@ TroyanoPrologueIII = \lyricmode {
   can -- tó~en la pa -- ji -- za cho -- za:
 }
 
-%% Ai lyrics = Si 
+% AI
+TroyanoPrologueIAi = \lyricmode {
+  \StanzaI
+  Al es -- tab -- lo más di -- cho -- so,
+  don -- de triun -- fa la __ vic -- to -- ria,
+  prin -- ci -- pio~a sig -- los de gra -- cia,
+  la no -- che más ven -- tu -- ro -- sa,
+}
 
+TroyanoPrologueIIAi = \lyricmode {
+  \StanzaII
+  Bue -- na no -- che~|y la más bue -- na,
+  pues a pe -- sar de __ las som -- bras
+  en su mi -- tad __ a -- ma -- ne -- ce
+  quién con tan -- ta luz en -- tol -- da.
+}
+
+TroyanoPrologueIIIAi = \lyricmode {
+  \StanzaIII
+  Un za -- gal de~a -- quel con -- tor -- no,
+  en su tem -- pla -- da __ zam -- po -- ña 
+  to -- can -- do~el Nue -- vo Tro -- ya -- no,
+  can -- tó~en la pa -- ji -- za cho -- za:
+}
+
+% TI
 TroyanoPrologueITi = \lyricmode {
   \StanzaI
   Al es -- tab -- lo más di -- cho -- so,
@@ -43,7 +67,7 @@ TroyanoPrologueIITi = \lyricmode {
   Bue -- na no -- che~|y la más bue -- na,
   pues a pe -- sar de __ las som -- bras
   en su mi -- tad __ a -- ma -- ne -- ce
-  quién con tan -- ta luz en -- tol -- _ da.
+  quién con tan -- ta __ luz en -- tol -- _ da.
 }
 TroyanoPrologueIIITi = \lyricmode {
   \StanzaIII
@@ -58,17 +82,17 @@ TroyanoPrologueIIITi = \lyricmode {
 
 TroyanoPrologueSi = \lyricmode {
   <<
-    \TroyanoPrologueI
-    \NextLyricsLine "LineIISi" "LineISi" "Si" { \TroyanoPrologueII }
-    \NextLyricsLine "LineIIISi" "LineIISi" "Si" { \TroyanoPrologueIII }
+    \TroyanoPrologueISi
+    \NextLyricsLine "LineIISi" "LineISi" "Si" { \TroyanoPrologueIISi }
+    \NextLyricsLine "LineIIISi" "LineIISi" "Si" { \TroyanoPrologueIIISi }
   >>
 }
 
 TroyanoPrologueAi = \lyricmode {
   <<
-    \TroyanoPrologueI
-    \NextLyricsLine "LineIIAi" "LineIAi" "Ai" { \TroyanoPrologueII }
-    \NextLyricsLine "LineIIIAi" "LineIIAi" "Ai" { \TroyanoPrologueIII }
+    \TroyanoPrologueIAi
+    \NextLyricsLine "LineIIAi" "LineIAi" "Ai" { \TroyanoPrologueIIAi }
+    \NextLyricsLine "LineIIIAi" "LineIIAi" "Ai" { \TroyanoPrologueIIIAi }
   >>
 }
 
@@ -88,7 +112,7 @@ TroyanoSi = \lyricmode {
   en Be -- lén can -- tan -- do~es -- tán,
   to -- do~es glo -- ria, to -- do~es cie -- lo,
   y|~en un por -- ta -- li -- co po -- bre
-  se~ha~es -- tre -- cha -- do~él que~es in -- men -- so,
+  se~ha~es -- tre -- cha -- do~él que~es __ in -- men -- so,
   y|~en un por -- ta -- li -- co po -- bre
   se~ha~es -- tre -- cha -- do~él que~es in -- men -- so.
 
@@ -142,10 +166,10 @@ TroyanoTi = \lyricmode {
 
 ArrieroPrologueISi = \lyricmode {
   \StanzaI
-  Des -- pués Bar -- tho -- lo,~él de ma -- rras,
+  Des -- pués Bar -- to -- lo,~él de ma -- rras,
   a -- rrie -- ro de ca -- la~|y go -- rra,
-  que fue~es -- pa -- da -- chín de~an -- ta -- ño,
-  y|~hoy mer -- ca -- der de pa -- no -- _ chas,
+  que fue~es -- pa -- da -- chín __ de~an -- ta -- ño,
+  y|~hoy mer -- ca -- der __ de pa -- no -- _ chas,
 }
 
 ArrieroPrologueIISi = \lyricmode {
@@ -153,23 +177,23 @@ ArrieroPrologueIISi = \lyricmode {
   En bus -- ca de~u -- na mu -- li -- lla
   que se le fue por __ tra -- mo -- ya,
   a dar -- se~u -- na bue -- na no -- che
-  en las pa -- jas mis -- te -- rio -- _ sas.
+  en las pa -- jas __ mis -- te -- rio -- _ sas,
 }
 
 ArrieroPrologueIIISi = \lyricmode {
   \StanzaIII
   Al por -- tal con los pas -- to -- res
   se~en -- tró~a -- rro -- jan -- do __ bra -- mo -- nas,
-  y|~a quién o -- cu -- pa~el pe -- se -- bre
-  di -- ce co -- mo que se~en -- to -- _ na:
+  y|~a quién o -- cu -- pa~el __ pe -- se -- bre
+  di -- ce co -- mo __ que se~en -- to -- _ na:
 }
 %% Ai lyrics = Ti
 ArrieroPrologueI = \lyricmode {
   \StanzaI
-  Des -- pués Bar -- tho -- lo,~él de ma -- rras,
+  Des -- pués Bar -- to -- lo,~él de ma -- rras,
   a -- rrie -- ro de ca -- la~|y go -- rra,
-  que fue~es -- pa -- da -- chín de~an -- ta -- ño,
-  y|~hoy mer -- ca -- der de pa -- no -- chas,
+  que fue~es -- pa -- da -- chín __ de~an -- ta -- ño,
+  y|~hoy mer -- ca -- der __ de pa -- no -- chas,
 }
 
 ArrieroPrologueII = \lyricmode {
@@ -177,15 +201,15 @@ ArrieroPrologueII = \lyricmode {
   En bus -- ca de~u -- na mu -- li -- lla
   que se le fue por __ tra -- mo -- ya,
   a dar -- se~u -- na bue -- na no -- che
-  en las pa -- jas mis -- te -- rio -- sas.
+  en las pa -- jas __ mis -- te -- rio -- sas,
 }
 
 ArrieroPrologueIII = \lyricmode {
   \StanzaIII
   Al por -- tal con los pas -- to -- res
   se~en -- tró~a -- rro -- jan -- do __ bra -- mo -- nas,
-  y|~a quién o -- cu -- pa~el pe -- se -- bre
-  di -- ce co -- mo que se~en -- to -- na:
+  y|~a quién o -- cu -- pa~el __ pe -- se -- bre
+  di -- ce co -- mo __ que se~en -- to -- na:
 }
 
 %%*******************
@@ -219,10 +243,10 @@ ArrieroPrologueTi = \lyricmode {
 
 ArrieroDuoI = \lyricmode {
   \StanzaI
-  Se -- ñor Ni -- ño, vo -- to~a San—
+  Se -- ñor Ni -- ño, vo -- to~a San...
   ya lo di -- je, y|~es -- to so -- bra
   pa -- ra que~en -- tien -- da que ven -- go
-  pues -- to~a lo de~a -- quí fue Tro -- ya,
+  pues -- to~a lo de~a -- quí __ fue Tro -- ya,
   pa -- ra que~en -- tien -- da que ven -- go
   pues -- to~a lo de~a -- quí __ fue Tro -- ya.
 }
@@ -322,12 +346,12 @@ NegrillaPrologueISi = \lyricmode {
   El An -- go -- la Min -- gue -- li -- llo,
   a -- cau -- di -- llan -- do __ su tro -- pa,
   no quie -- re ser __ el pos -- tre -- ro
-  en la fies -- ta~en que se go -- _ za.
+  en la fies -- ta~en __ que se go -- _ za.
 }
 
 NegrillaPrologueIISi = \lyricmode {
   \StanzaII
-  De -- jan -- do~el tum -- ba ca -- tum -- ba~|y
+  De -- jan -- do~el tum -- ba -- ca -- tum -- ba~|y
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
   de su ti -- zón __ _ la ti -- zo -- _ na.
@@ -343,7 +367,7 @@ NegrillaPrologueIAi = \lyricmode {
 
 NegrillaPrologueIIAi = \lyricmode {
   \StanzaII
-  De -- jan -- do~el tum -- ba ca -- tum -- ba~|y
+  De -- jan -- do~el tum -- ba -- ca -- tum -- ba~|y
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
   de su ti -- zón __ _ la ti -- zo -- na.
@@ -359,7 +383,7 @@ NegrillaPrologueITi = \lyricmode {
 
 NegrillaPrologueIITi = \lyricmode {
   \StanzaII
-  De -- jan -- do~el tum -- ba ca -- tum -- ba
+  De -- jan -- do~el tum -- ba -- ca -- tum -- ba
   gru -- ñen -- do~a lo de __ An -- go -- la,
   des -- en -- vai -- nó __ con la voz
   de su ti -- zón __ _ la ti -- zo -- na.
@@ -393,11 +417,11 @@ NegrillaPrologueTi = \lyricmode {
 NegrillaDuoSi = \lyricmode {
   Di -- ga pli -- mo, don -- de sa?
   la ni -- ño, de na -- ci -- men -- ta
-  plu -- que sa -- mo su pa -- len -- ta
-  y la ve -- ni -- mo~a bu -- sca.
-  Tu -- ru tu -- ru ye -- ga,
-  tu -- ru tu -- ru ye -- ga,
-  ay -- ta, ay -- ta.
+  plu -- que sa -- mo su __ pa -- len -- ta
+  y la ve -- ni -- mo~a __ bu -- sca.
+  Tu -- ru tu -- ru ye -- gá,
+  tu -- ru tu -- ru ye -- gá,
+  ay -- tá, ay -- tá.
   Ca -- ya, ca -- ya, 
   mi -- la no pan -- ta,
   que duel -- me la si -- gue -- ti -- to.
@@ -407,22 +431,22 @@ NegrillaDuoSi = \lyricmode {
 }
 
 NegrillaDuoAi = \lyricmode {
-  Tu -- ru tu -- ru ye -- ga,
-  tu -- ru tu -- ru ye -- ga,
-  ay -- ta, ay -- ta.
+  Tu -- ru tu -- ru ye -- gá,
+  tu -- ru tu -- ru ye -- gá,
+  ay -- tá, ay -- tá.
   Glo -- ria~en las al -- tu -- ras,
   y|~en la tie -- rra paz,
   y|~en la tie -- _ rra paz.
 }
 
 NegrillaDuoTi = \lyricmode {
-  Ay -- ta, ay -- ta, 
+  Ay -- tá, ay -- tá, 
   cun -- di - ro~ent -- le pa -- ji -- ta,
   su o -- jo co -- mo tre -- yi -- ta
   y|~u -- no buey y|~u -- no mu -- li -- ta,
-  con su ba -- ho, ca -- yen -- ta.
-  Tu -- ru tu -- ru ye -- ga,
-  ay -- ta, \EdLyrics { ay -- ta, } ay -- ta.
+  con su ba -- ho, ca -- yen -- tá.
+  Tu -- ru tu -- ru ye -- gá,
+  ay -- tá, \EdLyrics { ay -- tá, } ay -- tá.
 }
 
 NegrillaDuoSii = \lyricmode {
@@ -436,40 +460,39 @@ NegrillaDuoAii = \lyricmode {
 }
 
 NegrillaDuoTii = \lyricmode {
-  Tu -- ru tu -- ru ye -- ga, __
-  \EdLyrics {  tu -- ru tu -- ru ye -- ga, }
-  ay -- ta, \EdLyrics { ay -- ta, ay -- ta, } ay -- ta. 
-  Se -- su, Se -- su, que bo -- ni -- to, 
-  su -- cu -- cha, que can -- ta -- mo lo~an -- ge -- li -- to:
+  Tu -- ru tu -- ru ye -- gá, __
+  \EdLyrics {  tu -- ru tu -- ru ye -- gá, }
+  ay -- tá, \EdLyrics { ay -- tá, ay -- tá, } ay -- tá. 
+  Se -- sú, Se -- sú, que bo -- ni -- to, 
+  su -- cu -- chá, que can -- ta -- mo lo~an -- ge -- li -- to:
 }
 
 %%**************************************
 %% NEGRILLA ESTRIBILLO
 
 NegrillaEstribilloSi = \lyricmode {
-  Su -- cu -- cha, su -- cu -- cha,
-  ay -- ta, ay -- ta,
-  su -- cu -- cha, su -- cu -- cha,
-  ay -- ta, \EdLyrics { ay -- ta, } ay -- ta.
+  Su -- cu -- chá, su -- cu -- chá,
+  ay -- tá, ay -- tá,
+  su -- cu -- chá, su -- cu -- chá,
+  ay -- tá, \EdLyrics { ay -- tá, } ay -- tá.
 }
 
 NegrillaEstribilloAi = \lyricmode {
-  Su -- cu -- cha, su -- cu -- cha,
-  ay -- ta, ay -- ta,
-  su -- cu -- cha, su -- cu -- cha,
-  ay -- ta,  ay -- ta, ay -- ta.
+  Su -- cu -- chá, su -- cu -- chá,
+  ay -- tá, ay -- tá,
+  su -- cu -- chá, su -- cu -- chá,
+  ay -- tá,  ay -- tá, ay -- tá.
 }
 
 NegrillaEstribilloTi = \lyricmode {
   Va -- la min -- dio -- so 
-  que lin -- do can -- ta,~ay -- ta, 
-  ay -- ta,~ay -- ta, \EdLyrics { ay -- ta, } ay -- ta,
-  su -- cu -- cha, su -- cu -- cha, ay -- ta.
+  que lin -- do can -- tá, ay -- tá, ay -- tá, ay -- tá, ay -- tá,
+  su -- cu -- chá, su -- cu -- chá, ay -- tá.
 }
 
 NegrillaEstribilloTii = \lyricmode {
-  ay -- ta, ay -- ta, \EdLyrics { ay -- ta, }
-  su -- cu -- cha, ay -- ta, \EdLyrics { ay -- ta. } 
+  ay -- tá, ay -- tá, \EdLyrics { ay -- tá, }
+  su -- cu -- chá, ay -- tá, \EdLyrics { ay -- tá. } 
 }
 
 %%****************************************
@@ -477,35 +500,35 @@ NegrillaEstribilloTii = \lyricmode {
 %% lyric blocks
 
 NegrillaCoplasUpperVV = \lyricmode {
-  ay -- ta, \EdLyrics { ay -- ta, ay -- ta, ay -- ta, ay -- ta. } 
+  ay -- tá, \EdLyrics { ay -- tá, ay -- tá, ay -- tá, ay -- tá. } 
 }
 
 NegrillaCoplaITi = \lyricmode {
   \StanzaI
-  Ca -- ya, ca -- ya, chi -- qui -- to, ay -- ta,
-  ay -- ta, pa -- la que te ca -- yen -- te, ay -- ta,
-  ay -- ta, y|~u -- no pa -- pa -- ga -- yi -- to, ay -- ta.
+  Ca -- ya, ca -- ya, chi -- qui -- to, ay -- tá,
+  ay -- tá, pa -- la que te ca -- yen -- te, ay -- tá,
+  ay -- tá, y|~u -- no pa -- pa -- ga -- yi -- to, ay -- tá.
 }
 
 NegrillaCoplaITii = \lyricmode {
   \StanzaI
-  Ay -- ta, que tla -- e -- mo ple -- cen -- te, ay -- ta,
-  ay -- ta, man -- ti -- ya pa -- ña -- li -- to, ay -- ta,
-  ay -- ta, que sa -- ve -- mo ha -- bra.
+  Ay -- tá, que tla -- e -- mo ple -- cen -- te, ay -- tá,
+  ay -- tá, man -- ti -- ya pa -- ña -- li -- to, ay -- tá,
+  ay -- tá, que sa -- ve -- mo ha -- bra.
 }
 
 NegrillaCoplaIITi = \lyricmode {
   \StanzaII
-  Mi si -- ñol Ma -- nu -- e -- le, ay -- ta,
-  ay -- ta, plu -- que sa lin -- da co -- sa, ay -- ta,
-  ay -- ta, Se -- su, le, le, le, le, le, ay -- ta.
+  Mi si -- ñol Ma -- nu -- e -- le, ay -- tá,
+  ay -- tá, plu -- que sa lin -- da co -- sa, ay -- tá,
+  ay -- tá, Se -- sú, le, le, le, le, le, ay -- tá.
 }
 
 NegrillaCoplaIITii = \lyricmode {
   \StanzaII
-  Ay -- ta, e -- se pa -- pa~he sa -- blo -- sa, ay -- ta,
-  ay -- ta, man -- te -- qui -- ya con me -- le, ay -- ta,
-  ay -- ta, ro, ro, ro, ro, ca -- ya.
+  Ay -- tá, e -- se pa -- pa~he sa -- blo -- sa, ay -- tá,
+  ay -- tá, man -- te -- qui -- ya con me -- le, ay -- tá,
+  ay -- tá, ro, ro, ro, ro, ca -- ya.
 }
 
 %%*******************

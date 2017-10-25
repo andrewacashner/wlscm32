@@ -118,8 +118,8 @@ MusicSi = {
 
   % m. 10
   | c''2 c''2 c''2~
-  | c''2 b'2 b'2 
-  | a'2 a'2 c''2 
+  | c''2 \ficta bes'!2 \ficta bes'!2 
+  | a'2 a'2 \ficta cis''!2 
   | d''2 d''2 d''2~
   | d''2 c''2 c''2
   | c''2(\color b'1)\endcolor 
@@ -136,6 +136,7 @@ MusicSi = {
 
   % m. 20
   | c''4 b'4 cis''2
+  \break
   | r4 c''8 d''8 e''4 e''4 
   | e''4 d''4 e''4 e''4 
   | r4 b'8 c''8 d''4 d''4 
@@ -188,7 +189,7 @@ MusicSi = {
   %% m. 59 EL ARRIERO
   \break
   \RepeatBarStart
-  \Section "[PROLOGUE a 4]" 
+  \Section "[INTRODUCCIÓN a 4]" 
   \MeterTriple
   | c''2 c''1 
 
@@ -197,15 +198,17 @@ MusicSi = {
   | c''2\color c''1\endcolor 
   | c''1 c''2 
   | b'2 b'1 
+  \break
   | c''2. c''4 c''2~\color
   | c''2 c''1\endcolor 
   | c''1 c''2 
   | r2 c''2 c''2 
   | c''2\color c''2 c''2~
-  | c''2 b'1\endcolor 
+  | c''2 \ficta bes'!1\endcolor 
+  \break
 
   % m. 70
-  | a'2 a'2 c''2 
+  | a'2 a'2 \ficta cis''!2 
   | d''2 d''2 d''2~
   | d''2 c''2 c''2 
   | c''2\color b'1\endcolor 
@@ -214,7 +217,6 @@ MusicSi = {
 
   %% m. 75 ARRIERO
   \break
-  \Section "EL ARRIERO: RESPONSIÓN Dúo"
   \RestsArriero
   \RepeatBarEnd
   \break
@@ -287,7 +289,7 @@ MusicSi = {
 
   %% m. 137 NEGRILLA
   \break
-  \Section "[PROLOGUE a 4]"
+  \Section "[INTRODUCCIÓN a 4]"
   | c''2 c''1 
   | c''2 c''1 
   | c''2\color c''1\endcolor 
@@ -295,13 +297,14 @@ MusicSi = {
   % m. 140
   | c''1 c''2
   | b'2 b'2 b'2 
+  \break
   | c''1\color c''2~
   | c''2 c''1\endcolor 
   | c''1 c''2
   | r2 c''1 
   | c''2 c''2 c''2~
-  | c''2 b'2 b'2 
-  | a'2 a'2 c''2 
+  | c''2 \ficta bes'!2 \ficta bes'!2
+  | a'2 a'2 \ficta cis''!2 
   | d''2 d''2 d''2~
 
   % m. 150
@@ -377,6 +380,7 @@ MusicSi = {
   | R1.
   | R1.
   | R1.
+  \MiddleBar
 
   
   %% m. 215 Gloria 
@@ -393,6 +397,7 @@ MusicSi = {
   a'2(\color b'1\endcolor 
   a'1.)
   b'1.\fermata
+  \MiddleBar
 
   % m. 224 Estribillo
   \break
@@ -866,6 +871,7 @@ MusicTi = {
   | e'2 d'2 c'2 
   | d'2 d'2 e'2 
   | f'2 f'2. e'4 
+  \break
   | d'1 d'2
   | e'2 d'2 c'2 
   | d'2 d'2 e'2 
@@ -1302,7 +1308,7 @@ MusicBi = {
 
 MusicSii = {
   \clef "treble"
-  \Section "[PROLOGUE] a 4"
+  \Section "[INTRODUCCIÓN] a 4"
   \RestsBeforeArriero
   \RestsArriero
   \RestsPapalotillo
@@ -1358,6 +1364,7 @@ MusicTii = {
   | \RestsBeforeArriero
 
   % m. 75 ARRIERO
+  \Section "EL ARRIERO: RESPONSIÓN Dúo"
   | r2 c'2 d'2 
   | e'2\color c'2 g'2~
   | g'2 f'1\endcolor 
@@ -1368,6 +1375,7 @@ MusicTii = {
   | d'2 e'1 
   | fis'2 g'1 
   | e'2\color d'1\endcolor
+  \break
   | f'2 f'2 f'2 
   | e'2 e'2 e'2 
   | d'2\color d'2 g'2~

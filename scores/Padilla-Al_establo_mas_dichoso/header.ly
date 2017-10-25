@@ -15,6 +15,7 @@
   subtitle	= "Ensaladilla. [De Navidad. A 8.]"
   composer 	= "JUAN GUTIÉRREZ DE PADILLA"
   dates		= "(ca. 1590–1664)"
+  poet          = "Anonymous"
   source	= 
   \markup { 
     "Puebla Cathedral Archive (MEX-Pc: Leg. 1/3),"

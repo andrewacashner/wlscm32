@@ -6,7 +6,7 @@
 %% (E.g., output of `latex file && dvips -E -o file.eps file.dvi` )
 %%
 %% Argument must be name of EPS file with extension (e.g., "file.eps")
-%% Is included as \mark with padding
+%% Is included as \mark with vertical space below
 %% Magnification size is just what happened to work with original example
 %% Priority is set so that this appears above other marks or markup
 
@@ -18,6 +18,8 @@ IncludeGraphicsAbove =
   #{
   \once \override Score.RehearsalMark.self-alignment-X = #LEFT
   \once \override Score.RehearsalMark.outside-staff-priority=#4000
-  \mark \markup \pad-around #5 \epsfile #X #80 $filename
+  \mark \markup { \column { 
+  \line { \epsfile #X #80 $filename }
+  \line { \vspace #5 } } }
   #})
 
