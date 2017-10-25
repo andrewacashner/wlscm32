@@ -11,8 +11,8 @@ LyricsEstribilloSi = \lyricmode {
   en quie -- bros __ su -- a -- ves,
   so -- no -- ros __ y __ gra -- ves,
   a -- cor -- des __ a -- cen -- tos
-  o -- fre -- ce~a -- los vien -- tos,
-  o -- fre -- ce, o -- fre -- ce a los vien -- tos
+  o -- fre -- ce~a __ los __ vien -- tos,
+  o -- fre -- ce, o -- fre -- ce a __ los vien -- tos
   y|~en cláu -- su -- las va -- rias, __ va -- rias,
   \EdLyrics { y|~en cláu -- su -- las va -- rias, }
   y|~en cláu -- su -- las va -- rias, 
@@ -82,8 +82,8 @@ LyricsEstribilloT = \lyricmode {
   en quie -- bros __ su -- a -- ves,
   so -- no -- ros __ y __ gra -- ves,
   a -- cor -- des __ a -- cen -- tos
-  o -- fre -- ce~a __ los vien -- tos,
-  o -- fre -- ce~a los vien -- tos, a los __ vien -- tos
+  o -- fre -- ce~a __ los __ vien -- tos,
+  o -- fre -- ce~a los vien -- tos, a __ los __ vien -- tos
   y|~en cláu -- su -- las va -- rias, __ 
   \EdLyrics { y|~en cláu -- su -- las va -- rias,
   y|~en cláu -- su -- las va -- _ rias, }

@@ -52,6 +52,7 @@ MusicEstribilloSi = {
   | f''4( es''4) d''2
   | r4 f''8 f''8 g''2
   | fis''2 r4 fis''4
+  \break
   | g''4. g''8 c''4 c''4
   | c''2 c''2
   
@@ -66,18 +67,19 @@ MusicEstribilloSi = {
   | d''4 d''8 es''4 d''8 d''4
  
   % m. 18
-  \MeterTriple
+  \MeterChangeTriple
   | d''1 r2
   | r2 bes''2 a''4( bes''4 
+  \noBreak
 
   % m. 20
   | a''4 bes''4) g''4( bes''4) a''4( g''4)
   | fis''2 g''2 r2 
-  | r1.
+  | R1.
   | r2 bes''2 a''4( bes''4 
   | a''4 bes''4) g''4( bes''4) a''4( g''4)
   | fis''2 g''2 r2 
-  | r1.
+  | R1.
   | r2 g''2 f''4( g''4 
   | f''4 g''4) es''4( g''4) f''4( es''4)
   | d''2 g'2 r2 
@@ -177,7 +179,7 @@ MusicEstribilloSii = {
   | fis''4 g''8 g''4 g''8 fis''4
  
   % m. 18
-  \MeterTriple
+  \MeterChangeTriple
   | g''1 r2
   | R1.
 
@@ -186,11 +188,11 @@ MusicEstribilloSii = {
   | r2 d''2 c''4( d''4 
   | c''4 d''4) bes'4( d''4) c''4( bes'4)
   | a'2 bes'2 r2 
-  | r1.
+  | R1.
   | r2 d''2 c''4( d''4 
   | c''4 d''4) bes'4( d''4) c''4( bes'4)
   | a'2 bes'2 r2 
-  | r1.
+  | R1.
   | r2 g''2 f''4( g''4 
 
   % m. 30
@@ -200,7 +202,7 @@ MusicEstribilloSii = {
   | r2 es''2 d''4( es''4 
   | d''4 es''4) c''4( es''4) d''4( c''4)
   | b'2 c''2 r2 
-  | r2 \ficta es''!2 d''4( e''4
+  | r2 es''!2 d''4( \ficta es''!4
   | d''4 \ficta es''!4) c''2\color c''2~
   | c''2\endcolor bes'4( c''4) d''4( \ficta es''!4)
   | d''2\color d''1\endcolor
@@ -212,7 +214,7 @@ MusicEstribilloSii = {
   | g''2 fis''2 e''2\endcolor
   | \ficta fis''!1. 
   | g''2 r2 r2 
-  | r1. 
+  | R1. 
   | r2 r2 c''2
   | es''2 d''2 c''2 
   | d''1.
@@ -285,7 +287,7 @@ MusicEstribilloA = {
   | a'4 bes'8 c''4 bes'8 a'4
  
   % m. 18
-  \MeterTriple
+  \MeterChangeTriple
   | bes'1 r2
   | R1.
 
@@ -298,13 +300,13 @@ MusicEstribilloA = {
   | r2 bes'2 a'4( bes'4 
   | a'4 bes'4) g'4( bes'4) a'4( g'4)
   | fis'2 g'2 r2 
-  | r1.
+  | R1.
   | r2 \ficta es''!2 d''4( \ficta es''!4 
 
   % m. 30
   | d''4 \ficta es''!4) c''4( \ficta es''!4) d''4( c''4)
   | \ficta b'!2 c''2 r2 
-  | r1.
+  | R1.
   | r2 c''2 \ficta bes'!4( c''4 
   | bes'4 c''4) \ficta as'!4( c''4) bes'4( \ficta as'!4)
   | g'2 c'2 r2 
@@ -320,7 +322,7 @@ MusicEstribilloA = {
   | bes'2 a'2 g'2
   | a'1. 
   | g'2 r2 r2 
-  | r1. 
+  | R1. 
   | r2 c''2\color c''2~
   | c''2 b'2 a'2\endcolor 
   | \ficta b'!1.
@@ -356,7 +358,7 @@ MusicEstribilloA = {
   | r2 r2 a'2
   | bes'2 g'2 a'2 
   | fis'2\color d'1\endcolor
-  | r1. 
+  | R1. 
   | r2 \ficta fis'!2 \ficta fis'!2 
   | r2 g'2 g'2 
   | r2 d'1\colorOne 
@@ -391,7 +393,7 @@ MusicEstribilloT = {
   | d'4 g8 c'4 g8 d'4
   
   % m. 18
-  \MeterTriple
+  \MeterChangeTriple
   | g1 r2
   | r2 g'2 f'4( g'4 
 
@@ -497,7 +499,7 @@ MusicEstribilloB = {
   | d4 g8 c4 g8 d4
   
   % m. 18
-  \MeterTriple
+  \MeterChangeTriple
   | g1.
   | r2 g2 d2~
 
@@ -584,15 +586,17 @@ MusicEstribilloB = {
 MusicCoplaISi = {
   % m. 81
   \RepeatBarStart
-  | g''4 f''8. f''16 \ficta es''!4 d''4
+  | g''4 f''8. f''16 es''!4 d''4
   | c''4 bes'4 r2
   \RepeatBarEnd
 
   | bes''4 a''8. a''16 g''4 f''4
   | es''8. es''16 d''8 es''8 f''4( es''4)
+  \break
   | d''2 r4 g'4 
   | c''2 r8 bes'8 c''8 d''8
   | es''2 d''2
+  \break
   | r4 c''4 g''2
   | r8 g''8 g''8 g''8 g''4 \ficta fis''!4
 
@@ -600,6 +604,7 @@ MusicCoplaISi = {
   | R1
   | R1
   | d''4 f''4 es''4 d''8 c''8
+  \break
   | b'8 c''8 d''8 e''8 f''2
   | \ficta es''!2 r4 d''4~
   | d''4 d''4 d''2
@@ -612,12 +617,14 @@ MusicCoplaISi = {
 MusicCoplaIISi = {
   %% COPLA 2
   % m. 97
+  \Section "Solo"
   | r2 r4 g''8. f''16
   | es''4 d''4 c''4 bes'4
   | a'4 g'4 r4 g''8. f''16
 
   % m. 100
   | es''4 d''4 c''4 bes'4
+  \break
   | a'4 g'4 r4 bes''8. a''16 
   | g''4 f''8. f''16 es''8. es''16 d''8. d''16
   | c''8[( bes'8] c''4) bes'2
@@ -705,7 +712,7 @@ MusicCoplaIA = {
   % m. 90
   | a'4 c''4 bes'4 a'8 g'8
   | \ficta fis'!8 g'8 a'8 bes'8 c''2~
-  | c''4 bes'4 r4 bes'8 a'8
+  | c''4 \ficta b'!4 r4 \ficta bes'!8 a'8
   | g'1
   | g'2 r4 a'4~
   | a'8 g'8 g'2( \ficta fis'!4)
@@ -715,10 +722,12 @@ MusicCoplaIA = {
 }
 
 MusicCoplaIIIA = {
+  \Section "[Solo]"
   | r2 r4 d''4
   | c''4 bes'4 a'4 c''8 bes'8
   | a'4 g'4 r4 d''4
   | c''4 bes'4 a'4 c''8 bes'8
+  \break
   | a'4 g'4 a'4 bes'8. a'16
   | g'8. g'16 f'8 f'8 g'4 bes'4
   | bes'4( a'4) bes'2
@@ -761,10 +770,12 @@ MusicCoplaIT = {
 }
 
 MusicCoplaVT = {
+  \Section "[Solo]"
   | r2 r4 g'8. f'16
   | es'4 d'4 c'4 bes4
   | a4 g4 r4 g'8. f'16
   | es'4 d'4 c'4 bes4
+  \break
   | a4 g4 \EdBracL r4 bes'8. a'16 
   | g'4 f'8. f'16 es'8. es'16 \EdBracR d'8 d'8
   | c'2 bes2
@@ -871,22 +882,21 @@ FiguresCoplaIIB = \figuremode {
 %%***************************************
 
 MusicCoplasSi = {
+  \pageBreak
   \SectionBreak
-  \Section "COPLAS a 4"
   \MeterDuple
 
+  \Section "COPLAS a 4"
   \MusicCoplaISi
   \MiddleBar
 
   %% COPLA 2
   \break
-  \Section "SOLO"
   \MusicCoplaIISi
   \MiddleBar
 
   %% COPLA 3
   \break
-  \Section "SOLO"
   R1*15
   \MiddleBar
 
@@ -898,7 +908,6 @@ MusicCoplasSi = {
 
   %% COPLA 5
   \break
-  \Section "SOLO"
   R1*15
   \MiddleBar
 
@@ -906,7 +915,7 @@ MusicCoplasSi = {
   \break
   \Section "A 4"
   \MusicCoplaISi
-  \MiddleBar
+  \FinalBar
   \DCalFine
 }
 
