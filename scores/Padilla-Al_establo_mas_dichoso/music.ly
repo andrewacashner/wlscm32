@@ -400,7 +400,7 @@ MusicSi = {
   \MiddleBar
 
   % m. 224 Estribillo
-  \break
+  \pageBreak
   \Section "[ESTRIBILLO a 6]"
   | R1.
   | R1.

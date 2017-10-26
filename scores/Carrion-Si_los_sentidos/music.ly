@@ -26,6 +26,7 @@ EstribilloSolo = {
   | a'1.~
   | a'2 gis'1\endcolor
   | b'2 c''2 d''2
+  \break
   | cis''2. cis''4 d''2~\color 
   | d''2 e''1\endcolor
   | R1.
@@ -35,6 +36,7 @@ EstribilloSolo = {
   | a'2 f'2 g'2
   | e'1.~\color
   | e'2 d'1\endcolor
+  \break
   | r2 e'2 g'2
   | fis'2. g'4 a'2
   | a'2\color gis'1\endcolor
@@ -94,13 +96,13 @@ CoplasSolo = {
   | d''2 r8 a'8 c''4
   | a'8. b'16 c''8 c''8 c''4( b'4)
   | c''2 r8 e'8 g'8 g'8
+  \break
   | fis'8.[ e'16] fis'8 g'8 a'8. g'16 a'8 b'8
   | c''8 e'8 a'4. b'8 gis'4
   | r2 r4 b'8 d''8
   | cis''8. b'16 cis''8 d'' e''4 r8 b'8
   | c''4 a'8 d''8 d''4 cis''4
 
-  \break
   \MeterChangeTriple
   % m. 59
   | r2 e'2 a'2

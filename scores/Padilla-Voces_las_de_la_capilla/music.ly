@@ -60,6 +60,7 @@ MusicIntroSi = {
   | c''2. c''4 c''2~\color 
   | c''2 d''1\endcolor 
   | c''1 c''2 
+  \break
   | r2 f''1~\color
   | f''2\endcolor d''2 d''2 
   | e''2 d''2 d''2 
@@ -157,22 +158,27 @@ MusicEstribilloSi = {
   | \[ es''1. 
   | c''1. \] 
   | d''1\colorOne r2 
-  | R1. | R1.
+  | R1. 
+  | R1.
   | r2 r2 d''2~\color
   | d''2 d''1\endcolor
+  \break
   | es''1. 
   | d''1. 
 
   % m. 90
-  | R1. | R1. 
-  | R1. | R1.
   | R1. 
+  | R1. 
+  | R1. 
+  | R1.
+  | R1. 
+  \break
   | f''?2 f''2. e''4 
   | d''2 e''2. d''4 
   | \ficta cis''!1. 
-  \break
   | d''2\color d''1\endcolor 
   | d''1. 
+  \break
 
   % m. 100
   | r2 d''2\color d''2~
@@ -187,9 +193,11 @@ MusicEstribilloSi = {
   | d''1. 
 
   % m. 110
-  | R1. | R1.
+  | R1. 
+  | R1.
   | r2 g''2\color g''2~
   | g''2 d''1 
+  \break
   | e''1 f''2~
   | f''2 e''1\endcolor
   | f''1.~
@@ -1171,6 +1179,7 @@ MusicCoplasAii = {
   % m. 146
   | R1. 
   %% COPLA 2
+  \pageBreak
   % m. 147
   | r2 bes'2 bes'2 
   | g'1 g'2 

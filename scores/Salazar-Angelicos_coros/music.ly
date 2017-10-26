@@ -71,6 +71,7 @@ MusicEstribilloSIi = {
   | a'2. g'4 f'2
   | g'2 g'2 c''2 
   | c''1 c''2
+  \break
   | c''1.~\color
   | c''2 c''1\endcolor
   | c''2 r2 r2 
@@ -86,6 +87,7 @@ MusicEstribilloSIi = {
   | c''1 c''2 
   | c''1 a'2
   | g'1 g'2 
+  \break
   | a'2 g'2 bes'2
 
   % m. 20
@@ -93,6 +95,7 @@ MusicEstribilloSIi = {
   | bes'2 a'2 a'2\endcolor
   | bes'1. 
   | R1.
+  \break
   | r2 d''2\color d''2~
   | d''2 d''2 d''2\endcolor
   | d''1 d''2 
@@ -379,6 +382,7 @@ MusicEstribilloSII = {
   | R1.
  
   % m. 30
+  \ShowThisEmptyStaff
   | R1.
   | R1.
   | R1.
@@ -389,6 +393,7 @@ MusicEstribilloSII = {
   | f'2. g'4 a'2
   | bes'2. bes'4 a'2 
   | g'2 g'2 g'2
+  \HideThisEmptyStaff
  
   % m. 40
   | g'1. 
@@ -653,6 +658,7 @@ MusicEstribilloBII = {
  
   % m. 30
   | R1.
+  \ShowThisEmptyStaff
   | R1.
   | R1.
   | R1.
@@ -662,6 +668,7 @@ MusicEstribilloBII = {
   | f2. f4 e2
   | d2. e4 f2 
   | g2 c2 c2
+  \HideThisEmptyStaff
   
   % m.40
   | c1 c2

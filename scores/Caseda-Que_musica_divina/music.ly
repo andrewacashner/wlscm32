@@ -591,8 +591,8 @@ MusicCoplaISi = {
   \RepeatBarEnd
 
   | bes''4 a''8. a''16 g''4 f''4
-  | es''8. es''16 d''8 es''8 f''4( es''4)
   \break
+  | es''8. es''16 d''8 es''8 f''4( es''4)
   | d''2 r4 g'4 
   | c''2 r8 bes'8 c''8 d''8
   | es''2 d''2

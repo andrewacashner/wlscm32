@@ -145,8 +145,8 @@ MusicEstribilloSIi = {
   | b'4 c''8 c''8 bes'4 bes'8 a'8~
   | a'8 a'8 a'4 a'2
   | r4 d''2 d''4
-  \break
   | cis''2 d''2
+  \break
   | r2 d''4. c''8
   | bes'4. a'8 bes'4 bes'4
   | a'2 a'4 cis''4
