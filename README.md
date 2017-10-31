@@ -6,20 +6,13 @@
 # Contact
 
 | [E-mail](mailto:andrewacashner@ur.rochester.edu)
-| <http://www.andrewcashner.com>
+| [Website]<http://www.andrewcashner.com/villancicos/>
 
 # Copyright and License
 
 All of the contents of this repository, including LaTeX and Lilypond
 source code as well as the resulting typeset publication in PDF format, are
 copyright © 2017 Andrew A. Cashner.
-
-I am making this repository public so that others can see how I produced the
-edition. 
-I hope that the techniques I have developed in LaTeX and Lilypond will be useful
-to others.
-
-## Published Edition (PDF format)
 
 The complete typeset edition is published by the Society for
 Seventeenth-Century Music as part of the 
@@ -34,16 +27,6 @@ editor and to the Society for Seventeenth-Century Music.
 Permission for performance in professional (for profit) settings must be
 negotiated directly between the performers or their agents and the editor.
 The editor remains the owner of all rights to the edition.
-
-## Select Source Code in the Public Domain
-
-The following files *only* are released into the public domain and may be used
-and adapted freely without restriction.
-
-- The Lilypond "modules" in the directory `sources/ly` with the file extension
-  `.ly`
-
-
 
 # Compilation
 
@@ -65,5 +48,7 @@ To compile the score files with Lilypond:
 
 To compile the whole edition, which includes the PDFs produced by Lilypond,
 simply run `make` from the base directory.
+You will need to have an `aux` directory with subdirectories to match the
+structure of included subfiles in the base directory.
 
 
