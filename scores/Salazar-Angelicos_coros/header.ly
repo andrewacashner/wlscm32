@@ -15,9 +15,11 @@
   dates     = "(ca. 1650–1715)"
   poet      = "Anonymous"
   source    = 
-  \markup {
-    "Mexico City (MEX-Mcen: CSG.256),"
-    "originally Puebla, Convento de la Santísima Trinidad"
+  \markup { \concat {
+    "Mexico City ("
+    \italic "MEX-Mcen"
+    ": CSG.256), "
+    "originally Puebla, Convento de la Santísima Trinidad" }
   }
 }
 

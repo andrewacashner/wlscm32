@@ -9,5 +9,9 @@
   composer = "JERÓNIMO DE CARRIÓN"
   dates    = "(1660–1721)"
   poet     = "Attr. Vicente Sánchez"
-  source   = "Segovia, Cathedral Archive (E-SE: 28/25)"
+  source   = \markup { \concat { 
+    "Segovia, Cathedral Archive ("
+    \italic "E-SE"
+    ": 28/25)" }
+  }
 }

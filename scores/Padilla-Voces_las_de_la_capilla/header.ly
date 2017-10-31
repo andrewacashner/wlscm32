@@ -14,8 +14,10 @@
   dates           = "(ca. 1590–1664)"
   poet            = "Anonymous"
   source          =
-  \markup { 
-    "Puebla, Cathedral Archive (MEX-Pc: Leg. 3/3)," 
-    \italic "Navidad del año de 1657" 
+  \markup { \concat {
+    "Puebla, Cathedral Archive ("
+    \italic "MEX-Pc"
+    ": Leg. 3/3), " 
+    \italic "Navidad del año de 1657" }
   }
 }

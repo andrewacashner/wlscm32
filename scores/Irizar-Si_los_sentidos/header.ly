@@ -10,5 +10,10 @@
   composer 	= "MIGUEL DE IRÍZAR"
   dates		= "(1635–1684)"
   poet          = "Attr. Vicente Sánchez"
-  source 	= "Segovia, Cathedral Archive (E-SE: 5/32, 18/19), Corpus Christi 1674"
+  source 	= 
+  \markup { \concat {
+    "Segovia, Cathedral Archive ("
+    \italic "E-SE"
+    ": 5/32, 18/19), Corpus Christi 1674" }
+  }
 }

@@ -11,8 +11,12 @@
   composer	= "JOAN CEREROLS"
   poet          = "Anonymous"
   dates		= "(1618–1680)"
-  source	= \markup { 
-    "Canet de Mar (E-CAN: AU/0116), complete;"
-    "Barcelona (E-Bbc: M/765/25), incomplete variant of estribillo"
+  source	= \markup { \concat {
+    "Canet de Mar ("
+    \italic "E-CAN"
+    ": AU/0116), complete; "
+    "Barcelona ("
+    \italic "E-Bbc"
+    ": M/765/25), incomplete variant of estribillo" }
   }
 }

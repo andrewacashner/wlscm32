@@ -12,9 +12,11 @@
   composer= "JOSÉ DE CÁSEDA"
   poet=     "Anonymous; Coplas attr. Vicente Sánchez"
   dates=    "(fl. 1691–1716)"
-  source=   \markup {
-    "Mexico City (MEX-Mcen: CSG.154);"
-    "orig. Puebla, Convento de la Santísima Trinidad"
+  source=   \markup { \concat {
+    "Mexico City ("
+    \italic "MEX-Mcen"
+    ": CSG.154); "
+    "orig. Puebla, Convento de la Santísima Trinidad" }
   }
 }
 

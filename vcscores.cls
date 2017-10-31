@@ -97,12 +97,12 @@ Critical edition of villancico poetry and music for WLSCM]
 % Keep footnotes at bottom of page no matter what
 \RequirePackage{fnpos}
 
+% Improved caption processing
+\RequirePackage{caption}
+
 % Compact spacing in numbered or bulleted lists
 \RequirePackage[shortlabels]{enumitem}
 \setlist{noitemsep}
-
-% Put a period after the label of floats (e.g., "Figure 1. Caption")
-\RequirePackage[labelsep=period]{caption}
 
 % To allow including images
 \RequirePackage{graphicx}
