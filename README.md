@@ -27,27 +27,3 @@ Permission for performance in professional (for profit) settings must be
 negotiated directly between the performers or their agents and the editor.
 The editor remains the owner of all rights to the edition.
 
-# Compilation
-
-Compiling this project requires 
-
-1. a full installation of LaTeX in the 
-[TeXLive 2017 distribution](http://www.tug.org/texlive)
-2. installation of 
-[Lilypond, version 2.19 or later](http://www.lilypond.org/development.html):
-note that this is not the stable version but the most current development
-version
-3. GNU Make
-4. Bash and Unix command-line tools
-
-To compile the score files with Lilypond:
-
-    cd scores
-    sh typesetscores.sh
-
-To compile the whole edition, which includes the PDFs produced by Lilypond,
-simply run `make` from the base directory.
-You will need to have an `aux` directory with subdirectories to match the
-structure of included subfiles in the base directory.
-
-
