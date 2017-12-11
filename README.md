@@ -9,10 +9,10 @@ Edited by Andrew A. Cashner, *Web Library of Seventeenth-Century Music*, no. 32
 
 ## Version History
 
-----    --------    -------------------------------------------
-1.0     2017-12     Expanded bibliography and minor corrections
-0.1     2017-11     Initial test release
-----    --------    -------------------------------------------
+|----   | --------    |-------------------------------------------|
+|1.0    | 2017-12     |Expanded bibliography and minor corrections|
+|0.1    | 2017-11     |Initial test release                       |
+|----   | --------    |-------------------------------------------|
 
 ## Copyright and License for Published Edition
 
