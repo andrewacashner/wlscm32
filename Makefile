@@ -1,15 +1,14 @@
-TEXMASTER := cashner-villancicos-wlscm32
-MAIN := $(TEXMASTER).pdf
-LATEXMK := latexmk -outdir=aux -bibtex -pdf 
-TRASH := $(shell find aux/ -type f -name '*.*')
+TEXMASTER = cashner-villancicos-wlscm32
+MAIN = $(TEXMASTER).pdf
+LATEXMK = latexmk -outdir=aux -bibtex -pdf 
+INCLUDES = $(shell find . -type f -name '*.tex')
+TRASH = $(shell find aux/ -type f -name '*.*')
 
-.PHONY: $(MAIN) all clean
+.PHONY: clean
 
-all: $(MAIN)
-
-$(MAIN): $(TEXMASTER).tex
+$(MAIN): $(TEXMASTER).tex $(INCLUDES)
 	$(LATEXMK) $(TEXMASTER)
 	cp aux/$(MAIN) pdf/
 
 clean:
-	rm $(TRASH)
+	rm -f $(TRASH)

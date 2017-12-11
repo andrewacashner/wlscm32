@@ -144,11 +144,11 @@ MusicEstribilloSIi = {
 
   % m. 60
   | a'4 bes'4 g'4 fis'4 
-  | g'4 r4 r4 bes'4 
+  | g'4 r4 r4 b'4 
   | g'4 a'4 g'4 g'4  
   | a'4 a'4 a'4 bes'8 bes'8 
   \break
-  | bes'4 a'4( bes'4) bes'4 
+  | bes'4( a'4) bes'4 bes'4 
   | bes'2 a'4 a'4  
   | g'2 r4 a'4 
   | d''2 c''4 c''4
@@ -738,8 +738,8 @@ MusicEstribilloAc = {
   | f2 e2 e2
  
   % m. 20 
-  | f2. bes,4 \ficta e2~\color
-  | e2 f2 f2\endcolor
+  | f2. bes,4 es2~\color
+  | es2 f2 f2\endcolor
   | bes,1 bes2 
   | f2 g2 g2
   | d2\color d2 g2~

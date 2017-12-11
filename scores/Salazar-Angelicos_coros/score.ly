@@ -8,8 +8,9 @@
 %% 2016-11-02 -- Revised after peer review with mensurstriche
 %% 2016-04-20 -- Revised for published edition
 %% 2015-02-20 -- Dissertation version
-%% 2014-07    -- Lilypond version 2.18.2
-%% 2014-05    -- Lilypond version 2.14.2 (earliest choral Lilypond score)
+%% 2014-07    -- Lilypond 2.18.2
+%% 2014-05    -- Lilypond 2.14.2 (earliest choral Lilypond score)
+%% 2014-04-08 -- Sibelius version
 
 \version "2.19"
 \include "villancico.ly"

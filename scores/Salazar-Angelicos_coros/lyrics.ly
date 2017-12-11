@@ -27,7 +27,7 @@ LyricsEstribilloSIi = \lyricmode {
   que só -- lo~a -- quel lu -- gar,
   que só -- lo~a -- quel lu -- gar,
   que \EdLyrics {  só -- lo~a -- quel lu -- gar }
-  que~el mun -- do des -- pre -- cia __
+  que~el mun -- do des -- pre -- cia 
   de Dios es ca -- paz, de Dios es ca -- paz.
 }
 
