@@ -8,8 +8,7 @@
 #(define (add-durations dur1 dur2)
    (let* ((len1 (ly:duration-length dur1))
           (len2 (ly:duration-length dur2))
-          (mult (ly:moment-div (ly:moment-add len1
-                                              len2)
+          (mult (ly:moment-div (ly:moment-add len1 len2)
                                len1)))
      (ly:make-duration (ly:duration-log dur1)
                        (ly:duration-dot-count dur1)
@@ -18,20 +17,16 @@
 
 #(define (combinable-rest? rest)
    (and (ly:music? rest)
-        (or (eq? 'MultiMeasureRestMusic (ly:music-property rest
-                                                           'name))
-            (eq? 'SkipEvent (ly:music-property rest
-                                               'name)))
+        (or (eq? 'MultiMeasureRestMusic (ly:music-property rest 'name))
+            (eq? 'SkipEvent (ly:music-property rest 'name)))
         (null? (ly:music-property rest 'articulations))))
 
 #(define (combine-rests rest1 rest2)
    ;; create one rest/skip with the sum of both lengths
    (make-music (ly:music-property rest1 'name)
-               'duration (add-durations (ly:music-property rest1
-                                                           'duration)
-                                        (ly:music-property
-                                          rest2
-                                          'duration))
+               'duration (add-durations 
+                           (ly:music-property rest1 'duration)
+                           (ly:music-property rest2 'duration))
                'articulations '()))
 
 #(define (consolidator curr rest)
@@ -40,43 +35,22 @@
             (not (null? rest)))
      ;; -> we have a combinable rest left and 'something' right
      (if (and (combinable-rest? (car rest))
-              (eq? (ly:music-property curr
-                                      'name)
-                   (ly:music-property (car
-                                        rest)
-                                      'name)))
+              (eq? (ly:music-property curr 'name)
+                   (ly:music-property (car rest) 'name)))
        ;; -> we also have a combinable rest right and both are the same type,
        ;; recurse by first merging rests and then looking for the next item
        (consolidator
-         (combine-rests
-           curr (car rest))
-         (cdr
-           rest))
+         (combine-rests curr (car rest))
+         (cdr rest))
        ;; -> right is either no combinable rest or one of different type.
-       (if
-         (or
-           (eq?
-             'BarCheck
-             (ly:music-property
-               (car
-                 rest)
-               'name))
-           (eq?
-             'Music
-             (ly:music-property
-               (car
-                 rest)
-               'name)))
+       (if (or
+             (eq? 'BarCheck (ly:music-property (car rest) 'name))
+             (eq? 'Music (ly:music-property (car rest) 'name)))
          ;; -> right is one of the 'skippable' types, 
          ;; so recurse using left and the next one to the right
-         (consolidator
-           curr
-           (cdr
-             rest))
+         (consolidator curr (cdr rest))
          ;; just return left followed by right
-         (cons
-           curr
-           rest)))
+         (cons curr rest)))
      ;; -> no combinable rest to the left
      ; But what happens when rest *is* null?
      (cons curr rest)))
@@ -91,18 +65,10 @@
            (rest (cdr input)))
        (if (null? rest)
          (append done (list curr))
-         (let ((prev
-                 (consolidator
-                   curr
-                   rest)))
+         (let ((prev (consolidator curr rest)))
            (accumulate-result
-             (append
-               done
-               (list
-                 (car
-                   prev)))
-             (cdr
-               prev)))))))
+             (append done (list (car prev)))
+             (cdr prev)))))))
 
 #(define (condense music)
    ;; recurse over the music list and condense consecutive rests
@@ -110,11 +76,8 @@
           (elts (ly:music-property output 'elements))
           (elt (ly:music-property output 'element)))
      (if (pair? elts)
-       (ly:music-set-property! output 'elements (map
-                                                  condense
-                                                  (accumulate-result
-                                                    '()
-                                                    elts))))
+       (ly:music-set-property! output 'elements 
+                               (map condense (accumulate-result '() elts))))
      (if (ly:music? elt)
        (ly:music-set-property! output 'element
                                (condense elt)))
