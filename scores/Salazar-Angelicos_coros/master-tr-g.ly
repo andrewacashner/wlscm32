@@ -16,3 +16,5 @@
 
 \include "include/score.ly"
 
+\include "include/parts.ly"
+

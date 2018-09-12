@@ -709,6 +709,7 @@ MusicEstribilloBII = {
 
   % m. 68
   | f,1\fermata
+  \FinalBar
 }
 
 MusicEstribilloAc = {
@@ -800,6 +801,7 @@ MusicEstribilloAc = {
 
   % m. 68
   | f1\fermata
+  \FinalBar
 }
 
 %%*******************
