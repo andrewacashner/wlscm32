@@ -25,7 +25,7 @@ Seventeenth-Century Music as part of the
 [Web Library of Seventeenth-Century Music](http://www.sscm-wlscm.org).
 The published edition is licensed under a 
 [Creative Commons Attribution-NonCommercial-NoDerivs 3.0 
-Unported License](\url{https://creativecommons.org/licenses/by-nc-nd/3.0/}).
+Unported License](https://creativecommons.org/licenses/by-nc-nd/3.0/).
 
 Users may download editions, print them for personal use, and perform them
 in non-profit settings, provided proper acknowledgement is given to both the
