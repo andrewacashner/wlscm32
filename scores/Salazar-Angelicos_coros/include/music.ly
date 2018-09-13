@@ -65,7 +65,6 @@ MusicEstribilloSIi = {
   \MeterTriple
   \CantusMollis
 
-  \Section "ESTRIBILLO a 8"
   | r2 r2 f'2
   | c''2. c''4 bes'2 
   | a'2. g'4 f'2
@@ -155,8 +154,6 @@ MusicEstribilloSIi = {
 
   % m. 68
   | c''1\fermata
-  \FinalBar
-  \Fine
 }
 
 MusicEstribilloSIii = {
@@ -248,7 +245,6 @@ MusicEstribilloSIii = {
 
   % m. 68
   | a'1\fermata
-  \FinalBar
 }
 
 MusicEstribilloAI = {
@@ -340,7 +336,6 @@ MusicEstribilloAI = {
 
   % m. 68
   | f'1\fermata
-  \FinalBar
 }
 
 %% CHORUS II
@@ -436,7 +431,6 @@ MusicEstribilloSII = {
 
   % m. 68
   | a'1\fermata
-  \FinalBar
 }
 
 MusicEstribilloAII = {
@@ -528,7 +522,6 @@ MusicEstribilloAII = {
 
   % m. 68
   | c'1\fermata
-  \FinalBar
 }
 
 MusicEstribilloTII = {
@@ -620,7 +613,6 @@ MusicEstribilloTII = {
 
   % m. 68
   | f1\fermata
-  \FinalBar
 }
 
 MusicEstribilloBII = {
@@ -714,7 +706,6 @@ MusicEstribilloBII = {
 
   % m. 68
   | f,1\fermata
-  \FinalBar
 }
 
 MusicEstribilloAc = {
@@ -806,7 +797,6 @@ MusicEstribilloAc = {
 
   % m. 68
   | f1\fermata
-  \FinalBar
 }
 
 %%*******************
@@ -817,7 +807,6 @@ MusicEstribilloAc = {
 
 MusicCoplasSIi = {
   \SectionBreak
-  \Section "COPLAS"
   \MeterDuple
 
   %% COPLAS 1, 3
@@ -837,8 +826,8 @@ MusicCoplasSIi = {
 
   % m. 79
   | c''1\fermata 
-  \MiddleBar
   \break
+  R1*9
 }
 
 MusicCoplasSIii = {
@@ -860,7 +849,6 @@ MusicCoplasSIii = {
 
   % m. 79
   | a'1\fermata
-  \MiddleBar
 }
 
 MusicCoplasAI = {
@@ -882,7 +870,6 @@ MusicCoplasAI = {
 
   % m. 79
   | f'1\fermata
-  \MiddleBar
 }
 
 %% CHORUS II COPLAS 2, 4
@@ -904,7 +891,6 @@ MusicCoplasSII = {
   | R1
   | R1
   | R1
-  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -919,8 +905,6 @@ MusicCoplasSII = {
 
   % m. 88
   | a'1\fermata
-  \DCalFineAfterLastCopla
-  \RepeatBar
 }
 
 MusicCoplasAII = {
@@ -940,7 +924,6 @@ MusicCoplasAII = {
   | R1
   | R1
   | R1
-  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -955,8 +938,6 @@ MusicCoplasAII = {
 
   % m. 88
   | f'1\fermata
-  \DCalFineAfterLastCopla
-  \RepeatBar
 }
 
 MusicCoplasTII = {
@@ -978,7 +959,6 @@ MusicCoplasTII = {
 
   % m. 79
   | R1
-  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -993,8 +973,6 @@ MusicCoplasTII = {
 
   % m. 88
   | c'1\fermata
-  \DCalFineAfterLastCopla
-  \RepeatBar
 }
 
 MusicCoplasBII = {
@@ -1014,7 +992,6 @@ MusicCoplasBII = {
   | R1
   | R1
   | R1
-  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -1029,8 +1006,6 @@ MusicCoplasBII = {
 
   % m. 88
   | f1\fermata
-  \DCalFineAfterLastCopla
-  \RepeatBar
 }
 
 MusicCoplasAc = {
@@ -1052,7 +1027,6 @@ MusicCoplasAc = {
 
   % m. 79
   | f1\fermata
-  \MiddleBar
 
   % m. 80
   %% COPLAS B
@@ -1067,8 +1041,37 @@ MusicCoplasAc = {
 
   % m. 88
   | f1\fermata
+}
+
+%%********************************************
+%% REHEARSAL MARKS for top staff and parts
+%%********************************************
+
+MarksEstribillo = {
+  \Section "ESTRIBILLO a 8"
+  \MeterTriple
+  s1.*44
+  \MeterChangeDuple
+  s1*24
+  \FinalBar
+  \Fine
+}
+
+MarksCoplas = {
+  \SectionBreak
+  \Section "COPLAS"
+  \MeterDuple
+  s1*11
+  \MiddleBar
+
+  s1*9
   \DCalFineAfterLastCopla
   \RepeatBar
+}
+
+Marks = { 
+  \MarksEstribillo
+  \MarksCoplas
 }
 
 %%*********************************
@@ -1076,9 +1079,10 @@ MusicCoplasAc = {
 %%*********************************
 
 MusicSIi = {
-  \MusicEstribilloSIi
+  << \MarksEstribillo \MusicEstribilloSIi >> 
   \MusicCoplasSIi
 }
+
 MusicSIii = {
   \MusicEstribilloSIii
   \MusicCoplasSIii
@@ -1089,7 +1093,7 @@ MusicAI = {
 }
 MusicSII = {
   \MusicEstribilloSII
-  \MusicCoplasSII
+  << \MarksCoplas \MusicCoplasSII >>
 }
 MusicAII = {
   \MusicEstribilloAII

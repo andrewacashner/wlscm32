@@ -15,7 +15,6 @@
 \include "include/header.ly"
 
 \include "auto/transpose-g.ly"
-
 \include "include/score.ly"
 
 \include "auto/parts.ly"
