@@ -248,6 +248,7 @@ MusicEstribilloSIii = {
 
   % m. 68
   | a'1\fermata
+  \FinalBar
 }
 
 MusicEstribilloAI = {
@@ -339,6 +340,7 @@ MusicEstribilloAI = {
 
   % m. 68
   | f'1\fermata
+  \FinalBar
 }
 
 %% CHORUS II
@@ -434,6 +436,7 @@ MusicEstribilloSII = {
 
   % m. 68
   | a'1\fermata
+  \FinalBar
 }
 
 MusicEstribilloAII = {
@@ -525,6 +528,7 @@ MusicEstribilloAII = {
 
   % m. 68
   | c'1\fermata
+  \FinalBar
 }
 
 MusicEstribilloTII = {
@@ -616,6 +620,7 @@ MusicEstribilloTII = {
 
   % m. 68
   | f1\fermata
+  \FinalBar
 }
 
 MusicEstribilloBII = {
@@ -899,6 +904,7 @@ MusicCoplasSII = {
   | R1
   | R1
   | R1
+  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -934,6 +940,7 @@ MusicCoplasAII = {
   | R1
   | R1
   | R1
+  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -948,6 +955,8 @@ MusicCoplasAII = {
 
   % m. 88
   | f'1\fermata
+  \DCalFineAfterLastCopla
+  \RepeatBar
 }
 
 MusicCoplasTII = {
@@ -969,6 +978,7 @@ MusicCoplasTII = {
 
   % m. 79
   | R1
+  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -983,6 +993,8 @@ MusicCoplasTII = {
 
   % m. 88
   | c'1\fermata
+  \DCalFineAfterLastCopla
+  \RepeatBar
 }
 
 MusicCoplasBII = {
@@ -1002,6 +1014,7 @@ MusicCoplasBII = {
   | R1
   | R1
   | R1
+  \MiddleBar
 
   % m. 80
   %% COPLAS 2, 4
@@ -1016,6 +1029,8 @@ MusicCoplasBII = {
 
   % m. 88
   | f1\fermata
+  \DCalFineAfterLastCopla
+  \RepeatBar
 }
 
 MusicCoplasAc = {
@@ -1037,6 +1052,7 @@ MusicCoplasAc = {
 
   % m. 79
   | f1\fermata
+  \MiddleBar
 
   % m. 80
   %% COPLAS B
@@ -1051,6 +1067,8 @@ MusicCoplasAc = {
 
   % m. 88
   | f1\fermata
+  \DCalFineAfterLastCopla
+  \RepeatBar
 }
 
 %%*********************************

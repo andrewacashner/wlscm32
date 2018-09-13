@@ -8,13 +8,15 @@
 
 \version "2.19"
 \include "villancico.ly"
+\include "part.ly"
+
 \include "include/music.ly"
 \include "include/lyrics.ly"
 \include "include/header.ly"
 
-\include "transpose/transpose-g.ly"
+\include "auto/transpose-g.ly"
 
 \include "include/score.ly"
 
-\include "include/parts.ly"
+\include "auto/parts.ly"
 

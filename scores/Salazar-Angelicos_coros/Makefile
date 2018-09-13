@@ -1,36 +1,59 @@
+# Makefile for Lilypond villancico editions, WLSCM32
+# With possibility for transpositions and performing parts
+
+# Andrew A. Cashner
+# 2018-09-13
+
 SHELL = /bin/sh
 
-input = $(wildcard master*.ly)
-includes = $(wildcard include/*.ly)
-trans = $(wildcard transpose/*.scm)
-trans-include = $(trans:%.scm=%.ly)
+# Directories
+config		= config
+build 		= pdf
+auto		= auto
+dirs 		= $(auto) $(build)
 
-build = pdf
-dirs = $(build)
+# Main Lilypond file and the files it includes
+master 		= $(wildcard master*.ly)
+includes 	= $(wildcard include/*.ly)
 
-output = $(input:%.ly=$(build)/%.pdf)
+# Configuration files to generate transposition and parts Lilypond files
+trans	 	= $(wildcard config/transpose-*.scm)
+parts	 	= $(wildcard $(config)/parts.scm)
 
-# includes
-ly = $(wildcard $(HOME)/ly/*.ly)
-scm = $(HOME)/scm/lirio/transpose.scm
+# Output of config files, automatically generated
+trans-include	= $(trans:$(config)/%.scm=$(auto)/%.ly)
+parts-include 	= $(parts:$(config)/%.scm=$(auto)/%.ly)
 
-lypath = -I ~/ly 
+# Main output
+output 		= $(master:%.ly=$(build)/%.pdf)
 
-quiet = &> /dev/null &
+# Custom Lilypond and Scheme modules
+ly 		= $(wildcard $(HOME)/ly/*.ly)
+scm 		= $(wildcard $(HOME)/scm/lirio/*.scm)
+
+# Lilypond include
+lypath 		= -I ~/ly 
+
+quiet 		= &> /dev/null &
+
 
 .PHONY : all view clean 
 
+# Make PDFs from Lilypond master files
+# Generate needed include files for transposition, parts first
 all : $(output)
 
-$(output) : $(input) | $(trans-include)
+$(output) : $(master) $(includes) | $(trans-include) $(parts-include)
 
 $(dirs) : 
 	-mkdir -p $(dirs)
 
-$(build)/%.pdf : %.ly $(ly) $(includes) | $(dirs)
+# Lilypond -> PDF (make output directories first)
+$(build)/%.pdf : %.ly $(ly) | $(dirs)
 	lilypond $(lypath) -o $(basename $@) $<
 
-transpose/%.ly : transpose/%.scm $(scm)
+# Scheme config file -> Lilypond include file
+$(auto)/%.ly : $(config)/%.scm $(scm) | $(dirs)
 	guile $< > $@
 
 view : $(output)
@@ -38,7 +61,6 @@ view : $(output)
 
 clean:
 	-rm -rf $(dirs)
-	-rm $(trans-include)
 
 
 
