@@ -1,23 +1,4 @@
-%% JUAN GUTIERREZ DE PADILLA
-%% AL ESTABLO MAS DICHOSO (ENSALADILLA)
-%% PUEBLA, CHRISTMAS 1652
-%% MEX-Pc: Leg. 1/3
-
-%% EDITED BY ANDREW A. CASHNER
-
-%% 2017-10-05   Refactored for consistency
-%% 2017-03-30   Revised for WLSCM edition
-%% 2014-11-05
-
-\version "2.19"
-\include "villancico.ly"
-\include "lyrics.ly"
-\include "music.ly"
-\include "header.ly"
-
-%%*******************
-%% SCORE
-%%*******************
+% score.ly
 
 \score {
   <<

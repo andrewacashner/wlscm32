@@ -223,7 +223,7 @@ MusicSi = {
   
   %% m. 97 PAPALOTILLO
   \DoubleMark
-  { \IncludeGraphicsAbove "arriero-blocklyrics.eps"  }
+  { \IncludeGraphicsAbove "include/arriero-blocklyrics.eps"  }
   { \Section "PAPALOTILLO: SOLO" }
 
   \HideTimeSignature \time 3/2
