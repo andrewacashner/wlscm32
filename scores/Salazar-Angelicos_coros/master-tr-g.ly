@@ -17,5 +17,9 @@
 \include "auto/transpose-g.ly"
 \include "include/score.ly"
 
+MusicBII = {
+  \removeWithTag #'score
+  \MusicBII
+}
 \include "auto/parts.ly"
 

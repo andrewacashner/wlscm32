@@ -655,7 +655,7 @@ MusicEstribilloBII = {
  
   % m. 30
   | R1.
-  \ShowThisEmptyStaff
+  \tag #'score { \ShowThisEmptyStaff }
   | R1.
   | R1.
   | R1.
@@ -665,7 +665,7 @@ MusicEstribilloBII = {
   | f2. f4 e2
   | d2. e4 f2 
   | g2 c2 c2
-  \HideThisEmptyStaff
+  \tag #'score { \HideThisEmptyStaff }
   
   % m.40
   | c1 c2
@@ -826,8 +826,6 @@ MusicCoplasSIi = {
 
   % m. 79
   | c''1\fermata 
-  \break
-  R1*9
 }
 
 MusicCoplasSIii = {
@@ -1057,17 +1055,40 @@ MarksEstribillo = {
   \Fine
 }
 
-MarksCoplas = {
+MarksCoplasRestsA = {
+  s1*11
+}
+
+MarksCoplasRestsB = {
+  s1*9
+}
+
+MarksCoplasOdd = {
   \SectionBreak
   \Section "COPLAS"
   \MeterDuple
-  s1*11
+  
+  \MarksCoplasRestsA
   \MiddleBar
-
-  s1*9
+  
+  \MarksCoplasRestsB
   \DCalFineAfterLastCopla
   \RepeatBar
 }
+
+MarksCoplasEven = {
+  \SectionBreak
+  \MeterDuple
+  
+  \MarksCoplasRestsA
+  \MiddleBar
+  
+  \MarksCoplasRestsB
+  \DCalFineAfterLastCopla
+  \RepeatBar
+}
+
+MarksCoplas = \MarksCoplasOdd 
 
 Marks = { 
   \MarksEstribillo
@@ -1080,7 +1101,7 @@ Marks = {
 
 MusicSIi = {
   << \MarksEstribillo \MusicEstribilloSIi >> 
-  \MusicCoplasSIi
+  << \MarksCoplasOdd \MusicCoplasSIi >>
 }
 
 MusicSIii = {
@@ -1093,7 +1114,7 @@ MusicAI = {
 }
 MusicSII = {
   \MusicEstribilloSII
-  << \MarksCoplas \MusicCoplasSII >>
+  << \MarksCoplasEven \MusicCoplasSII >>
 }
 MusicAII = {
   \MusicEstribilloAII
