@@ -1,7 +1,7 @@
 (use-modules (lirio parts))
 
-(let ([instruments '((MusicBII . "BAJO II/ÓRGANO") 
-                     (MusicAc . "GUIÓN"))])
+(let ([instruments '((BII . "BAJO II/ÓRGANO") 
+                     (Ac . "GUIÓN"))])
   (parts instruments))
 
 

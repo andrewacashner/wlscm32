@@ -13,13 +13,12 @@
 \include "include/music.ly"
 \include "include/lyrics.ly"
 \include "include/header.ly"
+\header { 
+  instrument = "TRANSPOSED EDITION"
+}
 
 \include "auto/transpose-g.ly"
 \include "include/score.ly"
 
-MusicBII = {
-  \removeWithTag #'score
-  \MusicBII
-}
 \include "auto/parts.ly"
 

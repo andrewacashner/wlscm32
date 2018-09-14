@@ -997,6 +997,7 @@ MusicCoplasBII = {
   | a4 f4 g4 es8 es8 
   | f4. f8 c4 c4 
   | f4. e8 d4 e4 
+  \tag #'part { \break }
   | f2 c2 
   | r4 g4 f4. f8 
   | es4 c4 f,4 bes,4 
@@ -1007,6 +1008,7 @@ MusicCoplasBII = {
 }
 
 MusicCoplasAc = {
+  \tag #'part { \pageBreak }
   \SectionBreak
   \MeterDuple
   % m. 69
@@ -1055,11 +1057,19 @@ MarksEstribillo = {
   \Fine
 }
 
+MarksEstribilloRests = {
+  s1.*44
+  s1*24
+}
+
 MarksCoplasRestsA = {
-  s1*11
+  \tag #'part { <>_\markup "Coplas 1, 3" }
+  s1*11 
+  \tag #'score { \break }
 }
 
 MarksCoplasRestsB = {
+  \tag #'part { <>_\markup "Coplas 2, 4" }
   s1*9
 }
 
@@ -1067,10 +1077,10 @@ MarksCoplasOdd = {
   \SectionBreak
   \Section "COPLAS"
   \MeterDuple
-  
+
   \MarksCoplasRestsA
   \MiddleBar
-  
+ 
   \MarksCoplasRestsB
   \DCalFineAfterLastCopla
   \RepeatBar
@@ -1090,18 +1100,27 @@ MarksCoplasEven = {
 
 MarksCoplas = \MarksCoplasOdd 
 
-Marks = { 
+MarksSIi = {
+  \MarksEstribillo
+  \MarksCoplasOdd
+}
+MarksSII = {
+  \MarksEstribilloRests
+  \MarksCoplasEven
+}
+MarksBII = { 
   \MarksEstribillo
   \MarksCoplas
 }
+MarksAc = \MarksBII
 
 %%*********************************
 %% ALL TOGETHER
 %%*********************************
 
 MusicSIi = {
-  << \MarksEstribillo \MusicEstribilloSIi >> 
-  << \MarksCoplasOdd \MusicCoplasSIi >>
+  \MusicEstribilloSIi 
+  \MusicCoplasSIi
 }
 
 MusicSIii = {
@@ -1114,7 +1133,7 @@ MusicAI = {
 }
 MusicSII = {
   \MusicEstribilloSII
-  << \MarksCoplasEven \MusicCoplasSII >>
+  \MusicCoplasSII
 }
 MusicAII = {
   \MusicEstribilloAII

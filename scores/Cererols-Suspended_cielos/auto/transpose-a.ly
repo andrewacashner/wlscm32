@@ -1,0 +1,9 @@
+MusicSIi = { \key g\major { \transpose d a, { \MusicSIi } } }
+MusicSIii = { \key g\major { \transpose d a, { \MusicSIii } } }
+MusicAI = { \key g\major { \transpose d a, { \MusicAI } } }
+MusicTI = { \key g\major { \transpose d a, { \MusicTI } } }
+MusicSII = { \key g\major { \transpose d a, { \MusicSII } } }
+MusicAII = { \key g\major { \transpose d a, { \MusicAII } } }
+MusicTII = { \key g\major { \transpose d a, { \MusicTII } } }
+MusicBII = { \key g\major { \transpose d a, { \MusicBII } } }
+MusicAc = { \key g\major { \transpose d a, { \MusicAc } } }

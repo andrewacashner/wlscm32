@@ -1,24 +1,21 @@
-% transpositions.ly
-
 %% JOSÉ DE CÁSEDA
 %% QUÉ MÚSICA DIVINA
 %% MEX-Mcen: CSG.154
 
 %% EDITED BY ANDREW A. CASHNER
 
-#(define OldPitch #{ f #})
-#(define NewPitch #{ c #})
-#(define NewKey   #{ \key c\major #})
+%% TRANSPOSED EDITION FOR WLSCM
 
+\version "2.19"
+\include "villancico.ly"
+\include "include/music.ly"
+\include "include/lyrics.ly"
+\include "include/header.ly"
 \header { 
   instrument = "TRANSPOSED EDITION"
 }
 
-MusicSi     = \MyTranspose { \MusicSi }
-MusicSii    = \MyTranspose { \MusicSii }
-MusicA      = \MyTranspose { \MusicA }
-MusicT      = \MyTranspose { \MusicT }
-MusicB      = \MyTranspose { \MusicB }
+\include "auto/transpose-d.ly"
 
 FiguresCoplaIB = \figuremode {
   s1*11
@@ -36,3 +33,6 @@ FiguresB = \figuremode {
   \FiguresCoplaIIB
   \FiguresCoplaIB
 }
+
+\include "include/score.ly"
+
