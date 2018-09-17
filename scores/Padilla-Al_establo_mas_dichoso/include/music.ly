@@ -113,7 +113,6 @@ MusicSi = {
   | c''2. c''4 c''2~\color 
   | c''2 c''1\endcolor 
   | c''1 c''2
-  \tag #'part { \break }
   | r2 c''1 
 
   % m. 10
@@ -251,7 +250,6 @@ MusicSi = {
   | b'2\color b'1\endcolor
   
   %% m. 121 Ti coplas 2, 4, 6
-  \tag #'part { \break }
   \tag #'score { \noBreak }
   | R1.*8
 
@@ -452,7 +450,6 @@ MusicAi = {
   | g'2. g'4 a'2~\color
   | a'2 g'1\endcolor 
   | a'1 a'2
-  \tag #'part { \break }
   | r2 a'1 
 
   % m. 10
@@ -533,7 +530,6 @@ MusicAi = {
   | g'2. g'4 a'2~\color
   | a'2 g'1\endcolor 
   | a'1 a'2
-  \tag #'part { \break }
   | r2 a'2 a'2 
   | g'2\color g'2 a'2~
   | a'2 g'1\endcolor 
@@ -789,7 +785,6 @@ MusicTi = {
   | d'2 d'1 
   | e'2. e'4 f'2~\color
   | f'2 e'1\endcolor 
-  \tag #'part { \break }
   | f'1 f'2
   | r2 f'2 f'2 
   | e'2\color e'2 f'2~
@@ -1066,7 +1061,6 @@ MusicBi = {
   | g2 g1 
   | c'2. c'4 f2~\color
   | f2 c'1\endcolor 
-  \tag #'part { \break }
   | f1 f2
   | r2 f1 
   | c2 c2 f2~
@@ -1343,7 +1337,6 @@ MusicTii = {
   | e'2. d'4 c'2~\color
   | c'2 b1\endcolor 
   | c'1 c'2
-  \tag #'part { \break }
 
   % m. 90
   | f'2 f'2 f'2 
@@ -1483,7 +1476,6 @@ MusicBii = {
   | c'2\color a2 e'2~
   | e'2 d'1\endcolor 
   | c'1. 
-  \tag #'part { \break }
   | c'2 d'1 
 
   % m. 80
