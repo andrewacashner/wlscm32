@@ -1,12 +1,14 @@
 % score.ly
 
 \score {
+  \keepWithTag #'(Si Sii Tii score)
   <<
     \new ChoirStaff
     <<
       \new Staff = "Sii"
       <<
         \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSii }
+        \new Voice = "MarksSii" { \removeWithTag #'(Si Tii) \Marks }
         \new Voice = "Sii" { \MusicSii }
         \new Lyrics = "Sii" \lyricsto "Sii" { \LyricsAllSii }
       >> 
@@ -22,6 +24,7 @@
       \new Staff = "Si"
       <<
         \IncipitStaff "TIPLE I" "Ti. I" { \IncipitSi }
+        \new Voice = "MarksSi" { \removeWithTag #'(Sii Tii) \Marks }
         \new Voice = "Si" { \MusicSi }
         \new Lyrics = "LineISi" \lyricsto "Si" { \LyricsAllSi }
       >>
@@ -40,6 +43,7 @@
       \new Staff = "Tii"
       <<
         \IncipitStaff "TENOR II" "T. II" { \IncipitTii }
+        \new Voice = "MarksTii" { \removeWithTag #'(Si Sii) \Marks }
         \new Voice = "Tii" { \MusicTii }
         \new Lyrics = "LineITii" \lyricsto "Tii" { \LyricsAllTii }
       >>

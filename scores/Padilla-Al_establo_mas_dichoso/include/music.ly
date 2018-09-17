@@ -87,7 +87,6 @@ RestsArriero = {
 }
 
 RestsPapalotillo = {
-  \DoubleMark{}{}
   | R1.*40
 }
 
@@ -114,6 +113,7 @@ MusicSi = {
   | c''2. c''4 c''2~\color 
   | c''2 c''1\endcolor 
   | c''1 c''2
+  \tag #'part { \break }
   | r2 c''1 
 
   % m. 10
@@ -124,11 +124,8 @@ MusicSi = {
   | d''2 c''2 c''2
   | c''2(\color b'1)\endcolor 
   | c''1.\fermata   
-  \RepeatBarEnd
 
   % m. 17
-  \break
-  \Section "[NUEVO TROYANO] Solo y a 4"
   \MeterDuple
   | r4 a'8 b'8 c''4 c''4 
   | c''4 b'4 cis''2
@@ -136,7 +133,7 @@ MusicSi = {
 
   % m. 20
   | c''4 b'4 cis''2
-  \break
+  \tag #'score { \break }
   | r4 c''8 d''8 e''4 e''4 
   | e''4 d''4 e''4 e''4 
   | r4 b'8 c''8 d''4 d''4 
@@ -187,9 +184,6 @@ MusicSi = {
   | d''4 b'4 cis''4 cis''4 
 
   %% m. 59 EL ARRIERO
-  \break
-  \RepeatBarStart
-  \Section "[INTRODUCCIÓN a 4]" 
   \MeterTriple
   | c''2 c''1 
 
@@ -209,24 +203,17 @@ MusicSi = {
 
   % m. 70
   | a'2 a'2 \ficta cis''!2 
+  \tag #'part { \noBreak }
   | d''2 d''2 d''2~
   | d''2 c''2 c''2 
   | c''2\color b'1\endcolor 
   | c''1.\fermata 
-  \RepeatBarEndStart
 
   %% m. 75 ARRIERO
-  \break
   \RestsArriero
-  \RepeatBarEnd
-  \break
+  \tag #'score { \break }
   
   %% m. 97 PAPALOTILLO
-  \DoubleMark
-  { \IncludeGraphicsAbove "include/arriero-blocklyrics.eps"  }
-  { \Section "PAPALOTILLO: SOLO" }
-
-  \HideTimeSignature \time 3/2
   | e''2 d''2 c''2 
   | b'2 a'2 g'2
   | a'2 b'2 c''2 
@@ -239,8 +226,6 @@ MusicSi = {
   | b'2 b'1
 
   %% m. 105 Responsion
-  \break
-  \Section "RESPONSIÓN a 4"
   | c''2 d''2 e''2 
   | d''2 d''2. e''4 
   | f''2 f''2. e''4 
@@ -253,9 +238,6 @@ MusicSi = {
   | d''2 d''1
 
   %%  m. 113 Coplas
-  \break
-  \Section "COPLAS"
-  \RepeatBarStart
   %% Si coplas 1, 3, 5
   | e''2 d''2 c''2 
   | b'2 a'2 g'2
@@ -269,12 +251,11 @@ MusicSi = {
   | b'2\color b'1\endcolor
   
   %% m. 121 Ti coplas 2, 4, 6
-  \noBreak
+  \tag #'part { \break }
+  \tag #'score { \noBreak }
   | R1.*8
 
   %% m. 129 Responsion
-  \break
-  \Section "RESPONSIÓN [reprise]"
   | c''2 d''2 e''2 
 
   % m. 130
@@ -285,11 +266,8 @@ MusicSi = {
   | d''2 d''2. e''4 
   | f''2 f''2. e''4 
   | d''2 d''1
-  \RepeatBarEndStart
 
   %% m. 137 NEGRILLA
-  \break
-  \Section "[INTRODUCCIÓN a 4]"
   | c''2 c''1 
   | c''2 c''1 
   | c''2\color c''1\endcolor 
@@ -297,7 +275,7 @@ MusicSi = {
   % m. 140
   | c''1 c''2
   | b'2 b'2 b'2 
-  \break
+  \tag #'score { \break }
   | c''1\color c''2~
   | c''2 c''1\endcolor 
   | c''1 c''2
@@ -311,11 +289,8 @@ MusicSi = {
   | d''2 c''2 c''2 
   | c''2\color b'1\endcolor 
   | c''1.\fermata 
-  \RepeatBarEnd
 
   % m. 153
-  \break
-  \Section "NEGRILLA: [INTRODUCCIÓN] Dúo y a 6"
   | r2 e''2 d''2 
   | e''2. e''4 f''2~\color
   | f''2 e''1\endcolor 
@@ -355,7 +330,8 @@ MusicSi = {
   | g''2 f''2 e''2 
   | d''2 e''1 
   | d''2\color e''1\endcolor 
-  | d''1.\fermata\CN % editorial
+  | \tag #'score { d''1.\fermata\CN } % editorial
+    \tag #'part { d''1.\fermata }
 
   %% m. 197 Caya
   | r2 e''2 e''2 
@@ -380,11 +356,9 @@ MusicSi = {
   | R1.
   | R1.
   | R1.
-  \MiddleBar
 
   
   %% m. 215 Gloria 
-  \break
   \MeterTriple
   e''2\color e''1\endcolor 
   a'2. b'4 \[ c''2~\color
@@ -397,11 +371,8 @@ MusicSi = {
   a'2(\color b'1\endcolor 
   a'1.)
   b'1.\fermata
-  \MiddleBar
 
   % m. 224 Estribillo
-  \pageBreak
-  \Section "[ESTRIBILLO a 6]"
   | R1.
   | R1.
   | R1.
@@ -421,9 +392,7 @@ MusicSi = {
   | e''1.\fermata
 
   % m. 239
-  \RepeatBarStart
-  \break
-  \Section "COPLAS a 6"
+  \tag #'score { \break }
   | R1.
 
   % m. 240
@@ -451,17 +420,10 @@ MusicSi = {
   | e''2 r2 r2 
 
   % m. 260
-  | R1. 
-  | R1. 
+  | R1.*2
 
   % m. 262
-  \break
-  \Section "[ESTRIBILLO reprise]"
-  | R1.
-  | R1.
-  | R1.
-  | R1.
-  | R1.
+  | R1.*5
   | r2 d''2 d''2 
   | g''2 f''2 e''2 
   | d''2 e''1 
@@ -476,7 +438,6 @@ MusicSi = {
 
   % m. 276
   | e''1.\fermata 
-  \RepeatBarEnd
 }
 
 MusicAi = {
@@ -491,6 +452,7 @@ MusicAi = {
   | g'2. g'4 a'2~\color
   | a'2 g'1\endcolor 
   | a'1 a'2
+  \tag #'part { \break }
   | r2 a'1 
 
   % m. 10
@@ -571,6 +533,7 @@ MusicAi = {
   | g'2. g'4 a'2~\color
   | a'2 g'1\endcolor 
   | a'1 a'2
+  \tag #'part { \break }
   | r2 a'2 a'2 
   | g'2\color g'2 a'2~
   | a'2 g'1\endcolor 
@@ -586,7 +549,6 @@ MusicAi = {
   | \RestsArriero
 
   %% m. 97 PAPALOTILLO
-  \DoubleMark{}{}
   | R1.*3
 
   % m. 100
@@ -827,6 +789,7 @@ MusicTi = {
   | d'2 d'1 
   | e'2. e'4 f'2~\color
   | f'2 e'1\endcolor 
+  \tag #'part { \break }
   | f'1 f'2
   | r2 f'2 f'2 
   | e'2\color e'2 f'2~
@@ -843,7 +806,6 @@ MusicTi = {
   | \RestsArriero
 
   %% m. 97 PAPALOTILLO
-  \DoubleMark{}{}
   | R1.*3
 
   % m. 100
@@ -871,7 +833,7 @@ MusicTi = {
   | e'2 d'2 c'2 
   | d'2 d'2 e'2 
   | f'2 f'2. e'4 
-  \break
+  \tag #'score { \break }
   | d'1 d'2
   | e'2 d'2 c'2 
   | d'2 d'2 e'2 
@@ -1104,6 +1066,7 @@ MusicBi = {
   | g2 g1 
   | c'2. c'4 f2~\color
   | f2 c'1\endcolor 
+  \tag #'part { \break }
   | f1 f2
   | r2 f1 
   | c2 c2 f2~
@@ -1120,7 +1083,6 @@ MusicBi = {
   | R1.*22
 
   %% m. 97 PAPALOTILLO
-  \DoubleMark{}{}
   | R1.*8
 
   %% m. 105 Responsion
@@ -1308,7 +1270,6 @@ MusicBi = {
 
 MusicSii = {
   \clef "treble"
-  \Section "[INTRODUCCIÓN] a 4"
   \RestsBeforeArriero
   \RestsArriero
   \RestsPapalotillo
@@ -1316,8 +1277,8 @@ MusicSii = {
 
   %% m. 215 GLORIA
   \PolyMeterDupleVsTriple {
-    \Section "A 3" 
-    | c''1\CN
+    | \tag #'score { c''1\CN }
+      \tag #'part { c''1 }
     | c''1
     | d''1 
     | f''2 f''2
@@ -1364,7 +1325,6 @@ MusicTii = {
   | \RestsBeforeArriero
 
   % m. 75 ARRIERO
-  \Section "EL ARRIERO: RESPONSIÓN Dúo"
   | r2 c'2 d'2 
   | e'2\color c'2 g'2~
   | g'2 f'1\endcolor 
@@ -1383,6 +1343,7 @@ MusicTii = {
   | e'2. d'4 c'2~\color
   | c'2 b1\endcolor 
   | c'1 c'2
+  \tag #'part { \break }
 
   % m. 90
   | f'2 f'2 f'2 
@@ -1522,6 +1483,7 @@ MusicBii = {
   | c'2\color a2 e'2~
   | e'2 d'1\endcolor 
   | c'1. 
+  \tag #'part { \break }
   | c'2 d'1 
 
   % m. 80
@@ -1537,7 +1499,8 @@ MusicBii = {
   | c1 c2 
 
   % m. 90
-  | d'2 a2 b2 
+  | \tag #'score { d'2_\markup { \ArrieroBlockLyrics } a2 b2 }
+    \tag #'part { d'2 a2 b2 }
   | c'2 c'2 c'2 
   | g2. f4 e2~\color 
   | e2 d1\endcolor 
@@ -1685,5 +1648,108 @@ MusicBii = {
   % m. 276
   | c1.\fermata
 }
+
+%%******************************************
+%% MARKS
+%%******************************************
+
+Marks = {
+  \tag #'(Sii part) { \Section "[INTRODUCCIÓN] a 4" }
+  \MeterTriple
+  s1.*16
+  \RepeatBarEnd
+  \break
+ 
+  % m. 17 Troyano 
+  \tag #'(Si part) { \Section "[NUEVO TROYANO] Solo y a 4" }
+  \MeterDuple
+  s1*42
+  \tag #'score { \break }
+  \tag #'part { \pageBreak }
+
+  % m. 59 Arriero intro
+  \tag #'(Si part) { \Section "[INTRODUCCIÓN a 4]" }
+  \RepeatBarStart
+  \MeterTriple
+  s1.*16
+  \RepeatBarEndStart
+  \break
+
+  %% m. 75 ARRIERO
+  \tag #'(Tii part) { \Section "EL ARRIERO: RESPONSIÓN Dúo" }
+  s1.*22
+  \RepeatBarEnd
+  \tag #'score { \break }
+  \tag #'part { \pageBreak }
+
+  %% m. 97 PAPALOTILLO
+  \tag #'(Si part) { \Section "PAPALOTILLO: SOLO" }
+  s1.*8
+  \break
+
+  %% m. 105 Responsion
+  \tag #'(Si part) { \Section "RESPONSIÓN a 4" }
+  s1.*8
+  \break
+
+  %% m. 113 Coplas
+  \tag #'(Si part) { \Section "COPLAS" }
+  \RepeatBarStart
+  s1.*16
+  \break
+
+  %% m. 129
+  \tag #'(Si part) { \Section "RESPONSIÓN [reprise]" }
+  s1.*8
+  \RepeatBarEndStart
+  \tag #'score { \break }
+  \tag #'part { \pageBreak }
+
+  %% m. 137 NEGRILLA
+  \tag #'(Si part) { \Section "[INTRODUCCIÓN a 4]" }
+  s1.*16
+  \RepeatBarEnd
+  \break
+
+  % m. 153
+  \tag #'(Si part) { \Section "NEGRILLA: [INTRODUCCIÓN] Dúo y a 6" }
+  s1.*62
+  \MiddleBar
+  \break
+
+  %% m. 215 Gloria 
+  \tag #'(Sii part) \Section "[GLORIA] A 3" 
+  s1.*9
+  \MiddleBar
+  \tag #'part { \break }
+  \tag #'score { \pageBreak }
+
+  % m. 224 Estribillo
+  \tag #'(Si part) { \Section "[ESTRIBILLO a 6]" }
+  s1.*15
+
+  % m. 239
+  \tag #'(Si part) { \Section "COPLAS a 6" }
+  \RepeatBarStart
+  s1.*23
+  \MiddleBar
+  \break
+
+  % m. 262
+  \tag #'(Si part) { \Section "[ESTRIBILLO reprise]" }
+  s1.*15
+
+  % m. 276
+  \RepeatBarEnd
+}
+
+MarksSi = { \Marks }
+MarksAi = { \Marks }
+MarksTi = { \Marks }
+MarksBi = { \Marks }
+MarksSii = { \Marks }
+MarksAii = { \Marks }
+MarksTii = { \Marks }
+MarksBii = { \Marks }
 
 

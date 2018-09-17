@@ -261,8 +261,56 @@ ArrieroDuoTii = \lyricmode {
 %% ARRIERO block lyrics
 %% stanzas 2--9
 
-
-
+ArrieroBlockLyrics = \markup {
+  \hspace #5
+  \huge
+  \lower #8
+  \line {
+  \column { 
+    \line { 2. No se me asuste le digo }
+    \line { ni de inocente se ponga, }
+    \line { cuando me dicen que sabe }
+    \line { lo que su padre no ignora. }
+    \vspace #1
+    \line { 3. Es bueno que de mis mulas, }
+    \line { la más lucia y la más gorda }
+    \line { me la traiga a este pesebre }
+    \line { sin decir esta es mi boca, }
+    \vspace #1
+    \line { 4. Y yo sin haber vendido }
+    \line { las cargas de mis melcochas, }
+    \line { ande en flores y con flores }
+    \line { pregonándola a mi costa. }
+    \vspace #1
+    \line { 5. Si arrobar viene a los hombres, }
+    \line { paréceme cosa impropia }
+    \line { dar principio con mi mula, }
+    \line { si no ha de ocupar carroza. }
+  }
+  \hspace #4
+  \column {
+    \line { 6. Pero ya he considerado, }
+    \line { si mi decir no le enoja, }
+    \line { que por la escarcha pretende }
+    \line { el aliento de su boca. }
+    \vspace #1
+    \line { 7. Y por vida de Bartolo, }
+    \line { que en aquestas y en esotras, }
+    \line { cuando por esto la quiera, }
+    \line { que aquí se las traiga todas. }
+    \vspace #1
+    \line { 8. Abra esa boca de perlas }
+    \line { con que tanto me enamora, }
+    \line { y pida que estos serranos }
+    \line { no pretenden otra cosa. }
+    \vspace #1
+    \line { 9. Un baile quieren hacerle, }
+    \line { que \italic "papalotillo" nombran }
+    \line { y como cantemos todos, }
+    \line { más que rueden las panochas. }
+  }
+}
+}
 %%****************************************
 %% PAPALOTILLO 
 %% lyric blocks

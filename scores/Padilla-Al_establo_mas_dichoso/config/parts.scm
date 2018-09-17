@@ -1,0 +1,10 @@
+(use-modules (lirio parts))
+(parts '((Si  . "TIPLE I")
+         (Ai  . "ALTUS I")
+         (Ti  . "TENOR I")
+         (Bi  . "BASSUS I")
+         (Sii . "TIPLE II")
+         (Aii . "ALTUS II")
+         (Tii . "TENOR II")
+         (Bii . "BASSUS II")))
+

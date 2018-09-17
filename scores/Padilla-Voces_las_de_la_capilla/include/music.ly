@@ -54,14 +54,13 @@ MusicIntroSi = {
   \CantusMollis
   \MeterTriple 
 
-  \Section "[INTRODUCCIÓN] a 6"
   | r2 d''1~\color 
   | d''2 e''1\endcolor
   | c''2. c''4 c''2~\color 
   | c''2 d''1\endcolor 
   | c''1 c''2 
-  \break
   | r2 f''1~\color
+  \tag #'score { \break }
   | f''2\endcolor d''2 d''2 
   | e''2 d''2 d''2 
   | d''2( cis''1) 
@@ -87,10 +86,9 @@ MusicIntroSi = {
   | c''2 d''1 
   | c''2(\color bes'1)\endcolor
   | a'1.
-  \MiddleBar
+  \tag #'score { \break }
 
-  %% m. 28 RESPUESTA -- heading in AII
-  \break
+  %% m. 28 RESPUESTA 
   | R1. | R1.
 
   % m. 30
@@ -106,16 +104,15 @@ MusicIntroSi = {
 
   % m. 44
   | R1.
-  \RepeatBar
+  \tag #'score { \break }
 }
 
 MusicEstribilloSi = {
-  \break
-  \Section \markup { \SegnoSign "  ESTRIBILLO a 6" }
-  \MeterDuple
+  \tag #'part { \break }
+  \MeterChangeDuple
   % m. 45
   | R1 
-  | \ShowThisEmptyStaff R1
+  | \tag #'score { \ShowThisEmptyStaff } R1
   | R1
   | r2 r4 d''4 
   | c''8 c''8 c''8 d''8 e''4 f''8 f''8 
@@ -154,7 +151,7 @@ MusicEstribilloSi = {
 
   % m. 80
   | d''2 d''2 d''2 
-  \break
+  \tag #'(score part) { \break }
   | \[ es''1. 
   | c''1. \] 
   | d''1\colorOne r2 
@@ -162,7 +159,7 @@ MusicEstribilloSi = {
   | R1.
   | r2 r2 d''2~\color
   | d''2 d''1\endcolor
-  \break
+  \tag #'score { \break }
   | es''1. 
   | d''1. 
 
@@ -172,13 +169,13 @@ MusicEstribilloSi = {
   | R1. 
   | R1.
   | R1. 
-  \break
+  \tag #'score { \break }
   | f''?2 f''2. e''4 
   | d''2 e''2. d''4 
   | \ficta cis''!1. 
   | d''2\color d''1\endcolor 
   | d''1. 
-  \break
+  \tag #'score { \break }
 
   % m. 100
   | r2 d''2\color d''2~
@@ -197,7 +194,6 @@ MusicEstribilloSi = {
   | R1.
   | r2 g''2\color g''2~
   | g''2 d''1 
-  \break
   | e''1 f''2~
   | f''2 e''1\endcolor
   | f''1.~
@@ -214,8 +210,6 @@ MusicEstribilloSi = {
 
   % m. 126
   | d''1.\fermata 
-  \Fine
-  \FinalBar
 }
 
 
@@ -275,13 +269,15 @@ MusicIntroAi = {
 
   % m. 44
   | R1.
+  \tag #'part { \break }
 }
 
 MusicEstribilloAi = {
-  \MeterDuple
+  \tag #'part { \break }
+  \MeterChangeDuple
   % m.45
   | R1 
-  | \ShowThisEmptyStaff R1 
+  | \tag #'score { \ShowThisEmptyStaff } R1 
   | R1
   | r4 a'4 f'8 e'8 f'8 g'8 
   | a'4 a'8 a'8 g'8 g'8 f'8 f'8 
@@ -435,10 +431,11 @@ MusicIntroTi = {
 }
 
 MusicEstribilloTi = {
-  \MeterDuple
+  \tag #'part { \break }
+  \MeterChangeDuple
   % m. 45
   | R1 
-  | \ShowThisEmptyStaff R1
+  | \tag #'score { \ShowThisEmptyStaff } R1
   | R1
   | r4 a4 d'8 \ficta cis'!8 d'8 e'8 
   | f'4 c'4 r4 c'4 
@@ -564,9 +561,9 @@ MusicIntroAii = {
   | R1. | R1. 
   | R1. | R1. 
   | R1. | R1. 
-
+  \tag #'part { \break }
+  
   %% m. 28 RESPUESTA
-  \Section "RESPUESTA a 3"
   | r2 a'1~\color 
   | a'2 bes'1\endcolor
 
@@ -574,6 +571,7 @@ MusicIntroAii = {
   | g'2. g'4 g'2~\color
   | g'2 a'1\endcolor
   | f'2 f'2 f'2 
+  \tag #'part { \break }
   | f'2 f'2. f'4 
   | g'2 f'1 
   | e'1. 
@@ -593,7 +591,7 @@ MusicIntroAii = {
 }
 
 MusicEstribilloAii = {
-  \MeterDuple
+  \MeterChangeDuple
   % m. 45
   | R1 
   | r4 a'4 f'8 e'8 f'8 g'8 
@@ -710,6 +708,7 @@ MusicIntroTii = {
   | R1. | R1. 
   | R1. | R1. 
   | R1. | R1. 
+  \tag #'part { \break }
 
   %% m. 28 RESPUESTA
   | r2 fis'1~\color 
@@ -719,6 +718,7 @@ MusicIntroTii = {
   | e'2. d'4 e'2~\color 
   | e'2 f'1\endcolor
   | d'2 d'2 d'2 
+  \tag #'part { \break }
   | c'2 d'2. c'4 
   | bes2\color a2 \[ d'2~
   | d'2 cis'1\endcolor \] 
@@ -738,7 +738,8 @@ MusicIntroTii = {
 }
 
 MusicEstribilloTii = {
-  \MeterDuple
+  \tag #'part { \break }
+  \MeterChangeDuple
   % m. 45
   | r4 d'4 bes8 a8 bes8 c'8 
   | d'4 c'8 c'8 d'8 c'8 bes8 bes8 
@@ -855,6 +856,7 @@ MusicIntroBi = {
   | R1. | R1. 
   | R1. | R1. 
   | R1. | R1.
+  \tag #'part { \break }
   
   %% m. 28 RESPUESTA
   | r2 d'1~\color
@@ -864,6 +866,7 @@ MusicIntroBi = {
   | c'2. \ficta b!4 c'2~\color
   | c'2 f1\endcolor
   | bes2 bes2 bes2 
+  \tag #'part { \break }
   | a2 bes2. a4 
   | g2\color d1\endcolor 
   | a1. 
@@ -880,10 +883,12 @@ MusicIntroBi = {
 
   % m. 44
   | g1.
+  \tag #'part { \break }
 }
 
 MusicEstribilloBi = {
-  \MeterDuple
+  \tag #'part { \pageBreak }
+  \MeterChangeDuple
   % m. 45
   | r4 d4 g8[ \ficta fis!8 g8 a8] 
   | bes4 f8 f8 bes,8 c8 d8 e8 
@@ -980,10 +985,9 @@ MusicEstribilloBi = {
 %%****************************************
 
 MusicCoplasSi = {
+  \tag #'(score part) { \pageBreak }
   %% COPLA 1
-  \pageBreak
   \SectionBreak
-  \Section "COPLAS a 3"
   \MeterTriple 
   % m. 127
   | bes'2 bes'1 
@@ -994,7 +998,7 @@ MusicCoplasSi = {
   | c''2. c''4 f''2~\color
   | f''2 e''1\endcolor 
   | d''2 d''1 
-  \noPageBreak
+  \tag #'score { \noPageBreak }
   | c''2 c''1 
   | d''2 e''1 
   | c''2 c''2 c''2 
@@ -1002,7 +1006,7 @@ MusicCoplasSi = {
   | c''1. 
   | d''1. 
   | r2 a'1\colorOne 
-  \noPageBreak
+  \tag #'score { \noPageBreak }
 
   % m. 140
   | R1. 
@@ -1014,11 +1018,12 @@ MusicCoplasSi = {
 
   % m. 146
   | b'!1.\fermata
-  \MiddleBar
 
   %% COPLA 2
-  \break
-  \HideThisEmptyStaff
+  \tag #'score { 
+    \pageBreak 
+    \HideThisEmptyStaff 
+  }
   % m. 147
   | R1. | R1. 
   | R1.
@@ -1038,10 +1043,10 @@ MusicCoplasSi = {
 
   % m. 167
   | R1.
-  \FinalBar
 }
 
 MusicCoplasAi = {
+  \tag #'part { \pageBreak }
   \SectionBreak
   % m. 127
   \MeterTriple
@@ -1074,7 +1079,7 @@ MusicCoplasAi = {
 
   %% COPLA 2
   % m. 147
-  \HideThisEmptyStaff
+  \tag #'score { \HideThisEmptyStaff }
   | R1. | R1. 
   | R1. 
 
@@ -1093,10 +1098,10 @@ MusicCoplasAi = {
 
   % m. 167
   | R1. 
-  \FinalBar
 }
 
 MusicCoplasTi = {
+  \tag #'part { \pageBreak }
   \SectionBreak
   %% COPLA 1
   % m. 127
@@ -1130,7 +1135,7 @@ MusicCoplasTi = {
 
   %% COPLA 2
   % m. 147
-  \HideThisEmptyStaff
+  \tag #'score { \HideThisEmptyStaff }
   | R1. | R1.
   | R1.
 
@@ -1149,7 +1154,6 @@ MusicCoplasTi = {
 
   % m. 167
   | R1. 
-  \FinalBar
 }
 
 %%*******************
@@ -1179,7 +1183,6 @@ MusicCoplasAii = {
   % m. 146
   | R1. 
   %% COPLA 2
-  \pageBreak
   % m. 147
   | r2 bes'2 bes'2 
   | g'1 g'2 
@@ -1208,8 +1211,6 @@ MusicCoplasAii = {
 
   % m. 167
   | g'1. 
-  \FinalBar
-  \DSalFine
 }
 
 MusicCoplasTii = {
@@ -1262,10 +1263,10 @@ MusicCoplasTii = {
 
   % m. 167
   | b!1. 
-  \FinalBar
 }
 
 MusicCoplasBi = {
+  \tag #'part { \pageBreak }
   \SectionBreak
   %% COPLA 1
   \MeterTriple 
@@ -1317,8 +1318,60 @@ MusicCoplasBi = {
 
   % m. 167
   | g1. 
-  \FinalBar
 }
+
+%%***********************************************************
+%% MARKS
+%%***********************************************************
+
+MarksEstribillo = {
+  \tag #'(Si part) { \Section "[INTRODUCCIÓN] a 6" }
+  \MeterTriple
+  s1.*27
+  \MiddleBar
+ 
+  % m. 28 RESPUESTA -- heading in AII
+  \tag #'(Aii part) { \Section "RESPUESTA a 3" }
+  s1.*17
+  \RepeatBar
+
+  % m. 45 ESTRIBILLO
+  \tag #'(Si part) { \Section \markup { \SegnoSign "  ESTRIBILLO a 6" } }
+  \MeterChangeDuple
+  s1*15
+  \MeterChangeTriple
+  s1.*67
+
+  \tag #'(Si part) { 
+    \Fine 
+    \FinalBar
+  }
+}
+
+MarksCoplas = {
+  \SectionBreak
+  \tag #'(Si part) { \Section "COPLAS a 3" }
+  \MeterTriple
+  s1.*20
+  \MiddleBar
+
+  s1.*21
+  \FinalBar
+  \tag #'(Aii part) { \DSalFine }
+}
+
+Marks = { 
+  \MarksEstribillo 
+  \MarksCoplas 
+}
+
+MarksSi =   { \Marks }
+MarksAi =   { \Marks }
+MarksTi =   { \Marks }
+MarksSii =  { \Marks }
+MarksAii =  { \Marks }
+MarksTii =  { \Marks }
+MarksBi =   { \Marks }
 
 %%***********************************************************
 %% ALL
