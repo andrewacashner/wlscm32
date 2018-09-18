@@ -7,7 +7,7 @@
 %% 2018-09-12
 
 \version "2.19"
-\include "villancico.ly"
+\include "villancico-part.ly"
 
 \include "include/music.ly"
 \include "include/lyrics.ly"
@@ -15,6 +15,5 @@
 
 \include "auto/transpose-g.ly"
 
-\include "part.ly"
 \include "auto/parts.ly"
 

@@ -5,8 +5,8 @@
     \keepWithTag #'part
     \new Staff 
     <<
-      \new Voice { \MakePart { \MarksBII } }
-      \new Voice { \MakePart { \MusicBII } }
+      \new Voice { \MarksBII }
+      \new Voice { \MakePart {\MusicBII } }
     >>
     \header {
       instrument = "BAJO II/ÓRGANO"
@@ -21,8 +21,8 @@
     \keepWithTag #'part
     \new Staff 
     <<
-      \new Voice { \MakePart { \MarksAc } }
-      \new Voice { \MakePart { \MusicAc } }
+      \new Voice { \MarksAc }
+      \new Voice { \MakePart {\MusicAc } }
     >>
     \header {
       instrument = "GUIÓN"

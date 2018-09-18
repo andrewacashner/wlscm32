@@ -15,10 +15,8 @@
 %% SAT B(inst.), AT
 
 \version "2.19"
-\include "villancico.ly"
+\include "villancico-part.ly"
 \include "include/music.ly"
 \include "include/lyrics.ly"
 \include "include/header.ly"
-
-\include "part.ly"
 \include "auto/parts.ly"

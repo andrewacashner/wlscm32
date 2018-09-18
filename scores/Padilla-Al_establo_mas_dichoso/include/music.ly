@@ -76,6 +76,7 @@ RestsBeforeArriero = {
   %% SHEPHERDS
   \MeterDuple
   | R1*42
+  \tag #'part { \break }
 
   %% Arriero prologue
   \MeterTriple
@@ -84,18 +85,27 @@ RestsBeforeArriero = {
 
 RestsArriero = {
   | R1.*22
+  \tag #'part { \break }
 }
 
 RestsPapalotillo = {
-  | R1.*40
+  | R1.*8
+  | R1.*8
+  \tag #'part { \break }
+  | R1.*16
+  | R1.*8
 }
 
 RestsNegrillaBeforeGloria = {
-  | R1.*78
+  \tag #'part { \break }
+  | R1.*16
+  | R1.*62
 }
 
 RestsNegrillaAfterGloria = {
-  R1.*53
+  | R1.*15
+  | R1.*23
+  | R1.*15
 }
 
 
@@ -147,18 +157,12 @@ MusicSi = {
   | d''4 b'4 cis''4 cis''4
 
   %% m. 31 Copla 2
-  | R1
-  | R1
+  | R1*2
   | r4 a'8 b'8 c''4 c''4 
   | c''4 b'4 cis''4 cis''4
-  | R1
-  | R1
-  | R1
-  | R1
-  | R1
+  | R1*6
 
-  % m. 40
-  | R1
+  % m. 41
   | r4 b'8 c''8 d''4 d''4 
   | d''4 d''4 d''4. d''8 
   | d''4 e''4 f''4 e''4 
@@ -306,24 +310,15 @@ MusicSi = {
   | b'1\color c''2~
   | c''2 a'1\endcolor
   | b'1. 
-  | R1.
-  | R1.
+  | R1.*18
  
-  % m. 170
-  | R1.*10
-
-  % m. 180
-  | R1.*6
-
   %% m. 186 Choral entrance turuturuyega
   | r2 e''2 f''2 
   | g''2 f''2 d''2 
   | e''1.
-  | R1.
+  | R1.*3
 
-  % m. 190
-  | R1. 
-  | R1. 
+  % m. 192
   | r2 d''2 d''2 
   | g''2 f''2 e''2 
   | d''2 e''1 
@@ -343,17 +338,7 @@ MusicSi = {
   | d''2\color e''1\endcolor 
   | f''1.
   | e''2 r2 r2 
-  | R1.
-  | R1.
-  | R1.
-  | R1.
-
-  % m. 210
-  | R1.
-  | R1.
-  | R1.
-  | R1.
-  | R1.
+  | R1.*9
 
   
   %% m. 215 Gloria 
@@ -369,13 +354,10 @@ MusicSi = {
   a'2(\color b'1\endcolor 
   a'1.)
   b'1.\fermata
+  \tag #'part { \break }
 
   % m. 224 Estribillo
-  | R1.
-  | R1.
-  | R1.
-  | R1.
-  | R1. 
+  | R1.*5
   | r2 d''2 d''2 
 
   % m. 230
@@ -391,36 +373,31 @@ MusicSi = {
 
   % m. 239
   \tag #'score { \break }
-  | R1.
-
-  % m. 240
-  | R1.
-  | R1.  
+  | R1.*3
+  
+  % m. 242
   | r2 d''1 
   | e''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 d''1 
   | e''2 r2 r2 
-  | R1.
-  | R1.	
+  | R1.*2
 
   % m. 250
   | r2 d''1 
   | e''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 d''1 
   | e''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 d''1 
   | e''2 r2 r2 
 
   % m. 260
   | R1.*2
-
-  % m. 262
+  
+  % m. 262 estribillo reprise
+  
   | R1.*5
   | r2 d''2 d''2 
   | g''2 f''2 e''2 
@@ -463,18 +440,12 @@ MusicAi = {
   
   %% m. 17 COPLAS: SHEPHERDS
   \MeterDuple
-  | R1
-  | R1
+  | R1*2
   | r4 a'8 a'8 a'4 a'4
 
   % m. 20
   | a'4 gis'4 a'2
-  | R1
-  | R1
-  | R1
-  | R1
-  | R1
-  | R1
+  | R1*6
   | r4 g'8 a'8 b'4 b'4 
   | b'4 a'4 b'4. b'8
   | b'4 b'4 c''8 b'8 a'4~
@@ -501,18 +472,11 @@ MusicAi = {
   | a'4 gis'4 a'4 a'4 
 
   %% m. 45 Copla 3
-  | R1
-  | R1
+  | R1*2
   | r4 a'8 a'8 a'4 a'4
   | a'4 gis'4 a'4 a'4 
-  | R1
+  | R1*6
 
-  % m. 50
-  | R1
-  | R1
-  | R1
-  | R1
-  | R1
   | r4 g'8 a'8 b'4 b'4 
   | b'4 a'4 b'4. b'8
   | b'4 b'4 c''8 b'8 a'4~
@@ -545,10 +509,7 @@ MusicAi = {
   | \RestsArriero
 
   %% m. 97 PAPALOTILLO
-  | R1.*3
-
-  % m. 100
-  | R1.*5
+  | R1.*8
 
   %% m. 105 Responsion
   | g'2 g'2 g'2 
@@ -563,11 +524,8 @@ MusicAi = {
   | b'2\color b'1\endcolor
 
   %% m. 113 Coplas
-  | R1.*7
+  | R1.*16
 
-  % m. 120
-  | R1.*9
-  
   %% m. 129 Responsion rep.
   | g'2 g'2 g'2 
 
@@ -603,26 +561,14 @@ MusicAi = {
   | g'1.\fermata
 
   %% m. 153 NEGRILLA duo
-  | R1.*7
-
-  % m. 160
-  | R1.*10
-
-  % m. 170
-  | R1.*10
-
-  % m. 180
-  | R1.*6
+  | R1.*33
 
   %% m. 186 Choral entrance turuturu
   | r2 c''2 c''2 
   | b'2 a'2 b'2 
   | c''1.
-  | R1.
+  | R1.*3
 
-  % m. 190
-  | R1.
-  | R1. 
   | r2 b'2 b'2 
   | b'2 b'2 c''2 
   | b'2 c''1
@@ -630,13 +576,7 @@ MusicAi = {
   | b'1.\fermata
  
   %% m. 197 Caya
-  | R1.*3
-
-  % m. 200
-  | R1.*10
-
-  % m. 210
-  | R1.*5
+  | R1.*18
 
   %% m. 215 Gloria
   | c'1 c'2 
@@ -648,6 +588,7 @@ MusicAi = {
   | f'2\color g'1\endcolor 
   | d'1.
   | g'1.\fermata
+  \tag #'part { \break }
 
   %% m. 224 Estribillo
   | R1.*5
@@ -665,35 +606,26 @@ MusicAi = {
   | g'1.\fermata
 
   %% m. 239 Coplas
-  | R1.
-
-  % m. 240
-  | R1.
-  | R1. 
+  | R1.*3
   | r2 b'1 
   | c''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 b'1 
   | c''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
 
   % m. 250
   | r2 b'1 
   | c''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 b'1
   | c''2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 b'1 
   | c''2 r2 r2 
 
   % m. 260
-  | R1.
-  | R1.
+  | R1.*2
 
   %% m. 262 Estribillo
   | R1.*5
@@ -735,8 +667,7 @@ MusicTi = {
 
   %% m. 17 COPLAS: SHEPHERDS
   \MeterDuple
-  | R1
-  | R1
+  | R1*2
   | r4 e'8 e'8 e'4 e'4 
 
   % m. 20
@@ -753,22 +684,17 @@ MusicTi = {
   | R1*2
   | r4 e'8 e'8 e'4 e'4
   | e'4 e'4 e'4 e'4
-  | R1*5
+  | R1*6
 
-  % m. 40
-  | R1
   | r4 d'8 d'8 g'4 g'4 
   | g'4 fis'4 g'4. g'8
   | g'4 g'4 a'4. g'8 
   | f'4 e'4 e'4 e'4
-  | R1
-  | R1
+  | R1*2
   | r4 e'8 e'8 e'4 e'4
   | e'4 e'4 e'4 e'4
-  | R1
+  | R1*6
 
-  % m. 50
-  | R1*5
   | r4 d'8 d'8 g'4 g'4 
   | g'4 fis'4 g'4. g'8
   | g'4 g'4 a'4. g'8 
@@ -801,10 +727,7 @@ MusicTi = {
   | \RestsArriero
 
   %% m. 97 PAPALOTILLO
-  | R1.*3
-
-  % m. 100
-  | R1.*5
+  | R1.*8
 
   %% m. 105 Responsion
   | e'2 d'2 c'2 
@@ -819,10 +742,7 @@ MusicTi = {
   | g'1 g'2
 
   %% m. 113 Coplas 1, 3, 5
-  | R1.*7
-
-  % m. 120
-  | R1.
+  | R1.*8
 
   %% m. 121 Coplas 2, 4, 6
   | e'2 d'2 c'2 
@@ -870,10 +790,8 @@ MusicTi = {
   | e'1.\fermata
 
   %% m. 153 NEGRILLA Duo
-  | R1.*7
+  | R1.*15
 
-  % m. 160
-  | R1.*8
   | r2 g'1 
   | e'2 a'1 
 
@@ -901,11 +819,8 @@ MusicTi = {
   | r2 e'2 e'2 
   | e'2 a2 d'2 
   | c'1. 
-  | R1.
+  | R1.*3
 
-  % m. 190
-  | R1.
-  | R1.  
   | r2 d'1\colorOne 
   | e'1.  
   | r2 c'1\color 
@@ -913,19 +828,10 @@ MusicTi = {
   | d'1.\fermata
  
   %% m. 197 Caya
-  | R1.*3
+  | R1.*18
 
-  % m. 200
-  | R1.*10
-
-  % m. 210
-  | R1.*5
-  
   %% m. 215 Gloria
-  | R1.*5
-
-  % m. 220
-  | R1.*4
+  | R1.*9
 
   %% m. 224 Estribillo
   | g'2 f'2 f'2 
@@ -954,8 +860,7 @@ MusicTi = {
   | e'2\color d'1\endcolor 
   | r2 d'1\colorOne 
   | c'2 r2 r2 
-  | R1.
-  | R1.  
+  | R1.*2
   | r2 g'1 
   | e'2 e'2 f'2 
   | g'2 f'2 f'2 
@@ -964,8 +869,7 @@ MusicTi = {
   % m. 250
   | r2 d'1\colorOne
   | c'2 r2 r2 
-  | R1. 
-  | R1.  
+  | R1.*2
   | r2 g'1 
   | e'2 e'2 f'2 
   | g'2 f'2 f'2 
@@ -974,8 +878,7 @@ MusicTi = {
   | c'2 r2 r2 
 
   % m. 260
-  | R1.
-  | R1. 
+  | R1.*2
 
   %% m. 262 Estribillo rep.
   | g'2 f'2 f'2 
@@ -1072,9 +975,11 @@ MusicBi = {
   | c'2 c2 c2
   | g1. 
   | c1.\fermata
+  \tag #'part { \break }
 
   %% m. 75 ARRIERO
   | R1.*22
+  \tag #'part { \break }
 
   %% m. 97 PAPALOTILLO
   | R1.*8
@@ -1146,14 +1051,8 @@ MusicBi = {
   | g1\color c2~
   | c2 d1\endcolor
   | g1. 
-  | R1.
-  | R1.
+  | R1.*16
   
-  % m. 170
-  | R1.*10
-
-  % m. 180
-  | R1.*4
   | r2 g2 g2 
   | c'2 b2 a2
   
@@ -1184,14 +1083,8 @@ MusicBi = {
   | f2\color e1\endcolor 
   | d1.
   | c2 r2 r2 
-  | R1.
-  | R1.
-  | R1.
-  | R1.
-
-  % m. 210
-  | R1.*5
-
+  | R1.*9
+  
   %% m. 215 Gloria
   | R1.*9
 
@@ -1218,8 +1111,7 @@ MusicBi = {
   | c'2\color g1\endcolor 
   | r2 g1
   | c'2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 g1\colorOne
   | c'2 c'2 c'2 
   | g2 a2 b2
@@ -1228,8 +1120,7 @@ MusicBi = {
   % m. 250
   | r2 g1 
   | c'2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 g1 
   | c'2 c'2 c'2 
   | g2 a2 b2 
@@ -1238,8 +1129,7 @@ MusicBi = {
   | c'1. 
 
   % m. 260
-  | R1.
-  | R1.
+  | R1.*2
 
   %% m. 262 Estribillo
   | R1.*5
@@ -1270,6 +1160,7 @@ MusicSii = {
   \RestsNegrillaBeforeGloria
 
   %% m. 215 GLORIA
+  \tag #'part { \pageBreak }
   \PolyMeterDupleVsTriple {
     | \tag #'score { c''1\CN }
       \tag #'part { c''1 }
@@ -1284,6 +1175,7 @@ MusicSii = {
     | d''1
     | d''1\fermata
   }
+  \tag #'part { \break }
   \RestsNegrillaAfterGloria
 }
 
@@ -1295,6 +1187,7 @@ MusicAii = {
   \RestsNegrillaBeforeGloria
 
   %% m. 215 GLORIA
+  \tag #'part { \pageBreak }
   \PolyMeterDupleVsTriple {
     | c'2 c'2 
     | f'2 a'2
@@ -1308,6 +1201,7 @@ MusicAii = {
     | d'1
     | g'1\fermata
   } 
+  \tag #'part { \break }
 
   \RestsNegrillaAfterGloria
 }
@@ -1329,7 +1223,7 @@ MusicTii = {
   | d'2 e'1 
   | fis'2 g'1 
   | e'2\color d'1\endcolor
-  \break
+  \tag #'(score part) { \break } 
   | f'2 f'2 f'2 
   | e'2 e'2 e'2 
   | d'2\color d'2 g'2~
@@ -1339,6 +1233,7 @@ MusicTii = {
   | c'1 c'2
 
   % m. 90
+  \tag #'part { \break }
   | f'2 f'2 f'2 
   | e'2 e'2 e'2 
   | d'2\color d'2 g'2~
@@ -1346,6 +1241,7 @@ MusicTii = {
   | e'2. d'4 c'2~\color
   | c'2 b1\endcolor 
   | c'1 c'2\fermata 
+  \tag #'part { \break }
 
   % m. 97
   | \RestsPapalotillo
@@ -1354,22 +1250,15 @@ MusicTii = {
   | R1.*16
   
   %% m. 153 Negrilla duo
-  | R1.*7
+  | R1.*31
 
-  % m. 160
-  | R1.*10
-
-  % m. 170
-  | R1.*10
-
-  % m. 180
-  | R1.*4
   | r2 g'2 f'2 
   | e'2 d'2 c'2
   
   %% m. 186 Choral entrance turuturu
   | g'1.~
   | g'1. 
+  \tag #'part { \break }
   | r2 e'2 d'2 
   | c'2 b2 a2 
 
@@ -1381,12 +1270,11 @@ MusicTii = {
   | r2 g'1\colorOne
   | g'1.~
   | g'1.\fermata
+  \tag #'part { \break }
 
   %% m. 197 Caya
-  | R1.*3
+  | R1.*8
 
-  % m. 200
-  | R1.*5
   | r2 e'1 
   | g'2 d'1
   | f'2 e'2 e'2 
@@ -1419,18 +1307,16 @@ MusicTii = {
   | e'1.\fermata
 
   %% m. 239 Coplas
-  | R1.
+  \tag #'part { \break }
+  | R1.*3
  
-  % m. 240
-  | R1.*2
   | r2 g'1\colorOne
   | e'2 e'2 f'2 
   | g'2 f'2 f'2 
   | e'2\color d'1\endcolor 
   | r2 d'1\colorOne
   | c'2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
 
   % m. 250
   | r2 g'1\colorOne
@@ -1439,8 +1325,7 @@ MusicTii = {
   | e'2\color d'1\endcolor 
   | r2 d'1\colorOne
   | c'2 r2 r2 
-  | R1. 
-  | R1. 
+  | R1.*2
   | r2 g'1
   | e'2 e'2 d'2 
   
@@ -1476,6 +1361,7 @@ MusicBii = {
   | c'2\color a2 e'2~
   | e'2 d'1\endcolor 
   | c'1. 
+  \tag #'part { \break }
   | c'2 d'1 
 
   % m. 80
@@ -1501,16 +1387,14 @@ MusicBii = {
   | c1 c2\fermata
 
   % m. 97
+  \tag #'part { \pageBreak }
   | \RestsPapalotillo
 
   %% m. 137 NEGRILLA Prologue
   | R1.*16
 
   %% m. 153 Negrilla duo
-  | R1.*7
-
-  % m. 160
-  | R1.*8
+  | R1.*15
 
   % m. 168
   | r2 g1
@@ -1540,20 +1424,15 @@ MusicBii = {
   | r2 c2 d2 
   | e2 f2 g2 
   | c1. 
-  | R1.  
+  | R1.*3
 
-  % m. 190
-  | R1.
-  | R1.
   | r2 g2 f2 
   | e2 d2 c2 g2 c1 
   | g2 c1 g1.\fermata
   
   %% m. 197 Caya
-  | R1.*3
+  | R1.*8
 
-  % m. 200
-  | R1.*5
   | r2 c'1 
   | g2 g1
   | d2 e2 f2 
@@ -1590,19 +1469,15 @@ MusicBii = {
   | c1.\fermata
 
   %% m. 239 Coplas
-  | R1. 
+  | R1.*3
 
-  % m. 240
-  | R1.
-  | R1.
   | r2 g1 
   | c2 c'2 c'2 
   | g2 a2 b2
   | c'2 g1 
   | r2 g1 
   | c2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
 
   % m. 250
   | r2 g1
@@ -1611,8 +1486,7 @@ MusicBii = {
   | c'2 g1 
   | r2 g1
   | c2 r2 r2 
-  | R1.
-  | R1. 
+  | R1.*2
   | r2 g1
   | c2 c'2 b2 
 
@@ -1648,72 +1522,73 @@ MusicBii = {
 Marks = {
   \tag #'(Sii part) { \Section "[INTRODUCCIÓN] a 4" }
   \MeterTriple
+  \tag #'part { <>_\markup "3 times" }
   s1.*16
   \RepeatBarEnd
-  \break
+  \tag #'score { \break }
  
   % m. 17 Troyano 
   \tag #'(Si part) { \Section "[NUEVO TROYANO] Solo y a 4" }
   \MeterDuple
   s1*42
   \tag #'score { \break }
-  \tag #'part { \pageBreak }
 
   % m. 59 Arriero intro
   \tag #'(Si part) { \Section "[INTRODUCCIÓN a 4]" }
   \RepeatBarStart
   \MeterTriple
+  \tag #'part { <>_\markup "3 times" }
   s1.*16
   \RepeatBarEndStart
-  \break
+  \tag #'score { \break }
 
   %% m. 75 ARRIERO
   \tag #'(Tii part) { \Section "EL ARRIERO: RESPONSIÓN Dúo" }
+  \tag #'part { <>_\markup "9 times" }
   s1.*22
   \RepeatBarEnd
   \tag #'score { \break }
-  \tag #'part { \pageBreak }
 
   %% m. 97 PAPALOTILLO
   \tag #'(Si part) { \Section "PAPALOTILLO: SOLO" }
   s1.*8
-  \break
+  \tag #'score { \break }
 
   %% m. 105 Responsion
   \tag #'(Si part) { \Section "RESPONSIÓN a 4" }
   s1.*8
-  \break
+  \tag #'score { \break }
 
   %% m. 113 Coplas
   \tag #'(Si part) { \Section "COPLAS" }
   \RepeatBarStart
+  \tag #'part { <>_\markup "3 times" }
   s1.*16
-  \break
+  \tag #'score { \break }
 
   %% m. 129
   \tag #'(Si part) { \Section "RESPONSIÓN [reprise]" }
   s1.*8
   \RepeatBarEndStart
   \tag #'score { \break }
-  \tag #'part { \pageBreak }
 
   %% m. 137 NEGRILLA
   \tag #'(Si part) { \Section "[INTRODUCCIÓN a 4]" }
+  \tag #'part { <>_\markup "2 times" }
   s1.*16
   \RepeatBarEnd
-  \break
+  \tag #'score { \break }
 
   % m. 153
   \tag #'(Si part) { \Section "NEGRILLA: [INTRODUCCIÓN] Dúo y a 6" }
   s1.*62
   \MiddleBar
-  \break
+  \tag #'(score part) { \break }
 
   %% m. 215 Gloria 
   \tag #'(Sii part) \Section "[GLORIA] A 3" 
   s1.*9
   \MiddleBar
-  \tag #'part { \break }
   \tag #'score { \pageBreak }
 
   % m. 224 Estribillo
@@ -1723,9 +1598,10 @@ Marks = {
   % m. 239
   \tag #'(Si part) { \Section "COPLAS a 6" }
   \RepeatBarStart
+  \tag #'part { <>_\markup "2 times" }
   s1.*23
   \MiddleBar
-  \break
+  \tag #'(score part) { \break }
 
   % m. 262
   \tag #'(Si part) { \Section "[ESTRIBILLO reprise]" }
