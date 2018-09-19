@@ -147,7 +147,7 @@ Critical edition of villancico poetry and music for WLSCM]
 % #3 Optional short score title (goes into header)
 % #4 Score title (goes into table of contents only)
 \NewDocumentCommand{\includescore}{ o m o m }{%
-    \def\scorepath{scores/#2/pdf/%
+    \def\scorepath{scores/#2/build/%
         \IfValueTF{#1}{master-#1}{master}%
     }%
     \includepdf[

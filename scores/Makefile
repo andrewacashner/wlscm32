@@ -8,7 +8,7 @@ SHELL = /bin/sh
 
 # Directories
 config		= config
-build 		= pdf
+build 		= build
 auto		= auto
 dirs 		= $(auto) $(build)
 
