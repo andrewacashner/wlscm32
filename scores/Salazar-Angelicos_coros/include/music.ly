@@ -333,7 +333,7 @@ MusicEstribilloSII = {
  
   % m. 30
   \tag #'score { \ShowThisEmptyStaff }
-  | R1.*5
+  | R1.*6
   | r2 r2 c''2 
   | f'2. g'4 a'2
   | bes'2. bes'4 a'2 
@@ -887,75 +887,41 @@ MusicCoplasAc = {
 %% REHEARSAL MARKS for top staff and parts
 %%********************************************
 
-%% TODO REDO MARKS WITH TAGS XXX
-
 MarksEstribillo = {
-  \tag #'(Si part) { \Section "ESTRIBILLO a 8" }
   \MeterTriple
+  \tag #'(SIi part) { \Section "ESTRIBILLO a 8" }
   s1.*44
   \MeterChangeDuple
   s1*24
+  \tag #'(SIi part) { \Fine }
   \FinalBar
-  \Fine
 }
 
-MarksEstribilloRests = {
-  s1.*44
-  s1*24
-}
-
-MarksCoplasRestsA = {
-  \tag #'part { \pageBreak
-  <>_\markup "Coplas 1, 3" }
-  s1*11 
+MarksCoplas = {
+  \tag #'part { \pageBreak }
+  \SectionBreak
+  \tag #'(SIi part) { \Section "COPLAS" }
+  \tag #'part { <>_\markup "2 times" }
+  \MeterDuple
+  s1*11
+  \MiddleBar
   \tag #'score { \break }
-}
 
-MarksCoplasRestsB = {
-  \tag #'part { <>_\markup "Coplas 2, 4" }
   s1*9
-}
-
-MarksCoplasOdd = {
-  \SectionBreak
-  \Section "COPLAS"
-  \MeterDuple
-
-  \MarksCoplasRestsA
-  \MiddleBar
- 
-  \MarksCoplasRestsB
-  \DCalFineAfterLastCopla
+  \tag #'(SII part) { \DCalFineAfterLastCopla }
   \RepeatBar
 }
 
-MarksCoplasEven = {
-  \SectionBreak
-  \MeterDuple
-  
-  \MarksCoplasRestsA
-  \MiddleBar
-  
-  \MarksCoplasRestsB
-  \DCalFineAfterLastCopla
-  \RepeatBar
-}
+Marks = { \MarksEstribillo \MarksCoplas }
 
-MarksCoplas = \MarksCoplasOdd 
-
-MarksSIi = {
-  \MarksEstribillo
-  \MarksCoplasOdd
-}
-MarksSII = {
-  \MarksEstribilloRests
-  \MarksCoplasEven
-}
-MarksBII = { 
-  \MarksEstribillo
-  \MarksCoplas
-}
-MarksAc = \MarksBII
+MarksSIi = { \Marks }
+MarksSIii = { \Marks }
+MarksAI = { \Marks }
+MarksSII = { \Marks }
+MarksAII = { \Marks }
+MarksTII = { \Marks }
+MarksBII = { \Marks }
+MarksAc = { \Marks }
 
 %%*********************************
 %% ALL TOGETHER

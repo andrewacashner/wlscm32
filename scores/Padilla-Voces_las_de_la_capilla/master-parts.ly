@@ -19,4 +19,5 @@
 \include "include/music.ly"
 \include "include/lyrics.ly"
 \include "include/header.ly"
+\include "include/header-parts.ly"
 \include "auto/parts.ly"

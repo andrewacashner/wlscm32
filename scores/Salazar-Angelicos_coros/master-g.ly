@@ -12,10 +12,13 @@
 \include "include/music.ly"
 \include "include/lyrics.ly"
 \include "include/header.ly"
+\include "include/header-parts.ly"
 \header { 
   instrument = "TRANSPOSED EDITION"
 }
-
+\paper { 
+  print-page-number = ##t
+}
 \include "auto/transpose-g.ly"
 \include "include/score.ly"
 
