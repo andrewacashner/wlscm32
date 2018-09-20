@@ -10,25 +10,27 @@ master 	= cashner-villancicos-wlscm32
 pdf_aux = aux/$(master).pdf
 pdf_out = build/$(master).pdf
 
-ly_in 	= $(wildcard scores/*/master.ly)
-ly_pdf 	= $(foreach path,$(ly_in),$(dir $(path))build/master.pdf)
+score_dirs = $(wildcard scores/*)
+score_ly   = $(wildcard scores/*/*.ly)
+score_pdf  = $(foreach path,$(score_ly),$(dir $(path))build/$(notdir $(path:%.ly=%.pdf)))
 
-.PHONY: all view clean FORCE
+.PHONY: all scores view clean FORCE
 
 all : $(pdf_out)
 
-$(pdf_out) : $(pdf_aux)
-	mv $< $@
+scores : $(score_pdf)
 
-$(pdf_aux) : $(master).tex FORCE | $(ly_pdf) $(dirs)
+$(pdf_out) : $(pdf_aux)
+	cp $< $@
+
+$(pdf_aux) : $(master).tex FORCE | scores $(dirs)
 	latexmk -outdir=aux -bibtex -pdf $<
 
 $(dirs):
 	-mkdir -p $(dirs)
 
-$(ly_pdf) : $(ly_in)
-	find scores -mindepth 1 -maxdepth 1 -type d \
-	    -exec bash -c 'cd "$$0" && make -f ../Makefile -j' {} \;
+$(score_pdf) :
+	$(MAKE) -C $(patsubst %/build,%,$(@D)) -f ../Makefile -j
 
 view : all
 	evince $(pdf_out) &
@@ -36,4 +38,7 @@ view : all
 clean:
 	-rm -rf $(dirs)
 	find scores -mindepth 1 -maxdepth 1 -type d \
-	    -exec bash -c 'cd "$$0" && make -f ../Makefile clean' {} \;
+	    -exec bash -c "$(MAKE) -C '{}' -f ../Makefile clean" {} \;
+
+
+
