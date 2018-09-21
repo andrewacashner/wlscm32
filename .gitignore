@@ -3,3 +3,4 @@ aux
 *.swp
 *.*.swp
 !reviews/stylesheets/*.pdf
+!img

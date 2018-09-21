@@ -414,7 +414,7 @@ Critical edition of villancico poetry and music for WLSCM]
 %*****************************
 
 % My package for parallel texts and translations
-\RequirePackage[numberline]{poemtranslation}
+\RequirePackage[numberline]{tex/poemtranslation}
 
 % My package for semantic TEI-style markup
 \RequirePackage{semantic-markup} 

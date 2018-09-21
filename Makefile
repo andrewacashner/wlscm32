@@ -30,7 +30,7 @@ $(dirs):
 	-mkdir -p $(dirs)
 
 $(score_pdf) :
-	$(MAKE) -C $(patsubst %/build,%,$(@D)) -f ../Makefile -j
+	$(MAKE) -C $(patsubst %/build,%,$(@D)) -f ../Makefile
 
 view : all
 	evince $(pdf_out) &
