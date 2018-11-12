@@ -343,7 +343,7 @@ MusicEstribilloSII = {
   % m. 40
   | g'1. 
   | g'1 g'2
-  | a'2. bes'4 c'2 
+  | a'2. bes'4 c''2 
   | bes'2. bes'4 a'2
   | g'1 a'2 
 
@@ -509,9 +509,9 @@ MusicEstribilloTII = {
  
   % m. 60
   | f4 r4 r4 f'4 
-  | e'4 f'4 e'4 e'4 
-  | f'4 r4 r2 
-  | r4 a4 a4 a8 a8 
+  | d'4 e'4 d'4 d'4 
+  | e'4 r4 r2 
+  | r4 a4 a4 f8 f8 
   | f2 f2 
   | R1
   | r4 g4 a2 
