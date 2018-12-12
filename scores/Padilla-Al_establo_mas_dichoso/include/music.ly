@@ -351,8 +351,8 @@ MusicSi = {
 
   % m. 220
   c''2 c''2. b'4
-  a'2(\color b'1\endcolor 
-  a'1.)
+  a'2(\color b'1)\endcolor 
+  a'1.
   b'1.\fermata
   \tag #'part { \break }
 
@@ -1403,7 +1403,7 @@ MusicBii = {
   % m. 170
   | d'2 d'1
   | c'2. b4 a2 
-  | b2\color c1\endcolor
+  | b2\color c'1\endcolor
   | f2 f2 f2 
   | e2 d2 c2
   | g2\color a1\endcolor 
@@ -1587,7 +1587,9 @@ Marks = {
 
   %% m. 215 Gloria 
   \tag #'(Sii part) \Section "[GLORIA] A 3" 
-  s1.*9
+  s1.*4
+  \tag #'score { \break }
+  s1.*5
   \MiddleBar
   \tag #'score { \pageBreak }
 

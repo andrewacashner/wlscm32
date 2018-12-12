@@ -11,14 +11,15 @@ Edited by Andrew A. Cashner, *Web Library of Seventeenth-Century Music*, no. 32
 
 Version | Date     | Comment
 ------- | -------- |----------------------
-1.0     | 2017-12  |Expanded bibliography and minor corrections
-0.1     | 2017-11  |Initial test release
+1.1     | 2018-12  | Error corrections, terminology changes, software updates
+1.0     | 2017-12  | Expanded bibliography and minor corrections
+0.1     | 2017-11  | Initial test release
 
 ## Copyright and License for Published Edition
 
 All of the contents of this repository, including LaTeX and Lilypond
 source code as well as the resulting typeset publication in PDF format, are
-copyright © 2017 Andrew A. Cashner.
+copyright © 2018 Andrew A. Cashner.
 
 The complete typeset edition is published by the Society for
 Seventeenth-Century Music as part of the 
@@ -34,7 +35,7 @@ Permission for performance in professional (for profit) settings must be
 negotiated directly between the performers or their agents and the editor.
 The editor remains the owner of all rights to the edition.
 
-### License for Lilypond "Packages" 
+### Lilypond "Packages" 
 
 This project uses a number of Lilypond "packages" developed by the editor
 specifically for the needs of early music.
@@ -42,27 +43,8 @@ These packages aim to make the user interface more flexible and to separate
 content from presentation to a greater degree.
 They allow convenient usage of features including preparatory staves, mensural
 coloration brackets, mensural time signatures, and editorial lyrical text.
-
-The Lilypond files `*.ly` in the directory `scores/ly`, and only those files,
-are released under the MIT License, copyright © 2017 Andrew A. Cashner:
-
-> Permission is hereby granted, free of charge, to any person obtaining a copy
-> of this software and associated documentation files (the "Software"), to deal
-> in the Software without restriction, including without limitation the rights
-> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-> copies of the Software, and to permit persons to whom the Software is
-> furnished to do so, subject to the following conditions:
-> 
-> The above copyright notice and this permission notice shall be included in all
-> copies or substantial portions of the Software.
-> 
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-> SOFTWARE.
+Those packages are available in a separate Git repository, 
+<http://andrewacashner@bitbucket.com/andrewacashner/ly.git>.
 
 ## Compilation
 
@@ -74,7 +56,7 @@ document without permission.
 The master document is a `LaTeX` file which pulls in subfiles from the various
 directories.
 To compile the master document, you should have a complete installation of
-TeXLive 2017 from <http://www.tug.org>, and a Unix-like shell with GNU Make and
+TeXLive 2018 from <http://www.tug.org>, and a Unix-like shell with GNU Make and
 basic utilities.
 At the command line, simply run the command `make` to produce the complete PDF.
 

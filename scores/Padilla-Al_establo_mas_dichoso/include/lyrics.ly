@@ -108,8 +108,8 @@ TroyanoPrologueTi = \lyricmode {
 %% TROYANO solo y a 4
 
 TroyanoSi = \lyricmode {
-  En Be -- lén can -- tan -- do~es -- tán,
-  en Be -- lén can -- tan -- do~es -- tán,
+  En Be -- lén can -- tan -- do~es -- tan,
+  en Be -- lén can -- tan -- do~es -- tan,
   to -- do~es glo -- ria, to -- do~es cie -- lo,
   y|~en un por -- ta -- li -- co po -- bre
   se~ha~es -- tre -- cha -- do~él que~es __ in -- men -- so,
@@ -130,7 +130,7 @@ TroyanoSi = \lyricmode {
 }
 
 TroyanoAi = \lyricmode {
-  en Be -- lén can -- tan -- do~es -- tán,
+  en Be -- lén can -- tan -- do~es -- tan,
   y|~en un por -- ta -- li -- co po -- bre
   se~ha~es -- tre -- cha -- do~él que~es __ in -- men -- so.
 
@@ -148,7 +148,7 @@ TroyanoAi = \lyricmode {
 }
 
 TroyanoTi = \lyricmode {
-  en Be -- lén can -- tan -- do~es -- tán,
+  en Be -- lén can -- tan -- do~es -- tan,
   y|~en un por -- ta -- li -- co po -- bre
   se~ha~es -- tre -- cha -- do~él que~es in -- men -- so.
 
@@ -475,7 +475,7 @@ NegrillaDuoSi = \lyricmode {
   que duel -- me la si -- gue -- ti -- to.
   Glo -- ria~en las al -- tu -- _ ras, 
   y|~en la tie -- rra paz, 
-  \EdLyrics { la tie -- rra __ paz. }
+  \EdLyrics { y|~en la tie -- rra paz. }
 }
 
 NegrillaDuoAi = \lyricmode {
@@ -510,7 +510,7 @@ NegrillaDuoAii = \lyricmode {
 NegrillaDuoTii = \lyricmode {
   Tu -- ru tu -- ru ye -- gá, __
   \EdLyrics {  tu -- ru tu -- ru ye -- gá, }
-  ay -- tá, \EdLyrics { ay -- tá, ay -- tá, } ay -- tá. 
+  ay -- tá, \EdLyrics { ay -- tá, ay -- tá, } ay -- tá. __
   Se -- sú, Se -- sú, que bo -- ni -- to, 
   su -- cu -- chá, que can -- ta -- mo lo~an -- ge -- li -- to:
 }
