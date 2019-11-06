@@ -54,7 +54,7 @@ $(build)/%.pdf : %.ly $(ly) | $(dirs)
 
 # Scheme config file -> Lilypond include file
 $(auto)/%.ly : $(config)/%.scm $(scm) | $(dirs)
-	guile $< > $@
+	guile -L $(HOME)/scm $< > $@
 
 view : $(output)
 	evince $(output) $(quiet)
