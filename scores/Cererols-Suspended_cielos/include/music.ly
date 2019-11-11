@@ -78,9 +78,7 @@ IncipitAc = {
 %% ChI
 
 MusicEstribilloSIi = {
-  \Section "[ESTRIBILLO] a 8"
   \clef "treble"
-  \MeterTriple
   | r2 fis''2 fis''2
   | fis''2\color g''1~
   | g''2 fis''1\endcolor
@@ -95,7 +93,7 @@ MusicEstribilloSIi = {
   | e''1 r2 
   | R1.
   | r2 e''2 f''2 
-  \break
+  \tag #'score { \break }
   | g''2\color fis''1~
   | fis''2 g''1\endcolor 
   | R1. 
@@ -108,7 +106,6 @@ MusicEstribilloSIi = {
   | a''1. 
 
   %% m. 21 METER TO C -- Tened parad
-  \MeterChangeDuple
   | r8 fis''8 g''4 r8 g''8 g''4 
   | r8 g''8 g''2 g''8 g''8 
   | g''2 r2 
@@ -143,7 +140,7 @@ MusicEstribilloSIi = {
   | a''2 g''2 g''2
   | g''2\color f''1 
   | e''2 d''1\endcolor 
-  \break
+  \tag #'score { \break }
   | e''2 f''2 g''2 
   | a''1 a''2 
   
@@ -151,7 +148,7 @@ MusicEstribilloSIi = {
   | a''2 d''2.\Eco d''4
   | d''2 g''2. g''4 
   | g''1.
-  \break
+  \tag #'score { \break }
   | R1. 
   | R1.
   | R1. 
@@ -167,7 +164,7 @@ MusicEstribilloSIi = {
   | bes''2\color a''1
   | g''2 f''1
   | e''2 d''1\endcolor
-  \break
+  \tag #'score { \break }
 
   %% m. 66 METER TO C -- Contrapunto celestial
   \MeterChangeDuple
@@ -181,13 +178,13 @@ MusicEstribilloSIi = {
   | r2 r4 a''8 g''8 
   | f''8 e''8 d''2 c''4
   | c''4 b'8 b'8 a'4 f''8 g''8
-  \break
+  \tag #'score { \break }
   | a''4 a''4 a''4 a''4
   | a''2 r2
 
   %% m. 76 -- Y con sollozos
   | r2 r4 g''4 
-  \break
+  \tag #'score { \break }
   | g''4 g''4 fis''4 fis''4 
   | g''1 
   | a''1
@@ -220,7 +217,7 @@ MusicEstribilloSIi = {
   | r4 e''4 f''4 f''4
   | a''1
   | a''2 r2 
-  \break
+  \tag #'score { \break }
   | r4 d''4 d''4 d''4 
   | d''4 d''4 r2 
 
@@ -235,7 +232,6 @@ MusicEstribilloSIi = {
       % m. 108
       | d''1\fermata
       \FinalBar
-      \RepeatMsg "[Fine]"
     }
     %% BBC version ossia
     \OssiaStaff "SIi" {
@@ -249,7 +245,6 @@ MusicEstribilloSIi = {
       \FinalBar 
     }
   >>
-  \pageBreak
 }	
 
 MusicEstribilloSIii = {
@@ -394,7 +389,7 @@ MusicEstribilloSIii = {
 
   % m. 108
   | fis''1\fermata 
-  \FinalBar
+  
 }
 
 MusicEstribilloAI = {
@@ -541,11 +536,11 @@ MusicEstribilloAI = {
   
   % m. 108
   | a'1\fermata
-  \FinalBar
+  
 }
 
 MusicEstribilloTI = {
-  \clef "treble_8"
+%  \clef "treble_8"
   \MeterTriple
   | r2 d'2 d'2
   | d'2\color g'1~
@@ -686,7 +681,7 @@ MusicEstribilloTI = {
 
   % m. 108
   | d'1\fermata
-  \FinalBar
+  
 }
 
 %%*******************
@@ -836,7 +831,7 @@ MusicEstribilloSII = {
   
   % m. 108
   | d''1\fermata 
-  \FinalBar
+  
 }
 
 MusicEstribilloAII = {
@@ -984,7 +979,7 @@ MusicEstribilloAII = {
 
   % m. 108
   | fis'1\fermata
-  \FinalBar
+  
 }
 
 MusicEstribilloTII = {
@@ -1131,7 +1126,7 @@ MusicEstribilloTII = {
 
   % m. 108
   | d'1\fermata
-  \FinalBar
+  
 }
 
 MusicEstribilloBII = {
@@ -1277,7 +1272,7 @@ MusicEstribilloBII = {
 
   % m. 108
   | d1\fermata
-  \FinalBar
+  
 }
 
 %%*******************
@@ -1425,7 +1420,7 @@ MusicEstribilloAc = {
 
   % m. 108
   | d1\fermata
-  \FinalBar
+  
 }
 
 FiguresAc = \figuremode {
@@ -1452,10 +1447,7 @@ FiguresAc = \figuremode {
 
 MusicCoplasSIi = {
   \SectionBreak
-
-  \Section "COPLAS a 4 y a Dúo" 
   \MeterTriple
-
   %% COPLA 1 
   % m. 109
   | r2 d''2 f''2~
@@ -1487,10 +1479,8 @@ MusicCoplasSIi = {
   % m. 130
   | e''2 \ficta fis''!2 g''2 
   | fis''1.\fermata 
-  \MiddleBar
  
-  \break
-  \Section "[COPLA 2] a Dúo"
+  \tag #'score { \break }
   % m. 132
   | R1.
   | r2 e''2\color g''2~
@@ -1528,10 +1518,8 @@ MusicCoplasSIi = {
   % m. 160
   | e''2 \ficta fis''!2 g''2
   | fis''1.\fermata 
-  \MiddleBar
 
-  \break
-  \Section "[COPLA 3] a 4"
+  \tag #'score { \break }
   % m. 162
   | r2 d''2 e''2
   | f''2\color g''2 g''2~
@@ -1540,7 +1528,7 @@ MusicCoplasSIi = {
   | fis''1\Breath d''4 d''4
   | e''2 e''4( d''4 e''4 fis''4)
   | g''2\color g''2 \[ g''2~
-  \noBreak
+  \tag #'score { \noBreak }
   | g''2 fis''1\endcolor \] 
 
   % m. 170
@@ -1561,10 +1549,9 @@ MusicCoplasSIi = {
   | g''2 f''2 f''2
   | e''2 \ficta fis''!2 g''2 
   | fis''1.\fermata 
-  \MiddleBar
+  
 
-  \break
-  \Section "[COPLA 4] a Dúo"
+  \tag #'score { \break }
   % m. 185
   | R1.
   | r2 e''2\color g''2~
@@ -1589,7 +1576,7 @@ MusicCoplasSIi = {
   | d''2 cis''2 cis''2
   | d''2 d''4( c''4) b'4( a'4) 
   | gis'2\color \[ a'1~ 
-  \noBreak
+  \tag #'score { \noBreak }
   | a'2 gis'1\endcolor \] 
   | a'1.
   | r2 e''2 e''2 
@@ -1603,10 +1590,9 @@ MusicCoplasSIi = {
   | g''2 f''1\endcolor 
   | e''2 \ficta fis''!2 g''2
   | fis''1.\fermata  
-  \MiddleBar
+  
 
-  \break
-  \Section "[COPLA 5] a 4"
+  \tag #'score { \break }
   % m. 215
   | r2 d''2 e''2
   | f''2 g''2 g''2~
@@ -1635,10 +1621,8 @@ MusicCoplasSIi = {
   | g''2 f''1\endcolor
   | e''2 \ficta fis''!2 g''2 
   | fis''1.\fermata 
-  \MiddleBar
 
-  \break
-  \Section "[COPLA 6] a Dúo"
+  \tag #'score { \break }
   % m. 238
   | R1.
   | r2 e''2\color g''2~
@@ -1678,13 +1662,10 @@ MusicCoplasSIi = {
 
   % m. 267
   | \ficta fis''!1.\fermata
-  \FinalBar
-  \DCalFine
 }
 
 MusicCoplasSIii = {
   \SectionBreak
-  
   \MeterTriple
   %% COPLA 1
   % m. 109
@@ -1717,7 +1698,7 @@ MusicCoplasSIii = {
   % m. 130
   | d''2 cis''1\endcolor \] 
   | d''1.\fermata 
-  \MiddleBar
+  
   
   %% COPLA 2
   % m. 132
@@ -1757,7 +1738,7 @@ MusicCoplasSIii = {
   % m. 160
   | d''2 cis''1\endcolor \]
   | d''1.\fermata
-  \MiddleBar
+  
   
   %% COPLA 3
   % m. 162
@@ -1788,7 +1769,7 @@ MusicCoplasSIii = {
   | \ficta cis''!2 \[ d''1~\color
   | d''2 cis''1\endcolor \] 
   | d''1.\fermata
-  \MiddleBar
+  
 
   %% COPLA 4
   % m. 185
@@ -1828,7 +1809,6 @@ MusicCoplasSIii = {
   | cis''2 \[ d''1~
   | d''2 cis''1\endcolor \]
   | d''1.\fermata 
-  \MiddleBar
   
   %% COPLA 5
   % m. 215
@@ -1853,14 +1833,13 @@ MusicCoplasSIii = {
   % m. 230
   | g''2 f''1\endcolor 
   | e''1.
-  \break
+  \tag #'score { \break }
   | d''2 d''2 d''2 
   | c''1 c''2
   | b'2\color b'1 
   | cis''2 \[ d''1~
   | d''2 cis''1\endcolor \] 
   | d''1.\fermata 
-  \MiddleBar
   
   %% COPLA 6
   % m. 238
@@ -1902,7 +1881,6 @@ MusicCoplasSIii = {
 
   % m. 267
   | d''1.\fermata
-  \FinalBar
 }
 
 MusicCoplasAI = {
@@ -1939,12 +1917,12 @@ MusicCoplasAI = {
   % m. 130
   | a'1. 
   | a'1.\fermata
-  \MiddleBar
+  
   
   %% COPLA 2 TACET
   % m. 132
   R1.*30
-  \MiddleBar
+  
   
   %% COPLA 3
   % m. 162
@@ -1975,7 +1953,7 @@ MusicCoplasAI = {
   | a'1.~
   | a'1.
   | a'1.\fermata 
-  \MiddleBar
+  
   
   %% COPLA 4 TACET
   % m. 185
@@ -2010,12 +1988,12 @@ MusicCoplasAI = {
   | a'1.~
   | a'1.
   | a'1.\fermata 
-  \MiddleBar
+  
 
   %% m. 147 COPLA 6 TACET
   % m. 238
   R1.*30
-  \FinalBar
+  
 }
 
 MusicCoplasTI = {
@@ -2052,7 +2030,7 @@ MusicCoplasTI = {
   % m. 130
   | a1.
   | d'1.\fermata
-  \MiddleBar
+  
   
   %% COPLA 2 TACET
   % m. 132
@@ -2087,7 +2065,7 @@ MusicCoplasTI = {
   | a1.~
   | a1.
   | d'1.\fermata 
-  \MiddleBar
+  
 
   %% COPLA 4 TACET
   % m. 185
@@ -2122,12 +2100,12 @@ MusicCoplasTI = {
   | a1.~
   | a1.
   | d'1.\fermata 
-  \MiddleBar
+  
   
   %% m. 147 COPLA 6 TACET
   % m. 238
   R1.*30
-  \FinalBar
+  
 }
 
 %% COPLAS ACOMP.
@@ -2211,6 +2189,8 @@ MusicCoplasAcEven = {
 
 MusicCoplasAc = {
   \SectionBreak
+  \MeterTriple
+  
   %% COPLA 1
   \MusicCoplasAcOdd
 
@@ -2228,7 +2208,7 @@ MusicCoplasAc = {
 
   %% COPLA 6
   \MusicCoplasAcEven
-  \FinalBar
+  
 }
 
 %%********************************
@@ -2264,5 +2244,66 @@ MusicAII = \MusicEstribilloAII
 MusicTII = \MusicEstribilloTII
 MusicBII = \MusicEstribilloBII
 
+%%***********************************
+%% MARKS
+%%***********************************
 
+MarksEstribillo = {
+  \tag #'(SIi part) { \Section "[ESTRIBILLO] a 8" }
+  \MeterTriple
+  | s1.*20
+  \MeterChangeDuple
+  | s1*8
+  \MeterChangeTriple
+  | s1.*37
+  \MeterChangeDuple
+  | s1*43
+  \FinalBar
+  \tag #'(SIi part) { \RepeatMsg "[Fine]" }
+}
+
+MarksCoplas = {
+%  \tag #'score { \pageBreak }
+  \SectionBreak
+  \tag #'(SIi part) { \Section "COPLAS a 4 y a Dúo" }
+  \MeterTriple
+  | s1.*23
+  \MiddleBar
+
+  \Section "[COPLA 2] a Dúo"
+  | s1.*30
+  \MiddleBar
+
+  \Section "[COPLA 3] a 4"
+  | s1.*23
+  \MiddleBar
+
+  \Section "[COPLA 4] a Dúo"
+  | s1.*30
+  \MiddleBar
+
+  \Section "[COPLA 5] a 4"
+  | s1.*23
+  \MiddleBar
+
+  \Section "[COPLA 6] a Dúo"
+  | s1.*30
+  \FinalBar
+  \DCalFine
+}
+
+Marks = {
+  \MarksEstribillo
+  \MarksCoplas
+}
+
+MarksSIi =  { \Marks }
+MarksSIii = { \Marks }
+MarksAI =   { \Marks }
+MarksTI =   { \Marks }
+MarksSII =  { \Marks }
+MarksAII =  { \Marks }
+MarksTII =  { \Marks }
+MarksBII =  { \Marks }
+MarksAc =   { \Marks }
 

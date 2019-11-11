@@ -1,6 +1,7 @@
 % score.ly
 
 \score {
+  \keepWithTag #'(SIi score)
   <<
     \new ChoirStaff  = "ChI" {
       <<
@@ -9,6 +10,7 @@
 	\new Staff = "SIi"
 	<<
 	  \IncipitStaff "TIPLE I-1" "Ti. I-1" { \IncipitSIi }
+          \new Voice = "MarksSIi" { \MarksSIi }
           \new Voice = "SIi" { \MusicSIi }
           \new Lyrics \lyricsto "SIi" { \LyricsSIi }
 	>>
@@ -30,7 +32,7 @@
 	\new Staff = "TI"
 	<<
 	  \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
-          \new Voice = "TI" { \MusicTI }
+          \new Voice = "TI" { \clef "treble_8" \MusicTI }
           \new Lyrics \lyricsto "TI" { \LyricsTI }
 	>>
       >>
