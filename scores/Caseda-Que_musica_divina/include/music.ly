@@ -42,8 +42,6 @@ IncipitB = {
 MusicEstribilloSi = {
   \clef "treble"
   \MeterDuple
-  \CantusMollis
-  \Section "[ESTRIBILLO] a 4"
 
   | r4 d''4 g''8. a''16 g''4
   | r4 fis''4 bes''2~
@@ -52,7 +50,7 @@ MusicEstribilloSi = {
   | f''4( es''4) d''2
   | r4 f''8 f''8 g''2
   | fis''2 r4 fis''4
-  \break
+  \tag #'score { \break }
   | g''4. g''8 c''4 c''4
   | c''2 c''2
   
@@ -70,7 +68,7 @@ MusicEstribilloSi = {
   \MeterChangeTriple
   | d''1 r2
   | r2 bes''2 a''4( bes''4 
-  \noBreak
+  \tag #'score { \noBreak }
 
   % m. 20
   | a''4 bes''4) g''4( bes''4) a''4( g''4)
@@ -117,7 +115,6 @@ MusicEstribilloSi = {
   | g''2 \ficta fis''!1\endcolor
  
   % m. 56 
-  \tempo "a espacio [more slowly]"
   | R1.
   | R1.
   | R1.
@@ -149,8 +146,6 @@ MusicEstribilloSi = {
 
   % m. 80
   | r2 bes'1\colorOne\fermata
-  \Fine
-  \FinalBar
 }
 %%***************************************
 MusicEstribilloSii = {
@@ -257,7 +252,6 @@ MusicEstribilloSii = {
 
   % m. 80
   | r2 g'1\colorOne\fermata
-  \FinalBar
 }
 
 %%***************************************
@@ -368,7 +362,8 @@ MusicEstribilloA = {
 }
 
 MusicEstribilloT = {
-  \clef "treble_8"
+  \tag #'score { \clef "treble_8" }
+  \tag #'part { \clef "tenor" }
   \MeterDuple
   \CantusMollis
 
@@ -591,12 +586,12 @@ MusicCoplaISi = {
   \RepeatBarEnd
 
   | bes''4 a''8. a''16 g''4 f''4
-  \break
+  \tag #'score { \break }
   | es''8. es''16 d''8 es''8 f''4( es''4)
   | d''2 r4 g'4 
   | c''2 r8 bes'8 c''8 d''8
   | es''2 d''2
-  \break
+  \tag #'score { \break }
   | r4 c''4 g''2
   | r8 g''8 g''8 g''8 g''4 \ficta fis''!4
 
@@ -604,27 +599,25 @@ MusicCoplaISi = {
   | R1
   | R1
   | d''4 f''4 es''4 d''8 c''8
-  \break
+  \tag #'score { \break }
   | b'8 c''8 d''8 e''8 f''2
   | \ficta es''!2 r4 d''4~
   | d''4 d''4 d''2
 
   % m. 96
   | d''1\fermata
-  \MiddleBar
 }
 
 MusicCoplaIISi = {
   %% COPLA 2
   % m. 97
-  \Section "Solo"
   | r2 r4 g''8. f''16
   | es''4 d''4 c''4 bes'4
   | a'4 g'4 r4 g''8. f''16
 
   % m. 100
   | es''4 d''4 c''4 bes'4
-  \break
+  \tag #'score { \break }
   | a'4 g'4 r4 bes''8. a''16 
   | g''4 f''8. f''16 es''8. es''16 d''8. d''16
   | c''8[( bes'8] c''4) bes'2
@@ -640,7 +633,6 @@ MusicCoplaIISi = {
 
   % m. 111
   | g''1\fermata
-  \MiddleBar
 }
 
 %%*************************
@@ -722,12 +714,11 @@ MusicCoplaIA = {
 }
 
 MusicCoplaIIIA = {
-  \Section "[Solo]"
   | r2 r4 d''4
   | c''4 bes'4 a'4 c''8 bes'8
   | a'4 g'4 r4 d''4
   | c''4 bes'4 a'4 c''8 bes'8
-  \break
+  \tag #'score { \break }
   | a'4 g'4 a'4 bes'8. a'16
   | g'8. g'16 f'8 f'8 g'4 bes'4
   | bes'4( a'4) bes'2
@@ -770,12 +761,11 @@ MusicCoplaIT = {
 }
 
 MusicCoplaVT = {
-  \Section "[Solo]"
   | r2 r4 g'8. f'16
   | es'4 d'4 c'4 bes4
   | a4 g4 r4 g'8. f'16
   | es'4 d'4 c'4 bes4
-  \break
+  \tag #'score { \break }
   | a4 g4 \EdBracL r4 bes'8. a'16 
   | g'4 f'8. f'16 es'8. es'16 \EdBracR d'8 d'8
   | c'2 bes2
@@ -882,41 +872,31 @@ FiguresCoplaIIB = \figuremode {
 %%***************************************
 
 MusicCoplasSi = {
-  \pageBreak
+  \tag #'score { \pageBreak }
   \SectionBreak
   \MeterDuple
 
-  \Section "COPLAS a 4"
   \MusicCoplaISi
-  \MiddleBar
 
   %% COPLA 2
-  \break
+  \tag #'score { \break }
   \MusicCoplaIISi
-  \MiddleBar
 
   %% COPLA 3
-  \break
+  \tag #'score { \break }
   R1*15
-  \MiddleBar
 
   %% COPLA 4
-  \break
-  \Section "A 4"
+  \tag #'score { \break }
   \MusicCoplaISi
-  \MiddleBar
 
   %% COPLA 5
-  \break
+  \tag #'score { \break }
   R1*15
-  \MiddleBar
 
   %% COPLA 6
-  \break
-  \Section "A 4"
+  \tag #'score { \break }
   \MusicCoplaISi
-  \FinalBar
-  \DCalFine
 }
 
 MusicCoplasSii = {
@@ -990,6 +970,7 @@ MusicCoplasB = {
 
 %************************
 % ALL TOGETHER
+%************************
 
 MusicSi = {
   \MusicEstribilloSi
@@ -1021,3 +1002,63 @@ FiguresB = \figuremode {
   \FiguresCoplaIIB
   \FiguresCoplaIB
 }
+
+%********************************
+% MARKS
+%********************************
+
+MarksEstribillo = {
+  \MeterDuple
+  \tag #'(Si part) { \Section "[ESTRIBILLO] a 4" }
+  s1*17
+  \MeterChangeTriple
+  s1.*38
+  \tag #'(Si part) { \tempo "a espacio [more slowly]" }
+  s1.*25
+  \Fine
+  \FinalBar
+}
+
+MarksCoplas = {
+  \SectionBreak
+  \MeterDuple
+  \tag #'(Si part) { \Section "COPLAS a 4" }
+  \RepeatBarStart
+  s1*2
+  \RepeatBarEnd
+  s1*14
+  \MiddleBar
+
+  \tag #'(Si part) { \Section "Solo" }
+  s1*15
+  \MiddleBar
+
+  \tag #'(A part) { \Section "[Solo]" }
+  s1*15
+  \MiddleBar
+
+  \tag #'(Si part) { \Section "A 4" }
+  s1*16
+  \MiddleBar
+  
+  \tag #'(T part) { \Section "[Solo]" }
+  s1*15
+  \MiddleBar
+  
+  \tag #'(Si part) { \Section "A 4" }
+  s1*16
+  \FinalBar
+  \tag #'(Si part) { \DCalFineEd }
+}
+
+Marks = {
+  \MarksEstribillo
+  \MarksCoplas
+}
+MarksSi     = \Marks
+MarksSii    = \Marks
+MarksA      = \Marks
+MarksT      = \Marks
+MarksB      = \Marks
+
+
