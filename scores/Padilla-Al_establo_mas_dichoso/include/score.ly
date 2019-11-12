@@ -4,7 +4,7 @@
   \keepWithTag #'(Si Sii Tii score)
   <<
     \new ChoirStaff
-    <<
+    <
       \new Staff = "Sii"
       <<
         \IncipitStaff "TIPLE II" "Ti. II" { \IncipitSii }

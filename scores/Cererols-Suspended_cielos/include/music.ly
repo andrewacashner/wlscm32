@@ -541,7 +541,7 @@ MusicEstribilloAI = {
 
 MusicEstribilloTI = {
   \tag #'score { \clef "treble_8" }
-  \tag #'part { \clef "tenor" }
+  \tag #'part { \clef "alto" }
   \MeterTriple
   | r2 d'2 d'2
   | d'2\color g'1~

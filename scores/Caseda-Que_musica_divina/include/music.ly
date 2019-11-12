@@ -363,7 +363,7 @@ MusicEstribilloA = {
 
 MusicEstribilloT = {
   \tag #'score { \clef "treble_8" }
-  \tag #'part { \clef "tenor" }
+  \tag #'part { \clef "alto" }
   \MeterDuple
   \CantusMollis
 
