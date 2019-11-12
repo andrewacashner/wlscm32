@@ -540,7 +540,8 @@ MusicEstribilloAI = {
 }
 
 MusicEstribilloTI = {
-%  \clef "treble_8"
+  \tag #'score { \clef "treble_8" }
+  \tag #'part { \clef "tenor" }
   \MeterTriple
   | r2 d'2 d'2
   | d'2\color g'1~
@@ -2211,6 +2212,19 @@ MusicCoplasAc = {
   
 }
 
+MusicCoplasChoirII = {
+  \SectionBreak
+  \MeterTriple
+  R1.*23
+  R1.*30
+ 
+  R1.*23
+  R1.*30
+  
+  R1.*23
+  R1.*30
+}
+
 %%********************************
 %% ALL TOGETHER
 %%********************************
@@ -2239,10 +2253,22 @@ MusicAc  = {
   \MusicCoplasAc
 }
 
-MusicSII = \MusicEstribilloSII
-MusicAII = \MusicEstribilloAII
-MusicTII = \MusicEstribilloTII
-MusicBII = \MusicEstribilloBII
+MusicSII = {
+  \MusicEstribilloSII
+  \MusicCoplasChoirII
+}
+MusicAII = {
+  \MusicEstribilloAII
+  \MusicCoplasChoirII
+}
+MusicTII = {
+  \MusicEstribilloTII
+  \MusicCoplasChoirII
+}
+MusicBII = {
+  \MusicEstribilloBII
+  \MusicCoplasChoirII
+}
 
 %%***********************************
 %% MARKS

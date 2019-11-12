@@ -32,7 +32,7 @@
 	\new Staff = "TI"
 	<<
 	  \IncipitStaff "TENOR I" "T. I" { \IncipitTI }
-          \new Voice = "TI" { \clef "treble_8" \MusicTI }
+          \new Voice = "TI" { \MusicTI }
           \new Lyrics \lyricsto "TI" { \LyricsTI }
 	>>
       >>
