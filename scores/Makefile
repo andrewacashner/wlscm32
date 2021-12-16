@@ -28,11 +28,11 @@ parts-include 	= $(parts:$(config)/%.scm=$(auto)/%.ly)
 output 		= $(master:%.ly=$(build)/%.pdf)
 
 # Custom Lilypond and Scheme modules
-ly 		= $(wildcard $(HOME)/ly/*.ly)
-scm 		= $(wildcard $(HOME)/scm/lirio/*.scm)
+ly 		= $(wildcard $(HOME)/lib/ly/*.ly)
+scm 		= $(wildcard $(HOME)/lib/scm/lirio/*.scm)
 
 # Lilypond include
-lypath 		= -I ~/ly 
+lypath 		= -I ~/lib/ly 
 
 quiet 		= &> /dev/null &
 
@@ -54,7 +54,7 @@ $(build)/%.pdf : %.ly $(ly) | $(dirs)
 
 # Scheme config file -> Lilypond include file
 $(auto)/%.ly : $(config)/%.scm $(scm) | $(dirs)
-	guile -L $(HOME)/scm $< > $@
+	guile -L $(HOME)/lib/scm $< > $@
 
 view : $(output)
 	evince $(output) $(quiet)

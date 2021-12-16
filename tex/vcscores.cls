@@ -18,6 +18,7 @@
 %    + poemtranslation
 
 % CHANGELOG
+% 2021-12-16    Update for current LaTeX
 % 2017-10-05    Minor cleanup
 % 2017-07-19    Adapted to WLSCM house style
 
@@ -43,6 +44,7 @@ Critical edition of villancico poetry and music for WLSCM]
 \RequirePackage[T1]{fontenc}
 \RequirePackage[libertine]{newtxmath}
 \RequirePackage{ebgaramond-maths}
+\let\bfseries\mdseries
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{microtype}
 
@@ -401,13 +403,24 @@ Critical edition of villancico poetry and music for WLSCM]
 }
 
 % Table of bar-by-bar critical notes
+% DEPRECATED
+% \NewDocumentEnvironment{criticalnotes}{}
+%   {\begin{longtabu} to \linewidth {X[-1r] X[-1l] X[-1.5l] >{\strut}X[3l]<{\strut}}
+%       \textsc{Measure} & \textsc{Voice} & \textsc{Edition} & \textsc{Sources,
+%       Rationale}\\
+%       \endhead % repeat this header at top of new page
+%   }
+%   {\end{longtabu}}
+\RequirePackage{tabularx}
 \NewDocumentEnvironment{criticalnotes}{}
-  {\begin{longtabu} to \linewidth {X[-1r] X[-1l] X[-1.5l] >{\strut}X[3l]<{\strut}}
-      \textsc{Measure} & \textsc{Voice} & \textsc{Edition} & \textsc{Sources,
-      Rationale}\\
-      \endhead % repeat this header at top of new page
-  }
-  {\end{longtabu}}
+{\tabularx{\linewidth}{r l l X}
+    \textsc{Measure} 
+    & \textsc{Voice} 
+    & \textsc{Edition} 
+    & \textsc{Sources, Rationale}\\
+}
+{\endtabularx}
+
 
 %*****************************
 % SEMANTIC MARKUP COMMANDS
@@ -456,6 +469,7 @@ Critical edition of villancico poetry and music for WLSCM]
 \NewDocumentCommand{\oldabbrev} { m m } {#1\rlap{.}\textsuperscript{\,#2}}
 
 % Elision symbol or undertie from amssymb
+\let\Bbbk\relax % same command is defined by newtxmath
 \RequirePackage{amssymb}
 
 % *//* lyric-text repeat sign from manuscripts, from package amssymb
