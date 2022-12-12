@@ -44,7 +44,7 @@ content from presentation to a greater degree.
 They allow convenient usage of features including preparatory staves, mensural
 coloration brackets, mensural time signatures, and editorial lyrical text.
 Those packages are available in a separate Git repository, 
-<http://andrewacashner@bitbucket.com/andrewacashner/ly.git>.
+<https://github.com/andrewacashner/ly.git>.
 
 ## Compilation
 
